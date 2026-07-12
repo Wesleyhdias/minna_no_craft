@@ -3,12 +3,16 @@
   "package": "com.wesleyhdias.minnanocraft.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "ExampleMixin"
+    "ClientLanguageMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-  }
+  },
+  "client": [
+    "ClientLanguageMixin",
+    "acessor.ClientLanguageAccessor"
+  ]
 }
