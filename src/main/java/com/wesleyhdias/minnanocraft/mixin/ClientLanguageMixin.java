@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.mixin.acessor.ClientLanguageAccessor;
-import com.wesleyhdias.minnanocraft.MinnaNoCraft;
+import com.wesleyhdias.minnanocraft.services.TranslationManager;
 
 import net.minecraft.client.resources.language.ClientLanguage;
 import net.minecraft.server.packs.resources.ResourceManager;
@@ -35,7 +35,16 @@ public class ClientLanguageMixin {
             .create();
 
 
-    // código usado para extrair todas as chaves e traduções do jogo
+    @Inject(method = "getOrDefault", at = @At("RETURN"), cancellable = true)
+    private void onGetOrDefault(String key, String defaultValue, CallbackInfoReturnable<String> cir) {
+
+        String originalText = cir.getReturnValue();
+        String customText = TranslationManager.getInstance().processTranslation(key, originalText);
+        cir.setReturnValue(customText);
+    }
+
+
+    /* código usado para extrair todas as chaves e traduções do jogo
     @Inject(method = "loadFrom", at = @At("RETURN"), remap = false)
     private static void dumpLanguage(
             ResourceManager resourceManager,
@@ -68,4 +77,5 @@ public class ClientLanguageMixin {
             MinnaNoCraft.LOGGER.error("Falha ao exportar idioma {}", languageCode, e);
         }
     }
+     */
 }

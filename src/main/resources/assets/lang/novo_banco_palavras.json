@@ -1,0 +1,667 @@
+{
+    "cherry_blossom_color": {
+        "kanji": "桜色",
+        "hiragana": "さくらいろ",
+        "romaji": "sakurairo",
+        "translation": "cor de flor de cerejeira?",
+        "role": "no_particle"
+    },
+    "lime": {
+        "kanji": "黄緑色",
+        "hiragana": "きみどりいろ",
+        "romaji": "kimidoriiro",
+        "translation": "lime?",
+        "role": "no_particle"
+    },
+    "cyan": {
+        "kanji": "青緑色",
+        "hiragana": "あおみどりいろ",
+        "romaji": "aomidoriiro",
+        "translation": "ciano",
+        "role": "no_particle"
+    },
+    "light_blue": {
+        "kanji": "空色",
+        "hiragana": "そらいろ",
+        "romaji": "sorairo",
+        "translation": "azul claro",
+        "role": "no_particle"
+    },
+    "ocher": {
+        "kanji": "黄土色",
+        "hiragana": "おうどいろ",
+        "romaji": "oudoiro",
+        "translation": "ocre",
+        "role": "no_particle"
+    },
+    "brown": {
+        "kanji": "茶色",
+        "hiragana": "ちゃいろ",
+        "romaji": "chairo",
+        "translation": "marrom",
+        "role": "no_particle"
+    },
+    "gray": {
+        "kanji": "灰色",
+        "hiragana": "はいいろ",
+        "romaji": "haiiro",
+        "translation": "cinza",
+        "role": "no_particle"
+    },
+    "purple": {
+        "kanji": "紫色",
+        "hiragana": "むらさきいろ",
+        "romaji": "murasakiiro",
+        "translation": "roxo",
+        "role": "no_particle"
+    },
+    "yellow": {
+        "kanji": "黄色",
+        "hiragana": "きいろ",
+        "romaji": "kiiro",
+        "translation": "amarelo",
+        "role": "no_particle"
+    },
+    "red": {
+        "kanji": "赤色",
+        "hiragana": "あかいろ",
+        "romaji": "akairo",
+        "translation": "vermelho",
+        "role": "no_particle"
+    },
+    "green": {
+        "kanji": "緑色",
+        "hiragana": "みどりいろ",
+        "romaji": "midoriiro",
+        "translation": "verde",
+        "role": "no_particle"
+    },
+    "blue": {
+        "kanji": "青色",
+        "hiragana": "あおいろ",
+        "romaji": "aoiro",
+        "translation": "azul",
+        "role": "no_particle"
+    },
+    "orange": {
+        "kanji": "橙色",
+        "hiragana": "だいだいいろ",
+        "romaji": "daidaiiro",
+        "translation": "laranja",
+        "role": "no_particle"
+    },
+    "black": {
+        "kanji": "黒色",
+        "hiragana": "くろいろ",
+        "romaji": "kuroiro",
+        "translation": "preto",
+        "role": "no_particle"
+    },
+    "white": {
+        "kanji": "白色",
+        "hiragana": "はくしょく",
+        "romaji": "hakushoku",
+        "translation": "branco",
+        "role": "no_particle"
+    },
+    "pink": {
+        "kanji": "桃色",
+        "hiragana": "ももいろ",
+        "romaji": "momoiro",
+        "translation": "rosa",
+        "role": "no_particle"
+    },
+    "wool": {
+        "kanji": "羊毛",
+        "hiragana": "ようもう",
+        "romaji": "youmou",
+        "translation": "lã",
+        "role": "no_particle"
+    },
+    "oak": {
+        "kanji": "オーク",
+        "hiragana": "おーく",
+        "romaji": "ooku",
+        "translation": "carvalho",
+        "role": "compound"
+    },
+    "birch": {
+        "kanji": "シラカバ",
+        "hiragana": "しらかば",
+        "romaji": "shirakaba",
+        "translation": "eucalipto",
+        "role": "compound"
+    },
+    "spruce": {
+        "kanji": "トウヒ",
+        "hiragana": "とうひ",
+        "romaji": "touhi",
+        "translation": "pinheiro",
+        "role": "compound"
+    },
+    "acacia": {
+        "kanji": "アカシア",
+        "hiragana": "あかしあ",
+        "romaji": "akashia",
+        "translation": "acácia",
+        "role": "compound"
+    },
+    "mangrove": {
+        "kanji": "マングローブ",
+        "hiragana": "まんぐろーぶ",
+        "romaji": "manguroobu",
+        "translation": "mangue",
+        "role": "compound"
+    },
+    "jungle": {
+        "kanji": "ジャングル",
+        "hiragana": "じゃんぐる",
+        "romaji": "janguru",
+        "translation": "selva",
+        "role": "compound"
+    },
+    "cherry": {
+        "kanji": "サクラ",
+        "hiragana": "さくら",
+        "romaji": "sakura",
+        "translation": "cerejeira",
+        "role": "compound"
+    },
+    "bamboo": {
+        "kanji": "竹",
+        "hiragana": "たけ",
+        "romaji": "take",
+        "translation": "bambu",
+        "role": "compound"
+    },
+    "warped": {
+        "kanji": "歪んだ",
+        "hiragana": "ゆがんだ",
+        "romaji": "yuganda",
+        "translation": "distorcido",
+        "role": "force_compound"
+    },
+    "crimson": {
+        "kanji": "真紅",
+        "hiragana": "しんく",
+        "romaji": "shinku",
+        "translation": "carmesim",
+        "role": "no_particle"
+    },
+    "wood": {
+        "kanji": "木",
+        "hiragana": "き",
+        "romaji": "ki",
+        "translation": "madeira",
+        "role": "no_particle"
+    },
+    "wooden": {
+        "kanji": "木",
+        "hiragana": "き",
+        "romaji": "ki",
+        "translation": "madeira",
+        "role": "no_particle"
+    },
+    "cobblestone": {
+        "kanji": "丸石",
+        "hiragana": "まるいし",
+        "romaji": "maruishi",
+        "translation": "pedregulho",
+        "role": "compound"
+    },
+    "stone": {
+        "kanji": "石",
+        "hiragana": "いし",
+        "romaji": "ishi",
+        "translation": "pedra",
+        "role": "compound"
+    },
+    "iron": {
+        "kanji": "鉄",
+        "hiragana": "てつ",
+        "romaji": "tetsu",
+        "translation": "ferro",
+        "role": "compound"
+    },
+    "copper": {
+        "kanji": "銅",
+        "hiragana": "どう",
+        "romaji": "dou",
+        "translation": "cobre",
+        "role": "compound"
+    },
+    "gold": {
+        "kanji": "金",
+        "hiragana": "きん",
+        "romaji": "kin",
+        "translation": "ouro",
+        "role": "compound"
+    },
+    "diamond": {
+        "kanji": "ダイヤモンド",
+        "hiragana": "だいやもんど",
+        "romaji": "daiyamondo",
+        "translation": "diamante",
+        "role": "compound"
+    },
+    "emerald": {
+        "kanji": "エメラルド",
+        "hiragana": "えめらるど",
+        "romaji": "emerarudo",
+        "translation": "esmeralda",
+        "role": "compound"
+    },
+    "quartz": {
+        "kanji": "クォーツ",
+        "hiragana": "くぉーつ",
+        "romaji": "kuootsu",
+        "translation": "quartzo",
+        "role": "compound"
+    },
+    "netherite": {
+        "kanji": "ネザライト",
+        "hiragana": "ねざらいと",
+        "romaji": "nezaraito",
+        "translation": "netheritia",
+        "role": "compound"
+    },
+    "lapis": {
+        "kanji": "ラピスラズリ",
+        "hiragana": "らぴすらずり",
+        "romaji": "rapisurazuri",
+        "translation": "lápis-lazúli",
+        "role": "compound"
+    },
+    "ore": {
+        "kanji": "鉱石",
+        "hiragana": "こうせき",
+        "romaji": "kouseki",
+        "translation": "minério",
+        "role": "compound"
+    },
+    "dye": {
+        "kanji": "染料",
+        "hiragana": "せんりょう",
+        "romaji": "senryou",
+        "translation": "corante",
+        "role": "no_particle"
+    },
+    "block": {
+        "kanji": "ブロック",
+        "hiragana": "ぶろっく",
+        "romaji": "burokku",
+        "translation": "bloco",
+        "role": "compound"
+    },
+    "brick": {
+        "kanji": "レンガ",
+        "hiragana": "れんが",
+        "romaji": "renga",
+        "translation": "tijolo",
+        "role": "compound"
+    },
+    "bricks": {
+        "kanji": "レンガ",
+        "hiragana": "れんが",
+        "romaji": "renga",
+        "translation": "tijolo",
+        "role": "compound"
+    },
+    "mossy": {
+        "kanji": "苔むした",
+        "hiragana": "こけむした",
+        "romaji": "kokemushita",
+        "translation": "musgoso",
+        "role": "compound"
+    },
+    "stair": {
+        "kanji": "階段",
+        "hiragana": "かいだん",
+        "romaji": "kaidan",
+        "translation": "escadaria",
+        "role": "no_particle"
+    },
+    "stairs": {
+        "kanji": "階段",
+        "hiragana": "かいだん",
+        "romaji": "kaidan",
+        "translation": "escadaria",
+        "role": "no_particle"
+    },
+    "slab": {
+        "kanji": "ハーフブロック",
+        "hiragana": "はーふぶろっく",
+        "romaji": "haafuburokku",
+        "translation": "meio bloco",
+        "role": "no_particle"
+    },
+    "pillar": {
+        "kanji": "柱",
+        "hiragana": "はしら",
+        "romaji": "hashira",
+        "translation": "pilar",
+        "role": "no_particle"
+    },
+    "prismarine": {
+        "kanji": "プリズマリン",
+        "hiragana": "ぷりずまりん",
+        "romaji": "purizumarin",
+        "translation": "prismarino",
+        "role": "compound"
+    },
+    "door": {
+        "kanji": "ドア",
+        "hiragana": "どあ",
+        "romaji": "doa",
+        "translation": "porta",
+        "role": "no_particle"
+    },
+    "raft": {
+        "kanji": "イカダ",
+        "hiragana": "いかだ",
+        "romaji": "ikada",
+        "translation": "jangada",
+        "role": "no_particle"
+    },
+    "light_gray": {
+        "kanji": "薄灰色",
+        "hiragana": "うすはいいろ",
+        "romaji": "cinza claro",
+        "translation": "azul claro",
+        "role": "no_particle"
+    },
+    "banner": {
+        "kanji": "旗",
+        "hiragana": "はた",
+        "romaji": "hata",
+        "translation": "banner",
+        "role": "no_particle"
+    },
+    "terracotta": {
+        "kanji": "テラコッタ",
+        "hiragana": "てらこった",
+        "romaji": "terakotta",
+        "translation": "terracota",
+        "role": "compound"
+    },
+    "glazed": {
+        "kanji": "彩釉",
+        "hiragana": "さいゆう",
+        "romaji": "saiyuu",
+        "translation": "envidraçado",
+        "role": "compound"
+    },
+    "bundle": {
+        "kanji": "バンドル",
+        "hiragana": "ばんどる",
+        "romaji": "bandoru",
+        "translation": "pacote",
+        "role": "no_particle"
+    },
+    "carpet": {
+        "kanji": "カーペット",
+        "hiragana": "かーぺっと",
+        "romaji": "kaapetto",
+        "translation": "tapete",
+        "role": "no_particle"
+    },
+    "harness": {
+        "kanji": "ハーネス",
+        "hiragana": "はーねす",
+        "romaji": "haanesu",
+        "translation": "arreio",
+        "role": "no_particle"
+    },
+    "concrete": {
+        "kanji": "コンクリート",
+        "hiragana": "こんくりーと",
+        "romaji": "konkuriito",
+        "translation": "concreto",
+        "role": "compound"
+    },
+    "bed": {
+        "kanji": "ベッド",
+        "hiragana": "べっど",
+        "romaji": "beddo",
+        "translation": "cama",
+        "role": "no_particle"
+    },
+    "sapling": {
+        "kanji": "苗木",
+        "hiragana": "なえぎ",
+        "romaji": "naegi",
+        "translation": "muda",
+        "role": "no_particle"
+    },
+    "planks": {
+        "kanji": "板材",
+        "hiragana": "いたざい",
+        "romaji": "itazai",
+        "translation": "tabuas",
+        "role": "no_particle"
+    },
+    "dark": {
+        "kanji": "ダーク",
+        "hiragana": "だーく",
+        "romaji": "daaku",
+        "translation": "escuro",
+        "role": "compound"
+    },
+    "shelf": {
+        "kanji": "棚",
+        "hiragana": "たな",
+        "romaji": "tana",
+        "translation": "estante",
+        "role": "no_particle"
+    },
+    "pale": {
+        "kanji": "ペール",
+        "hiragana": "ぺーる",
+        "romaji": "peeru",
+        "translation": "palido",
+        "role": "compound"
+    },
+    "trapdoor": {
+        "kanji": "トラップドア",
+        "hiragana": "とらっぷどあ",
+        "romaji": "torappudoa",
+        "translation": "alçapão",
+        "role": "no_particle"
+    },
+    "log": {
+        "kanji": "原木",
+        "hiragana": "げんぼく",
+        "romaji": "genboku",
+        "translation": "tronco",
+        "role": "no_particle"
+    },
+    "stem": {
+        "kanji": "幹",
+        "hiragana": "みき",
+        "romaji": "miki",
+        "translation": "tronco",
+        "role": "compound"
+    },
+    "root": {
+        "kanji": "根",
+        "hiragana": "ね",
+        "romaji": "ne",
+        "translation": "raiz",
+        "role": "no_particle"
+    },
+    "roots": {
+        "kanji": "根",
+        "hiragana": "ね",
+        "romaji": "ne",
+        "translation": "raiz",
+        "role": "no_particle"
+    },
+    "sign": {
+        "kanji": "看板",
+        "hiragana": "かんばん",
+        "romaji": "kanban",
+        "translation": "placa",
+        "role": "no_particle"
+    },
+    "fence": {
+        "kanji": "フェンス",
+        "hiragana": "ふぇんす",
+        "romaji": "fensu",
+        "translation": "cerca",
+        "role": "no_particle"
+    },
+    "boat": {
+        "kanji": "ボート",
+        "hiragana": "ぼーと",
+        "romaji": "booto",
+        "translation": "bote",
+        "role": "no_particle"
+    },
+    "button": {
+        "kanji": "ボタン",
+        "hiragana": "ぼたん",
+        "romaji": "botan",
+        "translation": "botão",
+        "role": "no_particle"
+    },
+    "candle": {
+        "kanji": "ろうそく",
+        "hiragana": "ろうそく",
+        "romaji": "rousoku",
+        "translation": "vela",
+        "role": "no_particle"
+    },
+    "powder": {
+        "kanji": "パウダー",
+        "hiragana": "ぱうだー",
+        "romaji": "paudaa",
+        "translation": "pó",
+        "role": "compound"
+    },
+    "end": {
+        "kanji": "エンド",
+        "hiragana": "えんど",
+        "romaji": "endo",
+        "translation": "fim",
+        "role": "compound"
+    },
+    "shovel": {
+        "kanji": "シャベル",
+        "hiragana": "しゃべる",
+        "romaji": "shaberu",
+        "translation": "pá",
+        "role": "no_particle"
+    },
+    "pickaxe": {
+        "kanji": "ツルハシ",
+        "hiragana": "つるはし",
+        "romaji": "tsuruhashi",
+        "translation": "picareta",
+        "role": "no_particle"
+    },
+    "wall": {
+        "kanji": "塀",
+        "hiragana": "へい",
+        "romaji": "hei",
+        "translation": "muro",
+        "role": "no_particle"
+    },
+    "hoe": {
+        "kanji": "クワ",
+        "hiragana": "くわ",
+        "romaji": "kuwa",
+        "translation": "enxada",
+        "role": "no_particle"
+    },
+    "axe": {
+        "kanji": "斧",
+        "hiragana": "おの",
+        "romaji": "ono",
+        "translation": "machado",
+        "role": "no_particle"
+    },
+    "spear": {
+        "kanji": "槍",
+        "hiragana": "やり",
+        "romaji": "yari",
+        "translation": "lança",
+        "role": "no_particle"
+    },
+    "sword": {
+        "kanji": "剣",
+        "hiragana": "けん",
+        "romaji": "ken",
+        "translation": "espada",
+        "role": "no_particle"
+    },
+    "leggings": {
+        "kanji": "レギンス",
+        "hiragana": "れぎんす",
+        "romaji": "reginsu",
+        "translation": "calças",
+        "role": "no_particle"
+    },
+    "helmet": {
+        "kanji": "ヘルメット",
+        "hiragana": "へるめっと",
+        "romaji": "herumetto",
+        "translation": "capacete",
+        "role": "no_particle"
+    },
+    "boots": {
+        "kanji": "ブーツ",
+        "hiragana": "ぶーつ",
+        "romaji": "buutsu",
+        "translation": "botas",
+        "role": "no_particle"
+    },
+    "ingot": {
+        "kanji": "インゴット",
+        "hiragana": "いんごっと",
+        "romaji": "ingotto",
+        "translation": "barra",
+        "role": "compound"
+    },
+    "chestplate": {
+        "kanji": "チェストプレート",
+        "hiragana": "ちぇすとぷれーと",
+        "romaji": "chesutopureeto",
+        "translation": "peitoral",
+        "role": "no_particle"
+    },
+    "clock": {
+        "kanji": "時計",
+        "hiragana": "とけい",
+        "romaji": "tokei",
+        "translation": "relógio",
+        "role": "no_particle"
+    },
+    "raw": {
+        "kanji": "原石",
+        "hiragana": "げんせき",
+        "romaji": "genseki",
+        "translation": "bruto",
+        "role": "inverted_no_particle"
+    },
+    "muddy": {
+        "kanji": "泥だらけ",
+        "hiragana": "どろだらけ",
+        "romaji": "dorodarake",
+        "translation": "enlameado?",
+        "role": "no_particle"
+    },
+    "mud": {
+        "kanji": "泥",
+        "hiragana": "どろ",
+        "romaji": "doro",
+        "translation": "lama",
+        "role": "compound"
+    },
+    "scaffold": {
+        "kanji": "足場",
+        "hiragana": "あしば",
+        "romaji": "ashiba",
+        "translation": "andaime",
+        "role": "compound"
+    }
+}
