@@ -1,0 +1,7702 @@
+{
+  "block.minecraft.warped_shelf": [
+    "warped",
+    "shelf"
+  ],
+  "block.minecraft.test_instance_block": [
+    "test",
+    "instance",
+    "block"
+  ],
+  "item.minecraft.warped_fungus_on_a_stick": [
+    "warped",
+    "mushroom",
+    "tsuki",
+    "no",
+    "stick"
+  ],
+  "block.minecraft.brown_terracotta": [
+    "brown",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.lapis_ore": [
+    "lapis",
+    "lazuli",
+    "ore"
+  ],
+  "item.minecraft.gray_dye": [
+    "gray",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.clock": [
+    "clock"
+  ],
+  "block.minecraft.bamboo_stairs": [
+    "bamboo",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.terracotta": [
+    "terracotta"
+  ],
+  "item.minecraft.stray_spawn_egg": [
+    "stray",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.polished_tuff_slab": [
+    "polished",
+    "reta",
+    "tuff",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.brown_carpet": [
+    "brown",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.prize_pottery_sherd": [
+    "prize",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.purple_terracotta": [
+    "purple",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.bedrock": [
+    "bedrock"
+  ],
+  "block.minecraft.dark_prismarine_slab": [
+    "dark",
+    "prismarine",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.redstone": [
+    "red_1",
+    "stone_1",
+    "dust"
+  ],
+  "block.minecraft.crimson_button": [
+    "crimson",
+    "no",
+    "button"
+  ],
+  "block.minecraft.brown_banner": [
+    "brown",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.cooked_cod": [
+    "cooked",
+    "cod"
+  ],
+  "item.minecraft.panda_spawn_egg": [
+    "panda",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.tipped_arrow": [
+    "tipped",
+    "tsuki",
+    "no",
+    "arrow"
+  ],
+  "block.minecraft.oxidized_cut_copper": [
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.conduit": [
+    "conduit"
+  ],
+  "block.minecraft.red_nether_brick_slab": [
+    "red",
+    "i",
+    "nether",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.yellow_terracotta": [
+    "yellow",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.ochre_froglight": [
+    "ochre",
+    "iro",
+    "no",
+    "froglight"
+  ],
+  "block.minecraft.observer": [
+    "observer"
+  ],
+  "item.minecraft.vex_spawn_egg": [
+    "vex",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.polished_granite_slab": [
+    "polished",
+    "reta",
+    "granite",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.oak_sapling": [
+    "oak",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.cake": [
+    "cake"
+  ],
+  "block.minecraft.dead_bubble_coral": [
+    "dead",
+    "bubble",
+    "coral"
+  ],
+  "block.minecraft.resin_brick_stairs": [
+    "resin",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.stone_stairs": [
+    "stone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.cobblestone_stairs": [
+    "cobblestone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.end_stone_bricks": [
+    "end_stone",
+    "bricks"
+  ],
+  "item.minecraft.stone_shovel": [
+    "stone",
+    "no",
+    "shovel"
+  ],
+  "item.minecraft.arrow": [
+    "arrow"
+  ],
+  "item.minecraft.wooden_pickaxe": [
+    "wooden",
+    "no",
+    "pickaxe"
+  ],
+  "block.minecraft.muddy_mangrove_roots": [
+    "muddy",
+    "no",
+    "mangrove",
+    "no",
+    "roots"
+  ],
+  "block.minecraft.warped_pressure_plate": [
+    "warped",
+    "pressure_plate"
+  ],
+  "block.minecraft.light_blue_stained_glass_pane": [
+    "light_blue",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.horn_coral_fan": [
+    "horn",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.copper_leggings": [
+    "copper",
+    "no",
+    "leggings"
+  ],
+  "item.minecraft.heart_pottery_sherd": [
+    "heart",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.prismarine_brick_slab": [
+    "prismarine",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.yellow_wool": [
+    "yellow",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.jungle_trapdoor": [
+    "jungle",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.dead_tube_coral": [
+    "dead",
+    "tube",
+    "coral"
+  ],
+  "block.minecraft.jungle_log": [
+    "jungle",
+    "no",
+    "log"
+  ],
+  "item.minecraft.zoglin_spawn_egg": [
+    "zoglin",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.yellow_carpet": [
+    "yellow",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.red_harness": [
+    "red",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.mangrove_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "mangrove",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.gray_glazed_terracotta": [
+    "gray",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.calcite": [
+    "calcite"
+  ],
+  "block.minecraft.small_dripleaf": [
+    "small",
+    "dripleaf"
+  ],
+  "item.minecraft.sugar": [
+    "sugar"
+  ],
+  "block.minecraft.cyan_concrete_powder": [
+    "cyan",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.charcoal": [
+    "charcoal"
+  ],
+  "block.minecraft.crimson_fence": [
+    "crimson",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.gray_bed": [
+    "gray",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.stone_brick_slab": [
+    "stone",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.chiseled_polished_blackstone": [
+    "pattern",
+    "iri",
+    "no",
+    "polished",
+    "reta",
+    "blackstone"
+  ],
+  "item.minecraft.orange_bundle": [
+    "orange",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.waxed_copper_golem_statue": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "block.minecraft.black_terracotta": [
+    "black",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.white_stained_glass": [
+    "white",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.mangrove_sign": [
+    "mangrove",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.gray_bundle": [
+    "gray",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.dead_brain_coral_fan": [
+    "dead",
+    "brain",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.green_terracotta": [
+    "green",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "item.minecraft.bone_meal": [
+    "bone_meal"
+  ],
+  "block.minecraft.waxed_exposed_copper_bulb": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.jungle_door": [
+    "jungle",
+    "no",
+    "door"
+  ],
+  "block.minecraft.waxed_copper_door": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.chiseled_tuff_bricks": [
+    "pattern",
+    "iri",
+    "no",
+    "tuff",
+    "bricks"
+  ],
+  "block.minecraft.chorus_flower": [
+    "chorus",
+    "flower_1"
+  ],
+  "item.minecraft.white_bundle": [
+    "white",
+    "bundle"
+  ],
+  "item.minecraft.popped_chorus_fruit": [
+    "popped",
+    "chorus",
+    "fruit"
+  ],
+  "block.minecraft.oxidized_copper_lantern": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "item.minecraft.netherite_boots": [
+    "netherite",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.cracked_deepslate_tiles": [
+    "cracked",
+    "reta",
+    "deepslate",
+    "tiles"
+  ],
+  "item.minecraft.elder_guardian_spawn_egg": [
+    "elder",
+    "guardian",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.waxed_weathered_cut_copper_slab": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.warped_trapdoor": [
+    "warped",
+    "trapdoor"
+  ],
+  "item.minecraft.dried_kelp": [
+    "dried",
+    "shita",
+    "kelp_1"
+  ],
+  "item.minecraft.brewer_pottery_sherd": [
+    "brewer",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.stripped_mangrove_wood": [
+    "bark",
+    "stripped",
+    "mangrove",
+    "no",
+    "wood"
+  ],
+  "item.minecraft.potato": [
+    "potato"
+  ],
+  "block.minecraft.cyan_carpet": [
+    "cyan",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.basalt": [
+    "basalt"
+  ],
+  "block.minecraft.oak_door": [
+    "oak",
+    "no",
+    "door"
+  ],
+  "item.minecraft.diamond_chestplate": [
+    "diamond",
+    "no",
+    "chestplate"
+  ],
+  "item.minecraft.white_harness": [
+    "white",
+    "harness"
+  ],
+  "block.minecraft.chiseled_deepslate": [
+    "pattern",
+    "iri",
+    "no",
+    "deepslate"
+  ],
+  "item.minecraft.spectral_arrow": [
+    "spectral",
+    "no",
+    "arrow"
+  ],
+  "block.minecraft.creeper_head": [
+    "creeper",
+    "no",
+    "head"
+  ],
+  "block.minecraft.flowering_azalea_leaves": [
+    "flowering",
+    "shita",
+    "azalea",
+    "no",
+    "leaves"
+  ],
+  "item.minecraft.prismarine_crystals": [
+    "prismarine",
+    "crystals"
+  ],
+  "block.minecraft.waxed_weathered_copper_golem_statue": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "item.minecraft.pumpkin_seeds": [
+    "pumpkin",
+    "no",
+    "seeds"
+  ],
+  "block.minecraft.dark_prismarine": [
+    "dark",
+    "prismarine"
+  ],
+  "block.minecraft.bamboo_pressure_plate": [
+    "bamboo",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.nether_brick_wall": [
+    "nether",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.cherry_leaves": [
+    "cherry",
+    "no",
+    "leaves"
+  ],
+  "item.minecraft.plenty_pottery_sherd": [
+    "plenty",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.end_stone": [
+    "end_stone"
+  ],
+  "block.minecraft.fire_coral_block": [
+    "fire",
+    "coral",
+    "block"
+  ],
+  "block.minecraft.waxed_exposed_copper_trapdoor": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.warped_door": [
+    "warped",
+    "door"
+  ],
+  "block.minecraft.small_amethyst_bud": [
+    "small",
+    "amethyst",
+    "no",
+    "bud"
+  ],
+  "item.minecraft.salmon_bucket": [
+    "salmon_1",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.deepslate_redstone_ore": [
+    "deepslate_1",
+    "red_1",
+    "stone_1",
+    "ore"
+  ],
+  "block.minecraft.nether_sprouts": [
+    "nether",
+    "sprouts"
+  ],
+  "item.minecraft.bamboo_raft": [
+    "bamboo",
+    "no",
+    "raft"
+  ],
+  "item.minecraft.armor_stand": [
+    "armor_1",
+    "stand"
+  ],
+  "block.minecraft.yellow_concrete": [
+    "yellow",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.cyan_banner": [
+    "cyan",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.emerald": [
+    "emerald"
+  ],
+  "block.minecraft.cherry_stairs": [
+    "cherry",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.furnace_minecart": [
+    "furnace",
+    "tsuki",
+    "no",
+    "minecart"
+  ],
+  "item.minecraft.mourner_pottery_sherd": [
+    "mourner",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.andesite_slab": [
+    "andesite",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.stripped_bamboo_block": [
+    "epidermis",
+    "stripped",
+    "bamboo",
+    "block"
+  ],
+  "item.minecraft.axolotl_bucket": [
+    "axolotl",
+    "iri",
+    "bucket"
+  ],
+  "item.minecraft.ravager_spawn_egg": [
+    "ravager",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.quartz_pillar": [
+    "quartz",
+    "no",
+    "pillar"
+  ],
+  "block.minecraft.prismarine_slab": [
+    "prismarine",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cyan_glazed_terracotta": [
+    "cyan",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.copper_chestplate": [
+    "copper",
+    "no",
+    "chestplate"
+  ],
+  "item.minecraft.diamond_sword": [
+    "diamond",
+    "no",
+    "sword"
+  ],
+  "item.minecraft.cave_spider_spawn_egg": [
+    "cave",
+    "spider",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.deepslate_tile_wall": [
+    "deepslate",
+    "tile",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.oak_planks": [
+    "oak",
+    "no",
+    "planks"
+  ],
+  "item.minecraft.amethyst_shard": [
+    "amethyst",
+    "no",
+    "shard"
+  ],
+  "item.minecraft.ghast_spawn_egg": [
+    "ghast",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.green_concrete": [
+    "green",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.mangrove_pressure_plate": [
+    "mangrove",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.gray_concrete_powder": [
+    "gray",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.blue_egg": [
+    "blue",
+    "iro",
+    "no",
+    "egg"
+  ],
+  "item.minecraft.golden_carrot": [
+    "golden",
+    "no",
+    "carrot"
+  ],
+  "block.minecraft.purple_banner": [
+    "purple",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.copper_trapdoor": [
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.melon_seeds": [
+    "melon",
+    "no",
+    "seeds"
+  ],
+  "item.minecraft.trader_llama_spawn_egg": [
+    "trader",
+    "no",
+    "llama",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.cherry_fence": [
+    "cherry",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.structure_void": [
+    "structure",
+    "void"
+  ],
+  "block.minecraft.weathered_copper_bars": [
+    "weathered",
+    "copper",
+    "bars"
+  ],
+  "block.minecraft.white_glazed_terracotta": [
+    "white",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.orange_concrete_powder": [
+    "orange",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.purple_shulker_box": [
+    "purple",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.creaking_heart": [
+    "creaking",
+    "no",
+    "heart_1"
+  ],
+  "item.minecraft.blue_bundle": [
+    "blue",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "item.minecraft.pink_harness": [
+    "pink",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.baked_potato": [
+    "baked_potato"
+  ],
+  "block.minecraft.nether_bricks": [
+    "nether",
+    "bricks"
+  ],
+  "block.minecraft.copper_block": [
+    "copper",
+    "block"
+  ],
+  "block.minecraft.lime_shulker_box": [
+    "lime",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.oxidized_copper_grate": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.cut_sandstone_slab": [
+    "cut_1",
+    "reta",
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.smooth_red_sandstone_slab": [
+    "smooth",
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.light_blue_bed": [
+    "light_blue",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.chiseled_tuff": [
+    "pattern",
+    "iri",
+    "no",
+    "tuff"
+  ],
+  "item.minecraft.rabbit": [
+    "nama",
+    "no",
+    "rabbit",
+    "niku"
+  ],
+  "block.minecraft.yellow_banner": [
+    "yellow",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.dark_oak_sapling": [
+    "dark",
+    "oak",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.mushroom_stem": [
+    "mushroom",
+    "no",
+    "stem_1"
+  ],
+  "item.minecraft.wither_skeleton_spawn_egg": [
+    "wither",
+    "skeleton",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.resin_brick_slab": [
+    "resin",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.warped_planks": [
+    "warped",
+    "planks"
+  ],
+  "block.minecraft.light_blue_glazed_terracotta": [
+    "light_blue",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.quartz": [
+    "nether",
+    "quartz"
+  ],
+  "item.minecraft.mangrove_boat": [
+    "mangrove",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.acacia_wood": [
+    "acacia",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.glass_pane": [
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.clay": [
+    "clay"
+  ],
+  "block.minecraft.white_concrete": [
+    "white",
+    "concrete"
+  ],
+  "block.minecraft.cracked_nether_bricks": [
+    "cracked",
+    "reta",
+    "nether",
+    "bricks"
+  ],
+  "block.minecraft.polished_blackstone_brick_slab": [
+    "polished",
+    "reta",
+    "blackstone",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.deepslate_diamond_ore": [
+    "deepslate_1",
+    "diamond",
+    "ore"
+  ],
+  "block.minecraft.gravel": [
+    "gravel"
+  ],
+  "block.minecraft.cut_copper_slab": [
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.polished_diorite_slab": [
+    "polished",
+    "reta",
+    "diorite",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.waxed_oxidized_cut_copper_stairs": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.dead_tube_coral_block": [
+    "dead",
+    "tube",
+    "coral",
+    "block"
+  ],
+  "item.minecraft.orange_harness": [
+    "orange",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.pale_oak_shelf": [
+    "pale",
+    "oak",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.spruce_sapling": [
+    "spruce",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.sticky_piston": [
+    "sticky",
+    "piston"
+  ],
+  "item.minecraft.creaking_spawn_egg": [
+    "creaking",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.light_blue_terracotta": [
+    "light_blue",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.pale_oak_door": [
+    "pale",
+    "oak",
+    "no",
+    "door"
+  ],
+  "item.minecraft.birch_boat": [
+    "birch",
+    "no",
+    "boat"
+  ],
+  "item.minecraft.book": [
+    "book"
+  ],
+  "item.minecraft.prismarine_shard": [
+    "prismarine",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.cobblestone_slab": [
+    "cobblestone",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.zombie_villager_spawn_egg": [
+    "villager",
+    "zombie",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.stone_bricks": [
+    "stone",
+    "bricks"
+  ],
+  "item.minecraft.slime_spawn_egg": [
+    "slime",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.experience_bottle": [
+    "experience",
+    "no",
+    "bottle"
+  ],
+  "item.minecraft.rabbit_stew": [
+    "rabbit_1",
+    "stew"
+  ],
+  "item.minecraft.netherite_sword": [
+    "netherite",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.blackstone_slab": [
+    "blackstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.snow": [
+    "snow"
+  ],
+  "item.minecraft.wooden_sword": [
+    "wooden",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.big_dripleaf": [
+    "big",
+    "dripleaf"
+  ],
+  "block.minecraft.sandstone": [
+    "sandstone"
+  ],
+  "block.minecraft.waxed_oxidized_copper_lantern": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.black_shulker_box": [
+    "black",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "item.minecraft.shulker_spawn_egg": [
+    "shulker",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.camel_spawn_egg": [
+    "camel",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.pink_concrete": [
+    "pink",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "item.minecraft.chainmail_chestplate": [
+    "chainmail",
+    "no",
+    "chestplate"
+  ],
+  "item.minecraft.zombie_horse_spawn_egg": [
+    "zombie",
+    "horse_1",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.magenta_concrete_powder": [
+    "magenta",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.blackstone_stairs": [
+    "blackstone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.crimson_hyphae": [
+    "crimson",
+    "no",
+    "hyphae"
+  ],
+  "block.minecraft.black_wool": [
+    "black",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "item.minecraft.nether_brick": [
+    "nether",
+    "brick"
+  ],
+  "block.minecraft.magenta_bed": [
+    "magenta",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.deepslate_tile_slab": [
+    "deepslate",
+    "tile",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.black_concrete": [
+    "black",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.brown_mushroom": [
+    "brown",
+    "iro",
+    "no",
+    "mushroom"
+  ],
+  "block.minecraft.waxed_copper_lantern": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.prismarine": [
+    "prismarine"
+  ],
+  "block.minecraft.purple_stained_glass_pane": [
+    "purple",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.stone_brick_wall": [
+    "stone",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "item.minecraft.bamboo_chest_raft": [
+    "chest",
+    "tsuki",
+    "no",
+    "bamboo",
+    "no",
+    "raft"
+  ],
+  "item.minecraft.copper_nautilus_armor": [
+    "copper",
+    "no",
+    "nautilus",
+    "no",
+    "armor"
+  ],
+  "block.minecraft.red_mushroom_block": [
+    "red",
+    "iro",
+    "no",
+    "mushroom",
+    "block"
+  ],
+  "item.minecraft.spider_eye": [
+    "spider_1",
+    "no",
+    "eye"
+  ],
+  "block.minecraft.stripped_warped_stem": [
+    "epidermis",
+    "stripped",
+    "warped",
+    "stem"
+  ],
+  "block.minecraft.prismarine_wall": [
+    "prismarine",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.exposed_cut_copper_slab": [
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.brick_slab": [
+    "brick",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.glow_squid_spawn_egg": [
+    "glow_1",
+    "squid",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.deepslate_emerald_ore": [
+    "deepslate_1",
+    "emerald",
+    "ore"
+  ],
+  "block.minecraft.pale_oak_stairs": [
+    "pale",
+    "oak",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.spruce_button": [
+    "spruce",
+    "no",
+    "button"
+  ],
+  "block.minecraft.resin_brick_wall": [
+    "resin",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.black_concrete_powder": [
+    "black",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.iron_hoe": [
+    "iron",
+    "no",
+    "hoe"
+  ],
+  "block.minecraft.bamboo_slab": [
+    "bamboo",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.mooshroom_spawn_egg": [
+    "mooshroom",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.brown_stained_glass_pane": [
+    "brown",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.apple": [
+    "apple"
+  ],
+  "block.minecraft.brown_wool": [
+    "brown",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.waxed_oxidized_copper_bars": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "bars"
+  ],
+  "block.minecraft.magenta_carpet": [
+    "magenta",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.netherite_helmet": [
+    "netherite",
+    "no",
+    "helmet"
+  ],
+  "item.minecraft.milk_bucket": [
+    "milk",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.blue_orchid": [
+    "blue_orchid"
+  ],
+  "item.minecraft.evoker_spawn_egg": [
+    "evoker",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.exposed_copper_chain": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "item.minecraft.bone": [
+    "bone"
+  ],
+  "block.minecraft.weathered_copper_trapdoor": [
+    "weathered",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.blue_ice": [
+    "blue",
+    "ice"
+  ],
+  "block.minecraft.light_blue_stained_glass": [
+    "light_blue",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.beehive": [
+    "beehive"
+  ],
+  "item.minecraft.diamond_shovel": [
+    "diamond",
+    "no",
+    "shovel"
+  ],
+  "item.minecraft.diamond_boots": [
+    "diamond",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.bamboo_trapdoor": [
+    "bamboo",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.exposed_copper_golem_statue": [
+    "exposed",
+    "shita",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "block.minecraft.beacon": [
+    "beacon"
+  ],
+  "item.minecraft.acacia_boat": [
+    "acacia",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.polished_andesite": [
+    "polished",
+    "reta",
+    "andesite"
+  ],
+  "item.minecraft.pink_bundle": [
+    "pink",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.gray_concrete": [
+    "gray",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.weathered_copper_chest": [
+    "weathered",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.polished_tuff_wall": [
+    "polished",
+    "reta",
+    "tuff",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.smooth_stone_slab": [
+    "smooth",
+    "stone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.acacia_log": [
+    "acacia",
+    "no",
+    "log"
+  ],
+  "block.minecraft.medium_amethyst_bud": [
+    "medium",
+    "kurai",
+    "no",
+    "amethyst",
+    "no",
+    "bud"
+  ],
+  "item.minecraft.lapis_lazuli": [
+    "lapis",
+    "lazuli"
+  ],
+  "block.minecraft.waxed_exposed_cut_copper_slab": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.black_stained_glass": [
+    "black",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.mangrove_shelf": [
+    "mangrove",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.orange_terracotta": [
+    "orange",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "item.minecraft.iron_horse_armor": [
+    "iron",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "item.minecraft.yellow_harness": [
+    "yellow",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.orange_glazed_terracotta": [
+    "orange",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.red_nether_bricks": [
+    "red",
+    "i",
+    "nether",
+    "bricks"
+  ],
+  "item.minecraft.golden_spear": [
+    "golden",
+    "no",
+    "spear"
+  ],
+  "block.minecraft.tuff_brick_stairs": [
+    "tuff",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.waxed_copper_chain": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "item.minecraft.egg": [
+    "egg"
+  ],
+  "block.minecraft.pink_terracotta": [
+    "pink",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "item.minecraft.filled_map": [
+    "filled_map"
+  ],
+  "item.minecraft.orange_dye": [
+    "orange",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.emerald_block": [
+    "emerald",
+    "block"
+  ],
+  "item.minecraft.pufferfish": [
+    "pufferfish"
+  ],
+  "block.minecraft.warped_fence_gate": [
+    "warped",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.magenta_stained_glass_pane": [
+    "magenta",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.cherry_boat": [
+    "cherry",
+    "no",
+    "boat"
+  ],
+  "item.minecraft.iron_spear": [
+    "iron",
+    "no",
+    "spear"
+  ],
+  "block.minecraft.verdant_froglight": [
+    "verdant",
+    "iro",
+    "no",
+    "froglight"
+  ],
+  "block.minecraft.podzol": [
+    "podzol"
+  ],
+  "block.minecraft.oak_pressure_plate": [
+    "oak",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.stone_brick_stairs": [
+    "stone",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.honey_bottle": [
+    "honey",
+    "iri",
+    "no",
+    "bottle"
+  ],
+  "item.minecraft.fishing_rod": [
+    "fishing_rod"
+  ],
+  "block.minecraft.flower_pot": [
+    "flower_pot"
+  ],
+  "block.minecraft.jungle_shelf": [
+    "jungle",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.bamboo_mosaic": [
+    "bamboo",
+    "mosaic"
+  ],
+  "block.minecraft.cyan_stained_glass": [
+    "cyan",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.smooth_quartz_slab": [
+    "smooth",
+    "quartz",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.bee_spawn_egg": [
+    "bee",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.llama_spawn_egg": [
+    "llama",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.birch_wood": [
+    "birch",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.light_gray_stained_glass_pane": [
+    "light_gray",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.waxed_copper_trapdoor": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.target": [
+    "target"
+  ],
+  "item.minecraft.fox_spawn_egg": [
+    "fox",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.hanging_roots": [
+    "hanging_1",
+    "roots"
+  ],
+  "block.minecraft.gold_ore": [
+    "gold",
+    "ore"
+  ],
+  "block.minecraft.lime_stained_glass_pane": [
+    "lime",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.magenta_bundle": [
+    "magenta",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "item.minecraft.golden_nautilus_armor": [
+    "golden",
+    "no",
+    "nautilus",
+    "no",
+    "armor"
+  ],
+  "block.minecraft.orange_stained_glass": [
+    "orange",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.mossy_stone_brick_stairs": [
+    "mossy",
+    "shita",
+    "stone",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.stone_hoe": [
+    "stone",
+    "no",
+    "hoe"
+  ],
+  "block.minecraft.birch_sapling": [
+    "birch",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.brown_mushroom_block": [
+    "brown",
+    "iro",
+    "no",
+    "mushroom",
+    "block"
+  ],
+  "block.minecraft.spruce_slab": [
+    "spruce",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.copper_hoe": [
+    "copper",
+    "no",
+    "hoe"
+  ],
+  "item.minecraft.glow_berries": [
+    "glow_2",
+    "berries"
+  ],
+  "block.minecraft.polished_andesite_stairs": [
+    "polished",
+    "reta",
+    "andesite",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.iron_golem_spawn_egg": [
+    "iron_1",
+    "golem",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.iron_nugget": [
+    "iron_nugget"
+  ],
+  "item.minecraft.dolphin_spawn_egg": [
+    "dolphin",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.green_bundle": [
+    "green",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.acacia_sign": [
+    "acacia",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.waxed_copper_chest": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.copper_door": [
+    "copper",
+    "no",
+    "door"
+  ],
+  "item.minecraft.dragon_breath": [
+    "dragon",
+    "breath"
+  ],
+  "item.minecraft.enderman_spawn_egg": [
+    "enderman",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.soul_torch": [
+    "soul",
+    "no",
+    "torch"
+  ],
+  "block.minecraft.pink_concrete_powder": [
+    "pink",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.exposed_copper_door": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.cherry_sign": [
+    "cherry",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.item_frame": [
+    "item_frame"
+  ],
+  "block.minecraft.waxed_exposed_copper_golem_statue": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "item.minecraft.beetroot": [
+    "beetroot"
+  ],
+  "block.minecraft.jungle_sapling": [
+    "jungle",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.kelp": [
+    "kelp"
+  ],
+  "block.minecraft.spruce_fence": [
+    "spruce",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.yellow_stained_glass_pane": [
+    "yellow",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.oak_trapdoor": [
+    "oak",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.polished_granite": [
+    "polished",
+    "reta",
+    "granite"
+  ],
+  "block.minecraft.amethyst_block": [
+    "amethyst",
+    "block"
+  ],
+  "block.minecraft.red_concrete": [
+    "red",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.polished_blackstone_bricks": [
+    "polished",
+    "reta",
+    "blackstone",
+    "bricks"
+  ],
+  "item.minecraft.red_dye": [
+    "red",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.glass": [
+    "glass"
+  ],
+  "block.minecraft.cactus": [
+    "cactus"
+  ],
+  "block.minecraft.tnt": [
+    "tnt"
+  ],
+  "block.minecraft.waxed_weathered_copper_lantern": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.white_bed": [
+    "white",
+    "bed"
+  ],
+  "block.minecraft.cyan_wool": [
+    "cyan",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.warped_hanging_sign": [
+    "warped",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.chorus_plant": [
+    "chorus",
+    "plant"
+  ],
+  "item.minecraft.turtle_spawn_egg": [
+    "turtle",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.red_nether_brick_stairs": [
+    "red",
+    "i",
+    "nether",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.stripped_pale_oak_wood": [
+    "bark",
+    "stripped",
+    "pale",
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.diamond_ore": [
+    "diamond",
+    "ore"
+  ],
+  "item.minecraft.cooked_rabbit": [
+    "cooked",
+    "rabbit",
+    "niku"
+  ],
+  "block.minecraft.brain_coral_block": [
+    "brain",
+    "coral",
+    "block"
+  ],
+  "item.minecraft.tropical_fish": [
+    "tropical_fish"
+  ],
+  "block.minecraft.cherry_planks": [
+    "cherry",
+    "no",
+    "planks"
+  ],
+  "item.minecraft.nautilus_spawn_egg": [
+    "nautilus",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.leather": [
+    "leather"
+  ],
+  "block.minecraft.poppy": [
+    "poppy"
+  ],
+  "block.minecraft.pink_stained_glass_pane": [
+    "pink",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.cherry_hanging_sign": [
+    "cherry",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "item.minecraft.firework_rocket": [
+    "rocket",
+    "firework"
+  ],
+  "block.minecraft.crimson_pressure_plate": [
+    "crimson",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.cyan_candle": [
+    "cyan",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "item.minecraft.lava_bucket": [
+    "lava",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.oak_log": [
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.brown_candle": [
+    "brown",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.warped_fungus": [
+    "warped",
+    "mushroom"
+  ],
+  "block.minecraft.jungle_hanging_sign": [
+    "jungle",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.cut_sandstone": [
+    "cut_1",
+    "reta",
+    "sandstone"
+  ],
+  "block.minecraft.red_tulip": [
+    "red",
+    "iro",
+    "no",
+    "tulip"
+  ],
+  "block.minecraft.chest": [
+    "chest"
+  ],
+  "block.minecraft.furnace": [
+    "furnace"
+  ],
+  "block.minecraft.birch_log": [
+    "birch",
+    "no",
+    "log"
+  ],
+  "block.minecraft.waxed_oxidized_cut_copper_slab": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.dark_oak_slab": [
+    "dark",
+    "oak",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.stripped_birch_wood": [
+    "bark",
+    "stripped",
+    "birch",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.diorite": [
+    "diorite"
+  ],
+  "block.minecraft.light_gray_banner": [
+    "light_gray",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.globe_banner_pattern": [
+    "globe",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "block.minecraft.purpur_slab": [
+    "purpur",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.deepslate_brick_slab": [
+    "deepslate",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cobbled_deepslate": [
+    "deepslate",
+    "no",
+    "cobblestone"
+  ],
+  "item.minecraft.wither_spawn_egg": [
+    "wither",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.resin_clump": [
+    "resin",
+    "no",
+    "clump"
+  ],
+  "block.minecraft.purpur_block": [
+    "purpur",
+    "block"
+  ],
+  "item.minecraft.green_harness": [
+    "green",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.parrot_spawn_egg": [
+    "parrot",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.command_block_minecart": [
+    "command",
+    "block",
+    "tsuki",
+    "no",
+    "minecart"
+  ],
+  "block.minecraft.bamboo_shelf": [
+    "bamboo",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.honey_block": [
+    "honey",
+    "block"
+  ],
+  "item.minecraft.cooked_chicken": [
+    "cooked",
+    "chicken_2"
+  ],
+  "item.minecraft.cat_spawn_egg": [
+    "cat",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.spruce_sign": [
+    "spruce",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.cut_red_sandstone": [
+    "cut_1",
+    "reta",
+    "red",
+    "i",
+    "sandstone"
+  ],
+  "block.minecraft.oxidized_copper": [
+    "oxidized",
+    "shita",
+    "copper"
+  ],
+  "block.minecraft.lime_terracotta": [
+    "lime",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "item.minecraft.scrape_pottery_sherd": [
+    "axe",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.oak_sign": [
+    "oak",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.name_tag": [
+    "name_tag"
+  ],
+  "item.minecraft.shield": [
+    "shield"
+  ],
+  "block.minecraft.stripped_birch_log": [
+    "bark",
+    "stripped",
+    "birch",
+    "no",
+    "log"
+  ],
+  "item.minecraft.light_blue_dye": [
+    "light_blue",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.echo_shard": [
+    "echo",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.jungle_sign": [
+    "jungle",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.nether_star": [
+    "nether",
+    "star_1"
+  ],
+  "block.minecraft.dragon_egg": [
+    "dragon",
+    "no",
+    "egg"
+  ],
+  "block.minecraft.polished_deepslate_wall": [
+    "polished",
+    "reta",
+    "deepslate",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.oxidized_copper_trapdoor": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.structure_block": [
+    "structure",
+    "block"
+  ],
+  "block.minecraft.red_wool": [
+    "red",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.jukebox": [
+    "jukebox"
+  ],
+  "block.minecraft.pale_oak_slab": [
+    "pale",
+    "oak",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.wheat_seeds": [
+    "wheat",
+    "no",
+    "seeds"
+  ],
+  "block.minecraft.pale_oak_hanging_sign": [
+    "pale",
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "item.minecraft.glass_bottle": [
+    "glass",
+    "bottle"
+  ],
+  "item.minecraft.ender_eye": [
+    "ender",
+    "eye_1"
+  ],
+  "block.minecraft.exposed_copper_bulb": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.chiseled_bookshelf": [
+    "pattern",
+    "iri",
+    "no",
+    "bookshelf"
+  ],
+  "block.minecraft.red_nether_brick_wall": [
+    "red",
+    "i",
+    "nether",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.gold_block": [
+    "gold",
+    "block"
+  ],
+  "block.minecraft.polished_diorite": [
+    "polished",
+    "reta",
+    "diorite"
+  ],
+  "block.minecraft.lime_concrete_powder": [
+    "lime",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.waxed_copper_block": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "block"
+  ],
+  "block.minecraft.white_carpet": [
+    "white",
+    "carpet"
+  ],
+  "item.minecraft.hoglin_spawn_egg": [
+    "hoglin",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.purple_stained_glass": [
+    "purple",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.composter": [
+    "composter"
+  ],
+  "block.minecraft.pink_bed": [
+    "pink",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "item.minecraft.iron_shovel": [
+    "iron",
+    "no",
+    "shovel"
+  ],
+  "block.minecraft.stripped_warped_hyphae": [
+    "epidermis",
+    "stripped",
+    "warped",
+    "hyphae"
+  ],
+  "block.minecraft.red_sandstone": [
+    "red",
+    "i",
+    "sandstone"
+  ],
+  "item.minecraft.wooden_hoe": [
+    "wooden",
+    "no",
+    "hoe"
+  ],
+  "block.minecraft.gray_stained_glass": [
+    "gray",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.dead_horn_coral": [
+    "dead",
+    "horn",
+    "coral"
+  ],
+  "block.minecraft.sandstone_slab": [
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.bone_block": [
+    "bone",
+    "block"
+  ],
+  "item.minecraft.ocelot_spawn_egg": [
+    "ocelot",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.weathered_copper_golem_statue": [
+    "weathered",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "item.minecraft.suspicious_stew": [
+    "suspicious",
+    "stew"
+  ],
+  "block.minecraft.pale_hanging_moss": [
+    "iro",
+    "aseta",
+    "hanging_1",
+    "moss"
+  ],
+  "block.minecraft.waxed_exposed_copper_bars": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "bars"
+  ],
+  "block.minecraft.waxed_weathered_copper_bulb": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.mangrove_hanging_sign": [
+    "mangrove",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.mud_brick_wall": [
+    "mud",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.pale_oak_log": [
+    "pale",
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.stone_button": [
+    "stone",
+    "no",
+    "button"
+  ],
+  "block.minecraft.mangrove_door": [
+    "mangrove",
+    "no",
+    "door"
+  ],
+  "block.minecraft.raw_copper_block": [
+    "copper",
+    "no",
+    "raw",
+    "block"
+  ],
+  "block.minecraft.packed_mud": [
+    "packed",
+    "mud"
+  ],
+  "block.minecraft.weathered_copper_bulb": [
+    "weathered",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.suspicious_gravel": [
+    "suspicious",
+    "gravel"
+  ],
+  "block.minecraft.pink_stained_glass": [
+    "pink",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "item.minecraft.lime_bundle": [
+    "lime",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "item.minecraft.light_blue_bundle": [
+    "light_blue",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.azalea": [
+    "azalea"
+  ],
+  "item.minecraft.torchflower_seeds": [
+    "torch_1",
+    "flower_1",
+    "no",
+    "seeds"
+  ],
+  "block.minecraft.gray_shulker_box": [
+    "gray",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.skeleton_skull": [
+    "skeleton",
+    "no",
+    "skull"
+  ],
+  "block.minecraft.bubble_coral": [
+    "bubble",
+    "coral"
+  ],
+  "item.minecraft.shears": [
+    "shears"
+  ],
+  "block.minecraft.spruce_pressure_plate": [
+    "spruce",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.exposed_copper": [
+    "exposed",
+    "shita",
+    "copper"
+  ],
+  "block.minecraft.waxed_weathered_cut_copper_stairs": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.stone": [
+    "stone"
+  ],
+  "block.minecraft.light_gray_stained_glass": [
+    "light_gray",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "item.minecraft.wolf_armor": [
+    "wolf",
+    "no",
+    "armor"
+  ],
+  "item.minecraft.golden_pickaxe": [
+    "golden",
+    "no",
+    "pickaxe"
+  ],
+  "item.minecraft.enchanted_golden_apple": [
+    "enchanted",
+    "sa",
+    "reta",
+    "golden",
+    "no",
+    "apple"
+  ],
+  "item.minecraft.gold_nugget": [
+    "gold_nugget"
+  ],
+  "block.minecraft.red_candle": [
+    "red",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "item.minecraft.glow_ink_sac": [
+    "glow",
+    "sac",
+    "ink"
+  ],
+  "block.minecraft.pale_oak_fence_gate": [
+    "pale",
+    "oak",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.blue_concrete_powder": [
+    "blue",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.copper_axe": [
+    "copper",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.black_candle": [
+    "black",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.brown_stained_glass": [
+    "brown",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.dead_horn_coral_fan": [
+    "dead",
+    "horn",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.crimson_door": [
+    "crimson",
+    "no",
+    "door"
+  ],
+  "block.minecraft.granite_stairs": [
+    "granite",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.oxidized_cut_copper_slab": [
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.bricks": [
+    "bricks"
+  ],
+  "block.minecraft.birch_fence": [
+    "birch",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.mangrove_fence": [
+    "mangrove",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.iron_trapdoor": [
+    "iron",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.warped_nylium": [
+    "warped",
+    "nylium"
+  ],
+  "block.minecraft.diorite_slab": [
+    "diorite",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.polar_bear_spawn_egg": [
+    "polar_bear",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.dead_tube_coral_fan": [
+    "dead",
+    "tube",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.diamond_horse_armor": [
+    "diamond",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "block.minecraft.prismarine_stairs": [
+    "prismarine",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.black_glazed_terracotta": [
+    "black",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.copper_helmet": [
+    "copper",
+    "no",
+    "helmet"
+  ],
+  "block.minecraft.chiseled_copper": [
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.cut_red_sandstone_slab": [
+    "cut_1",
+    "reta",
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.iron_nautilus_armor": [
+    "iron",
+    "no",
+    "nautilus",
+    "no",
+    "armor"
+  ],
+  "block.minecraft.exposed_copper_lantern": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.light_blue_candle": [
+    "light_blue",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "item.minecraft.firework_star": [
+    "firework",
+    "no",
+    "star"
+  ],
+  "block.minecraft.dark_oak_planks": [
+    "dark",
+    "oak",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.cherry_trapdoor": [
+    "cherry",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.copper_ore": [
+    "copper",
+    "ore"
+  ],
+  "block.minecraft.iron_chain": [
+    "iron",
+    "no",
+    "chain"
+  ],
+  "item.minecraft.iron_leggings": [
+    "iron",
+    "no",
+    "leggings"
+  ],
+  "item.minecraft.pig_spawn_egg": [
+    "pig_1",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.light_blue_shulker_box": [
+    "light_blue",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.yellow_shulker_box": [
+    "yellow",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.green_candle": [
+    "green",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.green_wool": [
+    "green",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.dried_ghast": [
+    "dried",
+    "shita",
+    "ghast"
+  ],
+  "block.minecraft.birch_pressure_plate": [
+    "birch",
+    "no",
+    "pressure_plate"
+  ],
+  "item.minecraft.armadillo_scute": [
+    "armadillo",
+    "no",
+    "scute"
+  ],
+  "item.minecraft.iron_pickaxe": [
+    "iron",
+    "no",
+    "pickaxe"
+  ],
+  "block.minecraft.dead_horn_coral_block": [
+    "dead",
+    "horn",
+    "coral",
+    "block"
+  ],
+  "block.minecraft.mossy_cobblestone_stairs": [
+    "mossy",
+    "shita",
+    "cobblestone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.orange_carpet": [
+    "orange",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.weathered_copper_grate": [
+    "weathered",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "item.minecraft.cod": [
+    "nama",
+    "cod"
+  ],
+  "item.minecraft.wooden_spear": [
+    "wooden",
+    "no",
+    "spear"
+  ],
+  "item.minecraft.netherite_ingot": [
+    "netherite",
+    "ingot"
+  ],
+  "block.minecraft.cornflower": [
+    "cornflower"
+  ],
+  "block.minecraft.deepslate_brick_stairs": [
+    "deepslate",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.red_bundle": [
+    "red",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.bamboo_fence": [
+    "bamboo",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.purple_glazed_terracotta": [
+    "purple",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.waxed_exposed_cut_copper_stairs": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.lime_carpet": [
+    "lime",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.gunpowder": [
+    "gunpowder"
+  ],
+  "block.minecraft.waxed_oxidized_copper_trapdoor": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.rail": [
+    "rail"
+  ],
+  "item.minecraft.stone_axe": [
+    "stone",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.cherry_sapling": [
+    "cherry",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.glowstone": [
+    "glow_2",
+    "stone_1"
+  ],
+  "block.minecraft.waxed_oxidized_copper_chain": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "item.minecraft.bread": [
+    "bread"
+  ],
+  "block.minecraft.jungle_fence_gate": [
+    "jungle",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.chiseled_red_sandstone": [
+    "pattern",
+    "iri",
+    "no",
+    "red",
+    "i",
+    "sandstone"
+  ],
+  "block.minecraft.polished_diorite_stairs": [
+    "polished",
+    "reta",
+    "diorite",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.angler_pottery_sherd": [
+    "angler",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "item.minecraft.light_gray_harness": [
+    "light_gray",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.deepslate_gold_ore": [
+    "deepslate_1",
+    "gold",
+    "ore"
+  ],
+  "block.minecraft.end_stone_brick_wall": [
+    "end_stone",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.bubble_coral_fan": [
+    "bubble",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.deepslate_coal_ore": [
+    "deepslate_1",
+    "coal",
+    "ore"
+  ],
+  "block.minecraft.dead_fire_coral": [
+    "dead",
+    "fire",
+    "coral"
+  ],
+  "item.minecraft.stone_spear": [
+    "stone",
+    "no",
+    "spear"
+  ],
+  "block.minecraft.orange_concrete": [
+    "orange",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.smooth_sandstone": [
+    "smooth",
+    "sandstone"
+  ],
+  "block.minecraft.brain_coral_fan": [
+    "brain",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.pale_moss_block": [
+    "iro",
+    "aseta",
+    "moss",
+    "block"
+  ],
+  "block.minecraft.blue_stained_glass_pane": [
+    "blue",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.dark_oak_trapdoor": [
+    "dark",
+    "oak",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.gray_harness": [
+    "gray",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.stripped_crimson_hyphae": [
+    "epidermis",
+    "stripped",
+    "crimson",
+    "no",
+    "hyphae"
+  ],
+  "block.minecraft.smoker": [
+    "smoker"
+  ],
+  "item.minecraft.purple_harness": [
+    "purple",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.jungle_wood": [
+    "jungle",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.granite": [
+    "granite"
+  ],
+  "block.minecraft.waxed_exposed_copper_chain": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "block.minecraft.infested_stone_bricks": [
+    "infested",
+    "stone",
+    "bricks"
+  ],
+  "item.minecraft.iron_helmet": [
+    "iron",
+    "no",
+    "helmet"
+  ],
+  "item.minecraft.cow_spawn_egg": [
+    "cow",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.snow_block": [
+    "snow",
+    "block"
+  ],
+  "block.minecraft.reinforced_deepslate": [
+    "reinforced",
+    "sa",
+    "reta",
+    "deepslate"
+  ],
+  "item.minecraft.end_crystal": [
+    "end",
+    "crystal"
+  ],
+  "block.minecraft.blue_stained_glass": [
+    "blue",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.oxidized_copper_bars": [
+    "oxidized",
+    "shita",
+    "copper",
+    "bars"
+  ],
+  "item.minecraft.skeleton_spawn_egg": [
+    "skeleton",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.waxed_oxidized_copper_chest": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "item.minecraft.leather_helmet": [
+    "leather",
+    "no",
+    "helmet_1"
+  ],
+  "block.minecraft.dark_oak_shelf": [
+    "dark",
+    "oak",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.spruce_wood": [
+    "spruce",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.spruce_hanging_sign": [
+    "spruce",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.smooth_red_sandstone_stairs": [
+    "smooth",
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.magenta_wool": [
+    "magenta",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.blue_candle": [
+    "blue",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.pale_moss_carpet": [
+    "iro",
+    "aseta",
+    "moss",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.purple_carpet": [
+    "purple",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.cooked_salmon": [
+    "cooked",
+    "salmon"
+  ],
+  "block.minecraft.brown_concrete_powder": [
+    "brown",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.cherry_door": [
+    "cherry",
+    "no",
+    "door"
+  ],
+  "item.minecraft.copper_spear": [
+    "copper",
+    "no",
+    "spear"
+  ],
+  "block.minecraft.acacia_trapdoor": [
+    "acacia",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.iron_axe": [
+    "iron",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.waxed_oxidized_copper_golem_statue": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "block.minecraft.mud": [
+    "mud"
+  ],
+  "block.minecraft.pink_wool": [
+    "pink",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.stripped_cherry_log": [
+    "bark",
+    "stripped",
+    "cherry",
+    "no",
+    "log"
+  ],
+  "block.minecraft.birch_fence_gate": [
+    "birch",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "item.minecraft.archer_pottery_sherd": [
+    "archer",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.iron_door": [
+    "iron",
+    "no",
+    "door"
+  ],
+  "item.minecraft.black_dye": [
+    "black",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.brick_stairs": [
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.polished_blackstone_brick_wall": [
+    "polished",
+    "reta",
+    "blackstone",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.piston": [
+    "piston"
+  ],
+  "block.minecraft.chiseled_sandstone": [
+    "pattern",
+    "iri",
+    "no",
+    "sandstone"
+  ],
+  "block.minecraft.waxed_weathered_copper_grate": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.red_stained_glass": [
+    "red",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.green_stained_glass_pane": [
+    "green",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.waxed_weathered_copper_trapdoor": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.mangrove_fence_gate": [
+    "mangrove",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "item.minecraft.wooden_axe": [
+    "wooden",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.cobblestone_wall": [
+    "cobblestone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.anvil": [
+    "anvil"
+  ],
+  "item.minecraft.turtle_scute": [
+    "turtle",
+    "no",
+    "scute"
+  ],
+  "block.minecraft.waxed_cut_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.waxed_exposed_copper_chest": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.birch_slab": [
+    "birch",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.cyan_dye": [
+    "cyan",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.infested_stone": [
+    "infested",
+    "stone"
+  ],
+  "item.minecraft.beetroot_soup": [
+    "beetroot",
+    "soup"
+  ],
+  "item.minecraft.leather_boots": [
+    "leather",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.waxed_cut_copper_stairs": [
+    "waxed",
+    "sa",
+    "reta",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.waxed_oxidized_copper_bulb": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "item.minecraft.netherite_nautilus_armor": [
+    "netherite",
+    "no",
+    "nautilus",
+    "no",
+    "armor"
+  ],
+  "block.minecraft.waxed_cut_copper_slab": [
+    "waxed",
+    "sa",
+    "reta",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.lime_dye": [
+    "lime",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.grass_block": [
+    "grass",
+    "block"
+  ],
+  "block.minecraft.brown_concrete": [
+    "brown",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.spruce_trapdoor": [
+    "spruce",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.powder_snow_bucket": [
+    "powder_1",
+    "snow",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.pink_candle": [
+    "pink",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.suspicious_sand": [
+    "suspicious",
+    "sand"
+  ],
+  "block.minecraft.blackstone": [
+    "blackstone"
+  ],
+  "block.minecraft.warped_wart_block": [
+    "warped",
+    "wart",
+    "block"
+  ],
+  "block.minecraft.deepslate_bricks": [
+    "deepslate",
+    "bricks"
+  ],
+  "block.minecraft.blackstone_wall": [
+    "blackstone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.brown_bed": [
+    "brown",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.weathered_copper_lantern": [
+    "weathered",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.dead_brain_coral_block": [
+    "dead",
+    "brain",
+    "coral",
+    "block"
+  ],
+  "item.minecraft.copper_shovel": [
+    "copper",
+    "no",
+    "shovel"
+  ],
+  "block.minecraft.fire_coral_fan": [
+    "fire",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.acacia_fence_gate": [
+    "acacia",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "item.minecraft.villager_spawn_egg": [
+    "villager",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.light_gray_concrete": [
+    "light_gray",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.acacia_door": [
+    "acacia",
+    "no",
+    "door"
+  ],
+  "block.minecraft.dead_brain_coral": [
+    "dead",
+    "brain",
+    "coral"
+  ],
+  "block.minecraft.deepslate_lapis_ore": [
+    "deepslate_1",
+    "lapis",
+    "lazuli",
+    "ore"
+  ],
+  "block.minecraft.soul_soil": [
+    "soul_soil"
+  ],
+  "block.minecraft.blue_terracotta": [
+    "blue",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "item.minecraft.sweet_berries": [
+    "sweet",
+    "berries"
+  ],
+  "block.minecraft.sugar_cane": [
+    "sugar_cane"
+  ],
+  "block.minecraft.orange_stained_glass_pane": [
+    "orange",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.glowstone_dust": [
+    "glow_2",
+    "stone_1",
+    "dust"
+  ],
+  "block.minecraft.dark_oak_wood": [
+    "dark",
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.dark_prismarine_stairs": [
+    "dark",
+    "prismarine",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.saddle": [
+    "saddle"
+  ],
+  "block.minecraft.red_terracotta": [
+    "red",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.green_concrete_powder": [
+    "green",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.happy_ghast_spawn_egg": [
+    "happy",
+    "ghast",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.red_mushroom": [
+    "red",
+    "iro",
+    "no",
+    "mushroom"
+  ],
+  "block.minecraft.blue_bed": [
+    "blue",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.oak_leaves": [
+    "oak",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.polished_blackstone_button": [
+    "polished",
+    "reta",
+    "blackstone",
+    "no",
+    "button"
+  ],
+  "item.minecraft.pillager_spawn_egg": [
+    "pillager",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.deepslate_copper_ore": [
+    "deepslate_1",
+    "copper",
+    "ore"
+  ],
+  "block.minecraft.infested_chiseled_stone_bricks": [
+    "pattern",
+    "iri",
+    "no",
+    "infested",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.coal_block": [
+    "coal",
+    "block"
+  ],
+  "block.minecraft.moss_carpet": [
+    "moss",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.shelter_pottery_sherd": [
+    "shelter",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.cracked_polished_blackstone_bricks": [
+    "cracked",
+    "reta",
+    "polished",
+    "reta",
+    "blackstone",
+    "bricks"
+  ],
+  "item.minecraft.wolf_spawn_egg": [
+    "wolf",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.danger_pottery_sherd": [
+    "danger",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.cracked_deepslate_bricks": [
+    "cracked",
+    "reta",
+    "deepslate",
+    "bricks"
+  ],
+  "item.minecraft.raw_gold": [
+    "gold",
+    "no",
+    "raw"
+  ],
+  "block.minecraft.white_wool": [
+    "white",
+    "wool"
+  ],
+  "item.minecraft.slime_ball": [
+    "slime",
+    "ball"
+  ],
+  "block.minecraft.dark_oak_fence": [
+    "dark",
+    "oak",
+    "no",
+    "fence"
+  ],
+  "item.minecraft.magenta_dye": [
+    "magenta",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.witch_spawn_egg": [
+    "witch",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.strider_spawn_egg": [
+    "strider",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.cherry_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "cherry",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.oxidized_cut_copper_stairs": [
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.golden_axe": [
+    "golden",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.resin_bricks": [
+    "resin",
+    "bricks"
+  ],
+  "block.minecraft.wither_skeleton_skull": [
+    "wither",
+    "skeleton",
+    "no",
+    "skull"
+  ],
+  "item.minecraft.skull_pottery_sherd": [
+    "skull",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "item.minecraft.raw_copper": [
+    "copper",
+    "no",
+    "raw"
+  ],
+  "block.minecraft.pale_oak_wood": [
+    "pale",
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.deepslate_tiles": [
+    "deepslate",
+    "tiles"
+  ],
+  "item.minecraft.leather_leggings": [
+    "leather",
+    "no",
+    "leggings_1"
+  ],
+  "block.minecraft.mangrove_log": [
+    "mangrove",
+    "no",
+    "log"
+  ],
+  "block.minecraft.gray_banner": [
+    "gray",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.polished_tuff": [
+    "polished",
+    "reta",
+    "tuff"
+  ],
+  "item.minecraft.silverfish_spawn_egg": [
+    "silverfish",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.blaze_spawn_egg": [
+    "blaze",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.cyan_concrete": [
+    "cyan",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.red_concrete_powder": [
+    "red",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.dried_kelp_block": [
+    "dried",
+    "shita",
+    "kelp_1",
+    "block"
+  ],
+  "block.minecraft.mangrove_stairs": [
+    "mangrove",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.infested_mossy_stone_bricks": [
+    "mossy",
+    "shita",
+    "infested",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.sunflower": [
+    "sunflower"
+  ],
+  "block.minecraft.blue_concrete": [
+    "blue",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.tuff_wall": [
+    "tuff",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.birch_hanging_sign": [
+    "birch",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.detector_rail": [
+    "detector",
+    "rail"
+  ],
+  "block.minecraft.warped_slab": [
+    "warped",
+    "slab"
+  ],
+  "block.minecraft.white_stained_glass_pane": [
+    "white",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.blade_pottery_sherd": [
+    "sword",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.damaged_anvil": [
+    "damaged",
+    "no",
+    "anvil"
+  ],
+  "block.minecraft.green_glazed_terracotta": [
+    "green",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.light_gray_dye": [
+    "light_gray",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.acacia_pressure_plate": [
+    "acacia",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.weathered_copper": [
+    "weathered",
+    "copper"
+  ],
+  "block.minecraft.packed_ice": [
+    "packed_ice"
+  ],
+  "block.minecraft.dispenser": [
+    "dispenser"
+  ],
+  "block.minecraft.turtle_egg": [
+    "turtle",
+    "no",
+    "egg"
+  ],
+  "block.minecraft.light_gray_glazed_terracotta": [
+    "light_gray",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.brown_harness": [
+    "brown",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.brick": [
+    "brick"
+  ],
+  "block.minecraft.mossy_cobblestone_slab": [
+    "mossy",
+    "shita",
+    "cobblestone",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.lime_harness": [
+    "lime",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.pale_oak_fence": [
+    "pale",
+    "oak",
+    "no",
+    "fence"
+  ],
+  "item.minecraft.snow_golem_spawn_egg": [
+    "snow_1",
+    "golem",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.magma_block": [
+    "magma",
+    "block"
+  ],
+  "item.minecraft.copper_pickaxe": [
+    "copper",
+    "no",
+    "pickaxe"
+  ],
+  "item.minecraft.phantom_spawn_egg": [
+    "phantom",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.emerald_ore": [
+    "emerald",
+    "ore"
+  ],
+  "block.minecraft.end_stone_brick_stairs": [
+    "end_stone",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.breeze_rod": [
+    "breeze",
+    "rod"
+  ],
+  "item.minecraft.ominous_bottle": [
+    "ominous",
+    "bottle"
+  ],
+  "block.minecraft.oxidized_copper_door": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.spruce_door": [
+    "spruce",
+    "no",
+    "door"
+  ],
+  "block.minecraft.oak_shelf": [
+    "oak",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.dark_oak_stairs": [
+    "dark",
+    "oak",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.warped_button": [
+    "warped",
+    "button"
+  ],
+  "item.minecraft.goat_horn": [
+    "goat",
+    "no",
+    "horn_1"
+  ],
+  "item.minecraft.pale_oak_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "pale",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.pumpkin": [
+    "pumpkin"
+  ],
+  "block.minecraft.andesite": [
+    "andesite"
+  ],
+  "block.minecraft.stripped_spruce_log": [
+    "bark",
+    "stripped",
+    "spruce",
+    "no",
+    "log"
+  ],
+  "block.minecraft.waxed_weathered_copper_bars": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "bars"
+  ],
+  "item.minecraft.endermite_spawn_egg": [
+    "endermite",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.lime_concrete": [
+    "lime",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.birch_button": [
+    "birch",
+    "no",
+    "button"
+  ],
+  "block.minecraft.polished_blackstone_pressure_plate": [
+    "polished",
+    "reta",
+    "blackstone",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.pink_petals": [
+    "pink_1",
+    "iro",
+    "no",
+    "petals"
+  ],
+  "block.minecraft.dark_oak_log": [
+    "dark",
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.copper_grate": [
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.resin_block": [
+    "resin",
+    "block"
+  ],
+  "block.minecraft.waxed_weathered_cut_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.jungle_leaves": [
+    "jungle",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.sponge": [
+    "sponge"
+  ],
+  "block.minecraft.waxed_oxidized_copper_grate": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.gray_carpet": [
+    "gray",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.stripped_crimson_stem": [
+    "epidermis",
+    "stripped",
+    "crimson",
+    "no",
+    "stem"
+  ],
+  "item.minecraft.diamond_leggings": [
+    "diamond",
+    "no",
+    "leggings"
+  ],
+  "block.minecraft.deepslate_iron_ore": [
+    "deepslate_1",
+    "iron",
+    "ore"
+  ],
+  "block.minecraft.exposed_chiseled_copper": [
+    "exposed",
+    "shita",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.iron_bars": [
+    "iron",
+    "bars"
+  ],
+  "block.minecraft.light_gray_candle": [
+    "light_gray",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.jungle_fence": [
+    "jungle",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.copper_bars": [
+    "copper",
+    "bars"
+  ],
+  "item.minecraft.golden_boots": [
+    "golden",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.horn_coral_block": [
+    "horn",
+    "coral",
+    "block"
+  ],
+  "block.minecraft.purple_bed": [
+    "purple",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "item.minecraft.blaze_powder": [
+    "blaze",
+    "powder"
+  ],
+  "block.minecraft.black_carpet": [
+    "black",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.bubble_coral_block": [
+    "bubble",
+    "coral",
+    "block"
+  ],
+  "block.minecraft.chain_command_block": [
+    "chain_1",
+    "command",
+    "block"
+  ],
+  "block.minecraft.iron_ore": [
+    "iron",
+    "ore"
+  ],
+  "block.minecraft.mossy_stone_bricks": [
+    "mossy",
+    "shita",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.waxed_weathered_copper_chain": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "block.minecraft.quartz_slab": [
+    "quartz",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.seagrass": [
+    "seagrass"
+  ],
+  "block.minecraft.diamond_block": [
+    "diamond",
+    "block"
+  ],
+  "block.minecraft.purpur_pillar": [
+    "purpur",
+    "no",
+    "pillar"
+  ],
+  "block.minecraft.blue_carpet": [
+    "blue",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.netherite_chestplate": [
+    "netherite",
+    "no",
+    "chestplate"
+  ],
+  "item.minecraft.birch_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "birch",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.waxed_exposed_chiseled_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.magenta_candle": [
+    "magenta",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.bamboo_door": [
+    "bamboo",
+    "no",
+    "door"
+  ],
+  "block.minecraft.spruce_log": [
+    "spruce",
+    "no",
+    "log"
+  ],
+  "item.minecraft.bundle": [
+    "bundle"
+  ],
+  "item.minecraft.ink_sac": [
+    "sac",
+    "ink"
+  ],
+  "item.minecraft.dark_oak_boat": [
+    "dark",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "item.minecraft.gold_ingot": [
+    "gold",
+    "ingot"
+  ],
+  "block.minecraft.acacia_stairs": [
+    "acacia",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.iron_boots": [
+    "iron",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.mossy_stone_brick_wall": [
+    "mossy",
+    "shita",
+    "stone",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "item.minecraft.white_dye": [
+    "white",
+    "dye"
+  ],
+  "item.minecraft.piglin_brute_spawn_egg": [
+    "piglin",
+    "piglin_brute",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.brain_coral": [
+    "brain",
+    "coral"
+  ],
+  "item.minecraft.copper_golem_spawn_egg": [
+    "copper_1",
+    "golem",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.ominous_trial_key": [
+    "ominous",
+    "trial",
+    "no",
+    "key"
+  ],
+  "block.minecraft.dark_oak_sign": [
+    "dark",
+    "oak",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.jack_o_lantern": [
+    "jack_o",
+    "lantern"
+  ],
+  "block.minecraft.mud_brick_stairs": [
+    "mud",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.magenta_glazed_terracotta": [
+    "magenta",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.lime_wool": [
+    "lime",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.pale_oak_sapling": [
+    "pale",
+    "oak",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.white_terracotta": [
+    "white",
+    "terracotta"
+  ],
+  "block.minecraft.deepslate_tile_stairs": [
+    "deepslate",
+    "tile",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.feather": [
+    "feather"
+  ],
+  "block.minecraft.oxidized_copper_golem_statue": [
+    "oxidized",
+    "shita",
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "item.minecraft.wooden_shovel": [
+    "wooden",
+    "no",
+    "shovel"
+  ],
+  "block.minecraft.deepslate_brick_wall": [
+    "deepslate",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.jungle_button": [
+    "jungle",
+    "no",
+    "button"
+  ],
+  "item.minecraft.green_dye": [
+    "green",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.exposed_copper_bars": [
+    "exposed",
+    "shita",
+    "copper",
+    "bars"
+  ],
+  "block.minecraft.crimson_planks": [
+    "crimson",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.sandstone_wall": [
+    "sandstone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.andesite_stairs": [
+    "andesite",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.chainmail_helmet": [
+    "chainmail",
+    "no",
+    "helmet"
+  ],
+  "item.minecraft.carrot": [
+    "carrot"
+  ],
+  "item.minecraft.warden_spawn_egg": [
+    "warden",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.polished_blackstone_slab": [
+    "polished",
+    "reta",
+    "blackstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.red_sand": [
+    "red",
+    "i",
+    "sand"
+  ],
+  "block.minecraft.mud_brick_slab": [
+    "mud",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.blue_harness": [
+    "blue",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.mushroom_stew": [
+    "mushroom",
+    "stew"
+  ],
+  "item.minecraft.golden_apple": [
+    "golden",
+    "no",
+    "apple"
+  ],
+  "block.minecraft.weathered_cut_copper_stairs": [
+    "weathered",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.iron_ingot": [
+    "iron",
+    "ingot"
+  ],
+  "block.minecraft.nether_brick_stairs": [
+    "nether",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.cyan_shulker_box": [
+    "cyan",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.birch_door": [
+    "birch",
+    "no",
+    "door"
+  ],
+  "block.minecraft.netherrack": [
+    "netherrack"
+  ],
+  "block.minecraft.ice": [
+    "ice"
+  ],
+  "block.minecraft.hopper": [
+    "hopper"
+  ],
+  "block.minecraft.crimson_sign": [
+    "crimson",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.lantern": [
+    "lantern"
+  ],
+  "block.minecraft.smooth_sandstone_stairs": [
+    "smooth",
+    "sandstone",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.snowball": [
+    "snowball"
+  ],
+  "block.minecraft.redstone_torch": [
+    "red_1",
+    "stone_1",
+    "torch_1"
+  ],
+  "block.minecraft.lime_glazed_terracotta": [
+    "lime",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.dropper": [
+    "dropper"
+  ],
+  "block.minecraft.dead_bubble_coral_fan": [
+    "dead",
+    "bubble",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.light_gray_bundle": [
+    "light_gray",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.cracked_stone_bricks": [
+    "cracked",
+    "reta",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.quartz_bricks": [
+    "quartz",
+    "bricks"
+  ],
+  "block.minecraft.waxed_oxidized_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper"
+  ],
+  "block.minecraft.wet_sponge": [
+    "wet",
+    "reta",
+    "sponge"
+  ],
+  "block.minecraft.chiseled_quartz_block": [
+    "pattern",
+    "iri",
+    "no",
+    "quartz",
+    "block"
+  ],
+  "block.minecraft.slime_block": [
+    "slime",
+    "block"
+  ],
+  "block.minecraft.quartz_stairs": [
+    "quartz",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.end_rod": [
+    "end",
+    "rod"
+  ],
+  "block.minecraft.pink_carpet": [
+    "pink",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.purple_concrete_powder": [
+    "purple",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.stripped_spruce_wood": [
+    "bark",
+    "stripped",
+    "spruce",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.bookshelf": [
+    "bookshelf"
+  ],
+  "item.minecraft.enchanted_book": [
+    "enchanted",
+    "no",
+    "book"
+  ],
+  "block.minecraft.blue_shulker_box": [
+    "blue",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.pink_banner": [
+    "pink",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.oak_boat": [
+    "oak",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.polished_granite_stairs": [
+    "polished",
+    "reta",
+    "granite",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.smooth_quartz": [
+    "smooth",
+    "quartz",
+    "block"
+  ],
+  "block.minecraft.pale_oak_button": [
+    "pale",
+    "oak",
+    "no",
+    "button"
+  ],
+  "block.minecraft.stripped_dark_oak_log": [
+    "bark",
+    "stripped",
+    "dark",
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.pink_glazed_terracotta": [
+    "pink",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.axolotl_spawn_egg": [
+    "axolotl",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.red_banner": [
+    "red",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.stone_sword": [
+    "stone",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.white_shulker_box": [
+    "white",
+    "shulker_box"
+  ],
+  "item.minecraft.purple_dye": [
+    "purple",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.cod_bucket": [
+    "cod_1",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.pink_tulip": [
+    "pink",
+    "iro",
+    "no",
+    "tulip"
+  ],
+  "block.minecraft.oxidized_copper_chain": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "block.minecraft.waxed_copper_bulb": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.flowering_azalea": [
+    "flowering",
+    "shita",
+    "azalea"
+  ],
+  "item.minecraft.compass": [
+    "compass"
+  ],
+  "block.minecraft.chiseled_nether_bricks": [
+    "pattern",
+    "iri",
+    "no",
+    "nether",
+    "bricks"
+  ],
+  "block.minecraft.light_blue_carpet": [
+    "light_blue",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.melon": [
+    "melon"
+  ],
+  "block.minecraft.acacia_planks": [
+    "acacia",
+    "no",
+    "planks"
+  ],
+  "item.minecraft.magenta_harness": [
+    "magenta",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.warped_fence": [
+    "warped",
+    "fence"
+  ],
+  "block.minecraft.polished_blackstone_wall": [
+    "polished",
+    "reta",
+    "blackstone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.redstone_block": [
+    "red_1",
+    "stone_1",
+    "block"
+  ],
+  "item.minecraft.golden_shovel": [
+    "golden",
+    "no",
+    "shovel"
+  ],
+  "block.minecraft.acacia_fence": [
+    "acacia",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.smooth_red_sandstone": [
+    "smooth",
+    "red",
+    "i",
+    "sandstone"
+  ],
+  "block.minecraft.candle": [
+    "candle"
+  ],
+  "block.minecraft.green_carpet": [
+    "green",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.mossy_stone_brick_slab": [
+    "mossy",
+    "shita",
+    "stone",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.white_candle": [
+    "white",
+    "candle"
+  ],
+  "block.minecraft.acacia_hanging_sign": [
+    "acacia",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.redstone_lamp": [
+    "red_1",
+    "stone_1",
+    "lamp"
+  ],
+  "block.minecraft.polished_deepslate_stairs": [
+    "polished",
+    "reta",
+    "deepslate",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.ender_dragon_spawn_egg": [
+    "ender",
+    "dragon",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.wildflowers": [
+    "wildflowers"
+  ],
+  "item.minecraft.brown_egg": [
+    "brown",
+    "iro",
+    "no",
+    "egg"
+  ],
+  "item.minecraft.shulker_shell": [
+    "shulker",
+    "no",
+    "shell"
+  ],
+  "block.minecraft.birch_shelf": [
+    "birch",
+    "no",
+    "shelf"
+  ],
+  "item.minecraft.paper": [
+    "paper"
+  ],
+  "block.minecraft.waxed_weathered_copper_chest": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.bell": [
+    "bell"
+  ],
+  "block.minecraft.stripped_acacia_wood": [
+    "bark",
+    "stripped",
+    "acacia",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.orange_candle": [
+    "orange",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.copper_golem_statue": [
+    "copper_1",
+    "golem",
+    "no",
+    "statue"
+  ],
+  "block.minecraft.gray_terracotta": [
+    "gray",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.light_blue_concrete_powder": [
+    "light_blue",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.copper_boots": [
+    "copper",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.exposed_cut_copper": [
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.smooth_stone": [
+    "smooth",
+    "stone"
+  ],
+  "block.minecraft.infested_deepslate": [
+    "infested",
+    "deepslate"
+  ],
+  "block.minecraft.sniffer_egg": [
+    "sniffer",
+    "no",
+    "egg"
+  ],
+  "item.minecraft.allay_spawn_egg": [
+    "allay",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.lime_candle": [
+    "lime",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.diorite_wall": [
+    "diorite",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.tuff_brick_slab": [
+    "tuff",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.brush": [
+    "brush"
+  ],
+  "block.minecraft.barrel": [
+    "barrel"
+  ],
+  "block.minecraft.stripped_mangrove_log": [
+    "bark",
+    "stripped",
+    "mangrove",
+    "no",
+    "log"
+  ],
+  "block.minecraft.dandelion": [
+    "dandelion"
+  ],
+  "block.minecraft.dark_oak_leaves": [
+    "dark",
+    "oak",
+    "no",
+    "leaves"
+  ],
+  "item.minecraft.rabbit_spawn_egg": [
+    "rabbit_1",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.tropical_fish_spawn_egg": [
+    "tropical_fish",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.green_stained_glass": [
+    "green",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.command_block": [
+    "command",
+    "block"
+  ],
+  "block.minecraft.black_stained_glass_pane": [
+    "black",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "item.minecraft.painting": [
+    "painting"
+  ],
+  "block.minecraft.black_banner": [
+    "black",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.tube_coral_block": [
+    "tube",
+    "coral",
+    "block"
+  ],
+  "block.minecraft.oak_wood": [
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.powered_rail": [
+    "powered",
+    "rail"
+  ],
+  "block.minecraft.waxed_exposed_copper_lantern": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.oak_button": [
+    "oak",
+    "no",
+    "button"
+  ],
+  "block.minecraft.crimson_stem": [
+    "crimson",
+    "no",
+    "stem"
+  ],
+  "block.minecraft.cherry_shelf": [
+    "cherry",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.quartz_block": [
+    "quartz",
+    "block"
+  ],
+  "block.minecraft.spruce_stairs": [
+    "spruce",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.cod_spawn_egg": [
+    "cod_1",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.netherite_shovel": [
+    "netherite",
+    "no",
+    "shovel"
+  ],
+  "block.minecraft.polished_tuff_stairs": [
+    "polished",
+    "reta",
+    "tuff",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.drowned_spawn_egg": [
+    "drowned",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.brown_bundle": [
+    "brown",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.cut_copper_stairs": [
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.glow_item_frame": [
+    "glow",
+    "item_frame"
+  ],
+  "block.minecraft.polished_basalt": [
+    "polished",
+    "reta",
+    "basalt"
+  ],
+  "block.minecraft.stripped_dark_oak_wood": [
+    "bark",
+    "stripped",
+    "dark",
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.pale_oak_trapdoor": [
+    "pale",
+    "oak",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.acacia_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "acacia",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.rooted_dirt": [
+    "rooted",
+    "dirt"
+  ],
+  "block.minecraft.raw_iron_block": [
+    "iron",
+    "no",
+    "raw",
+    "block"
+  ],
+  "item.minecraft.piglin_spawn_egg": [
+    "piglin",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.purple_wool": [
+    "purple",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.bamboo_mosaic_stairs": [
+    "bamboo",
+    "mosaic",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.red_glazed_terracotta": [
+    "red",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.crimson_shelf": [
+    "crimson",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.light_gray_bed": [
+    "light_gray",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.green_shulker_box": [
+    "green",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.yellow_concrete_powder": [
+    "yellow",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.copper_sword": [
+    "copper",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.polished_andesite_slab": [
+    "polished",
+    "reta",
+    "andesite",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.tropical_fish_bucket": [
+    "tropical_fish",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.exposed_copper_grate": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.spruce_shelf": [
+    "spruce",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.coal_ore": [
+    "coal",
+    "ore"
+  ],
+  "block.minecraft.raw_gold_block": [
+    "gold",
+    "no",
+    "raw",
+    "block"
+  ],
+  "block.minecraft.mossy_cobblestone_wall": [
+    "mossy",
+    "shita",
+    "cobblestone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.end_stone_brick_slab": [
+    "end_stone",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.iron_chestplate": [
+    "iron",
+    "no",
+    "chestplate"
+  ],
+  "block.minecraft.gray_stained_glass_pane": [
+    "gray",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.polished_deepslate_slab": [
+    "polished",
+    "reta",
+    "deepslate",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.stone_pressure_plate": [
+    "stone",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.grindstone": [
+    "grindstone"
+  ],
+  "item.minecraft.dark_oak_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "dark",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.bamboo_button": [
+    "bamboo",
+    "no",
+    "button"
+  ],
+  "block.minecraft.waxed_chiseled_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "item.minecraft.chainmail_boots": [
+    "chainmail",
+    "no",
+    "boots"
+  ],
+  "block.minecraft.dirt": [
+    "dirt"
+  ],
+  "block.minecraft.weathered_copper_door": [
+    "weathered",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.blue_banner": [
+    "blue",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.mangrove_slab": [
+    "mangrove",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cherry_fence_gate": [
+    "cherry",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.exposed_cut_copper_stairs": [
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.tuff_bricks": [
+    "tuff",
+    "bricks"
+  ],
+  "item.minecraft.chest_minecart": [
+    "chest",
+    "tsuki",
+    "no",
+    "minecart"
+  ],
+  "block.minecraft.campfire": [
+    "campfire"
+  ],
+  "block.minecraft.blue_glazed_terracotta": [
+    "blue",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.vindicator_spawn_egg": [
+    "vindicator",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.zombie_head": [
+    "zombie",
+    "no",
+    "head"
+  ],
+  "block.minecraft.blast_furnace": [
+    "blast_furnace"
+  ],
+  "block.minecraft.nether_gold_ore": [
+    "nether",
+    "gold",
+    "ore"
+  ],
+  "item.minecraft.oak_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.oxidized_copper_chest": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.jungle_slab": [
+    "jungle",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.warped_roots": [
+    "warped",
+    "roots"
+  ],
+  "item.minecraft.spider_spawn_egg": [
+    "spider_1",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.cyan_stained_glass_pane": [
+    "cyan",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.spawner": [
+    "monster",
+    "spawner"
+  ],
+  "block.minecraft.test_block": [
+    "test",
+    "block"
+  ],
+  "block.minecraft.piglin_head": [
+    "piglin",
+    "no",
+    "head"
+  ],
+  "block.minecraft.white_tulip": [
+    "white",
+    "tulip"
+  ],
+  "block.minecraft.green_bed": [
+    "green",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "item.minecraft.jungle_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "jungle",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.lime_bed": [
+    "lime",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.yellow_candle": [
+    "yellow",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.crimson_trapdoor": [
+    "crimson",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.gray_wool": [
+    "gray",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.mangrove_button": [
+    "mangrove",
+    "no",
+    "button"
+  ],
+  "item.minecraft.chicken": [
+    "nama",
+    "no",
+    "chicken",
+    "niku"
+  ],
+  "block.minecraft.spruce_fence_gate": [
+    "spruce",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.yellow_stained_glass": [
+    "yellow",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.red_bed": [
+    "red",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.waxed_oxidized_copper_door": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.acacia_shelf": [
+    "acacia",
+    "no",
+    "shelf"
+  ],
+  "item.minecraft.pufferfish_spawn_egg": [
+    "pufferfish",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.weathered_cut_copper_slab": [
+    "weathered",
+    "cut",
+    "no",
+    "copper",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.elytra": [
+    "elytra"
+  ],
+  "block.minecraft.sand": [
+    "sand"
+  ],
+  "block.minecraft.waxed_oxidized_chiseled_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.cherry_button": [
+    "cherry",
+    "no",
+    "button"
+  ],
+  "block.minecraft.andesite_wall": [
+    "andesite",
+    "no",
+    "wall"
+  ],
+  "item.minecraft.leather_horse_armor": [
+    "leather",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "item.minecraft.horse_spawn_egg": [
+    "horse_2",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.birch_sign": [
+    "birch",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.zombie_spawn_egg": [
+    "zombie",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.soul_campfire": [
+    "soul",
+    "no",
+    "campfire"
+  ],
+  "block.minecraft.nether_brick_slab": [
+    "nether",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.smooth_basalt": [
+    "smooth",
+    "basalt"
+  ],
+  "block.minecraft.nether_wart_block": [
+    "nether",
+    "wart",
+    "block"
+  ],
+  "block.minecraft.stripped_oak_log": [
+    "bark",
+    "stripped",
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.smooth_quartz_stairs": [
+    "smooth",
+    "quartz",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.ender_chest": [
+    "ender",
+    "chest"
+  ],
+  "item.minecraft.turtle_helmet": [
+    "turtle",
+    "no",
+    "helmet_2"
+  ],
+  "block.minecraft.stripped_acacia_log": [
+    "bark",
+    "stripped",
+    "acacia",
+    "no",
+    "log"
+  ],
+  "block.minecraft.granite_wall": [
+    "granite",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.bamboo_fence_gate": [
+    "bamboo",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "item.minecraft.breeze_spawn_egg": [
+    "breeze",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.magenta_concrete": [
+    "magenta",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.bamboo_mosaic_slab": [
+    "bamboo",
+    "mosaic",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.netherite_axe": [
+    "netherite",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.birch_trapdoor": [
+    "birch",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.wheat": [
+    "wheat"
+  ],
+  "block.minecraft.birch_stairs": [
+    "birch",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.azalea_leaves": [
+    "azalea",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.shulker_box": [
+    "shulker_box"
+  ],
+  "item.minecraft.blue_dye": [
+    "blue",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.moss_block": [
+    "moss",
+    "block"
+  ],
+  "block.minecraft.waxed_exposed_copper_grate": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.jungle_pressure_plate": [
+    "jungle",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.weathered_copper_chain": [
+    "weathered",
+    "copper",
+    "no",
+    "chain"
+  ],
+  "block.minecraft.torch": [
+    "torch"
+  ],
+  "block.minecraft.light_gray_shulker_box": [
+    "light_gray",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.pink_shulker_box": [
+    "pink",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "item.minecraft.armadillo_spawn_egg": [
+    "armadillo",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.crimson_stairs": [
+    "crimson",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.white_concrete_powder": [
+    "white",
+    "concrete",
+    "powder"
+  ],
+  "block.minecraft.waxed_exposed_cut_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.weathered_chiseled_copper": [
+    "weathered",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "item.minecraft.bat_spawn_egg": [
+    "bat",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.trial_spawner": [
+    "trial",
+    "no",
+    "spawner"
+  ],
+  "block.minecraft.crimson_slab": [
+    "crimson",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.trident": [
+    "trident"
+  ],
+  "block.minecraft.acacia_sapling": [
+    "acacia",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.acacia_slab": [
+    "acacia",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.dragon_head": [
+    "dragon",
+    "no",
+    "head"
+  ],
+  "item.minecraft.ender_pearl": [
+    "ender",
+    "pearl"
+  ],
+  "item.minecraft.zombie_nautilus_spawn_egg": [
+    "zombie",
+    "nautilus",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.cherry_log": [
+    "cherry",
+    "no",
+    "log"
+  ],
+  "block.minecraft.lever": [
+    "lever"
+  ],
+  "block.minecraft.oak_stairs": [
+    "oak",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.stone_pickaxe": [
+    "stone",
+    "no",
+    "pickaxe"
+  ],
+  "block.minecraft.stripped_pale_oak_log": [
+    "bark",
+    "stripped",
+    "pale",
+    "oak",
+    "no",
+    "log"
+  ],
+  "block.minecraft.dark_oak_button": [
+    "dark",
+    "oak",
+    "no",
+    "button"
+  ],
+  "block.minecraft.bamboo_hanging_sign": [
+    "bamboo",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.large_amethyst_bud": [
+    "big",
+    "amethyst",
+    "no",
+    "bud"
+  ],
+  "block.minecraft.purpur_stairs": [
+    "purpur",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.golden_sword": [
+    "golden",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.spruce_leaves": [
+    "spruce",
+    "no",
+    "leaves"
+  ],
+  "item.minecraft.cyan_harness": [
+    "cyan",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.tuff_slab": [
+    "tuff",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.copper_chest": [
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.waxed_copper_grate": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "no",
+    "grate"
+  ],
+  "block.minecraft.cherry_wood": [
+    "cherry",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.sandstone_stairs": [
+    "sandstone",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.golden_helmet": [
+    "golden",
+    "no",
+    "helmet"
+  ],
+  "block.minecraft.oxidized_copper_bulb": [
+    "oxidized",
+    "shita",
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.cobblestone": [
+    "cobblestone"
+  ],
+  "block.minecraft.pale_oak_pressure_plate": [
+    "pale",
+    "oak",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.soul_lantern": [
+    "soul",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.copper_torch": [
+    "copper",
+    "no",
+    "torch"
+  ],
+  "block.minecraft.polished_blackstone_brick_stairs": [
+    "polished",
+    "reta",
+    "blackstone",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.chiseled_stone_bricks": [
+    "pattern",
+    "iri",
+    "no",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.hay_block": [
+    "hay",
+    "no",
+    "block_1"
+  ],
+  "item.minecraft.salmon": [
+    "nama",
+    "salmon"
+  ],
+  "block.minecraft.bamboo_planks": [
+    "bamboo",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.cyan_terracotta": [
+    "cyan",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.crimson_fungus": [
+    "crimson",
+    "no",
+    "mushroom"
+  ],
+  "block.minecraft.chiseled_resin_bricks": [
+    "pattern",
+    "iri",
+    "no",
+    "resin",
+    "bricks"
+  ],
+  "block.minecraft.comparator": [
+    "red_1",
+    "stone_1",
+    "comparator"
+  ],
+  "block.minecraft.light_blue_concrete": [
+    "light_blue",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.acacia_button": [
+    "acacia",
+    "no",
+    "button"
+  ],
+  "block.minecraft.honeycomb_block": [
+    "honeycomb",
+    "block"
+  ],
+  "item.minecraft.beetroot_seeds": [
+    "beetroot",
+    "no",
+    "seeds"
+  ],
+  "item.minecraft.pink_dye": [
+    "pink",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.camel_husk_spawn_egg": [
+    "camel",
+    "husk",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.note_block": [
+    "note",
+    "block"
+  ],
+  "block.minecraft.light_gray_concrete_powder": [
+    "light_gray",
+    "iro",
+    "no",
+    "concrete",
+    "powder"
+  ],
+  "item.minecraft.coal": [
+    "coal"
+  ],
+  "item.minecraft.golden_leggings": [
+    "golden",
+    "no",
+    "leggings"
+  ],
+  "item.minecraft.pumpkin_pie": [
+    "pumpkin_1",
+    "pie"
+  ],
+  "block.minecraft.stripped_cherry_wood": [
+    "bark",
+    "stripped",
+    "cherry",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.activator_rail": [
+    "activator",
+    "rail"
+  ],
+  "block.minecraft.warped_sign": [
+    "warped",
+    "sign"
+  ],
+  "block.minecraft.magenta_terracotta": [
+    "magenta",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.bamboo": [
+    "bamboo"
+  ],
+  "item.minecraft.cooked_porkchop": [
+    "cooked",
+    "pig"
+  ],
+  "item.minecraft.nether_wart": [
+    "nether",
+    "wart"
+  ],
+  "block.minecraft.red_sandstone_wall": [
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "wall"
+  ],
+  "item.minecraft.diamond_axe": [
+    "diamond",
+    "no",
+    "axe"
+  ],
+  "block.minecraft.exposed_copper_chest": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "chest"
+  ],
+  "block.minecraft.magenta_shulker_box": [
+    "magenta",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.purple_candle": [
+    "purple",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "block.minecraft.infested_cobblestone": [
+    "infested",
+    "cobblestone"
+  ],
+  "block.minecraft.red_shulker_box": [
+    "red",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.tube_coral": [
+    "tube",
+    "coral"
+  ],
+  "item.minecraft.creeper_spawn_egg": [
+    "creeper",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.mangrove_planks": [
+    "mangrove",
+    "no",
+    "planks"
+  ],
+  "item.minecraft.black_harness": [
+    "black",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "block.minecraft.tuff_brick_wall": [
+    "tuff",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.stripped_jungle_wood": [
+    "bark",
+    "stripped",
+    "jungle",
+    "no",
+    "wood"
+  ],
+  "item.minecraft.spruce_chest_boat": [
+    "chest",
+    "tsuki",
+    "no",
+    "spruce",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.copper_chain": [
+    "copper",
+    "no",
+    "chain"
+  ],
+  "item.minecraft.diamond_helmet": [
+    "diamond",
+    "no",
+    "helmet"
+  ],
+  "block.minecraft.magenta_banner": [
+    "magenta",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.recovery_compass": [
+    "recovery",
+    "compass"
+  ],
+  "block.minecraft.tuff_stairs": [
+    "tuff",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.pale_oak_leaves": [
+    "pale",
+    "oak",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.wither_rose": [
+    "wither",
+    "rose_1"
+  ],
+  "item.minecraft.friend_pottery_sherd": [
+    "friend",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.diorite_stairs": [
+    "diorite",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.light_gray_terracotta": [
+    "light_gray",
+    "iro",
+    "no",
+    "terracotta"
+  ],
+  "block.minecraft.orange_bed": [
+    "orange",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "item.minecraft.diamond_nautilus_armor": [
+    "diamond",
+    "no",
+    "nautilus",
+    "no",
+    "armor"
+  ],
+  "item.minecraft.chorus_fruit": [
+    "chorus",
+    "fruit"
+  ],
+  "block.minecraft.jungle_stairs": [
+    "jungle",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.yellow_bed": [
+    "yellow",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.iron_block": [
+    "iron",
+    "block"
+  ],
+  "block.minecraft.bamboo_sign": [
+    "bamboo",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.resin_brick": [
+    "resin",
+    "brick"
+  ],
+  "block.minecraft.brick_wall": [
+    "brick",
+    "no",
+    "wall"
+  ],
+  "item.minecraft.flint": [
+    "flint"
+  ],
+  "block.minecraft.polished_deepslate": [
+    "polished",
+    "reta",
+    "deepslate"
+  ],
+  "block.minecraft.lectern": [
+    "lectern"
+  ],
+  "block.minecraft.player_head": [
+    "player",
+    "no",
+    "head"
+  ],
+  "item.minecraft.explorer_pottery_sherd": [
+    "explorer",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.birch_leaves": [
+    "birch",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.bee_nest": [
+    "bee",
+    "no",
+    "nest"
+  ],
+  "item.minecraft.diamond_pickaxe": [
+    "diamond",
+    "no",
+    "pickaxe"
+  ],
+  "block.minecraft.crimson_nylium": [
+    "crimson",
+    "no",
+    "nylium"
+  ],
+  "item.minecraft.sheep_spawn_egg": [
+    "sheep",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.sea_pickle": [
+    "sea_1",
+    "pickle"
+  ],
+  "block.minecraft.dark_oak_door": [
+    "dark",
+    "oak",
+    "no",
+    "door"
+  ],
+  "block.minecraft.exposed_copper_trapdoor": [
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.mossy_cobblestone": [
+    "mossy",
+    "shita",
+    "cobblestone"
+  ],
+  "block.minecraft.light_gray_carpet": [
+    "light_gray",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "block.minecraft.dead_fire_coral_fan": [
+    "dead",
+    "fire",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.diamond_spear": [
+    "diamond",
+    "no",
+    "spear"
+  ],
+  "block.minecraft.cut_copper": [
+    "cut",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.prismarine_brick_stairs": [
+    "prismarine",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.ladder": [
+    "ladder"
+  ],
+  "block.minecraft.spruce_planks": [
+    "spruce",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.purple_concrete": [
+    "purple",
+    "iro",
+    "no",
+    "concrete"
+  ],
+  "block.minecraft.pale_oak_sign": [
+    "pale",
+    "oak",
+    "no",
+    "sign"
+  ],
+  "item.minecraft.netherite_spear": [
+    "netherite",
+    "no",
+    "spear"
+  ],
+  "item.minecraft.netherite_scrap": [
+    "netherite",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.cherry_slab": [
+    "cherry",
+    "no",
+    "slab"
+  ],
+  "item.minecraft.yellow_bundle": [
+    "yellow",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.lapis_block": [
+    "lapis",
+    "lazuli",
+    "block"
+  ],
+  "block.minecraft.jungle_planks": [
+    "jungle",
+    "no",
+    "planks"
+  ],
+  "item.minecraft.honeycomb": [
+    "honeycomb"
+  ],
+  "block.minecraft.red_carpet": [
+    "red",
+    "iro",
+    "no",
+    "carpet"
+  ],
+  "item.minecraft.magma_cream": [
+    "magma",
+    "cream"
+  ],
+  "block.minecraft.light_blue_wool": [
+    "light_blue",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "item.minecraft.netherite_hoe": [
+    "netherite",
+    "no",
+    "hoe"
+  ],
+  "item.minecraft.chainmail_leggings": [
+    "chainmail",
+    "no",
+    "leggings"
+  ],
+  "item.minecraft.skeleton_horse_spawn_egg": [
+    "skeleton",
+    "horse_1",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.squid_spawn_egg": [
+    "squid",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.light_blue_banner": [
+    "light_blue",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.red_stained_glass_pane": [
+    "red",
+    "iro",
+    "no",
+    "stained",
+    "glass",
+    "pane"
+  ],
+  "block.minecraft.oak_fence": [
+    "oak",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.smooth_sandstone_slab": [
+    "smooth",
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.green_banner": [
+    "green",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.red_sandstone_slab": [
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cauldron": [
+    "cauldron"
+  ],
+  "block.minecraft.oak_fence_gate": [
+    "oak",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "item.minecraft.bucket": [
+    "bucket"
+  ],
+  "block.minecraft.orange_banner": [
+    "orange",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "item.minecraft.golden_horse_armor": [
+    "golden",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "item.minecraft.mace": [
+    "mace"
+  ],
+  "block.minecraft.stripped_oak_wood": [
+    "bark",
+    "stripped",
+    "oak",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.mud_bricks": [
+    "mud",
+    "bricks"
+  ],
+  "block.minecraft.nether_brick_fence": [
+    "nether",
+    "brick",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.mangrove_roots": [
+    "mangrove",
+    "no",
+    "roots"
+  ],
+  "block.minecraft.cyan_bed": [
+    "cyan",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.mangrove_leaves": [
+    "mangrove",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.crimson_fence_gate": [
+    "crimson",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.yellow_glazed_terracotta": [
+    "yellow",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "block.minecraft.redstone_ore": [
+    "red_1",
+    "stone_1",
+    "ore"
+  ],
+  "item.minecraft.golden_chestplate": [
+    "golden",
+    "no",
+    "chestplate"
+  ],
+  "item.minecraft.nautilus_shell": [
+    "nautilus",
+    "no",
+    "shell"
+  ],
+  "item.minecraft.golden_hoe": [
+    "golden",
+    "no",
+    "hoe"
+  ],
+  "item.minecraft.rabbit_foot": [
+    "rabbit_1",
+    "no",
+    "foot"
+  ],
+  "block.minecraft.brown_shulker_box": [
+    "brown",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.copper_bulb": [
+    "copper",
+    "no",
+    "bulb"
+  ],
+  "block.minecraft.lily_of_the_valley": [
+    "lily_of_the_valley"
+  ],
+  "item.minecraft.heartbreak_pottery_sherd": [
+    "heartbreak",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.cherry_pressure_plate": [
+    "cherry",
+    "no",
+    "pressure_plate"
+  ],
+  "item.minecraft.black_bundle": [
+    "black",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "item.minecraft.netherite_pickaxe": [
+    "netherite",
+    "no",
+    "pickaxe"
+  ],
+  "block.minecraft.copper_lantern": [
+    "copper",
+    "no",
+    "lantern"
+  ],
+  "block.minecraft.mangrove_wood": [
+    "mangrove",
+    "no",
+    "wood"
+  ],
+  "item.minecraft.cooked_beef": [
+    "cooked_beef"
+  ],
+  "item.minecraft.blaze_rod": [
+    "blaze",
+    "rod"
+  ],
+  "item.minecraft.husk_spawn_egg": [
+    "husk",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.magma_cube_spawn_egg": [
+    "magma",
+    "cube",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.miner_pottery_sherd": [
+    "miner",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.waxed_exposed_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper"
+  ],
+  "block.minecraft.waxed_weathered_copper_door": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.warped_hyphae": [
+    "warped",
+    "hyphae"
+  ],
+  "item.minecraft.trial_key": [
+    "trial",
+    "no",
+    "key"
+  ],
+  "block.minecraft.brown_glazed_terracotta": [
+    "brown",
+    "iro",
+    "no",
+    "glazed",
+    "terracotta"
+  ],
+  "item.minecraft.cyan_bundle": [
+    "cyan",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.shroomlight": [
+    "shroomlight"
+  ],
+  "item.minecraft.iron_sword": [
+    "iron",
+    "no",
+    "sword"
+  ],
+  "block.minecraft.orange_tulip": [
+    "orange",
+    "iro",
+    "no",
+    "tulip"
+  ],
+  "item.minecraft.bow": [
+    "bow"
+  ],
+  "block.minecraft.dark_oak_fence_gate": [
+    "dark",
+    "oak",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.crimson_hanging_sign": [
+    "crimson",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "item.minecraft.pale_oak_boat": [
+    "pale",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.netherite_block": [
+    "netherite",
+    "block"
+  ],
+  "block.minecraft.deepslate": [
+    "deepslate"
+  ],
+  "block.minecraft.infested_cracked_stone_bricks": [
+    "cracked",
+    "reta",
+    "infested",
+    "stone",
+    "bricks"
+  ],
+  "block.minecraft.torchflower": [
+    "torch_1",
+    "flower_1"
+  ],
+  "block.minecraft.oxidized_chiseled_copper": [
+    "oxidized",
+    "shita",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.waxed_copper_bars": [
+    "waxed",
+    "sa",
+    "reta",
+    "copper",
+    "bars"
+  ],
+  "block.minecraft.warped_stairs": [
+    "warped",
+    "stairs"
+  ],
+  "item.minecraft.minecart": [
+    "minecart"
+  ],
+  "item.minecraft.frog_spawn_egg": [
+    "frog",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.orange_wool": [
+    "orange",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "item.minecraft.diamond": [
+    "diamond"
+  ],
+  "item.minecraft.jungle_boat": [
+    "jungle",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.waxed_oxidized_cut_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "item.minecraft.copper_ingot": [
+    "copper",
+    "ingot"
+  ],
+  "block.minecraft.dark_oak_hanging_sign": [
+    "dark",
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.magenta_stained_glass": [
+    "magenta",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.orange_shulker_box": [
+    "orange",
+    "iro",
+    "no",
+    "shulker_box"
+  ],
+  "block.minecraft.weathered_cut_copper": [
+    "weathered",
+    "cut",
+    "no",
+    "copper"
+  ],
+  "item.minecraft.mule_spawn_egg": [
+    "mule",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.waxed_weathered_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "copper"
+  ],
+  "item.minecraft.goat_spawn_egg": [
+    "goat",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.diamond_hoe": [
+    "diamond",
+    "no",
+    "hoe"
+  ],
+  "block.minecraft.oak_hanging_sign": [
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.cactus_flower": [
+    "cactus",
+    "no",
+    "flower"
+  ],
+  "block.minecraft.bamboo_block": [
+    "bamboo",
+    "block"
+  ],
+  "item.minecraft.copper_horse_armor": [
+    "copper",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "block.minecraft.mangrove_trapdoor": [
+    "mangrove",
+    "no",
+    "trapdoor"
+  ],
+  "item.minecraft.hopper_minecart": [
+    "hopper",
+    "tsuki",
+    "no",
+    "minecart"
+  ],
+  "item.minecraft.sniffer_spawn_egg": [
+    "sniffer",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.tube_coral_fan": [
+    "tube",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.guardian_spawn_egg": [
+    "guardian",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.repeater": [
+    "red_1",
+    "stone_1",
+    "repeater"
+  ],
+  "block.minecraft.tuff": [
+    "tuff"
+  ],
+  "block.minecraft.acacia_leaves": [
+    "acacia",
+    "no",
+    "leaves"
+  ],
+  "item.minecraft.leather_chestplate": [
+    "leather",
+    "no",
+    "chestplate_1"
+  ],
+  "item.minecraft.flow_pottery_sherd": [
+    "flow",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.horn_coral": [
+    "horn",
+    "coral"
+  ],
+  "item.minecraft.raw_iron": [
+    "iron",
+    "no",
+    "raw"
+  ],
+  "item.minecraft.donkey_spawn_egg": [
+    "donkey",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.chicken_spawn_egg": [
+    "chicken_1",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.porkchop": [
+    "nama",
+    "no",
+    "pig",
+    "niku"
+  ],
+  "block.minecraft.white_banner": [
+    "white",
+    "banner"
+  ],
+  "block.minecraft.waxed_weathered_chiseled_copper": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "pattern",
+    "iri",
+    "no",
+    "copper"
+  ],
+  "block.minecraft.large_fern": [
+    "big",
+    "fern"
+  ],
+  "item.minecraft.clay_ball": [
+    "clay",
+    "ball_1"
+  ],
+  "block.minecraft.waxed_exposed_copper_door": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "copper",
+    "no",
+    "door"
+  ],
+  "block.minecraft.warped_stem": [
+    "warped",
+    "stem"
+  ],
+  "item.minecraft.netherite_leggings": [
+    "netherite",
+    "no",
+    "leggings"
+  ],
+  "block.minecraft.gray_candle": [
+    "gray",
+    "iro",
+    "no",
+    "candle"
+  ],
+  "item.minecraft.light_blue_harness": [
+    "light_blue",
+    "iro",
+    "no",
+    "harness"
+  ],
+  "item.minecraft.purple_bundle": [
+    "purple",
+    "iro",
+    "no",
+    "bundle"
+  ],
+  "block.minecraft.light_gray_wool": [
+    "light_gray",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.black_bed": [
+    "black",
+    "iro",
+    "no",
+    "bed"
+  ],
+  "block.minecraft.granite_slab": [
+    "granite",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.lime_stained_glass": [
+    "lime",
+    "iro",
+    "no",
+    "stained",
+    "glass"
+  ],
+  "block.minecraft.dead_bubble_coral_block": [
+    "dead",
+    "bubble",
+    "coral",
+    "block"
+  ],
+  "item.minecraft.pufferfish_bucket": [
+    "pufferfish",
+    "iri",
+    "bucket"
+  ],
+  "item.minecraft.spruce_boat": [
+    "spruce",
+    "no",
+    "boat"
+  ],
+  "block.minecraft.dirt_path": [
+    "dirt",
+    "no",
+    "path"
+  ],
+  "item.minecraft.ghast_tear": [
+    "ghast",
+    "no",
+    "tear"
+  ],
+  "block.minecraft.red_sandstone_stairs": [
+    "red",
+    "i",
+    "sandstone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.pale_oak_planks": [
+    "pale",
+    "oak",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.dark_oak_pressure_plate": [
+    "dark",
+    "oak",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.crimson_roots": [
+    "crimson",
+    "no",
+    "roots"
+  ],
+  "item.minecraft.beef": [
+    "nama",
+    "no",
+    "beef",
+    "niku"
+  ],
+  "block.minecraft.fern": [
+    "fern"
+  ],
+  "block.minecraft.coarse_dirt": [
+    "coarse",
+    "dirt"
+  ],
+  "item.minecraft.crossbow": [
+    "crossbow"
+  ],
+  "block.minecraft.polished_blackstone": [
+    "polished",
+    "reta",
+    "blackstone"
+  ],
+  "block.minecraft.polished_blackstone_stairs": [
+    "polished",
+    "reta",
+    "blackstone",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.sea_lantern": [
+    "sea_1",
+    "lantern"
+  ],
+  "block.minecraft.stripped_jungle_log": [
+    "bark",
+    "stripped",
+    "jungle",
+    "no",
+    "log"
+  ],
+  "block.minecraft.dead_fire_coral_block": [
+    "dead",
+    "fire",
+    "coral",
+    "block"
+  ],
+  "item.minecraft.salmon_spawn_egg": [
+    "salmon_1",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.birch_planks": [
+    "birch",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.stone_slab": [
+    "stone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.prismarine_bricks": [
+    "prismarine",
+    "bricks"
+  ],
+  "item.minecraft.yellow_dye": [
+    "yellow",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "block.minecraft.soul_sand": [
+    "soul_sand"
+  ],
+  "block.minecraft.nether_quartz_ore": [
+    "nether",
+    "quartz",
+    "ore"
+  ],
+  "item.minecraft.tnt_minecart": [
+    "tnt",
+    "tsuki",
+    "no",
+    "minecart"
+  ],
+  "block.minecraft.lime_banner": [
+    "lime",
+    "iro",
+    "no",
+    "banner"
+  ],
+  "block.minecraft.oak_slab": [
+    "oak",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.blue_wool": [
+    "blue",
+    "iro",
+    "no",
+    "wool"
+  ],
+  "block.minecraft.fire_coral": [
+    "fire",
+    "coral"
+  ],
+  "item.minecraft.netherite_horse_armor": [
+    "netherite",
+    "no",
+    "horse",
+    "armor"
+  ],
+  "item.minecraft.brown_dye": [
+    "brown",
+    "iro",
+    "no",
+    "dye"
+  ],
+  "item.minecraft.knowledge_book": [
+    "knowledge",
+    "no",
+    "book"
+  ],
+  "block.minecraft.pearlescent_froglight": [
+    "pearlescent",
+    "iro",
+    "no",
+    "froglight"
+  ],
+  "item.minecraft.howl_pottery_sherd": [
+    "howl",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "item.minecraft.piglin_banner_pattern": [
+    "pig_1",
+    "no",
+    "nose",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.creeper_banner_pattern": [
+    "creeper",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.phantom_membrane": [
+    "phantom",
+    "no",
+    "membrane"
+  ],
+  "item.minecraft.heart_of_the_sea": [
+    "sea",
+    "no",
+    "heart"
+  ],
+  "item.minecraft.parched_spawn_egg": [
+    "perched",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.dripstone_block": [
+    "dripstone",
+    "block"
+  ],
+  "item.minecraft.burn_pottery_sherd": [
+    "burn",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "item.minecraft.snort_pottery_sherd": [
+    "nose",
+    "wo",
+    "to_sound",
+    "animal",
+    "no",
+    "pottery",
+    "no",
+    "shard"
+  ],
+  "block.minecraft.dead_bush": [
+    "dry",
+    "wood"
+  ],
+  "block.minecraft.weathered_lightning_rod": [
+    "weathered",
+    "lightning_rod"
+  ],
+  "block.minecraft.waxed_weathered_lightning_rod": [
+    "waxed",
+    "sa",
+    "reta",
+    "weathered",
+    "lightning_rod"
+  ],
+  "block.minecraft.cobbled_deepslate_wall": [
+    "deepslate",
+    "no",
+    "cobblestone",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.cobbled_deepslate_slab": [
+    "deepslate",
+    "no",
+    "cobblestone",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.waxed_exposed_lightning_rod": [
+    "waxed",
+    "sa",
+    "reta",
+    "exposed",
+    "shita",
+    "lightning_rod"
+  ],
+  "block.minecraft.exposed_lightning_rod": [
+    "exposed",
+    "shita",
+    "lightning_rod"
+  ],
+  "block.minecraft.waxed_lightning_rod": [
+    "waxed",
+    "sa",
+    "reta",
+    "lightning_rod"
+  ],
+  "block.minecraft.amethyst_cluster": [
+    "amethyst",
+    "no",
+    "clump"
+  ],
+  "block.minecraft.lightning_rod": [
+    "lightning_rod"
+  ],
+  "block.minecraft.mangrove_propagule": [
+    "mangrove",
+    "no",
+    "bud"
+  ],
+  "item.minecraft.melon_slice": [
+    "melon",
+    "no",
+    "slice"
+  ],
+  "item.minecraft.water_bucket": [
+    "water",
+    "iri",
+    "bucket"
+  ],
+  "item.minecraft.flower_banner_pattern": [
+    "flower",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "block.minecraft.oxidized_lightning_rod": [
+    "oxidized",
+    "shita",
+    "lightning_rod"
+  ],
+  "block.minecraft.gilded_blackstone": [
+    "gilded",
+    "blackstone"
+  ],
+  "item.minecraft.flow_banner_pattern": [
+    "flow",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "block.minecraft.cobbled_deepslate_stairs": [
+    "deepslate",
+    "no",
+    "cobblestone",
+    "no",
+    "stairs"
+  ],
+  "item.minecraft.copper_nugget": [
+    "copper",
+    "clump"
+  ],
+  "item.minecraft.carrot_on_a_stick": [
+    "carrot",
+    "tsuki",
+    "no",
+    "stick"
+  ],
+  "item.minecraft.skull_banner_pattern": [
+    "skull_1",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.rabbit_hide": [
+    "rabbit_1",
+    "no",
+    "skin"
+  ],
+  "block.minecraft.end_portal_frame": [
+    "end",
+    "portal",
+    "frame"
+  ],
+  "block.minecraft.short_grass": [
+    "short",
+    "grass"
+  ],
+  "block.minecraft.trapped_chest": [
+    "trap",
+    "chest"
+  ],
+  "item.minecraft.fire_charge": [
+    "fire_charge"
+  ],
+  "item.minecraft.zombified_piglin_spawn_egg": [
+    "zombie",
+    "piglin",
+    "no",
+    "spawn_egg"
+  ],
+  "block.minecraft.petrified_oak_slab": [
+    "petrification",
+    "shita",
+    "oak",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.tall_dry_grass": [
+    "tall",
+    "dry",
+    "grass"
+  ],
+  "item.minecraft.tadpole_spawn_egg": [
+    "tadpole",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.tadpole_bucket": [
+    "tadpole",
+    "iri",
+    "bucket"
+  ],
+  "block.minecraft.frogspawn": [
+    "frog",
+    "no",
+    "egg"
+  ],
+  "item.minecraft.bowl": [
+    "bowl"
+  ],
+  "block.minecraft.sculk_sensor": [
+    "skulk",
+    "sensor"
+  ],
+  "block.minecraft.vault": [
+    "vault"
+  ],
+  "block.minecraft.lily_pad": [
+    "lily",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.pointed_dripstone": [
+    "dripstone"
+  ],
+  "block.minecraft.bush": [
+    "bush"
+  ],
+  "block.minecraft.crying_obsidian": [
+    "crying",
+    "obsidian"
+  ],
+  "block.minecraft.obsidian": [
+    "obsidian"
+  ],
+  "block.minecraft.lodestone": [
+    "lodestone"
+  ],
+  "item.minecraft.music_disc_far": [
+    "record"
+  ],
+  "item.minecraft.music_disc_creator": [
+    "record"
+  ],
+  "item.minecraft.music_disc_tears": [
+    "record"
+  ],
+  "item.minecraft.music_disc_wait": [
+    "record"
+  ],
+  "item.minecraft.music_disc_ward": [
+    "record"
+  ],
+  "item.minecraft.music_disc_blocks": [
+    "record"
+  ],
+  "item.minecraft.music_disc_precipice": [
+    "record"
+  ],
+  "item.minecraft.music_disc_mellohi": [
+    "record"
+  ],
+  "item.minecraft.music_disc_lava_chicken": [
+    "record"
+  ],
+  "item.minecraft.music_disc_creator_music_box": [
+    "record"
+  ],
+  "item.minecraft.music_disc_mall": [
+    "record"
+  ],
+  "item.minecraft.music_disc_stal": [
+    "record"
+  ],
+  "item.minecraft.music_disc_cat": [
+    "record"
+  ],
+  "item.minecraft.music_disc_relic": [
+    "record"
+  ],
+  "item.minecraft.music_disc_chirp": [
+    "record"
+  ],
+  "item.minecraft.music_disc_pigstep": [
+    "record"
+  ],
+  "item.minecraft.music_disc_strad": [
+    "record"
+  ],
+  "item.minecraft.music_disc_5": [
+    "record"
+  ],
+  "item.minecraft.music_disc_11": [
+    "record"
+  ],
+  "item.minecraft.music_disc_13": [
+    "record"
+  ],
+  "item.minecraft.disc_fragment_5": [
+    "record",
+    "no",
+    "fragments"
+  ],
+  "block.minecraft.cobweb": [
+    "spider_1",
+    "no",
+    "nest"
+  ],
+  "block.minecraft.mycelium": [
+    "mycelium"
+  ],
+  "item.minecraft.string": [
+    "string"
+  ],
+  "block.minecraft.air": [
+    "air"
+  ],
+  "block.minecraft.azure_bluet": [
+    "azure_bluet"
+  ],
+  "block.minecraft.firefly_bush": [
+    "firefly",
+    "no",
+    "bush"
+  ],
+  "block.minecraft.sculk_catalyst": [
+    "skulk",
+    "catalyst"
+  ],
+  "block.minecraft.glow_lichen": [
+    "glow_1",
+    "lichen"
+  ],
+  "block.minecraft.lilac": [
+    "lilac"
+  ],
+  "block.minecraft.vine": [
+    "vine"
+  ],
+  "block.minecraft.weeping_vines": [
+    "weeping",
+    "vine"
+  ],
+  "block.minecraft.barrier": [
+    "barrier"
+  ],
+  "block.minecraft.short_dry_grass": [
+    "short",
+    "dry",
+    "grass"
+  ],
+  "block.minecraft.tall_grass": [
+    "tall",
+    "grass"
+  ],
+  "item.minecraft.cookie": [
+    "cookie"
+  ],
+  "item.minecraft.spyglass": [
+    "spyglass"
+  ],
+  "block.minecraft.decorated_pot": [
+    "decorated",
+    "pottery"
+  ],
+  "item.minecraft.stick": [
+    "stick"
+  ],
+  "item.minecraft.lead": [
+    "lead"
+  ],
+  "block.minecraft.scaffolding": [
+    "scaffolding"
+  ],
+  "block.minecraft.sculk": [
+    "skulk"
+  ]
+}

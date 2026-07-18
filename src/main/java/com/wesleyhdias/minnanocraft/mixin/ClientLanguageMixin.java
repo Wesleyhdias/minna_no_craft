@@ -1,11 +1,8 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.mixin.acessor.ClientLanguageAccessor;
-import com.wesleyhdias.minnanocraft.services.TranslationManager;
+import com.wesleyhdias.minnanocraft.services.ItemNameBuilder;
 
 import net.minecraft.client.resources.language.ClientLanguage;
-import net.minecraft.server.packs.resources.ResourceManager;
-import net.fabricmc.loader.api.FabricLoader;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -15,15 +12,6 @@ import org.spongepowered.asm.mixin.Mixin;
 
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
-
-import java.io.IOException;
-import java.io.Writer;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-
-import java.util.List;
-import java.util.Map;
 
 @Mixin(ClientLanguage.class)
 public class ClientLanguageMixin {
@@ -37,10 +25,11 @@ public class ClientLanguageMixin {
 
     @Inject(method = "getOrDefault", at = @At("RETURN"), cancellable = true)
     private void onGetOrDefault(String key, String defaultValue, CallbackInfoReturnable<String> cir) {
-
-        String originalText = cir.getReturnValue();
-        String customText = TranslationManager.getInstance().processTranslation(key, originalText);
-        cir.setReturnValue(customText);
+        
+        String customText = ItemNameBuilder.build(key);
+        if(customText != null) {
+            cir.setReturnValue(customText);
+        }
     }
 
 

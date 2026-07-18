@@ -1,8 +1,9 @@
-package com.wesleyhdias.minnanocraft.data;
+package com.wesleyhdias.minnanocraft.data.loader;
 
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.wesleyhdias.minnanocraft.MinnaNoCraft;
+import com.wesleyhdias.minnanocraft.data.models.Word;
 
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -26,7 +27,7 @@ public class DictionaryLoader {
     private static void load() {
         try (InputStream is = DictionaryLoader.class
                 .getClassLoader()
-                .getResourceAsStream("assets/lang/novo_banco_palavras.json")) {
+                .getResourceAsStream("assets/lang/banco_palavras_v3.json")) {
 
             if (is == null) {
                 MinnaNoCraft.LOGGER.error("Dicionario não encontrado! ");
