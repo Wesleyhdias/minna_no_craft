@@ -10,7 +10,6 @@ public class DifficultyRenderer {
     ) {
 
         return switch (level) {
-            case 0 -> word.translation() + " ";
             case 1 -> word.romanji();
             case 2 -> word.hiragana();
             default -> word.kanji();

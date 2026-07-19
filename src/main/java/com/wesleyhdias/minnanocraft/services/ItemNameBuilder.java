@@ -16,10 +16,7 @@ public class ItemNameBuilder {
 
     public static String build(String translationKey) {
 
-        List<String> structure =
-                ItemStructureLoader
-                        .getStructures()
-                        .get(translationKey);
+        List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
         // Não existe estrutura -> devolve a própria chave.
         if (structure == null) {

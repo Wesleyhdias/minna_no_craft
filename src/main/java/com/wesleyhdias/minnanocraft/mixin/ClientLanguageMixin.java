@@ -2,6 +2,8 @@ package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.services.ItemNameBuilder;
 
+import com.wesleyhdias.minnanocraft.services.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.services.TranslationModeResolver;
 import net.minecraft.client.resources.language.ClientLanguage;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -31,8 +33,21 @@ public class ClientLanguageMixin {
 
     @Inject(method = "getOrDefault", at = @At("RETURN"), cancellable = true)
     private void onGetOrDefault(String key, String defaultValue, CallbackInfoReturnable<String> cir) {
-        
-        String customText = ItemNameBuilder.build(key);
+
+        String originalText = cir.getReturnValue();
+        String customText = null;
+
+        if (TranslationModeResolver.useJapanese(key)) {
+
+            customText = ItemNameBuilder.build(key);
+        }else {
+
+            customText = PortugueseItemNameBuilder.build(
+                    key,
+                    originalText
+            );
+        }
+
         if(customText != null) {
             cir.setReturnValue(customText);
         }

@@ -1,5 +1,5 @@
 package com.wesleyhdias.minnanocraft.data.models;
 
-public record Word(String translation, String kanji, String hiragana, String romanji) {
+import java.util.List;
 
-}
+public record Word(List<String> translations, String kanji, String hiragana, String romanji) { }

@@ -1,3218 +1,4290 @@
 {
-    "verdant": {
-        "translation": "verde?",
-        "kanji": "新緑",
-        "hiragana": "しんりょく",
-        "romanji": "shinryoku"
-    },
-    "light_gray": {
-        "translation": "azul claro",
-        "kanji": "薄灰",
-        "hiragana": "うすはい",
-        "romanji": "usuhai"
-    },
-    "red": {
-        "translation": "vermelho",
-        "kanji": "赤",
-        "hiragana": "あか",
-        "romanji": "aka"
-    },
-    "red_1": {
-        "translation": "vermelho",
-        "kanji": "レッド",
-        "hiragana": "れっど",
-        "romanji": "reddo"
-    },
-    "lime": {
-        "translation": "lime?",
-        "kanji": "黄緑",
-        "hiragana": "きみどり",
-        "romanji": "kimidori"
-    },
-    "cyan": {
-        "translation": "ciano",
-        "kanji": "青緑",
-        "hiragana": "あおみどり",
-        "romanji": "aomidori"
-    },
-    "light_blue": {
-        "translation": "azul claro",
-        "kanji": "空",
-        "hiragana": "そら",
-        "romanji": "sora"
-    },
-    "ochre": {
-        "translation": "ocre",
-        "kanji": "黄土",
-        "hiragana": "おうど",
-        "romanji": "oudo"
-    },
-    "brown": {
-        "translation": "marrom",
-        "kanji": "茶",
-        "hiragana": "ちゃ",
-        "romanji": "cha"
-    },
-    "gray": {
-        "translation": "cinza",
-        "kanji": "灰",
-        "hiragana": "はい",
-        "romanji": "hai"
-    },
-    "pearlescent": {
-        "translation": "perolado",
-        "kanji": "真珠",
-        "hiragana": "しんじゅ",
-        "romanji": "shinju"
-    },
-    "purple": {
-        "translation": "roxo",
-        "kanji": "紫",
-        "hiragana": "むらさき",
-        "romanji": "murasaki"
-    },
-    "yellow": {
-        "translation": "amarelo",
-        "kanji": "黄",
-        "hiragana": "き",
-        "romanji": "ki"
-    },
-    "green": {
-        "translation": "verde",
-        "kanji": "緑",
-        "hiragana": "みどり",
-        "romanji": "midori"
-    },
-    "blue": {
-        "translation": "azul",
-        "kanji": "青",
-        "hiragana": "あお",
-        "romanji": "ao"
-    },
-    "orange": {
-        "translation": "laranja",
-        "kanji": "橙",
-        "hiragana": "だいだい",
-        "romanji": "daidai"
-    },
-    "black": {
-        "translation": "preto",
-        "kanji": "黒",
-        "hiragana": "くろ",
-        "romanji": "kuro"
-    },
-    "white": {
-        "translation": "branco",
-        "kanji": "白色の",
-        "hiragana": "はくしょくの",
-        "romanji": "hakushoku"
-    },
-    "pink": {
-        "translation": "rosa",
-        "kanji": "桃",
-        "hiragana": "もも",
-        "romanji": "momo"
-    },
-    "pink_1": {
-        "translation": "rosa",
-        "kanji": "桜",
-        "hiragana": "さくら",
-        "romanji": "sakura"
-    },
-    "magenta": {
-        "translation": "magenta",
-        "kanji": "赤紫",
-        "hiragana": "あかむらさき",
-        "romanji": "akamurasaki"
-    },
-    "dark": {
-        "translation": "escuro",
-        "kanji": "ダーク",
-        "hiragana": "だーく",
-        "romanji": "daaku"
-    },
-    "oak": {
-        "translation": "carvalho",
-        "kanji": "オーク",
-        "hiragana": "おーく",
-        "romanji": "ooku"
-    },
-    "birch": {
-        "translation": "eucalipto",
-        "kanji": "シラカバ",
-        "hiragana": "しらかば",
-        "romanji": "shirakaba"
-    },
-    "spruce": {
-        "translation": "pinheiro",
-        "kanji": "トウヒ",
-        "hiragana": "とうひ",
-        "romanji": "touhi"
-    },
-    "acacia": {
-        "translation": "acácia",
-        "kanji": "アカシア",
-        "hiragana": "あかしあ",
-        "romanji": "akashia"
-    },
-    "pale": {
-        "translation": "palido",
-        "kanji": "ペール",
-        "hiragana": "ぺーる",
-        "romanji": "peeru"
-    },
-    "mangrove": {
-        "translation": "mangue",
-        "kanji": "マングローブ",
-        "hiragana": "まんぐろーぶ",
-        "romanji": "manguroobu"
-    },
-    "jungle": {
-        "translation": "selva",
-        "kanji": "ジャングル",
-        "hiragana": "じゃんぐる",
-        "romanji": "janguru"
-    },
-    "cherry": {
-        "translation": "cerejeira",
-        "kanji": "サクラ",
-        "hiragana": "さくら",
-        "romanji": "sakura"
-    },
-    "bamboo": {
-        "translation": "bambu",
-        "kanji": "竹",
-        "hiragana": "たけ",
-        "romanji": "take"
-    },
-    "block": {
-        "translation": "bloco",
-        "kanji": "ブロック",
-        "hiragana": "ぶろっく",
-        "romanji": "burokku"
-    },
-    "block_1": {
-        "translation": "bloco",
-        "kanji": "俵",
-        "hiragana": "たわら",
-        "romanji": "tawara"
-    },
-    "warped": {
-        "translation": "distorcido",
-        "kanji": "歪んだ",
-        "hiragana": "ゆがんだ",
-        "romanji": "yuganda"
-    },
-    "crimson": {
-        "translation": "carmesim",
-        "kanji": "真紅",
-        "hiragana": "しんく",
-        "romanji": "shinku"
-    },
-    "wood": {
-        "translation": "madeira",
-        "kanji": "木",
-        "hiragana": "き",
-        "romanji": "ki"
-    },
-    "tuff": {
-        "translation": "tufo",
-        "kanji": "凝灰岩",
-        "hiragana": "ぎょうかいがん",
-        "romanji": "gyoukaigan"
-    },
-    "bedrock": {
-        "translation": "alicerce",
-        "kanji": "岩盤",
-        "hiragana": "がんばん",
-        "romanji": "ganban"
-    },
-    "flint": {
-        "translation": "pederneira",
-        "kanji": "火打石",
-        "hiragana": "ひうちいし",
-        "romanji": "hiuchiishi"
-    },
-    "gravel": {
-        "translation": "cascalho",
-        "kanji": "砂利",
-        "hiragana": "じゃり",
-        "romanji": "jari"
-    },
-    "sand": {
-        "translation": "areia",
-        "kanji": "砂",
-        "hiragana": "すな",
-        "romanji": "suna"
-    },
-    "basalt": {
-        "translation": "basalto",
-        "kanji": "玄武岩",
-        "hiragana": "げんぶがん",
-        "romanji": "genbugan"
-    },
-    "granite": {
-        "translation": "granito",
-        "kanji": "花崗岩",
-        "hiragana": "かこうがん",
-        "romanji": "kakougan"
-    },
-    "andesite": {
-        "translation": "andesito",
-        "kanji": "安山岩",
-        "hiragana": "あんざんがん",
-        "romanji": "anzangan"
-    },
-    "diorite": {
-        "translation": "diorito",
-        "kanji": "閃緑岩",
-        "hiragana": "せんりょくがん",
-        "romanji": "senryokugan"
-    },
-    "deepslate": {
-        "translation": "ardosiabissal",
-        "kanji": "深層岩",
-        "hiragana": "しんそうがん",
-        "romanji": "shinsougan"
-    },
-    "deepslate_1": {
-        "translation": "ardosiabissal",
-        "kanji": "深層",
-        "hiragana": "しんそう",
-        "romanji": "shinsou"
-    },
-    "stone": {
-        "translation": "pedra",
-        "kanji": "石",
-        "hiragana": "いし",
-        "romanji": "ishi"
-    },
-    "stone_1": {
-        "translation": "pedra",
-        "kanji": "ストーン",
-        "hiragana": "すとーん",
-        "romanji": "sutoone"
-    },
-    "cobblestone": {
-        "translation": "pedregulho",
-        "kanji": "丸石",
-        "hiragana": "まるいし",
-        "romanji": "maruishi"
-    },
-    "blackstone": {
-        "translation": "pedra negra",
-        "kanji": "ブラックストーン",
-        "hiragana": "ぶらっくすとーん",
-        "romanji": "burakkusutoon"
-    },
-    "chainmail": {
-        "translation": "carvão vegetal",
-        "kanji": "チェーン",
-        "hiragana": "ちぇーん",
-        "romanji": "cheen"
-    },
-    "charcoal": {
-        "translation": "carvão vegetal",
-        "kanji": "木炭",
-        "hiragana": "もくたん",
-        "romanji": "mokutan"
-    },
-    "coal": {
-        "translation": "carvão",
-        "kanji": "石炭",
-        "hiragana": "せきたん",
-        "romanji": "sekitan"
-    },
-    "iron": {
-        "translation": "ferro",
-        "kanji": "鉄",
-        "hiragana": "てつ",
-        "romanji": "tetsu"
-    },
-    "iron_1": {
-        "translation": "ferro",
-        "kanji": "アイアン",
-        "hiragana": "あいあん",
-        "romanji": "aian"
-    },
-    "iron_nugget": {
-        "translation": "pepita de ferro",
-        "kanji": "鉄塊",
-        "hiragana": "てっかい",
-        "romanji": "tekkai"
-    },
-    "copper": {
-        "translation": "cobre",
-        "kanji": "銅",
-        "hiragana": "どう",
-        "romanji": "dou"
-    },
-    "copper_1": {
-        "translation": "cobre",
-        "kanji": "カッパー",
-        "hiragana": "かっぱー",
-        "romanji": "kappaa"
-    },
-    "gold": {
-        "translation": "ouro",
-        "kanji": "金",
-        "hiragana": "きん",
-        "romanji": "kin"
-    },
-    "golden": {
-        "translation": "ouro",
-        "kanji": "金",
-        "hiragana": "きん",
-        "romanji": "kin"
-    },
-    "gold_nugget": {
-        "translation": "pepita de ouro",
-        "kanji": "金塊",
-        "hiragana": "きんかい",
-        "romanji": "kinkai"
-    },
-    "diamond": {
-        "translation": "diamante",
-        "kanji": "ダイヤモンド",
-        "hiragana": "だいやもんど",
-        "romanji": "daiyamondo"
-    },
-    "emerald": {
-        "translation": "esmeralda",
-        "kanji": "エメラルド",
-        "hiragana": "えめらるど",
-        "romanji": "emerarudo"
-    },
-    "netherite": {
-        "translation": "netheritia",
-        "kanji": "ネザライト",
-        "hiragana": "ねざらいと",
-        "romanji": "nezaraito"
-    },
-    "lapis": {
-        "translation": "lápis",
-        "kanji": "ラピス",
-        "hiragana": "らぴす",
-        "romanji": "rapisu"
-    },
-    "lazuli": {
-        "translation": "lazúli",
-        "kanji": "ラズリ",
-        "hiragana": "らずり",
-        "romanji": "razuri"
-    },
-    "quartz": {
-        "translation": "quartzo",
-        "kanji": "クォーツ",
-        "hiragana": "くぉーつ",
-        "romanji": "kuootsu"
-    },
-    "amethyst": {
-        "translation": "ametista",
-        "kanji": "アメジスト",
-        "hiragana": "あめじすと",
-        "romanji": "amejisuto"
-    },
-    "calcite": {
-        "translation": "calcita",
-        "kanji": "方解石",
-        "hiragana": "ほうかいせき",
-        "romanji": "houkaiseki"
-    },
-    "leather": {
-        "translation": "couro",
-        "kanji": "革",
-        "hiragana": "かわ",
-        "romanji": "kawa"
-    },
-    "armor": {
-        "translation": "armadura",
-        "kanji": "鎧",
-        "hiragana": "よろい",
-        "romanji": "yoroi"
-    },
-    "armor_1": {
-        "translation": "armadura",
-        "kanji": "防具",
-        "hiragana": "ぼうぐ",
-        "romanji": "bougu"
-    },
-    "helmet": {
-        "translation": "capacete",
-        "kanji": "ヘルメット",
-        "hiragana": "へるめっと",
-        "romanji": "herumetto"
-    },
-    "helmet_1": {
-        "translation": "chepéu?",
-        "kanji": "帽子",
-        "hiragana": "ぼうし",
-        "romanji": "boushi"
-    },
-    "helmet_2": {
-        "translation": "boné?",
-        "kanji": "甲羅",
-        "hiragana": "こうら",
-        "romanji": "koura"
-    },
-    "chestplate": {
-        "translation": "peitoral",
-        "kanji": "チェストプレート",
-        "hiragana": "ちぇすとぷれーと",
-        "romanji": "chesutopureeto"
-    },
-    "chestplate_1": {
-        "translation": "peitoral",
-        "kanji": "上着",
-        "hiragana": "うわぎ",
-        "romanji": "uwagi"
-    },
-    "leggings": {
-        "translation": "calças",
-        "kanji": "レギンス",
-        "hiragana": "れぎんす",
-        "romanji": "reginsu"
-    },
-    "leggings_1": {
-        "translation": "calças",
-        "kanji": "ズボン",
-        "hiragana": "ずぼん",
-        "romanji": "zubon"
-    },
-    "boots": {
-        "translation": "botas",
-        "kanji": "ブーツ",
-        "hiragana": "ぶーつ",
-        "romanji": "buutsu"
-    },
-    "foot": {
-        "translation": "pés",
-        "kanji": "足",
-        "hiragana": "あし",
-        "romanji": "ashi"
-    },
-    "nose": {
-        "translation": "nariz",
-        "kanji": "鼻",
-        "hiragana": "はな",
-        "romanji": "hana"
-    },
-    "to_sound": {
-        "translation": "(fazer um som)",
-        "kanji": "鳴らす",
-        "hiragana": "ならす",
-        "romanji": "narasu"
-    },
-    "detector": {
-        "translation": "detector",
-        "kanji": "ディテクター",
-        "hiragana": "でぃてくたー",
-        "romanji": "ditekutaa"
-    },
-    "piston": {
-        "translation": "pistão",
-        "kanji": "ピストン",
-        "hiragana": "ぴすとん",
-        "romanji": "pisuton"
-    },
-    "observer": {
-        "translation": "observador",
-        "kanji": "オブザーバー",
-        "hiragana": "おぶざーばー",
-        "romanji": "obuzaabaa"
-    },
-    "repeater": {
-        "translation": "repetidor",
-        "kanji": "リピーター",
-        "hiragana": "りぴーたー",
-        "romanji": "ripiitaa"
-    },
-    "hopper": {
-        "translation": "tremonha",
-        "kanji": "ホッパー",
-        "hiragana": "ほっぱー",
-        "romanji": "hoppaa"
-    },
-    "dropper": {
-        "translation": "conta-gotas",
-        "kanji": "ドロッパー",
-        "hiragana": "どろっぱー",
-        "romanji": "doroppaa"
-    },
-    "dispenser": {
-        "translation": "distribuidor",
-        "kanji": "ディスペンサー",
-        "hiragana": "でぃすぺんさー",
-        "romanji": "disupensaa"
-    },
-    "comparator": {
-        "translation": "comparador",
-        "kanji": "コンパレーター",
-        "hiragana": "こんぱれーたー",
-        "romanji": "konpareetaa"
-    },
-    "compass": {
-        "translation": "bússola",
-        "kanji": "コンパス",
-        "hiragana": "こんぱす",
-        "romanji": "konpasu"
-    },
-    "recovery": {
-        "translation": "recuperação",
-        "kanji": "リカバリー",
-        "hiragana": "りかばりー",
-        "romanji": "rikabarii"
-    },
-    "totem": {
-        "translation": "totem",
-        "kanji": "トーテム",
-        "hiragana": "とーてむ",
-        "romanji": "tootemu"
-    },
-    "rod": {
-        "translation": "haste",
-        "kanji": "ロッド",
-        "hiragana": "ろっど",
-        "romanji": "roddo"
-    },
-    "stick": {
-        "translation": "haste",
-        "kanji": "棒",
-        "hiragana": "ぼう",
-        "romanji": "bou"
-    },
-    "shield": {
-        "translation": "escudo",
-        "kanji": "盾",
-        "hiragana": "たて",
-        "romanji": "tate"
-    },
-    "bow": {
-        "translation": "arco",
-        "kanji": "弓",
-        "hiragana": "ゆみ",
-        "romanji": "yumi"
-    },
-    "crossbow": {
-        "translation": "besta",
-        "kanji": "クロスボウ",
-        "hiragana": "くろすぼう",
-        "romanji": "kurosubou"
-    },
-    "trident": {
-        "translation": "tridente",
-        "kanji": "トライデント",
-        "hiragana": "とらいでんと",
-        "romanji": "toraidento"
-    },
-    "elytra": {
-        "translation": "élitro",
-        "kanji": "エリトラ",
-        "hiragana": "えりとら",
-        "romanji": "eritora"
-    },
-    "fishing_rod": {
-        "translation": "vara de pescar",
-        "kanji": "釣竿",
-        "hiragana": "つりざお",
-        "romanji": "tsurizao"
-    },
-    "brush": {
-        "translation": "escovar",
-        "kanji": "ブラシ",
-        "hiragana": "ぶらし",
-        "romanji": "burashi"
-    },
-    "spyglass": {
-        "translation": "telescópio",
-        "kanji": "望遠鏡",
-        "hiragana": "ぼうえんきょう",
-        "romanji": "bouenkyou"
-    },
-    "shears": {
-        "translation": "tesoura",
-        "kanji": "ハサミ",
-        "hiragana": "はさみ",
-        "romanji": "hasami"
-    },
-    "mace": {
-        "translation": "maça",
-        "kanji": "メイス",
-        "hiragana": "めいす",
-        "romanji": "meisu"
-    },
-    "pickaxe": {
-        "translation": "picareta",
-        "kanji": "ツルハシ",
-        "hiragana": "つるはし",
-        "romanji": "tsuruhashi"
-    },
-    "shovel": {
-        "translation": "pá",
-        "kanji": "シャベル",
-        "hiragana": "しゃべる",
-        "romanji": "shaberu"
-    },
-    "hoe": {
-        "translation": "enxada",
-        "kanji": "クワ",
-        "hiragana": "くわ",
-        "romanji": "kuwa"
-    },
-    "axe": {
-        "translation": "machado",
-        "kanji": "斧",
-        "hiragana": "おの",
-        "romanji": "ono"
-    },
-    "spear": {
-        "translation": "lança",
-        "kanji": "槍",
-        "hiragana": "やり",
-        "romanji": "yari"
-    },
-    "sword": {
-        "translation": "espada",
-        "kanji": "剣",
-        "hiragana": "けん",
-        "romanji": "ken"
-    },
-    "sandstone": {
-        "translation": "arenito",
-        "kanji": "砂岩",
-        "hiragana": "さがん",
-        "romanji": "sagan"
-    },
-    "podzol": {
-        "translation": "podzol",
-        "kanji": "ポドゾル",
-        "hiragana": "ぽどぞる",
-        "romanji": "podozoru"
-    },
-    "dirt": {
-        "translation": "terra",
-        "kanji": "土",
-        "hiragana": "つち",
-        "romanji": "tsuchi"
-    },
-    "coarse": {
-        "translation": "duro",
-        "kanji": "粗い",
-        "hiragana": "あらい",
-        "romanji": "arai"
-    },
-    "grass": {
-        "translation": "grama",
-        "kanji": "草",
-        "hiragana": "くさ",
-        "romanji": "kusa"
-    },
-    "soul_soil": {
-        "translation": "solo",
-        "kanji": "ソウルソイル",
-        "hiragana": "そうるそいる",
-        "romanji": "sourusoiru"
-    },
-    "wool": {
-        "translation": "lã",
-        "kanji": "羊毛",
-        "hiragana": "ようもう",
-        "romanji": "youmou"
-    },
-    "clay": {
-        "translation": "argila",
-        "kanji": "粘土",
-        "hiragana": "ねんど",
-        "romanji": "nendo"
-    },
-    "clump": {
-        "translation": "massa",
-        "kanji": "塊",
-        "hiragana": "かたまり",
-        "romanji": "katamari"
-    },
-    "ore": {
-        "translation": "minério",
-        "kanji": "鉱石",
-        "hiragana": "こうせき",
-        "romanji": "kouseki"
-    },
-    "dye": {
-        "translation": "corante",
-        "kanji": "染料",
-        "hiragana": "せんりょう",
-        "romanji": "senryou"
-    },
-    "brick": {
-        "translation": "tijolo",
-        "kanji": "レンガ",
-        "hiragana": "れんが",
-        "romanji": "renga"
-    },
-    "bricks": {
-        "translation": "tijolo",
-        "kanji": "レンガ",
-        "hiragana": "れんが",
-        "romanji": "renga"
-    },
-    "mossy": {
-        "translation": "musgoso",
-        "kanji": "苔む",
-        "hiragana": "こけむ",
-        "romanji": "kokemu"
-    },
-    "stairs": {
-        "translation": "escadaria",
-        "kanji": "階段",
-        "hiragana": "かいだん",
-        "romanji": "kaidan"
-    },
-    "slab": {
-        "translation": "meio bloco",
-        "kanji": "ハーフブロック",
-        "hiragana": "はーふぶろっく",
-        "romanji": "haafuburokku"
-    },
-    "pillar": {
-        "translation": "pilar",
-        "kanji": "柱",
-        "hiragana": "はしら",
-        "romanji": "hashira"
-    },
-    "mosaic": {
-        "translation": "artesanato",
-        "kanji": "細工",
-        "hiragana": "ざいく",
-        "romanji": "zaiku"
-    },
-    "prismarine": {
-        "translation": "prismarino",
-        "kanji": "プリズマリン",
-        "hiragana": "ぷりずまりん",
-        "romanji": "purizumarin"
-    },
-    "terracotta": {
-        "translation": "terracota",
-        "kanji": "テラコッタ",
-        "hiragana": "てらこった",
-        "romanji": "terakotta"
-    },
-    "banner": {
-        "translation": "banner",
-        "kanji": "旗",
-        "hiragana": "はた",
-        "romanji": "hata"
-    },
-    "carpet": {
-        "translation": "tapete",
-        "kanji": "カーペット",
-        "hiragana": "かーぺっと",
-        "romanji": "kaapetto"
-    },
-    "concrete": {
-        "translation": "concreto",
-        "kanji": "コンクリート",
-        "hiragana": "こんくりーと",
-        "romanji": "konkuriito"
-    },
-    "nylium": {
-        "translation": "nílio",
-        "kanji": "ナイリウム",
-        "hiragana": "ないりうむ",
-        "romanji": "nairiumu"
-    },
-    "planks": {
-        "translation": "tabuas",
-        "kanji": "板材",
-        "hiragana": "いたざい",
-        "romanji": "itazai"
-    },
-    "purpur": {
-        "translation": "púrpura",
-        "kanji": "プルプァ",
-        "hiragana": "ぷるぷぁ",
-        "romanji": "purupua"
-    },
-    "netherrack": {
-        "translation": "netherrack",
-        "kanji": "ネザーラック",
-        "hiragana": "ねざーらっく",
-        "romanji": "nezaarakku"
-    },
-    "ingot": {
-        "translation": "barra",
-        "kanji": "インゴット",
-        "hiragana": "いんごっと",
-        "romanji": "ingotto"
-    },
-    "log": {
-        "translation": "tronco",
-        "kanji": "原木",
-        "hiragana": "げんぼく",
-        "romanji": "genboku"
-    },
-    "raw": {
-        "translation": "bruto",
-        "kanji": "原石",
-        "hiragana": "げんせき",
-        "romanji": "genseki"
-    },
-    "raw_1": {
-        "translation": "cru",
-        "kanji": "生",
-        "hiragana": "なま",
-        "romanji": "nama"
-    },
-    "wall": {
-        "translation": "muro",
-        "kanji": "塀",
-        "hiragana": "へい",
-        "romanji": "hei"
-    },
-    "scaffolding": {
-        "translation": "andaime",
-        "kanji": "足場",
-        "hiragana": "あしば",
-        "romanji": "ashiba"
-    },
-    "fragments": {
-        "translation": "fragmentos",
-        "kanji": "破片",
-        "hiragana": "はへん",
-        "romanji": "hahen"
-    },
-    "sign": {
-        "translation": "placa",
-        "kanji": "看板",
-        "hiragana": "かんばん",
-        "romanji": "kanban"
-    },
-    "portal": {
-        "translation": "portal",
-        "kanji": "ポータル",
-        "hiragana": "ぽーたる",
-        "romanji": "pootaru"
-    },
-    "fence": {
-        "translation": "cerca",
-        "kanji": "フェンス",
-        "hiragana": "ふぇんす",
-        "romanji": "fensu"
-    },
-    "gate": {
-        "translation": "portão",
-        "kanji": "ゲート",
-        "hiragana": "げーと",
-        "romanji": "geeto"
-    },
-    "grate": {
-        "translation": "grade?",
-        "kanji": "金網",
-        "hiragana": "かなあみ",
-        "romanji": "kanaami"
-    },
-    "bars": {
-        "translation": "grade",
-        "kanji": "格子",
-        "hiragana": "こうし",
-        "romanji": "koushi"
-    },
-    "boat": {
-        "translation": "bote",
-        "kanji": "ボート",
-        "hiragana": "ぼーと",
-        "romanji": "booto"
-    },
-    "raft": {
-        "translation": "jangada",
-        "kanji": "イカダ",
-        "hiragana": "いかだ",
-        "romanji": "ikada"
-    },
-    "bundle": {
-        "translation": "pacote",
-        "kanji": "バンドル",
-        "hiragana": "ばんどる",
-        "romanji": "bandoru"
-    },
-    "bed": {
-        "translation": "cama",
-        "kanji": "ベッド",
-        "hiragana": "べっど",
-        "romanji": "beddo"
-    },
-    "conduit": {
-        "translation": "conduíte",
-        "kanji": "コンジット",
-        "hiragana": "こんじっと",
-        "romanji": "konjitto"
-    },
-    "froglight": {
-        "translation": "anfibrilho",
-        "kanji": "フロッグライト",
-        "hiragana": "ふろっぐらいと",
-        "romanji": "furogguraito"
-    },
-    "candle": {
-        "translation": "vela",
-        "kanji": "ろうそく",
-        "hiragana": "ろうそく",
-        "romanji": "rousoku"
-    },
-    "door": {
-        "translation": "porta",
-        "kanji": "ドア",
-        "hiragana": "どあ",
-        "romanji": "doa"
-    },
-    "trapdoor": {
-        "translation": "alçapão",
-        "kanji": "トラップドア",
-        "hiragana": "とらっぷどあ",
-        "romanji": "torappudoa"
-    },
-    "trap": {
-        "translation": "armadilha",
-        "kanji": "トラップ",
-        "hiragana": "とらっぷ",
-        "romanji": "torappu"
-    },
-    "arrow": {
-        "translation": "seta",
-        "kanji": "矢",
-        "hiragana": "や",
-        "romanji": "ya"
-    },
-    "torch": {
-        "translation": "tocha",
-        "kanji": "松明",
-        "hiragana": "たいまつ",
-        "romanji": "taimatsu"
-    },
-    "torch_1": {
-        "translation": "tocha",
-        "kanji": "トーチ",
-        "hiragana": "とーち",
-        "romanji": "toochi"
-    },
-    "bulb": {
-        "translation": "lâmpada elétrica",
-        "kanji": "電球",
-        "hiragana": "でんきゅう",
-        "romanji": "denkyuu"
-    },
-    "lamp": {
-        "translation": "lâmpada",
-        "kanji": "ランプ",
-        "hiragana": "らんぷ",
-        "romanji": "ranpu"
-    },
-    "key": {
-        "translation": "chave",
-        "kanji": "鍵",
-        "hiragana": "かぎ",
-        "romanji": "kagi"
-    },
-    "eye": {
-        "translation": "olho",
-        "kanji": "目",
-        "hiragana": "め",
-        "romanji": "me"
-    },
-    "eye_1": {
-        "translation": "olho",
-        "kanji": "アイ",
-        "hiragana": "あい",
-        "romanji": "ai"
-    },
-    "bucket": {
-        "translation": "balde",
-        "kanji": "バケツ",
-        "hiragana": "ばけつ",
-        "romanji": "baketsu"
-    },
-    "crystal": {
-        "translation": "cristal",
-        "kanji": "クリスタル",
-        "hiragana": "くりすたる",
-        "romanji": "kurisutaru"
-    },
-    "crystals": {
-        "translation": "cristal",
-        "kanji": "クリスタル",
-        "hiragana": "くりすたる",
-        "romanji": "kurisutaru"
-    },
-    "statue": {
-        "translation": "imagem",
-        "kanji": "像",
-        "hiragana": "ぞう",
-        "romanji": "zou"
-    },
-    "filled_map": {
-        "translation": "mapa",
-        "kanji": "地図",
-        "hiragana": "ちず",
-        "romanji": "chizu"
-    },
-    "ball": {
-        "translation": "bola",
-        "kanji": "ボール",
-        "hiragana": "ぼーる",
-        "romanji": "booru"
-    },
-    "ball_1": {
-        "translation": "bola",
-        "kanji": "玉",
-        "hiragana": "たま",
-        "romanji": "tama"
-    },
-    "note": {
-        "translation": "observação",
-        "kanji": "音符",
-        "hiragana": "おんぷ",
-        "romanji": "onpu"
-    },
-    "book": {
-        "translation": "livro",
-        "kanji": "本",
-        "hiragana": "ほん",
-        "romanji": "hon"
-    },
-    "bookshelf": {
-        "translation": "estante",
-        "kanji": "本棚",
-        "hiragana": "ほんだな",
-        "romanji": "hondana"
-    },
-    "shelf": {
-        "translation": "estante",
-        "kanji": "棚",
-        "hiragana": "たな",
-        "romanji": "tana"
-    },
-    "minecart": {
-        "translation": "carrinho",
-        "kanji": "トロッコ",
-        "hiragana": "とろっこ",
-        "romanji": "torokko"
-    },
-    "powder": {
-        "translation": "pó",
-        "kanji": "パウダー",
-        "hiragana": "ぱうだー",
-        "romanji": "paudaa"
-    },
-    "powder_1": {
-        "translation": "pó",
-        "kanji": "粉",
-        "hiragana": "こな",
-        "romanji": "kona"
-    },
-    "dust": {
-        "translation": "pó",
-        "kanji": "ダスト",
-        "hiragana": "だすと",
-        "romanji": "dasuto"
-    },
-    "shroomlight": {
-        "translation": "cogubrilho",
-        "kanji": "シュルームライト",
-        "hiragana": "しゅるーむらいと",
-        "romanji": "shuruumuraito"
-    },
-    "glow": {
-        "translation": "brilhante",
-        "kanji": "輝く",
-        "hiragana": "かがやく",
-        "romanji": "kagayaku"
-    },
-    "glow_1": {
-        "translation": "brilhar",
-        "kanji": "ヒカリ",
-        "hiragana": "ひかり",
-        "romanji": "hikari"
-    },
-    "glow_2": {
-        "translation": "brilhar",
-        "kanji": "グロウ",
-        "hiragana": "ぐろう",
-        "romanji": "gurou"
-    },
-    "blue_orchid": {
-        "translation": "jade oran",
-        "kanji": "ヒスイラン",
-        "hiragana": "ひすいらん",
-        "romanji": "hisuiran"
-    },
-    "egg": {
-        "translation": "ovo",
-        "kanji": "卵",
-        "hiragana": "たまご",
-        "romanji": "tamago"
-    },
-    "cactus": {
-        "translation": "cacto",
-        "kanji": "サボテン",
-        "hiragana": "さぼてん",
-        "romanji": "saboten"
-    },
-    "hay": {
-        "translation": "feno",
-        "kanji": "干草",
-        "hiragana": "ほしくさ",
-        "romanji": "hoshikusa"
-    },
-    "wheat": {
-        "translation": "trigo",
-        "kanji": "小麦",
-        "hiragana": "こむぎ",
-        "romanji": "komugi"
-    },
-    "seeds": {
-        "translation": "semente",
-        "kanji": "種",
-        "hiragana": "たね",
-        "romanji": "tane"
-    },
-    "pumpkin": {
-        "translation": "abóbora",
-        "kanji": "カボチャ",
-        "hiragana": "かぼちゃ",
-        "romanji": "kabocha"
-    },
-    "pumpkin_1": {
-        "translation": "abóbora",
-        "kanji": "パンプキン",
-        "hiragana": "ぱんぷきん",
-        "romanji": "panpukin"
-    },
-    "melon": {
-        "translation": "melancia",
-        "kanji": "スイカ",
-        "hiragana": "すいか",
-        "romanji": "suika"
-    },
-    "sapling": {
-        "translation": "muda",
-        "kanji": "苗木",
-        "hiragana": "なえぎ",
-        "romanji": "naegi"
-    },
-    "sprouts": {
-        "translation": "broto",
-        "kanji": "スプラウト",
-        "hiragana": "すぷらうと",
-        "romanji": "supurauto"
-    },
-    "bud": {
-        "translation": "broto",
-        "kanji": "芽",
-        "hiragana": "め",
-        "romanji": "me"
-    },
-    "root": {
-        "translation": "raiz",
-        "kanji": "根",
-        "hiragana": "ね",
-        "romanji": "ne"
-    },
-    "echo": {
-        "translation": "eco",
-        "kanji": "残響",
-        "hiragana": "ざんきょう",
-        "romanji": "zankyou"
-    },
-    "button": {
-        "translation": "botão",
-        "kanji": "ボタン",
-        "hiragana": "ぼたん",
-        "romanji": "botan"
-    },
-    "pressure_plate": {
-        "translation": "placa de pressão",
-        "kanji": "感圧板",
-        "hiragana": "かんあついた",
-        "romanji": "kanatsuita"
-    },
-    "campfire": {
-        "translation": "fogueira",
-        "kanji": "焚き火",
-        "hiragana": "たきび",
-        "romanji": "takibi"
-    },
-    "composter": {
-        "translation": "compostor",
-        "kanji": "コンポスター",
-        "hiragana": "こんぽすたー",
-        "romanji": "konposutaa"
-    },
-    "anvil": {
-        "translation": "bigorna",
-        "kanji": "金床",
-        "hiragana": "かなとこ",
-        "romanji": "kanatoko"
-    },
-    "cauldron": {
-        "translation": "caldeirão",
-        "kanji": "大釜",
-        "hiragana": "おおかま",
-        "romanji": "ookama"
-    },
-    "nest": {
-        "translation": "ninho",
-        "kanji": "巣",
-        "hiragana": "す",
-        "romanji": "su"
-    },
-    "barrel": {
-        "translation": "barril",
-        "kanji": "樽",
-        "hiragana": "そん",
-        "romanji": "son"
-    },
-    "chest": {
-        "translation": "Baú",
-        "kanji": "チェスト",
-        "hiragana": "ちぇすと",
-        "romanji": "chesuto"
-    },
-    "shulker_box": {
-        "translation": "caixa shulker",
-        "kanji": "シュルカーボックス",
-        "hiragana": "しゅるかーぼっくす",
-        "romanji": "shurukaabokkusu"
-    },
-    "shulker": {
-        "translation": "shulker",
-        "kanji": "シュルカー",
-        "hiragana": "しゅるかー",
-        "romanji": "shurukaa"
-    },
-    "grindstone": {
-        "translation": "rebolo",
-        "kanji": "砥石",
-        "hiragana": "といし",
-        "romanji": "toishi"
-    },
-    "flower_pot": {
-        "translation": "vaso de flores",
-        "kanji": "植木鉢",
-        "hiragana": "うえきばち",
-        "romanji": "uekibachi"
-    },
-    "pottery": {
-        "translation": "jarro",
-        "kanji": "壺",
-        "hiragana": "つぼ",
-        "romanji": "tsubo"
-    },
-    "jukebox": {
-        "translation": "jukebox",
-        "kanji": "ジュークボックス",
-        "hiragana": "じゅーくぼっくす",
-        "romanji": "juukubokkusu"
-    },
-    "beehive": {
-        "translation": "colméia",
-        "kanji": "養蜂箱",
-        "hiragana": "ようほうばこ",
-        "romanji": "youhoubako"
-    },
-    "beacon": {
-        "translation": "baliza",
-        "kanji": "ビーコン",
-        "hiragana": "びーこん",
-        "romanji": "biikon"
-    },
-    "lever": {
-        "translation": "alavanca",
-        "kanji": "レバー",
-        "hiragana": "ればー",
-        "romanji": "rebaa"
-    },
-    "chain": {
-        "translation": "corrente",
-        "kanji": "鎖",
-        "hiragana": "くさり",
-        "romanji": "kusari"
-    },
-    "chain_1": {
-        "translation": "corrente",
-        "kanji": "チェーン",
-        "hiragana": "ちぇーん",
-        "romanji": "cheen"
-    },
-    "clock": {
-        "translation": "relógio",
-        "kanji": "時計",
-        "hiragana": "とけい",
-        "romanji": "tokei"
-    },
-    "bone": {
-        "translation": "osso",
-        "kanji": "骨",
-        "hiragana": "ほね",
-        "romanji": "hone"
-    },
-    "bone_meal": {
-        "translation": "farinha de ossos",
-        "kanji": "骨粉",
-        "hiragana": "こっぷん",
-        "romanji": "koppun"
-    },
-    "sponge": {
-        "translation": "esponja",
-        "kanji": "スポンジ",
-        "hiragana": "すぽんじ",
-        "romanji": "suponji"
-    },
-    "bottle": {
-        "translation": "garrafa",
-        "kanji": "瓶",
-        "hiragana": "びん",
-        "romanji": "bin"
-    },
-    "ice": {
-        "translation": "gelo",
-        "kanji": "氷",
-        "hiragana": "こおり",
-        "romanji": "koori"
-    },
-    "packed_ice": {
-        "translation": "gelo compactado",
-        "kanji": "氷塊",
-        "hiragana": "ひょうかい",
-        "romanji": "hyoukai"
-    },
-    "packed": {
-        "translation": "compactada?",
-        "kanji": "固めた",
-        "hiragana": "かためた",
-        "romanji": "katameta"
-    },
-    "snow": {
-        "translation": "neve",
-        "kanji": "雪",
-        "hiragana": "ゆき",
-        "romanji": "yuki"
-    },
-    "snow_1": {
-        "translation": "neve",
-        "kanji": "スノウ",
-        "hiragana": "すのう",
-        "romanji": "sunou"
-    },
-    "snowball": {
-        "translation": "bola de neve",
-        "kanji": "雪玉",
-        "hiragana": "ゆきだま",
-        "romanji": "yukidama"
-    },
-    "golem": {
-        "translation": "golem",
-        "kanji": "ゴーレム",
-        "hiragana": "ごーれむ",
-        "romanji": "gooremu"
-    },
-    "husk": {
-        "translation": "husk",
-        "kanji": "ハスク",
-        "hiragana": "はすく",
-        "romanji": "hasuku"
-    },
-    "ghast": {
-        "translation": "ghast",
-        "kanji": "ガスト",
-        "hiragana": "がすと",
-        "romanji": "gasuto"
-    },
-    "phantom": {
-        "translation": "fantasma",
-        "kanji": "ファントム",
-        "hiragana": "ふぁんとむ",
-        "romanji": "fantomu"
-    },
-    "piglin": {
-        "translation": "piglin",
-        "kanji": "ピグリン",
-        "hiragana": "ぴぐりん",
-        "romanji": "pigurin"
-    },
-    "piglin_brute": {
-        "translation": "piglin bruto",
-        "kanji": "ブルート",
-        "hiragana": "ぶるーと",
-        "romanji": "buruuto"
-    },
-    "hoglin": {
-        "translation": "hoglin",
-        "kanji": "ホグリン",
-        "hiragana": "ほぐりん",
-        "romanji": "hogurin"
-    },
-    "zoglin": {
-        "translation": "zoglin",
-        "kanji": "ゾグリン",
-        "hiragana": "ぞぐりん",
-        "romanji": "zogurin"
-    },
-    "warden": {
-        "translation": "diretor",
-        "kanji": "ウォーデン",
-        "hiragana": "うぉーでん",
-        "romanji": "uooden"
-    },
-    "vex": {
-        "translation": "vex",
-        "kanji": "ヴェックス",
-        "hiragana": "ゔぇっくす",
-        "romanji": "vekkusu"
-    },
-    "guardian": {
-        "translation": "guardião",
-        "kanji": "ガーディアン",
-        "hiragana": "がーでぃあん",
-        "romanji": "gaadian"
-    },
-    "enderman": {
-        "translation": "enderman",
-        "kanji": "エンダーマン",
-        "hiragana": "えんだーまん",
-        "romanji": "endaaman"
-    },
-    "endermite": {
-        "translation": "endermite",
-        "kanji": "エンダーマイト",
-        "hiragana": "えんだーまいと",
-        "romanji": "endaamaito"
-    },
-    "creeper": {
-        "translation": "creeper",
-        "kanji": "クリーパー",
-        "hiragana": "くりーぱー",
-        "romanji": "kuriipaa"
-    },
-    "silverfish": {
-        "translation": "traça",
-        "kanji": "シルバーフィッシュ",
-        "hiragana": "しるばーふぃっしゅ",
-        "romanji": "shirubaafisshu"
-    },
-    "breeze": {
-        "translation": "breeze",
-        "kanji": "ブリーズ",
-        "hiragana": "ぶりーず",
-        "romanji": "buriizu"
-    },
-    "blaze": {
-        "translation": "chama",
-        "kanji": "ブレイズ",
-        "hiragana": "ぶれいず",
-        "romanji": "bureizu"
-    },
-    "wither": {
-        "translation": "whiter",
-        "kanji": "ウィザー",
-        "hiragana": "うぃざー",
-        "romanji": "uizaa"
-    },
-    "spider": {
-        "translation": "aranha",
-        "kanji": "グモ",
-        "hiragana": "ぐも",
-        "romanji": "gumo"
-    },
-    "spider_1": {
-        "translation": "aranha",
-        "kanji": "クモ",
-        "hiragana": "くも",
-        "romanji": "kumo"
-    },
-    "skeleton": {
-        "translation": "esqueleto",
-        "kanji": "スケルトン",
-        "hiragana": "すけるとん",
-        "romanji": "sukeruton"
-    },
-    "zombie": {
-        "translation": "zumbi",
-        "kanji": "ゾンビ",
-        "hiragana": "ぞんび",
-        "romanji": "zonbi"
-    },
-    "tadpole": {
-        "translation": "girino",
-        "kanji": "オタマジャクシ",
-        "hiragana": "おたまじゃくし",
-        "romanji": "otamajakushi"
-    },
-    "drowned": {
-        "translation": "afogado",
-        "kanji": "ドラウンド",
-        "hiragana": "どらうんど",
-        "romanji": "doraundo"
-    },
-    "strider": {
-        "translation": "andarilho",
-        "kanji": "ストライダー",
-        "hiragana": "すとらいだー",
-        "romanji": "sutoraidaa"
-    },
-    "perched": {
-        "translation": "empoleirado?",
-        "kanji": "パーチド",
-        "hiragana": "ぱーちど",
-        "romanji": "paachido"
-    },
-    "witch": {
-        "translation": "bruxa",
-        "kanji": "ウィッチ",
-        "hiragana": "うぃっち",
-        "romanji": "uitchi"
-    },
-    "ravager": {
-        "translation": "devastador",
-        "kanji": "ラヴェジャー",
-        "hiragana": "らゔぇじゃー",
-        "romanji": "ravejaa"
-    },
-    "evoker": {
-        "translation": "evocador",
-        "kanji": "エヴォーカー",
-        "hiragana": "えゔぉーかー",
-        "romanji": "evookaa"
-    },
-    "pillager": {
-        "translation": "saqueador",
-        "kanji": "ピリジャー",
-        "hiragana": "ぴりじゃー",
-        "romanji": "pirijaa"
-    },
-    "villager": {
-        "translation": "aldeão",
-        "kanji": "村人",
-        "hiragana": "むらびと",
-        "romanji": "murabito"
-    },
-    "player": {
-        "translation": "jogador",
-        "kanji": "プレイヤー",
-        "hiragana": "ぷれいやー",
-        "romanji": "pureiyaa"
-    },
-    "friend": {
-        "translation": "amigo",
-        "kanji": "友",
-        "hiragana": "とも",
-        "romanji": "tomo"
-    },
-    "vindicator": {
-        "translation": "vindicador",
-        "kanji": "ヴィンディケーター",
-        "hiragana": "ゔぃんでぃけーたー",
-        "romanji": "vindikeetaa"
-    },
-    "trader": {
-        "translation": "comerciante",
-        "kanji": "商人",
-        "hiragana": "しょうにん",
-        "romanji": "shounin"
-    },
-    "allay": {
-        "translation": "array",
-        "kanji": "アレイ",
-        "hiragana": "あれい",
-        "romanji": "arei"
-    },
-    "bee": {
-        "translation": "abelha",
-        "kanji": "ミツバチ",
-        "hiragana": "みつばち",
-        "romanji": "mitsubachi"
-    },
-    "dolphin": {
-        "translation": "golfinho",
-        "kanji": "イルカ",
-        "hiragana": "いるか",
-        "romanji": "iruka"
-    },
-    "nautilus": {
-        "translation": "náutilo",
-        "kanji": "オウムガイ",
-        "hiragana": "おうむがい",
-        "romanji": "oumugai"
-    },
-    "stray": {
-        "translation": "stray",
-        "kanji": "ストレイ",
-        "hiragana": "すとれい",
-        "romanji": "sutorei"
-    },
-    "sniffer": {
-        "translation": "farejador",
-        "kanji": "スニッファー",
-        "hiragana": "すにっふぁー",
-        "romanji": "suniffaa"
-    },
-    "squid": {
-        "translation": "lula",
-        "kanji": "イカ",
-        "hiragana": "いか",
-        "romanji": "ika"
-    },
-    "turtle": {
-        "translation": "tartaruga",
-        "kanji": "カメ",
-        "hiragana": "かめ",
-        "romanji": "kame"
-    },
-    "armadillo": {
-        "translation": "tatu",
-        "kanji": "アルマジロ",
-        "hiragana": "あるまじろ",
-        "romanji": "arumajiro"
-    },
-    "fox": {
-        "translation": "raposa",
-        "kanji": "キツネ",
-        "hiragana": "きつね",
-        "romanji": "kitsune"
-    },
-    "cow": {
-        "translation": "vaca",
-        "kanji": "ウシ",
-        "hiragana": "うし",
-        "romanji": "ushi"
-    },
-    "mooshroom": {
-        "translation": "mushuroom",
-        "kanji": "ムーシュルーム",
-        "hiragana": "むーしゅるーむ",
-        "romanji": "muushuruumu"
-    },
-    "bat": {
-        "translation": "morcego",
-        "kanji": "コウモリ",
-        "hiragana": "こうもり",
-        "romanji": "koumori"
-    },
-    "parrot": {
-        "translation": "papagaio",
-        "kanji": "オウム",
-        "hiragana": "おうむ",
-        "romanji": "oumu"
-    },
-    "ocelot": {
-        "translation": "gato selvagem",
-        "kanji": "ヤマネコ",
-        "hiragana": "やまねこ",
-        "romanji": "yamaneko"
-    },
-    "cat": {
-        "translation": "gato",
-        "kanji": "ネコ",
-        "hiragana": "ねこ",
-        "romanji": "neko"
-    },
-    "sheep": {
-        "translation": "ovelha",
-        "kanji": "ヒツジ",
-        "hiragana": "ひつじ",
-        "romanji": "hitsuji"
-    },
-    "goat": {
-        "translation": "cabra",
-        "kanji": "ヤギ",
-        "hiragana": "やぎ",
-        "romanji": "yagi"
-    },
-    "wolf": {
-        "translation": "lobo",
-        "kanji": "オオカミ",
-        "hiragana": "おおかみ",
-        "romanji": "ookami"
-    },
-    "polar_bear": {
-        "translation": "urso polar",
-        "kanji": "シロクマ",
-        "hiragana": "しろくま",
-        "romanji": "shirokuma"
-    },
-    "panda": {
-        "translation": "panda",
-        "kanji": "パンダ",
-        "hiragana": "ぱんだ",
-        "romanji": "panda"
-    },
-    "frog": {
-        "translation": "sapo",
-        "kanji": "カエル",
-        "hiragana": "かえる",
-        "romanji": "kaeru"
-    },
-    "pufferfish": {
-        "translation": "baiacu",
-        "kanji": "フグ",
-        "hiragana": "ふぐ",
-        "romanji": "fugu"
-    },
-    "angler": {
-        "translation": "pescador",
-        "kanji": "釣り人",
-        "hiragana": "つりびと",
-        "romanji": "tsuribito"
-    },
-    "axolotl": {
-        "translation": "axolote",
-        "kanji": "ウーパールーパー",
-        "hiragana": "うーぱーるーぱー",
-        "romanji": "uupaaruupaa"
-    },
-    "salmon": {
-        "translation": "salmão",
-        "kanji": "鮭",
-        "hiragana": "ざけ",
-        "romanji": "zake"
-    },
-    "salmon_1": {
-        "translation": "salmão",
-        "kanji": "サケ",
-        "hiragana": "さけ",
-        "romanji": "sake"
-    },
-    "cod": {
-        "translation": "bacalhau",
-        "kanji": "鱈",
-        "hiragana": "たら",
-        "romanji": "tara"
-    },
-    "cod_1": {
-        "translation": "bacalhau",
-        "kanji": "タラ",
-        "hiragana": "たら",
-        "romanji": "tara"
-    },
-    "tropical_fish": {
-        "translation": "peixe tropical",
-        "kanji": "熱帯魚",
-        "hiragana": "ねったいぎょ",
-        "romanji": "nettaigyo"
-    },
-    "horse": {
-        "translation": "cavalo",
-        "kanji": "馬",
-        "hiragana": "うま",
-        "romanji": "uma"
-    },
-    "horse_1": {
-        "translation": "cavalo",
-        "kanji": "ホース",
-        "hiragana": "ほーす",
-        "romanji": "hoosu"
-    },
-    "horse_2": {
-        "translation": "cavalo",
-        "kanji": "ウマ",
-        "hiragana": "うま",
-        "romanji": "uma"
-    },
-    "donkey": {
-        "translation": "burro",
-        "kanji": "ロバ",
-        "hiragana": "ろば",
-        "romanji": "roba"
-    },
-    "mule": {
-        "translation": "mula",
-        "kanji": "ラバ",
-        "hiragana": "らば",
-        "romanji": "raba"
-    },
-    "llama": {
-        "translation": "lhama",
-        "kanji": "ラマ",
-        "hiragana": "らま",
-        "romanji": "rama"
-    },
-    "camel": {
-        "translation": "camelo",
-        "kanji": "ラクダ",
-        "hiragana": "らくだ",
-        "romanji": "rakuda"
-    },
-    "pig": {
-        "translation": "porco",
-        "kanji": "豚",
-        "hiragana": "ぶた",
-        "romanji": "buta"
-    },
-    "pig_1": {
-        "translation": "porco",
-        "kanji": "ブタ",
-        "hiragana": "ぶた",
-        "romanji": "buta"
-    },
-    "chicken": {
-        "translation": "frango",
-        "kanji": "鶏",
-        "hiragana": "にわとり",
-        "romanji": "niwatori"
-    },
-    "chicken_1": {
-        "translation": "frango",
-        "kanji": "ニワトリ",
-        "hiragana": "にわとり",
-        "romanji": "niwatori"
-    },
-    "chicken_2": {
-        "translation": "pássaro",
-        "kanji": "鳥",
-        "hiragana": "とり",
-        "romanji": "tori"
-    },
-    "rabbit": {
-        "translation": "coelho",
-        "kanji": "兎",
-        "hiragana": "うさぎ",
-        "romanji": "usagi"
-    },
-    "rabbit_1": {
-        "translation": "coelho",
-        "kanji": "ウサギ",
-        "hiragana": "うさぎ",
-        "romanji": "usagi"
-    },
-    "slime": {
-        "translation": "slime",
-        "kanji": "スライム",
-        "hiragana": "すらいむ",
-        "romanji": "suraimu"
-    },
-    "feather": {
-        "translation": "pena",
-        "kanji": "羽根",
-        "hiragana": "はね",
-        "romanji": "hane"
-    },
-    "moss": {
-        "translation": "musgo",
-        "kanji": "苔",
-        "hiragana": "こけ",
-        "romanji": "koke"
-    },
-    "petals": {
-        "translation": "pétala",
-        "kanji": "花びら",
-        "hiragana": "はなびら",
-        "romanji": "hanabira"
-    },
-    "lily": {
-        "translation": "lilí",
-        "kanji": "スイレン",
-        "hiragana": "すいれん",
-        "romanji": "suiren"
-    },
-    "leaves": {
-        "translation": "folhas",
-        "kanji": "葉",
-        "hiragana": "は",
-        "romanji": "ha"
-    },
-    "coral": {
-        "translation": "coral",
-        "kanji": "サンゴ",
-        "hiragana": "さんご",
-        "romanji": "sango"
-    },
-    "fan": {
-        "translation": "fan?",
-        "kanji": "ウチワ",
-        "hiragana": "うちわ",
-        "romanji": "uchiwa"
-    },
-    "tube": {
-        "translation": "tube",
-        "kanji": "クダ",
-        "hiragana": "くだ",
-        "romanji": "kuda"
-    },
-    "brain": {
-        "translation": "cerebro",
-        "kanji": "ノウ",
-        "hiragana": "のう",
-        "romanji": "nou"
-    },
-    "horn": {
-        "translation": "chifre?",
-        "kanji": "シカツノ",
-        "hiragana": "しかつの",
-        "romanji": "shikatsunouchiwa"
-    },
-    "horn_1": {
-        "translation": "chifre?",
-        "kanji": "角笛",
-        "hiragana": "つのぶえ",
-        "romanji": "tsunobue"
-    },
-    "fire": {
-        "translation": "millepora",
-        "kanji": "ミレポラ",
-        "hiragana": "みれぽら",
-        "romanji": "mirepora"
-    },
-    "water": {
-        "translation": "água",
-        "kanji": "水",
-        "hiragana": "みず",
-        "romanji": "mizu"
-    },
-    "bubble": {
-        "translation": "mizutamauchiwa",
-        "kanji": "ミズタマ",
-        "hiragana": "みずたま",
-        "romanji": "mizutama"
-    },
-    "glazed": {
-        "translation": "envidraçado",
-        "kanji": "彩釉",
-        "hiragana": "さいゆう",
-        "romanji": "saiyuu"
-    },
-    "harness": {
-        "translation": "arreio",
-        "kanji": "ハーネス",
-        "hiragana": "はーねす",
-        "romanji": "haanesu"
-    },
-    "saddle": {
-        "translation": "sela",
-        "kanji": "鞍",
-        "hiragana": "くら",
-        "romanji": "kura"
-    },
-    "nether": {
-        "translation": "nether",
-        "kanji": "ネザー",
-        "hiragana": "ねざー",
-        "romanji": "nezaa"
-    },
-    "star": {
-        "translation": "estrela",
-        "kanji": "星",
-        "hiragana": "ほし",
-        "romanji": "hoshi"
-    },
-    "star_1": {
-        "translation": "estrela",
-        "kanji": "スター",
-        "hiragana": "すたー",
-        "romanji": "sutaa"
-    },
-    "honey": {
-        "translation": "mel",
-        "kanji": "ハチミツ",
-        "hiragana": "はちみつ",
-        "romanji": "hachimitsu"
-    },
-    "honeycomb": {
-        "translation": "favo de mel",
-        "kanji": "ハニカム",
-        "hiragana": "はにかむ",
-        "romanji": "hanikamu"
-    },
-    "head": {
-        "translation": "cabeça",
-        "kanji": "頭",
-        "hiragana": "あたま",
-        "romanji": "atama"
-    },
-    "skull": {
-        "translation": "crânio",
-        "kanji": "頭蓋骨",
-        "hiragana": "ずがいこつ",
-        "romanji": "zugaikotsu"
-    },
-    "skull_1": {
-        "translation": "caveira",
-        "kanji": "骸骨",
-        "hiragana": "がいこつ",
-        "romanji": "gaikotsu"
-    },
-    "skulk": {
-        "translation": "esquivar",
-        "kanji": "スカルク",
-        "hiragana": "すかるく",
-        "romanji": "sukaruku"
-    },
-    "lectern": {
-        "translation": "atril",
-        "kanji": "書見台",
-        "hiragana": "しょけんだい",
-        "romanji": "shokendai"
-    },
-    "name_tag": {
-        "translation": "crachá",
-        "kanji": "名札",
-        "hiragana": "なふだ",
-        "romanji": "nafuda"
-    },
-    "ladder": {
-        "translation": "escada",
-        "kanji": "はしご",
-        "hiragana": "はしご",
-        "romanji": "hashigo"
-    },
-    "shard": {
-        "translation": "fragmento",
-        "kanji": "欠片",
-        "hiragana": "かけら",
-        "romanji": "kakera"
-    },
-    "dragon": {
-        "translation": "dragão",
-        "kanji": "ドラゴン",
-        "hiragana": "どらごん",
-        "romanji": "doragon"
-    },
-    "ender": {
-        "translation": "ender",
-        "kanji": "エンダー",
-        "hiragana": "えんだー",
-        "romanji": "endaa"
-    },
-    "pearl": {
-        "translation": "pérola",
-        "kanji": "パール",
-        "hiragana": "ぱーる",
-        "romanji": "paaru"
-    },
-    "tear": {
-        "translation": "lágrimas",
-        "kanji": "涙",
-        "hiragana": "なみだ",
-        "romanji": "namida"
-    },
-    "spawn_egg": {
-        "translation": "ovo de invocação",
-        "kanji": "スポーンエッグ",
-        "hiragana": "すぽーんえっぐ",
-        "romanji": "supooneggu"
-    },
-    "monster": {
-        "translation": "monstros",
-        "kanji": "モンスター",
-        "hiragana": "もんすたー",
-        "romanji": "monsutaa"
-    },
-    "spawner": {
-        "translation": "gerador",
-        "kanji": "スポナー",
-        "hiragana": "すぽなー",
-        "romanji": "suponaa"
-    },
-    "target": {
-        "translation": "alvo",
-        "kanji": "的",
-        "hiragana": "まと",
-        "romanji": "mato"
-    },
-    "rocket": {
-        "translation": "foguete",
-        "kanji": "ロケット",
-        "hiragana": "ろけっと",
-        "romanji": "roketto"
-    },
-    "firework": {
-        "translation": "fogo de artifício",
-        "kanji": "花火",
-        "hiragana": "はなび",
-        "romanji": "hanabi"
-    },
-    "bell": {
-        "translation": "sino",
-        "kanji": "鐘",
-        "hiragana": "かね",
-        "romanji": "kane"
-    },
-    "paper": {
-        "translation": "papel",
-        "kanji": "紙",
-        "hiragana": "かみ",
-        "romanji": "kami"
-    },
-    "stem": {
-        "translation": "tronco",
-        "kanji": "幹",
-        "hiragana": "みき",
-        "romanji": "miki"
-    },
-    "stem_1": {
-        "translation": "tronco",
-        "kanji": "柄",
-        "hiragana": "がら",
-        "romanji": "gara"
-    },
-    "wart": {
-        "translation": "verruga",
-        "kanji": "ウォート",
-        "hiragana": "うぉーと",
-        "romanji": "uooto"
-    },
-    "hyphae": {
-        "translation": "micélio",
-        "kanji": "菌糸",
-        "hiragana": "きんし",
-        "romanji": "kinshi"
-    },
-    "knowledge": {
-        "translation": "conhecimento",
-        "kanji": "知恵",
-        "hiragana": "ちえ",
-        "romanji": "chie"
-    },
-    "muddy": {
-        "translation": "enlameado?",
-        "kanji": "泥だらけ",
-        "hiragana": "どろだらけ",
-        "romanji": "dorodarake"
-    },
-    "mud": {
-        "translation": "lama",
-        "kanji": "泥",
-        "hiragana": "どろ",
-        "romanji": "doro"
-    },
-    "resin": {
-        "translation": "resina",
-        "kanji": "樹脂",
-        "hiragana": "じゅし",
-        "romanji": "jushi"
-    },
-    "mourner": {
-        "translation": "pêsames?",
-        "kanji": "哀悼者",
-        "hiragana": "あいとうもの",
-        "romanji": "aitoumono"
-    },
-    "plenty": {
-        "translation": "fortuna",
-        "kanji": "富",
-        "hiragana": "とみ",
-        "romanji": "tomi"
-    },
-    "enchanted": {
-        "translation": "encantado",
-        "kanji": "エンチャント",
-        "hiragana": "えんちゃんと",
-        "romanji": "enchanto"
-    },
-    "experience": {
-        "translation": "experiencia",
-        "kanji": "エンチャント",
-        "hiragana": "えんちゃんと",
-        "romanji": "enchanto"
-    },
-    "cracked": {
-        "translation": "rachado",
-        "kanji": "ひび割",
-        "hiragana": "ひびわ",
-        "romanji": "hibiwa"
-    },
-    "damaged": {
-        "translation": "quebrado",
-        "kanji": "壊れかけ",
-        "hiragana": "こわれかけ",
-        "romanji": "kowarekake"
-    },
-    "dried": {
-        "translation": "seca",
-        "kanji": "乾燥",
-        "hiragana": "かんそう",
-        "romanji": "kansou"
-    },
-    "polished": {
-        "translation": "polido",
-        "kanji": "磨か",
-        "hiragana": "みがか",
-        "romanji": "migaka"
-    },
-    "oxidized": {
-        "translation": "oxidação",
-        "kanji": "酸化",
-        "hiragana": "さんか",
-        "romanji": "sanka"
-    },
-    "exposed": {
-        "translation": "exposto",
-        "kanji": "風化",
-        "hiragana": "ふうか",
-        "romanji": "fuuka"
-    },
-    "waxed": {
-        "translation": "encerado",
-        "kanji": "錆止め",
-        "hiragana": "さびどめ",
-        "romanji": "sabidome"
-    },
-    "weathered": {
-        "translation": "desgastado",
-        "kanji": "錆びた",
-        "hiragana": "さびた",
-        "romanji": "sabita"
-    },
-    "stripped": {
-        "translation": "descascado",
-        "kanji": "を剥いだ",
-        "hiragana": "をはいだ",
-        "romanji": "wohaida"
-    },
-    "infested": {
-        "translation": "infestado",
-        "kanji": "虫食い",
-        "hiragana": "むしくい",
-        "romanji": "mushikui"
-    },
-    "tipped": {
-        "translation": "effeito",
-        "kanji": "効能",
-        "hiragana": "こうのう",
-        "romanji": "kounou"
-    },
-    "creaking": {
-        "translation": "rangendo",
-        "kanji": "クリーキング",
-        "hiragana": "くりーきんぐ",
-        "romanji": "kuriikingu"
-    },
-    "heartbreak": {
-        "translation": "desgosto",
-        "kanji": "傷心",
-        "hiragana": "しょうしん",
-        "romanji": "shoushin"
-    },
-    "stand": {
-        "translation": "suporte",
-        "kanji": "立て",
-        "hiragana": "たて",
-        "romanji": "tate"
-    },
-    "pane": {
-        "translation": "painel",
-        "kanji": "板",
-        "hiragana": "ばん",
-        "romanji": "ban"
-    },
-    "glass": {
-        "translation": "vidro",
-        "kanji": "ガラス",
-        "hiragana": "がらす",
-        "romanji": "garasub"
-    },
-    "stained": {
-        "translation": "colorido",
-        "kanji": "色付き",
-        "hiragana": "いろつき",
-        "romanji": "iritsuki"
-    },
-    "pattern": {
-        "translation": "padrão",
-        "kanji": "模様",
-        "hiragana": "もよう",
-        "romanji": "moyou"
-    },
-    "powered": {
-        "translation": "alimentado",
-        "kanji": "パワード",
-        "hiragana": "ぱわーど",
-        "romanji": "pawaado"
-    },
-    "activator": {
-        "translation": "ativador",
-        "kanji": "アクティベーター",
-        "hiragana": "あくてぃべーたー",
-        "romanji": "akuteibeetaa"
-    },
-    "sticky": {
-        "translation": "grudento",
-        "kanji": "粘着",
-        "hiragana": "ねんちゃく",
-        "romanji": "nenchaku"
-    },
-    "dry": {
-        "translation": "seca",
-        "kanji": "枯れ",
-        "hiragana": "かれ",
-        "romanji": "kare"
-    },
-    "suspicious": {
-        "translation": "suspeito",
-        "kanji": "怪しげな",
-        "hiragana": "あやしげな",
-        "romanji": "ayashigena"
-    },
-    "spectral": {
-        "translation": "luz",
-        "kanji": "光",
-        "hiragana": "ひかり",
-        "romanji": "hikari"
-    },
-    "smooth": {
-        "translation": "liso",
-        "kanji": "滑らかな",
-        "hiragana": "なめらかな",
-        "romanji": "namerakana"
-    },
-    "sweet": {
-        "translation": "suíte",
-        "kanji": "スイート",
-        "hiragana": "すいーと",
-        "romanji": "suiito"
-    },
-    "wet": {
-        "translation": "molhado",
-        "kanji": "濡",
-        "hiragana": "ぬ",
-        "romanji": "nu"
-    },
-    "cut": {
-        "translation": "lapidado",
-        "kanji": "切り込み入り",
-        "hiragana": "きりこみいり",
-        "romanji": "kirikomiiri"
-    },
-    "cut_1": {
-        "translation": "lapidado",
-        "kanji": "研が",
-        "hiragana": "とが",
-        "romanji": "toga"
-    },
-    "slice": {
-        "translation": "fatia",
-        "kanji": "薄切り",
-        "hiragana": "うすぎり",
-        "romanji": "usugiri"
-    },
-    "brewer": {
-        "translation": "cervejeiro",
-        "kanji": "醸造家",
-        "hiragana": "じょうぞうか",
-        "romanji": "jouzouka"
-    },
-    "dead": {
-        "translation": "morto",
-        "kanji": "死んだ",
-        "hiragana": "しんだ",
-        "romanji": "shinda"
-    },
-    "shelter": {
-        "translation": "abrigo?",
-        "kanji": "木陰",
-        "hiragana": "こかげ",
-        "romanji": "kokage"
-    },
-    "flow": {
-        "translation": "redemoinho",
-        "kanji": "渦巻き",
-        "hiragana": "うずまき",
-        "romanji": "uzumaki"
-    },
-    "trial": {
-        "translation": "provação",
-        "kanji": "試練",
-        "hiragana": "しれん",
-        "romanji": "shiren"
-    },
-    "danger": {
-        "translation": "perigo?",
-        "kanji": "脅威",
-        "hiragana": "きょうい",
-        "romanji": "kyoui"
-    },
-    "gilded": {
-        "translation": "brilhante",
-        "kanji": "きらめく",
-        "hiragana": "きらめく",
-        "romanji": "kirameku"
-    },
-    "explorer": {
-        "translation": "explorador",
-        "kanji": "探検家",
-        "hiragana": "たんけんか",
-        "romanji": "tankenka"
-    },
-    "howl": {
-        "translation": "uivo",
-        "kanji": "遠吠え",
-        "hiragana": "とおぼえ",
-        "romanji": "tooboe"
-    },
-    "globe": {
-        "translation": "globo",
-        "kanji": "地球",
-        "hiragana": "ちきゅう",
-        "romanji": "chikyuu"
-    },
-    "happy": {
-        "translation": "feliz",
-        "kanji": "ハッピー",
-        "hiragana": "はっぴー",
-        "romanji": "happii"
-    },
-    "ominous": {
-        "translation": "sinistro",
-        "kanji": "不吉な",
-        "hiragana": "ふきつな",
-        "romanji": "fukitsuna"
-    },
-    "miner": {
-        "translation": "mineiro",
-        "kanji": "鉱夫",
-        "hiragana": "こうふ",
-        "romanji": "koufu"
-    },
-    "elder": {
-        "translation": "ancião",
-        "kanji": "エルダー",
-        "hiragana": "えるだー",
-        "romanji": "erudaa"
-    },
-    "cooked": {
-        "translation": "cozido",
-        "kanji": "焼き",
-        "hiragana": "やき",
-        "romanji": "yaki"
-    },
-    "popped": {
-        "translation": "cozido",
-        "kanji": "焼いた",
-        "hiragana": "やいた",
-        "romanji": "yaita"
-    },
-    "reinforced": {
-        "translation": "reforço",
-        "kanji": "強化",
-        "hiragana": "きょうか",
-        "romanji": "kyouka"
-    },
-    "hanging": {
-        "translation": "suspensa",
-        "kanji": "吊り",
-        "hiragana": "つり",
-        "romanji": "tsuri"
-    },
-    "hanging_1": {
-        "translation": "suspensa",
-        "kanji": "垂れ",
-        "hiragana": "たれ",
-        "romanji": "tare"
-    },
-    "flowering": {
-        "translation": "floração",
-        "kanji": "開花",
-        "hiragana": "かいか",
-        "romanji": "kaika"
-    },
-    "flower_1": {
-        "translation": "flor",
-        "kanji": "フラワー",
-        "hiragana": "ふらわー",
-        "romanji": "furawaa"
-    },
-    "flower": {
-        "translation": "flor",
-        "kanji": "花",
-        "hiragana": "はな",
-        "romanji": "hana"
-    },
-    "archer": {
-        "translation": "arqueiro",
-        "kanji": "射手",
-        "hiragana": "いて",
-        "romanji": "ite"
-    },
-    "big": {
-        "translation": "grande",
-        "kanji": "大きな",
-        "hiragana": "おおきな",
-        "romanji": "ookina"
-    },
-    "tall": {
-        "translation": "alto",
-        "kanji": "背の高い",
-        "hiragana": "せのたかい",
-        "romanji": "senotakai"
-    },
-    "medium": {
-        "translation": "médio",
-        "kanji": "中",
-        "hiragana": "なか",
-        "romanji": "naka"
-    },
-    "small": {
-        "translation": "pequeno",
-        "kanji": "小さな",
-        "hiragana": "ちいさな",
-        "romanji": "chiisana"
-    },
-    "short": {
-        "translation": "pequeno (estatura)",
-        "kanji": "背の低い",
-        "hiragana": "せのひくい",
-        "romanji": "senohikui"
-    },
-    "soul_sand": {
-        "translation": "areia da alma",
-        "kanji": "ソウルサンド",
-        "hiragana": "そうるさんど",
-        "romanji": "sourusando"
-    },
-    "soul": {
-        "translation": "alma",
-        "kanji": "魂",
-        "hiragana": "たましい",
-        "romanji": "tamashii"
-    },
-    "heart": {
-        "translation": "coração",
-        "kanji": "心",
-        "hiragana": "こころ",
-        "romanji": "kokoro"
-    },
-    "heart_1": {
-        "translation": "coração",
-        "kanji": "心臓",
-        "hiragana": "しんぞう",
-        "romanji": "shinzou"
-    },
-    "prize": {
-        "translation": "tesouro",
-        "kanji": "宝物",
-        "hiragana": "ほうもつ",
-        "romanji": "houmotsu"
-    },
-    "scute": {
-        "translation": "escalas",
-        "kanji": "ウロコ",
-        "hiragana": "うろこ",
-        "romanji": "uroko"
-    },
-    "breath": {
-        "translation": "respiração",
-        "kanji": "ブレス",
-        "hiragana": "ぶれす",
-        "romanji": "buresu"
-    },
-    "painting": {
-        "translation": "pintura",
-        "kanji": "絵画",
-        "hiragana": "かいが",
-        "romanji": "kaiga"
-    },
-    "item_frame": {
-        "translation": "porta-retratos?",
-        "kanji": "額縁",
-        "hiragana": "がくぶち",
-        "romanji": "gakubuchi"
-    },
-    "cave": {
-        "translation": "caverna",
-        "kanji": "洞窟",
-        "hiragana": "どうくつ",
-        "romanji": "doukutsu"
-    },
-    "path": {
-        "translation": "caminho",
-        "kanji": "道",
-        "hiragana": "みち",
-        "romanji": "michi"
-    },
-    "tile": {
-        "translation": "ladrilhos",
-        "kanji": "タイル",
-        "hiragana": "たいる",
-        "romanji": "tairu"
-    },
-    "tiles": {
-        "translation": "ladrilhos",
-        "kanji": "タイル",
-        "hiragana": "たいる",
-        "romanji": "tairu"
-    },
-    "jack_o": {
-        "translation": "abobora?",
-        "kanji": "ジャック・オ・",
-        "hiragana": "じゃっく・お・",
-        "romanji": "jakku・o・"
-    },
-    "lantern": {
-        "translation": "lanterna",
-        "kanji": "ランタン",
-        "hiragana": "らんたん",
-        "romanji": "rantan"
-    },
-    "magma": {
-        "translation": "magma",
-        "kanji": "マグマ",
-        "hiragana": "まぐま",
-        "romanji": "maguma"
-    },
-    "ink": {
-        "translation": "tinta",
-        "kanji": "スミ",
-        "hiragana": "すみ",
-        "romanji": "sumi"
-    },
-    "sac": {
-        "translation": "saco",
-        "kanji": "イカ",
-        "hiragana": "いか",
-        "romanji": "ika"
-    },
-    "end": {
-        "translation": "fim",
-        "kanji": "エンド",
-        "hiragana": "えんど",
-        "romanji": "endo"
-    },
-    "end_stone": {
-        "translation": "pedra do fim",
-        "kanji": "エンドストーン",
-        "hiragana": "えんどすとおん",
-        "romanji": "endosutoon"
-    },
-    "fern": {
-        "translation": "samambaia",
-        "kanji": "シダ",
-        "hiragana": "しだ",
-        "romanji": "shida"
-    },
-    "mushroom": {
-        "translation": "cogumelo",
-        "kanji": "キノコ",
-        "hiragana": "きのこ",
-        "romanji": "kinoko"
-    },
-    "seagrass": {
-        "translation": "alga",
-        "kanji": "海草",
-        "hiragana": "かいそう",
-        "romanji": "kaisou"
-    },
-    "dripleaf": {
-        "translation": "plantaforma",
-        "kanji": "ドリップリーフ",
-        "hiragana": "どりっぷりーふ",
-        "romanji": "dorippuriifu"
-    },
-    "sunflower": {
-        "translation": "girassol",
-        "kanji": "ヒマワリ",
-        "hiragana": "ひまわり",
-        "romanji": "himawari"
-    },
-    "rose": {
-        "translation": "rosa",
-        "kanji": "バラ",
-        "hiragana": "ばら",
-        "romanji": "bara"
-    },
-    "rose_1": {
-        "translation": "rosa",
-        "kanji": "ローズ",
-        "hiragana": "ろーず",
-        "romanji": "roozu"
-    },
-    "lily_of_the_valley": {
-        "translation": "lírio do vale",
-        "kanji": "スズラン",
-        "hiragana": "すずらん",
-        "romanji": "suzuran"
-    },
-    "cornflower": {
-        "translation": "centáurea",
-        "kanji": "ヤグルマギク",
-        "hiragana": "やぐるまぎく",
-        "romanji": "yagurumagiku"
-    },
-    "tulip": {
-        "translation": "tulipa",
-        "kanji": "チューリップ",
-        "hiragana": "ちゅーりっぷ",
-        "romanji": "chuurippu"
-    },
-    "dandelion": {
-        "translation": "dente de leão",
-        "kanji": "タンポポ",
-        "hiragana": "たんぽぽ",
-        "romanji": "tanpopo"
-    },
-    "wildflowers": {
-        "translation": "flores silvestres",
-        "kanji": "野花",
-        "hiragana": "のばな",
-        "romanji": "nobana"
-    },
-    "poppy": {
-        "translation": "papoula",
-        "kanji": "ポピー",
-        "hiragana": "ぽぴー",
-        "romanji": "popii"
-    },
-    "azalea": {
-        "translation": "azaléia",
-        "kanji": "ツツジ",
-        "hiragana": "つつじ",
-        "romanji": "tsutsuji"
-    },
-    "kelp": {
-        "translation": "kelp",
-        "kanji": "コンブ",
-        "hiragana": "こんぶ",
-        "romanji": "konbu"
-    },
-    "kelp_1": {
-        "translation": "kelp",
-        "kanji": "昆布",
-        "hiragana": "こんぶ",
-        "romanji": "konbu"
-    },
-    "milk": {
-        "translation": "leite",
-        "kanji": "ミルク",
-        "hiragana": "みるく",
-        "romanji": "miruku"
-    },
-    "lava": {
-        "translation": "lava",
-        "kanji": "溶岩",
-        "hiragana": "ようがん",
-        "romanji": "yougan"
-    },
-    "sugar": {
-        "translation": "açúcar",
-        "kanji": "砂糖",
-        "hiragana": "さとう",
-        "romanji": "satou"
-    },
-    "sugar_cane": {
-        "translation": "cana-de-açúcar",
-        "kanji": "サトウキビ",
-        "hiragana": "さとうきび",
-        "romanji": "satoukibi"
-    },
-    "chorus": {
-        "translation": "coro",
-        "kanji": "コーラス",
-        "hiragana": "こーらす",
-        "romanji": "koorasu"
-    },
-    "plant": {
-        "translation": "plantar",
-        "kanji": "プラント",
-        "hiragana": "ぷらんと",
-        "romanji": "puranto"
-    },
-    "berries": {
-        "translation": "baga",
-        "kanji": "ベリー",
-        "hiragana": "べりー",
-        "romanji": "berii"
-    },
-    "fruit": {
-        "translation": "fruta",
-        "kanji": "フルーツ",
-        "hiragana": "ふるーつ",
-        "romanji": "furuutsu"
-    },
-    "apple": {
-        "translation": "maçã",
-        "kanji": "リンゴ",
-        "hiragana": "りんご",
-        "romanji": "ringo"
-    },
-    "carrot": {
-        "translation": "cenoura",
-        "kanji": "ニンジン",
-        "hiragana": "にんじん",
-        "romanji": "ninjin"
-    },
-    "potato": {
-        "translation": "batata",
-        "kanji": "ジャガイモ",
-        "hiragana": "じゃがいも",
-        "romanji": "jagaimo"
-    },
-    "beetroot": {
-        "translation": "beterraba",
-        "kanji": "ビートルート",
-        "hiragana": "びーとるーと",
-        "romanji": "biitoruuto"
-    },
-    "baked_potato": {
-        "translation": "batata assada",
-        "kanji": "ベイクドポテト",
-        "hiragana": "べいくどぽてと",
-        "romanji": "beikudopoteto"
-    },
-    "pickle": {
-        "translation": "picles",
-        "kanji": "ピクルス",
-        "hiragana": "ぴくるす",
-        "romanji": "pikurusu"
-    },
-    "bread": {
-        "translation": "pão",
-        "kanji": "パン",
-        "hiragana": "ぱん",
-        "romanji": "pan"
-    },
-    "cake": {
-        "translation": "bolo",
-        "kanji": "ケーキ",
-        "hiragana": "けーき",
-        "romanji": "keeki"
-    },
-    "pie": {
-        "translation": "torta",
-        "kanji": "パイ",
-        "hiragana": "ぱい",
-        "romanji": "pai"
-    },
-    "stew": {
-        "translation": "ensopado",
-        "kanji": "シチュー",
-        "hiragana": "しちゅー",
-        "romanji": "shichuu"
-    },
-    "soup": {
-        "translation": "sopa",
-        "kanji": "スープ",
-        "hiragana": "すーぷ",
-        "romanji": "suupu"
-    },
-    "beef": {
-        "translation": "bife",
-        "kanji": "牛",
-        "hiragana": "ぎゅう",
-        "romanji": "gyuu"
-    },
-    "beef_1": {
-        "translation": "bife",
-        "kanji": "ステーキ",
-        "hiragana": "すてーき",
-        "romanji": "suteeki"
-    },
-    "cooked_beef": {
-        "translation": "bife assado",
-        "kanji": "ステーキ",
-        "hiragana": "すてーき",
-        "romanji": "suteeki"
-    },
-    "sea": {
-        "translation": "mar",
-        "kanji": "海洋",
-        "hiragana": "かいよう",
-        "romanji": "kaiyou"
-    },
-    "sea_1": {
-        "translation": "mar",
-        "kanji": "シー",
-        "hiragana": "しー",
-        "romanji": "shii"
-    },
-    "shell": {
-        "translation": "concha",
-        "kanji": "殻",
-        "hiragana": "から",
-        "romanji": "kara"
-    },
-    "roots": {
-        "translation": "raiz",
-        "kanji": "根",
-        "hiragana": "ね",
-        "romanji": "ne"
-    },
-    "rooted": {
-        "translation": "enraizado",
-        "kanji": "根付いた",
-        "hiragana": "ねづいた",
-        "romanji": "nezuita"
-    },
-    "gunpowder": {
-        "translation": "pólvora",
-        "kanji": "火薬",
-        "hiragana": "かやく",
-        "romanji": "kayaku"
-    },
-    "command": {
-        "translation": "comando",
-        "kanji": "コマンド",
-        "hiragana": "こまんど",
-        "romanji": "komando"
-    },
-    "furnace": {
-        "translation": "forno",
-        "kanji": "かまど",
-        "hiragana": "かまど",
-        "romanji": "kamado"
-    },
-    "blast_furnace": {
-        "translation": "alto-forno",
-        "kanji": "溶鉱炉",
-        "hiragana": "ようこうろ",
-        "romanji": "youkouro"
-    },
-    "smoker": {
-        "translation": "fumante",
-        "kanji": "燻製器",
-        "hiragana": "くんせいき",
-        "romanji": "kunseiki"
-    },
-    "rail": {
-        "translation": "trilho",
-        "kanji": "レール",
-        "hiragana": "れーる",
-        "romanji": "reeru"
-    },
-    "structure": {
-        "translation": "estrutura",
-        "kanji": "ストラクチャー",
-        "hiragana": "すとらくちゃー",
-        "romanji": "sutorakuchaa"
-    },
-    "tnt": {
-        "translation": "tnt",
-        "kanji": "TNT",
-        "hiragana": "てぃーえぬてぃー",
-        "romanji": "teiienuteii"
-    },
-    "test": {
-        "translation": "teste",
-        "kanji": "テスト",
-        "hiragana": "てすと",
-        "romanji": "tesuto"
-    },
-    "cube": {
-        "translation": "cubo",
-        "kanji": "キューブ",
-        "hiragana": "きゅーぶ",
-        "romanji": "kyuubu"
-    },
-    "cream": {
-        "translation": "creme",
-        "kanji": "クリーム",
-        "hiragana": "くりーむ",
-        "romanji": "kuriimu"
-    },
-    "void": {
-        "translation": "vazio",
-        "kanji": "ヴォイド",
-        "hiragana": "ゔぉいど",
-        "romanji": "voido"
-    },
-    "instance": {
-        "translation": "exemplo",
-        "kanji": "インスタンス",
-        "hiragana": "いんすたんす",
-        "romanji": "insutansu"
-    },
-    "membrane": {
-        "translation": "membrana",
-        "kanji": "皮膜",
-        "hiragana": "ひまく",
-        "romanji": "himaku"
-    },
-    "dripstone": {
-        "translation": "estalactite",
-        "kanji": "鍾乳石",
-        "hiragana": "しょうにゅうせき",
-        "romanji": "shounyuuseki"
-    },
-    "burn": {
-        "translation": "chama",
-        "kanji": "炎",
-        "hiragana": "ほのお",
-        "romanji": "honoo"
-    },
-    "animal": {
-        "translation": "animal",
-        "kanji": "動物",
-        "hiragana": "どうぶつ",
-        "romanji": "doubutsu"
-    },
-    "lightning_rod": {
-        "translation": "para-raio",
-        "kanji": "避雷針",
-        "hiragana": "ひらいしん",
-        "romanji": "hiraishin"
-    },
-    "skin": {
-        "translation": "pele",
-        "kanji": "皮",
-        "hiragana": "かわ",
-        "romanji": "kawa"
-    },
-    "frame": {
-        "translation": "moldura",
-        "kanji": "フレーム",
-        "hiragana": "ふれーむ",
-        "romanji": "fureemu"
-    },
-    "fire_charge": {
-        "translation": "bola de fogo?",
-        "kanji": "ファイヤーチャージ",
-        "hiragana": "ふぁいやーちゃーづ",
-        "romanji": "faiyaachaadzu"
-    },
-    "petrification": {
-        "translation": "petrificação",
-        "kanji": "石化",
-        "hiragana": "せきか",
-        "romanji": "sekika"
-    },
-    "epidermis": {
-        "translation": "casca",
-        "kanji": "表皮",
-        "hiragana": "じゅひ",
-        "romanji": "hyouhi"
-    },
-    "bark": {
-        "translation": "tronco",
-        "kanji": "樹皮",
-        "hiragana": "ひょうひ",
-        "romanji": "juhi"
-    },
-    "bowl": {
-        "translation": "tigela",
-        "kanji": "ボウル",
-        "hiragana": "ぼうる",
-        "romanji": "bouru"
-    },
-    "sensor": {
-        "translation": "sensor",
-        "kanji": "センサー",
-        "hiragana": "せんさー",
-        "romanji": "sensaa"
-    },
-    "vault": {
-        "translation": "cofre",
-        "kanji": "宝物庫",
-        "hiragana": "ほうもつこ",
-        "romanji": "houmotsuko"
-    },
-    "bush": {
-        "translation": "arbusto",
-        "kanji": "茂み",
-        "hiragana": "しげみ",
-        "romanji": "shigemi"
-    },
-    "obsidian": {
-        "translation": "obsidiana",
-        "kanji": "黒曜石",
-        "hiragana": "しげみ",
-        "romanji": "shigemi"
-    },
-    "crying": {
-        "translation": "obsidiana",
-        "kanji": "泣く",
-        "hiragana": "なく",
-        "romanji": "naku"
-    },
-    "lodestone": {
-        "translation": "magnetita",
-        "kanji": "ロードストーン",
-        "hiragana": "ろーどすとーん",
-        "romanji": "roodosutoon"
-    },
-    "record": {
-        "translation": "gravação",
-        "kanji": "レコード",
-        "hiragana": "れこーど",
-        "romanji": "rekoodo"
-    },
-    "mycelium": {
-        "translation": "micélio",
-        "kanji": "菌糸",
-        "hiragana": "きんし",
-        "romanji": "kinshi"
-    },
-    "string": {
-        "translation": "linha",
-        "kanji": "糸",
-        "hiragana": "いと",
-        "romanji": "ito"
-    },
-    "air": {
-        "translation": "ar",
-        "kanji": "空気",
-        "hiragana": "くうき",
-        "romanji": "kuuki"
-    },
-    "azure_bluet": {
-        "translation": "Flor-Silvestre-Azul",
-        "kanji": "ヒナソウ",
-        "hiragana": "ひなそう",
-        "romanji": "hinasou"
-    },
-    "catalyst": {
-        "translation": "catalisador",
-        "kanji": "カタリスト",
-        "hiragana": "かたりすと",
-        "romanji": "katarisuto"
-    },
-    "lichen": {
-        "translation": "Líquen",
-        "kanji": "ゴケ",
-        "hiragana": "ごけ",
-        "romanji": "goke"
-    },
-    "lilac": {
-        "translation": "lilás",
-        "kanji": "ライラック",
-        "hiragana": "りいらっく",
-        "romanji": "riirakku"
-    },
-    "vine": {
-        "translation": "trepadeira",
-        "kanji": "ツタ",
-        "hiragana": "した",
-        "romanji": "shita"
-    },
-    "firefly": {
-        "translation": "vaga-lume",
-        "kanji": "ホタル",
-        "hiragana": "ほたる",
-        "romanji": "hotaru"
-    },
-    "weeping": {
-        "translation": "chorão",
-        "kanji": "しだれ",
-        "hiragana": "しだれ",
-        "romanji": "shidare"
-    },
-    "barrier": {
-        "translation": "berreira",
-        "kanji": "バリアブロック",
-        "hiragana": "ばりあぶろっく",
-        "romanji": "bariaburokku"
-    },
-    "cookie": {
-        "translation": "cookie",
-        "kanji": "クッキー",
-        "hiragana": "くっきー",
-        "romanji": "kukkii"
-    },
-    "decorated": {
-        "translation": "decorado",
-        "kanji": "飾り",
-        "hiragana": "かざり",
-        "romanji": "kazari"
-    },
-    "lead": {
-        "translation": "laço",
-        "kanji": "リード",
-        "hiragana": "りーど",
-        "romanji": "riido"
-    }
+  "verdant": {
+    "translations": [
+      "verde?"
+    ],
+    "kanji": "新緑",
+    "hiragana": "しんりょく",
+    "romanji": "shinryoku"
+  },
+  "light_gray": {
+    "translations": [
+      "azul claro"
+    ],
+    "kanji": "薄灰",
+    "hiragana": "うすはい",
+    "romanji": "usuhai"
+  },
+  "red": {
+    "translations": [
+      "vermelho"
+    ],
+    "kanji": "赤",
+    "hiragana": "あか",
+    "romanji": "aka"
+  },
+  "red_1": {
+    "translations": [
+      "vermelho"
+    ],
+    "kanji": "レッド",
+    "hiragana": "れっど",
+    "romanji": "reddo"
+  },
+  "lime": {
+    "translations": [
+      "lime?"
+    ],
+    "kanji": "黄緑",
+    "hiragana": "きみどり",
+    "romanji": "kimidori"
+  },
+  "cyan": {
+    "translations": [
+      "ciano"
+    ],
+    "kanji": "青緑",
+    "hiragana": "あおみどり",
+    "romanji": "aomidori"
+  },
+  "light_blue": {
+    "translations": [
+      "azul claro"
+    ],
+    "kanji": "空",
+    "hiragana": "そら",
+    "romanji": "sora"
+  },
+  "ochre": {
+    "translations": [
+      "ocre"
+    ],
+    "kanji": "黄土",
+    "hiragana": "おうど",
+    "romanji": "oudo"
+  },
+  "brown": {
+    "translations": [
+      "marrom"
+    ],
+    "kanji": "茶",
+    "hiragana": "ちゃ",
+    "romanji": "cha"
+  },
+  "gray": {
+    "translations": [
+      "cinza"
+    ],
+    "kanji": "灰",
+    "hiragana": "はい",
+    "romanji": "hai"
+  },
+  "pearlescent": {
+    "translations": [
+      "perolado"
+    ],
+    "kanji": "真珠",
+    "hiragana": "しんじゅ",
+    "romanji": "shinju"
+  },
+  "purple": {
+    "translations": [
+      "roxo"
+    ],
+    "kanji": "紫",
+    "hiragana": "むらさき",
+    "romanji": "murasaki"
+  },
+  "yellow": {
+    "translations": [
+      "amarelo"
+    ],
+    "kanji": "黄",
+    "hiragana": "き",
+    "romanji": "ki"
+  },
+  "green": {
+    "translations": [
+      "verde"
+    ],
+    "kanji": "緑",
+    "hiragana": "みどり",
+    "romanji": "midori"
+  },
+  "blue": {
+    "translations": [
+      "azul"
+    ],
+    "kanji": "青",
+    "hiragana": "あお",
+    "romanji": "ao"
+  },
+  "orange": {
+    "translations": [
+      "laranja"
+    ],
+    "kanji": "橙",
+    "hiragana": "だいだい",
+    "romanji": "daidai"
+  },
+  "black": {
+    "translations": [
+      "preto"
+    ],
+    "kanji": "黒",
+    "hiragana": "くろ",
+    "romanji": "kuro"
+  },
+  "white": {
+    "translations": [
+      "branco"
+    ],
+    "kanji": "白色の",
+    "hiragana": "はくしょくの",
+    "romanji": "hakushoku"
+  },
+  "pink": {
+    "translations": [
+      "rosa"
+    ],
+    "kanji": "桃",
+    "hiragana": "もも",
+    "romanji": "momo"
+  },
+  "pink_1": {
+    "translations": [
+      "rosa"
+    ],
+    "kanji": "桜",
+    "hiragana": "さくら",
+    "romanji": "sakura"
+  },
+  "magenta": {
+    "translations": [
+      "magenta"
+    ],
+    "kanji": "赤紫",
+    "hiragana": "あかむらさき",
+    "romanji": "akamurasaki"
+  },
+  "dark": {
+    "translations": [
+      "escuro"
+    ],
+    "kanji": "ダーク",
+    "hiragana": "だーく",
+    "romanji": "daaku"
+  },
+  "oak": {
+    "translations": [
+      "carvalho"
+    ],
+    "kanji": "オーク",
+    "hiragana": "おーく",
+    "romanji": "ooku"
+  },
+  "birch": {
+    "translations": [
+      "eucalipto"
+    ],
+    "kanji": "シラカバ",
+    "hiragana": "しらかば",
+    "romanji": "shirakaba"
+  },
+  "spruce": {
+    "translations": [
+      "pinheiro"
+    ],
+    "kanji": "トウヒ",
+    "hiragana": "とうひ",
+    "romanji": "touhi"
+  },
+  "acacia": {
+    "translations": [
+      "acácia"
+    ],
+    "kanji": "アカシア",
+    "hiragana": "あかしあ",
+    "romanji": "akashia"
+  },
+  "pale": {
+    "translations": [
+      "palido"
+    ],
+    "kanji": "ペール",
+    "hiragana": "ぺーる",
+    "romanji": "peeru"
+  },
+  "mangrove": {
+    "translations": [
+      "mangue"
+    ],
+    "kanji": "マングローブ",
+    "hiragana": "まんぐろーぶ",
+    "romanji": "manguroobu"
+  },
+  "jungle": {
+    "translations": [
+      "selva"
+    ],
+    "kanji": "ジャングル",
+    "hiragana": "じゃんぐる",
+    "romanji": "janguru"
+  },
+  "cherry": {
+    "translations": [
+      "cerejeira"
+    ],
+    "kanji": "サクラ",
+    "hiragana": "さくら",
+    "romanji": "sakura"
+  },
+  "bamboo": {
+    "translations": [
+      "bambu"
+    ],
+    "kanji": "竹",
+    "hiragana": "たけ",
+    "romanji": "take"
+  },
+  "block": {
+    "translations": [
+      "bloco"
+    ],
+    "kanji": "ブロック",
+    "hiragana": "ぶろっく",
+    "romanji": "burokku"
+  },
+  "block_1": {
+    "translations": [
+      "bloco"
+    ],
+    "kanji": "俵",
+    "hiragana": "たわら",
+    "romanji": "tawara"
+  },
+  "warped": {
+    "translations": [
+      "distorcido"
+    ],
+    "kanji": "歪んだ",
+    "hiragana": "ゆがんだ",
+    "romanji": "yuganda"
+  },
+  "crimson": {
+    "translations": [
+      "carmesim"
+    ],
+    "kanji": "真紅",
+    "hiragana": "しんく",
+    "romanji": "shinku"
+  },
+  "wood": {
+    "translations": [
+      "madeira"
+    ],
+    "kanji": "木",
+    "hiragana": "き",
+    "romanji": "ki"
+  },
+  "tuff": {
+    "translations": [
+      "tufo"
+    ],
+    "kanji": "凝灰岩",
+    "hiragana": "ぎょうかいがん",
+    "romanji": "gyoukaigan"
+  },
+  "bedrock": {
+    "translations": [
+      "alicerce"
+    ],
+    "kanji": "岩盤",
+    "hiragana": "がんばん",
+    "romanji": "ganban"
+  },
+  "flint": {
+    "translations": [
+      "pederneira"
+    ],
+    "kanji": "火打石",
+    "hiragana": "ひうちいし",
+    "romanji": "hiuchiishi"
+  },
+  "gravel": {
+    "translations": [
+      "cascalho"
+    ],
+    "kanji": "砂利",
+    "hiragana": "じゃり",
+    "romanji": "jari"
+  },
+  "sand": {
+    "translations": [
+      "areia"
+    ],
+    "kanji": "砂",
+    "hiragana": "すな",
+    "romanji": "suna"
+  },
+  "basalt": {
+    "translations": [
+      "basalto"
+    ],
+    "kanji": "玄武岩",
+    "hiragana": "げんぶがん",
+    "romanji": "genbugan"
+  },
+  "granite": {
+    "translations": [
+      "granito"
+    ],
+    "kanji": "花崗岩",
+    "hiragana": "かこうがん",
+    "romanji": "kakougan"
+  },
+  "andesite": {
+    "translations": [
+      "andesito"
+    ],
+    "kanji": "安山岩",
+    "hiragana": "あんざんがん",
+    "romanji": "anzangan"
+  },
+  "diorite": {
+    "translations": [
+      "diorito"
+    ],
+    "kanji": "閃緑岩",
+    "hiragana": "せんりょくがん",
+    "romanji": "senryokugan"
+  },
+  "deepslate": {
+    "translations": [
+      "ardosiabissal"
+    ],
+    "kanji": "深層岩",
+    "hiragana": "しんそうがん",
+    "romanji": "shinsougan"
+  },
+  "deepslate_1": {
+    "translations": [
+      "ardosiabissal"
+    ],
+    "kanji": "深層",
+    "hiragana": "しんそう",
+    "romanji": "shinsou"
+  },
+  "stone": {
+    "translations": [
+      "pedra"
+    ],
+    "kanji": "石",
+    "hiragana": "いし",
+    "romanji": "ishi"
+  },
+  "stone_1": {
+    "translations": [
+      "pedra"
+    ],
+    "kanji": "ストーン",
+    "hiragana": "すとーん",
+    "romanji": "sutoone"
+  },
+  "cobblestone": {
+    "translations": [
+      "pedregulho"
+    ],
+    "kanji": "丸石",
+    "hiragana": "まるいし",
+    "romanji": "maruishi"
+  },
+  "blackstone": {
+    "translations": [
+      "pedra negra"
+    ],
+    "kanji": "ブラックストーン",
+    "hiragana": "ぶらっくすとーん",
+    "romanji": "burakkusutoon"
+  },
+  "chainmail": {
+    "translations": [
+      "carvão vegetal"
+    ],
+    "kanji": "チェーン",
+    "hiragana": "ちぇーん",
+    "romanji": "cheen"
+  },
+  "charcoal": {
+    "translations": [
+      "carvão vegetal"
+    ],
+    "kanji": "木炭",
+    "hiragana": "もくたん",
+    "romanji": "mokutan"
+  },
+  "coal": {
+    "translations": [
+      "carvão"
+    ],
+    "kanji": "石炭",
+    "hiragana": "せきたん",
+    "romanji": "sekitan"
+  },
+  "iron": {
+    "translations": [
+      "ferro"
+    ],
+    "kanji": "鉄",
+    "hiragana": "てつ",
+    "romanji": "tetsu"
+  },
+  "iron_1": {
+    "translations": [
+      "ferro"
+    ],
+    "kanji": "アイアン",
+    "hiragana": "あいあん",
+    "romanji": "aian"
+  },
+  "iron_nugget": {
+    "translations": [
+      "pepita de ferro"
+    ],
+    "kanji": "鉄塊",
+    "hiragana": "てっかい",
+    "romanji": "tekkai"
+  },
+  "copper": {
+    "translations": [
+      "cobre"
+    ],
+    "kanji": "銅",
+    "hiragana": "どう",
+    "romanji": "dou"
+  },
+  "copper_1": {
+    "translations": [
+      "cobre"
+    ],
+    "kanji": "カッパー",
+    "hiragana": "かっぱー",
+    "romanji": "kappaa"
+  },
+  "gold": {
+    "translations": [
+      "ouro"
+    ],
+    "kanji": "金",
+    "hiragana": "きん",
+    "romanji": "kin"
+  },
+  "golden": {
+    "translations": [
+      "ouro"
+    ],
+    "kanji": "金",
+    "hiragana": "きん",
+    "romanji": "kin"
+  },
+  "gold_nugget": {
+    "translations": [
+      "pepita de ouro"
+    ],
+    "kanji": "金塊",
+    "hiragana": "きんかい",
+    "romanji": "kinkai"
+  },
+  "diamond": {
+    "translations": [
+      "diamante"
+    ],
+    "kanji": "ダイヤモンド",
+    "hiragana": "だいやもんど",
+    "romanji": "daiyamondo"
+  },
+  "emerald": {
+    "translations": [
+      "esmeralda"
+    ],
+    "kanji": "エメラルド",
+    "hiragana": "えめらるど",
+    "romanji": "emerarudo"
+  },
+  "netherite": {
+    "translations": [
+      "netheritia"
+    ],
+    "kanji": "ネザライト",
+    "hiragana": "ねざらいと",
+    "romanji": "nezaraito"
+  },
+  "lapis": {
+    "translations": [
+      "lápis"
+    ],
+    "kanji": "ラピス",
+    "hiragana": "らぴす",
+    "romanji": "rapisu"
+  },
+  "lazuli": {
+    "translations": [
+      "lazúli"
+    ],
+    "kanji": "ラズリ",
+    "hiragana": "らずり",
+    "romanji": "razuri"
+  },
+  "quartz": {
+    "translations": [
+      "quartzo"
+    ],
+    "kanji": "クォーツ",
+    "hiragana": "くぉーつ",
+    "romanji": "kuootsu"
+  },
+  "amethyst": {
+    "translations": [
+      "ametista"
+    ],
+    "kanji": "アメジスト",
+    "hiragana": "あめじすと",
+    "romanji": "amejisuto"
+  },
+  "calcite": {
+    "translations": [
+      "calcita"
+    ],
+    "kanji": "方解石",
+    "hiragana": "ほうかいせき",
+    "romanji": "houkaiseki"
+  },
+  "leather": {
+    "translations": [
+      "couro"
+    ],
+    "kanji": "革",
+    "hiragana": "かわ",
+    "romanji": "kawa"
+  },
+  "armor": {
+    "translations": [
+      "armadura"
+    ],
+    "kanji": "鎧",
+    "hiragana": "よろい",
+    "romanji": "yoroi"
+  },
+  "armor_1": {
+    "translations": [
+      "armadura"
+    ],
+    "kanji": "防具",
+    "hiragana": "ぼうぐ",
+    "romanji": "bougu"
+  },
+  "helmet": {
+    "translations": [
+      "capacete"
+    ],
+    "kanji": "ヘルメット",
+    "hiragana": "へるめっと",
+    "romanji": "herumetto"
+  },
+  "helmet_1": {
+    "translations": [
+      "chepéu?"
+    ],
+    "kanji": "帽子",
+    "hiragana": "ぼうし",
+    "romanji": "boushi"
+  },
+  "helmet_2": {
+    "translations": [
+      "boné?"
+    ],
+    "kanji": "甲羅",
+    "hiragana": "こうら",
+    "romanji": "koura"
+  },
+  "chestplate": {
+    "translations": [
+      "peitoral"
+    ],
+    "kanji": "チェストプレート",
+    "hiragana": "ちぇすとぷれーと",
+    "romanji": "chesutopureeto"
+  },
+  "chestplate_1": {
+    "translations": [
+      "peitoral"
+    ],
+    "kanji": "上着",
+    "hiragana": "うわぎ",
+    "romanji": "uwagi"
+  },
+  "leggings": {
+    "translations": [
+      "calças"
+    ],
+    "kanji": "レギンス",
+    "hiragana": "れぎんす",
+    "romanji": "reginsu"
+  },
+  "leggings_1": {
+    "translations": [
+      "calças"
+    ],
+    "kanji": "ズボン",
+    "hiragana": "ずぼん",
+    "romanji": "zubon"
+  },
+  "boots": {
+    "translations": [
+      "botas"
+    ],
+    "kanji": "ブーツ",
+    "hiragana": "ぶーつ",
+    "romanji": "buutsu"
+  },
+  "foot": {
+    "translations": [
+      "pés"
+    ],
+    "kanji": "足",
+    "hiragana": "あし",
+    "romanji": "ashi"
+  },
+  "nose": {
+    "translations": [
+      "nariz"
+    ],
+    "kanji": "鼻",
+    "hiragana": "はな",
+    "romanji": "hana"
+  },
+  "to_sound": {
+    "translations": [
+      "(fazer um som)"
+    ],
+    "kanji": "鳴らす",
+    "hiragana": "ならす",
+    "romanji": "narasu"
+  },
+  "detector": {
+    "translations": [
+      "detector"
+    ],
+    "kanji": "ディテクター",
+    "hiragana": "でぃてくたー",
+    "romanji": "ditekutaa"
+  },
+  "piston": {
+    "translations": [
+      "pistão"
+    ],
+    "kanji": "ピストン",
+    "hiragana": "ぴすとん",
+    "romanji": "pisuton"
+  },
+  "observer": {
+    "translations": [
+      "observador"
+    ],
+    "kanji": "オブザーバー",
+    "hiragana": "おぶざーばー",
+    "romanji": "obuzaabaa"
+  },
+  "repeater": {
+    "translations": [
+      "repetidor"
+    ],
+    "kanji": "リピーター",
+    "hiragana": "りぴーたー",
+    "romanji": "ripiitaa"
+  },
+  "hopper": {
+    "translations": [
+      "tremonha"
+    ],
+    "kanji": "ホッパー",
+    "hiragana": "ほっぱー",
+    "romanji": "hoppaa"
+  },
+  "dropper": {
+    "translations": [
+      "conta-gotas"
+    ],
+    "kanji": "ドロッパー",
+    "hiragana": "どろっぱー",
+    "romanji": "doroppaa"
+  },
+  "dispenser": {
+    "translations": [
+      "distribuidor"
+    ],
+    "kanji": "ディスペンサー",
+    "hiragana": "でぃすぺんさー",
+    "romanji": "disupensaa"
+  },
+  "comparator": {
+    "translations": [
+      "comparador"
+    ],
+    "kanji": "コンパレーター",
+    "hiragana": "こんぱれーたー",
+    "romanji": "konpareetaa"
+  },
+  "compass": {
+    "translations": [
+      "bússola"
+    ],
+    "kanji": "コンパス",
+    "hiragana": "こんぱす",
+    "romanji": "konpasu"
+  },
+  "recovery": {
+    "translations": [
+      "recuperação"
+    ],
+    "kanji": "リカバリー",
+    "hiragana": "りかばりー",
+    "romanji": "rikabarii"
+  },
+  "totem": {
+    "translations": [
+      "totem"
+    ],
+    "kanji": "トーテム",
+    "hiragana": "とーてむ",
+    "romanji": "tootemu"
+  },
+  "rod": {
+    "translations": [
+      "haste"
+    ],
+    "kanji": "ロッド",
+    "hiragana": "ろっど",
+    "romanji": "roddo"
+  },
+  "stick": {
+    "translations": [
+      "haste"
+    ],
+    "kanji": "棒",
+    "hiragana": "ぼう",
+    "romanji": "bou"
+  },
+  "shield": {
+    "translations": [
+      "escudo"
+    ],
+    "kanji": "盾",
+    "hiragana": "たて",
+    "romanji": "tate"
+  },
+  "bow": {
+    "translations": [
+      "arco"
+    ],
+    "kanji": "弓",
+    "hiragana": "ゆみ",
+    "romanji": "yumi"
+  },
+  "crossbow": {
+    "translations": [
+      "besta"
+    ],
+    "kanji": "クロスボウ",
+    "hiragana": "くろすぼう",
+    "romanji": "kurosubou"
+  },
+  "trident": {
+    "translations": [
+      "tridente"
+    ],
+    "kanji": "トライデント",
+    "hiragana": "とらいでんと",
+    "romanji": "toraidento"
+  },
+  "elytra": {
+    "translations": [
+      "élitro"
+    ],
+    "kanji": "エリトラ",
+    "hiragana": "えりとら",
+    "romanji": "eritora"
+  },
+  "fishing_rod": {
+    "translations": [
+      "vara de pescar"
+    ],
+    "kanji": "釣竿",
+    "hiragana": "つりざお",
+    "romanji": "tsurizao"
+  },
+  "brush": {
+    "translations": [
+      "escovar"
+    ],
+    "kanji": "ブラシ",
+    "hiragana": "ぶらし",
+    "romanji": "burashi"
+  },
+  "spyglass": {
+    "translations": [
+      "telescópio"
+    ],
+    "kanji": "望遠鏡",
+    "hiragana": "ぼうえんきょう",
+    "romanji": "bouenkyou"
+  },
+  "shears": {
+    "translations": [
+      "tesoura"
+    ],
+    "kanji": "ハサミ",
+    "hiragana": "はさみ",
+    "romanji": "hasami"
+  },
+  "mace": {
+    "translations": [
+      "maça"
+    ],
+    "kanji": "メイス",
+    "hiragana": "めいす",
+    "romanji": "meisu"
+  },
+  "pickaxe": {
+    "translations": [
+      "picareta"
+    ],
+    "kanji": "ツルハシ",
+    "hiragana": "つるはし",
+    "romanji": "tsuruhashi"
+  },
+  "shovel": {
+    "translations": [
+      "pá"
+    ],
+    "kanji": "シャベル",
+    "hiragana": "しゃべる",
+    "romanji": "shaberu"
+  },
+  "hoe": {
+    "translations": [
+      "enxada"
+    ],
+    "kanji": "クワ",
+    "hiragana": "くわ",
+    "romanji": "kuwa"
+  },
+  "axe": {
+    "translations": [
+      "machado"
+    ],
+    "kanji": "斧",
+    "hiragana": "おの",
+    "romanji": "ono"
+  },
+  "spear": {
+    "translations": [
+      "lança"
+    ],
+    "kanji": "槍",
+    "hiragana": "やり",
+    "romanji": "yari"
+  },
+  "sword": {
+    "translations": [
+      "espada"
+    ],
+    "kanji": "剣",
+    "hiragana": "けん",
+    "romanji": "ken"
+  },
+  "sandstone": {
+    "translations": [
+      "arenito"
+    ],
+    "kanji": "砂岩",
+    "hiragana": "さがん",
+    "romanji": "sagan"
+  },
+  "podzol": {
+    "translations": [
+      "podzol"
+    ],
+    "kanji": "ポドゾル",
+    "hiragana": "ぽどぞる",
+    "romanji": "podozoru"
+  },
+  "dirt": {
+    "translations": [
+      "terra"
+    ],
+    "kanji": "土",
+    "hiragana": "つち",
+    "romanji": "tsuchi"
+  },
+  "coarse": {
+    "translations": [
+      "duro"
+    ],
+    "kanji": "粗い",
+    "hiragana": "あらい",
+    "romanji": "arai"
+  },
+  "grass": {
+    "translations": [
+      "grama"
+    ],
+    "kanji": "草",
+    "hiragana": "くさ",
+    "romanji": "kusa"
+  },
+  "soul_soil": {
+    "translations": [
+      "solo"
+    ],
+    "kanji": "ソウルソイル",
+    "hiragana": "そうるそいる",
+    "romanji": "sourusoiru"
+  },
+  "wool": {
+    "translations": [
+      "lã"
+    ],
+    "kanji": "羊毛",
+    "hiragana": "ようもう",
+    "romanji": "youmou"
+  },
+  "clay": {
+    "translations": [
+      "argila"
+    ],
+    "kanji": "粘土",
+    "hiragana": "ねんど",
+    "romanji": "nendo"
+  },
+  "clump": {
+    "translations": [
+      "massa"
+    ],
+    "kanji": "塊",
+    "hiragana": "かたまり",
+    "romanji": "katamari"
+  },
+  "ore": {
+    "translations": [
+      "minério"
+    ],
+    "kanji": "鉱石",
+    "hiragana": "こうせき",
+    "romanji": "kouseki"
+  },
+  "dye": {
+    "translations": [
+      "corante"
+    ],
+    "kanji": "染料",
+    "hiragana": "せんりょう",
+    "romanji": "senryou"
+  },
+  "brick": {
+    "translations": [
+      "tijolo"
+    ],
+    "kanji": "レンガ",
+    "hiragana": "れんが",
+    "romanji": "renga"
+  },
+  "bricks": {
+    "translations": [
+      "tijolo"
+    ],
+    "kanji": "レンガ",
+    "hiragana": "れんが",
+    "romanji": "renga"
+  },
+  "mossy": {
+    "translations": [
+      "musgoso"
+    ],
+    "kanji": "苔む",
+    "hiragana": "こけむ",
+    "romanji": "kokemu"
+  },
+  "stairs": {
+    "translations": [
+      "escadaria"
+    ],
+    "kanji": "階段",
+    "hiragana": "かいだん",
+    "romanji": "kaidan"
+  },
+  "slab": {
+    "translations": [
+      "meio bloco"
+    ],
+    "kanji": "ハーフブロック",
+    "hiragana": "はーふぶろっく",
+    "romanji": "haafuburokku"
+  },
+  "pillar": {
+    "translations": [
+      "pilar"
+    ],
+    "kanji": "柱",
+    "hiragana": "はしら",
+    "romanji": "hashira"
+  },
+  "mosaic": {
+    "translations": [
+      "artesanato"
+    ],
+    "kanji": "細工",
+    "hiragana": "ざいく",
+    "romanji": "zaiku"
+  },
+  "prismarine": {
+    "translations": [
+      "prismarino"
+    ],
+    "kanji": "プリズマリン",
+    "hiragana": "ぷりずまりん",
+    "romanji": "purizumarin"
+  },
+  "terracotta": {
+    "translations": [
+      "terracota"
+    ],
+    "kanji": "テラコッタ",
+    "hiragana": "てらこった",
+    "romanji": "terakotta"
+  },
+  "banner": {
+    "translations": [
+      "banner"
+    ],
+    "kanji": "旗",
+    "hiragana": "はた",
+    "romanji": "hata"
+  },
+  "carpet": {
+    "translations": [
+      "tapete"
+    ],
+    "kanji": "カーペット",
+    "hiragana": "かーぺっと",
+    "romanji": "kaapetto"
+  },
+  "concrete": {
+    "translations": [
+      "concreto"
+    ],
+    "kanji": "コンクリート",
+    "hiragana": "こんくりーと",
+    "romanji": "konkuriito"
+  },
+  "nylium": {
+    "translations": [
+      "nílio"
+    ],
+    "kanji": "ナイリウム",
+    "hiragana": "ないりうむ",
+    "romanji": "nairiumu"
+  },
+  "planks": {
+    "translations": [
+      "tabuas"
+    ],
+    "kanji": "板材",
+    "hiragana": "いたざい",
+    "romanji": "itazai"
+  },
+  "purpur": {
+    "translations": [
+      "púrpura"
+    ],
+    "kanji": "プルプァ",
+    "hiragana": "ぷるぷぁ",
+    "romanji": "purupua"
+  },
+  "netherrack": {
+    "translations": [
+      "netherrack"
+    ],
+    "kanji": "ネザーラック",
+    "hiragana": "ねざーらっく",
+    "romanji": "nezaarakku"
+  },
+  "ingot": {
+    "translations": [
+      "barra"
+    ],
+    "kanji": "インゴット",
+    "hiragana": "いんごっと",
+    "romanji": "ingotto"
+  },
+  "log": {
+    "translations": [
+      "tronco"
+    ],
+    "kanji": "原木",
+    "hiragana": "げんぼく",
+    "romanji": "genboku"
+  },
+  "raw": {
+    "translations": [
+      "bruto"
+    ],
+    "kanji": "原石",
+    "hiragana": "げんせき",
+    "romanji": "genseki"
+  },
+  "raw_1": {
+    "translations": [
+      "cru"
+    ],
+    "kanji": "生",
+    "hiragana": "なま",
+    "romanji": "nama"
+  },
+  "wall": {
+    "translations": [
+      "muro"
+    ],
+    "kanji": "塀",
+    "hiragana": "へい",
+    "romanji": "hei"
+  },
+  "scaffolding": {
+    "translations": [
+      "andaime"
+    ],
+    "kanji": "足場",
+    "hiragana": "あしば",
+    "romanji": "ashiba"
+  },
+  "fragments": {
+    "translations": [
+      "fragmentos"
+    ],
+    "kanji": "破片",
+    "hiragana": "はへん",
+    "romanji": "hahen"
+  },
+  "sign": {
+    "translations": [
+      "placa"
+    ],
+    "kanji": "看板",
+    "hiragana": "かんばん",
+    "romanji": "kanban"
+  },
+  "portal": {
+    "translations": [
+      "portal"
+    ],
+    "kanji": "ポータル",
+    "hiragana": "ぽーたる",
+    "romanji": "pootaru"
+  },
+  "fence": {
+    "translations": [
+      "cerca"
+    ],
+    "kanji": "フェンス",
+    "hiragana": "ふぇんす",
+    "romanji": "fensu"
+  },
+  "gate": {
+    "translations": [
+      "portão"
+    ],
+    "kanji": "ゲート",
+    "hiragana": "げーと",
+    "romanji": "geeto"
+  },
+  "grate": {
+    "translations": [
+      "grade?"
+    ],
+    "kanji": "金網",
+    "hiragana": "かなあみ",
+    "romanji": "kanaami"
+  },
+  "bars": {
+    "translations": [
+      "grade"
+    ],
+    "kanji": "格子",
+    "hiragana": "こうし",
+    "romanji": "koushi"
+  },
+  "boat": {
+    "translations": [
+      "bote"
+    ],
+    "kanji": "ボート",
+    "hiragana": "ぼーと",
+    "romanji": "booto"
+  },
+  "raft": {
+    "translations": [
+      "jangada"
+    ],
+    "kanji": "イカダ",
+    "hiragana": "いかだ",
+    "romanji": "ikada"
+  },
+  "bundle": {
+    "translations": [
+      "pacote"
+    ],
+    "kanji": "バンドル",
+    "hiragana": "ばんどる",
+    "romanji": "bandoru"
+  },
+  "bed": {
+    "translations": [
+      "cama"
+    ],
+    "kanji": "ベッド",
+    "hiragana": "べっど",
+    "romanji": "beddo"
+  },
+  "conduit": {
+    "translations": [
+      "conduíte"
+    ],
+    "kanji": "コンジット",
+    "hiragana": "こんじっと",
+    "romanji": "konjitto"
+  },
+  "froglight": {
+    "translations": [
+      "anfibrilho"
+    ],
+    "kanji": "フロッグライト",
+    "hiragana": "ふろっぐらいと",
+    "romanji": "furogguraito"
+  },
+  "candle": {
+    "translations": [
+      "vela"
+    ],
+    "kanji": "ろうそく",
+    "hiragana": "ろうそく",
+    "romanji": "rousoku"
+  },
+  "door": {
+    "translations": [
+      "porta"
+    ],
+    "kanji": "ドア",
+    "hiragana": "どあ",
+    "romanji": "doa"
+  },
+  "trapdoor": {
+    "translations": [
+      "alçapão"
+    ],
+    "kanji": "トラップドア",
+    "hiragana": "とらっぷどあ",
+    "romanji": "torappudoa"
+  },
+  "trap": {
+    "translations": [
+      "armadilha"
+    ],
+    "kanji": "トラップ",
+    "hiragana": "とらっぷ",
+    "romanji": "torappu"
+  },
+  "arrow": {
+    "translations": [
+      "seta"
+    ],
+    "kanji": "矢",
+    "hiragana": "や",
+    "romanji": "ya"
+  },
+  "torch": {
+    "translations": [
+      "tocha"
+    ],
+    "kanji": "松明",
+    "hiragana": "たいまつ",
+    "romanji": "taimatsu"
+  },
+  "torch_1": {
+    "translations": [
+      "tocha"
+    ],
+    "kanji": "トーチ",
+    "hiragana": "とーち",
+    "romanji": "toochi"
+  },
+  "bulb": {
+    "translations": [
+      "lâmpada elétrica"
+    ],
+    "kanji": "電球",
+    "hiragana": "でんきゅう",
+    "romanji": "denkyuu"
+  },
+  "lamp": {
+    "translations": [
+      "lâmpada"
+    ],
+    "kanji": "ランプ",
+    "hiragana": "らんぷ",
+    "romanji": "ranpu"
+  },
+  "key": {
+    "translations": [
+      "chave"
+    ],
+    "kanji": "鍵",
+    "hiragana": "かぎ",
+    "romanji": "kagi"
+  },
+  "eye": {
+    "translations": [
+      "olho"
+    ],
+    "kanji": "目",
+    "hiragana": "め",
+    "romanji": "me"
+  },
+  "eye_1": {
+    "translations": [
+      "olho"
+    ],
+    "kanji": "アイ",
+    "hiragana": "あい",
+    "romanji": "ai"
+  },
+  "bucket": {
+    "translations": [
+      "balde"
+    ],
+    "kanji": "バケツ",
+    "hiragana": "ばけつ",
+    "romanji": "baketsu"
+  },
+  "crystal": {
+    "translations": [
+      "cristal"
+    ],
+    "kanji": "クリスタル",
+    "hiragana": "くりすたる",
+    "romanji": "kurisutaru"
+  },
+  "crystals": {
+    "translations": [
+      "cristal"
+    ],
+    "kanji": "クリスタル",
+    "hiragana": "くりすたる",
+    "romanji": "kurisutaru"
+  },
+  "statue": {
+    "translations": [
+      "imagem"
+    ],
+    "kanji": "像",
+    "hiragana": "ぞう",
+    "romanji": "zou"
+  },
+  "filled_map": {
+    "translations": [
+      "mapa"
+    ],
+    "kanji": "地図",
+    "hiragana": "ちず",
+    "romanji": "chizu"
+  },
+  "ball": {
+    "translations": [
+      "bola"
+    ],
+    "kanji": "ボール",
+    "hiragana": "ぼーる",
+    "romanji": "booru"
+  },
+  "ball_1": {
+    "translations": [
+      "bola"
+    ],
+    "kanji": "玉",
+    "hiragana": "たま",
+    "romanji": "tama"
+  },
+  "note": {
+    "translations": [
+      "observação"
+    ],
+    "kanji": "音符",
+    "hiragana": "おんぷ",
+    "romanji": "onpu"
+  },
+  "book": {
+    "translations": [
+      "livro"
+    ],
+    "kanji": "本",
+    "hiragana": "ほん",
+    "romanji": "hon"
+  },
+  "bookshelf": {
+    "translations": [
+      "estante"
+    ],
+    "kanji": "本棚",
+    "hiragana": "ほんだな",
+    "romanji": "hondana"
+  },
+  "shelf": {
+    "translations": [
+      "estante"
+    ],
+    "kanji": "棚",
+    "hiragana": "たな",
+    "romanji": "tana"
+  },
+  "minecart": {
+    "translations": [
+      "carrinho"
+    ],
+    "kanji": "トロッコ",
+    "hiragana": "とろっこ",
+    "romanji": "torokko"
+  },
+  "powder": {
+    "translations": [
+      "pó"
+    ],
+    "kanji": "パウダー",
+    "hiragana": "ぱうだー",
+    "romanji": "paudaa"
+  },
+  "powder_1": {
+    "translations": [
+      "pó"
+    ],
+    "kanji": "粉",
+    "hiragana": "こな",
+    "romanji": "kona"
+  },
+  "dust": {
+    "translations": [
+      "pó"
+    ],
+    "kanji": "ダスト",
+    "hiragana": "だすと",
+    "romanji": "dasuto"
+  },
+  "shroomlight": {
+    "translations": [
+      "cogubrilho"
+    ],
+    "kanji": "シュルームライト",
+    "hiragana": "しゅるーむらいと",
+    "romanji": "shuruumuraito"
+  },
+  "glow": {
+    "translations": [
+      "brilhante"
+    ],
+    "kanji": "輝く",
+    "hiragana": "かがやく",
+    "romanji": "kagayaku"
+  },
+  "glow_1": {
+    "translations": [
+      "brilhar"
+    ],
+    "kanji": "ヒカリ",
+    "hiragana": "ひかり",
+    "romanji": "hikari"
+  },
+  "glow_2": {
+    "translations": [
+      "brilhar"
+    ],
+    "kanji": "グロウ",
+    "hiragana": "ぐろう",
+    "romanji": "gurou"
+  },
+  "blue_orchid": {
+    "translations": [
+      "jade oran"
+    ],
+    "kanji": "ヒスイラン",
+    "hiragana": "ひすいらん",
+    "romanji": "hisuiran"
+  },
+  "egg": {
+    "translations": [
+      "ovo"
+    ],
+    "kanji": "卵",
+    "hiragana": "たまご",
+    "romanji": "tamago"
+  },
+  "cactus": {
+    "translations": [
+      "cacto"
+    ],
+    "kanji": "サボテン",
+    "hiragana": "さぼてん",
+    "romanji": "saboten"
+  },
+  "hay": {
+    "translations": [
+      "feno"
+    ],
+    "kanji": "干草",
+    "hiragana": "ほしくさ",
+    "romanji": "hoshikusa"
+  },
+  "wheat": {
+    "translations": [
+      "trigo"
+    ],
+    "kanji": "小麦",
+    "hiragana": "こむぎ",
+    "romanji": "komugi"
+  },
+  "seeds": {
+    "translations": [
+      "semente"
+    ],
+    "kanji": "種",
+    "hiragana": "たね",
+    "romanji": "tane"
+  },
+  "pumpkin": {
+    "translations": [
+      "abóbora"
+    ],
+    "kanji": "カボチャ",
+    "hiragana": "かぼちゃ",
+    "romanji": "kabocha"
+  },
+  "pumpkin_1": {
+    "translations": [
+      "abóbora"
+    ],
+    "kanji": "パンプキン",
+    "hiragana": "ぱんぷきん",
+    "romanji": "panpukin"
+  },
+  "melon": {
+    "translations": [
+      "melancia"
+    ],
+    "kanji": "スイカ",
+    "hiragana": "すいか",
+    "romanji": "suika"
+  },
+  "sapling": {
+    "translations": [
+      "muda"
+    ],
+    "kanji": "苗木",
+    "hiragana": "なえぎ",
+    "romanji": "naegi"
+  },
+  "sprouts": {
+    "translations": [
+      "broto"
+    ],
+    "kanji": "スプラウト",
+    "hiragana": "すぷらうと",
+    "romanji": "supurauto"
+  },
+  "bud": {
+    "translations": [
+      "broto"
+    ],
+    "kanji": "芽",
+    "hiragana": "め",
+    "romanji": "me"
+  },
+  "root": {
+    "translations": [
+      "raiz"
+    ],
+    "kanji": "根",
+    "hiragana": "ね",
+    "romanji": "ne"
+  },
+  "echo": {
+    "translations": [
+      "eco"
+    ],
+    "kanji": "残響",
+    "hiragana": "ざんきょう",
+    "romanji": "zankyou"
+  },
+  "button": {
+    "translations": [
+      "botão"
+    ],
+    "kanji": "ボタン",
+    "hiragana": "ぼたん",
+    "romanji": "botan"
+  },
+  "pressure_plate": {
+    "translations": [
+      "placa de pressão"
+    ],
+    "kanji": "感圧板",
+    "hiragana": "かんあついた",
+    "romanji": "kanatsuita"
+  },
+  "campfire": {
+    "translations": [
+      "fogueira"
+    ],
+    "kanji": "焚き火",
+    "hiragana": "たきび",
+    "romanji": "takibi"
+  },
+  "composter": {
+    "translations": [
+      "compostor"
+    ],
+    "kanji": "コンポスター",
+    "hiragana": "こんぽすたー",
+    "romanji": "konposutaa"
+  },
+  "anvil": {
+    "translations": [
+      "bigorna"
+    ],
+    "kanji": "金床",
+    "hiragana": "かなとこ",
+    "romanji": "kanatoko"
+  },
+  "cauldron": {
+    "translations": [
+      "caldeirão"
+    ],
+    "kanji": "大釜",
+    "hiragana": "おおかま",
+    "romanji": "ookama"
+  },
+  "nest": {
+    "translations": [
+      "ninho"
+    ],
+    "kanji": "巣",
+    "hiragana": "す",
+    "romanji": "su"
+  },
+  "barrel": {
+    "translations": [
+      "barril"
+    ],
+    "kanji": "樽",
+    "hiragana": "そん",
+    "romanji": "son"
+  },
+  "chest": {
+    "translations": [
+      "Baú"
+    ],
+    "kanji": "チェスト",
+    "hiragana": "ちぇすと",
+    "romanji": "chesuto"
+  },
+  "shulker_box": {
+    "translations": [
+      "caixa shulker"
+    ],
+    "kanji": "シュルカーボックス",
+    "hiragana": "しゅるかーぼっくす",
+    "romanji": "shurukaabokkusu"
+  },
+  "shulker": {
+    "translations": [
+      "shulker"
+    ],
+    "kanji": "シュルカー",
+    "hiragana": "しゅるかー",
+    "romanji": "shurukaa"
+  },
+  "grindstone": {
+    "translations": [
+      "rebolo"
+    ],
+    "kanji": "砥石",
+    "hiragana": "といし",
+    "romanji": "toishi"
+  },
+  "flower_pot": {
+    "translations": [
+      "vaso de flores"
+    ],
+    "kanji": "植木鉢",
+    "hiragana": "うえきばち",
+    "romanji": "uekibachi"
+  },
+  "pottery": {
+    "translations": [
+      "jarro"
+    ],
+    "kanji": "壺",
+    "hiragana": "つぼ",
+    "romanji": "tsubo"
+  },
+  "jukebox": {
+    "translations": [
+      "jukebox"
+    ],
+    "kanji": "ジュークボックス",
+    "hiragana": "じゅーくぼっくす",
+    "romanji": "juukubokkusu"
+  },
+  "beehive": {
+    "translations": [
+      "colméia"
+    ],
+    "kanji": "養蜂箱",
+    "hiragana": "ようほうばこ",
+    "romanji": "youhoubako"
+  },
+  "beacon": {
+    "translations": [
+      "baliza"
+    ],
+    "kanji": "ビーコン",
+    "hiragana": "びーこん",
+    "romanji": "biikon"
+  },
+  "lever": {
+    "translations": [
+      "alavanca"
+    ],
+    "kanji": "レバー",
+    "hiragana": "ればー",
+    "romanji": "rebaa"
+  },
+  "chain": {
+    "translations": [
+      "corrente"
+    ],
+    "kanji": "鎖",
+    "hiragana": "くさり",
+    "romanji": "kusari"
+  },
+  "chain_1": {
+    "translations": [
+      "corrente"
+    ],
+    "kanji": "チェーン",
+    "hiragana": "ちぇーん",
+    "romanji": "cheen"
+  },
+  "clock": {
+    "translations": [
+      "relógio"
+    ],
+    "kanji": "時計",
+    "hiragana": "とけい",
+    "romanji": "tokei"
+  },
+  "bone": {
+    "translations": [
+      "osso"
+    ],
+    "kanji": "骨",
+    "hiragana": "ほね",
+    "romanji": "hone"
+  },
+  "bone_meal": {
+    "translations": [
+      "farinha de ossos"
+    ],
+    "kanji": "骨粉",
+    "hiragana": "こっぷん",
+    "romanji": "koppun"
+  },
+  "sponge": {
+    "translations": [
+      "esponja"
+    ],
+    "kanji": "スポンジ",
+    "hiragana": "すぽんじ",
+    "romanji": "suponji"
+  },
+  "bottle": {
+    "translations": [
+      "garrafa"
+    ],
+    "kanji": "瓶",
+    "hiragana": "びん",
+    "romanji": "bin"
+  },
+  "ice": {
+    "translations": [
+      "gelo"
+    ],
+    "kanji": "氷",
+    "hiragana": "こおり",
+    "romanji": "koori"
+  },
+  "packed_ice": {
+    "translations": [
+      "gelo compactado"
+    ],
+    "kanji": "氷塊",
+    "hiragana": "ひょうかい",
+    "romanji": "hyoukai"
+  },
+  "packed": {
+    "translations": [
+      "compactada?"
+    ],
+    "kanji": "固めた",
+    "hiragana": "かためた",
+    "romanji": "katameta"
+  },
+  "snow": {
+    "translations": [
+      "neve"
+    ],
+    "kanji": "雪",
+    "hiragana": "ゆき",
+    "romanji": "yuki"
+  },
+  "snow_1": {
+    "translations": [
+      "neve"
+    ],
+    "kanji": "スノウ",
+    "hiragana": "すのう",
+    "romanji": "sunou"
+  },
+  "snowball": {
+    "translations": [
+      "bola de neve"
+    ],
+    "kanji": "雪玉",
+    "hiragana": "ゆきだま",
+    "romanji": "yukidama"
+  },
+  "golem": {
+    "translations": [
+      "golem"
+    ],
+    "kanji": "ゴーレム",
+    "hiragana": "ごーれむ",
+    "romanji": "gooremu"
+  },
+  "husk": {
+    "translations": [
+      "husk"
+    ],
+    "kanji": "ハスク",
+    "hiragana": "はすく",
+    "romanji": "hasuku"
+  },
+  "ghast": {
+    "translations": [
+      "ghast"
+    ],
+    "kanji": "ガスト",
+    "hiragana": "がすと",
+    "romanji": "gasuto"
+  },
+  "phantom": {
+    "translations": [
+      "fantasma"
+    ],
+    "kanji": "ファントム",
+    "hiragana": "ふぁんとむ",
+    "romanji": "fantomu"
+  },
+  "piglin": {
+    "translations": [
+      "piglin"
+    ],
+    "kanji": "ピグリン",
+    "hiragana": "ぴぐりん",
+    "romanji": "pigurin"
+  },
+  "piglin_brute": {
+    "translations": [
+      "piglin bruto"
+    ],
+    "kanji": "ブルート",
+    "hiragana": "ぶるーと",
+    "romanji": "buruuto"
+  },
+  "hoglin": {
+    "translations": [
+      "hoglin"
+    ],
+    "kanji": "ホグリン",
+    "hiragana": "ほぐりん",
+    "romanji": "hogurin"
+  },
+  "zoglin": {
+    "translations": [
+      "zoglin"
+    ],
+    "kanji": "ゾグリン",
+    "hiragana": "ぞぐりん",
+    "romanji": "zogurin"
+  },
+  "warden": {
+    "translations": [
+      "diretor"
+    ],
+    "kanji": "ウォーデン",
+    "hiragana": "うぉーでん",
+    "romanji": "uooden"
+  },
+  "vex": {
+    "translations": [
+      "vex"
+    ],
+    "kanji": "ヴェックス",
+    "hiragana": "ゔぇっくす",
+    "romanji": "vekkusu"
+  },
+  "guardian": {
+    "translations": [
+      "guardião"
+    ],
+    "kanji": "ガーディアン",
+    "hiragana": "がーでぃあん",
+    "romanji": "gaadian"
+  },
+  "enderman": {
+    "translations": [
+      "enderman"
+    ],
+    "kanji": "エンダーマン",
+    "hiragana": "えんだーまん",
+    "romanji": "endaaman"
+  },
+  "endermite": {
+    "translations": [
+      "endermite"
+    ],
+    "kanji": "エンダーマイト",
+    "hiragana": "えんだーまいと",
+    "romanji": "endaamaito"
+  },
+  "creeper": {
+    "translations": [
+      "creeper"
+    ],
+    "kanji": "クリーパー",
+    "hiragana": "くりーぱー",
+    "romanji": "kuriipaa"
+  },
+  "silverfish": {
+    "translations": [
+      "traça"
+    ],
+    "kanji": "シルバーフィッシュ",
+    "hiragana": "しるばーふぃっしゅ",
+    "romanji": "shirubaafisshu"
+  },
+  "breeze": {
+    "translations": [
+      "breeze"
+    ],
+    "kanji": "ブリーズ",
+    "hiragana": "ぶりーず",
+    "romanji": "buriizu"
+  },
+  "blaze": {
+    "translations": [
+      "chama"
+    ],
+    "kanji": "ブレイズ",
+    "hiragana": "ぶれいず",
+    "romanji": "bureizu"
+  },
+  "wither": {
+    "translations": [
+      "whiter"
+    ],
+    "kanji": "ウィザー",
+    "hiragana": "うぃざー",
+    "romanji": "uizaa"
+  },
+  "spider": {
+    "translations": [
+      "aranha"
+    ],
+    "kanji": "グモ",
+    "hiragana": "ぐも",
+    "romanji": "gumo"
+  },
+  "spider_1": {
+    "translations": [
+      "aranha"
+    ],
+    "kanji": "クモ",
+    "hiragana": "くも",
+    "romanji": "kumo"
+  },
+  "skeleton": {
+    "translations": [
+      "esqueleto"
+    ],
+    "kanji": "スケルトン",
+    "hiragana": "すけるとん",
+    "romanji": "sukeruton"
+  },
+  "zombie": {
+    "translations": [
+      "zumbi"
+    ],
+    "kanji": "ゾンビ",
+    "hiragana": "ぞんび",
+    "romanji": "zonbi"
+  },
+  "tadpole": {
+    "translations": [
+      "girino"
+    ],
+    "kanji": "オタマジャクシ",
+    "hiragana": "おたまじゃくし",
+    "romanji": "otamajakushi"
+  },
+  "drowned": {
+    "translations": [
+      "afogado"
+    ],
+    "kanji": "ドラウンド",
+    "hiragana": "どらうんど",
+    "romanji": "doraundo"
+  },
+  "strider": {
+    "translations": [
+      "andarilho"
+    ],
+    "kanji": "ストライダー",
+    "hiragana": "すとらいだー",
+    "romanji": "sutoraidaa"
+  },
+  "perched": {
+    "translations": [
+      "empoleirado?"
+    ],
+    "kanji": "パーチド",
+    "hiragana": "ぱーちど",
+    "romanji": "paachido"
+  },
+  "witch": {
+    "translations": [
+      "bruxa"
+    ],
+    "kanji": "ウィッチ",
+    "hiragana": "うぃっち",
+    "romanji": "uitchi"
+  },
+  "ravager": {
+    "translations": [
+      "devastador"
+    ],
+    "kanji": "ラヴェジャー",
+    "hiragana": "らゔぇじゃー",
+    "romanji": "ravejaa"
+  },
+  "evoker": {
+    "translations": [
+      "evocador"
+    ],
+    "kanji": "エヴォーカー",
+    "hiragana": "えゔぉーかー",
+    "romanji": "evookaa"
+  },
+  "pillager": {
+    "translations": [
+      "saqueador"
+    ],
+    "kanji": "ピリジャー",
+    "hiragana": "ぴりじゃー",
+    "romanji": "pirijaa"
+  },
+  "villager": {
+    "translations": [
+      "aldeão"
+    ],
+    "kanji": "村人",
+    "hiragana": "むらびと",
+    "romanji": "murabito"
+  },
+  "player": {
+    "translations": [
+      "jogador"
+    ],
+    "kanji": "プレイヤー",
+    "hiragana": "ぷれいやー",
+    "romanji": "pureiyaa"
+  },
+  "friend": {
+    "translations": [
+      "amigo"
+    ],
+    "kanji": "友",
+    "hiragana": "とも",
+    "romanji": "tomo"
+  },
+  "vindicator": {
+    "translations": [
+      "vindicador"
+    ],
+    "kanji": "ヴィンディケーター",
+    "hiragana": "ゔぃんでぃけーたー",
+    "romanji": "vindikeetaa"
+  },
+  "trader": {
+    "translations": [
+      "comerciante"
+    ],
+    "kanji": "商人",
+    "hiragana": "しょうにん",
+    "romanji": "shounin"
+  },
+  "allay": {
+    "translations": [
+      "array"
+    ],
+    "kanji": "アレイ",
+    "hiragana": "あれい",
+    "romanji": "arei"
+  },
+  "bee": {
+    "translations": [
+      "abelha"
+    ],
+    "kanji": "ミツバチ",
+    "hiragana": "みつばち",
+    "romanji": "mitsubachi"
+  },
+  "dolphin": {
+    "translations": [
+      "golfinho"
+    ],
+    "kanji": "イルカ",
+    "hiragana": "いるか",
+    "romanji": "iruka"
+  },
+  "nautilus": {
+    "translations": [
+      "náutilo"
+    ],
+    "kanji": "オウムガイ",
+    "hiragana": "おうむがい",
+    "romanji": "oumugai"
+  },
+  "stray": {
+    "translations": [
+      "stray"
+    ],
+    "kanji": "ストレイ",
+    "hiragana": "すとれい",
+    "romanji": "sutorei"
+  },
+  "sniffer": {
+    "translations": [
+      "farejador"
+    ],
+    "kanji": "スニッファー",
+    "hiragana": "すにっふぁー",
+    "romanji": "suniffaa"
+  },
+  "squid": {
+    "translations": [
+      "lula"
+    ],
+    "kanji": "イカ",
+    "hiragana": "いか",
+    "romanji": "ika"
+  },
+  "turtle": {
+    "translations": [
+      "tartaruga"
+    ],
+    "kanji": "カメ",
+    "hiragana": "かめ",
+    "romanji": "kame"
+  },
+  "armadillo": {
+    "translations": [
+      "tatu"
+    ],
+    "kanji": "アルマジロ",
+    "hiragana": "あるまじろ",
+    "romanji": "arumajiro"
+  },
+  "fox": {
+    "translations": [
+      "raposa"
+    ],
+    "kanji": "キツネ",
+    "hiragana": "きつね",
+    "romanji": "kitsune"
+  },
+  "cow": {
+    "translations": [
+      "vaca"
+    ],
+    "kanji": "ウシ",
+    "hiragana": "うし",
+    "romanji": "ushi"
+  },
+  "mooshroom": {
+    "translations": [
+      "mushuroom"
+    ],
+    "kanji": "ムーシュルーム",
+    "hiragana": "むーしゅるーむ",
+    "romanji": "muushuruumu"
+  },
+  "bat": {
+    "translations": [
+      "morcego"
+    ],
+    "kanji": "コウモリ",
+    "hiragana": "こうもり",
+    "romanji": "koumori"
+  },
+  "parrot": {
+    "translations": [
+      "papagaio"
+    ],
+    "kanji": "オウム",
+    "hiragana": "おうむ",
+    "romanji": "oumu"
+  },
+  "ocelot": {
+    "translations": [
+      "gato selvagem"
+    ],
+    "kanji": "ヤマネコ",
+    "hiragana": "やまねこ",
+    "romanji": "yamaneko"
+  },
+  "cat": {
+    "translations": [
+      "gato"
+    ],
+    "kanji": "ネコ",
+    "hiragana": "ねこ",
+    "romanji": "neko"
+  },
+  "sheep": {
+    "translations": [
+      "ovelha"
+    ],
+    "kanji": "ヒツジ",
+    "hiragana": "ひつじ",
+    "romanji": "hitsuji"
+  },
+  "goat": {
+    "translations": [
+      "cabra"
+    ],
+    "kanji": "ヤギ",
+    "hiragana": "やぎ",
+    "romanji": "yagi"
+  },
+  "wolf": {
+    "translations": [
+      "lobo"
+    ],
+    "kanji": "オオカミ",
+    "hiragana": "おおかみ",
+    "romanji": "ookami"
+  },
+  "polar_bear": {
+    "translations": [
+      "urso polar"
+    ],
+    "kanji": "シロクマ",
+    "hiragana": "しろくま",
+    "romanji": "shirokuma"
+  },
+  "panda": {
+    "translations": [
+      "panda"
+    ],
+    "kanji": "パンダ",
+    "hiragana": "ぱんだ",
+    "romanji": "panda"
+  },
+  "frog": {
+    "translations": [
+      "sapo"
+    ],
+    "kanji": "カエル",
+    "hiragana": "かえる",
+    "romanji": "kaeru"
+  },
+  "pufferfish": {
+    "translations": [
+      "baiacu"
+    ],
+    "kanji": "フグ",
+    "hiragana": "ふぐ",
+    "romanji": "fugu"
+  },
+  "angler": {
+    "translations": [
+      "pescador"
+    ],
+    "kanji": "釣り人",
+    "hiragana": "つりびと",
+    "romanji": "tsuribito"
+  },
+  "axolotl": {
+    "translations": [
+      "axolote"
+    ],
+    "kanji": "ウーパールーパー",
+    "hiragana": "うーぱーるーぱー",
+    "romanji": "uupaaruupaa"
+  },
+  "salmon": {
+    "translations": [
+      "salmão"
+    ],
+    "kanji": "鮭",
+    "hiragana": "ざけ",
+    "romanji": "zake"
+  },
+  "salmon_1": {
+    "translations": [
+      "salmão"
+    ],
+    "kanji": "サケ",
+    "hiragana": "さけ",
+    "romanji": "sake"
+  },
+  "cod": {
+    "translations": [
+      "bacalhau"
+    ],
+    "kanji": "鱈",
+    "hiragana": "たら",
+    "romanji": "tara"
+  },
+  "cod_1": {
+    "translations": [
+      "bacalhau"
+    ],
+    "kanji": "タラ",
+    "hiragana": "たら",
+    "romanji": "tara"
+  },
+  "tropical_fish": {
+    "translations": [
+      "peixe tropical"
+    ],
+    "kanji": "熱帯魚",
+    "hiragana": "ねったいぎょ",
+    "romanji": "nettaigyo"
+  },
+  "horse": {
+    "translations": [
+      "cavalo"
+    ],
+    "kanji": "馬",
+    "hiragana": "うま",
+    "romanji": "uma"
+  },
+  "horse_1": {
+    "translations": [
+      "cavalo"
+    ],
+    "kanji": "ホース",
+    "hiragana": "ほーす",
+    "romanji": "hoosu"
+  },
+  "horse_2": {
+    "translations": [
+      "cavalo"
+    ],
+    "kanji": "ウマ",
+    "hiragana": "うま",
+    "romanji": "uma"
+  },
+  "donkey": {
+    "translations": [
+      "burro"
+    ],
+    "kanji": "ロバ",
+    "hiragana": "ろば",
+    "romanji": "roba"
+  },
+  "mule": {
+    "translations": [
+      "mula"
+    ],
+    "kanji": "ラバ",
+    "hiragana": "らば",
+    "romanji": "raba"
+  },
+  "llama": {
+    "translations": [
+      "lhama"
+    ],
+    "kanji": "ラマ",
+    "hiragana": "らま",
+    "romanji": "rama"
+  },
+  "camel": {
+    "translations": [
+      "camelo"
+    ],
+    "kanji": "ラクダ",
+    "hiragana": "らくだ",
+    "romanji": "rakuda"
+  },
+  "pig": {
+    "translations": [
+      "porco"
+    ],
+    "kanji": "豚",
+    "hiragana": "ぶた",
+    "romanji": "buta"
+  },
+  "pig_1": {
+    "translations": [
+      "porco"
+    ],
+    "kanji": "ブタ",
+    "hiragana": "ぶた",
+    "romanji": "buta"
+  },
+  "chicken": {
+    "translations": [
+      "frango"
+    ],
+    "kanji": "鶏",
+    "hiragana": "にわとり",
+    "romanji": "niwatori"
+  },
+  "chicken_1": {
+    "translations": [
+      "frango"
+    ],
+    "kanji": "ニワトリ",
+    "hiragana": "にわとり",
+    "romanji": "niwatori"
+  },
+  "chicken_2": {
+    "translations": [
+      "pássaro"
+    ],
+    "kanji": "鳥",
+    "hiragana": "とり",
+    "romanji": "tori"
+  },
+  "rabbit": {
+    "translations": [
+      "coelho"
+    ],
+    "kanji": "兎",
+    "hiragana": "うさぎ",
+    "romanji": "usagi"
+  },
+  "rabbit_1": {
+    "translations": [
+      "coelho"
+    ],
+    "kanji": "ウサギ",
+    "hiragana": "うさぎ",
+    "romanji": "usagi"
+  },
+  "slime": {
+    "translations": [
+      "slime"
+    ],
+    "kanji": "スライム",
+    "hiragana": "すらいむ",
+    "romanji": "suraimu"
+  },
+  "feather": {
+    "translations": [
+      "pena"
+    ],
+    "kanji": "羽根",
+    "hiragana": "はね",
+    "romanji": "hane"
+  },
+  "moss": {
+    "translations": [
+      "musgo"
+    ],
+    "kanji": "苔",
+    "hiragana": "こけ",
+    "romanji": "koke"
+  },
+  "petals": {
+    "translations": [
+      "pétala"
+    ],
+    "kanji": "花びら",
+    "hiragana": "はなびら",
+    "romanji": "hanabira"
+  },
+  "lily": {
+    "translations": [
+      "lilí"
+    ],
+    "kanji": "スイレン",
+    "hiragana": "すいれん",
+    "romanji": "suiren"
+  },
+  "leaves": {
+    "translations": [
+      "folhas"
+    ],
+    "kanji": "葉",
+    "hiragana": "は",
+    "romanji": "ha"
+  },
+  "coral": {
+    "translations": [
+      "coral"
+    ],
+    "kanji": "サンゴ",
+    "hiragana": "さんご",
+    "romanji": "sango"
+  },
+  "fan": {
+    "translations": [
+      "fan?"
+    ],
+    "kanji": "ウチワ",
+    "hiragana": "うちわ",
+    "romanji": "uchiwa"
+  },
+  "tube": {
+    "translations": [
+      "tube"
+    ],
+    "kanji": "クダ",
+    "hiragana": "くだ",
+    "romanji": "kuda"
+  },
+  "brain": {
+    "translations": [
+      "cerebro"
+    ],
+    "kanji": "ノウ",
+    "hiragana": "のう",
+    "romanji": "nou"
+  },
+  "horn": {
+    "translations": [
+      "chifre?"
+    ],
+    "kanji": "シカツノ",
+    "hiragana": "しかつの",
+    "romanji": "shikatsunouchiwa"
+  },
+  "horn_1": {
+    "translations": [
+      "chifre?"
+    ],
+    "kanji": "角笛",
+    "hiragana": "つのぶえ",
+    "romanji": "tsunobue"
+  },
+  "fire": {
+    "translations": [
+      "millepora"
+    ],
+    "kanji": "ミレポラ",
+    "hiragana": "みれぽら",
+    "romanji": "mirepora"
+  },
+  "water": {
+    "translations": [
+      "água"
+    ],
+    "kanji": "水",
+    "hiragana": "みず",
+    "romanji": "mizu"
+  },
+  "bubble": {
+    "translations": [
+      "mizutamauchiwa"
+    ],
+    "kanji": "ミズタマ",
+    "hiragana": "みずたま",
+    "romanji": "mizutama"
+  },
+  "glazed": {
+    "translations": [
+      "envidraçado"
+    ],
+    "kanji": "彩釉",
+    "hiragana": "さいゆう",
+    "romanji": "saiyuu"
+  },
+  "harness": {
+    "translations": [
+      "arreio"
+    ],
+    "kanji": "ハーネス",
+    "hiragana": "はーねす",
+    "romanji": "haanesu"
+  },
+  "saddle": {
+    "translations": [
+      "sela"
+    ],
+    "kanji": "鞍",
+    "hiragana": "くら",
+    "romanji": "kura"
+  },
+  "nether": {
+    "translations": [
+      "nether"
+    ],
+    "kanji": "ネザー",
+    "hiragana": "ねざー",
+    "romanji": "nezaa"
+  },
+  "star": {
+    "translations": [
+      "estrela"
+    ],
+    "kanji": "星",
+    "hiragana": "ほし",
+    "romanji": "hoshi"
+  },
+  "star_1": {
+    "translations": [
+      "estrela"
+    ],
+    "kanji": "スター",
+    "hiragana": "すたー",
+    "romanji": "sutaa"
+  },
+  "honey": {
+    "translations": [
+      "mel"
+    ],
+    "kanji": "ハチミツ",
+    "hiragana": "はちみつ",
+    "romanji": "hachimitsu"
+  },
+  "honeycomb": {
+    "translations": [
+      "favo de mel"
+    ],
+    "kanji": "ハニカム",
+    "hiragana": "はにかむ",
+    "romanji": "hanikamu"
+  },
+  "head": {
+    "translations": [
+      "cabeça"
+    ],
+    "kanji": "頭",
+    "hiragana": "あたま",
+    "romanji": "atama"
+  },
+  "skull": {
+    "translations": [
+      "crânio"
+    ],
+    "kanji": "頭蓋骨",
+    "hiragana": "ずがいこつ",
+    "romanji": "zugaikotsu"
+  },
+  "skull_1": {
+    "translations": [
+      "caveira"
+    ],
+    "kanji": "骸骨",
+    "hiragana": "がいこつ",
+    "romanji": "gaikotsu"
+  },
+  "skulk": {
+    "translations": [
+      "esquivar"
+    ],
+    "kanji": "スカルク",
+    "hiragana": "すかるく",
+    "romanji": "sukaruku"
+  },
+  "lectern": {
+    "translations": [
+      "atril"
+    ],
+    "kanji": "書見台",
+    "hiragana": "しょけんだい",
+    "romanji": "shokendai"
+  },
+  "name_tag": {
+    "translations": [
+      "crachá"
+    ],
+    "kanji": "名札",
+    "hiragana": "なふだ",
+    "romanji": "nafuda"
+  },
+  "ladder": {
+    "translations": [
+      "escada"
+    ],
+    "kanji": "はしご",
+    "hiragana": "はしご",
+    "romanji": "hashigo"
+  },
+  "shard": {
+    "translations": [
+      "fragmento"
+    ],
+    "kanji": "欠片",
+    "hiragana": "かけら",
+    "romanji": "kakera"
+  },
+  "dragon": {
+    "translations": [
+      "dragão"
+    ],
+    "kanji": "ドラゴン",
+    "hiragana": "どらごん",
+    "romanji": "doragon"
+  },
+  "ender": {
+    "translations": [
+      "ender"
+    ],
+    "kanji": "エンダー",
+    "hiragana": "えんだー",
+    "romanji": "endaa"
+  },
+  "pearl": {
+    "translations": [
+      "pérola"
+    ],
+    "kanji": "パール",
+    "hiragana": "ぱーる",
+    "romanji": "paaru"
+  },
+  "tear": {
+    "translations": [
+      "lágrimas"
+    ],
+    "kanji": "涙",
+    "hiragana": "なみだ",
+    "romanji": "namida"
+  },
+  "spawn_egg": {
+    "translations": [
+      "ovo de invocação"
+    ],
+    "kanji": "スポーンエッグ",
+    "hiragana": "すぽーんえっぐ",
+    "romanji": "supooneggu"
+  },
+  "monster": {
+    "translations": [
+      "monstros"
+    ],
+    "kanji": "モンスター",
+    "hiragana": "もんすたー",
+    "romanji": "monsutaa"
+  },
+  "spawner": {
+    "translations": [
+      "gerador"
+    ],
+    "kanji": "スポナー",
+    "hiragana": "すぽなー",
+    "romanji": "suponaa"
+  },
+  "target": {
+    "translations": [
+      "alvo"
+    ],
+    "kanji": "的",
+    "hiragana": "まと",
+    "romanji": "mato"
+  },
+  "rocket": {
+    "translations": [
+      "foguete"
+    ],
+    "kanji": "ロケット",
+    "hiragana": "ろけっと",
+    "romanji": "roketto"
+  },
+  "firework": {
+    "translations": [
+      "fogo de artifício"
+    ],
+    "kanji": "花火",
+    "hiragana": "はなび",
+    "romanji": "hanabi"
+  },
+  "bell": {
+    "translations": [
+      "sino"
+    ],
+    "kanji": "鐘",
+    "hiragana": "かね",
+    "romanji": "kane"
+  },
+  "paper": {
+    "translations": [
+      "papel"
+    ],
+    "kanji": "紙",
+    "hiragana": "かみ",
+    "romanji": "kami"
+  },
+  "stem": {
+    "translations": [
+      "tronco"
+    ],
+    "kanji": "幹",
+    "hiragana": "みき",
+    "romanji": "miki"
+  },
+  "stem_1": {
+    "translations": [
+      "tronco"
+    ],
+    "kanji": "柄",
+    "hiragana": "がら",
+    "romanji": "gara"
+  },
+  "wart": {
+    "translations": [
+      "verruga"
+    ],
+    "kanji": "ウォート",
+    "hiragana": "うぉーと",
+    "romanji": "uooto"
+  },
+  "hyphae": {
+    "translations": [
+      "micélio"
+    ],
+    "kanji": "菌糸",
+    "hiragana": "きんし",
+    "romanji": "kinshi"
+  },
+  "knowledge": {
+    "translations": [
+      "conhecimento"
+    ],
+    "kanji": "知恵",
+    "hiragana": "ちえ",
+    "romanji": "chie"
+  },
+  "muddy": {
+    "translations": [
+      "enlameado?"
+    ],
+    "kanji": "泥だらけ",
+    "hiragana": "どろだらけ",
+    "romanji": "dorodarake"
+  },
+  "mud": {
+    "translations": [
+      "lama"
+    ],
+    "kanji": "泥",
+    "hiragana": "どろ",
+    "romanji": "doro"
+  },
+  "resin": {
+    "translations": [
+      "resina"
+    ],
+    "kanji": "樹脂",
+    "hiragana": "じゅし",
+    "romanji": "jushi"
+  },
+  "mourner": {
+    "translations": [
+      "pêsames?"
+    ],
+    "kanji": "哀悼者",
+    "hiragana": "あいとうもの",
+    "romanji": "aitoumono"
+  },
+  "plenty": {
+    "translations": [
+      "fortuna"
+    ],
+    "kanji": "富",
+    "hiragana": "とみ",
+    "romanji": "tomi"
+  },
+  "enchanted": {
+    "translations": [
+      "encantado"
+    ],
+    "kanji": "エンチャント",
+    "hiragana": "えんちゃんと",
+    "romanji": "enchanto"
+  },
+  "experience": {
+    "translations": [
+      "experiencia"
+    ],
+    "kanji": "エンチャント",
+    "hiragana": "えんちゃんと",
+    "romanji": "enchanto"
+  },
+  "cracked": {
+    "translations": [
+      "rachado"
+    ],
+    "kanji": "ひび割",
+    "hiragana": "ひびわ",
+    "romanji": "hibiwa"
+  },
+  "damaged": {
+    "translations": [
+      "quebrado"
+    ],
+    "kanji": "壊れかけ",
+    "hiragana": "こわれかけ",
+    "romanji": "kowarekake"
+  },
+  "dried": {
+    "translations": [
+      "seca"
+    ],
+    "kanji": "乾燥",
+    "hiragana": "かんそう",
+    "romanji": "kansou"
+  },
+  "polished": {
+    "translations": [
+      "polido"
+    ],
+    "kanji": "磨か",
+    "hiragana": "みがか",
+    "romanji": "migaka"
+  },
+  "oxidized": {
+    "translations": [
+      "oxidação"
+    ],
+    "kanji": "酸化",
+    "hiragana": "さんか",
+    "romanji": "sanka"
+  },
+  "exposed": {
+    "translations": [
+      "exposto"
+    ],
+    "kanji": "風化",
+    "hiragana": "ふうか",
+    "romanji": "fuuka"
+  },
+  "waxed": {
+    "translations": [
+      "encerado"
+    ],
+    "kanji": "錆止め",
+    "hiragana": "さびどめ",
+    "romanji": "sabidome"
+  },
+  "weathered": {
+    "translations": [
+      "desgastado"
+    ],
+    "kanji": "錆びた",
+    "hiragana": "さびた",
+    "romanji": "sabita"
+  },
+  "stripped": {
+    "translations": [
+      "descascado"
+    ],
+    "kanji": "を剥いだ",
+    "hiragana": "をはいだ",
+    "romanji": "wohaida"
+  },
+  "infested": {
+    "translations": [
+      "infestado"
+    ],
+    "kanji": "虫食い",
+    "hiragana": "むしくい",
+    "romanji": "mushikui"
+  },
+  "tipped": {
+    "translations": [
+      "effeito"
+    ],
+    "kanji": "効能",
+    "hiragana": "こうのう",
+    "romanji": "kounou"
+  },
+  "creaking": {
+    "translations": [
+      "rangendo"
+    ],
+    "kanji": "クリーキング",
+    "hiragana": "くりーきんぐ",
+    "romanji": "kuriikingu"
+  },
+  "heartbreak": {
+    "translations": [
+      "desgosto"
+    ],
+    "kanji": "傷心",
+    "hiragana": "しょうしん",
+    "romanji": "shoushin"
+  },
+  "stand": {
+    "translations": [
+      "suporte"
+    ],
+    "kanji": "立て",
+    "hiragana": "たて",
+    "romanji": "tate"
+  },
+  "pane": {
+    "translations": [
+      "painel"
+    ],
+    "kanji": "板",
+    "hiragana": "ばん",
+    "romanji": "ban"
+  },
+  "glass": {
+    "translations": [
+      "vidro"
+    ],
+    "kanji": "ガラス",
+    "hiragana": "がらす",
+    "romanji": "garasub"
+  },
+  "stained": {
+    "translations": [
+      "colorido"
+    ],
+    "kanji": "色付き",
+    "hiragana": "いろつき",
+    "romanji": "iritsuki"
+  },
+  "pattern": {
+    "translations": [
+      "padrão"
+    ],
+    "kanji": "模様",
+    "hiragana": "もよう",
+    "romanji": "moyou"
+  },
+  "powered": {
+    "translations": [
+      "alimentado"
+    ],
+    "kanji": "パワード",
+    "hiragana": "ぱわーど",
+    "romanji": "pawaado"
+  },
+  "activator": {
+    "translations": [
+      "ativador"
+    ],
+    "kanji": "アクティベーター",
+    "hiragana": "あくてぃべーたー",
+    "romanji": "akuteibeetaa"
+  },
+  "sticky": {
+    "translations": [
+      "grudento"
+    ],
+    "kanji": "粘着",
+    "hiragana": "ねんちゃく",
+    "romanji": "nenchaku"
+  },
+  "dry": {
+    "translations": [
+      "seca"
+    ],
+    "kanji": "枯れ",
+    "hiragana": "かれ",
+    "romanji": "kare"
+  },
+  "suspicious": {
+    "translations": [
+      "suspeito"
+    ],
+    "kanji": "怪しげな",
+    "hiragana": "あやしげな",
+    "romanji": "ayashigena"
+  },
+  "spectral": {
+    "translations": [
+      "luz"
+    ],
+    "kanji": "光",
+    "hiragana": "ひかり",
+    "romanji": "hikari"
+  },
+  "smooth": {
+    "translations": [
+      "liso"
+    ],
+    "kanji": "滑らかな",
+    "hiragana": "なめらかな",
+    "romanji": "namerakana"
+  },
+  "sweet": {
+    "translations": [
+      "suíte"
+    ],
+    "kanji": "スイート",
+    "hiragana": "すいーと",
+    "romanji": "suiito"
+  },
+  "wet": {
+    "translations": [
+      "molhado"
+    ],
+    "kanji": "濡",
+    "hiragana": "ぬ",
+    "romanji": "nu"
+  },
+  "cut": {
+    "translations": [
+      "lapidado"
+    ],
+    "kanji": "切り込み入り",
+    "hiragana": "きりこみいり",
+    "romanji": "kirikomiiri"
+  },
+  "cut_1": {
+    "translations": [
+      "lapidado"
+    ],
+    "kanji": "研が",
+    "hiragana": "とが",
+    "romanji": "toga"
+  },
+  "slice": {
+    "translations": [
+      "fatia"
+    ],
+    "kanji": "薄切り",
+    "hiragana": "うすぎり",
+    "romanji": "usugiri"
+  },
+  "brewer": {
+    "translations": [
+      "cervejeiro"
+    ],
+    "kanji": "醸造家",
+    "hiragana": "じょうぞうか",
+    "romanji": "jouzouka"
+  },
+  "dead": {
+    "translations": [
+      "morto"
+    ],
+    "kanji": "死んだ",
+    "hiragana": "しんだ",
+    "romanji": "shinda"
+  },
+  "shelter": {
+    "translations": [
+      "abrigo?"
+    ],
+    "kanji": "木陰",
+    "hiragana": "こかげ",
+    "romanji": "kokage"
+  },
+  "flow": {
+    "translations": [
+      "redemoinho"
+    ],
+    "kanji": "渦巻き",
+    "hiragana": "うずまき",
+    "romanji": "uzumaki"
+  },
+  "trial": {
+    "translations": [
+      "provação"
+    ],
+    "kanji": "試練",
+    "hiragana": "しれん",
+    "romanji": "shiren"
+  },
+  "danger": {
+    "translations": [
+      "perigo?"
+    ],
+    "kanji": "脅威",
+    "hiragana": "きょうい",
+    "romanji": "kyoui"
+  },
+  "gilded": {
+    "translations": [
+      "brilhante"
+    ],
+    "kanji": "きらめく",
+    "hiragana": "きらめく",
+    "romanji": "kirameku"
+  },
+  "explorer": {
+    "translations": [
+      "explorador"
+    ],
+    "kanji": "探検家",
+    "hiragana": "たんけんか",
+    "romanji": "tankenka"
+  },
+  "howl": {
+    "translations": [
+      "uivo"
+    ],
+    "kanji": "遠吠え",
+    "hiragana": "とおぼえ",
+    "romanji": "tooboe"
+  },
+  "globe": {
+    "translations": [
+      "globo"
+    ],
+    "kanji": "地球",
+    "hiragana": "ちきゅう",
+    "romanji": "chikyuu"
+  },
+  "happy": {
+    "translations": [
+      "feliz"
+    ],
+    "kanji": "ハッピー",
+    "hiragana": "はっぴー",
+    "romanji": "happii"
+  },
+  "ominous": {
+    "translations": [
+      "sinistro"
+    ],
+    "kanji": "不吉な",
+    "hiragana": "ふきつな",
+    "romanji": "fukitsuna"
+  },
+  "miner": {
+    "translations": [
+      "mineiro"
+    ],
+    "kanji": "鉱夫",
+    "hiragana": "こうふ",
+    "romanji": "koufu"
+  },
+  "elder": {
+    "translations": [
+      "ancião"
+    ],
+    "kanji": "エルダー",
+    "hiragana": "えるだー",
+    "romanji": "erudaa"
+  },
+  "cooked": {
+    "translations": [
+      "cozido"
+    ],
+    "kanji": "焼き",
+    "hiragana": "やき",
+    "romanji": "yaki"
+  },
+  "popped": {
+    "translations": [
+      "cozido"
+    ],
+    "kanji": "焼いた",
+    "hiragana": "やいた",
+    "romanji": "yaita"
+  },
+  "reinforced": {
+    "translations": [
+      "reforço"
+    ],
+    "kanji": "強化",
+    "hiragana": "きょうか",
+    "romanji": "kyouka"
+  },
+  "hanging": {
+    "translations": [
+      "suspensa"
+    ],
+    "kanji": "吊り",
+    "hiragana": "つり",
+    "romanji": "tsuri"
+  },
+  "hanging_1": {
+    "translations": [
+      "suspensa"
+    ],
+    "kanji": "垂れ",
+    "hiragana": "たれ",
+    "romanji": "tare"
+  },
+  "flowering": {
+    "translations": [
+      "floração"
+    ],
+    "kanji": "開花",
+    "hiragana": "かいか",
+    "romanji": "kaika"
+  },
+  "flower_1": {
+    "translations": [
+      "flor"
+    ],
+    "kanji": "フラワー",
+    "hiragana": "ふらわー",
+    "romanji": "furawaa"
+  },
+  "flower": {
+    "translations": [
+      "flor"
+    ],
+    "kanji": "花",
+    "hiragana": "はな",
+    "romanji": "hana"
+  },
+  "archer": {
+    "translations": [
+      "arqueiro"
+    ],
+    "kanji": "射手",
+    "hiragana": "いて",
+    "romanji": "ite"
+  },
+  "big": {
+    "translations": [
+      "grande"
+    ],
+    "kanji": "大きな",
+    "hiragana": "おおきな",
+    "romanji": "ookina"
+  },
+  "tall": {
+    "translations": [
+      "alto"
+    ],
+    "kanji": "背の高い",
+    "hiragana": "せのたかい",
+    "romanji": "senotakai"
+  },
+  "medium": {
+    "translations": [
+      "médio"
+    ],
+    "kanji": "中",
+    "hiragana": "なか",
+    "romanji": "naka"
+  },
+  "small": {
+    "translations": [
+      "pequeno"
+    ],
+    "kanji": "小さな",
+    "hiragana": "ちいさな",
+    "romanji": "chiisana"
+  },
+  "short": {
+    "translations": [
+      "pequeno (estatura)"
+    ],
+    "kanji": "背の低い",
+    "hiragana": "せのひくい",
+    "romanji": "senohikui"
+  },
+  "soul_sand": {
+    "translations": [
+      "areia da alma"
+    ],
+    "kanji": "ソウルサンド",
+    "hiragana": "そうるさんど",
+    "romanji": "sourusando"
+  },
+  "soul": {
+    "translations": [
+      "alma"
+    ],
+    "kanji": "魂",
+    "hiragana": "たましい",
+    "romanji": "tamashii"
+  },
+  "heart": {
+    "translations": [
+      "coração"
+    ],
+    "kanji": "心",
+    "hiragana": "こころ",
+    "romanji": "kokoro"
+  },
+  "heart_1": {
+    "translations": [
+      "coração"
+    ],
+    "kanji": "心臓",
+    "hiragana": "しんぞう",
+    "romanji": "shinzou"
+  },
+  "prize": {
+    "translations": [
+      "tesouro"
+    ],
+    "kanji": "宝物",
+    "hiragana": "ほうもつ",
+    "romanji": "houmotsu"
+  },
+  "scute": {
+    "translations": [
+      "escalas"
+    ],
+    "kanji": "ウロコ",
+    "hiragana": "うろこ",
+    "romanji": "uroko"
+  },
+  "breath": {
+    "translations": [
+      "respiração"
+    ],
+    "kanji": "ブレス",
+    "hiragana": "ぶれす",
+    "romanji": "buresu"
+  },
+  "painting": {
+    "translations": [
+      "pintura"
+    ],
+    "kanji": "絵画",
+    "hiragana": "かいが",
+    "romanji": "kaiga"
+  },
+  "item_frame": {
+    "translations": [
+      "porta-retratos?"
+    ],
+    "kanji": "額縁",
+    "hiragana": "がくぶち",
+    "romanji": "gakubuchi"
+  },
+  "cave": {
+    "translations": [
+      "caverna"
+    ],
+    "kanji": "洞窟",
+    "hiragana": "どうくつ",
+    "romanji": "doukutsu"
+  },
+  "path": {
+    "translations": [
+      "caminho"
+    ],
+    "kanji": "道",
+    "hiragana": "みち",
+    "romanji": "michi"
+  },
+  "tile": {
+    "translations": [
+      "ladrilhos"
+    ],
+    "kanji": "タイル",
+    "hiragana": "たいる",
+    "romanji": "tairu"
+  },
+  "tiles": {
+    "translations": [
+      "ladrilhos"
+    ],
+    "kanji": "タイル",
+    "hiragana": "たいる",
+    "romanji": "tairu"
+  },
+  "jack_o": {
+    "translations": [
+      "abobora?"
+    ],
+    "kanji": "ジャック・オ・",
+    "hiragana": "じゃっく・お・",
+    "romanji": "jakku・o・"
+  },
+  "lantern": {
+    "translations": [
+      "lanterna"
+    ],
+    "kanji": "ランタン",
+    "hiragana": "らんたん",
+    "romanji": "rantan"
+  },
+  "magma": {
+    "translations": [
+      "magma"
+    ],
+    "kanji": "マグマ",
+    "hiragana": "まぐま",
+    "romanji": "maguma"
+  },
+  "ink": {
+    "translations": [
+      "tinta"
+    ],
+    "kanji": "スミ",
+    "hiragana": "すみ",
+    "romanji": "sumi"
+  },
+  "sac": {
+    "translations": [
+      "saco"
+    ],
+    "kanji": "イカ",
+    "hiragana": "いか",
+    "romanji": "ika"
+  },
+  "end": {
+    "translations": [
+      "fim"
+    ],
+    "kanji": "エンド",
+    "hiragana": "えんど",
+    "romanji": "endo"
+  },
+  "end_stone": {
+    "translations": [
+      "pedra do fim"
+    ],
+    "kanji": "エンドストーン",
+    "hiragana": "えんどすとおん",
+    "romanji": "endosutoon"
+  },
+  "fern": {
+    "translations": [
+      "samambaia"
+    ],
+    "kanji": "シダ",
+    "hiragana": "しだ",
+    "romanji": "shida"
+  },
+  "mushroom": {
+    "translations": [
+      "cogumelo"
+    ],
+    "kanji": "キノコ",
+    "hiragana": "きのこ",
+    "romanji": "kinoko"
+  },
+  "seagrass": {
+    "translations": [
+      "alga"
+    ],
+    "kanji": "海草",
+    "hiragana": "かいそう",
+    "romanji": "kaisou"
+  },
+  "dripleaf": {
+    "translations": [
+      "plantaforma"
+    ],
+    "kanji": "ドリップリーフ",
+    "hiragana": "どりっぷりーふ",
+    "romanji": "dorippuriifu"
+  },
+  "sunflower": {
+    "translations": [
+      "girassol"
+    ],
+    "kanji": "ヒマワリ",
+    "hiragana": "ひまわり",
+    "romanji": "himawari"
+  },
+  "rose": {
+    "translations": [
+      "rosa"
+    ],
+    "kanji": "バラ",
+    "hiragana": "ばら",
+    "romanji": "bara"
+  },
+  "rose_1": {
+    "translations": [
+      "rosa"
+    ],
+    "kanji": "ローズ",
+    "hiragana": "ろーず",
+    "romanji": "roozu"
+  },
+  "lily_of_the_valley": {
+    "translations": [
+      "lírio do vale"
+    ],
+    "kanji": "スズラン",
+    "hiragana": "すずらん",
+    "romanji": "suzuran"
+  },
+  "cornflower": {
+    "translations": [
+      "centáurea"
+    ],
+    "kanji": "ヤグルマギク",
+    "hiragana": "やぐるまぎく",
+    "romanji": "yagurumagiku"
+  },
+  "tulip": {
+    "translations": [
+      "tulipa"
+    ],
+    "kanji": "チューリップ",
+    "hiragana": "ちゅーりっぷ",
+    "romanji": "chuurippu"
+  },
+  "dandelion": {
+    "translations": [
+      "dente de leão"
+    ],
+    "kanji": "タンポポ",
+    "hiragana": "たんぽぽ",
+    "romanji": "tanpopo"
+  },
+  "wildflowers": {
+    "translations": [
+      "flores silvestres"
+    ],
+    "kanji": "野花",
+    "hiragana": "のばな",
+    "romanji": "nobana"
+  },
+  "poppy": {
+    "translations": [
+      "papoula"
+    ],
+    "kanji": "ポピー",
+    "hiragana": "ぽぴー",
+    "romanji": "popii"
+  },
+  "azalea": {
+    "translations": [
+      "azaléia"
+    ],
+    "kanji": "ツツジ",
+    "hiragana": "つつじ",
+    "romanji": "tsutsuji"
+  },
+  "kelp": {
+    "translations": [
+      "kelp"
+    ],
+    "kanji": "コンブ",
+    "hiragana": "こんぶ",
+    "romanji": "konbu"
+  },
+  "kelp_1": {
+    "translations": [
+      "kelp"
+    ],
+    "kanji": "昆布",
+    "hiragana": "こんぶ",
+    "romanji": "konbu"
+  },
+  "milk": {
+    "translations": [
+      "leite"
+    ],
+    "kanji": "ミルク",
+    "hiragana": "みるく",
+    "romanji": "miruku"
+  },
+  "lava": {
+    "translations": [
+      "lava"
+    ],
+    "kanji": "溶岩",
+    "hiragana": "ようがん",
+    "romanji": "yougan"
+  },
+  "sugar": {
+    "translations": [
+      "açúcar"
+    ],
+    "kanji": "砂糖",
+    "hiragana": "さとう",
+    "romanji": "satou"
+  },
+  "sugar_cane": {
+    "translations": [
+      "cana-de-açúcar"
+    ],
+    "kanji": "サトウキビ",
+    "hiragana": "さとうきび",
+    "romanji": "satoukibi"
+  },
+  "chorus": {
+    "translations": [
+      "coro"
+    ],
+    "kanji": "コーラス",
+    "hiragana": "こーらす",
+    "romanji": "koorasu"
+  },
+  "plant": {
+    "translations": [
+      "plantar"
+    ],
+    "kanji": "プラント",
+    "hiragana": "ぷらんと",
+    "romanji": "puranto"
+  },
+  "berries": {
+    "translations": [
+      "baga"
+    ],
+    "kanji": "ベリー",
+    "hiragana": "べりー",
+    "romanji": "berii"
+  },
+  "fruit": {
+    "translations": [
+      "fruta"
+    ],
+    "kanji": "フルーツ",
+    "hiragana": "ふるーつ",
+    "romanji": "furuutsu"
+  },
+  "apple": {
+    "translations": [
+      "maçã"
+    ],
+    "kanji": "リンゴ",
+    "hiragana": "りんご",
+    "romanji": "ringo"
+  },
+  "carrot": {
+    "translations": [
+      "cenoura"
+    ],
+    "kanji": "ニンジン",
+    "hiragana": "にんじん",
+    "romanji": "ninjin"
+  },
+  "potato": {
+    "translations": [
+      "batata"
+    ],
+    "kanji": "ジャガイモ",
+    "hiragana": "じゃがいも",
+    "romanji": "jagaimo"
+  },
+  "beetroot": {
+    "translations": [
+      "beterraba"
+    ],
+    "kanji": "ビートルート",
+    "hiragana": "びーとるーと",
+    "romanji": "biitoruuto"
+  },
+  "baked_potato": {
+    "translations": [
+      "batata assada"
+    ],
+    "kanji": "ベイクドポテト",
+    "hiragana": "べいくどぽてと",
+    "romanji": "beikudopoteto"
+  },
+  "pickle": {
+    "translations": [
+      "picles"
+    ],
+    "kanji": "ピクルス",
+    "hiragana": "ぴくるす",
+    "romanji": "pikurusu"
+  },
+  "bread": {
+    "translations": [
+      "pão"
+    ],
+    "kanji": "パン",
+    "hiragana": "ぱん",
+    "romanji": "pan"
+  },
+  "cake": {
+    "translations": [
+      "bolo"
+    ],
+    "kanji": "ケーキ",
+    "hiragana": "けーき",
+    "romanji": "keeki"
+  },
+  "pie": {
+    "translations": [
+      "torta"
+    ],
+    "kanji": "パイ",
+    "hiragana": "ぱい",
+    "romanji": "pai"
+  },
+  "stew": {
+    "translations": [
+      "ensopado"
+    ],
+    "kanji": "シチュー",
+    "hiragana": "しちゅー",
+    "romanji": "shichuu"
+  },
+  "soup": {
+    "translations": [
+      "sopa"
+    ],
+    "kanji": "スープ",
+    "hiragana": "すーぷ",
+    "romanji": "suupu"
+  },
+  "beef": {
+    "translations": [
+      "bife"
+    ],
+    "kanji": "牛",
+    "hiragana": "ぎゅう",
+    "romanji": "gyuu"
+  },
+  "beef_1": {
+    "translations": [
+      "bife"
+    ],
+    "kanji": "ステーキ",
+    "hiragana": "すてーき",
+    "romanji": "suteeki"
+  },
+  "cooked_beef": {
+    "translations": [
+      "bife assado"
+    ],
+    "kanji": "ステーキ",
+    "hiragana": "すてーき",
+    "romanji": "suteeki"
+  },
+  "sea": {
+    "translations": [
+      "mar"
+    ],
+    "kanji": "海洋",
+    "hiragana": "かいよう",
+    "romanji": "kaiyou"
+  },
+  "sea_1": {
+    "translations": [
+      "mar"
+    ],
+    "kanji": "シー",
+    "hiragana": "しー",
+    "romanji": "shii"
+  },
+  "shell": {
+    "translations": [
+      "concha"
+    ],
+    "kanji": "殻",
+    "hiragana": "から",
+    "romanji": "kara"
+  },
+  "roots": {
+    "translations": [
+      "raiz"
+    ],
+    "kanji": "根",
+    "hiragana": "ね",
+    "romanji": "ne"
+  },
+  "rooted": {
+    "translations": [
+      "enraizado"
+    ],
+    "kanji": "根付いた",
+    "hiragana": "ねづいた",
+    "romanji": "nezuita"
+  },
+  "gunpowder": {
+    "translations": [
+      "pólvora"
+    ],
+    "kanji": "火薬",
+    "hiragana": "かやく",
+    "romanji": "kayaku"
+  },
+  "command": {
+    "translations": [
+      "comando"
+    ],
+    "kanji": "コマンド",
+    "hiragana": "こまんど",
+    "romanji": "komando"
+  },
+  "furnace": {
+    "translations": [
+      "forno"
+    ],
+    "kanji": "かまど",
+    "hiragana": "かまど",
+    "romanji": "kamado"
+  },
+  "blast_furnace": {
+    "translations": [
+      "alto-forno"
+    ],
+    "kanji": "溶鉱炉",
+    "hiragana": "ようこうろ",
+    "romanji": "youkouro"
+  },
+  "smoker": {
+    "translations": [
+      "fumante"
+    ],
+    "kanji": "燻製器",
+    "hiragana": "くんせいき",
+    "romanji": "kunseiki"
+  },
+  "rail": {
+    "translations": [
+      "trilho"
+    ],
+    "kanji": "レール",
+    "hiragana": "れーる",
+    "romanji": "reeru"
+  },
+  "structure": {
+    "translations": [
+      "estrutura"
+    ],
+    "kanji": "ストラクチャー",
+    "hiragana": "すとらくちゃー",
+    "romanji": "sutorakuchaa"
+  },
+  "tnt": {
+    "translations": [
+      "tnt"
+    ],
+    "kanji": "TNT",
+    "hiragana": "てぃーえぬてぃー",
+    "romanji": "teiienuteii"
+  },
+  "test": {
+    "translations": [
+      "teste"
+    ],
+    "kanji": "テスト",
+    "hiragana": "てすと",
+    "romanji": "tesuto"
+  },
+  "cube": {
+    "translations": [
+      "cubo"
+    ],
+    "kanji": "キューブ",
+    "hiragana": "きゅーぶ",
+    "romanji": "kyuubu"
+  },
+  "cream": {
+    "translations": [
+      "creme"
+    ],
+    "kanji": "クリーム",
+    "hiragana": "くりーむ",
+    "romanji": "kuriimu"
+  },
+  "void": {
+    "translations": [
+      "vazio"
+    ],
+    "kanji": "ヴォイド",
+    "hiragana": "ゔぉいど",
+    "romanji": "voido"
+  },
+  "instance": {
+    "translations": [
+      "exemplo"
+    ],
+    "kanji": "インスタンス",
+    "hiragana": "いんすたんす",
+    "romanji": "insutansu"
+  },
+  "membrane": {
+    "translations": [
+      "membrana"
+    ],
+    "kanji": "皮膜",
+    "hiragana": "ひまく",
+    "romanji": "himaku"
+  },
+  "dripstone": {
+    "translations": [
+      "estalactite"
+    ],
+    "kanji": "鍾乳石",
+    "hiragana": "しょうにゅうせき",
+    "romanji": "shounyuuseki"
+  },
+  "burn": {
+    "translations": [
+      "chama"
+    ],
+    "kanji": "炎",
+    "hiragana": "ほのお",
+    "romanji": "honoo"
+  },
+  "animal": {
+    "translations": [
+      "animal"
+    ],
+    "kanji": "動物",
+    "hiragana": "どうぶつ",
+    "romanji": "doubutsu"
+  },
+  "lightning_rod": {
+    "translations": [
+      "para-raio"
+    ],
+    "kanji": "避雷針",
+    "hiragana": "ひらいしん",
+    "romanji": "hiraishin"
+  },
+  "skin": {
+    "translations": [
+      "pele"
+    ],
+    "kanji": "皮",
+    "hiragana": "かわ",
+    "romanji": "kawa"
+  },
+  "frame": {
+    "translations": [
+      "moldura"
+    ],
+    "kanji": "フレーム",
+    "hiragana": "ふれーむ",
+    "romanji": "fureemu"
+  },
+  "fire_charge": {
+    "translations": [
+      "bola de fogo?"
+    ],
+    "kanji": "ファイヤーチャージ",
+    "hiragana": "ふぁいやーちゃーづ",
+    "romanji": "faiyaachaadzu"
+  },
+  "petrification": {
+    "translations": [
+      "petrificação"
+    ],
+    "kanji": "石化",
+    "hiragana": "せきか",
+    "romanji": "sekika"
+  },
+  "epidermis": {
+    "translations": [
+      "casca"
+    ],
+    "kanji": "表皮",
+    "hiragana": "じゅひ",
+    "romanji": "hyouhi"
+  },
+  "bark": {
+    "translations": [
+      "tronco"
+    ],
+    "kanji": "樹皮",
+    "hiragana": "ひょうひ",
+    "romanji": "juhi"
+  },
+  "bowl": {
+    "translations": [
+      "tigela"
+    ],
+    "kanji": "ボウル",
+    "hiragana": "ぼうる",
+    "romanji": "bouru"
+  },
+  "sensor": {
+    "translations": [
+      "sensor"
+    ],
+    "kanji": "センサー",
+    "hiragana": "せんさー",
+    "romanji": "sensaa"
+  },
+  "vault": {
+    "translations": [
+      "cofre"
+    ],
+    "kanji": "宝物庫",
+    "hiragana": "ほうもつこ",
+    "romanji": "houmotsuko"
+  },
+  "bush": {
+    "translations": [
+      "arbusto"
+    ],
+    "kanji": "茂み",
+    "hiragana": "しげみ",
+    "romanji": "shigemi"
+  },
+  "obsidian": {
+    "translations": [
+      "obsidiana"
+    ],
+    "kanji": "黒曜石",
+    "hiragana": "しげみ",
+    "romanji": "shigemi"
+  },
+  "crying": {
+    "translations": [
+      "obsidiana"
+    ],
+    "kanji": "泣く",
+    "hiragana": "なく",
+    "romanji": "naku"
+  },
+  "lodestone": {
+    "translations": [
+      "magnetita"
+    ],
+    "kanji": "ロードストーン",
+    "hiragana": "ろーどすとーん",
+    "romanji": "roodosutoon"
+  },
+  "record": {
+    "translations": [
+      "gravação"
+    ],
+    "kanji": "レコード",
+    "hiragana": "れこーど",
+    "romanji": "rekoodo"
+  },
+  "mycelium": {
+    "translations": [
+      "micélio"
+    ],
+    "kanji": "菌糸",
+    "hiragana": "きんし",
+    "romanji": "kinshi"
+  },
+  "string": {
+    "translations": [
+      "linha"
+    ],
+    "kanji": "糸",
+    "hiragana": "いと",
+    "romanji": "ito"
+  },
+  "air": {
+    "translations": [
+      "ar"
+    ],
+    "kanji": "空気",
+    "hiragana": "くうき",
+    "romanji": "kuuki"
+  },
+  "azure_bluet": {
+    "translations": [
+      "Flor-Silvestre-Azul"
+    ],
+    "kanji": "ヒナソウ",
+    "hiragana": "ひなそう",
+    "romanji": "hinasou"
+  },
+  "catalyst": {
+    "translations": [
+      "catalisador"
+    ],
+    "kanji": "カタリスト",
+    "hiragana": "かたりすと",
+    "romanji": "katarisuto"
+  },
+  "lichen": {
+    "translations": [
+      "Líquen"
+    ],
+    "kanji": "ゴケ",
+    "hiragana": "ごけ",
+    "romanji": "goke"
+  },
+  "lilac": {
+    "translations": [
+      "lilás"
+    ],
+    "kanji": "ライラック",
+    "hiragana": "りいらっく",
+    "romanji": "riirakku"
+  },
+  "vine": {
+    "translations": [
+      "trepadeira"
+    ],
+    "kanji": "ツタ",
+    "hiragana": "した",
+    "romanji": "shita"
+  },
+  "firefly": {
+    "translations": [
+      "vaga-lume"
+    ],
+    "kanji": "ホタル",
+    "hiragana": "ほたる",
+    "romanji": "hotaru"
+  },
+  "weeping": {
+    "translations": [
+      "chorão"
+    ],
+    "kanji": "しだれ",
+    "hiragana": "しだれ",
+    "romanji": "shidare"
+  },
+  "barrier": {
+    "translations": [
+      "berreira"
+    ],
+    "kanji": "バリアブロック",
+    "hiragana": "ばりあぶろっく",
+    "romanji": "bariaburokku"
+  },
+  "cookie": {
+    "translations": [
+      "cookie"
+    ],
+    "kanji": "クッキー",
+    "hiragana": "くっきー",
+    "romanji": "kukkii"
+  },
+  "decorated": {
+    "translations": [
+      "decorado"
+    ],
+    "kanji": "飾り",
+    "hiragana": "かざり",
+    "romanji": "kazari"
+  },
+  "lead": {
+    "translations": [
+      "laço"
+    ],
+    "kanji": "リード",
+    "hiragana": "りーど",
+    "romanji": "riido"
+  }
 }
