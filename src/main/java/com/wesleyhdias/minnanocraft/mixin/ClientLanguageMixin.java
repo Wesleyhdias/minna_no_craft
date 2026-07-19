@@ -7,20 +7,26 @@ import net.minecraft.client.resources.language.ClientLanguage;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.Mixin;
+
+/* do codigo para extrair os lang
+import org.spongepowered.asm.mixin.Unique;
 
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
+ */
 
 @Mixin(ClientLanguage.class)
 public class ClientLanguageMixin {
 
+    /* do codigo para extrair os lang
     @Unique
     private static final Gson GSON = new GsonBuilder()
             .setPrettyPrinting()
             .disableHtmlEscaping()
             .create();
+
+    */
 
 
     @Inject(method = "getOrDefault", at = @At("RETURN"), cancellable = true)

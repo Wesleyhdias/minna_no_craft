@@ -30,19 +30,20 @@ public class DictionaryLoader {
                 .getResourceAsStream("assets/lang/banco_palavras_v3.json")) {
 
             if (is == null) {
-                MinnaNoCraft.LOGGER.error("Dicionario não encontrado! ");
+                MinnaNoCraft.LOGGER.error("dictionary not found! ");
                 dictionary = new HashMap<>();
                 return;
             }
 
             Reader reader = new InputStreamReader(is);
             Gson gson = new Gson();
+            MinnaNoCraft.LOGGER.info("Dictionary loaded! ");
 
             Type type = new TypeToken<Map<String, Word>>() {}.getType();
             dictionary = Collections.unmodifiableMap(gson.fromJson(reader, type));
 
         } catch (Exception e) {
-            MinnaNoCraft.LOGGER.error("Dicionario não encontrado!", e);
+            MinnaNoCraft.LOGGER.error("dictionary loader found an error! ", e);
             dictionary = new HashMap<>();
         }
     }

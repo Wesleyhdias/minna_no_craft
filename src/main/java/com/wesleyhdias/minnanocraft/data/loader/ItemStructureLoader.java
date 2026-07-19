@@ -2,6 +2,7 @@ package com.wesleyhdias.minnanocraft.data.loader;
 
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -32,6 +33,7 @@ public class ItemStructureLoader {
                 .getResourceAsStream("assets/lang/item_structures.json")) {
 
             if (is == null) {
+                MinnaNoCraft.LOGGER.error("item name structures not found! ");
                 structures = new HashMap<>();
                 return;
             }
@@ -43,7 +45,10 @@ public class ItemStructureLoader {
             structures = Collections.unmodifiableMap(
                     new Gson().fromJson(reader, type));
 
+            MinnaNoCraft.LOGGER.info("item name structures loaded! ");
+
         } catch (Exception e) {
+            MinnaNoCraft.LOGGER.error("item name structure loader found a error", e);
             structures = new HashMap<>();
         }
     }

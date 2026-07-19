@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.data.loader;
 
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.wesleyhdias.minnanocraft.data.models.Morpheme;
 
 import com.google.gson.reflect.TypeToken;
@@ -31,6 +32,7 @@ public class MorphemeLoader {
                 .getResourceAsStream("assets/lang/bancoMorfemas.json")) {
 
             if (is == null) {
+                MinnaNoCraft.LOGGER.error("Morpheme file not found! ");
                 morphemes = new HashMap<>();
                 return;
             }
@@ -41,8 +43,10 @@ public class MorphemeLoader {
 
             morphemes = Collections.unmodifiableMap(
                     new Gson().fromJson(reader, type));
+            MinnaNoCraft.LOGGER.info("morphemes loaded! ");
 
         } catch (Exception e) {
+            MinnaNoCraft.LOGGER.error("morpheme loader found an error ", e);
             morphemes = new HashMap<>();
         }
     }

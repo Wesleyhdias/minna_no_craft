@@ -201,7 +201,7 @@
     "arrow"
   ],
   "item.minecraft.wooden_pickaxe": [
-    "wooden",
+    "wood",
     "no",
     "pickaxe"
   ],
@@ -1124,7 +1124,7 @@
     "snow"
   ],
   "item.minecraft.wooden_sword": [
-    "wooden",
+    "wood",
     "no",
     "sword"
   ],
@@ -2445,7 +2445,7 @@
     "sandstone"
   ],
   "item.minecraft.wooden_hoe": [
-    "wooden",
+    "wood",
     "no",
     "hoe"
   ],
@@ -2929,7 +2929,7 @@
     "cod"
   ],
   "item.minecraft.wooden_spear": [
-    "wooden",
+    "wood",
     "no",
     "spear"
   ],
@@ -3421,7 +3421,7 @@
     "gate"
   ],
   "item.minecraft.wooden_axe": [
-    "wooden",
+    "wood",
     "no",
     "axe"
   ],
@@ -4501,7 +4501,7 @@
     "statue"
   ],
   "item.minecraft.wooden_shovel": [
-    "wooden",
+    "wood",
     "no",
     "shovel"
   ],
