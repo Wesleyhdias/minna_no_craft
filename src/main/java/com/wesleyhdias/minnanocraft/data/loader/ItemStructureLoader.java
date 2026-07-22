@@ -1,8 +1,9 @@
 package com.wesleyhdias.minnanocraft.data.loader;
 
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
+
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
-import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;

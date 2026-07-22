@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.services;
 
-import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.data.loader.ProgressLoader;
+import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Word;
 
 import java.util.List;
@@ -16,6 +16,7 @@ public class TranslationModeResolver {
         if (structure == null) {
             return false;
         }
+
         for (String token : structure) {
 
             Word word = DictionaryLoader.getDictionary().get(token);
@@ -24,10 +25,15 @@ public class TranslationModeResolver {
                 continue;
             }
 
-            if (ProgressLoader.getLevel(token) == 0) {
+            // BUSCA ATUALIZADA: Consulta o VocabularyManager
+            WordProgress progress = VocabularyManager.getProgress(token);
+            int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
+
+            if (level == 0) {
                 return false;
             }
         }
+
         return true;
     }
 }

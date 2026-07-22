@@ -10,9 +10,5 @@
   },
   "overwrites": {
     "requireAnnotations": true
-  },
-  "client": [
-    "ClientLanguageMixin",
-    "acessor.ClientLanguageAccessor"
-  ]
+  }
 }

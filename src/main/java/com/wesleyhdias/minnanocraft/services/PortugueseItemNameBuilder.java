@@ -2,7 +2,8 @@ package com.wesleyhdias.minnanocraft.services;
 
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.data.loader.ProgressLoader;
+import com.wesleyhdias.minnanocraft.data.models.WordProgress;
+import com.wesleyhdias.minnanocraft.render.DifficultyRenderer;
 import com.wesleyhdias.minnanocraft.data.models.Word;
 
 import java.util.Locale;
@@ -34,7 +35,9 @@ public class PortugueseItemNameBuilder {
                 continue;
             }
 
-            int level = ProgressLoader.getLevel(token);
+            // BUSCA ATUALIZADA: Usa o VocabularyManager em vez do ProgressLoader
+            WordProgress progress = VocabularyManager.getProgress(token);
+            int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
 
             if (level == 0) {
                 continue;
@@ -70,10 +73,10 @@ public class PortugueseItemNameBuilder {
         while (index >= 0) {
 
             text = text.substring(0, index)
-                            + replacement
-                            + text.substring(
-                            index + search.length()
-                    );
+                    + replacement
+                    + text.substring(
+                    index + search.length()
+            );
 
             lowerText = text.toLowerCase(Locale.ROOT);
 

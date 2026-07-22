@@ -1,10 +1,10 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.services.ItemNameBuilder;
 
 import com.wesleyhdias.minnanocraft.services.PortugueseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.services.TranslationModeResolver;
 import net.minecraft.client.resources.language.ClientLanguage;
+import com.wesleyhdias.minnanocraft.services.ItemNameBuilder;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -40,6 +40,7 @@ public class ClientLanguageMixin {
         if (TranslationModeResolver.useJapanese(key)) {
 
             customText = ItemNameBuilder.build(key);
+
         }else {
 
             customText = PortugueseItemNameBuilder.build(

@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.data.loader;
 
-import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.wesleyhdias.minnanocraft.data.models.Morpheme;
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;

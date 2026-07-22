@@ -18,6 +18,9 @@
 		"main": [
 			"com.wesleyhdias.minnanocraft.MinnaNoCraft"
 		],
+		"client": [
+			"com.wesleyhdias.minnanocraft.MinnaNoCraftClient"
+		],
 		"fabric-datagen": [
 			"com.wesleyhdias.minnanocraft.MinnaNoCraftDataGenerator"
 		]

@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.services;
 
-import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.provider.DictionaryProvider;
+import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.provider.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.data.provider.TokenProvider;
 
