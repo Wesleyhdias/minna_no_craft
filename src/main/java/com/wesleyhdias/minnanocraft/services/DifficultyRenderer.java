@@ -8,9 +8,8 @@ public class DifficultyRenderer {
             Word word,
             int level
     ) {
-
         return switch (level) {
-            case 1 -> word.romanji();
+            case 1 -> word.romaji();
             case 2 -> word.hiragana();
             default -> word.kanji();
         };

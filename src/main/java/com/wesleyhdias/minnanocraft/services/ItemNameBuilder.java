@@ -22,14 +22,12 @@ public class ItemNameBuilder {
         if (structure == null) {
             return null;
         }
-
         StringBuilder result = new StringBuilder();
 
         for (String token : structure) {
 
             result.append(resolve(token));
         }
-
         return result.toString();
     }
 
@@ -43,7 +41,6 @@ public class ItemNameBuilder {
                 return value;
             }
         }
-
         // Token desconhecido:
         // mantém exatamente como veio.
         return token;

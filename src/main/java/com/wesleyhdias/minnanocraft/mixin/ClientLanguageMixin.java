@@ -35,7 +35,7 @@ public class ClientLanguageMixin {
     private void onGetOrDefault(String key, String defaultValue, CallbackInfoReturnable<String> cir) {
 
         String originalText = cir.getReturnValue();
-        String customText = null;
+        String customText;
 
         if (TranslationModeResolver.useJapanese(key)) {
 

@@ -9,16 +9,13 @@ import java.util.List;
 
 public class TranslationModeResolver {
 
-    public static boolean useJapanese(
-            String translationKey
-    ) {
+    public static boolean useJapanese(String translationKey) {
 
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
         if (structure == null) {
             return false;
         }
-
         for (String token : structure) {
 
             Word word = DictionaryLoader.getDictionary().get(token);
@@ -31,7 +28,6 @@ public class TranslationModeResolver {
                 return false;
             }
         }
-
         return true;
     }
 }

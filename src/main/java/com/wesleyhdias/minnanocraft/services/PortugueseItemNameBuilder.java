@@ -40,8 +40,7 @@ public class PortugueseItemNameBuilder {
                 continue;
             }
 
-            String replacement =
-                    getDisplayText(word, level);
+            String replacement = DifficultyRenderer.render(word, level);
 
             for (String translation : word.translations()) {
 
@@ -54,19 +53,6 @@ public class PortugueseItemNameBuilder {
         }
 
         return result;
-    }
-
-    private static String getDisplayText(
-            Word word,
-            int level
-    ) {
-
-        return switch (level) {
-
-            case 1 -> word.romanji();
-            case 2 -> word.hiragana();
-            default -> word.kanji();
-        };
     }
 
     private static String replaceIgnoreCase(

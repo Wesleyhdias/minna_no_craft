@@ -10,21 +10,14 @@ public class DictionaryProvider implements TokenProvider {
     @Override
     public String resolve(String token) {
 
-        Word word =
-                DictionaryLoader
-                        .getDictionary()
-                        .get(token);
+        Word word = DictionaryLoader.getDictionary().get(token);
 
         if (word == null) {
             return null;
         }
 
-        int level =
-                ProgressLoader.getLevel(token);
+        int level = ProgressLoader.getLevel(token);
 
-        return DifficultyRenderer.render(
-                word,
-                level
-        );
+        return DifficultyRenderer.render(word, level);
     }
 }

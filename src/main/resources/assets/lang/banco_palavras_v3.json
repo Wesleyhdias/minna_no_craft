@@ -5,7 +5,7 @@
     ],
     "kanji": "新緑",
     "hiragana": "しんりょく",
-    "romanji": "shinryoku"
+    "romaji": "shinryoku"
   },
   "light_gray": {
     "translations": [
@@ -13,7 +13,7 @@
     ],
     "kanji": "薄灰",
     "hiragana": "うすはい",
-    "romanji": "usuhai"
+    "romaji": "usuhai"
   },
   "red": {
     "translations": [
@@ -21,7 +21,7 @@
     ],
     "kanji": "赤",
     "hiragana": "あか",
-    "romanji": "aka"
+    "romaji": "aka"
   },
   "red_1": {
     "translations": [
@@ -29,7 +29,7 @@
     ],
     "kanji": "レッド",
     "hiragana": "れっど",
-    "romanji": "reddo"
+    "romaji": "reddo"
   },
   "lime": {
     "translations": [
@@ -37,7 +37,7 @@
     ],
     "kanji": "黄緑",
     "hiragana": "きみどり",
-    "romanji": "kimidori"
+    "romaji": "kimidori"
   },
   "cyan": {
     "translations": [
@@ -45,7 +45,7 @@
     ],
     "kanji": "青緑",
     "hiragana": "あおみどり",
-    "romanji": "aomidori"
+    "romaji": "aomidori"
   },
   "light_blue": {
     "translations": [
@@ -53,7 +53,7 @@
     ],
     "kanji": "空",
     "hiragana": "そら",
-    "romanji": "sora"
+    "romaji": "sora"
   },
   "ochre": {
     "translations": [
@@ -61,7 +61,7 @@
     ],
     "kanji": "黄土",
     "hiragana": "おうど",
-    "romanji": "oudo"
+    "romaji": "oudo"
   },
   "brown": {
     "translations": [
@@ -69,7 +69,7 @@
     ],
     "kanji": "茶",
     "hiragana": "ちゃ",
-    "romanji": "cha"
+    "romaji": "cha"
   },
   "gray": {
     "translations": [
@@ -77,7 +77,7 @@
     ],
     "kanji": "灰",
     "hiragana": "はい",
-    "romanji": "hai"
+    "romaji": "hai"
   },
   "pearlescent": {
     "translations": [
@@ -85,7 +85,7 @@
     ],
     "kanji": "真珠",
     "hiragana": "しんじゅ",
-    "romanji": "shinju"
+    "romaji": "shinju"
   },
   "purple": {
     "translations": [
@@ -93,7 +93,7 @@
     ],
     "kanji": "紫",
     "hiragana": "むらさき",
-    "romanji": "murasaki"
+    "romaji": "murasaki"
   },
   "yellow": {
     "translations": [
@@ -101,7 +101,7 @@
     ],
     "kanji": "黄",
     "hiragana": "き",
-    "romanji": "ki"
+    "romaji": "ki"
   },
   "green": {
     "translations": [
@@ -109,7 +109,7 @@
     ],
     "kanji": "緑",
     "hiragana": "みどり",
-    "romanji": "midori"
+    "romaji": "midori"
   },
   "blue": {
     "translations": [
@@ -117,7 +117,7 @@
     ],
     "kanji": "青",
     "hiragana": "あお",
-    "romanji": "ao"
+    "romaji": "ao"
   },
   "orange": {
     "translations": [
@@ -125,7 +125,7 @@
     ],
     "kanji": "橙",
     "hiragana": "だいだい",
-    "romanji": "daidai"
+    "romaji": "daidai"
   },
   "black": {
     "translations": [
@@ -133,7 +133,7 @@
     ],
     "kanji": "黒",
     "hiragana": "くろ",
-    "romanji": "kuro"
+    "romaji": "kuro"
   },
   "white": {
     "translations": [
@@ -141,7 +141,7 @@
     ],
     "kanji": "白色の",
     "hiragana": "はくしょくの",
-    "romanji": "hakushoku"
+    "romaji": "hakushoku"
   },
   "pink": {
     "translations": [
@@ -149,7 +149,7 @@
     ],
     "kanji": "桃",
     "hiragana": "もも",
-    "romanji": "momo"
+    "romaji": "momo"
   },
   "pink_1": {
     "translations": [
@@ -157,7 +157,7 @@
     ],
     "kanji": "桜",
     "hiragana": "さくら",
-    "romanji": "sakura"
+    "romaji": "sakura"
   },
   "magenta": {
     "translations": [
@@ -165,7 +165,7 @@
     ],
     "kanji": "赤紫",
     "hiragana": "あかむらさき",
-    "romanji": "akamurasaki"
+    "romaji": "akamurasaki"
   },
   "dark": {
     "translations": [
@@ -173,7 +173,7 @@
     ],
     "kanji": "ダーク",
     "hiragana": "だーく",
-    "romanji": "daaku"
+    "romaji": "daaku"
   },
   "oak": {
     "translations": [
@@ -181,7 +181,7 @@
     ],
     "kanji": "オーク",
     "hiragana": "おーく",
-    "romanji": "ooku"
+    "romaji": "ooku"
   },
   "birch": {
     "translations": [
@@ -189,7 +189,7 @@
     ],
     "kanji": "シラカバ",
     "hiragana": "しらかば",
-    "romanji": "shirakaba"
+    "romaji": "shirakaba"
   },
   "spruce": {
     "translations": [
@@ -197,7 +197,7 @@
     ],
     "kanji": "トウヒ",
     "hiragana": "とうひ",
-    "romanji": "touhi"
+    "romaji": "touhi"
   },
   "acacia": {
     "translations": [
@@ -205,7 +205,7 @@
     ],
     "kanji": "アカシア",
     "hiragana": "あかしあ",
-    "romanji": "akashia"
+    "romaji": "akashia"
   },
   "pale": {
     "translations": [
@@ -213,7 +213,7 @@
     ],
     "kanji": "ペール",
     "hiragana": "ぺーる",
-    "romanji": "peeru"
+    "romaji": "peeru"
   },
   "mangrove": {
     "translations": [
@@ -221,7 +221,7 @@
     ],
     "kanji": "マングローブ",
     "hiragana": "まんぐろーぶ",
-    "romanji": "manguroobu"
+    "romaji": "manguroobu"
   },
   "jungle": {
     "translations": [
@@ -229,7 +229,7 @@
     ],
     "kanji": "ジャングル",
     "hiragana": "じゃんぐる",
-    "romanji": "janguru"
+    "romaji": "janguru"
   },
   "cherry": {
     "translations": [
@@ -237,7 +237,7 @@
     ],
     "kanji": "サクラ",
     "hiragana": "さくら",
-    "romanji": "sakura"
+    "romaji": "sakura"
   },
   "bamboo": {
     "translations": [
@@ -245,7 +245,7 @@
     ],
     "kanji": "竹",
     "hiragana": "たけ",
-    "romanji": "take"
+    "romaji": "take"
   },
   "block": {
     "translations": [
@@ -253,7 +253,7 @@
     ],
     "kanji": "ブロック",
     "hiragana": "ぶろっく",
-    "romanji": "burokku"
+    "romaji": "burokku"
   },
   "block_1": {
     "translations": [
@@ -261,7 +261,7 @@
     ],
     "kanji": "俵",
     "hiragana": "たわら",
-    "romanji": "tawara"
+    "romaji": "tawara"
   },
   "warped": {
     "translations": [
@@ -269,7 +269,7 @@
     ],
     "kanji": "歪んだ",
     "hiragana": "ゆがんだ",
-    "romanji": "yuganda"
+    "romaji": "yuganda"
   },
   "crimson": {
     "translations": [
@@ -277,7 +277,7 @@
     ],
     "kanji": "真紅",
     "hiragana": "しんく",
-    "romanji": "shinku"
+    "romaji": "shinku"
   },
   "wood": {
     "translations": [
@@ -285,7 +285,7 @@
     ],
     "kanji": "木",
     "hiragana": "き",
-    "romanji": "ki"
+    "romaji": "ki"
   },
   "tuff": {
     "translations": [
@@ -293,7 +293,7 @@
     ],
     "kanji": "凝灰岩",
     "hiragana": "ぎょうかいがん",
-    "romanji": "gyoukaigan"
+    "romaji": "gyoukaigan"
   },
   "bedrock": {
     "translations": [
@@ -301,7 +301,7 @@
     ],
     "kanji": "岩盤",
     "hiragana": "がんばん",
-    "romanji": "ganban"
+    "romaji": "ganban"
   },
   "flint": {
     "translations": [
@@ -309,7 +309,7 @@
     ],
     "kanji": "火打石",
     "hiragana": "ひうちいし",
-    "romanji": "hiuchiishi"
+    "romaji": "hiuchiishi"
   },
   "gravel": {
     "translations": [
@@ -317,7 +317,7 @@
     ],
     "kanji": "砂利",
     "hiragana": "じゃり",
-    "romanji": "jari"
+    "romaji": "jari"
   },
   "sand": {
     "translations": [
@@ -325,7 +325,7 @@
     ],
     "kanji": "砂",
     "hiragana": "すな",
-    "romanji": "suna"
+    "romaji": "suna"
   },
   "basalt": {
     "translations": [
@@ -333,7 +333,7 @@
     ],
     "kanji": "玄武岩",
     "hiragana": "げんぶがん",
-    "romanji": "genbugan"
+    "romaji": "genbugan"
   },
   "granite": {
     "translations": [
@@ -341,7 +341,7 @@
     ],
     "kanji": "花崗岩",
     "hiragana": "かこうがん",
-    "romanji": "kakougan"
+    "romaji": "kakougan"
   },
   "andesite": {
     "translations": [
@@ -349,7 +349,7 @@
     ],
     "kanji": "安山岩",
     "hiragana": "あんざんがん",
-    "romanji": "anzangan"
+    "romaji": "anzangan"
   },
   "diorite": {
     "translations": [
@@ -357,7 +357,7 @@
     ],
     "kanji": "閃緑岩",
     "hiragana": "せんりょくがん",
-    "romanji": "senryokugan"
+    "romaji": "senryokugan"
   },
   "deepslate": {
     "translations": [
@@ -365,7 +365,7 @@
     ],
     "kanji": "深層岩",
     "hiragana": "しんそうがん",
-    "romanji": "shinsougan"
+    "romaji": "shinsougan"
   },
   "deepslate_1": {
     "translations": [
@@ -373,7 +373,7 @@
     ],
     "kanji": "深層",
     "hiragana": "しんそう",
-    "romanji": "shinsou"
+    "romaji": "shinsou"
   },
   "stone": {
     "translations": [
@@ -381,7 +381,7 @@
     ],
     "kanji": "石",
     "hiragana": "いし",
-    "romanji": "ishi"
+    "romaji": "ishi"
   },
   "stone_1": {
     "translations": [
@@ -389,7 +389,7 @@
     ],
     "kanji": "ストーン",
     "hiragana": "すとーん",
-    "romanji": "sutoone"
+    "romaji": "sutoone"
   },
   "cobblestone": {
     "translations": [
@@ -397,7 +397,7 @@
     ],
     "kanji": "丸石",
     "hiragana": "まるいし",
-    "romanji": "maruishi"
+    "romaji": "maruishi"
   },
   "blackstone": {
     "translations": [
@@ -405,7 +405,7 @@
     ],
     "kanji": "ブラックストーン",
     "hiragana": "ぶらっくすとーん",
-    "romanji": "burakkusutoon"
+    "romaji": "burakkusutoon"
   },
   "chainmail": {
     "translations": [
@@ -413,7 +413,7 @@
     ],
     "kanji": "チェーン",
     "hiragana": "ちぇーん",
-    "romanji": "cheen"
+    "romaji": "cheen"
   },
   "charcoal": {
     "translations": [
@@ -421,7 +421,7 @@
     ],
     "kanji": "木炭",
     "hiragana": "もくたん",
-    "romanji": "mokutan"
+    "romaji": "mokutan"
   },
   "coal": {
     "translations": [
@@ -429,7 +429,7 @@
     ],
     "kanji": "石炭",
     "hiragana": "せきたん",
-    "romanji": "sekitan"
+    "romaji": "sekitan"
   },
   "iron": {
     "translations": [
@@ -437,7 +437,7 @@
     ],
     "kanji": "鉄",
     "hiragana": "てつ",
-    "romanji": "tetsu"
+    "romaji": "tetsu"
   },
   "iron_1": {
     "translations": [
@@ -445,7 +445,7 @@
     ],
     "kanji": "アイアン",
     "hiragana": "あいあん",
-    "romanji": "aian"
+    "romaji": "aian"
   },
   "iron_nugget": {
     "translations": [
@@ -453,7 +453,7 @@
     ],
     "kanji": "鉄塊",
     "hiragana": "てっかい",
-    "romanji": "tekkai"
+    "romaji": "tekkai"
   },
   "copper": {
     "translations": [
@@ -461,7 +461,7 @@
     ],
     "kanji": "銅",
     "hiragana": "どう",
-    "romanji": "dou"
+    "romaji": "dou"
   },
   "copper_1": {
     "translations": [
@@ -469,7 +469,7 @@
     ],
     "kanji": "カッパー",
     "hiragana": "かっぱー",
-    "romanji": "kappaa"
+    "romaji": "kappaa"
   },
   "gold": {
     "translations": [
@@ -477,7 +477,7 @@
     ],
     "kanji": "金",
     "hiragana": "きん",
-    "romanji": "kin"
+    "romaji": "kin"
   },
   "golden": {
     "translations": [
@@ -485,7 +485,7 @@
     ],
     "kanji": "金",
     "hiragana": "きん",
-    "romanji": "kin"
+    "romaji": "kin"
   },
   "gold_nugget": {
     "translations": [
@@ -493,7 +493,7 @@
     ],
     "kanji": "金塊",
     "hiragana": "きんかい",
-    "romanji": "kinkai"
+    "romaji": "kinkai"
   },
   "diamond": {
     "translations": [
@@ -501,7 +501,7 @@
     ],
     "kanji": "ダイヤモンド",
     "hiragana": "だいやもんど",
-    "romanji": "daiyamondo"
+    "romaji": "daiyamondo"
   },
   "emerald": {
     "translations": [
@@ -509,7 +509,7 @@
     ],
     "kanji": "エメラルド",
     "hiragana": "えめらるど",
-    "romanji": "emerarudo"
+    "romaji": "emerarudo"
   },
   "netherite": {
     "translations": [
@@ -517,7 +517,7 @@
     ],
     "kanji": "ネザライト",
     "hiragana": "ねざらいと",
-    "romanji": "nezaraito"
+    "romaji": "nezaraito"
   },
   "lapis": {
     "translations": [
@@ -525,7 +525,7 @@
     ],
     "kanji": "ラピス",
     "hiragana": "らぴす",
-    "romanji": "rapisu"
+    "romaji": "rapisu"
   },
   "lazuli": {
     "translations": [
@@ -533,7 +533,7 @@
     ],
     "kanji": "ラズリ",
     "hiragana": "らずり",
-    "romanji": "razuri"
+    "romaji": "razuri"
   },
   "quartz": {
     "translations": [
@@ -541,7 +541,7 @@
     ],
     "kanji": "クォーツ",
     "hiragana": "くぉーつ",
-    "romanji": "kuootsu"
+    "romaji": "kuootsu"
   },
   "amethyst": {
     "translations": [
@@ -549,7 +549,7 @@
     ],
     "kanji": "アメジスト",
     "hiragana": "あめじすと",
-    "romanji": "amejisuto"
+    "romaji": "amejisuto"
   },
   "calcite": {
     "translations": [
@@ -557,7 +557,7 @@
     ],
     "kanji": "方解石",
     "hiragana": "ほうかいせき",
-    "romanji": "houkaiseki"
+    "romaji": "houkaiseki"
   },
   "leather": {
     "translations": [
@@ -565,7 +565,7 @@
     ],
     "kanji": "革",
     "hiragana": "かわ",
-    "romanji": "kawa"
+    "romaji": "kawa"
   },
   "armor": {
     "translations": [
@@ -573,7 +573,7 @@
     ],
     "kanji": "鎧",
     "hiragana": "よろい",
-    "romanji": "yoroi"
+    "romaji": "yoroi"
   },
   "armor_1": {
     "translations": [
@@ -581,7 +581,7 @@
     ],
     "kanji": "防具",
     "hiragana": "ぼうぐ",
-    "romanji": "bougu"
+    "romaji": "bougu"
   },
   "helmet": {
     "translations": [
@@ -589,7 +589,7 @@
     ],
     "kanji": "ヘルメット",
     "hiragana": "へるめっと",
-    "romanji": "herumetto"
+    "romaji": "herumetto"
   },
   "helmet_1": {
     "translations": [
@@ -597,7 +597,7 @@
     ],
     "kanji": "帽子",
     "hiragana": "ぼうし",
-    "romanji": "boushi"
+    "romaji": "boushi"
   },
   "helmet_2": {
     "translations": [
@@ -605,7 +605,7 @@
     ],
     "kanji": "甲羅",
     "hiragana": "こうら",
-    "romanji": "koura"
+    "romaji": "koura"
   },
   "chestplate": {
     "translations": [
@@ -613,7 +613,7 @@
     ],
     "kanji": "チェストプレート",
     "hiragana": "ちぇすとぷれーと",
-    "romanji": "chesutopureeto"
+    "romaji": "chesutopureeto"
   },
   "chestplate_1": {
     "translations": [
@@ -621,7 +621,7 @@
     ],
     "kanji": "上着",
     "hiragana": "うわぎ",
-    "romanji": "uwagi"
+    "romaji": "uwagi"
   },
   "leggings": {
     "translations": [
@@ -629,7 +629,7 @@
     ],
     "kanji": "レギンス",
     "hiragana": "れぎんす",
-    "romanji": "reginsu"
+    "romaji": "reginsu"
   },
   "leggings_1": {
     "translations": [
@@ -637,7 +637,7 @@
     ],
     "kanji": "ズボン",
     "hiragana": "ずぼん",
-    "romanji": "zubon"
+    "romaji": "zubon"
   },
   "boots": {
     "translations": [
@@ -645,7 +645,7 @@
     ],
     "kanji": "ブーツ",
     "hiragana": "ぶーつ",
-    "romanji": "buutsu"
+    "romaji": "buutsu"
   },
   "foot": {
     "translations": [
@@ -653,7 +653,7 @@
     ],
     "kanji": "足",
     "hiragana": "あし",
-    "romanji": "ashi"
+    "romaji": "ashi"
   },
   "nose": {
     "translations": [
@@ -661,7 +661,7 @@
     ],
     "kanji": "鼻",
     "hiragana": "はな",
-    "romanji": "hana"
+    "romaji": "hana"
   },
   "to_sound": {
     "translations": [
@@ -669,7 +669,7 @@
     ],
     "kanji": "鳴らす",
     "hiragana": "ならす",
-    "romanji": "narasu"
+    "romaji": "narasu"
   },
   "detector": {
     "translations": [
@@ -677,7 +677,7 @@
     ],
     "kanji": "ディテクター",
     "hiragana": "でぃてくたー",
-    "romanji": "ditekutaa"
+    "romaji": "ditekutaa"
   },
   "piston": {
     "translations": [
@@ -685,7 +685,7 @@
     ],
     "kanji": "ピストン",
     "hiragana": "ぴすとん",
-    "romanji": "pisuton"
+    "romaji": "pisuton"
   },
   "observer": {
     "translations": [
@@ -693,7 +693,7 @@
     ],
     "kanji": "オブザーバー",
     "hiragana": "おぶざーばー",
-    "romanji": "obuzaabaa"
+    "romaji": "obuzaabaa"
   },
   "repeater": {
     "translations": [
@@ -701,7 +701,7 @@
     ],
     "kanji": "リピーター",
     "hiragana": "りぴーたー",
-    "romanji": "ripiitaa"
+    "romaji": "ripiitaa"
   },
   "hopper": {
     "translations": [
@@ -709,7 +709,7 @@
     ],
     "kanji": "ホッパー",
     "hiragana": "ほっぱー",
-    "romanji": "hoppaa"
+    "romaji": "hoppaa"
   },
   "dropper": {
     "translations": [
@@ -717,7 +717,7 @@
     ],
     "kanji": "ドロッパー",
     "hiragana": "どろっぱー",
-    "romanji": "doroppaa"
+    "romaji": "doroppaa"
   },
   "dispenser": {
     "translations": [
@@ -725,7 +725,7 @@
     ],
     "kanji": "ディスペンサー",
     "hiragana": "でぃすぺんさー",
-    "romanji": "disupensaa"
+    "romaji": "disupensaa"
   },
   "comparator": {
     "translations": [
@@ -733,7 +733,7 @@
     ],
     "kanji": "コンパレーター",
     "hiragana": "こんぱれーたー",
-    "romanji": "konpareetaa"
+    "romaji": "konpareetaa"
   },
   "compass": {
     "translations": [
@@ -741,7 +741,7 @@
     ],
     "kanji": "コンパス",
     "hiragana": "こんぱす",
-    "romanji": "konpasu"
+    "romaji": "konpasu"
   },
   "recovery": {
     "translations": [
@@ -749,7 +749,7 @@
     ],
     "kanji": "リカバリー",
     "hiragana": "りかばりー",
-    "romanji": "rikabarii"
+    "romaji": "rikabarii"
   },
   "totem": {
     "translations": [
@@ -757,7 +757,7 @@
     ],
     "kanji": "トーテム",
     "hiragana": "とーてむ",
-    "romanji": "tootemu"
+    "romaji": "tootemu"
   },
   "rod": {
     "translations": [
@@ -765,7 +765,7 @@
     ],
     "kanji": "ロッド",
     "hiragana": "ろっど",
-    "romanji": "roddo"
+    "romaji": "roddo"
   },
   "stick": {
     "translations": [
@@ -773,7 +773,7 @@
     ],
     "kanji": "棒",
     "hiragana": "ぼう",
-    "romanji": "bou"
+    "romaji": "bou"
   },
   "shield": {
     "translations": [
@@ -781,7 +781,7 @@
     ],
     "kanji": "盾",
     "hiragana": "たて",
-    "romanji": "tate"
+    "romaji": "tate"
   },
   "bow": {
     "translations": [
@@ -789,7 +789,7 @@
     ],
     "kanji": "弓",
     "hiragana": "ゆみ",
-    "romanji": "yumi"
+    "romaji": "yumi"
   },
   "crossbow": {
     "translations": [
@@ -797,7 +797,7 @@
     ],
     "kanji": "クロスボウ",
     "hiragana": "くろすぼう",
-    "romanji": "kurosubou"
+    "romaji": "kurosubou"
   },
   "trident": {
     "translations": [
@@ -805,7 +805,7 @@
     ],
     "kanji": "トライデント",
     "hiragana": "とらいでんと",
-    "romanji": "toraidento"
+    "romaji": "toraidento"
   },
   "elytra": {
     "translations": [
@@ -813,7 +813,7 @@
     ],
     "kanji": "エリトラ",
     "hiragana": "えりとら",
-    "romanji": "eritora"
+    "romaji": "eritora"
   },
   "fishing_rod": {
     "translations": [
@@ -821,7 +821,7 @@
     ],
     "kanji": "釣竿",
     "hiragana": "つりざお",
-    "romanji": "tsurizao"
+    "romaji": "tsurizao"
   },
   "brush": {
     "translations": [
@@ -829,7 +829,7 @@
     ],
     "kanji": "ブラシ",
     "hiragana": "ぶらし",
-    "romanji": "burashi"
+    "romaji": "burashi"
   },
   "spyglass": {
     "translations": [
@@ -837,7 +837,7 @@
     ],
     "kanji": "望遠鏡",
     "hiragana": "ぼうえんきょう",
-    "romanji": "bouenkyou"
+    "romaji": "bouenkyou"
   },
   "shears": {
     "translations": [
@@ -845,7 +845,7 @@
     ],
     "kanji": "ハサミ",
     "hiragana": "はさみ",
-    "romanji": "hasami"
+    "romaji": "hasami"
   },
   "mace": {
     "translations": [
@@ -853,7 +853,7 @@
     ],
     "kanji": "メイス",
     "hiragana": "めいす",
-    "romanji": "meisu"
+    "romaji": "meisu"
   },
   "pickaxe": {
     "translations": [
@@ -861,7 +861,7 @@
     ],
     "kanji": "ツルハシ",
     "hiragana": "つるはし",
-    "romanji": "tsuruhashi"
+    "romaji": "tsuruhashi"
   },
   "shovel": {
     "translations": [
@@ -869,7 +869,7 @@
     ],
     "kanji": "シャベル",
     "hiragana": "しゃべる",
-    "romanji": "shaberu"
+    "romaji": "shaberu"
   },
   "hoe": {
     "translations": [
@@ -877,7 +877,7 @@
     ],
     "kanji": "クワ",
     "hiragana": "くわ",
-    "romanji": "kuwa"
+    "romaji": "kuwa"
   },
   "axe": {
     "translations": [
@@ -885,7 +885,7 @@
     ],
     "kanji": "斧",
     "hiragana": "おの",
-    "romanji": "ono"
+    "romaji": "ono"
   },
   "spear": {
     "translations": [
@@ -893,7 +893,7 @@
     ],
     "kanji": "槍",
     "hiragana": "やり",
-    "romanji": "yari"
+    "romaji": "yari"
   },
   "sword": {
     "translations": [
@@ -901,7 +901,7 @@
     ],
     "kanji": "剣",
     "hiragana": "けん",
-    "romanji": "ken"
+    "romaji": "ken"
   },
   "sandstone": {
     "translations": [
@@ -909,7 +909,7 @@
     ],
     "kanji": "砂岩",
     "hiragana": "さがん",
-    "romanji": "sagan"
+    "romaji": "sagan"
   },
   "podzol": {
     "translations": [
@@ -917,7 +917,7 @@
     ],
     "kanji": "ポドゾル",
     "hiragana": "ぽどぞる",
-    "romanji": "podozoru"
+    "romaji": "podozoru"
   },
   "dirt": {
     "translations": [
@@ -925,7 +925,7 @@
     ],
     "kanji": "土",
     "hiragana": "つち",
-    "romanji": "tsuchi"
+    "romaji": "tsuchi"
   },
   "coarse": {
     "translations": [
@@ -933,7 +933,7 @@
     ],
     "kanji": "粗い",
     "hiragana": "あらい",
-    "romanji": "arai"
+    "romaji": "arai"
   },
   "grass": {
     "translations": [
@@ -941,7 +941,7 @@
     ],
     "kanji": "草",
     "hiragana": "くさ",
-    "romanji": "kusa"
+    "romaji": "kusa"
   },
   "soul_soil": {
     "translations": [
@@ -949,7 +949,7 @@
     ],
     "kanji": "ソウルソイル",
     "hiragana": "そうるそいる",
-    "romanji": "sourusoiru"
+    "romaji": "sourusoiru"
   },
   "wool": {
     "translations": [
@@ -957,7 +957,7 @@
     ],
     "kanji": "羊毛",
     "hiragana": "ようもう",
-    "romanji": "youmou"
+    "romaji": "youmou"
   },
   "clay": {
     "translations": [
@@ -965,7 +965,7 @@
     ],
     "kanji": "粘土",
     "hiragana": "ねんど",
-    "romanji": "nendo"
+    "romaji": "nendo"
   },
   "clump": {
     "translations": [
@@ -973,7 +973,7 @@
     ],
     "kanji": "塊",
     "hiragana": "かたまり",
-    "romanji": "katamari"
+    "romaji": "katamari"
   },
   "ore": {
     "translations": [
@@ -981,7 +981,7 @@
     ],
     "kanji": "鉱石",
     "hiragana": "こうせき",
-    "romanji": "kouseki"
+    "romaji": "kouseki"
   },
   "dye": {
     "translations": [
@@ -989,7 +989,7 @@
     ],
     "kanji": "染料",
     "hiragana": "せんりょう",
-    "romanji": "senryou"
+    "romaji": "senryou"
   },
   "brick": {
     "translations": [
@@ -997,7 +997,7 @@
     ],
     "kanji": "レンガ",
     "hiragana": "れんが",
-    "romanji": "renga"
+    "romaji": "renga"
   },
   "bricks": {
     "translations": [
@@ -1005,7 +1005,7 @@
     ],
     "kanji": "レンガ",
     "hiragana": "れんが",
-    "romanji": "renga"
+    "romaji": "renga"
   },
   "mossy": {
     "translations": [
@@ -1013,7 +1013,7 @@
     ],
     "kanji": "苔む",
     "hiragana": "こけむ",
-    "romanji": "kokemu"
+    "romaji": "kokemu"
   },
   "stairs": {
     "translations": [
@@ -1021,7 +1021,7 @@
     ],
     "kanji": "階段",
     "hiragana": "かいだん",
-    "romanji": "kaidan"
+    "romaji": "kaidan"
   },
   "slab": {
     "translations": [
@@ -1029,7 +1029,7 @@
     ],
     "kanji": "ハーフブロック",
     "hiragana": "はーふぶろっく",
-    "romanji": "haafuburokku"
+    "romaji": "haafuburokku"
   },
   "pillar": {
     "translations": [
@@ -1037,7 +1037,7 @@
     ],
     "kanji": "柱",
     "hiragana": "はしら",
-    "romanji": "hashira"
+    "romaji": "hashira"
   },
   "mosaic": {
     "translations": [
@@ -1045,7 +1045,7 @@
     ],
     "kanji": "細工",
     "hiragana": "ざいく",
-    "romanji": "zaiku"
+    "romaji": "zaiku"
   },
   "prismarine": {
     "translations": [
@@ -1053,7 +1053,7 @@
     ],
     "kanji": "プリズマリン",
     "hiragana": "ぷりずまりん",
-    "romanji": "purizumarin"
+    "romaji": "purizumarin"
   },
   "terracotta": {
     "translations": [
@@ -1061,7 +1061,7 @@
     ],
     "kanji": "テラコッタ",
     "hiragana": "てらこった",
-    "romanji": "terakotta"
+    "romaji": "terakotta"
   },
   "banner": {
     "translations": [
@@ -1069,7 +1069,7 @@
     ],
     "kanji": "旗",
     "hiragana": "はた",
-    "romanji": "hata"
+    "romaji": "hata"
   },
   "carpet": {
     "translations": [
@@ -1077,7 +1077,7 @@
     ],
     "kanji": "カーペット",
     "hiragana": "かーぺっと",
-    "romanji": "kaapetto"
+    "romaji": "kaapetto"
   },
   "concrete": {
     "translations": [
@@ -1085,7 +1085,7 @@
     ],
     "kanji": "コンクリート",
     "hiragana": "こんくりーと",
-    "romanji": "konkuriito"
+    "romaji": "konkuriito"
   },
   "nylium": {
     "translations": [
@@ -1093,7 +1093,7 @@
     ],
     "kanji": "ナイリウム",
     "hiragana": "ないりうむ",
-    "romanji": "nairiumu"
+    "romaji": "nairiumu"
   },
   "planks": {
     "translations": [
@@ -1101,7 +1101,7 @@
     ],
     "kanji": "板材",
     "hiragana": "いたざい",
-    "romanji": "itazai"
+    "romaji": "itazai"
   },
   "purpur": {
     "translations": [
@@ -1109,7 +1109,7 @@
     ],
     "kanji": "プルプァ",
     "hiragana": "ぷるぷぁ",
-    "romanji": "purupua"
+    "romaji": "purupua"
   },
   "netherrack": {
     "translations": [
@@ -1117,7 +1117,7 @@
     ],
     "kanji": "ネザーラック",
     "hiragana": "ねざーらっく",
-    "romanji": "nezaarakku"
+    "romaji": "nezaarakku"
   },
   "ingot": {
     "translations": [
@@ -1125,7 +1125,7 @@
     ],
     "kanji": "インゴット",
     "hiragana": "いんごっと",
-    "romanji": "ingotto"
+    "romaji": "ingotto"
   },
   "log": {
     "translations": [
@@ -1133,7 +1133,7 @@
     ],
     "kanji": "原木",
     "hiragana": "げんぼく",
-    "romanji": "genboku"
+    "romaji": "genboku"
   },
   "raw": {
     "translations": [
@@ -1141,7 +1141,7 @@
     ],
     "kanji": "原石",
     "hiragana": "げんせき",
-    "romanji": "genseki"
+    "romaji": "genseki"
   },
   "raw_1": {
     "translations": [
@@ -1149,7 +1149,7 @@
     ],
     "kanji": "生",
     "hiragana": "なま",
-    "romanji": "nama"
+    "romaji": "nama"
   },
   "wall": {
     "translations": [
@@ -1157,7 +1157,7 @@
     ],
     "kanji": "塀",
     "hiragana": "へい",
-    "romanji": "hei"
+    "romaji": "hei"
   },
   "scaffolding": {
     "translations": [
@@ -1165,7 +1165,7 @@
     ],
     "kanji": "足場",
     "hiragana": "あしば",
-    "romanji": "ashiba"
+    "romaji": "ashiba"
   },
   "fragments": {
     "translations": [
@@ -1173,7 +1173,7 @@
     ],
     "kanji": "破片",
     "hiragana": "はへん",
-    "romanji": "hahen"
+    "romaji": "hahen"
   },
   "sign": {
     "translations": [
@@ -1181,7 +1181,7 @@
     ],
     "kanji": "看板",
     "hiragana": "かんばん",
-    "romanji": "kanban"
+    "romaji": "kanban"
   },
   "portal": {
     "translations": [
@@ -1189,7 +1189,7 @@
     ],
     "kanji": "ポータル",
     "hiragana": "ぽーたる",
-    "romanji": "pootaru"
+    "romaji": "pootaru"
   },
   "fence": {
     "translations": [
@@ -1197,7 +1197,7 @@
     ],
     "kanji": "フェンス",
     "hiragana": "ふぇんす",
-    "romanji": "fensu"
+    "romaji": "fensu"
   },
   "gate": {
     "translations": [
@@ -1205,7 +1205,7 @@
     ],
     "kanji": "ゲート",
     "hiragana": "げーと",
-    "romanji": "geeto"
+    "romaji": "geeto"
   },
   "grate": {
     "translations": [
@@ -1213,7 +1213,7 @@
     ],
     "kanji": "金網",
     "hiragana": "かなあみ",
-    "romanji": "kanaami"
+    "romaji": "kanaami"
   },
   "bars": {
     "translations": [
@@ -1221,7 +1221,7 @@
     ],
     "kanji": "格子",
     "hiragana": "こうし",
-    "romanji": "koushi"
+    "romaji": "koushi"
   },
   "boat": {
     "translations": [
@@ -1229,7 +1229,7 @@
     ],
     "kanji": "ボート",
     "hiragana": "ぼーと",
-    "romanji": "booto"
+    "romaji": "booto"
   },
   "raft": {
     "translations": [
@@ -1237,7 +1237,7 @@
     ],
     "kanji": "イカダ",
     "hiragana": "いかだ",
-    "romanji": "ikada"
+    "romaji": "ikada"
   },
   "bundle": {
     "translations": [
@@ -1245,7 +1245,7 @@
     ],
     "kanji": "バンドル",
     "hiragana": "ばんどる",
-    "romanji": "bandoru"
+    "romaji": "bandoru"
   },
   "bed": {
     "translations": [
@@ -1253,7 +1253,7 @@
     ],
     "kanji": "ベッド",
     "hiragana": "べっど",
-    "romanji": "beddo"
+    "romaji": "beddo"
   },
   "conduit": {
     "translations": [
@@ -1261,7 +1261,7 @@
     ],
     "kanji": "コンジット",
     "hiragana": "こんじっと",
-    "romanji": "konjitto"
+    "romaji": "konjitto"
   },
   "froglight": {
     "translations": [
@@ -1269,7 +1269,7 @@
     ],
     "kanji": "フロッグライト",
     "hiragana": "ふろっぐらいと",
-    "romanji": "furogguraito"
+    "romaji": "furogguraito"
   },
   "candle": {
     "translations": [
@@ -1277,7 +1277,7 @@
     ],
     "kanji": "ろうそく",
     "hiragana": "ろうそく",
-    "romanji": "rousoku"
+    "romaji": "rousoku"
   },
   "door": {
     "translations": [
@@ -1285,7 +1285,7 @@
     ],
     "kanji": "ドア",
     "hiragana": "どあ",
-    "romanji": "doa"
+    "romaji": "doa"
   },
   "trapdoor": {
     "translations": [
@@ -1293,7 +1293,7 @@
     ],
     "kanji": "トラップドア",
     "hiragana": "とらっぷどあ",
-    "romanji": "torappudoa"
+    "romaji": "torappudoa"
   },
   "trap": {
     "translations": [
@@ -1301,7 +1301,7 @@
     ],
     "kanji": "トラップ",
     "hiragana": "とらっぷ",
-    "romanji": "torappu"
+    "romaji": "torappu"
   },
   "arrow": {
     "translations": [
@@ -1309,7 +1309,7 @@
     ],
     "kanji": "矢",
     "hiragana": "や",
-    "romanji": "ya"
+    "romaji": "ya"
   },
   "torch": {
     "translations": [
@@ -1317,7 +1317,7 @@
     ],
     "kanji": "松明",
     "hiragana": "たいまつ",
-    "romanji": "taimatsu"
+    "romaji": "taimatsu"
   },
   "torch_1": {
     "translations": [
@@ -1325,7 +1325,7 @@
     ],
     "kanji": "トーチ",
     "hiragana": "とーち",
-    "romanji": "toochi"
+    "romaji": "toochi"
   },
   "bulb": {
     "translations": [
@@ -1333,7 +1333,7 @@
     ],
     "kanji": "電球",
     "hiragana": "でんきゅう",
-    "romanji": "denkyuu"
+    "romaji": "denkyuu"
   },
   "lamp": {
     "translations": [
@@ -1341,7 +1341,7 @@
     ],
     "kanji": "ランプ",
     "hiragana": "らんぷ",
-    "romanji": "ranpu"
+    "romaji": "ranpu"
   },
   "key": {
     "translations": [
@@ -1349,7 +1349,7 @@
     ],
     "kanji": "鍵",
     "hiragana": "かぎ",
-    "romanji": "kagi"
+    "romaji": "kagi"
   },
   "eye": {
     "translations": [
@@ -1357,7 +1357,7 @@
     ],
     "kanji": "目",
     "hiragana": "め",
-    "romanji": "me"
+    "romaji": "me"
   },
   "eye_1": {
     "translations": [
@@ -1365,7 +1365,7 @@
     ],
     "kanji": "アイ",
     "hiragana": "あい",
-    "romanji": "ai"
+    "romaji": "ai"
   },
   "bucket": {
     "translations": [
@@ -1373,7 +1373,7 @@
     ],
     "kanji": "バケツ",
     "hiragana": "ばけつ",
-    "romanji": "baketsu"
+    "romaji": "baketsu"
   },
   "crystal": {
     "translations": [
@@ -1381,7 +1381,7 @@
     ],
     "kanji": "クリスタル",
     "hiragana": "くりすたる",
-    "romanji": "kurisutaru"
+    "romaji": "kurisutaru"
   },
   "crystals": {
     "translations": [
@@ -1389,7 +1389,7 @@
     ],
     "kanji": "クリスタル",
     "hiragana": "くりすたる",
-    "romanji": "kurisutaru"
+    "romaji": "kurisutaru"
   },
   "statue": {
     "translations": [
@@ -1397,7 +1397,7 @@
     ],
     "kanji": "像",
     "hiragana": "ぞう",
-    "romanji": "zou"
+    "romaji": "zou"
   },
   "filled_map": {
     "translations": [
@@ -1405,7 +1405,7 @@
     ],
     "kanji": "地図",
     "hiragana": "ちず",
-    "romanji": "chizu"
+    "romaji": "chizu"
   },
   "ball": {
     "translations": [
@@ -1413,7 +1413,7 @@
     ],
     "kanji": "ボール",
     "hiragana": "ぼーる",
-    "romanji": "booru"
+    "romaji": "booru"
   },
   "ball_1": {
     "translations": [
@@ -1421,7 +1421,7 @@
     ],
     "kanji": "玉",
     "hiragana": "たま",
-    "romanji": "tama"
+    "romaji": "tama"
   },
   "note": {
     "translations": [
@@ -1429,7 +1429,7 @@
     ],
     "kanji": "音符",
     "hiragana": "おんぷ",
-    "romanji": "onpu"
+    "romaji": "onpu"
   },
   "book": {
     "translations": [
@@ -1437,7 +1437,7 @@
     ],
     "kanji": "本",
     "hiragana": "ほん",
-    "romanji": "hon"
+    "romaji": "hon"
   },
   "bookshelf": {
     "translations": [
@@ -1445,7 +1445,7 @@
     ],
     "kanji": "本棚",
     "hiragana": "ほんだな",
-    "romanji": "hondana"
+    "romaji": "hondana"
   },
   "shelf": {
     "translations": [
@@ -1453,7 +1453,7 @@
     ],
     "kanji": "棚",
     "hiragana": "たな",
-    "romanji": "tana"
+    "romaji": "tana"
   },
   "minecart": {
     "translations": [
@@ -1461,7 +1461,7 @@
     ],
     "kanji": "トロッコ",
     "hiragana": "とろっこ",
-    "romanji": "torokko"
+    "romaji": "torokko"
   },
   "powder": {
     "translations": [
@@ -1469,7 +1469,7 @@
     ],
     "kanji": "パウダー",
     "hiragana": "ぱうだー",
-    "romanji": "paudaa"
+    "romaji": "paudaa"
   },
   "powder_1": {
     "translations": [
@@ -1477,7 +1477,7 @@
     ],
     "kanji": "粉",
     "hiragana": "こな",
-    "romanji": "kona"
+    "romaji": "kona"
   },
   "dust": {
     "translations": [
@@ -1485,7 +1485,7 @@
     ],
     "kanji": "ダスト",
     "hiragana": "だすと",
-    "romanji": "dasuto"
+    "romaji": "dasuto"
   },
   "shroomlight": {
     "translations": [
@@ -1493,7 +1493,7 @@
     ],
     "kanji": "シュルームライト",
     "hiragana": "しゅるーむらいと",
-    "romanji": "shuruumuraito"
+    "romaji": "shuruumuraito"
   },
   "glow": {
     "translations": [
@@ -1501,7 +1501,7 @@
     ],
     "kanji": "輝く",
     "hiragana": "かがやく",
-    "romanji": "kagayaku"
+    "romaji": "kagayaku"
   },
   "glow_1": {
     "translations": [
@@ -1509,7 +1509,7 @@
     ],
     "kanji": "ヒカリ",
     "hiragana": "ひかり",
-    "romanji": "hikari"
+    "romaji": "hikari"
   },
   "glow_2": {
     "translations": [
@@ -1517,7 +1517,7 @@
     ],
     "kanji": "グロウ",
     "hiragana": "ぐろう",
-    "romanji": "gurou"
+    "romaji": "gurou"
   },
   "blue_orchid": {
     "translations": [
@@ -1525,7 +1525,7 @@
     ],
     "kanji": "ヒスイラン",
     "hiragana": "ひすいらん",
-    "romanji": "hisuiran"
+    "romaji": "hisuiran"
   },
   "egg": {
     "translations": [
@@ -1533,7 +1533,7 @@
     ],
     "kanji": "卵",
     "hiragana": "たまご",
-    "romanji": "tamago"
+    "romaji": "tamago"
   },
   "cactus": {
     "translations": [
@@ -1541,7 +1541,7 @@
     ],
     "kanji": "サボテン",
     "hiragana": "さぼてん",
-    "romanji": "saboten"
+    "romaji": "saboten"
   },
   "hay": {
     "translations": [
@@ -1549,7 +1549,7 @@
     ],
     "kanji": "干草",
     "hiragana": "ほしくさ",
-    "romanji": "hoshikusa"
+    "romaji": "hoshikusa"
   },
   "wheat": {
     "translations": [
@@ -1557,7 +1557,7 @@
     ],
     "kanji": "小麦",
     "hiragana": "こむぎ",
-    "romanji": "komugi"
+    "romaji": "komugi"
   },
   "seeds": {
     "translations": [
@@ -1565,7 +1565,7 @@
     ],
     "kanji": "種",
     "hiragana": "たね",
-    "romanji": "tane"
+    "romaji": "tane"
   },
   "pumpkin": {
     "translations": [
@@ -1573,7 +1573,7 @@
     ],
     "kanji": "カボチャ",
     "hiragana": "かぼちゃ",
-    "romanji": "kabocha"
+    "romaji": "kabocha"
   },
   "pumpkin_1": {
     "translations": [
@@ -1581,7 +1581,7 @@
     ],
     "kanji": "パンプキン",
     "hiragana": "ぱんぷきん",
-    "romanji": "panpukin"
+    "romaji": "panpukin"
   },
   "melon": {
     "translations": [
@@ -1589,7 +1589,7 @@
     ],
     "kanji": "スイカ",
     "hiragana": "すいか",
-    "romanji": "suika"
+    "romaji": "suika"
   },
   "sapling": {
     "translations": [
@@ -1597,7 +1597,7 @@
     ],
     "kanji": "苗木",
     "hiragana": "なえぎ",
-    "romanji": "naegi"
+    "romaji": "naegi"
   },
   "sprouts": {
     "translations": [
@@ -1605,7 +1605,7 @@
     ],
     "kanji": "スプラウト",
     "hiragana": "すぷらうと",
-    "romanji": "supurauto"
+    "romaji": "supurauto"
   },
   "bud": {
     "translations": [
@@ -1613,7 +1613,7 @@
     ],
     "kanji": "芽",
     "hiragana": "め",
-    "romanji": "me"
+    "romaji": "me"
   },
   "root": {
     "translations": [
@@ -1621,7 +1621,7 @@
     ],
     "kanji": "根",
     "hiragana": "ね",
-    "romanji": "ne"
+    "romaji": "ne"
   },
   "echo": {
     "translations": [
@@ -1629,7 +1629,7 @@
     ],
     "kanji": "残響",
     "hiragana": "ざんきょう",
-    "romanji": "zankyou"
+    "romaji": "zankyou"
   },
   "button": {
     "translations": [
@@ -1637,7 +1637,7 @@
     ],
     "kanji": "ボタン",
     "hiragana": "ぼたん",
-    "romanji": "botan"
+    "romaji": "botan"
   },
   "pressure_plate": {
     "translations": [
@@ -1645,7 +1645,7 @@
     ],
     "kanji": "感圧板",
     "hiragana": "かんあついた",
-    "romanji": "kanatsuita"
+    "romaji": "kanatsuita"
   },
   "campfire": {
     "translations": [
@@ -1653,7 +1653,7 @@
     ],
     "kanji": "焚き火",
     "hiragana": "たきび",
-    "romanji": "takibi"
+    "romaji": "takibi"
   },
   "composter": {
     "translations": [
@@ -1661,7 +1661,7 @@
     ],
     "kanji": "コンポスター",
     "hiragana": "こんぽすたー",
-    "romanji": "konposutaa"
+    "romaji": "konposutaa"
   },
   "anvil": {
     "translations": [
@@ -1669,7 +1669,7 @@
     ],
     "kanji": "金床",
     "hiragana": "かなとこ",
-    "romanji": "kanatoko"
+    "romaji": "kanatoko"
   },
   "cauldron": {
     "translations": [
@@ -1677,7 +1677,7 @@
     ],
     "kanji": "大釜",
     "hiragana": "おおかま",
-    "romanji": "ookama"
+    "romaji": "ookama"
   },
   "nest": {
     "translations": [
@@ -1685,7 +1685,7 @@
     ],
     "kanji": "巣",
     "hiragana": "す",
-    "romanji": "su"
+    "romaji": "su"
   },
   "barrel": {
     "translations": [
@@ -1693,7 +1693,7 @@
     ],
     "kanji": "樽",
     "hiragana": "そん",
-    "romanji": "son"
+    "romaji": "son"
   },
   "chest": {
     "translations": [
@@ -1701,7 +1701,7 @@
     ],
     "kanji": "チェスト",
     "hiragana": "ちぇすと",
-    "romanji": "chesuto"
+    "romaji": "chesuto"
   },
   "shulker_box": {
     "translations": [
@@ -1709,7 +1709,7 @@
     ],
     "kanji": "シュルカーボックス",
     "hiragana": "しゅるかーぼっくす",
-    "romanji": "shurukaabokkusu"
+    "romaji": "shurukaabokkusu"
   },
   "shulker": {
     "translations": [
@@ -1717,7 +1717,7 @@
     ],
     "kanji": "シュルカー",
     "hiragana": "しゅるかー",
-    "romanji": "shurukaa"
+    "romaji": "shurukaa"
   },
   "grindstone": {
     "translations": [
@@ -1725,7 +1725,7 @@
     ],
     "kanji": "砥石",
     "hiragana": "といし",
-    "romanji": "toishi"
+    "romaji": "toishi"
   },
   "flower_pot": {
     "translations": [
@@ -1733,7 +1733,7 @@
     ],
     "kanji": "植木鉢",
     "hiragana": "うえきばち",
-    "romanji": "uekibachi"
+    "romaji": "uekibachi"
   },
   "pottery": {
     "translations": [
@@ -1741,7 +1741,7 @@
     ],
     "kanji": "壺",
     "hiragana": "つぼ",
-    "romanji": "tsubo"
+    "romaji": "tsubo"
   },
   "jukebox": {
     "translations": [
@@ -1749,7 +1749,7 @@
     ],
     "kanji": "ジュークボックス",
     "hiragana": "じゅーくぼっくす",
-    "romanji": "juukubokkusu"
+    "romaji": "juukubokkusu"
   },
   "beehive": {
     "translations": [
@@ -1757,7 +1757,7 @@
     ],
     "kanji": "養蜂箱",
     "hiragana": "ようほうばこ",
-    "romanji": "youhoubako"
+    "romaji": "youhoubako"
   },
   "beacon": {
     "translations": [
@@ -1765,7 +1765,7 @@
     ],
     "kanji": "ビーコン",
     "hiragana": "びーこん",
-    "romanji": "biikon"
+    "romaji": "biikon"
   },
   "lever": {
     "translations": [
@@ -1773,7 +1773,7 @@
     ],
     "kanji": "レバー",
     "hiragana": "ればー",
-    "romanji": "rebaa"
+    "romaji": "rebaa"
   },
   "chain": {
     "translations": [
@@ -1781,7 +1781,7 @@
     ],
     "kanji": "鎖",
     "hiragana": "くさり",
-    "romanji": "kusari"
+    "romaji": "kusari"
   },
   "chain_1": {
     "translations": [
@@ -1789,7 +1789,7 @@
     ],
     "kanji": "チェーン",
     "hiragana": "ちぇーん",
-    "romanji": "cheen"
+    "romaji": "cheen"
   },
   "clock": {
     "translations": [
@@ -1797,7 +1797,7 @@
     ],
     "kanji": "時計",
     "hiragana": "とけい",
-    "romanji": "tokei"
+    "romaji": "tokei"
   },
   "bone": {
     "translations": [
@@ -1805,7 +1805,7 @@
     ],
     "kanji": "骨",
     "hiragana": "ほね",
-    "romanji": "hone"
+    "romaji": "hone"
   },
   "bone_meal": {
     "translations": [
@@ -1813,7 +1813,7 @@
     ],
     "kanji": "骨粉",
     "hiragana": "こっぷん",
-    "romanji": "koppun"
+    "romaji": "koppun"
   },
   "sponge": {
     "translations": [
@@ -1821,7 +1821,7 @@
     ],
     "kanji": "スポンジ",
     "hiragana": "すぽんじ",
-    "romanji": "suponji"
+    "romaji": "suponji"
   },
   "bottle": {
     "translations": [
@@ -1829,7 +1829,7 @@
     ],
     "kanji": "瓶",
     "hiragana": "びん",
-    "romanji": "bin"
+    "romaji": "bin"
   },
   "ice": {
     "translations": [
@@ -1837,7 +1837,7 @@
     ],
     "kanji": "氷",
     "hiragana": "こおり",
-    "romanji": "koori"
+    "romaji": "koori"
   },
   "packed_ice": {
     "translations": [
@@ -1845,7 +1845,7 @@
     ],
     "kanji": "氷塊",
     "hiragana": "ひょうかい",
-    "romanji": "hyoukai"
+    "romaji": "hyoukai"
   },
   "packed": {
     "translations": [
@@ -1853,7 +1853,7 @@
     ],
     "kanji": "固めた",
     "hiragana": "かためた",
-    "romanji": "katameta"
+    "romaji": "katameta"
   },
   "snow": {
     "translations": [
@@ -1861,7 +1861,7 @@
     ],
     "kanji": "雪",
     "hiragana": "ゆき",
-    "romanji": "yuki"
+    "romaji": "yuki"
   },
   "snow_1": {
     "translations": [
@@ -1869,7 +1869,7 @@
     ],
     "kanji": "スノウ",
     "hiragana": "すのう",
-    "romanji": "sunou"
+    "romaji": "sunou"
   },
   "snowball": {
     "translations": [
@@ -1877,7 +1877,7 @@
     ],
     "kanji": "雪玉",
     "hiragana": "ゆきだま",
-    "romanji": "yukidama"
+    "romaji": "yukidama"
   },
   "golem": {
     "translations": [
@@ -1885,7 +1885,7 @@
     ],
     "kanji": "ゴーレム",
     "hiragana": "ごーれむ",
-    "romanji": "gooremu"
+    "romaji": "gooremu"
   },
   "husk": {
     "translations": [
@@ -1893,7 +1893,7 @@
     ],
     "kanji": "ハスク",
     "hiragana": "はすく",
-    "romanji": "hasuku"
+    "romaji": "hasuku"
   },
   "ghast": {
     "translations": [
@@ -1901,7 +1901,7 @@
     ],
     "kanji": "ガスト",
     "hiragana": "がすと",
-    "romanji": "gasuto"
+    "romaji": "gasuto"
   },
   "phantom": {
     "translations": [
@@ -1909,7 +1909,7 @@
     ],
     "kanji": "ファントム",
     "hiragana": "ふぁんとむ",
-    "romanji": "fantomu"
+    "romaji": "fantomu"
   },
   "piglin": {
     "translations": [
@@ -1917,7 +1917,7 @@
     ],
     "kanji": "ピグリン",
     "hiragana": "ぴぐりん",
-    "romanji": "pigurin"
+    "romaji": "pigurin"
   },
   "piglin_brute": {
     "translations": [
@@ -1925,7 +1925,7 @@
     ],
     "kanji": "ブルート",
     "hiragana": "ぶるーと",
-    "romanji": "buruuto"
+    "romaji": "buruuto"
   },
   "hoglin": {
     "translations": [
@@ -1933,7 +1933,7 @@
     ],
     "kanji": "ホグリン",
     "hiragana": "ほぐりん",
-    "romanji": "hogurin"
+    "romaji": "hogurin"
   },
   "zoglin": {
     "translations": [
@@ -1941,7 +1941,7 @@
     ],
     "kanji": "ゾグリン",
     "hiragana": "ぞぐりん",
-    "romanji": "zogurin"
+    "romaji": "zogurin"
   },
   "warden": {
     "translations": [
@@ -1949,7 +1949,7 @@
     ],
     "kanji": "ウォーデン",
     "hiragana": "うぉーでん",
-    "romanji": "uooden"
+    "romaji": "uooden"
   },
   "vex": {
     "translations": [
@@ -1957,7 +1957,7 @@
     ],
     "kanji": "ヴェックス",
     "hiragana": "ゔぇっくす",
-    "romanji": "vekkusu"
+    "romaji": "vekkusu"
   },
   "guardian": {
     "translations": [
@@ -1965,7 +1965,7 @@
     ],
     "kanji": "ガーディアン",
     "hiragana": "がーでぃあん",
-    "romanji": "gaadian"
+    "romaji": "gaadian"
   },
   "enderman": {
     "translations": [
@@ -1973,7 +1973,7 @@
     ],
     "kanji": "エンダーマン",
     "hiragana": "えんだーまん",
-    "romanji": "endaaman"
+    "romaji": "endaaman"
   },
   "endermite": {
     "translations": [
@@ -1981,7 +1981,7 @@
     ],
     "kanji": "エンダーマイト",
     "hiragana": "えんだーまいと",
-    "romanji": "endaamaito"
+    "romaji": "endaamaito"
   },
   "creeper": {
     "translations": [
@@ -1989,7 +1989,7 @@
     ],
     "kanji": "クリーパー",
     "hiragana": "くりーぱー",
-    "romanji": "kuriipaa"
+    "romaji": "kuriipaa"
   },
   "silverfish": {
     "translations": [
@@ -1997,7 +1997,7 @@
     ],
     "kanji": "シルバーフィッシュ",
     "hiragana": "しるばーふぃっしゅ",
-    "romanji": "shirubaafisshu"
+    "romaji": "shirubaafisshu"
   },
   "breeze": {
     "translations": [
@@ -2005,7 +2005,7 @@
     ],
     "kanji": "ブリーズ",
     "hiragana": "ぶりーず",
-    "romanji": "buriizu"
+    "romaji": "buriizu"
   },
   "blaze": {
     "translations": [
@@ -2013,7 +2013,7 @@
     ],
     "kanji": "ブレイズ",
     "hiragana": "ぶれいず",
-    "romanji": "bureizu"
+    "romaji": "bureizu"
   },
   "wither": {
     "translations": [
@@ -2021,7 +2021,7 @@
     ],
     "kanji": "ウィザー",
     "hiragana": "うぃざー",
-    "romanji": "uizaa"
+    "romaji": "uizaa"
   },
   "spider": {
     "translations": [
@@ -2029,7 +2029,7 @@
     ],
     "kanji": "グモ",
     "hiragana": "ぐも",
-    "romanji": "gumo"
+    "romaji": "gumo"
   },
   "spider_1": {
     "translations": [
@@ -2037,7 +2037,7 @@
     ],
     "kanji": "クモ",
     "hiragana": "くも",
-    "romanji": "kumo"
+    "romaji": "kumo"
   },
   "skeleton": {
     "translations": [
@@ -2045,7 +2045,7 @@
     ],
     "kanji": "スケルトン",
     "hiragana": "すけるとん",
-    "romanji": "sukeruton"
+    "romaji": "sukeruton"
   },
   "zombie": {
     "translations": [
@@ -2053,7 +2053,7 @@
     ],
     "kanji": "ゾンビ",
     "hiragana": "ぞんび",
-    "romanji": "zonbi"
+    "romaji": "zonbi"
   },
   "tadpole": {
     "translations": [
@@ -2061,7 +2061,7 @@
     ],
     "kanji": "オタマジャクシ",
     "hiragana": "おたまじゃくし",
-    "romanji": "otamajakushi"
+    "romaji": "otamajakushi"
   },
   "drowned": {
     "translations": [
@@ -2069,7 +2069,7 @@
     ],
     "kanji": "ドラウンド",
     "hiragana": "どらうんど",
-    "romanji": "doraundo"
+    "romaji": "doraundo"
   },
   "strider": {
     "translations": [
@@ -2077,7 +2077,7 @@
     ],
     "kanji": "ストライダー",
     "hiragana": "すとらいだー",
-    "romanji": "sutoraidaa"
+    "romaji": "sutoraidaa"
   },
   "perched": {
     "translations": [
@@ -2085,7 +2085,7 @@
     ],
     "kanji": "パーチド",
     "hiragana": "ぱーちど",
-    "romanji": "paachido"
+    "romaji": "paachido"
   },
   "witch": {
     "translations": [
@@ -2093,7 +2093,7 @@
     ],
     "kanji": "ウィッチ",
     "hiragana": "うぃっち",
-    "romanji": "uitchi"
+    "romaji": "uitchi"
   },
   "ravager": {
     "translations": [
@@ -2101,7 +2101,7 @@
     ],
     "kanji": "ラヴェジャー",
     "hiragana": "らゔぇじゃー",
-    "romanji": "ravejaa"
+    "romaji": "ravejaa"
   },
   "evoker": {
     "translations": [
@@ -2109,7 +2109,7 @@
     ],
     "kanji": "エヴォーカー",
     "hiragana": "えゔぉーかー",
-    "romanji": "evookaa"
+    "romaji": "evookaa"
   },
   "pillager": {
     "translations": [
@@ -2117,7 +2117,7 @@
     ],
     "kanji": "ピリジャー",
     "hiragana": "ぴりじゃー",
-    "romanji": "pirijaa"
+    "romaji": "pirijaa"
   },
   "villager": {
     "translations": [
@@ -2125,7 +2125,7 @@
     ],
     "kanji": "村人",
     "hiragana": "むらびと",
-    "romanji": "murabito"
+    "romaji": "murabito"
   },
   "player": {
     "translations": [
@@ -2133,7 +2133,7 @@
     ],
     "kanji": "プレイヤー",
     "hiragana": "ぷれいやー",
-    "romanji": "pureiyaa"
+    "romaji": "pureiyaa"
   },
   "friend": {
     "translations": [
@@ -2141,7 +2141,7 @@
     ],
     "kanji": "友",
     "hiragana": "とも",
-    "romanji": "tomo"
+    "romaji": "tomo"
   },
   "vindicator": {
     "translations": [
@@ -2149,7 +2149,7 @@
     ],
     "kanji": "ヴィンディケーター",
     "hiragana": "ゔぃんでぃけーたー",
-    "romanji": "vindikeetaa"
+    "romaji": "vindikeetaa"
   },
   "trader": {
     "translations": [
@@ -2157,7 +2157,7 @@
     ],
     "kanji": "商人",
     "hiragana": "しょうにん",
-    "romanji": "shounin"
+    "romaji": "shounin"
   },
   "allay": {
     "translations": [
@@ -2165,7 +2165,7 @@
     ],
     "kanji": "アレイ",
     "hiragana": "あれい",
-    "romanji": "arei"
+    "romaji": "arei"
   },
   "bee": {
     "translations": [
@@ -2173,7 +2173,7 @@
     ],
     "kanji": "ミツバチ",
     "hiragana": "みつばち",
-    "romanji": "mitsubachi"
+    "romaji": "mitsubachi"
   },
   "dolphin": {
     "translations": [
@@ -2181,7 +2181,7 @@
     ],
     "kanji": "イルカ",
     "hiragana": "いるか",
-    "romanji": "iruka"
+    "romaji": "iruka"
   },
   "nautilus": {
     "translations": [
@@ -2189,7 +2189,7 @@
     ],
     "kanji": "オウムガイ",
     "hiragana": "おうむがい",
-    "romanji": "oumugai"
+    "romaji": "oumugai"
   },
   "stray": {
     "translations": [
@@ -2197,7 +2197,7 @@
     ],
     "kanji": "ストレイ",
     "hiragana": "すとれい",
-    "romanji": "sutorei"
+    "romaji": "sutorei"
   },
   "sniffer": {
     "translations": [
@@ -2205,7 +2205,7 @@
     ],
     "kanji": "スニッファー",
     "hiragana": "すにっふぁー",
-    "romanji": "suniffaa"
+    "romaji": "suniffaa"
   },
   "squid": {
     "translations": [
@@ -2213,7 +2213,7 @@
     ],
     "kanji": "イカ",
     "hiragana": "いか",
-    "romanji": "ika"
+    "romaji": "ika"
   },
   "turtle": {
     "translations": [
@@ -2221,7 +2221,7 @@
     ],
     "kanji": "カメ",
     "hiragana": "かめ",
-    "romanji": "kame"
+    "romaji": "kame"
   },
   "armadillo": {
     "translations": [
@@ -2229,7 +2229,7 @@
     ],
     "kanji": "アルマジロ",
     "hiragana": "あるまじろ",
-    "romanji": "arumajiro"
+    "romaji": "arumajiro"
   },
   "fox": {
     "translations": [
@@ -2237,7 +2237,7 @@
     ],
     "kanji": "キツネ",
     "hiragana": "きつね",
-    "romanji": "kitsune"
+    "romaji": "kitsune"
   },
   "cow": {
     "translations": [
@@ -2245,7 +2245,7 @@
     ],
     "kanji": "ウシ",
     "hiragana": "うし",
-    "romanji": "ushi"
+    "romaji": "ushi"
   },
   "mooshroom": {
     "translations": [
@@ -2253,7 +2253,7 @@
     ],
     "kanji": "ムーシュルーム",
     "hiragana": "むーしゅるーむ",
-    "romanji": "muushuruumu"
+    "romaji": "muushuruumu"
   },
   "bat": {
     "translations": [
@@ -2261,7 +2261,7 @@
     ],
     "kanji": "コウモリ",
     "hiragana": "こうもり",
-    "romanji": "koumori"
+    "romaji": "koumori"
   },
   "parrot": {
     "translations": [
@@ -2269,7 +2269,7 @@
     ],
     "kanji": "オウム",
     "hiragana": "おうむ",
-    "romanji": "oumu"
+    "romaji": "oumu"
   },
   "ocelot": {
     "translations": [
@@ -2277,7 +2277,7 @@
     ],
     "kanji": "ヤマネコ",
     "hiragana": "やまねこ",
-    "romanji": "yamaneko"
+    "romaji": "yamaneko"
   },
   "cat": {
     "translations": [
@@ -2285,7 +2285,7 @@
     ],
     "kanji": "ネコ",
     "hiragana": "ねこ",
-    "romanji": "neko"
+    "romaji": "neko"
   },
   "sheep": {
     "translations": [
@@ -2293,7 +2293,7 @@
     ],
     "kanji": "ヒツジ",
     "hiragana": "ひつじ",
-    "romanji": "hitsuji"
+    "romaji": "hitsuji"
   },
   "goat": {
     "translations": [
@@ -2301,7 +2301,7 @@
     ],
     "kanji": "ヤギ",
     "hiragana": "やぎ",
-    "romanji": "yagi"
+    "romaji": "yagi"
   },
   "wolf": {
     "translations": [
@@ -2309,7 +2309,7 @@
     ],
     "kanji": "オオカミ",
     "hiragana": "おおかみ",
-    "romanji": "ookami"
+    "romaji": "ookami"
   },
   "polar_bear": {
     "translations": [
@@ -2317,7 +2317,7 @@
     ],
     "kanji": "シロクマ",
     "hiragana": "しろくま",
-    "romanji": "shirokuma"
+    "romaji": "shirokuma"
   },
   "panda": {
     "translations": [
@@ -2325,7 +2325,7 @@
     ],
     "kanji": "パンダ",
     "hiragana": "ぱんだ",
-    "romanji": "panda"
+    "romaji": "panda"
   },
   "frog": {
     "translations": [
@@ -2333,7 +2333,7 @@
     ],
     "kanji": "カエル",
     "hiragana": "かえる",
-    "romanji": "kaeru"
+    "romaji": "kaeru"
   },
   "pufferfish": {
     "translations": [
@@ -2341,7 +2341,7 @@
     ],
     "kanji": "フグ",
     "hiragana": "ふぐ",
-    "romanji": "fugu"
+    "romaji": "fugu"
   },
   "angler": {
     "translations": [
@@ -2349,7 +2349,7 @@
     ],
     "kanji": "釣り人",
     "hiragana": "つりびと",
-    "romanji": "tsuribito"
+    "romaji": "tsuribito"
   },
   "axolotl": {
     "translations": [
@@ -2357,7 +2357,7 @@
     ],
     "kanji": "ウーパールーパー",
     "hiragana": "うーぱーるーぱー",
-    "romanji": "uupaaruupaa"
+    "romaji": "uupaaruupaa"
   },
   "salmon": {
     "translations": [
@@ -2365,7 +2365,7 @@
     ],
     "kanji": "鮭",
     "hiragana": "ざけ",
-    "romanji": "zake"
+    "romaji": "zake"
   },
   "salmon_1": {
     "translations": [
@@ -2373,7 +2373,7 @@
     ],
     "kanji": "サケ",
     "hiragana": "さけ",
-    "romanji": "sake"
+    "romaji": "sake"
   },
   "cod": {
     "translations": [
@@ -2381,7 +2381,7 @@
     ],
     "kanji": "鱈",
     "hiragana": "たら",
-    "romanji": "tara"
+    "romaji": "tara"
   },
   "cod_1": {
     "translations": [
@@ -2389,7 +2389,7 @@
     ],
     "kanji": "タラ",
     "hiragana": "たら",
-    "romanji": "tara"
+    "romaji": "tara"
   },
   "tropical_fish": {
     "translations": [
@@ -2397,7 +2397,7 @@
     ],
     "kanji": "熱帯魚",
     "hiragana": "ねったいぎょ",
-    "romanji": "nettaigyo"
+    "romaji": "nettaigyo"
   },
   "horse": {
     "translations": [
@@ -2405,7 +2405,7 @@
     ],
     "kanji": "馬",
     "hiragana": "うま",
-    "romanji": "uma"
+    "romaji": "uma"
   },
   "horse_1": {
     "translations": [
@@ -2413,7 +2413,7 @@
     ],
     "kanji": "ホース",
     "hiragana": "ほーす",
-    "romanji": "hoosu"
+    "romaji": "hoosu"
   },
   "horse_2": {
     "translations": [
@@ -2421,7 +2421,7 @@
     ],
     "kanji": "ウマ",
     "hiragana": "うま",
-    "romanji": "uma"
+    "romaji": "uma"
   },
   "donkey": {
     "translations": [
@@ -2429,7 +2429,7 @@
     ],
     "kanji": "ロバ",
     "hiragana": "ろば",
-    "romanji": "roba"
+    "romaji": "roba"
   },
   "mule": {
     "translations": [
@@ -2437,7 +2437,7 @@
     ],
     "kanji": "ラバ",
     "hiragana": "らば",
-    "romanji": "raba"
+    "romaji": "raba"
   },
   "llama": {
     "translations": [
@@ -2445,7 +2445,7 @@
     ],
     "kanji": "ラマ",
     "hiragana": "らま",
-    "romanji": "rama"
+    "romaji": "rama"
   },
   "camel": {
     "translations": [
@@ -2453,7 +2453,7 @@
     ],
     "kanji": "ラクダ",
     "hiragana": "らくだ",
-    "romanji": "rakuda"
+    "romaji": "rakuda"
   },
   "pig": {
     "translations": [
@@ -2461,7 +2461,7 @@
     ],
     "kanji": "豚",
     "hiragana": "ぶた",
-    "romanji": "buta"
+    "romaji": "buta"
   },
   "pig_1": {
     "translations": [
@@ -2469,7 +2469,7 @@
     ],
     "kanji": "ブタ",
     "hiragana": "ぶた",
-    "romanji": "buta"
+    "romaji": "buta"
   },
   "chicken": {
     "translations": [
@@ -2477,7 +2477,7 @@
     ],
     "kanji": "鶏",
     "hiragana": "にわとり",
-    "romanji": "niwatori"
+    "romaji": "niwatori"
   },
   "chicken_1": {
     "translations": [
@@ -2485,7 +2485,7 @@
     ],
     "kanji": "ニワトリ",
     "hiragana": "にわとり",
-    "romanji": "niwatori"
+    "romaji": "niwatori"
   },
   "chicken_2": {
     "translations": [
@@ -2493,7 +2493,7 @@
     ],
     "kanji": "鳥",
     "hiragana": "とり",
-    "romanji": "tori"
+    "romaji": "tori"
   },
   "rabbit": {
     "translations": [
@@ -2501,7 +2501,7 @@
     ],
     "kanji": "兎",
     "hiragana": "うさぎ",
-    "romanji": "usagi"
+    "romaji": "usagi"
   },
   "rabbit_1": {
     "translations": [
@@ -2509,7 +2509,7 @@
     ],
     "kanji": "ウサギ",
     "hiragana": "うさぎ",
-    "romanji": "usagi"
+    "romaji": "usagi"
   },
   "slime": {
     "translations": [
@@ -2517,7 +2517,7 @@
     ],
     "kanji": "スライム",
     "hiragana": "すらいむ",
-    "romanji": "suraimu"
+    "romaji": "suraimu"
   },
   "feather": {
     "translations": [
@@ -2525,7 +2525,7 @@
     ],
     "kanji": "羽根",
     "hiragana": "はね",
-    "romanji": "hane"
+    "romaji": "hane"
   },
   "moss": {
     "translations": [
@@ -2533,7 +2533,7 @@
     ],
     "kanji": "苔",
     "hiragana": "こけ",
-    "romanji": "koke"
+    "romaji": "koke"
   },
   "petals": {
     "translations": [
@@ -2541,7 +2541,7 @@
     ],
     "kanji": "花びら",
     "hiragana": "はなびら",
-    "romanji": "hanabira"
+    "romaji": "hanabira"
   },
   "lily": {
     "translations": [
@@ -2549,7 +2549,7 @@
     ],
     "kanji": "スイレン",
     "hiragana": "すいれん",
-    "romanji": "suiren"
+    "romaji": "suiren"
   },
   "leaves": {
     "translations": [
@@ -2557,7 +2557,7 @@
     ],
     "kanji": "葉",
     "hiragana": "は",
-    "romanji": "ha"
+    "romaji": "ha"
   },
   "coral": {
     "translations": [
@@ -2565,7 +2565,7 @@
     ],
     "kanji": "サンゴ",
     "hiragana": "さんご",
-    "romanji": "sango"
+    "romaji": "sango"
   },
   "fan": {
     "translations": [
@@ -2573,7 +2573,7 @@
     ],
     "kanji": "ウチワ",
     "hiragana": "うちわ",
-    "romanji": "uchiwa"
+    "romaji": "uchiwa"
   },
   "tube": {
     "translations": [
@@ -2581,7 +2581,7 @@
     ],
     "kanji": "クダ",
     "hiragana": "くだ",
-    "romanji": "kuda"
+    "romaji": "kuda"
   },
   "brain": {
     "translations": [
@@ -2589,7 +2589,7 @@
     ],
     "kanji": "ノウ",
     "hiragana": "のう",
-    "romanji": "nou"
+    "romaji": "nou"
   },
   "horn": {
     "translations": [
@@ -2597,7 +2597,7 @@
     ],
     "kanji": "シカツノ",
     "hiragana": "しかつの",
-    "romanji": "shikatsunouchiwa"
+    "romaji": "shikatsunouchiwa"
   },
   "horn_1": {
     "translations": [
@@ -2605,7 +2605,7 @@
     ],
     "kanji": "角笛",
     "hiragana": "つのぶえ",
-    "romanji": "tsunobue"
+    "romaji": "tsunobue"
   },
   "fire": {
     "translations": [
@@ -2613,7 +2613,7 @@
     ],
     "kanji": "ミレポラ",
     "hiragana": "みれぽら",
-    "romanji": "mirepora"
+    "romaji": "mirepora"
   },
   "water": {
     "translations": [
@@ -2621,7 +2621,7 @@
     ],
     "kanji": "水",
     "hiragana": "みず",
-    "romanji": "mizu"
+    "romaji": "mizu"
   },
   "bubble": {
     "translations": [
@@ -2629,7 +2629,7 @@
     ],
     "kanji": "ミズタマ",
     "hiragana": "みずたま",
-    "romanji": "mizutama"
+    "romaji": "mizutama"
   },
   "glazed": {
     "translations": [
@@ -2637,7 +2637,7 @@
     ],
     "kanji": "彩釉",
     "hiragana": "さいゆう",
-    "romanji": "saiyuu"
+    "romaji": "saiyuu"
   },
   "harness": {
     "translations": [
@@ -2645,7 +2645,7 @@
     ],
     "kanji": "ハーネス",
     "hiragana": "はーねす",
-    "romanji": "haanesu"
+    "romaji": "haanesu"
   },
   "saddle": {
     "translations": [
@@ -2653,7 +2653,7 @@
     ],
     "kanji": "鞍",
     "hiragana": "くら",
-    "romanji": "kura"
+    "romaji": "kura"
   },
   "nether": {
     "translations": [
@@ -2661,7 +2661,7 @@
     ],
     "kanji": "ネザー",
     "hiragana": "ねざー",
-    "romanji": "nezaa"
+    "romaji": "nezaa"
   },
   "star": {
     "translations": [
@@ -2669,7 +2669,7 @@
     ],
     "kanji": "星",
     "hiragana": "ほし",
-    "romanji": "hoshi"
+    "romaji": "hoshi"
   },
   "star_1": {
     "translations": [
@@ -2677,7 +2677,7 @@
     ],
     "kanji": "スター",
     "hiragana": "すたー",
-    "romanji": "sutaa"
+    "romaji": "sutaa"
   },
   "honey": {
     "translations": [
@@ -2685,7 +2685,7 @@
     ],
     "kanji": "ハチミツ",
     "hiragana": "はちみつ",
-    "romanji": "hachimitsu"
+    "romaji": "hachimitsu"
   },
   "honeycomb": {
     "translations": [
@@ -2693,7 +2693,7 @@
     ],
     "kanji": "ハニカム",
     "hiragana": "はにかむ",
-    "romanji": "hanikamu"
+    "romaji": "hanikamu"
   },
   "head": {
     "translations": [
@@ -2701,7 +2701,7 @@
     ],
     "kanji": "頭",
     "hiragana": "あたま",
-    "romanji": "atama"
+    "romaji": "atama"
   },
   "skull": {
     "translations": [
@@ -2709,7 +2709,7 @@
     ],
     "kanji": "頭蓋骨",
     "hiragana": "ずがいこつ",
-    "romanji": "zugaikotsu"
+    "romaji": "zugaikotsu"
   },
   "skull_1": {
     "translations": [
@@ -2717,7 +2717,7 @@
     ],
     "kanji": "骸骨",
     "hiragana": "がいこつ",
-    "romanji": "gaikotsu"
+    "romaji": "gaikotsu"
   },
   "skulk": {
     "translations": [
@@ -2725,7 +2725,7 @@
     ],
     "kanji": "スカルク",
     "hiragana": "すかるく",
-    "romanji": "sukaruku"
+    "romaji": "sukaruku"
   },
   "lectern": {
     "translations": [
@@ -2733,7 +2733,7 @@
     ],
     "kanji": "書見台",
     "hiragana": "しょけんだい",
-    "romanji": "shokendai"
+    "romaji": "shokendai"
   },
   "name_tag": {
     "translations": [
@@ -2741,7 +2741,7 @@
     ],
     "kanji": "名札",
     "hiragana": "なふだ",
-    "romanji": "nafuda"
+    "romaji": "nafuda"
   },
   "ladder": {
     "translations": [
@@ -2749,7 +2749,7 @@
     ],
     "kanji": "はしご",
     "hiragana": "はしご",
-    "romanji": "hashigo"
+    "romaji": "hashigo"
   },
   "shard": {
     "translations": [
@@ -2757,7 +2757,7 @@
     ],
     "kanji": "欠片",
     "hiragana": "かけら",
-    "romanji": "kakera"
+    "romaji": "kakera"
   },
   "dragon": {
     "translations": [
@@ -2765,7 +2765,7 @@
     ],
     "kanji": "ドラゴン",
     "hiragana": "どらごん",
-    "romanji": "doragon"
+    "romaji": "doragon"
   },
   "ender": {
     "translations": [
@@ -2773,7 +2773,7 @@
     ],
     "kanji": "エンダー",
     "hiragana": "えんだー",
-    "romanji": "endaa"
+    "romaji": "endaa"
   },
   "pearl": {
     "translations": [
@@ -2781,7 +2781,7 @@
     ],
     "kanji": "パール",
     "hiragana": "ぱーる",
-    "romanji": "paaru"
+    "romaji": "paaru"
   },
   "tear": {
     "translations": [
@@ -2789,7 +2789,7 @@
     ],
     "kanji": "涙",
     "hiragana": "なみだ",
-    "romanji": "namida"
+    "romaji": "namida"
   },
   "spawn_egg": {
     "translations": [
@@ -2797,7 +2797,7 @@
     ],
     "kanji": "スポーンエッグ",
     "hiragana": "すぽーんえっぐ",
-    "romanji": "supooneggu"
+    "romaji": "supooneggu"
   },
   "monster": {
     "translations": [
@@ -2805,7 +2805,7 @@
     ],
     "kanji": "モンスター",
     "hiragana": "もんすたー",
-    "romanji": "monsutaa"
+    "romaji": "monsutaa"
   },
   "spawner": {
     "translations": [
@@ -2813,7 +2813,7 @@
     ],
     "kanji": "スポナー",
     "hiragana": "すぽなー",
-    "romanji": "suponaa"
+    "romaji": "suponaa"
   },
   "target": {
     "translations": [
@@ -2821,7 +2821,7 @@
     ],
     "kanji": "的",
     "hiragana": "まと",
-    "romanji": "mato"
+    "romaji": "mato"
   },
   "rocket": {
     "translations": [
@@ -2829,7 +2829,7 @@
     ],
     "kanji": "ロケット",
     "hiragana": "ろけっと",
-    "romanji": "roketto"
+    "romaji": "roketto"
   },
   "firework": {
     "translations": [
@@ -2837,7 +2837,7 @@
     ],
     "kanji": "花火",
     "hiragana": "はなび",
-    "romanji": "hanabi"
+    "romaji": "hanabi"
   },
   "bell": {
     "translations": [
@@ -2845,7 +2845,7 @@
     ],
     "kanji": "鐘",
     "hiragana": "かね",
-    "romanji": "kane"
+    "romaji": "kane"
   },
   "paper": {
     "translations": [
@@ -2853,7 +2853,7 @@
     ],
     "kanji": "紙",
     "hiragana": "かみ",
-    "romanji": "kami"
+    "romaji": "kami"
   },
   "stem": {
     "translations": [
@@ -2861,7 +2861,7 @@
     ],
     "kanji": "幹",
     "hiragana": "みき",
-    "romanji": "miki"
+    "romaji": "miki"
   },
   "stem_1": {
     "translations": [
@@ -2869,7 +2869,7 @@
     ],
     "kanji": "柄",
     "hiragana": "がら",
-    "romanji": "gara"
+    "romaji": "gara"
   },
   "wart": {
     "translations": [
@@ -2877,7 +2877,7 @@
     ],
     "kanji": "ウォート",
     "hiragana": "うぉーと",
-    "romanji": "uooto"
+    "romaji": "uooto"
   },
   "hyphae": {
     "translations": [
@@ -2885,7 +2885,7 @@
     ],
     "kanji": "菌糸",
     "hiragana": "きんし",
-    "romanji": "kinshi"
+    "romaji": "kinshi"
   },
   "knowledge": {
     "translations": [
@@ -2893,7 +2893,7 @@
     ],
     "kanji": "知恵",
     "hiragana": "ちえ",
-    "romanji": "chie"
+    "romaji": "chie"
   },
   "muddy": {
     "translations": [
@@ -2901,7 +2901,7 @@
     ],
     "kanji": "泥だらけ",
     "hiragana": "どろだらけ",
-    "romanji": "dorodarake"
+    "romaji": "dorodarake"
   },
   "mud": {
     "translations": [
@@ -2909,7 +2909,7 @@
     ],
     "kanji": "泥",
     "hiragana": "どろ",
-    "romanji": "doro"
+    "romaji": "doro"
   },
   "resin": {
     "translations": [
@@ -2917,7 +2917,7 @@
     ],
     "kanji": "樹脂",
     "hiragana": "じゅし",
-    "romanji": "jushi"
+    "romaji": "jushi"
   },
   "mourner": {
     "translations": [
@@ -2925,7 +2925,7 @@
     ],
     "kanji": "哀悼者",
     "hiragana": "あいとうもの",
-    "romanji": "aitoumono"
+    "romaji": "aitoumono"
   },
   "plenty": {
     "translations": [
@@ -2933,7 +2933,7 @@
     ],
     "kanji": "富",
     "hiragana": "とみ",
-    "romanji": "tomi"
+    "romaji": "tomi"
   },
   "enchanted": {
     "translations": [
@@ -2941,7 +2941,7 @@
     ],
     "kanji": "エンチャント",
     "hiragana": "えんちゃんと",
-    "romanji": "enchanto"
+    "romaji": "enchanto"
   },
   "experience": {
     "translations": [
@@ -2949,7 +2949,7 @@
     ],
     "kanji": "エンチャント",
     "hiragana": "えんちゃんと",
-    "romanji": "enchanto"
+    "romaji": "enchanto"
   },
   "cracked": {
     "translations": [
@@ -2957,7 +2957,7 @@
     ],
     "kanji": "ひび割",
     "hiragana": "ひびわ",
-    "romanji": "hibiwa"
+    "romaji": "hibiwa"
   },
   "damaged": {
     "translations": [
@@ -2965,7 +2965,7 @@
     ],
     "kanji": "壊れかけ",
     "hiragana": "こわれかけ",
-    "romanji": "kowarekake"
+    "romaji": "kowarekake"
   },
   "dried": {
     "translations": [
@@ -2973,7 +2973,7 @@
     ],
     "kanji": "乾燥",
     "hiragana": "かんそう",
-    "romanji": "kansou"
+    "romaji": "kansou"
   },
   "polished": {
     "translations": [
@@ -2981,7 +2981,7 @@
     ],
     "kanji": "磨か",
     "hiragana": "みがか",
-    "romanji": "migaka"
+    "romaji": "migaka"
   },
   "oxidized": {
     "translations": [
@@ -2989,7 +2989,7 @@
     ],
     "kanji": "酸化",
     "hiragana": "さんか",
-    "romanji": "sanka"
+    "romaji": "sanka"
   },
   "exposed": {
     "translations": [
@@ -2997,7 +2997,7 @@
     ],
     "kanji": "風化",
     "hiragana": "ふうか",
-    "romanji": "fuuka"
+    "romaji": "fuuka"
   },
   "waxed": {
     "translations": [
@@ -3005,7 +3005,7 @@
     ],
     "kanji": "錆止め",
     "hiragana": "さびどめ",
-    "romanji": "sabidome"
+    "romaji": "sabidome"
   },
   "weathered": {
     "translations": [
@@ -3013,7 +3013,7 @@
     ],
     "kanji": "錆びた",
     "hiragana": "さびた",
-    "romanji": "sabita"
+    "romaji": "sabita"
   },
   "stripped": {
     "translations": [
@@ -3021,7 +3021,7 @@
     ],
     "kanji": "を剥いだ",
     "hiragana": "をはいだ",
-    "romanji": "wohaida"
+    "romaji": "wohaida"
   },
   "infested": {
     "translations": [
@@ -3029,7 +3029,7 @@
     ],
     "kanji": "虫食い",
     "hiragana": "むしくい",
-    "romanji": "mushikui"
+    "romaji": "mushikui"
   },
   "tipped": {
     "translations": [
@@ -3037,7 +3037,7 @@
     ],
     "kanji": "効能",
     "hiragana": "こうのう",
-    "romanji": "kounou"
+    "romaji": "kounou"
   },
   "creaking": {
     "translations": [
@@ -3045,7 +3045,7 @@
     ],
     "kanji": "クリーキング",
     "hiragana": "くりーきんぐ",
-    "romanji": "kuriikingu"
+    "romaji": "kuriikingu"
   },
   "heartbreak": {
     "translations": [
@@ -3053,7 +3053,7 @@
     ],
     "kanji": "傷心",
     "hiragana": "しょうしん",
-    "romanji": "shoushin"
+    "romaji": "shoushin"
   },
   "stand": {
     "translations": [
@@ -3061,7 +3061,7 @@
     ],
     "kanji": "立て",
     "hiragana": "たて",
-    "romanji": "tate"
+    "romaji": "tate"
   },
   "pane": {
     "translations": [
@@ -3069,7 +3069,7 @@
     ],
     "kanji": "板",
     "hiragana": "ばん",
-    "romanji": "ban"
+    "romaji": "ban"
   },
   "glass": {
     "translations": [
@@ -3077,7 +3077,7 @@
     ],
     "kanji": "ガラス",
     "hiragana": "がらす",
-    "romanji": "garasub"
+    "romaji": "garasub"
   },
   "stained": {
     "translations": [
@@ -3085,7 +3085,7 @@
     ],
     "kanji": "色付き",
     "hiragana": "いろつき",
-    "romanji": "iritsuki"
+    "romaji": "iritsuki"
   },
   "pattern": {
     "translations": [
@@ -3093,7 +3093,7 @@
     ],
     "kanji": "模様",
     "hiragana": "もよう",
-    "romanji": "moyou"
+    "romaji": "moyou"
   },
   "powered": {
     "translations": [
@@ -3101,7 +3101,7 @@
     ],
     "kanji": "パワード",
     "hiragana": "ぱわーど",
-    "romanji": "pawaado"
+    "romaji": "pawaado"
   },
   "activator": {
     "translations": [
@@ -3109,7 +3109,7 @@
     ],
     "kanji": "アクティベーター",
     "hiragana": "あくてぃべーたー",
-    "romanji": "akuteibeetaa"
+    "romaji": "akuteibeetaa"
   },
   "sticky": {
     "translations": [
@@ -3117,7 +3117,7 @@
     ],
     "kanji": "粘着",
     "hiragana": "ねんちゃく",
-    "romanji": "nenchaku"
+    "romaji": "nenchaku"
   },
   "dry": {
     "translations": [
@@ -3125,7 +3125,7 @@
     ],
     "kanji": "枯れ",
     "hiragana": "かれ",
-    "romanji": "kare"
+    "romaji": "kare"
   },
   "suspicious": {
     "translations": [
@@ -3133,7 +3133,7 @@
     ],
     "kanji": "怪しげな",
     "hiragana": "あやしげな",
-    "romanji": "ayashigena"
+    "romaji": "ayashigena"
   },
   "spectral": {
     "translations": [
@@ -3141,7 +3141,7 @@
     ],
     "kanji": "光",
     "hiragana": "ひかり",
-    "romanji": "hikari"
+    "romaji": "hikari"
   },
   "smooth": {
     "translations": [
@@ -3149,7 +3149,7 @@
     ],
     "kanji": "滑らかな",
     "hiragana": "なめらかな",
-    "romanji": "namerakana"
+    "romaji": "namerakana"
   },
   "sweet": {
     "translations": [
@@ -3157,7 +3157,7 @@
     ],
     "kanji": "スイート",
     "hiragana": "すいーと",
-    "romanji": "suiito"
+    "romaji": "suiito"
   },
   "wet": {
     "translations": [
@@ -3165,7 +3165,7 @@
     ],
     "kanji": "濡",
     "hiragana": "ぬ",
-    "romanji": "nu"
+    "romaji": "nu"
   },
   "cut": {
     "translations": [
@@ -3173,7 +3173,7 @@
     ],
     "kanji": "切り込み入り",
     "hiragana": "きりこみいり",
-    "romanji": "kirikomiiri"
+    "romaji": "kirikomiiri"
   },
   "cut_1": {
     "translations": [
@@ -3181,7 +3181,7 @@
     ],
     "kanji": "研が",
     "hiragana": "とが",
-    "romanji": "toga"
+    "romaji": "toga"
   },
   "slice": {
     "translations": [
@@ -3189,7 +3189,7 @@
     ],
     "kanji": "薄切り",
     "hiragana": "うすぎり",
-    "romanji": "usugiri"
+    "romaji": "usugiri"
   },
   "brewer": {
     "translations": [
@@ -3197,7 +3197,7 @@
     ],
     "kanji": "醸造家",
     "hiragana": "じょうぞうか",
-    "romanji": "jouzouka"
+    "romaji": "jouzouka"
   },
   "dead": {
     "translations": [
@@ -3205,7 +3205,7 @@
     ],
     "kanji": "死んだ",
     "hiragana": "しんだ",
-    "romanji": "shinda"
+    "romaji": "shinda"
   },
   "shelter": {
     "translations": [
@@ -3213,7 +3213,7 @@
     ],
     "kanji": "木陰",
     "hiragana": "こかげ",
-    "romanji": "kokage"
+    "romaji": "kokage"
   },
   "flow": {
     "translations": [
@@ -3221,7 +3221,7 @@
     ],
     "kanji": "渦巻き",
     "hiragana": "うずまき",
-    "romanji": "uzumaki"
+    "romaji": "uzumaki"
   },
   "trial": {
     "translations": [
@@ -3229,7 +3229,7 @@
     ],
     "kanji": "試練",
     "hiragana": "しれん",
-    "romanji": "shiren"
+    "romaji": "shiren"
   },
   "danger": {
     "translations": [
@@ -3237,7 +3237,7 @@
     ],
     "kanji": "脅威",
     "hiragana": "きょうい",
-    "romanji": "kyoui"
+    "romaji": "kyoui"
   },
   "gilded": {
     "translations": [
@@ -3245,7 +3245,7 @@
     ],
     "kanji": "きらめく",
     "hiragana": "きらめく",
-    "romanji": "kirameku"
+    "romaji": "kirameku"
   },
   "explorer": {
     "translations": [
@@ -3253,7 +3253,7 @@
     ],
     "kanji": "探検家",
     "hiragana": "たんけんか",
-    "romanji": "tankenka"
+    "romaji": "tankenka"
   },
   "howl": {
     "translations": [
@@ -3261,7 +3261,7 @@
     ],
     "kanji": "遠吠え",
     "hiragana": "とおぼえ",
-    "romanji": "tooboe"
+    "romaji": "tooboe"
   },
   "globe": {
     "translations": [
@@ -3269,7 +3269,7 @@
     ],
     "kanji": "地球",
     "hiragana": "ちきゅう",
-    "romanji": "chikyuu"
+    "romaji": "chikyuu"
   },
   "happy": {
     "translations": [
@@ -3277,7 +3277,7 @@
     ],
     "kanji": "ハッピー",
     "hiragana": "はっぴー",
-    "romanji": "happii"
+    "romaji": "happii"
   },
   "ominous": {
     "translations": [
@@ -3285,7 +3285,7 @@
     ],
     "kanji": "不吉な",
     "hiragana": "ふきつな",
-    "romanji": "fukitsuna"
+    "romaji": "fukitsuna"
   },
   "miner": {
     "translations": [
@@ -3293,7 +3293,7 @@
     ],
     "kanji": "鉱夫",
     "hiragana": "こうふ",
-    "romanji": "koufu"
+    "romaji": "koufu"
   },
   "elder": {
     "translations": [
@@ -3301,7 +3301,7 @@
     ],
     "kanji": "エルダー",
     "hiragana": "えるだー",
-    "romanji": "erudaa"
+    "romaji": "erudaa"
   },
   "cooked": {
     "translations": [
@@ -3309,7 +3309,7 @@
     ],
     "kanji": "焼き",
     "hiragana": "やき",
-    "romanji": "yaki"
+    "romaji": "yaki"
   },
   "popped": {
     "translations": [
@@ -3317,7 +3317,7 @@
     ],
     "kanji": "焼いた",
     "hiragana": "やいた",
-    "romanji": "yaita"
+    "romaji": "yaita"
   },
   "reinforced": {
     "translations": [
@@ -3325,7 +3325,7 @@
     ],
     "kanji": "強化",
     "hiragana": "きょうか",
-    "romanji": "kyouka"
+    "romaji": "kyouka"
   },
   "hanging": {
     "translations": [
@@ -3333,7 +3333,7 @@
     ],
     "kanji": "吊り",
     "hiragana": "つり",
-    "romanji": "tsuri"
+    "romaji": "tsuri"
   },
   "hanging_1": {
     "translations": [
@@ -3341,7 +3341,7 @@
     ],
     "kanji": "垂れ",
     "hiragana": "たれ",
-    "romanji": "tare"
+    "romaji": "tare"
   },
   "flowering": {
     "translations": [
@@ -3349,7 +3349,7 @@
     ],
     "kanji": "開花",
     "hiragana": "かいか",
-    "romanji": "kaika"
+    "romaji": "kaika"
   },
   "flower_1": {
     "translations": [
@@ -3357,7 +3357,7 @@
     ],
     "kanji": "フラワー",
     "hiragana": "ふらわー",
-    "romanji": "furawaa"
+    "romaji": "furawaa"
   },
   "flower": {
     "translations": [
@@ -3365,7 +3365,7 @@
     ],
     "kanji": "花",
     "hiragana": "はな",
-    "romanji": "hana"
+    "romaji": "hana"
   },
   "archer": {
     "translations": [
@@ -3373,7 +3373,7 @@
     ],
     "kanji": "射手",
     "hiragana": "いて",
-    "romanji": "ite"
+    "romaji": "ite"
   },
   "big": {
     "translations": [
@@ -3381,7 +3381,7 @@
     ],
     "kanji": "大きな",
     "hiragana": "おおきな",
-    "romanji": "ookina"
+    "romaji": "ookina"
   },
   "tall": {
     "translations": [
@@ -3389,7 +3389,7 @@
     ],
     "kanji": "背の高い",
     "hiragana": "せのたかい",
-    "romanji": "senotakai"
+    "romaji": "senotakai"
   },
   "medium": {
     "translations": [
@@ -3397,7 +3397,7 @@
     ],
     "kanji": "中",
     "hiragana": "なか",
-    "romanji": "naka"
+    "romaji": "naka"
   },
   "small": {
     "translations": [
@@ -3405,7 +3405,7 @@
     ],
     "kanji": "小さな",
     "hiragana": "ちいさな",
-    "romanji": "chiisana"
+    "romaji": "chiisana"
   },
   "short": {
     "translations": [
@@ -3413,7 +3413,7 @@
     ],
     "kanji": "背の低い",
     "hiragana": "せのひくい",
-    "romanji": "senohikui"
+    "romaji": "senohikui"
   },
   "soul_sand": {
     "translations": [
@@ -3421,7 +3421,7 @@
     ],
     "kanji": "ソウルサンド",
     "hiragana": "そうるさんど",
-    "romanji": "sourusando"
+    "romaji": "sourusando"
   },
   "soul": {
     "translations": [
@@ -3429,7 +3429,7 @@
     ],
     "kanji": "魂",
     "hiragana": "たましい",
-    "romanji": "tamashii"
+    "romaji": "tamashii"
   },
   "heart": {
     "translations": [
@@ -3437,7 +3437,7 @@
     ],
     "kanji": "心",
     "hiragana": "こころ",
-    "romanji": "kokoro"
+    "romaji": "kokoro"
   },
   "heart_1": {
     "translations": [
@@ -3445,7 +3445,7 @@
     ],
     "kanji": "心臓",
     "hiragana": "しんぞう",
-    "romanji": "shinzou"
+    "romaji": "shinzou"
   },
   "prize": {
     "translations": [
@@ -3453,7 +3453,7 @@
     ],
     "kanji": "宝物",
     "hiragana": "ほうもつ",
-    "romanji": "houmotsu"
+    "romaji": "houmotsu"
   },
   "scute": {
     "translations": [
@@ -3461,7 +3461,7 @@
     ],
     "kanji": "ウロコ",
     "hiragana": "うろこ",
-    "romanji": "uroko"
+    "romaji": "uroko"
   },
   "breath": {
     "translations": [
@@ -3469,7 +3469,7 @@
     ],
     "kanji": "ブレス",
     "hiragana": "ぶれす",
-    "romanji": "buresu"
+    "romaji": "buresu"
   },
   "painting": {
     "translations": [
@@ -3477,7 +3477,7 @@
     ],
     "kanji": "絵画",
     "hiragana": "かいが",
-    "romanji": "kaiga"
+    "romaji": "kaiga"
   },
   "item_frame": {
     "translations": [
@@ -3485,7 +3485,7 @@
     ],
     "kanji": "額縁",
     "hiragana": "がくぶち",
-    "romanji": "gakubuchi"
+    "romaji": "gakubuchi"
   },
   "cave": {
     "translations": [
@@ -3493,7 +3493,7 @@
     ],
     "kanji": "洞窟",
     "hiragana": "どうくつ",
-    "romanji": "doukutsu"
+    "romaji": "doukutsu"
   },
   "path": {
     "translations": [
@@ -3501,7 +3501,7 @@
     ],
     "kanji": "道",
     "hiragana": "みち",
-    "romanji": "michi"
+    "romaji": "michi"
   },
   "tile": {
     "translations": [
@@ -3509,7 +3509,7 @@
     ],
     "kanji": "タイル",
     "hiragana": "たいる",
-    "romanji": "tairu"
+    "romaji": "tairu"
   },
   "tiles": {
     "translations": [
@@ -3517,7 +3517,7 @@
     ],
     "kanji": "タイル",
     "hiragana": "たいる",
-    "romanji": "tairu"
+    "romaji": "tairu"
   },
   "jack_o": {
     "translations": [
@@ -3525,7 +3525,7 @@
     ],
     "kanji": "ジャック・オ・",
     "hiragana": "じゃっく・お・",
-    "romanji": "jakku・o・"
+    "romaji": "jakku・o・"
   },
   "lantern": {
     "translations": [
@@ -3533,7 +3533,7 @@
     ],
     "kanji": "ランタン",
     "hiragana": "らんたん",
-    "romanji": "rantan"
+    "romaji": "rantan"
   },
   "magma": {
     "translations": [
@@ -3541,7 +3541,7 @@
     ],
     "kanji": "マグマ",
     "hiragana": "まぐま",
-    "romanji": "maguma"
+    "romaji": "maguma"
   },
   "ink": {
     "translations": [
@@ -3549,7 +3549,7 @@
     ],
     "kanji": "スミ",
     "hiragana": "すみ",
-    "romanji": "sumi"
+    "romaji": "sumi"
   },
   "sac": {
     "translations": [
@@ -3557,7 +3557,7 @@
     ],
     "kanji": "イカ",
     "hiragana": "いか",
-    "romanji": "ika"
+    "romaji": "ika"
   },
   "end": {
     "translations": [
@@ -3565,7 +3565,7 @@
     ],
     "kanji": "エンド",
     "hiragana": "えんど",
-    "romanji": "endo"
+    "romaji": "endo"
   },
   "end_stone": {
     "translations": [
@@ -3573,7 +3573,7 @@
     ],
     "kanji": "エンドストーン",
     "hiragana": "えんどすとおん",
-    "romanji": "endosutoon"
+    "romaji": "endosutoon"
   },
   "fern": {
     "translations": [
@@ -3581,7 +3581,7 @@
     ],
     "kanji": "シダ",
     "hiragana": "しだ",
-    "romanji": "shida"
+    "romaji": "shida"
   },
   "mushroom": {
     "translations": [
@@ -3589,7 +3589,7 @@
     ],
     "kanji": "キノコ",
     "hiragana": "きのこ",
-    "romanji": "kinoko"
+    "romaji": "kinoko"
   },
   "seagrass": {
     "translations": [
@@ -3597,7 +3597,7 @@
     ],
     "kanji": "海草",
     "hiragana": "かいそう",
-    "romanji": "kaisou"
+    "romaji": "kaisou"
   },
   "dripleaf": {
     "translations": [
@@ -3605,7 +3605,7 @@
     ],
     "kanji": "ドリップリーフ",
     "hiragana": "どりっぷりーふ",
-    "romanji": "dorippuriifu"
+    "romaji": "dorippuriifu"
   },
   "sunflower": {
     "translations": [
@@ -3613,7 +3613,7 @@
     ],
     "kanji": "ヒマワリ",
     "hiragana": "ひまわり",
-    "romanji": "himawari"
+    "romaji": "himawari"
   },
   "rose": {
     "translations": [
@@ -3621,7 +3621,7 @@
     ],
     "kanji": "バラ",
     "hiragana": "ばら",
-    "romanji": "bara"
+    "romaji": "bara"
   },
   "rose_1": {
     "translations": [
@@ -3629,7 +3629,7 @@
     ],
     "kanji": "ローズ",
     "hiragana": "ろーず",
-    "romanji": "roozu"
+    "romaji": "roozu"
   },
   "lily_of_the_valley": {
     "translations": [
@@ -3637,7 +3637,7 @@
     ],
     "kanji": "スズラン",
     "hiragana": "すずらん",
-    "romanji": "suzuran"
+    "romaji": "suzuran"
   },
   "cornflower": {
     "translations": [
@@ -3645,7 +3645,7 @@
     ],
     "kanji": "ヤグルマギク",
     "hiragana": "やぐるまぎく",
-    "romanji": "yagurumagiku"
+    "romaji": "yagurumagiku"
   },
   "tulip": {
     "translations": [
@@ -3653,7 +3653,7 @@
     ],
     "kanji": "チューリップ",
     "hiragana": "ちゅーりっぷ",
-    "romanji": "chuurippu"
+    "romaji": "chuurippu"
   },
   "dandelion": {
     "translations": [
@@ -3661,7 +3661,7 @@
     ],
     "kanji": "タンポポ",
     "hiragana": "たんぽぽ",
-    "romanji": "tanpopo"
+    "romaji": "tanpopo"
   },
   "wildflowers": {
     "translations": [
@@ -3669,7 +3669,7 @@
     ],
     "kanji": "野花",
     "hiragana": "のばな",
-    "romanji": "nobana"
+    "romaji": "nobana"
   },
   "poppy": {
     "translations": [
@@ -3677,7 +3677,7 @@
     ],
     "kanji": "ポピー",
     "hiragana": "ぽぴー",
-    "romanji": "popii"
+    "romaji": "popii"
   },
   "azalea": {
     "translations": [
@@ -3685,7 +3685,7 @@
     ],
     "kanji": "ツツジ",
     "hiragana": "つつじ",
-    "romanji": "tsutsuji"
+    "romaji": "tsutsuji"
   },
   "kelp": {
     "translations": [
@@ -3693,7 +3693,7 @@
     ],
     "kanji": "コンブ",
     "hiragana": "こんぶ",
-    "romanji": "konbu"
+    "romaji": "konbu"
   },
   "kelp_1": {
     "translations": [
@@ -3701,7 +3701,7 @@
     ],
     "kanji": "昆布",
     "hiragana": "こんぶ",
-    "romanji": "konbu"
+    "romaji": "konbu"
   },
   "milk": {
     "translations": [
@@ -3709,7 +3709,7 @@
     ],
     "kanji": "ミルク",
     "hiragana": "みるく",
-    "romanji": "miruku"
+    "romaji": "miruku"
   },
   "lava": {
     "translations": [
@@ -3717,7 +3717,7 @@
     ],
     "kanji": "溶岩",
     "hiragana": "ようがん",
-    "romanji": "yougan"
+    "romaji": "yougan"
   },
   "sugar": {
     "translations": [
@@ -3725,7 +3725,7 @@
     ],
     "kanji": "砂糖",
     "hiragana": "さとう",
-    "romanji": "satou"
+    "romaji": "satou"
   },
   "sugar_cane": {
     "translations": [
@@ -3733,7 +3733,7 @@
     ],
     "kanji": "サトウキビ",
     "hiragana": "さとうきび",
-    "romanji": "satoukibi"
+    "romaji": "satoukibi"
   },
   "chorus": {
     "translations": [
@@ -3741,7 +3741,7 @@
     ],
     "kanji": "コーラス",
     "hiragana": "こーらす",
-    "romanji": "koorasu"
+    "romaji": "koorasu"
   },
   "plant": {
     "translations": [
@@ -3749,7 +3749,7 @@
     ],
     "kanji": "プラント",
     "hiragana": "ぷらんと",
-    "romanji": "puranto"
+    "romaji": "puranto"
   },
   "berries": {
     "translations": [
@@ -3757,7 +3757,7 @@
     ],
     "kanji": "ベリー",
     "hiragana": "べりー",
-    "romanji": "berii"
+    "romaji": "berii"
   },
   "fruit": {
     "translations": [
@@ -3765,7 +3765,7 @@
     ],
     "kanji": "フルーツ",
     "hiragana": "ふるーつ",
-    "romanji": "furuutsu"
+    "romaji": "furuutsu"
   },
   "apple": {
     "translations": [
@@ -3773,7 +3773,7 @@
     ],
     "kanji": "リンゴ",
     "hiragana": "りんご",
-    "romanji": "ringo"
+    "romaji": "ringo"
   },
   "carrot": {
     "translations": [
@@ -3781,7 +3781,7 @@
     ],
     "kanji": "ニンジン",
     "hiragana": "にんじん",
-    "romanji": "ninjin"
+    "romaji": "ninjin"
   },
   "potato": {
     "translations": [
@@ -3789,7 +3789,7 @@
     ],
     "kanji": "ジャガイモ",
     "hiragana": "じゃがいも",
-    "romanji": "jagaimo"
+    "romaji": "jagaimo"
   },
   "beetroot": {
     "translations": [
@@ -3797,7 +3797,7 @@
     ],
     "kanji": "ビートルート",
     "hiragana": "びーとるーと",
-    "romanji": "biitoruuto"
+    "romaji": "biitoruuto"
   },
   "baked_potato": {
     "translations": [
@@ -3805,7 +3805,7 @@
     ],
     "kanji": "ベイクドポテト",
     "hiragana": "べいくどぽてと",
-    "romanji": "beikudopoteto"
+    "romaji": "beikudopoteto"
   },
   "pickle": {
     "translations": [
@@ -3813,7 +3813,7 @@
     ],
     "kanji": "ピクルス",
     "hiragana": "ぴくるす",
-    "romanji": "pikurusu"
+    "romaji": "pikurusu"
   },
   "bread": {
     "translations": [
@@ -3821,7 +3821,7 @@
     ],
     "kanji": "パン",
     "hiragana": "ぱん",
-    "romanji": "pan"
+    "romaji": "pan"
   },
   "cake": {
     "translations": [
@@ -3829,7 +3829,7 @@
     ],
     "kanji": "ケーキ",
     "hiragana": "けーき",
-    "romanji": "keeki"
+    "romaji": "keeki"
   },
   "pie": {
     "translations": [
@@ -3837,7 +3837,7 @@
     ],
     "kanji": "パイ",
     "hiragana": "ぱい",
-    "romanji": "pai"
+    "romaji": "pai"
   },
   "stew": {
     "translations": [
@@ -3845,7 +3845,7 @@
     ],
     "kanji": "シチュー",
     "hiragana": "しちゅー",
-    "romanji": "shichuu"
+    "romaji": "shichuu"
   },
   "soup": {
     "translations": [
@@ -3853,7 +3853,7 @@
     ],
     "kanji": "スープ",
     "hiragana": "すーぷ",
-    "romanji": "suupu"
+    "romaji": "suupu"
   },
   "beef": {
     "translations": [
@@ -3861,7 +3861,7 @@
     ],
     "kanji": "牛",
     "hiragana": "ぎゅう",
-    "romanji": "gyuu"
+    "romaji": "gyuu"
   },
   "beef_1": {
     "translations": [
@@ -3869,7 +3869,7 @@
     ],
     "kanji": "ステーキ",
     "hiragana": "すてーき",
-    "romanji": "suteeki"
+    "romaji": "suteeki"
   },
   "cooked_beef": {
     "translations": [
@@ -3877,7 +3877,7 @@
     ],
     "kanji": "ステーキ",
     "hiragana": "すてーき",
-    "romanji": "suteeki"
+    "romaji": "suteeki"
   },
   "sea": {
     "translations": [
@@ -3885,7 +3885,7 @@
     ],
     "kanji": "海洋",
     "hiragana": "かいよう",
-    "romanji": "kaiyou"
+    "romaji": "kaiyou"
   },
   "sea_1": {
     "translations": [
@@ -3893,7 +3893,7 @@
     ],
     "kanji": "シー",
     "hiragana": "しー",
-    "romanji": "shii"
+    "romaji": "shii"
   },
   "shell": {
     "translations": [
@@ -3901,7 +3901,7 @@
     ],
     "kanji": "殻",
     "hiragana": "から",
-    "romanji": "kara"
+    "romaji": "kara"
   },
   "roots": {
     "translations": [
@@ -3909,7 +3909,7 @@
     ],
     "kanji": "根",
     "hiragana": "ね",
-    "romanji": "ne"
+    "romaji": "ne"
   },
   "rooted": {
     "translations": [
@@ -3917,7 +3917,7 @@
     ],
     "kanji": "根付いた",
     "hiragana": "ねづいた",
-    "romanji": "nezuita"
+    "romaji": "nezuita"
   },
   "gunpowder": {
     "translations": [
@@ -3925,7 +3925,7 @@
     ],
     "kanji": "火薬",
     "hiragana": "かやく",
-    "romanji": "kayaku"
+    "romaji": "kayaku"
   },
   "command": {
     "translations": [
@@ -3933,7 +3933,7 @@
     ],
     "kanji": "コマンド",
     "hiragana": "こまんど",
-    "romanji": "komando"
+    "romaji": "komando"
   },
   "furnace": {
     "translations": [
@@ -3941,7 +3941,7 @@
     ],
     "kanji": "かまど",
     "hiragana": "かまど",
-    "romanji": "kamado"
+    "romaji": "kamado"
   },
   "blast_furnace": {
     "translations": [
@@ -3949,7 +3949,7 @@
     ],
     "kanji": "溶鉱炉",
     "hiragana": "ようこうろ",
-    "romanji": "youkouro"
+    "romaji": "youkouro"
   },
   "smoker": {
     "translations": [
@@ -3957,7 +3957,7 @@
     ],
     "kanji": "燻製器",
     "hiragana": "くんせいき",
-    "romanji": "kunseiki"
+    "romaji": "kunseiki"
   },
   "rail": {
     "translations": [
@@ -3965,7 +3965,7 @@
     ],
     "kanji": "レール",
     "hiragana": "れーる",
-    "romanji": "reeru"
+    "romaji": "reeru"
   },
   "structure": {
     "translations": [
@@ -3973,7 +3973,7 @@
     ],
     "kanji": "ストラクチャー",
     "hiragana": "すとらくちゃー",
-    "romanji": "sutorakuchaa"
+    "romaji": "sutorakuchaa"
   },
   "tnt": {
     "translations": [
@@ -3981,7 +3981,7 @@
     ],
     "kanji": "TNT",
     "hiragana": "てぃーえぬてぃー",
-    "romanji": "teiienuteii"
+    "romaji": "teiienuteii"
   },
   "test": {
     "translations": [
@@ -3989,7 +3989,7 @@
     ],
     "kanji": "テスト",
     "hiragana": "てすと",
-    "romanji": "tesuto"
+    "romaji": "tesuto"
   },
   "cube": {
     "translations": [
@@ -3997,7 +3997,7 @@
     ],
     "kanji": "キューブ",
     "hiragana": "きゅーぶ",
-    "romanji": "kyuubu"
+    "romaji": "kyuubu"
   },
   "cream": {
     "translations": [
@@ -4005,7 +4005,7 @@
     ],
     "kanji": "クリーム",
     "hiragana": "くりーむ",
-    "romanji": "kuriimu"
+    "romaji": "kuriimu"
   },
   "void": {
     "translations": [
@@ -4013,7 +4013,7 @@
     ],
     "kanji": "ヴォイド",
     "hiragana": "ゔぉいど",
-    "romanji": "voido"
+    "romaji": "voido"
   },
   "instance": {
     "translations": [
@@ -4021,7 +4021,7 @@
     ],
     "kanji": "インスタンス",
     "hiragana": "いんすたんす",
-    "romanji": "insutansu"
+    "romaji": "insutansu"
   },
   "membrane": {
     "translations": [
@@ -4029,7 +4029,7 @@
     ],
     "kanji": "皮膜",
     "hiragana": "ひまく",
-    "romanji": "himaku"
+    "romaji": "himaku"
   },
   "dripstone": {
     "translations": [
@@ -4037,7 +4037,7 @@
     ],
     "kanji": "鍾乳石",
     "hiragana": "しょうにゅうせき",
-    "romanji": "shounyuuseki"
+    "romaji": "shounyuuseki"
   },
   "burn": {
     "translations": [
@@ -4045,7 +4045,7 @@
     ],
     "kanji": "炎",
     "hiragana": "ほのお",
-    "romanji": "honoo"
+    "romaji": "honoo"
   },
   "animal": {
     "translations": [
@@ -4053,7 +4053,7 @@
     ],
     "kanji": "動物",
     "hiragana": "どうぶつ",
-    "romanji": "doubutsu"
+    "romaji": "doubutsu"
   },
   "lightning_rod": {
     "translations": [
@@ -4061,7 +4061,7 @@
     ],
     "kanji": "避雷針",
     "hiragana": "ひらいしん",
-    "romanji": "hiraishin"
+    "romaji": "hiraishin"
   },
   "skin": {
     "translations": [
@@ -4069,7 +4069,7 @@
     ],
     "kanji": "皮",
     "hiragana": "かわ",
-    "romanji": "kawa"
+    "romaji": "kawa"
   },
   "frame": {
     "translations": [
@@ -4077,7 +4077,7 @@
     ],
     "kanji": "フレーム",
     "hiragana": "ふれーむ",
-    "romanji": "fureemu"
+    "romaji": "fureemu"
   },
   "fire_charge": {
     "translations": [
@@ -4085,7 +4085,7 @@
     ],
     "kanji": "ファイヤーチャージ",
     "hiragana": "ふぁいやーちゃーづ",
-    "romanji": "faiyaachaadzu"
+    "romaji": "faiyaachaadzu"
   },
   "petrification": {
     "translations": [
@@ -4093,7 +4093,7 @@
     ],
     "kanji": "石化",
     "hiragana": "せきか",
-    "romanji": "sekika"
+    "romaji": "sekika"
   },
   "epidermis": {
     "translations": [
@@ -4101,7 +4101,7 @@
     ],
     "kanji": "表皮",
     "hiragana": "じゅひ",
-    "romanji": "hyouhi"
+    "romaji": "hyouhi"
   },
   "bark": {
     "translations": [
@@ -4109,7 +4109,7 @@
     ],
     "kanji": "樹皮",
     "hiragana": "ひょうひ",
-    "romanji": "juhi"
+    "romaji": "juhi"
   },
   "bowl": {
     "translations": [
@@ -4117,7 +4117,7 @@
     ],
     "kanji": "ボウル",
     "hiragana": "ぼうる",
-    "romanji": "bouru"
+    "romaji": "bouru"
   },
   "sensor": {
     "translations": [
@@ -4125,7 +4125,7 @@
     ],
     "kanji": "センサー",
     "hiragana": "せんさー",
-    "romanji": "sensaa"
+    "romaji": "sensaa"
   },
   "vault": {
     "translations": [
@@ -4133,7 +4133,7 @@
     ],
     "kanji": "宝物庫",
     "hiragana": "ほうもつこ",
-    "romanji": "houmotsuko"
+    "romaji": "houmotsuko"
   },
   "bush": {
     "translations": [
@@ -4141,7 +4141,7 @@
     ],
     "kanji": "茂み",
     "hiragana": "しげみ",
-    "romanji": "shigemi"
+    "romaji": "shigemi"
   },
   "obsidian": {
     "translations": [
@@ -4149,7 +4149,7 @@
     ],
     "kanji": "黒曜石",
     "hiragana": "しげみ",
-    "romanji": "shigemi"
+    "romaji": "shigemi"
   },
   "crying": {
     "translations": [
@@ -4157,7 +4157,7 @@
     ],
     "kanji": "泣く",
     "hiragana": "なく",
-    "romanji": "naku"
+    "romaji": "naku"
   },
   "lodestone": {
     "translations": [
@@ -4165,7 +4165,7 @@
     ],
     "kanji": "ロードストーン",
     "hiragana": "ろーどすとーん",
-    "romanji": "roodosutoon"
+    "romaji": "roodosutoon"
   },
   "record": {
     "translations": [
@@ -4173,7 +4173,7 @@
     ],
     "kanji": "レコード",
     "hiragana": "れこーど",
-    "romanji": "rekoodo"
+    "romaji": "rekoodo"
   },
   "mycelium": {
     "translations": [
@@ -4181,7 +4181,7 @@
     ],
     "kanji": "菌糸",
     "hiragana": "きんし",
-    "romanji": "kinshi"
+    "romaji": "kinshi"
   },
   "string": {
     "translations": [
@@ -4189,7 +4189,7 @@
     ],
     "kanji": "糸",
     "hiragana": "いと",
-    "romanji": "ito"
+    "romaji": "ito"
   },
   "air": {
     "translations": [
@@ -4197,7 +4197,7 @@
     ],
     "kanji": "空気",
     "hiragana": "くうき",
-    "romanji": "kuuki"
+    "romaji": "kuuki"
   },
   "azure_bluet": {
     "translations": [
@@ -4205,7 +4205,7 @@
     ],
     "kanji": "ヒナソウ",
     "hiragana": "ひなそう",
-    "romanji": "hinasou"
+    "romaji": "hinasou"
   },
   "catalyst": {
     "translations": [
@@ -4213,7 +4213,7 @@
     ],
     "kanji": "カタリスト",
     "hiragana": "かたりすと",
-    "romanji": "katarisuto"
+    "romaji": "katarisuto"
   },
   "lichen": {
     "translations": [
@@ -4221,7 +4221,7 @@
     ],
     "kanji": "ゴケ",
     "hiragana": "ごけ",
-    "romanji": "goke"
+    "romaji": "goke"
   },
   "lilac": {
     "translations": [
@@ -4229,7 +4229,7 @@
     ],
     "kanji": "ライラック",
     "hiragana": "りいらっく",
-    "romanji": "riirakku"
+    "romaji": "riirakku"
   },
   "vine": {
     "translations": [
@@ -4237,7 +4237,7 @@
     ],
     "kanji": "ツタ",
     "hiragana": "した",
-    "romanji": "shita"
+    "romaji": "shita"
   },
   "firefly": {
     "translations": [
@@ -4245,7 +4245,7 @@
     ],
     "kanji": "ホタル",
     "hiragana": "ほたる",
-    "romanji": "hotaru"
+    "romaji": "hotaru"
   },
   "weeping": {
     "translations": [
@@ -4253,7 +4253,7 @@
     ],
     "kanji": "しだれ",
     "hiragana": "しだれ",
-    "romanji": "shidare"
+    "romaji": "shidare"
   },
   "barrier": {
     "translations": [
@@ -4261,7 +4261,7 @@
     ],
     "kanji": "バリアブロック",
     "hiragana": "ばりあぶろっく",
-    "romanji": "bariaburokku"
+    "romaji": "bariaburokku"
   },
   "cookie": {
     "translations": [
@@ -4269,7 +4269,7 @@
     ],
     "kanji": "クッキー",
     "hiragana": "くっきー",
-    "romanji": "kukkii"
+    "romaji": "kukkii"
   },
   "decorated": {
     "translations": [
@@ -4277,7 +4277,7 @@
     ],
     "kanji": "飾り",
     "hiragana": "かざり",
-    "romanji": "kazari"
+    "romaji": "kazari"
   },
   "lead": {
     "translations": [
@@ -4285,6 +4285,6 @@
     ],
     "kanji": "リード",
     "hiragana": "りーど",
-    "romanji": "riido"
+    "romaji": "riido"
   }
 }

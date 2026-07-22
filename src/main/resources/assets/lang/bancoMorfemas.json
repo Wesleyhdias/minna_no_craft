@@ -1,59 +1,59 @@
 {
     "i": {
         "hiragana": "い",
-        "romanji": "i"
+        "romaji": "i"
     },
     "iro": {
         "kanji": "色",
         "hiragana": "いろ",
-        "romanji": "iro"
+        "romaji": "iro"
     },
     "no": {
         "hiragana": "の",
-        "romanji": "no"
+        "romaji": "no"
     },
     "tsuki": {
         "kanji": "付き",
         "hiragana": "つき",
-        "romanji": "tsuki"
+        "romaji": "tsuki"
     },
     "iri": {
         "kanji": "入り",
         "hiragana": "いり",
-        "romanji": "iri"
+        "romaji": "iri"
     },
     "nama": {
         "kanji": "生",
         "hiragana": "なま",
-        "romanji": "nama"
+        "romaji": "nama"
     },
     "aseta": {
         "hiragana": "あせた",
-        "romanji": "aseta"
+        "romaji": "aseta"
     },
     "shita": {
         "hiragana": "した",
-        "romanji": "shita"
+        "romaji": "shita"
     },
     "niku": {
         "kanji": "肉",
         "hiragana": "にく",
-        "romanji": "niku"
+        "romaji": "niku"
     },
     "reta": {
         "hiragana": "れた",
-        "romanji": "reta"
+        "romaji": "reta"
     },
     "kurai": {
         "hiragana": "くらい",
-        "romanji": "kurai"
+        "romaji": "kurai"
     },
     "sa": {
         "hiragana": "さ",
-        "romanji": "sa"
+        "romaji": "sa"
     },
     "wo": {
         "hiragana": "を",
-        "romanji": "wo"
+        "romaji": "wo"
     }
 }

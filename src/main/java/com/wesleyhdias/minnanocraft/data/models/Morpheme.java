@@ -1,3 +1,5 @@
 package com.wesleyhdias.minnanocraft.data.models;
 
-public record Morpheme(String kanji, String hiragana, String romanji) {}
+import org.jetbrains.annotations.Nullable;
+
+public record Morpheme(@Nullable String kanji, String hiragana, String romaji) {}
