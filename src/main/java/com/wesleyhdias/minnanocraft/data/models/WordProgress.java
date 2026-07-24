@@ -8,22 +8,14 @@ import org.jetbrains.annotations.Nullable;
  */
 public class WordProgress {
 
-    private String word;
     private LearningState state = LearningState.WAITING;
+    private String word;
 
     private double exposure = 0.0;
     private double peakExposure = 0.0;
 
-    private int scriptLevel = 0; // 1 = Romaji, 2 = Hiragana, 3 = Kanji
-    private int highestScriptLevel = 1; // Trava permanente
-
-    private int successes = 0;
-    private int failures = 0;
     private int seenCount = 0;
     private int lookupCount = 0;
-    private int totalSeen = 0;
-    private int totalLookup = 0;
-
 
     @Nullable
     private Long firstSeen = null;
@@ -55,36 +47,50 @@ public class WordProgress {
     public double getExposure() { return exposure; }
     public double getPeakExposure() { return peakExposure; }
 
-    public int getScriptLevel() { return scriptLevel; }
-    public void setScriptLevel(int scriptLevel) { this.scriptLevel = scriptLevel; }
+    public int getScriptLevel() {
+        return calculateLevelFromExposure(this.exposure);
+    }
 
-    public int getHighestScriptLevel() { return highestScriptLevel; }
-    public void setHighestScriptLevel(int highestScriptLevel) { this.highestScriptLevel = highestScriptLevel; }
+    /*
+     * Retorna o maior nível já alcançado usando o recorde (peakExposure).
+     * Funciona como a trava permanente sem precisar de variável extra!
+     */
+    public int getHighestScriptLevel() {
+        return calculateLevelFromExposure(this.peakExposure);
+    }
 
     public DifficultyLevel getHighestDifficultyEnum() {
-        return DifficultyLevel.fromInt(this.highestScriptLevel);
+        return DifficultyLevel.fromInt(getHighestScriptLevel());
+    }
+
+    private int calculateLevelFromExposure(double exp) {
+        if (exp >= 75.0) return 3;  // Kanji
+        if (exp >= 40.0)  return 2; // Hiragana
+        if (exp >= 15.0)  return 1; // Romaji
+        return 0;                   // Português
     }
 
     public Long getFirstSeen() { return firstSeen; }
+
     public void setFirstSeen(Long firstSeen) { this.firstSeen = firstSeen; }
 
     public Long getLastSeen() { return lastSeen; }
+
     public void setLastSeen(Long lastSeen) { this.lastSeen = lastSeen; }
 
     public Long getPromotedAt() { return promotedAt; }
     public void setPromotedAt(Long promotedAt) { this.promotedAt = promotedAt; }
 
-    public int getTotalSeen() {
-        return totalSeen;
-    }
-
     public void incrementSeenCount() {
         this.seenCount++;
-        this.totalSeen++;
     }
 
     public void incrementLookupCount() {
         this.lookupCount++;
-        this.totalLookup++;
     }
+
+    public int getSeenCount() {
+        return seenCount;
+    }
+
 }

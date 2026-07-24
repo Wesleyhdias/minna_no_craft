@@ -26,7 +26,7 @@ public class ItemNameBuilder {
 
         for (String token : structure) {
 
-            result.append(resolve(token));
+            result.append(resolve(token)).append(" ");
         }
         return result.toString();
     }

@@ -3,7 +3,7 @@
   "package": "com.wesleyhdias.minnanocraft.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "ClientLanguageMixin"
+    "ItemStackNameMixin"
   ],
   "injectors": {
     "defaultRequire": 1

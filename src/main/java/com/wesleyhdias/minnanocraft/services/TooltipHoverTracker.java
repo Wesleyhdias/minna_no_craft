@@ -13,9 +13,8 @@ public class TooltipHoverTracker {
     private static long lastUnhoverTick = 0;
     private static long lastFrameTick = 0;
 
-    /**
-     * Chamado a cada frame em que o mouse está sobre um item no inventário
-     */
+
+    // Chamado a cada frame em que o mouse está sobre um item no inventário
     public static void onTooltipRendered(String key, long currentTick) {
         lastFrameTick = currentTick;
 
@@ -42,8 +41,9 @@ public class TooltipHoverTracker {
                 List<String> structure = ItemStructureLoader.getStructures().get(key);
 
                 if (structure != null) {
-                    for (String token : structure) {
-                        VocabularyManager.registerEvent(token, Event.HOVER, currentTick);
+                    String targetToken = VocabularyManager.getNextTokenToUpgrade(structure);
+                    if (targetToken != null) {
+                        VocabularyManager.registerEvent(targetToken, Event.HOVER, currentTick);
                     }
                 }
 
@@ -52,9 +52,8 @@ public class TooltipHoverTracker {
         }
     }
 
-    /**
-     * Chamado a cada tick do jogo para detectar quando o mouse SAIU do item
-     */
+
+    // Chamado a cada tick do jogo para detectar quando o mouse SAIU do item
     public static void tick(long currentTick) {
         // Se passou mais de 2 ticks sem desenhar nenhuma tooltip, significa que o mouse saiu do item
         if (currentKey != null && (currentTick - lastFrameTick) > 2) {

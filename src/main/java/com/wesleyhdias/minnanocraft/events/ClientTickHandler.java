@@ -22,7 +22,7 @@ public class ClientTickHandler {
             MinnaNoCraft.incrementClientTicks();
             long currentTick = MinnaNoCraft.getClientTicks();
 
-            // 1. Atualiza rastreador de mouse (para saber se tirou o mouse do item)
+            // 1. Atualiza rastreador de mouse
             TooltipHoverTracker.tick(currentTick);
 
             // 2. Lógica da Hotbar (SEEN)
@@ -37,18 +37,20 @@ public class ClientTickHandler {
 
                     if (!mainHandStack.isEmpty()) {
                         List<String> structure = ItemStructureLoader.getStructures().get(currentKey);
+
                         if (structure != null) {
-                            for (String token : structure) {
-                                VocabularyManager.registerEvent(token, Event.SEEN, currentTick);
+
+                            String targetToken = VocabularyManager.getNextTokenToUpgrade(structure);
+                            if (targetToken != null) {
+                                VocabularyManager.registerEvent(targetToken, Event.SEEN, currentTick);
                             }
                         }
                     }
                 }
             }
-
-            // 3. Auto-save e recálculo do sistema (A cada 10 segundos / 200 ticks)
-            if (currentTick % 200 == 0) {
-                VocabularyManager.updateProgression(currentTick);
+            // 3. Auto-save (A cada 5 segundos)
+            if (currentTick % 6000 == 0) {
+                VocabularyManager.updateProgression();
             }
         });
     }

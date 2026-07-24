@@ -1,202 +1,130 @@
 package com.wesleyhdias.minnanocraft.services;
 
-import com.wesleyhdias.minnanocraft.data.models.DifficultyLevel;
+import com.wesleyhdias.minnanocraft.data.models.Event;
 import com.wesleyhdias.minnanocraft.data.models.LearningState;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
-import com.wesleyhdias.minnanocraft.data.models.Event;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
-/**
- * O cérebro matemático do mod. Controla o ganho de exposição,
- * transições de estados e mecânicas de esquecimento estilo Anki.
- */
 public class ProgressionSystem {
 
-    private final int maxActiveWords;
-    private final double masteryExposure;
-    private final int baseInactiveTimeout;
-    private final double forgettingRate;
-    private final double relearnMultiplier;
+    // =========================================================
+    // CONFIGURAÇÕES DA FILA E BALANCEAMENTO
+    // =========================================================
+    private final int maxActiveWords = 30; // Limite de palavras mudando na tela ao mesmo tempo
+    private final double masteryExposure = 100.0; // Pontos para virar MASTERED
 
-    public ProgressionSystem() {
-        this.maxActiveWords = 15;
-        this.masteryExposure = 100.0;
-        this.baseInactiveTimeout = 40;
-        this.forgettingRate = 0.02;
-        this.relearnMultiplier = 2.5;
-    }
+    // TEMPOS REAIS (Em Milissegundos)
+    // 1 Dia = 1000L * 60 * 60 * 24; (Use 5000L para testar como 5 segundos)
+    private final long gracePeriodMs = 1000L * 60 * 60 * 24;
 
-    public ProgressionSystem(int maxActiveWords, double masteryExposure, int baseInactiveTimeout, double forgettingRate, double relearnMultiplier) {
-        this.maxActiveWords = maxActiveWords;
-        this.masteryExposure = masteryExposure;
-        this.baseInactiveTimeout = baseInactiveTimeout;
-        this.forgettingRate = forgettingRate;
-        this.relearnMultiplier = relearnMultiplier;
-    }
+    // Tempo para chutar da lista (Ex: 3 dias sem ver a palavra)
+    private final long demotionTimeoutMs = gracePeriodMs * 3;
+
+    private final double decayPerCycle = 5.0;
+    private final double decayFloorRatio = 0.70;
+    private final double relearnMultiplier = 2.5;
+
+    public ProgressionSystem() {}
 
     // =========================================================
-    // Métodos Auxiliares de Exposição
+    // EVENTOS DO JOGADOR
     // =========================================================
-    private void addExposure(WordProgress progress, double baseAmount) {
-        // Bônus de Reaprendizado se estiver abaixo do maior pico alcançado
-        double multiplier = (progress.getExposure() < progress.getPeakExposure()) ? this.relearnMultiplier : 1.0;
-
-        double newExposure = progress.getExposure() + (baseAmount * multiplier);
-        progress.updateExposure(newExposure - progress.getExposure()); // Atualiza e trata o pico interno
-
-        updateScriptLevel(progress);
-    }
-
-    private void updateScriptLevel(WordProgress progress) {
-        int newLevel;
-        if (progress.getExposure() >= 100) {
-            newLevel = 3; // Kanji
-        } else if (progress.getExposure() >= 50) {
-            newLevel = 2; // Hiragana
-        } else if (progress.getExposure() >= 15)  {
-            newLevel = 1; // Romaji
-        } else{
-            newLevel = 0; // original
-        }
-
-        // Trava: o nível de escrita é sempre o MAIOR nível já alcançado
-        if (newLevel > progress.getHighestScriptLevel()) {
-            progress.setHighestScriptLevel(newLevel);
-        }
-
-        progress.setScriptLevel(progress.getHighestScriptLevel());
-    }
-
-    // =========================================================
-    // Eventos (Ajustados para Mod Passivo)
-    // =========================================================
-    public void applyEvent(WordProgress progress, Event event, long now) {
-        if (progress.getState() == LearningState.MASTERED) {
-            return;
-        }
-
+    public void applyEvent(WordProgress progress, Event event) {
+        long now = System.currentTimeMillis();
         progress.setLastSeen(now);
 
+        System.out.println("to aplicando evento aqui ó:" + event);
+        System.out.println("nesse item:" + progress.getWord());
+
         switch (event) {
-            case HOVER -> {
-                // Foco direto no inventário (ganha exposição normal)
-                addExposure(progress, 1.0);
-                progress.incrementSeenCount();
-            }
-            case SEEN -> {
-                // Apareceu rápido na Hotbar (ganha menos exposição: +1.0)
-                addExposure(progress, 0.2);
-                progress.incrementSeenCount();
-            }
+            case HOVER -> addExposure(progress, 2.0);
+            case SEEN -> addExposure(progress, 0.5);
             case LOOKUP -> {
                 progress.incrementLookupCount();
-                double droppedExposure = Math.max(0.0, progress.getExposure() - 5.0);
-                progress.updateExposure(droppedExposure - progress.getExposure());
-                updateScriptLevel(progress);
+
+                // O LOOKUP QUEBRA O MASTERY! O jogador confessou que esqueceu.
+                if (progress.getState() == LearningState.MASTERED) {
+                    progress.setState(LearningState.ACTIVE);
+                    // Derruba o XP para baixo da linha de mestre (ex: 80.0)
+                    double dropAmount = progress.getExposure() - (this.masteryExposure - 20.0);
+                    progress.updateExposure(-Math.max(0, dropAmount));
+                } else {
+                    double droppedExposure = Math.max(0.0, progress.getExposure() - 5.0);
+                    progress.updateExposure(droppedExposure - progress.getExposure());
+                }
             }
         }
     }
 
-    // =========================================================
-    // Regras & Lógica Anki
-    // =========================================================
-    public double getInactiveTimeout(WordProgress progress) {
-        // Quanto maior a estabilidade (peakExposure), mais tempo a palavra tolera inatividade
-        double stabilityBonus = progress.getPeakExposure() * 1.5;
-        return this.baseInactiveTimeout + stabilityBonus;
-    }
-
-    public boolean shouldDemote(WordProgress progress, long now) {
-        Long lastSeen = progress.getLastSeen();
-        if (lastSeen == null) {
-            return false;
-        }
-
-        double timeout = getInactiveTimeout(progress);
-        return (now - lastSeen) > timeout;
-    }
-
-    public void promote(WordProgress progress, long now) {
-        progress.setState(LearningState.ACTIVE);
-
-        Long lastSeen = progress.getLastSeen();
-        if (lastSeen != null) {
-            long timeInWaiting = now - lastSeen;
-            double decay = timeInWaiting * this.forgettingRate;
-
-            // Piso de Decaimento (nunca cai abaixo de 70% do pico histórico)
-            double decayFloor = progress.getPeakExposure() * 0.70;
-            double finalExp = Math.max(decayFloor, progress.getExposure() - decay);
-
-            progress.updateExposure(finalExp - progress.getExposure());
-        }
-
-        updateScriptLevel(progress);
-        progress.setPromotedAt(now);
-    }
-
-    public void demote(WordProgress progress) {
-        progress.setState(LearningState.WAITING);
-    }
-
-    public void master(WordProgress progress) {
-        progress.setState(LearningState.MASTERED);
-    }
-
-    public DifficultyLevel getDifficulty(WordProgress progress) {
-        if (progress.getState() == LearningState.WAITING) {
-            return DifficultyLevel.PORTUGUESE;
-        }
-        if (progress.getState() == LearningState.MASTERED) {
-            return DifficultyLevel.KANJI;
-        }
-        if (progress.getScriptLevel() == 1) {
-            return DifficultyLevel.ROMAJI;
-        }
-        if (progress.getScriptLevel() == 2) {
-            return DifficultyLevel.HIRAGANA;
-        }
-        return DifficultyLevel.KANJI;
+    private void addExposure(WordProgress progress, double baseAmount) {
+        double multiplier = (progress.getExposure() < progress.getPeakExposure()) ? this.relearnMultiplier : 1.0;
+        progress.updateExposure(baseAmount * multiplier);
+        progress.incrementSeenCount();
     }
 
     // =========================================================
-    // Atualização de Estados (Loop Principal)
+    // GERENCIADOR DE FILA E ESQUECIMENTO (Loop do Auto-Save)
     // =========================================================
-    public void updateStates(Map<String, WordProgress> vocabulary, long now) {
+    public void updateStates(Map<String, WordProgress> vocabulary) {
+        long now = System.currentTimeMillis();
+
+        // 1. APLICA O DECAY E DEMOTIONS NAS PALAVRAS ATIVAS
         for (WordProgress progress : vocabulary.values()) {
-            if (progress.getState() == LearningState.ACTIVE) {
-                if (progress.getExposure() >= this.masteryExposure) {
-                    master(progress);
-                } else if (shouldDemote(progress, now)) {
-                    demote(progress);
+            if (progress.getState() != LearningState.ACTIVE) continue;
+
+            Long lastSeen = progress.getLastSeen();
+            if (lastSeen == null) continue;
+
+            long timeInactive = now - lastSeen;
+
+            // Se o XP passou de 100, vira mestre e libera vaga na fila ACTIVE
+            if (progress.getExposure() >= this.masteryExposure) {
+                progress.setState(LearningState.MASTERED);
+                continue;
+            }
+
+            // Se o jogador ficou 3 dias sem ver a palavra, ela volta pra fila de espera (abre vaga)
+            if (timeInactive > this.demotionTimeoutMs) {
+                progress.setState(LearningState.WAITING);
+            }
+            // Se não, calculamos se ela perdeu um pouquinho de XP por inatividade (> 24h)
+            else if (timeInactive > this.gracePeriodMs) {
+                double cyclesMissed = Math.floor((double) timeInactive / gracePeriodMs);
+                double totalDecay = cyclesMissed * decayPerCycle;
+                double decayFloor = progress.getPeakExposure() * decayFloorRatio;
+
+                double newExposure = Math.max(decayFloor, progress.getExposure() - totalDecay);
+
+                if (newExposure < progress.getExposure()) {
+                    progress.updateExposure(newExposure - progress.getExposure());
+                    progress.setLastSeen(now); // Reseta o relógio do decay
                 }
             }
         }
 
-        // Calcula quantos slots livres temos para promover palavras em WAITING
+        // 2. PREENCHE AS VAGAS VAZIAS NA FILA
         long activeCount = vocabulary.values().stream()
                 .filter(p -> p.getState() == LearningState.ACTIVE)
                 .count();
 
         int freeSlots = this.maxActiveWords - (int) activeCount;
 
-        if (freeSlots <= 0) {
-            return;
-        }
+        if (freeSlots > 0) {
+            // Pega as palavras em WAITING que o jogador mais olhou no jogo e promove para ACTIVE
+            List<WordProgress> waitingWords = vocabulary.values().stream()
+                    .filter(p -> p.getState() == LearningState.WAITING)
+                    .sorted(Comparator.comparingInt(WordProgress::getSeenCount).reversed())
+                    .toList();
 
-        // Pega as palavras em WAITING ordenadas pelas mais vistas (relevância)
-        List<WordProgress> waitingWords = vocabulary.values().stream()
-                .filter(p -> p.getState() == LearningState.WAITING)
-                .sorted(Comparator.comparingInt(WordProgress::getTotalSeen).reversed())
-                .toList();
-
-        // Promove as primeiras de acordo com os slots disponíveis
-        int limit = Math.min(freeSlots, waitingWords.size());
-        for (int i = 0; i < limit; i++) {
-            promote(waitingWords.get(i), now);
+            int limit = Math.min(freeSlots, waitingWords.size());
+            for (int i = 0; i < limit; i++) {
+                WordProgress p = waitingWords.get(i);
+                p.setState(LearningState.ACTIVE);
+                p.setPromotedAt(now);
+            }
         }
     }
 }
