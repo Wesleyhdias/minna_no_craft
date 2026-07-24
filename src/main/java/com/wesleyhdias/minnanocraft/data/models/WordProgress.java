@@ -1,10 +1,8 @@
 package com.wesleyhdias.minnanocraft.data.models;
 
-import org.jetbrains.annotations.Nullable;
-
 /**
- * Representa o progresso dinâmico de aprendizado de uma palavra pelo jogador.
- * Essa classe é mutável e é salva/carregada via JSON pelo Gson.
+ * Represents the dynamic learning progress of a specific word by the player.
+ * This class is mutable and is serialized/deserialized to JSON via Gson.
  */
 public class WordProgress {
 
@@ -15,23 +13,35 @@ public class WordProgress {
     private double peakExposure = 0.0;
 
     private int seenCount = 0;
-    private int lookupCount = 0;
-
-    @Nullable
     private Long firstSeen = null;
-
-    @Nullable
     private Long lastSeen = null;
 
-    @Nullable
-    private Long promotedAt = null;
+    /**
+     * Tracks how many times the player used the dictionary/lookup feature.
+     * Note: The core mechanic for this feature is planned but not yet implemented.
+     */
+    private int lookupCount = 0;
 
+    /**
+     * Default constructor required for JSON deserialization (Gson).
+     */
     public WordProgress() {}
 
+    /**
+     * Initializes a new WordProgress for a specific word.
+     *
+     * @param word The target word being tracked.
+     */
     public WordProgress(String word) {
         this.word = word;
     }
 
+    /**
+     * Updates the current exposure and recalculates the peak exposure if necessary.
+     * The exposure value will never drop below 0.0.
+     *
+     * @param delta The amount of exposure to add (or subtract, if negative).
+     */
     public void updateExposure(double delta) {
         this.exposure = Math.max(0.0, this.exposure + delta);
         if (this.exposure > this.peakExposure) {
@@ -39,6 +49,41 @@ public class WordProgress {
         }
     }
 
+    /**
+     * Gets the current script level based on the current exposure.
+     *
+     * @return The script level (0 = Native, 1 = Romaji, 2 = Hiragana, 3 = Kanji).
+     */
+    public int getScriptLevel() {
+        return calculateLevelFromExposure(this.exposure);
+    }
+
+    /**
+     * Returns the highest script level ever achieved using the peak exposure.
+     * This acts as a permanent milestone lock without needing an extra variable.
+     *
+     * @return The highest achieved script level.
+     */
+    public int getHighestScriptLevel() {
+        return calculateLevelFromExposure(this.peakExposure);
+    }
+
+    /**
+     * Internal logic to map an exposure value to a script level.
+     *
+     * @param exp The exposure value to evaluate.
+     * @return The corresponding script level.
+     */
+    private int calculateLevelFromExposure(double exp) {
+        if (exp >= 75.0) return 3;  // Kanji
+        if (exp >= 40.0) return 2;  // Hiragana
+        if (exp >= 15.0) return 1;  // Romaji
+        return 0;                   // Native Language (e.g., Portuguese)
+    }
+
+    // =========================================================
+    // Getters & Setters
+    // =========================================================
     public String getWord() { return word; }
 
     public LearningState getState() { return state; }
@@ -47,50 +92,16 @@ public class WordProgress {
     public double getExposure() { return exposure; }
     public double getPeakExposure() { return peakExposure; }
 
-    public int getScriptLevel() {
-        return calculateLevelFromExposure(this.exposure);
-    }
-
-    /*
-     * Retorna o maior nível já alcançado usando o recorde (peakExposure).
-     * Funciona como a trava permanente sem precisar de variável extra!
-     */
-    public int getHighestScriptLevel() {
-        return calculateLevelFromExposure(this.peakExposure);
-    }
-
-    public DifficultyLevel getHighestDifficultyEnum() {
-        return DifficultyLevel.fromInt(getHighestScriptLevel());
-    }
-
-    private int calculateLevelFromExposure(double exp) {
-        if (exp >= 75.0) return 3;  // Kanji
-        if (exp >= 40.0)  return 2; // Hiragana
-        if (exp >= 15.0)  return 1; // Romaji
-        return 0;                   // Português
-    }
-
     public Long getFirstSeen() { return firstSeen; }
-
     public void setFirstSeen(Long firstSeen) { this.firstSeen = firstSeen; }
 
     public Long getLastSeen() { return lastSeen; }
-
     public void setLastSeen(Long lastSeen) { this.lastSeen = lastSeen; }
 
-    public Long getPromotedAt() { return promotedAt; }
-    public void setPromotedAt(Long promotedAt) { this.promotedAt = promotedAt; }
+    public void incrementSeenCount() { this.seenCount++; }
+    public int getSeenCount() { return seenCount; }
 
-    public void incrementSeenCount() {
-        this.seenCount++;
-    }
-
-    public void incrementLookupCount() {
-        this.lookupCount++;
-    }
-
-    public int getSeenCount() {
-        return seenCount;
-    }
+    public void incrementLookupCount() { this.lookupCount++; }
+    public int getLookupCount() { return lookupCount; }
 
 }

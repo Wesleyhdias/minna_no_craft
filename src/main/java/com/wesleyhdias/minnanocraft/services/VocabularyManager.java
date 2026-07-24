@@ -9,66 +9,98 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Central manager for vocabulary progress.
+ * Serves as an in-memory cache and orchestrates data persistence,
+ * event handling, and target token selection algorithms.
+ */
 public class VocabularyManager {
 
-    // Cache em memória que substitui o "self.data" do Python
+    /** In-memory cache holding word progress data for thread-safe access. */
     private static ConcurrentHashMap<String, WordProgress> vocabularyCache = new ConcurrentHashMap<>();
 
-    // Dependências
+    // Dependencies
     private static final VocabularyRepository repository = new VocabularyRepository();
     private static final ProgressionSystem progressionSystem = new ProgressionSystem();
 
-    // Carrega os dados do disco ao iniciar o mod ou entrar no mundo.
+    /**
+     * Loads the vocabulary data from disk into the memory cache.
+     * Should be called during mod/world initialization.
+     */
     public static void load() {
         vocabularyCache = repository.loadAll();
     }
 
-
-    // Salva o estado atual no disco (Autosave).
+    /**
+     * Saves the current in-memory vocabulary state to disk.
+     */
     public static void save() {
         repository.saveAll(vocabularyCache);
     }
 
+    /**
+     * Retrieves the progress for a specific token.
+     *
+     * @param token The target token string.
+     * @return The WordProgress instance, or null if not found.
+     */
     public static WordProgress getProgress(String token) {
         return vocabularyCache.get(token);
     }
 
+    /**
+     * Retrieves the progress for a token, creating a new instance if it doesn't exist.
+     *
+     * @param token The target token string.
+     * @return The existing or newly created WordProgress instance.
+     */
     public static WordProgress getOrCreateProgress(String token) {
         return vocabularyCache.computeIfAbsent(token, WordProgress::new);
     }
 
-    // GATILHOS DO JOGO (Mixins chamarão estes métodos)
-    public static void registerEvent(String token, Event event, long currentTick) {
+    // =========================================================
+    // GAMEPLAY TRIGGERS
+    // =========================================================
+
+    /**
+     * Registers a learning event for a specific token using real-time timestamps.
+     *
+     * @param token The target word or particle.
+     * @param event The triggered event type.
+     */
+    public static void registerEvent(String token, Event event) {
         WordProgress progress = getOrCreateProgress(token);
         long now = System.currentTimeMillis();
 
-        // --- FILTRO ANTISPAM ---
-        // Se a palavra já foi vista recentemente (1 segundo atrás), ignora!
-        if (progress.getLastSeen() != null && (now- progress.getLastSeen()) < 1000) {
+        // --- ANTISPAM FILTER ---
+        // Ignores event triggers if the token was interacted with less than 1 second (1000 ms) ago
+        if (progress.getLastSeen() != null && (now - progress.getLastSeen()) < 1000) {
             return;
         }
 
         if (progress.getFirstSeen() == null) {
-            progress.setFirstSeen(currentTick);
+            progress.setFirstSeen(now);
         }
-        progress.setLastSeen(currentTick);
 
         progressionSystem.applyEvent(progress, event);
     }
 
     /**
-     * Se o token NÃO existe no dicionário de traduções, significa que ele é um
-     * morfema (partícula) e não aparece no modo português.
+     * Checks if a token is a particle (morpheme) by verifying its absence in the dictionary.
+     *
+     * @param token The target token to verify.
+     * @return true if the token is a particle, false if it is a content word.
      */
     public static boolean isParticle(String token) {
-        // Substitua 'DictionaryLoader.getDictionary()' pelo código real que você
-        // usa no PortugueseItemNameBuilder para buscar a tradução da palavra.
         return !DictionaryLoader.getDictionary().containsKey(token);
     }
 
     /**
-     * Descobre qual token da estrutura precisa de pontos primeiro.
-     * Cria um sistema de "ondas": conteúdo evolui primeiro, partículas correm atrás para alcançar.
+     * Determines which token in an item's structure should receive priority progression points.
+     * Implements a "wave" system where content words progress first, and particles catch up.
+     *
+     * @param structure The list of tokens representing the item's name structure.
+     * @return The priority token string to upgrade, or null if the structure is empty.
      */
     public static String getNextTokenToUpgrade(List<String> structure) {
         if (structure == null || structure.isEmpty()) return null;
@@ -84,12 +116,12 @@ public class VocabularyManager {
             }
         }
 
-        // Segurança caso o item só tenha partículas (raro/impossível, mas evita crash)
+        // Safety fallback if the item consists solely of particles
         if (contentTokens.isEmpty()) {
             return getLowestLevelToken(particleTokens);
         }
 
-        // 1. Descobre o nível em que a palavra de conteúdo MAIS ATRASADA está
+        // 1. Finds the lowest script level among content words
         int minContentLevel = 3;
         for (String token : contentTokens) {
             WordProgress p = getProgress(token);
@@ -99,12 +131,12 @@ public class VocabularyManager {
             }
         }
 
-        // 2. MODO PORTUGUÊS (Nível 0): Partículas estão invisíveis. Foca 100% no conteúdo.
+        // 2. NATIVE MODE (Level 0): Particles are invisible; focus 100% on content words
         if (minContentLevel == 0) {
             return getFirstTokenAtLevel(contentTokens, 0);
         }
 
-        // 3. MODO JAPONÊS ATIVADO (Nível >= 1): Partículas apareceram na tela!
+        // 3. JAPANESE MODE ACTIVATED (Level >= 1): Particles have appeared on screen
         if (!particleTokens.isEmpty()) {
             int minParticleLevel = 3;
             for (String token : particleTokens) {
@@ -115,20 +147,18 @@ public class VocabularyManager {
                 }
             }
 
-            // Se a partícula estiver com um nível MENOR que o do conteúdo (ex: Conteúdo 2, Partícula 1),
-            // a partícula ganha prioridade máxima para "alcançar" a onda!
+            // If a particle lags behind content level, give it top priority to catch up
             if (minParticleLevel < minContentLevel) {
                 return getFirstTokenAtLevel(particleTokens, minParticleLevel);
             }
         }
 
-        // 4. SE HOUVER EMPATE (Ex: Todos no Nível 1 ou Todos no Nível 2):
-        // As palavras de conteúdo sempre têm o privilégio de inaugurar o próximo nível!
+        // 4. TIE-BREAKER: Content words always take priority when inaugurating a new level
         return getFirstTokenAtLevel(contentTokens, minContentLevel);
     }
 
     /**
-     * Método auxiliar para buscar o menor nível de uma lista genérica (fallback).
+     * Helper fallback method to find the token with the lowest script level in a list.
      */
     private static String getLowestLevelToken(List<String> tokens) {
         int minLevel = 3;
@@ -141,7 +171,7 @@ public class VocabularyManager {
     }
 
     /**
-     * Método auxiliar para encontrar a primeira palavra que está no nível alvo (lê da esq -> dir).
+     * Helper method to find the first token matching a target script level (left-to-right).
      */
     private static String getFirstTokenAtLevel(List<String> tokens, int targetLevel) {
         for (String token : tokens) {
@@ -151,15 +181,14 @@ public class VocabularyManager {
                 return token;
             }
         }
-        return tokens.getFirst(); // Fallback
+        return tokens.getFirst(); // Fallback for Java 21+
     }
 
     /**
-     * Loop temporal do mod (chamado a cada ~10 segundos pelo relógio do jogo).
-     * Atualiza quedas de esquecimento e avanço de níveis.
+     * Real-time progression decay loop (called during auto-save ticks every ~5 minutes).
+     * Processes inactivity decays and updates word learning states.
      */
     public static void updateProgression() {
-
-         progressionSystem.updateStates(vocabularyCache);
+        progressionSystem.updateStates(vocabularyCache);
     }
 }

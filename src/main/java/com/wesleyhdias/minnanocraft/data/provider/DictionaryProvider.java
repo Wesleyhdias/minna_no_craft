@@ -6,6 +6,10 @@ import com.wesleyhdias.minnanocraft.render.DifficultyRenderer;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Word;
 
+/**
+ * Provider responsible for resolving standard dictionary content words
+ * using the DifficultyRenderer based on player progress.
+ */
 public class DictionaryProvider implements TokenProvider {
 
     @Override
@@ -16,10 +20,8 @@ public class DictionaryProvider implements TokenProvider {
             return null;
         }
 
-        // Busca o progresso dinâmico do jogador no Manager
+        // Retrieves dynamic player progress from VocabularyManager (defaults to level 0 if untracked)
         WordProgress progress = VocabularyManager.getProgress(token);
-
-        // Se a palavra for nova (progress == null), começa no nível 1 (Romaji)
         int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
 
         return DifficultyRenderer.render(word, level);

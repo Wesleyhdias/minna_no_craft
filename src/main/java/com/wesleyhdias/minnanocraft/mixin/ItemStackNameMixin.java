@@ -1,9 +1,9 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
+import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.services.TranslationModeResolver;
-import com.wesleyhdias.minnanocraft.services.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.services.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -16,15 +16,27 @@ import org.spongepowered.asm.mixin.Mixin;
 
 import java.util.List;
 
+/**
+ * Mixin targeting ItemStack to dynamically modify item hover names
+ * according to the player's vocabulary and language progression.
+ */
 @Mixin(ItemStack.class)
 public abstract class ItemStackNameMixin {
 
+    /**
+     * Intercepts the getHoverName method to replace item names with progressive
+     * Japanese scripts or partial translations.
+     *
+     * @param cir Callback info returnable containing the item name component.
+     */
     @Inject(method = "getHoverName", at = @At("RETURN"), cancellable = true)
     private void onGetHoverName(CallbackInfoReturnable<Component> cir) {
         ItemStack stack = (ItemStack) (Object) this;
 
-        // CORREÇÃO AQUI: Usando DataComponents para a versão 1.20.5 / 1.21+
-        if (stack.isEmpty() || stack.has(DataComponents.CUSTOM_NAME)) return;
+        // Skips if stack is empty or has a custom user-defined name (e.g., anvil rename)
+        if (stack.isEmpty() || stack.has(DataComponents.CUSTOM_NAME)) {
+            return;
+        }
 
         String translationKey = stack.getItem().getDescriptionId();
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);

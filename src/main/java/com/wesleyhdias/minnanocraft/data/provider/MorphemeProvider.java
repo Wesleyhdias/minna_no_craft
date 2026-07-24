@@ -5,6 +5,10 @@ import com.wesleyhdias.minnanocraft.data.loader.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Morpheme;
 
+/**
+ * Provider responsible for resolving grammatical particles and morphemes
+ * into Japanese scripts based on the player's current progression level.
+ */
 public class MorphemeProvider implements TokenProvider {
 
     @Override
@@ -15,7 +19,7 @@ public class MorphemeProvider implements TokenProvider {
             return null;
         }
 
-        // Busca o progresso deste morfema exatamente como fazemos com as palavras
+        // Retrieves progress for this morpheme using the same logic as content words
         WordProgress progress = VocabularyManager.getProgress(token);
         int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
 
@@ -23,7 +27,7 @@ public class MorphemeProvider implements TokenProvider {
             return null;
         }
 
-        // Renderiza com base no nível (3 = Kanji, 2 = Hiragana, 1 = Romaji)
+        // Renders script based on level (3 = Kanji, 2 = Hiragana, 1 = Romaji)
         if (level >= 3 && morpheme.kanji() != null && !morpheme.kanji().isBlank()) {
             return morpheme.kanji();
         } else if (level >= 2) {

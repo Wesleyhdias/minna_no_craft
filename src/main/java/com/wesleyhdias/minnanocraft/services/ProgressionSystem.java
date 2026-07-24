@@ -1,56 +1,81 @@
 package com.wesleyhdias.minnanocraft.services;
 
-import com.wesleyhdias.minnanocraft.data.models.Event;
 import com.wesleyhdias.minnanocraft.data.models.LearningState;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
+import com.wesleyhdias.minnanocraft.data.models.Event;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The brain of the mod.
+ * Controls exposure gain, state transitions, and real-time forgetting mechanics.
+ */
 public class ProgressionSystem {
 
     // =========================================================
-    // CONFIGURAÇÕES DA FILA E BALANCEAMENTO
+    // QUEUE SETTINGS & BALANCING
     // =========================================================
-    private final int maxActiveWords = 30; // Limite de palavras mudando na tela ao mesmo tempo
-    private final double masteryExposure = 100.0; // Pontos para virar MASTERED
 
-    // TEMPOS REAIS (Em Milissegundos)
-    // 1 Dia = 1000L * 60 * 60 * 24; (Use 5000L para testar como 5 segundos)
+    /** Maximum number of words actively gaining Exposure at the same time. */
+    private final int maxActiveWords = 30;
+
+    /** Exposure points required to reach the MASTERED state. */
+    private final double masteryExposure = 100.0;
+
+    // REAL-TIME SETTINGS (In Milliseconds)
+    // 1 Day = 1000L * 60 * 60 * 24; (Use 5000L for 5-second testing)
+
+    /** Time the player can go without seeing a word before it starts losing XP. */
     private final long gracePeriodMs = 1000L * 60 * 60 * 24;
 
-    // Tempo para chutar da lista (Ex: 3 dias sem ver a palavra)
+    /** Time without seeing a word before it gets demoted back to WAITING (3 days). */
     private final long demotionTimeoutMs = gracePeriodMs * 3;
 
+    /** Amount of XP lost per missed time cycle. */
     private final double decayPerCycle = 5.0;
+
+    /** The minimum percentage of the peak exposure a word can drop to (70%). */
     private final double decayFloorRatio = 0.70;
+
+    /** Bonus multiplier applied when relearning a forgotten word. */
     private final double relearnMultiplier = 2.5;
 
+    /**
+     * Default constructor.
+     */
     public ProgressionSystem() {}
 
     // =========================================================
-    // EVENTOS DO JOGADOR
+    // PLAYER EVENTS
     // =========================================================
+
+    /**
+     * Applies a learning event to a specific word's progress.
+     *
+     * @param progress The word progress to update.
+     * @param event    The type of event triggered by the player.
+     */
     public void applyEvent(WordProgress progress, Event event) {
         long now = System.currentTimeMillis();
         progress.setLastSeen(now);
-
-        System.out.println("to aplicando evento aqui ó:" + event);
-        System.out.println("nesse item:" + progress.getWord());
 
         switch (event) {
             case HOVER -> addExposure(progress, 2.0);
             case SEEN -> addExposure(progress, 0.5);
             case LOOKUP -> {
+                // TODO: UI trigger for LOOKUP is not yet implemented.
                 progress.incrementLookupCount();
 
-                // O LOOKUP QUEBRA O MASTERY! O jogador confessou que esqueceu.
+                // LOOKUP BREAKS MASTERY! The player admitted they forgot the word.
                 if (progress.getState() == LearningState.MASTERED) {
                     progress.setState(LearningState.ACTIVE);
-                    // Derruba o XP para baixo da linha de mestre (ex: 80.0)
+
+                    // Drops XP below the mastery threshold (down to 80.0)
                     double dropAmount = progress.getExposure() - (this.masteryExposure - 20.0);
                     progress.updateExposure(-Math.max(0, dropAmount));
+
                 } else {
                     double droppedExposure = Math.max(0.0, progress.getExposure() - 5.0);
                     progress.updateExposure(droppedExposure - progress.getExposure());
@@ -59,6 +84,12 @@ public class ProgressionSystem {
         }
     }
 
+    /**
+     * Adds exposure points to a word, applying the relearn multiplier if recovering lost XP.
+     *
+     * @param progress   The word progress to update.
+     * @param baseAmount The base amount of exposure to add.
+     */
     private void addExposure(WordProgress progress, double baseAmount) {
         double multiplier = (progress.getExposure() < progress.getPeakExposure()) ? this.relearnMultiplier : 1.0;
         progress.updateExposure(baseAmount * multiplier);
@@ -66,12 +97,19 @@ public class ProgressionSystem {
     }
 
     // =========================================================
-    // GERENCIADOR DE FILA E ESQUECIMENTO (Loop do Auto-Save)
+    // QUEUE & FORGETTING MANAGER (Auto-Save Loop)
     // =========================================================
+
+    /**
+     * Processes real-time decay, demotes inactive words, and promotes waiting words.
+     * This should be called periodically (during the auto-save tick).
+     *
+     * @param vocabulary The full vocabulary map of the player.
+     */
     public void updateStates(Map<String, WordProgress> vocabulary) {
         long now = System.currentTimeMillis();
 
-        // 1. APLICA O DECAY E DEMOTIONS NAS PALAVRAS ATIVAS
+        // 1. APPLY DECAY AND DEMOTIONS TO ACTIVE WORDS
         for (WordProgress progress : vocabulary.values()) {
             if (progress.getState() != LearningState.ACTIVE) continue;
 
@@ -80,17 +118,17 @@ public class ProgressionSystem {
 
             long timeInactive = now - lastSeen;
 
-            // Se o XP passou de 100, vira mestre e libera vaga na fila ACTIVE
+            // If XP reached 100, master it and free up an ACTIVE slot
             if (progress.getExposure() >= this.masteryExposure) {
                 progress.setState(LearningState.MASTERED);
                 continue;
             }
 
-            // Se o jogador ficou 3 dias sem ver a palavra, ela volta pra fila de espera (abre vaga)
+            // If the player hasn't seen the word for the demotion timeout, send it back to WAITING
             if (timeInactive > this.demotionTimeoutMs) {
                 progress.setState(LearningState.WAITING);
             }
-            // Se não, calculamos se ela perdeu um pouquinho de XP por inatividade (> 24h)
+            // Otherwise, calculate if it lost XP due to inactivity (past the grace period)
             else if (timeInactive > this.gracePeriodMs) {
                 double cyclesMissed = Math.floor((double) timeInactive / gracePeriodMs);
                 double totalDecay = cyclesMissed * decayPerCycle;
@@ -100,12 +138,12 @@ public class ProgressionSystem {
 
                 if (newExposure < progress.getExposure()) {
                     progress.updateExposure(newExposure - progress.getExposure());
-                    progress.setLastSeen(now); // Reseta o relógio do decay
+                    progress.setLastSeen(now); // Resets the decay clock
                 }
             }
         }
 
-        // 2. PREENCHE AS VAGAS VAZIAS NA FILA
+        // 2. FILL EMPTY SLOTS IN THE QUEUE
         long activeCount = vocabulary.values().stream()
                 .filter(p -> p.getState() == LearningState.ACTIVE)
                 .count();
@@ -113,7 +151,7 @@ public class ProgressionSystem {
         int freeSlots = this.maxActiveWords - (int) activeCount;
 
         if (freeSlots > 0) {
-            // Pega as palavras em WAITING que o jogador mais olhou no jogo e promove para ACTIVE
+            // Gets the most seen WAITING words and promotes them to ACTIVE
             List<WordProgress> waitingWords = vocabulary.values().stream()
                     .filter(p -> p.getState() == LearningState.WAITING)
                     .sorted(Comparator.comparingInt(WordProgress::getSeenCount).reversed())
@@ -123,7 +161,6 @@ public class ProgressionSystem {
             for (int i = 0; i < limit; i++) {
                 WordProgress p = waitingWords.get(i);
                 p.setState(LearningState.ACTIVE);
-                p.setPromotedAt(now);
             }
         }
     }

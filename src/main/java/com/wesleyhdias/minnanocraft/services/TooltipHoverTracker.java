@@ -5,61 +5,72 @@ import com.wesleyhdias.minnanocraft.data.models.Event;
 
 import java.util.List;
 
+/**
+ * Tracker responsible for monitoring player item hover duration in inventory tooltips
+ * to award exposure points after a sustained hover duration.
+ */
 public class TooltipHoverTracker {
 
     private static String currentKey = null;
-    private static long hoverStartTick = 0;
+    private static long hoverStartTime = 0;
     private static boolean pointAwarded = false;
-    private static long lastUnhoverTick = 0;
-    private static long lastFrameTick = 0;
+    private static long lastUnhoverTime = 0;
+    private static long lastFrameTime = 0;
 
+    /**
+     * Called on every render frame when an item tooltip is drawn on screen.
+     *
+     * @param key The unique translation key of the item currently being hovered over.
+     */
+    public static void onTooltipRendered(String key) {
+        long now = System.currentTimeMillis();
+        lastFrameTime = now;
 
-    // Chamado a cada frame em que o mouse está sobre um item no inventário
-    public static void onTooltipRendered(String key, long currentTick) {
-        lastFrameTick = currentTick;
-
-        // Se o mouse mudou para OUTRO item no inventário
+        // If the mouse moved to a DIFFERENT item in the inventory
         if (!key.equals(currentKey)) {
             if (currentKey != null) {
-                lastUnhoverTick = currentTick; // Registra a saída do item anterior
+                lastUnhoverTime = now; // Records exit timestamp from previous item
             }
             currentKey = key;
-            hoverStartTick = currentTick;
-            pointAwarded = false; // Reseta a flag para o novo item
+            hoverStartTime = now;
+            pointAwarded = false; // Resets flag for the new item
             return;
         }
 
-        // Se continua no MESMO item e o ponto AINDA NÃO foi entregue
+        // If still hovering over the SAME item and points haven't been awarded yet
         if (!pointAwarded) {
-            long duration = currentTick - hoverStartTick;
-            long timeSinceLastUnhover = currentTick - lastUnhoverTick;
+            long duration = now - hoverStartTime;
+            long timeSinceLastUnhover = now - lastUnhoverTime;
 
-            // REGRAS:
-            // 1. Deve ficar pelo menos 1 segundo (20 ticks) PARADO sobre o item.
-            // 2. Deve ter se passado pelo menos 1 segundo (20 ticks) desde que tirou o mouse de um item.
-            if (duration >= 20 && timeSinceLastUnhover >= 20) {
+            // RULES:
+            // 1. Must stay hovered over the item for at least 1 second (1000 ms).
+            // 2. At least 1 second (1000 ms) must have passed since removing mouse from another item.
+            if (duration >= 1000 && timeSinceLastUnhover >= 1000) {
                 List<String> structure = ItemStructureLoader.getStructures().get(key);
 
                 if (structure != null) {
                     String targetToken = VocabularyManager.getNextTokenToUpgrade(structure);
                     if (targetToken != null) {
-                        VocabularyManager.registerEvent(targetToken, Event.HOVER, currentTick);
+                        VocabularyManager.registerEvent(targetToken, Event.HOVER);
                     }
                 }
 
-                pointAwarded = true; // MARCA QUE JÁ PONTUOU NESSA SESSÃO (Não pontua mais até tirar o mouse)
+                pointAwarded = true; // Marks as awarded for this session (prevents re-awarding until mouse moves)
             }
         }
     }
 
+    /**
+     * Called on every game tick to detect when the mouse leaves an item tooltip.
+     */
+    public static void tick() {
+        long now = System.currentTimeMillis();
 
-    // Chamado a cada tick do jogo para detectar quando o mouse SAIU do item
-    public static void tick(long currentTick) {
-        // Se passou mais de 2 ticks sem desenhar nenhuma tooltip, significa que o mouse saiu do item
-        if (currentKey != null && (currentTick - lastFrameTick) > 2) {
+        // If more than 100 ms (~2 ticks) pass without drawing any tooltip, the mouse has left the item
+        if (currentKey != null && (now - lastFrameTime) > 100) {
             currentKey = null;
             pointAwarded = false;
-            lastUnhoverTick = currentTick; // Registra o momento exato que tirou o mouse
+            lastUnhoverTime = now; // Records exact timestamp when mouse was removed
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.wesleyhdias.minnanocraft.services;
+package com.wesleyhdias.minnanocraft.builders;
 
 import com.wesleyhdias.minnanocraft.data.provider.DictionaryProvider;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
@@ -7,6 +7,10 @@ import com.wesleyhdias.minnanocraft.data.provider.TokenProvider;
 
 import java.util.List;
 
+/**
+ * Utility builder responsible for constructing an item's Japanese name
+ * by resolving its tokens through a list of providers.
+ */
 public class ItemNameBuilder {
 
     private static final List<TokenProvider> PROVIDERS = List.of(
@@ -14,36 +18,44 @@ public class ItemNameBuilder {
             new MorphemeProvider()
     );
 
+    /**
+     * Builds the resolved item name for a given translation key.
+     *
+     * @param translationKey The unique translation key of the item.
+     * @return The fully built item name, or null if no structure is found.
+     */
     public static String build(String translationKey) {
-
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
-        // Não existe estrutura -> devolve a própria chave.
+        // If no structure exists, return null so the game can fall back to standard translation
         if (structure == null) {
             return null;
         }
+
         StringBuilder result = new StringBuilder();
 
         for (String token : structure) {
-
             result.append(resolve(token)).append(" ");
         }
-        return result.toString();
+
+        return result.toString().trim();
     }
 
+    /**
+     * Resolves an individual token using the available token providers.
+     *
+     * @param token The token to resolve (a dictionary key or morpheme).
+     * @return The resolved text, or the original token if no provider can handle it.
+     */
     private static String resolve(String token) {
-
         for (TokenProvider provider : PROVIDERS) {
-
             String value = provider.resolve(token);
 
             if (value != null) {
                 return value;
             }
         }
-        // Token desconhecido:
-        // mantém exatamente como veio.
+        // Unknown token: keep it exactly as it came
         return token;
     }
-
 }

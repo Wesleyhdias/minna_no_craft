@@ -8,52 +8,64 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 
 import java.util.concurrent.ConcurrentHashMap;
+import java.nio.charset.StandardCharsets;
 import java.lang.reflect.Type;
+import java.nio.file.Files;
 import java.io.*;
 
+/**
+ * Repository responsible for persisting and loading the player's vocabulary progress to/from disk in JSON format.
+ */
 public class VocabularyRepository {
 
-    // Gson com PrettyPrinting para o JSON ficar bonito e legível no arquivo
+    /** Pretty-printed Gson instance for human-readable JSON files. */
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    // Caminho onde o progresso será salvo (na pasta raiz do Minecraft: ./config/minnanocraft/player_progress.json)
+    /** File path for storing player progress inside the Minecraft configuration folder. */
     private static final File SAVE_FILE = new File("config/minnanocraft/player_progress.json");
 
     /**
-     * Lê o arquivo de progresso. Retorna um mapa vazio se o jogador for novo.
+     * Loads the progress file from disk.
+     * Returns an empty ConcurrentHashMap if the file does not exist or an error occurs.
+     *
+     * @return The loaded player progress map.
      */
     public ConcurrentHashMap<String, WordProgress> loadAll() {
         if (!SAVE_FILE.exists()) {
-            MinnaNoCraft.LOGGER.info("Arquivo de progresso não encontrado. Criando novo perfil para o jogador.");
+            MinnaNoCraft.LOGGER.info("Progress file not found. Creating a new profile for the player.");
             return new ConcurrentHashMap<>();
         }
 
-        try (Reader reader = new FileReader(SAVE_FILE)) {
+        try (Reader reader = Files.newBufferedReader(SAVE_FILE.toPath(), StandardCharsets.UTF_8)) {
             Type type = new TypeToken<ConcurrentHashMap<String, WordProgress>>() {}.getType();
             ConcurrentHashMap<String, WordProgress> loaded = GSON.fromJson(reader, type);
 
-            MinnaNoCraft.LOGGER.info("Progresso do jogador carregado com sucesso!");
+            MinnaNoCraft.LOGGER.info("Player progress loaded successfully!");
             return loaded != null ? loaded : new ConcurrentHashMap<>();
 
         } catch (Exception e) {
-            MinnaNoCraft.LOGGER.error("Falha ao carregar o progresso do jogador! ", e);
+            MinnaNoCraft.LOGGER.error("Failed to load player progress!", e);
             return new ConcurrentHashMap<>();
         }
     }
 
     /**
-     * Salva o estado atual do progresso no arquivo JSON.
+     * Saves the current player progress state to the JSON file using UTF-8 encoding.
+     *
+     * @param progressMap The map containing all current word progress data.
      */
     public void saveAll(ConcurrentHashMap<String, WordProgress> progressMap) {
         try {
-            // Garante que as pastas (config/minnanocraft) existam antes de salvar
-            SAVE_FILE.getParentFile().mkdirs();
+            // Ensures parent directories (config/minnanocraft) exist before saving
+            if (SAVE_FILE.getParentFile() != null) {
+                SAVE_FILE.getParentFile().mkdirs();
+            }
 
-            try (Writer writer = new FileWriter(SAVE_FILE)) {
+            try (Writer writer = Files.newBufferedWriter(SAVE_FILE.toPath(), StandardCharsets.UTF_8)) {
                 GSON.toJson(progressMap, writer);
             }
         } catch (Exception e) {
-            MinnaNoCraft.LOGGER.error("Falha ao salvar o progresso do jogador! ", e);
+            MinnaNoCraft.LOGGER.error("Failed to save player progress!", e);
         }
     }
 }
