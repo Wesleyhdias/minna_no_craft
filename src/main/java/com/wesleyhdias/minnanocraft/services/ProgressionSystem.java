@@ -58,11 +58,20 @@ public class ProgressionSystem {
      * @param event    The type of event triggered by the player.
      */
     public void applyEvent(WordProgress progress, Event event) {
+
+        long cooldownMs = 5000;
         long now = System.currentTimeMillis();
+        long timeSinceLastSeen = now - progress.getLastSeen();
+
+        if (timeSinceLastSeen < cooldownMs) {
+            return;
+        }
+
         progress.setLastSeen(now);
 
         switch (event) {
             case HOVER -> addExposure(progress, 2.0);
+            case HUD_LOOK ->  addExposure(progress, 1.0);
             case SEEN -> addExposure(progress, 0.5);
             case LOOKUP -> {
                 // TODO: UI trigger for LOOKUP is not yet implemented.

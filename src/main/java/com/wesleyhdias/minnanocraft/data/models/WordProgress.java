@@ -13,8 +13,7 @@ public class WordProgress {
     private double peakExposure = 0.0;
 
     private int seenCount = 0;
-    private Long firstSeen = null;
-    private Long lastSeen = null;
+    private long lastSeen = 0;
 
     /**
      * Tracks how many times the player used the dictionary/lookup feature.
@@ -92,11 +91,8 @@ public class WordProgress {
     public double getExposure() { return exposure; }
     public double getPeakExposure() { return peakExposure; }
 
-    public Long getFirstSeen() { return firstSeen; }
-    public void setFirstSeen(Long firstSeen) { this.firstSeen = firstSeen; }
-
-    public Long getLastSeen() { return lastSeen; }
-    public void setLastSeen(Long lastSeen) { this.lastSeen = lastSeen; }
+    public long getLastSeen() { return lastSeen; }
+    public void setLastSeen(long lastSeen) { this.lastSeen = lastSeen; }
 
     public void incrementSeenCount() { this.seenCount++; }
     public int getSeenCount() { return seenCount; }

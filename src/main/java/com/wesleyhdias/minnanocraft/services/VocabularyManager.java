@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.services;
 
-import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.repository.VocabularyRepository;
+import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Event;
 
@@ -74,12 +74,8 @@ public class VocabularyManager {
 
         // --- ANTISPAM FILTER ---
         // Ignores event triggers if the token was interacted with less than 1 second (1000 ms) ago
-        if (progress.getLastSeen() != null && (now - progress.getLastSeen()) < 1000) {
+        if ((now - progress.getLastSeen()) < 1000) {
             return;
-        }
-
-        if (progress.getFirstSeen() == null) {
-            progress.setFirstSeen(now);
         }
 
         progressionSystem.applyEvent(progress, event);
