@@ -3,7 +3,7 @@ package com.wesleyhdias.minnanocraft.builders;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
-import com.wesleyhdias.minnanocraft.render.DifficultyRenderer;
+import com.wesleyhdias.minnanocraft.renderers.DifficultyRenderer;
 import com.wesleyhdias.minnanocraft.data.models.Word;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
 

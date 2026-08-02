@@ -1,7 +1,8 @@
-package com.wesleyhdias.minnanocraft.services;
+package com.wesleyhdias.minnanocraft.trackers;
 
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.models.Event;
+import com.wesleyhdias.minnanocraft.services.VocabularyManager;
 
 import java.util.List;
 

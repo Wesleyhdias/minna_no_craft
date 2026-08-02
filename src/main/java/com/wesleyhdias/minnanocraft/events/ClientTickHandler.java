@@ -3,7 +3,7 @@ package com.wesleyhdias.minnanocraft.events;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.services.TooltipHoverTracker;
+import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
 import com.wesleyhdias.minnanocraft.data.models.Event;
 

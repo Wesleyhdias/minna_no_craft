@@ -1,4 +1,4 @@
-package com.wesleyhdias.minnanocraft.render;
+package com.wesleyhdias.minnanocraft.renderers;
 
 import com.wesleyhdias.minnanocraft.data.models.Word;
 

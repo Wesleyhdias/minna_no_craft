@@ -6,6 +6,7 @@ import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.services.*;
 
+import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.core.component.DataComponents;
