@@ -1017,7 +1017,7 @@
   },
   "stairs": {
     "translations": [
-      "escadaria"
+      "escadas"
     ],
     "kanji": "階段",
     "hiragana": "かいだん",
@@ -3657,7 +3657,7 @@
   },
   "dandelion": {
     "translations": [
-      "dente de leão"
+      "dente-de-leão"
     ],
     "kanji": "タンポポ",
     "hiragana": "たんぽぽ",
@@ -3665,7 +3665,7 @@
   },
   "wildflowers": {
     "translations": [
-      "flores silvestres"
+      "flores-do-campo"
     ],
     "kanji": "野花",
     "hiragana": "のばな",

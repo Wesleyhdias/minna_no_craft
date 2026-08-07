@@ -70,7 +70,7 @@ public class ProgressionSystem {
         progress.setLastSeen(now);
 
         switch (event) {
-            case HOVER -> addExposure(progress, 2.0);
+            case HOVER -> addExposure(progress, 9.0);
             case HUD_LOOK ->  addExposure(progress, 1.0);
             case SEEN -> addExposure(progress, 0.5);
             case LOOKUP -> {
@@ -122,8 +122,7 @@ public class ProgressionSystem {
         for (WordProgress progress : vocabulary.values()) {
             if (progress.getState() != LearningState.ACTIVE) continue;
 
-            Long lastSeen = progress.getLastSeen();
-            if (lastSeen == null) continue;
+            long lastSeen = progress.getLastSeen();
 
             long timeInactive = now - lastSeen;
 

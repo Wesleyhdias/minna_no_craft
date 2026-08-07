@@ -28,7 +28,8 @@ public class TranslationModeResolver {
             if (VocabularyManager.isParticle(token)) continue;
 
             WordProgress progress = VocabularyManager.getProgress(token);
-            if (progress == null || progress.getScriptLevel() == 0) {
+
+            if (progress == null || progress.getScriptLevel() < 2) {
                 return false;
             }
         }

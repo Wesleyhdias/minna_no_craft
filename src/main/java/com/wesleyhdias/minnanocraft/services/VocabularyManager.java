@@ -74,7 +74,7 @@ public class VocabularyManager {
 
         // --- ANTISPAM FILTER ---
         // Ignores event triggers if the token was interacted with less than 1 second (1000 ms) ago
-        if ((now - progress.getLastSeen()) < 1000) {
+        if ((now - progress.getLastSeen()) < 3000) {
             return;
         }
 
@@ -118,7 +118,7 @@ public class VocabularyManager {
         }
 
         // 1. Finds the lowest script level among content words
-        int minContentLevel = 3;
+        int minContentLevel = 4;
         for (String token : contentTokens) {
             WordProgress p = getProgress(token);
             int level = (p != null) ? p.getScriptLevel() : 0;
@@ -134,7 +134,7 @@ public class VocabularyManager {
 
         // 3. JAPANESE MODE ACTIVATED (Level >= 1): Particles have appeared on screen
         if (!particleTokens.isEmpty()) {
-            int minParticleLevel = 3;
+            int minParticleLevel = 4;
             for (String token : particleTokens) {
                 WordProgress p = getProgress(token);
                 int level = (p != null) ? p.getScriptLevel() : 0;
@@ -157,7 +157,7 @@ public class VocabularyManager {
      * Helper fallback method to find the token with the lowest script level in a list.
      */
     private static String getLowestLevelToken(List<String> tokens) {
-        int minLevel = 3;
+        int minLevel = 4;
         for (String token : tokens) {
             WordProgress p = getProgress(token);
             int level = (p != null) ? p.getScriptLevel() : 0;

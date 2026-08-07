@@ -74,8 +74,9 @@ public class WordProgress {
      * @return The corresponding script level.
      */
     private int calculateLevelFromExposure(double exp) {
-        if (exp >= 75.0) return 3;  // Kanji
-        if (exp >= 40.0) return 2;  // Hiragana
+        if (exp >= 90.0) return 4;  // Kanji
+        if (exp >= 50.0) return 3;  // Hiragana
+        if (exp >= 30.0) return 2;  // Romaji inverted structure
         if (exp >= 15.0) return 1;  // Romaji
         return 0;                   // Native Language (e.g., Portuguese)
     }

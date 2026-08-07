@@ -3,6 +3,7 @@ package com.wesleyhdias.minnanocraft.trackers;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.models.Event;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
+import net.minecraft.client.Minecraft;
 
 import java.util.List;
 
@@ -24,7 +25,24 @@ public class TooltipHoverTracker {
      * @param key The unique translation key of the item currently being hovered over.
      */
     public static void onTooltipRendered(String key) {
+        Minecraft client = Minecraft.getInstance();
+
+        // A TRAVA DE SEGURANÇA:
+        // Se a tela for null, o jogador está andando pelo mundo (não está no inventário).
+        // Então ignoramos esse evento completamente para não roubar o lugar do HUD_LOOK!
+        if (client.screen == null) {
+            currentKey = null; // Zera o alvo por garantia
+            return;
+        }
+
         long now = System.currentTimeMillis();
+
+        // NOVIDADE: Proteção contra o "Hover Fantasma"
+        if (now - lastFrameTime > 100) {
+            currentKey = null;
+            lastUnhoverTime = now;
+        }
+
         lastFrameTime = now;
 
         // If the mouse moved to a DIFFERENT item in the inventory

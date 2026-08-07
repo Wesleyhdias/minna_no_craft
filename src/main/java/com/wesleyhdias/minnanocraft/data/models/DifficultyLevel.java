@@ -3,8 +3,9 @@ package com.wesleyhdias.minnanocraft.data.models;
 public enum DifficultyLevel {
     PORTUGUESE(0),
     ROMAJI(1),
-    HIRAGANA(2),
-    KANJI(3);
+    INVERSED(2),
+    HIRAGANA(3),
+    KANJI(4);
 
     private final int level;
 
