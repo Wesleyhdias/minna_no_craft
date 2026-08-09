@@ -16,7 +16,9 @@ import java.util.List;
  */
 public class VocabularyManager {
 
-    /** In-memory cache holding word progress data for thread-safe access. */
+    /**
+     * In-memory cache holding word progress data for thread-safe access.
+     */
     private static ConcurrentHashMap<String, WordProgress> vocabularyCache = new ConcurrentHashMap<>();
 
     // Dependencies

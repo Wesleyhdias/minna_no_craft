@@ -4,5 +4,6 @@ public enum Event {
     HOVER,
     HUD_LOOK,
     SEEN,
+    HOVER_LOOKUP,
     LOOKUP
 }

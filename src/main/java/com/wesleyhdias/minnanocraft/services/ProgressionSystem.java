@@ -18,34 +18,49 @@ public class ProgressionSystem {
     // QUEUE SETTINGS & BALANCING
     // =========================================================
 
-    /** Maximum number of words actively gaining Exposure at the same time. */
+    /**
+     * Maximum number of words actively gaining Exposure at the same time.
+     */
     private final int maxActiveWords = 30;
 
-    /** Exposure points required to reach the MASTERED state. */
+    /**
+     * Exposure points required to reach the MASTERED state.
+     */
     private final double masteryExposure = 100.0;
 
     // REAL-TIME SETTINGS (In Milliseconds)
     // 1 Day = 1000L * 60 * 60 * 24; (Use 5000L for 5-second testing)
 
-    /** Time the player can go without seeing a word before it starts losing XP. */
+    /**
+     * Time the player can go without seeing a word before it starts losing XP.
+     */
     private final long gracePeriodMs = 1000L * 60 * 60 * 24;
 
-    /** Time without seeing a word before it gets demoted back to WAITING (3 days). */
+    /**
+     * Time without seeing a word before it gets demoted back to WAITING (3 days).
+     */
     private final long demotionTimeoutMs = gracePeriodMs * 3;
 
-    /** Amount of XP lost per missed time cycle. */
+    /**
+     * Amount of XP lost per missed time cycle.
+     */
     private final double decayPerCycle = 5.0;
 
-    /** The minimum percentage of the peak exposure a word can drop to (70%). */
+    /**
+     * The minimum percentage of the peak exposure a word can drop to (70%).
+     */
     private final double decayFloorRatio = 0.70;
 
-    /** Bonus multiplier applied when relearning a forgotten word. */
+    /**
+     * Bonus multiplier applied when relearning a forgotten word.
+     */
     private final double relearnMultiplier = 2.5;
 
     /**
      * Default constructor.
      */
-    public ProgressionSystem() {}
+    public ProgressionSystem() {
+    }
 
     // =========================================================
     // PLAYER EVENTS
@@ -70,23 +85,21 @@ public class ProgressionSystem {
         progress.setLastSeen(now);
 
         switch (event) {
-            case HOVER -> addExposure(progress, 9.0);
-            case HUD_LOOK ->  addExposure(progress, 1.0);
+            case HOVER -> addExposure(progress, 2.0);
+            case HUD_LOOK -> addExposure(progress, 1.0);
             case SEEN -> addExposure(progress, 0.5);
-            case LOOKUP -> {
-                // TODO: UI trigger for LOOKUP is not yet implemented.
+            case HOVER_LOOKUP, LOOKUP -> {
                 progress.incrementLookupCount();
 
-                // LOOKUP BREAKS MASTERY! The player admitted they forgot the word.
                 if (progress.getState() == LearningState.MASTERED) {
                     progress.setState(LearningState.ACTIVE);
-
-                    // Drops XP below the mastery threshold (down to 80.0)
                     double dropAmount = progress.getExposure() - (this.masteryExposure - 20.0);
                     progress.updateExposure(-Math.max(0, dropAmount));
-
                 } else {
-                    double droppedExposure = Math.max(0.0, progress.getExposure() - 5.0);
+                    // Define o valor da punição baseado em qual evento foi disparado
+                    double penalty = (event == Event.HOVER_LOOKUP) ? 2.0 : 5.0;
+
+                    double droppedExposure = Math.max(0.0, progress.getExposure() - penalty);
                     progress.updateExposure(droppedExposure - progress.getExposure());
                 }
             }
