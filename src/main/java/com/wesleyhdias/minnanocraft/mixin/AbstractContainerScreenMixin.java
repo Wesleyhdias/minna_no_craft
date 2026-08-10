@@ -37,13 +37,7 @@ public abstract class AbstractContainerScreenMixin {
         }
     }
 
-    // 3. Renderiza a interface
-    @Inject(method = "extractRenderState", at = @At("TAIL"))
-    private void onExtractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
-        PinnedTooltipRenderer.render(graphics);
-    }
-
-    // 4. Eventos de Mouse (Usa a sua assinatura exata MouseButtonEvent)
+    // 3. Eventos de Mouse (Usa a sua assinatura exata MouseButtonEvent)
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
         if (PinnedTooltipInputHandler.handleMouseClick(event.x(), event.y(), event.button())) {

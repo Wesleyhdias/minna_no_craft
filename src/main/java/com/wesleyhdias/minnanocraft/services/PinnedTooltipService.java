@@ -4,8 +4,8 @@ import net.minecraft.world.item.ItemStack;
 
 public class PinnedTooltipService {
 
-    private static boolean pinned = false;
     private static ItemStack pinnedStack = null;
+    private static boolean pinned = false;
     private static int pinMouseX = 0;
     private static int pinMouseY = 0;
 
@@ -13,8 +13,8 @@ public class PinnedTooltipService {
     private static int textY = 0;
 
     private static String currentHoveredToken = null;
-    private static long hoverStartTime = 0;
     private static boolean hoverPunished = false;
+    private static long hoverStartTime = 0;
 
     public static boolean isPinned() {
         return pinned;
@@ -50,7 +50,7 @@ public class PinnedTooltipService {
             unpin();
             return true;
         } else if (stack != null && !stack.isEmpty()) {
-            pinnedStack = stack;
+            pinnedStack = stack.copy();
             pinMouseX = mouseX;
             pinMouseY = mouseY;
             pinned = true;

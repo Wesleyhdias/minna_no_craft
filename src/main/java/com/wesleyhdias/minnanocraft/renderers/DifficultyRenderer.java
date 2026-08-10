@@ -15,4 +15,12 @@ public class DifficultyRenderer {
             default -> null;
         };
     }
+
+    public static String renderPrevious(Word word, int level) {
+        return switch (level) {
+            case 4 -> word.hiragana();     // Kanji (4) -> Mostra Hiragana (3)
+            case 3 -> word.romaji();       // Hiragana (3) -> Mostra Romaji (1)
+            default -> null;
+        };
+    }
 }

@@ -32,21 +32,27 @@ public class PinnedTooltipRenderer {
         int realMouseX = (int) (mc.mouseHandler.xpos() * mc.getWindow().getGuiScaledWidth() / mc.getWindow().getScreenWidth());
         int realMouseY = (int) (mc.mouseHandler.ypos() * mc.getWindow().getGuiScaledHeight() / mc.getWindow().getScreenHeight());
 
-
         List<Component> originalLines = Screen.getTooltipFromItem(mc, stack);
+        if (originalLines.isEmpty()) return;
+
         List<Component> customLines = new ArrayList<>(originalLines);
 
         String translationKey = stack.getItem().getDescriptionId();
-        String originalText = originalLines.isEmpty() ? null : originalLines.getFirst().getString();
+        String originalText = originalLines.getFirst().getString();
 
-        if (!customLines.isEmpty()) {
-            customLines.set(0, TooltipFormatter.formatItemName(translationKey, originalText));
-        }
+        // 1. Substitui o nome apenas se a formatação retornar um componente válido
+        Component formattedName = TooltipFormatter.formatItemName(translationKey, originalText);
+        customLines.set(0, formattedName);
 
+        // 2. Converte para ClientTooltipComponent ignorando qualquer elemento nulo
         List<ClientTooltipComponent> clientLines = new ArrayList<>();
         for (Component comp : customLines) {
-            clientLines.add(ClientTooltipComponent.create(comp.getVisualOrderText()));
+            if (comp != null) {
+                clientLines.add(ClientTooltipComponent.create(comp.getVisualOrderText()));
+            }
         }
+
+        if (clientLines.isEmpty()) return;
 
         ClientTooltipPositioner positioner = (screenWidth, screenHeight, x, y, width, height) -> {
             int boxX = x + 12;
@@ -59,9 +65,10 @@ public class PinnedTooltipRenderer {
             return new Vector2i(boxX, boxY);
         };
 
+        // 3. Desenha o Tooltip congelado principal
         graphics.tooltip(mc.font, clientLines, PinnedTooltipService.getPinMouseX(), PinnedTooltipService.getPinMouseY(), positioner, null);
 
-
+        // 4. Calcula Hitboxes e processa Hover
         HitboxCalculator.rebuildHitboxes(mc, translationKey, PinnedTooltipService.getTextX(), PinnedTooltipService.getTextY(), originalText);
         processHoverSRS(graphics, mc, realMouseX, realMouseY);
     }

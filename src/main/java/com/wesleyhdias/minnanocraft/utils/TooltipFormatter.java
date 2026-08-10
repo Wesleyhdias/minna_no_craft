@@ -52,20 +52,39 @@ public class TooltipFormatter {
             pw.text = word;
             pw.isInteractive = false;
 
-            // Verifica se essa palavra é um dos nossos tokens (ignorando partículas)
             if (structure != null) {
                 for (String token : structure) {
                     if (VocabularyManager.isParticle(token)) continue;
 
+                    Word wordObj = DictionaryLoader.getDictionary().get(token);
+                    if (wordObj == null) continue;
+
                     WordProgress progress = VocabularyManager.getProgress(token);
                     int level = (progress != null) ? progress.getScriptLevel() : 0;
-                    String expectedText = getWordAtLevel(token, level); // ex: "Tetsu"
 
-                    // Se a palavra bater com o texto esperado pelo SRS, achamos o token!
-                    if (word.equalsIgnoreCase(expectedText) || word.equalsIgnoreCase(token)) {
+                    // 1. Pega apenas o texto renderizado (níveis > 0). Se for nível 0, será null.
+                    String renderedText = DifficultyRenderer.render(wordObj, level);
+
+                    // 2. Lógica de Match: Bateu com o texto renderizado? Ou com o token? Ou com ALGUMA das traduções?
+                    boolean matchRender = (word.equalsIgnoreCase(renderedText));
+                    boolean matchToken = word.equalsIgnoreCase(token);
+                    boolean matchTranslation = wordObj.translations() != null &&
+                            wordObj.translations().stream().anyMatch(word::equalsIgnoreCase);
+
+                    if (matchRender || matchToken || matchTranslation) {
                         pw.isInteractive = true;
                         pw.tokenId = token;
-                        pw.prevText = getWordAtLevel(token, Math.max(0, level - 1));
+
+                        // Resolve o texto do Hover
+                        String prevText = DifficultyRenderer.renderPrevious(wordObj, level);
+                        if (prevText == null) {
+                            // Para o hover, exibir a primeira tradução é o ideal (ou você poderia unir todas com ",")
+                            prevText = (wordObj.translations() != null && !wordObj.translations().isEmpty())
+                                    ? wordObj.translations().getFirst()
+                                    : token;
+                        }
+                        pw.prevText = prevText;
+
                         break;
                     }
                 }
@@ -95,19 +114,5 @@ public class TooltipFormatter {
         }
 
         return finalName;
-    }
-
-    public static String getWordAtLevel(String token, int level) {
-        Word word = DictionaryLoader.getDictionary().get(token);
-        if (word == null) return token;
-
-        String renderedText = DifficultyRenderer.render(word, level);
-        if (renderedText != null) {
-            return renderedText;
-        }
-
-        return (word.translations() != null && !word.translations().isEmpty())
-                ? word.translations().getFirst()
-                : token;
     }
 }
