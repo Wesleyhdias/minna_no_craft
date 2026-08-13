@@ -15,12 +15,26 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Mixin;
 
+/**
+ * Mixin for the base {@link AbstractContainerScreen} class.
+ * Intercepts rendering and input events within inventory screens to support
+ * the pinned tooltip feature, overriding default vanilla behavior when a tooltip is pinned.
+ */
 @Mixin(AbstractContainerScreen.class)
 public abstract class AbstractContainerScreenMixin {
 
+    /** Shadow reference to the vanilla field tracking the currently hovered inventory slot. */
     @Shadow protected Slot hoveredSlot;
 
-    // 1. Oculta o tooltip voador padrão se tiver um congelado na tela
+    /**
+     * Injects at the beginning (HEAD) of the vanilla tooltip extraction method.
+     * 1. Hides the default floating tooltip if there is a pinned one on the screen.
+     *
+     * @param graphics The GUI graphics extractor used for drawing.
+     * @param mouseX   The current X coordinate of the mouse.
+     * @param mouseY   The current Y coordinate of the mouse.
+     * @param ci       The callback information provided by Mixin.
+     */
     @Inject(method = "extractTooltip", at = @At("HEAD"), cancellable = true, require = 0)
     private void suppressVanillaTooltip(GuiGraphicsExtractor graphics, int mouseX, int mouseY, CallbackInfo ci) {
         if (PinnedTooltipService.isPinned()) {
@@ -28,7 +42,13 @@ public abstract class AbstractContainerScreenMixin {
         }
     }
 
-    // 2. Eventos de Teclado (Usa a sua assinatura exata KeyEvent)
+    /**
+     * Injects at the beginning (HEAD) of the keyboard event handling method.
+     * 2. Keyboard Events (Uses the exact KeyEvent signature).
+     *
+     * @param event The keyboard event containing key data.
+     * @param cir   The returnable callback information provided by Mixin.
+     */
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void onKeyPressed(KeyEvent event, CallbackInfoReturnable<Boolean> cir) {
         if (PinnedTooltipInputHandler.handleKeyPress(event.key(), this.hoveredSlot != null ? this.hoveredSlot.getItem() : null)) {
@@ -36,7 +56,14 @@ public abstract class AbstractContainerScreenMixin {
         }
     }
 
-    // 3. Eventos de Mouse (Usa a sua assinatura exata MouseButtonEvent)
+    /**
+     * Injects at the beginning (HEAD) of the mouse click handling method.
+     * 3. Mouse Events (Uses the exact MouseButtonEvent signature).
+     *
+     * @param event       The mouse button event containing click data and coordinates.
+     * @param doubleClick Whether this click was a double click.
+     * @param cir         The returnable callback information provided by Mixin.
+     */
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
         if (PinnedTooltipInputHandler.handleMouseClick(event.x(), event.y(), event.button())) {

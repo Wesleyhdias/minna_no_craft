@@ -75,7 +75,7 @@ public class VocabularyManager {
         long now = System.currentTimeMillis();
 
         // --- ANTISPAM FILTER ---
-        // Ignores event triggers if the token was interacted with less than 1 second (1000 ms) ago
+        // Ignores event triggers if the token was interacted with less than 3 second (3000 ms) ago
         if ((now - progress.getLastSeen()) < 3000) {
             return;
         }
@@ -179,7 +179,7 @@ public class VocabularyManager {
                 return token;
             }
         }
-        return tokens.getFirst(); // Fallback for Java 21+
+        return tokens.getFirst();
     }
 
     /**

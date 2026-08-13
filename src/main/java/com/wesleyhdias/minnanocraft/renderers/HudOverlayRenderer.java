@@ -6,7 +6,8 @@ import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.trackers.WorldTargetTracker;
 import com.wesleyhdias.minnanocraft.utils.TargetItemResolver;
 import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
-import com.wesleyhdias.minnanocraft.trackers.FocusTracker;
+import com.wesleyhdias.minnanocraft.trackers.ExposureTracker;
+import com.wesleyhdias.minnanocraft.data.models.Event;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
@@ -22,6 +23,8 @@ import java.util.List;
  * displaying its translated vocabulary name, icon, and lore.
  */
 public class HudOverlayRenderer {
+
+    private static final ExposureTracker hudTracker = new ExposureTracker(2000, Event.HUD_LOOK);
 
     /**
      * Main entry point for rendering the HUD overlay.
@@ -39,12 +42,12 @@ public class HudOverlayRenderer {
         String targetKey = WorldTargetTracker.getTargetTranslationKey();
 
         if (targetKey == null || targetKey.isBlank()) {
-            FocusTracker.reset();
+            hudTracker.reset();
             return;
         }
 
         // Update the tracker to award exposure points if the player stares long enough
-        FocusTracker.update(targetKey);
+        hudTracker.update(targetKey);
 
         // Render the actual visual box
         renderFloatingBox(graphics, client, targetKey);

@@ -40,7 +40,7 @@ public class ItemStructureLoader {
     private static void load() {
         try (InputStream is = ItemStructureLoader.class
                 .getClassLoader()
-                .getResourceAsStream("assets/lang/item_structures.json")) {
+                .getResourceAsStream("assets/structures/item_structures.json")) {
 
             if (is == null) {
                 MinnaNoCraft.LOGGER.error("Item structures file not found!");

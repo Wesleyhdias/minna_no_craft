@@ -40,7 +40,7 @@ public class DictionaryLoader {
     private static void load() {
         try (InputStream is = DictionaryLoader.class
                 .getClassLoader()
-                .getResourceAsStream("assets/lang/banco_palavras_v3.json")) {
+                .getResourceAsStream("assets/dictionary/banco_palavras_v3.json")) {
 
             if (is == null) {
                 MinnaNoCraft.LOGGER.error("Dictionary file not found!");
