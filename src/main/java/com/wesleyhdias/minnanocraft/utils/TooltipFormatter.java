@@ -16,24 +16,49 @@ import net.minecraft.network.chat.Style;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Utility class responsible for formatting item names in tooltips.
+ * It processes the built item name strings, identifies interactive vocabulary tokens,
+ * and applies specific visual styles for rendering in-game.
+ */
 public class TooltipFormatter {
 
+    /** Style applied to interactive dictionary words (yellow and underlined). */
     private static final Style INTERACTIVE_STYLE = Style.EMPTY.withUnderlined(true).withColor(0xFFFF55);
+
+    /** Default style applied to standard, non-interactive words (white). */
     private static final Style DEFAULT_STYLE = Style.EMPTY.withColor(0xFFFFFF);
 
-    // Classe auxiliar para mapear a frase do builder
+    /**
+     * Helper data class to map and hold information about a single parsed word
+     * from the generated item name string.
+     */
     public static class ParsedWord {
+        /** The actual text string of the word to be rendered. */
         public String text;
+
+        /** Indicates whether this word is a mapped vocabulary token and should be interactive. */
         public boolean isInteractive;
+
+        /** The original dictionary token ID associated with this word, if applicable. */
         public String tokenId;
+
+        /** The text to be displayed when the user hovers over or interacts with this word. */
         public String prevText;
     }
 
-    // Pega a frase do builder e descobre quem são os tokens interativos dentro dela
+    /**
+     * Parses the final generated item name phrase and identifies which words
+     * are interactive dictionary tokens.
+     *
+     * @param translationKey The translation key of the item.
+     * @param originalName   The original localized name of the item.
+     * @return A list of {@link ParsedWord} objects containing formatting and mapping data.
+     */
     public static List<ParsedWord> parseBuilderText(String translationKey, String originalName) {
         List<ParsedWord> result = new ArrayList<>();
 
-        // Pega a string final exata, não importa qual builder foi usado ("Espada de Tetsu")
+        // Retrieve the exact final string, regardless of which builder was used (e.g., "Espada de Tetsu")
         String fullText;
         if (TranslationModeResolver.useJapanese(translationKey)) {
             fullText = ItemNameBuilder.build(translationKey);
@@ -41,11 +66,14 @@ public class TooltipFormatter {
             fullText = PortugueseItemNameBuilder.build(translationKey, originalName);
         }
 
+        // Fallback to the original name if the builder fails
         if (fullText == null) fullText = originalName;
         if (fullText == null) return result;
 
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
-        String[] words = fullText.split(" "); // Quebra a frase em palavras
+
+        // Split the complete phrase into individual words
+        String[] words = fullText.split(" ");
 
         for (String word : words) {
             ParsedWord pw = new ParsedWord();
@@ -54,6 +82,7 @@ public class TooltipFormatter {
 
             if (structure != null) {
                 for (String token : structure) {
+                    // Skip grammar particles as they are not standard vocabulary tokens
                     if (VocabularyManager.isParticle(token)) continue;
 
                     Word wordObj = DictionaryLoader.getDictionary().get(token);
@@ -62,10 +91,12 @@ public class TooltipFormatter {
                     WordProgress progress = VocabularyManager.getProgress(token);
                     int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                    // 1. Pega apenas o texto renderizado (níveis > 0). Se for nível 0, será null.
+                    // 1. Get the rendered text for the current difficulty level.
+                    // Returns null if the level is 0.
                     String renderedText = DifficultyRenderer.render(wordObj, level);
 
-                    // 2. Lógica de Match: Bateu com o texto renderizado? Ou com o token? Ou com ALGUMA das traduções?
+                    // 2. Match Logic: Check if the word matches the rendered text, the raw token,
+                    // or ANY of the loaded translations.
                     boolean matchRender = (word.equalsIgnoreCase(renderedText));
                     boolean matchToken = word.equalsIgnoreCase(token);
                     boolean matchTranslation = wordObj.translations() != null &&
@@ -75,10 +106,10 @@ public class TooltipFormatter {
                         pw.isInteractive = true;
                         pw.tokenId = token;
 
-                        // Resolve o texto do Hover
+                        // Resolve the text to be shown on hover
                         String prevText = DifficultyRenderer.renderPrevious(wordObj, level);
                         if (prevText == null) {
-                            // Para o hover, exibir a primeira tradução é o ideal (ou você poderia unir todas com ",")
+                            // If no previous render level exists, default to the first translation or the raw token
                             prevText = (wordObj.translations() != null && !wordObj.translations().isEmpty())
                                     ? wordObj.translations().getFirst()
                                     : token;
@@ -94,6 +125,14 @@ public class TooltipFormatter {
         return result;
     }
 
+    /**
+     * Constructs a styled Minecraft text component from the parsed words,
+     * applying specific colors and formatting to interactive elements.
+     *
+     * @param translationKey The translation key of the item.
+     * @param originalName   The original localized name of the item.
+     * @return A {@link Component} containing the fully formatted and styled item name.
+     */
     public static Component formatItemName(String translationKey, String originalName) {
         List<ParsedWord> parsedWords = parseBuilderText(translationKey, originalName);
         MutableComponent finalName = Component.empty();
@@ -101,13 +140,14 @@ public class TooltipFormatter {
         for (int i = 0; i < parsedWords.size(); i++) {
             ParsedWord pw = parsedWords.get(i);
 
-            // Aplica estilo APENAS se for uma palavra do dicionário mapeada
+            // Apply the interactive style ONLY if the word is a mapped dictionary token
             if (pw.isInteractive) {
                 finalName.append(Component.literal(pw.text).withStyle(INTERACTIVE_STYLE));
             } else {
                 finalName.append(Component.literal(pw.text).withStyle(DEFAULT_STYLE));
             }
 
+            // Append a space between words, except after the last word
             if (i < parsedWords.size() - 1) {
                 finalName.append(Component.literal(" "));
             }

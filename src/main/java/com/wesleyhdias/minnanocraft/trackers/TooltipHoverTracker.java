@@ -27,17 +27,16 @@ public class TooltipHoverTracker {
     public static void onTooltipRendered(String key) {
         Minecraft client = Minecraft.getInstance();
 
-        // A TRAVA DE SEGURANÇA:
-        // Se a tela for null, o jogador está andando pelo mundo (não está no inventário).
-        // Então ignoramos esse evento completamente para não roubar o lugar do HUD_LOOK!
+        // Safety Guard: If screen is null, the player is walking around in the world (not inside an inventory).
+        // Completely ignore this event so it does not conflict with or override the HUD_LOOK tracker!
         if (client.screen == null) {
-            currentKey = null; // Zera o alvo por garantia
+            currentKey = null; // Clear target as a fallback
             return;
         }
 
         long now = System.currentTimeMillis();
 
-        // NOVIDADE: Proteção contra o "Hover Fantasma"
+        // Protection against "ghost hovering" if rendering drops or pauses unexpectedly
         if (now - lastFrameTime > 100) {
             currentKey = null;
             lastUnhoverTime = now;

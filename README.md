@@ -28,8 +28,9 @@ O mod integra-se ao sistema nativo de informações avançadas do Minecraft (**F
 ###  Os 4 Níveis de Dificuldade Dinâmica:
 1. **Nível 1 (Padrão):** Português (ex: `Espada de Ferro`)
 2. **Nível 2 (Rōmaji):** Leitura japonesa com caracteres latinos (ex: `Espada de Tetsu`)
-3. **Nível 3 (Hiragana/Katakana):** Substituição pelos silabários japoneses básicos.
-4. **Nível 4 (Kanji):** Nível avançado com os ideogramas (ou Katakana para termos estrangeiros).
+3. **Nível 3 (Rōmaji):** Leitura japonesa com caracteres latinos, mas agora com estrutura em japones(ex: `Tetsu no Ken`)
+4. **Nível 4 (Hiragana):** Substituição pelo silabário japoneses.
+5. **Nível 5 (Kanji/katakana):** Nível avançado com os ideogramas (ou Katakana para termos estrangeiros).
 
 ---
 
@@ -47,11 +48,11 @@ O mod integra-se ao sistema nativo de informações avançadas do Minecraft (**F
 ### Atualmente Implementado
 - [x] Sistema de tradução dinâmica e progressiva de itens (90% dos items tem traduções).
 - [x] Lógica de rastreamento de progresso baseado em palavras (Tokens).
-- [x] Suporte a 4 níveis de transição (PT-BR ➔ Rōmaji ➔ Hiragana ➔ Kanji).
+- [x] Suporte a 5 níveis de transição (PT-BR ➔ Rōmaji ➔ Rōmaji formatado em japonês ➔ Hiragana ➔ Kanji).
+- [x] **Dicionário Interno (GUI):** Interface no jogo para consultar traduções e revisar palavras aprendidas (consultar o dicionário penalizará o progresso da palavra).
+- [x] **HUD de Alvos Flutuante:** Janela flutuante na tela mostrando o nome traduzido dos blocos/entidades que o jogador está olhando no mapa.
 
 ### Em Desenvolvimento / Próximos Passos
-- [ ] **Dicionário Interno (GUI):** Interface no jogo para consultar traduções e revisar palavras aprendidas (consultar o dicionário penalizará temporariamente o progresso da palavra).
-- [ ] **HUD de Alvos Flutuante:** Janela flutuante na tela mostrando o nome traduzido dos blocos/entidades que o jogador está olhando no mapa.
 - [ ] **Tela de Configurações:** Aba nativa no menu de opções do Minecraft para gerenciar o mod.
 - [ ] **Internacionalização (i18n):** Adaptar o sistema base para suportar Inglês ➔ Japonês (atualmente focado em PT-BR ➔ Japonês).
 

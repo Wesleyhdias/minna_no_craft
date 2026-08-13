@@ -19,8 +19,20 @@ import org.joml.Vector2i;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Renderer responsible for drawing the pinned item tooltips and handling the
+ * Spaced Repetition System (SRS) hover logic when the player interacts with
+ * specific vocabulary tokens.
+ */
 public class PinnedTooltipRenderer {
 
+    /**
+     * Renders the pinned tooltip on the screen if one is currently active.
+     * Captures the actual mouse position, formats the custom vocabulary lines,
+     * and sets up a fixed positioner for the tooltip.
+     *
+     * @param graphics The GUI graphics extractor used for drawing.
+     */
     public static void render(GuiGraphicsExtractor graphics) {
         if (!PinnedTooltipService.isPinned()) return;
 
@@ -29,6 +41,7 @@ public class PinnedTooltipRenderer {
 
         Minecraft mc = Minecraft.getInstance();
 
+        // Calculate actual GUI-scaled mouse coordinates
         int realMouseX = (int) (mc.mouseHandler.xpos() * mc.getWindow().getGuiScaledWidth() / mc.getWindow().getScreenWidth());
         int realMouseY = (int) (mc.mouseHandler.ypos() * mc.getWindow().getGuiScaledHeight() / mc.getWindow().getScreenHeight());
 
@@ -40,11 +53,11 @@ public class PinnedTooltipRenderer {
         String translationKey = stack.getItem().getDescriptionId();
         String originalText = originalLines.getFirst().getString();
 
-        // 1. Substitui o nome apenas se a formatação retornar um componente válido
+        // 1. Replaces the name only if the formatting returns a valid component
         Component formattedName = TooltipFormatter.formatItemName(translationKey, originalText);
         customLines.set(0, formattedName);
 
-        // 2. Converte para ClientTooltipComponent ignorando qualquer elemento nulo
+        // 2. Converts to ClientTooltipComponent, ignoring any null elements
         List<ClientTooltipComponent> clientLines = new ArrayList<>();
         for (Component comp : customLines) {
             if (comp != null) {
@@ -54,6 +67,7 @@ public class PinnedTooltipRenderer {
 
         if (clientLines.isEmpty()) return;
 
+        // Custom positioner to lock the tooltip in place based on when it was pinned
         ClientTooltipPositioner positioner = (screenWidth, screenHeight, x, y, width, height) -> {
             int boxX = x + 12;
             int boxY = y - 12;
@@ -65,14 +79,24 @@ public class PinnedTooltipRenderer {
             return new Vector2i(boxX, boxY);
         };
 
-        // 3. Desenha o Tooltip congelado principal
+        // 3. Renders the main frozen/pinned tooltip
         graphics.tooltip(mc.font, clientLines, PinnedTooltipService.getPinMouseX(), PinnedTooltipService.getPinMouseY(), positioner, null);
 
-        // 4. Calcula Hitboxes e processa Hover
+        // 4. Calculates hitboxes and processes mouse hover interactions
         HitboxCalculator.rebuildHitboxes(mc, translationKey, PinnedTooltipService.getTextX(), PinnedTooltipService.getTextY(), originalText);
         processHoverSRS(graphics, mc, realMouseX, realMouseY);
     }
 
+    /**
+     * Processes mouse hover interactions over interactive vocabulary tokens.
+     * Renders sub-tooltips (definitions/previous texts) and triggers SRS penalty events
+     * (HOVER_LOOKUP) if the player hovers over a word for too long.
+     *
+     * @param graphics The GUI graphics extractor used for drawing.
+     * @param mc       The current Minecraft client instance.
+     * @param mouseX   The current GUI-scaled X coordinate of the mouse.
+     * @param mouseY   The current GUI-scaled Y coordinate of the mouse.
+     */
     private static void processHoverSRS(GuiGraphicsExtractor graphics, Minecraft mc, int mouseX, int mouseY) {
         HitboxCalculator.TokenHitbox hoveredHitbox = HitboxCalculator.getHitboxAt(mouseX, mouseY);
 
@@ -80,17 +104,21 @@ public class PinnedTooltipRenderer {
             String token = hoveredHitbox.token();
 
             if (!token.equals(PinnedTooltipService.getCurrentHoveredToken())) {
+                // Started hovering over a new token
                 PinnedTooltipService.updateHoverState(token, System.currentTimeMillis(), false);
             } else if (!PinnedTooltipService.isHoverPunished() && (System.currentTimeMillis() - PinnedTooltipService.getHoverStartTime() >= 1000)) {
+                // Punish the player if they hover for 1 second or more (triggering a lookup event)
                 VocabularyManager.registerEvent(token, Event.HOVER_LOOKUP);
                 PinnedTooltipService.updateHoverState(token, PinnedTooltipService.getHoverStartTime(), true);
             }
 
+            // Render the sub-tooltip containing the definition or previous script level
             List<ClientTooltipComponent> subTooltipLines = List.of(
                     ClientTooltipComponent.create(Component.literal(hoveredHitbox.prevText()).getVisualOrderText())
             );
             graphics.tooltip(mc.font, subTooltipLines, mouseX, mouseY, DefaultTooltipPositioner.INSTANCE, null);
         } else {
+            // Mouse is not over any interactive token
             PinnedTooltipService.resetHoverState();
         }
     }

@@ -2,7 +2,6 @@ package com.wesleyhdias.minnanocraft.mixin;
 
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import com.wesleyhdias.minnanocraft.events.PinnedTooltipInputHandler;
-import com.wesleyhdias.minnanocraft.renderers.PinnedTooltipRenderer;
 import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.input.MouseButtonEvent;
