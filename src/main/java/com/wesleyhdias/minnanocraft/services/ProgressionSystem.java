@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.services;
 
+import com.wesleyhdias.minnanocraft.utils.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.data.models.LearningState;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Event;
@@ -9,8 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The brain of the mod.
- * Controls exposure gain, state transitions, and real-time forgetting mechanics.
+ * The core brain of the mod's Spaced Repetition System (SRS).
+ * Controls exposure gain, state transitions (Waiting -> Active -> Mastered),
+ * and real-time forgetting/decay mechanics based on player interactions.
  */
 public class ProgressionSystem {
 
@@ -67,21 +69,23 @@ public class ProgressionSystem {
     // =========================================================
 
     /**
-     * Applies a learning event to a specific word's progress.
+     * Applies a learning event to a specific word's progress, enforcing cooldowns
+     * and triggering cache invalidation if the script level changes.
      *
-     * @param progress The word progress to update.
+     * @param progress The word progress data object to update.
      * @param event    The type of event triggered by the player.
      */
     public void applyEvent(WordProgress progress, Event event) {
-
         long cooldownMs = 5000;
         long now = System.currentTimeMillis();
         long timeSinceLastSeen = now - progress.getLastSeen();
 
+        // Enforce a cooldown between repeated events for the same word
         if (timeSinceLastSeen < cooldownMs) {
             return;
         }
 
+        int oldLevel = progress.getScriptLevel();
         progress.setLastSeen(now);
 
         switch (event) {
@@ -96,13 +100,19 @@ public class ProgressionSystem {
                     double dropAmount = progress.getExposure() - (this.masteryExposure - 20.0);
                     progress.updateExposure(-Math.max(0, dropAmount));
                 } else {
-                    // Define o valor da punição baseado em qual evento foi disparado
+                    // Set the penalty value based on which lookup event was triggered
                     double penalty = (event == Event.HOVER_LOOKUP) ? 2.0 : 5.0;
 
                     double droppedExposure = Math.max(0.0, progress.getExposure() - penalty);
                     progress.updateExposure(droppedExposure - progress.getExposure());
                 }
             }
+        }
+
+        int newLevel = progress.getScriptLevel();
+        // If the script level changed, flag the translation cache for clearance
+        if (oldLevel != newLevel) {
+            TranslationCacheManager.pendingClear = true;
         }
     }
 
@@ -123,8 +133,8 @@ public class ProgressionSystem {
     // =========================================================
 
     /**
-     * Processes real-time decay, demotes inactive words, and promotes waiting words.
-     * This should be called periodically (during the auto-save tick).
+     * Processes real-time decay, demotes inactive words, promotes waiting words,
+     * and handles mastery thresholds. This should be called periodically (during the auto-save tick).
      *
      * @param vocabulary The full vocabulary map of the player.
      */
@@ -136,10 +146,9 @@ public class ProgressionSystem {
             if (progress.getState() != LearningState.ACTIVE) continue;
 
             long lastSeen = progress.getLastSeen();
-
             long timeInactive = now - lastSeen;
 
-            // If XP reached 100, master it and free up an ACTIVE slot
+            // If XP reached mastery threshold, master it and free up an ACTIVE slot
             if (progress.getExposure() >= this.masteryExposure) {
                 progress.setState(LearningState.MASTERED);
                 continue;
@@ -164,7 +173,7 @@ public class ProgressionSystem {
             }
         }
 
-        // 2. FILL EMPTY SLOTS IN THE QUEUE
+        // 2. FILL EMPTY SLOTS IN THE ACTIVE QUEUE
         long activeCount = vocabulary.values().stream()
                 .filter(p -> p.getState() == LearningState.ACTIVE)
                 .count();

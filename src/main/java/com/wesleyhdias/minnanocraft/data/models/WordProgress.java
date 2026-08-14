@@ -58,16 +58,6 @@ public class WordProgress {
     }
 
     /**
-     * Returns the highest script level ever achieved using the peak exposure.
-     * This acts as a permanent milestone lock without needing an extra variable.
-     *
-     * @return The highest achieved script level.
-     */
-    public int getHighestScriptLevel() {
-        return calculateLevelFromExposure(this.peakExposure);
-    }
-
-    /**
      * Internal logic to map an exposure value to a script level.
      *
      * @param exp The exposure value to evaluate.

@@ -40,7 +40,7 @@ public class DifficultyRenderer {
     public static String renderPrevious(Word word, int level) {
         return switch (level) {
             case 4 -> word.hiragana();     // Kanji (4) -> Shows Hiragana (3)
-            case 3 -> word.romaji();       // Hiragana (3) -> Shows Romaji (1/2)
+            case 2, 3 -> word.romaji();    // Hiragana (3) -> Shows Romaji (1/2)
             default -> null;
         };
     }

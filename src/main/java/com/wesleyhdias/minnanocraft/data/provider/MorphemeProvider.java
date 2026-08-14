@@ -21,7 +21,7 @@ public class MorphemeProvider implements TokenProvider {
 
         // Retrieves progress for this morpheme using the same logic as content words
         WordProgress progress = VocabularyManager.getProgress(token);
-        int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
+        int level = (progress != null) ? progress.getScriptLevel() : 0;
 
         if (level == 0) {
             return null;

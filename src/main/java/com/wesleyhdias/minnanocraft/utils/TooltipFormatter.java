@@ -13,52 +13,93 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 
+import java.util.LinkedHashMap;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
- * Utility class responsible for formatting item names in tooltips.
- * It processes the built item name strings, identifies interactive vocabulary tokens,
- * and applies specific visual styles for rendering in-game.
+ * Utility class responsible for formatting item names within tooltips.
+ * <p>
+ * It parses item text structures, identifies interactive vocabulary tokens,
+ * applies Spaced Repetition System (SRS) color/style formatting, and utilizes
+ * an LRU Cache system to optimize performance and prevent re-processing strings every render frame.
  */
 public class TooltipFormatter {
 
-    /** Style applied to interactive dictionary words (yellow and underlined). */
     private static final Style INTERACTIVE_STYLE = Style.EMPTY.withUnderlined(true).withColor(0xFFFF55);
-
-    /** Default style applied to standard, non-interactive words (white). */
     private static final Style DEFAULT_STYLE = Style.EMPTY.withColor(0xFFFFFF);
 
+    // ==========================================
+    // CACHE SYSTEM (Max of 500 items to prevent RAM overflow)
+    // ==========================================
+    private static final int MAX_CACHE_SIZE = 500;
+
+    private static final Map<String, List<ParsedWord>> PARSED_CACHE = new LinkedHashMap<String, List<ParsedWord>>(MAX_CACHE_SIZE, 0.75f, true) {
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<String, List<ParsedWord>> eldest) {
+            return size() > MAX_CACHE_SIZE;
+        }
+    };
+
+    private static final Map<String, Component> COMPONENT_CACHE = new LinkedHashMap<String, Component>(MAX_CACHE_SIZE, 0.75f, true) {
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<String, Component> eldest) {
+            return size() > MAX_CACHE_SIZE;
+        }
+    };
+
     /**
-     * Helper data class to map and hold information about a single parsed word
-     * from the generated item name string.
+     * Clears all tooltip caches.
+     * <p>
+     * Should be called whenever a word's difficulty level changes or when cache invalidation is required.
+     */
+    public static void clearCache() {
+        PARSED_CACHE.clear();
+        COMPONENT_CACHE.clear();
+    }
+
+    /**
+     * Generates a unique cache key combining the translation identifier and the original item name.
+     *
+     * @param translationKey The unique translation identifier for the item.
+     * @param originalName   The fallback original name of the item.
+     * @return A composite string key for cache mapping.
+     */
+    private static String getCacheKey(String translationKey, String originalName) {
+        return translationKey + "|" + originalName;
+    }
+    // ==========================================
+
+    /**
+     * Represents a single parsed word component within an item's tooltip display name,
+     * tracking its interactive state and corresponding SRS metadata.
      */
     public static class ParsedWord {
-        /** The actual text string of the word to be rendered. */
         public String text;
-
-        /** Indicates whether this word is a mapped vocabulary token and should be interactive. */
         public boolean isInteractive;
-
-        /** The original dictionary token associated with this word, if applicable. */
         public String token;
-
-        /** The text to be displayed when the user hovers over or interacts with this word. */
         public String prevText;
     }
 
     /**
-     * Parses the final generated item name phrase and identifies which words
-     * are interactive dictionary tokens.
+     * Parses the item builder text into a list of structured words, identifying which parts
+     * correspond to interactive vocabulary tokens based on the player's current SRS difficulty level.
      *
-     * @param translationKey The translation key of the item.
-     * @param originalName   The original localized name of the item.
-     * @return A list of {@link ParsedWord} objects containing formatting and mapping data.
+     * @param translationKey The unique translation identifier for the item.
+     * @param originalName   The fallback original name of the item.
+     * @return A list of {@link ParsedWord} elements representing the tokenized item name.
      */
     public static List<ParsedWord> parseBuilderText(String translationKey, String originalName) {
+        String cacheKey = getCacheKey(translationKey, originalName);
+
+        // 1. Check if the parsed result is already cached
+        if (PARSED_CACHE.containsKey(cacheKey)) {
+            return PARSED_CACHE.get(cacheKey);
+        }
+
         List<ParsedWord> result = new ArrayList<>();
 
-        // Retrieve the exact final string, regardless of which builder was used (e.g., "Espada de Tetsu")
         String fullText;
         if (TranslationModeResolver.useJapanese(translationKey)) {
             fullText = ItemNameBuilder.build(translationKey);
@@ -66,13 +107,10 @@ public class TooltipFormatter {
             fullText = PortugueseItemNameBuilder.build(translationKey, originalName);
         }
 
-        // Fallback to the original name if the builder fails
         if (fullText == null) fullText = originalName;
         if (fullText == null) return result;
 
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
-
-        // Split the complete phrase into individual words
         String[] words = fullText.split(" ");
 
         for (String word : words) {
@@ -82,7 +120,6 @@ public class TooltipFormatter {
 
             if (structure != null) {
                 for (String token : structure) {
-                    // Skip grammar particles as they are not standard vocabulary tokens
                     if (VocabularyManager.isParticle(token)) continue;
 
                     Word wordObj = DictionaryLoader.getDictionary().get(token);
@@ -91,12 +128,8 @@ public class TooltipFormatter {
                     WordProgress progress = VocabularyManager.getProgress(token);
                     int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                    // 1. Get the rendered text for the current difficulty level.
-                    // Returns null if the level is 0.
                     String renderedText = DifficultyRenderer.render(wordObj, level);
 
-                    // 2. Match Logic: Check if the word matches the rendered text, the raw token,
-                    // or ANY of the loaded translations.
                     boolean matchRender = (word.equalsIgnoreCase(renderedText));
                     boolean matchToken = word.equalsIgnoreCase(token);
                     boolean matchTranslation = wordObj.translations() != null &&
@@ -106,53 +139,60 @@ public class TooltipFormatter {
                         pw.isInteractive = true;
                         pw.token = token;
 
-                        // Resolve the text to be shown on hover
                         String prevText = DifficultyRenderer.renderPrevious(wordObj, level);
                         if (prevText == null) {
-                            // If no previous render level exists, default to the first translation or the raw token
                             prevText = (wordObj.translations() != null && !wordObj.translations().isEmpty())
                                     ? wordObj.translations().getFirst()
                                     : token;
                         }
                         pw.prevText = prevText;
-
                         break;
                     }
                 }
             }
             result.add(pw);
         }
+
+        // 2. Save the result into the cache before returning
+        PARSED_CACHE.put(cacheKey, result);
         return result;
     }
 
     /**
-     * Constructs a styled Minecraft text component from the parsed words,
-     * applying specific colors and formatting to interactive elements.
+     * Formats the final Minecraft {@link Component} for the item name, applying specific styling
+     * (colors and underlines) depending on whether a token is interactive or standard text.
      *
-     * @param translationKey The translation key of the item.
-     * @param originalName   The original localized name of the item.
-     * @return A {@link Component} containing the fully formatted and styled item name.
+     * @param translationKey The unique translation identifier for the item.
+     * @param originalName   The fallback original name of the item.
+     * @return A styled {@link Component} ready to be displayed inside tooltips.
      */
     public static Component formatItemName(String translationKey, String originalName) {
+        String cacheKey = getCacheKey(translationKey, originalName);
+
+        // 1. Check if the visual component is already built and cached
+        if (COMPONENT_CACHE.containsKey(cacheKey)) {
+            return COMPONENT_CACHE.get(cacheKey);
+        }
+
         List<ParsedWord> parsedWords = parseBuilderText(translationKey, originalName);
         MutableComponent finalName = Component.empty();
 
         for (int i = 0; i < parsedWords.size(); i++) {
             ParsedWord pw = parsedWords.get(i);
 
-            // Apply the interactive style ONLY if the word is a mapped dictionary token
             if (pw.isInteractive) {
                 finalName.append(Component.literal(pw.text).withStyle(INTERACTIVE_STYLE));
             } else {
                 finalName.append(Component.literal(pw.text).withStyle(DEFAULT_STYLE));
             }
 
-            // Append a space between words, except after the last word
             if (i < parsedWords.size() - 1) {
                 finalName.append(Component.literal(" "));
             }
         }
 
+        // 2. Save the visual component into the cache
+        COMPONENT_CACHE.put(cacheKey, finalName);
         return finalName;
     }
 }

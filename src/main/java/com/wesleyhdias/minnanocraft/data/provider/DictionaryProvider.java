@@ -22,7 +22,7 @@ public class DictionaryProvider implements TokenProvider {
 
         // Retrieves dynamic player progress from VocabularyManager (defaults to level 0 if untracked)
         WordProgress progress = VocabularyManager.getProgress(token);
-        int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
+        int level = (progress != null) ? progress.getScriptLevel() : 0;
 
         return DifficultyRenderer.render(word, level);
     }

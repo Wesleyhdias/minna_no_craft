@@ -4,6 +4,7 @@ import com.wesleyhdias.minnanocraft.data.provider.DictionaryProvider;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.provider.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.data.provider.TokenProvider;
+import com.wesleyhdias.minnanocraft.utils.TranslationCacheManager;
 
 import java.util.List;
 
@@ -25,6 +26,11 @@ public class ItemNameBuilder {
      * @return The fully built item name, or null if no structure is found.
      */
     public static String build(String translationKey) {
+
+        if (TranslationCacheManager.BUILDER_CACHE.containsKey(translationKey)) {
+            return TranslationCacheManager.BUILDER_CACHE.get(translationKey);
+        }
+
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
         // If no structure exists, return null so the game can fall back to standard translation
@@ -38,7 +44,10 @@ public class ItemNameBuilder {
             result.append(resolve(token)).append(" ");
         }
 
-        return result.toString().trim();
+        String finalResult = result.toString().trim();
+        TranslationCacheManager.BUILDER_CACHE.put(translationKey, finalResult);
+
+        return finalResult;
     }
 
     /**

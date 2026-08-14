@@ -9,12 +9,16 @@ import org.jspecify.annotations.NonNull;
 import net.minecraft.client.Minecraft;
 import org.lwjgl.glfw.GLFW;
 
+/**
+ * Renders the dictionary lookup overlay UI on screen.
+ * Displays word details such as kanji, kana, romaji, and translations inside a modal card.
+ */
 public class DictionaryLookupOverlayRenderer {
 
     /**
      * Renders the dictionary lookup UI onto the extracted graphics context.
      *
-     * @param graphics    The GUI graphics extractor instance provided by ScreenMixin.
+     * @param graphics The GUI graphics extractor instance provided by ScreenMixin.
      */
     public static void render(GuiGraphicsExtractor graphics) {
         if (!DictionaryLookupService.isOpen()) return;
@@ -23,64 +27,64 @@ public class DictionaryLookupOverlayRenderer {
         int screenWidth = mc.getWindow().getGuiScaledWidth();
         int screenHeight = mc.getWindow().getGuiScaledHeight();
 
-        // 1. Dimensões do Card Central
+        // 1. Central card dimensions
         int width = 240;
         int height = 135;
         int x = (screenWidth - width) / 2;
         int y = (screenHeight - height) / 2;
 
-        // 2. Fundo e Bordas do Modal
-        graphics.fill(x, y, x + width, y + height, 0xF0121212); // Fundo escuro semissólido
+        // 2. Modal background and borders
+        graphics.fill(x, y, x + width, y + height, 0xF0121212); // Semi-solid dark background
 
         int borderColor = 0xFF444444;
-        graphics.fill(x - 1, y - 1, x + width + 1, y, borderColor);          // Topo
-        graphics.fill(x - 1, y + height, x + width + 1, y + height + 1, borderColor); // Base
-        graphics.fill(x - 1, y, x, y + height, borderColor);                // Esquerda
-        graphics.fill(x + width, y, x + width + 1, y + height, borderColor); // Direita
+        graphics.fill(x - 1, y - 1, x + width + 1, y, borderColor);          // Top
+        graphics.fill(x - 1, y + height, x + width + 1, y + height + 1, borderColor); // Bottom
+        graphics.fill(x - 1, y, x, y + height, borderColor);                // Left
+        graphics.fill(x + width, y, x + width + 1, y + height, borderColor); // Right
 
-        // 3. Cabeçalho
+        // 3. Header
         graphics.text(mc.font, Component.literal("MINNA NO CRAFT"), x + 12, y + 10, 0xFFFFAA00, true);
 
-        // Linha divisória superior
+        // Upper divider line
         graphics.fill(x + 10, y + 22, x + width - 10, y + 23, 0xFF333333);
 
         Word word = DictionaryLookupService.getCurrentWord();
 
         if (word != null) {
-            // 1. Extração dos campos da classe Word
+            // 1. Extract fields from the Word class
             String kanji = word.kanji();
             String hiragana = word.hiragana();
             String romaji = word.romaji();
             String portuguese = String.valueOf(word.translations());
 
-            // 2. Lógica de Fallback para o Título Principal
-            // Se não houver Kanji, usamos o Hiragana/Katakana como título principal
+            // 2. Fallback logic for the main title
+            // If there is no Kanji, use Hiragana/Katakana as the main title
             String mainText = (kanji != null && !kanji.isBlank()) ? kanji : hiragana;
             if (mainText == null || mainText.isBlank()) {
-                mainText = romaji; // Fallback caso extremo
+                mainText = romaji; // Extreme fallback case
             }
 
-            // 3. Montagem da Linha de Leitura (Ex: "ひらがな • hiragana" ou apenas "hiragana")
+            // 3. Assemble the reading line (e.g., "ひらがな • hiragana" or just "hiragana")
             String readingText = getReadingText(kanji, hiragana, romaji);
 
-            // 4. Tradução em português
+            // 4. Translation text
             String translationText = (portuguese != null && !portuguese.isBlank())
                     ? portuguese
                     : "Sem tradução cadastrada";
 
-            // --- RENDERIZAÇÃO NA TELA ---
+            // --- ON-SCREEN RENDERING ---
 
-            // Palavra em Destaque (Kanji ou Kana)
+            // Featured Word (Kanji or Kana)
             assert mainText != null;
             graphics.text(mc.font, Component.literal(mainText), x + 12, y + 32, 0xFF55FFFF, true);
 
-            // Leitura / Pronúncia (Hiragana + Romaji)
+            // Reading / Pronunciation (Hiragana + Romaji)
             graphics.text(mc.font, Component.literal("Leitura: " + readingText), x + 12, y + 48, 0xFFDCDCDC, true);
 
-            // Linha Divisória Central
+            // Central Divider Line
             graphics.fill(x + 10, y + 64, x + width - 10, y + 65, 0xFF222222);
 
-            // Tradução / Significado
+            // Translation / Meaning
             graphics.text(mc.font, Component.literal("Significado:"), x + 12, y + 72, 0xFF888888, true);
             graphics.text(mc.font, Component.literal(translationText), x + 12, y + 86, 0xFF55FF55, true);
 
@@ -88,12 +92,20 @@ public class DictionaryLookupOverlayRenderer {
             graphics.text(mc.font, Component.literal("Nenhuma palavra encontrada."), x + 12, y + 50, 0xFFFF5555, true);
         }
 
-        // 7. Rodapé (Dica de Atalho)
+        // 7. Footer (Shortcut Hint)
         String closeHint = "[ESC] Fechar";
         int hintWidth = mc.font.width(closeHint);
         graphics.text(mc.font, Component.literal(closeHint), x + width - hintWidth - 12, y + height - 16, 0xFF666666, true);
     }
 
+    /**
+     * Assembles the combined reading string containing hiragana and romaji.
+     *
+     * @param kanji    The kanji representation.
+     * @param hiragana The hiragana representation.
+     * @param romaji   The romaji representation.
+     * @return A formatted reading string, or a fallback dash if none are available.
+     */
     private static @NonNull String getReadingText(String kanji, String hiragana, String romaji) {
         StringBuilder readingBuilder = new StringBuilder();
         if (kanji != null && !kanji.isBlank() && hiragana != null && !hiragana.isBlank()) {

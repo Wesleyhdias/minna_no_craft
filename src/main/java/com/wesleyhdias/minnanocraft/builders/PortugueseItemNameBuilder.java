@@ -6,6 +6,7 @@ import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.renderers.DifficultyRenderer;
 import com.wesleyhdias.minnanocraft.data.models.Word;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
+import com.wesleyhdias.minnanocraft.utils.TranslationCacheManager;
 
 import java.util.Locale;
 import java.util.List;
@@ -26,6 +27,11 @@ public class PortugueseItemNameBuilder {
      * @return The modified item name with partially or fully translated words.
      */
     public static String build(String translationKey, String originalText) {
+
+        if (TranslationCacheManager.BUILDER_CACHE.containsKey(translationKey)) {
+            return TranslationCacheManager.BUILDER_CACHE.get(translationKey);
+        }
+
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
         if (structure == null) {
@@ -44,7 +50,7 @@ public class PortugueseItemNameBuilder {
 
             // Retrieves progress from VocabularyManager to obtain the highest achieved script level
             WordProgress progress = VocabularyManager.getProgress(token);
-            int level = (progress != null) ? progress.getHighestScriptLevel() : 0;
+            int level = (progress != null) ? progress.getScriptLevel() : 0;
 
             if (level == 0) {
                 continue;
@@ -56,6 +62,8 @@ public class PortugueseItemNameBuilder {
                 result = replaceIgnoreCase(result, translation, replacement);
             }
         }
+
+        TranslationCacheManager.BUILDER_CACHE.put(translationKey, result);
 
         return result;
     }
