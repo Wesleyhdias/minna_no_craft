@@ -1,9 +1,12 @@
 package com.wesleyhdias.minnanocraft.events;
 
+import com.wesleyhdias.minnanocraft.services.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.data.loader.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
 import com.wesleyhdias.minnanocraft.utils.HitboxCalculator;
 import com.wesleyhdias.minnanocraft.data.models.Event;
+import com.wesleyhdias.minnanocraft.data.models.Word;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.Minecraft;
@@ -61,6 +64,18 @@ public class PinnedTooltipInputHandler {
             if (clickedHitbox != null) {
                 // The user clicked on a specific interactive vocabulary word
                 VocabularyManager.registerEvent(clickedHitbox.token(), Event.LOOKUP);
+                String token = clickedHitbox.token();
+
+                // 1. Register the SRS event
+                VocabularyManager.registerEvent(token, Event.LOOKUP);
+
+                // 2. Fetch the Word object associated with this token from your manager/loader
+                Word word = DictionaryLoader.getDictionary().get(token);
+
+                // 3. Open the dictionary overlay if the word exists in the database
+                if (word != null) {
+                    DictionaryLookupService.open(word);
+                }
             } else {
                 // The user clicked outside of any interactive word, so unpin the tooltip
                 PinnedTooltipService.unpin();

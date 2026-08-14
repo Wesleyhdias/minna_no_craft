@@ -61,7 +61,7 @@ public class HitboxCalculator {
             // Only create a clickable/hoverable hitbox if the word is an interactive dictionary token!
             if (pw.isInteractive) {
                 activeHitboxes.add(new TokenHitbox(
-                        pw.tokenId,
+                        pw.token,
                         currentX, currentX + wordWidth,
                         textY, textY + lineHeight,
                         pw.prevText

@@ -40,8 +40,8 @@ public class TooltipFormatter {
         /** Indicates whether this word is a mapped vocabulary token and should be interactive. */
         public boolean isInteractive;
 
-        /** The original dictionary token ID associated with this word, if applicable. */
-        public String tokenId;
+        /** The original dictionary token associated with this word, if applicable. */
+        public String token;
 
         /** The text to be displayed when the user hovers over or interacts with this word. */
         public String prevText;
@@ -104,7 +104,7 @@ public class TooltipFormatter {
 
                     if (matchRender || matchToken || matchTranslation) {
                         pw.isInteractive = true;
-                        pw.tokenId = token;
+                        pw.token = token;
 
                         // Resolve the text to be shown on hover
                         String prevText = DifficultyRenderer.renderPrevious(wordObj, level);

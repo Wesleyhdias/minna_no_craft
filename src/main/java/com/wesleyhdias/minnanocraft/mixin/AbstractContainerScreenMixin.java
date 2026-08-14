@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
+import com.wesleyhdias.minnanocraft.renderers.DictionaryLookupOverlayRenderer;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import com.wesleyhdias.minnanocraft.events.PinnedTooltipInputHandler;
 import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
@@ -51,6 +52,11 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void onKeyPressed(KeyEvent event, CallbackInfoReturnable<Boolean> cir) {
+        if (DictionaryLookupOverlayRenderer.keyPressed(event.key())) {
+            cir.setReturnValue(true);
+            return;
+        }
+
         if (PinnedTooltipInputHandler.handleKeyPress(event.key(), this.hoveredSlot != null ? this.hoveredSlot.getItem() : null)) {
             cir.setReturnValue(true);
         }
@@ -66,6 +72,11 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
+        if (DictionaryLookupOverlayRenderer.mouseClicked()) {
+            cir.setReturnValue(true);
+            return;
+        }
+
         if (PinnedTooltipInputHandler.handleMouseClick(event.x(), event.y(), event.button())) {
             cir.setReturnValue(true);
         }

@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
+import com.wesleyhdias.minnanocraft.renderers.DictionaryLookupOverlayRenderer;
 import com.wesleyhdias.minnanocraft.renderers.PinnedTooltipRenderer;
 import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
 
@@ -35,5 +36,7 @@ public abstract class ScreenMixin {
         if (PinnedTooltipService.isPinned()) {
             PinnedTooltipRenderer.render(graphics);
         }
+
+        DictionaryLookupOverlayRenderer.render(graphics);
     }
 }

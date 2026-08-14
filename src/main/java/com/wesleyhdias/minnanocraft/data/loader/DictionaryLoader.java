@@ -6,9 +6,9 @@ import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
 
+import java.nio.charset.StandardCharsets;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.io.InputStream;
 import java.util.HashMap;
