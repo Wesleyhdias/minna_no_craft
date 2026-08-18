@@ -1,13 +1,14 @@
 package com.wesleyhdias.minnanocraft.events;
 
-import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
 import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
+import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
+import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.services.*;
 
-import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
-import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -29,7 +30,13 @@ public class TooltipEventHandler {
      * Registers the tooltip callback to the Fabric event bus.
      */
     public static void register() {
+
         ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
+
+            if (!ModConfig.isEnabled()) {
+                return;
+            }
+
             // Skips if the stack is empty, has no lines, or has a custom renamed name (e.g., via Anvil)
             if (stack.isEmpty() || lines.isEmpty() || stack.has(DataComponents.CUSTOM_NAME)) return;
 

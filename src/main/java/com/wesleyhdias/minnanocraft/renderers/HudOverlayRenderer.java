@@ -35,8 +35,11 @@ public class HudOverlayRenderer {
     public static void renderOverlay(GuiGraphicsExtractor graphics) {
         Minecraft client = Minecraft.getInstance();
 
-        // Do not render if the player is not in-world or if the GUI is hidden (F1)
-        if (client.player == null || client.options.hideGui) return;
+        // Do not render if the player is not in-world, if the GUI is hidden (F1) or if there's another screen active
+        if (client.player == null || client.options.hideGui || client.screen != null) {
+            hudTracker.reset();
+            return;
+        }
 
         // Get the translation key of the block or entity currently in the crosshair
         String targetKey = WorldTargetTracker.getTargetTranslationKey();

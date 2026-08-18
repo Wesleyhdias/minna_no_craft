@@ -1,12 +1,14 @@
 package com.wesleyhdias.minnanocraft.trackers;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.item.ItemEntity;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
+
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.client.Minecraft;
 
 /**
  * Utility tracker to resolve the translation key of the block or entity

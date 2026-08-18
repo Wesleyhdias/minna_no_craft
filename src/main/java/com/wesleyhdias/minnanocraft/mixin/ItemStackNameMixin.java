@@ -1,9 +1,10 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -31,6 +32,10 @@ public abstract class ItemStackNameMixin {
      */
     @Inject(method = "getHoverName", at = @At("RETURN"), cancellable = true)
     private void onGetHoverName(CallbackInfoReturnable<Component> cir) {
+        if (!ModConfig.isEnabled()) {
+            return;
+        }
+
         ItemStack stack = (ItemStack) (Object) this;
 
         // Skips if stack is empty or has a custom user-defined name (e.g., anvil rename)

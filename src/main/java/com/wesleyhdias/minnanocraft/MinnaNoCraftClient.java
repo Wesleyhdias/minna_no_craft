@@ -1,9 +1,10 @@
 package com.wesleyhdias.minnanocraft;
 
-import com.wesleyhdias.minnanocraft.data.loader.KanaLoader;
-import com.wesleyhdias.minnanocraft.events.ClientTickHandler;
-import com.wesleyhdias.minnanocraft.events.TooltipEventHandler;
+import com.wesleyhdias.minnanocraft.events.LanguageScreenHandler;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
+import com.wesleyhdias.minnanocraft.events.TooltipEventHandler;
+import com.wesleyhdias.minnanocraft.events.ClientTickHandler;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.api.ClientModInitializer;
@@ -17,7 +18,9 @@ public class MinnaNoCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        KanaLoader.load();
+        ModConfig.load();
+
+        LanguageScreenHandler.register();
 
         // 1. Loads saved vocabulary progress
         VocabularyManager.load();

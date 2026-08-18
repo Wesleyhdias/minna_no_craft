@@ -1,13 +1,12 @@
 package com.wesleyhdias.minnanocraft.events;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.world.item.ItemStack;
 
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
 import com.wesleyhdias.minnanocraft.data.models.Event;
-
-import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 

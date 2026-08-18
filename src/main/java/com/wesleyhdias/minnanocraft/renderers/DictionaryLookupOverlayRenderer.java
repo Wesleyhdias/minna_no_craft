@@ -5,8 +5,9 @@ import com.wesleyhdias.minnanocraft.data.models.Word;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
-import org.jspecify.annotations.NonNull;
 import net.minecraft.client.Minecraft;
+
+import org.jspecify.annotations.NonNull;
 import org.lwjgl.glfw.GLFW;
 
 /**

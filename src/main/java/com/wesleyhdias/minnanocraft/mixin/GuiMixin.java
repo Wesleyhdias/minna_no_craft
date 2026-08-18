@@ -1,6 +1,8 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.renderers.HudOverlayRenderer;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
+
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.gui.Gui;
@@ -29,6 +31,9 @@ public class GuiMixin {
      */
     @Inject(method = "extractRenderState", at = @At("TAIL"))
     private void onExtractRenderState(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker, CallbackInfo ci) {
+        if (!ModConfig.isEnabled()) {
+            return; // O Minecraft continua com o nome original em português
+        }
 
         HudOverlayRenderer.renderOverlay(graphics);
     }

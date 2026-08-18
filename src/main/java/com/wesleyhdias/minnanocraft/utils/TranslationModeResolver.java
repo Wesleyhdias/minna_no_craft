@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.utils;
 
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.services.VocabularyManager;
+import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 
 import java.util.List;
 

@@ -3,8 +3,8 @@ package com.wesleyhdias.minnanocraft.builders;
 import com.wesleyhdias.minnanocraft.data.provider.DictionaryProvider;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.data.provider.MorphemeProvider;
-import com.wesleyhdias.minnanocraft.data.provider.TokenProvider;
 import com.wesleyhdias.minnanocraft.utils.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.data.provider.TokenProvider;
 
 import java.util.List;
 

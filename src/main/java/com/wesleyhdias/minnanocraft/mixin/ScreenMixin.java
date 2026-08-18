@@ -3,6 +3,7 @@ package com.wesleyhdias.minnanocraft.mixin;
 import com.wesleyhdias.minnanocraft.renderers.DictionaryLookupOverlayRenderer;
 import com.wesleyhdias.minnanocraft.renderers.PinnedTooltipRenderer;
 import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
@@ -33,6 +34,10 @@ public abstract class ScreenMixin {
     // We inject at the TAIL (end) of the master method that combines the screen and native tooltips.
     @Inject(method = "extractRenderStateWithTooltipAndSubtitles", at = @At("TAIL"))
     private void renderPinnedTooltipOnTop(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
+        if (!ModConfig.isEnabled()) {
+            return;
+        }
+
         if (PinnedTooltipService.isPinned()) {
             PinnedTooltipRenderer.render(graphics);
         }

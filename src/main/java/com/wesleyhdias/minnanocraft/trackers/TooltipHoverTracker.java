@@ -1,6 +1,7 @@
 package com.wesleyhdias.minnanocraft.trackers;
 
 import com.wesleyhdias.minnanocraft.data.models.Event;
+
 import net.minecraft.client.Minecraft;
 
 /**

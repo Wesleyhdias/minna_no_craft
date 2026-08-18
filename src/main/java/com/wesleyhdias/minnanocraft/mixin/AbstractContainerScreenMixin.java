@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 import com.wesleyhdias.minnanocraft.renderers.DictionaryLookupOverlayRenderer;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import com.wesleyhdias.minnanocraft.events.PinnedTooltipInputHandler;
@@ -38,6 +39,10 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "extractTooltip", at = @At("HEAD"), cancellable = true, require = 0)
     private void suppressVanillaTooltip(GuiGraphicsExtractor graphics, int mouseX, int mouseY, CallbackInfo ci) {
+        if (!ModConfig.isEnabled()) {
+            return;
+        }
+
         if (PinnedTooltipService.isPinned()) {
             ci.cancel();
         }
@@ -52,6 +57,10 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void onKeyPressed(KeyEvent event, CallbackInfoReturnable<Boolean> cir) {
+        if (!ModConfig.isEnabled()) {
+            return;
+        }
+
         if (DictionaryLookupOverlayRenderer.keyPressed(event.key())) {
             cir.setReturnValue(true);
             return;
@@ -72,6 +81,10 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
+        if (!ModConfig.isEnabled()) {
+            return;
+        }
+
         if (DictionaryLookupOverlayRenderer.mouseClicked()) {
             cir.setReturnValue(true);
             return;
