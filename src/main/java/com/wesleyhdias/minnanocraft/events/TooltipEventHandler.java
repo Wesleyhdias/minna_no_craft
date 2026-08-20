@@ -1,12 +1,12 @@
 package com.wesleyhdias.minnanocraft.events;
 
 import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.config.ModConfig;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.trackers.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 import com.wesleyhdias.minnanocraft.services.*;
 
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
@@ -33,7 +33,7 @@ public class TooltipEventHandler {
 
         ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
 
-            if (!ModConfig.isEnabled()) {
+            if (!ModConfig.getConfig().isEnabled()) {
                 return;
             }
 

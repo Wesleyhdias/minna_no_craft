@@ -39,7 +39,7 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "extractTooltip", at = @At("HEAD"), cancellable = true, require = 0)
     private void suppressVanillaTooltip(GuiGraphicsExtractor graphics, int mouseX, int mouseY, CallbackInfo ci) {
-        if (!ModConfig.isEnabled()) {
+        if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 
@@ -57,7 +57,7 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void onKeyPressed(KeyEvent event, CallbackInfoReturnable<Boolean> cir) {
-        if (!ModConfig.isEnabled()) {
+        if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 
@@ -81,7 +81,7 @@ public abstract class AbstractContainerScreenMixin {
      */
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
-        if (!ModConfig.isEnabled()) {
+        if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 

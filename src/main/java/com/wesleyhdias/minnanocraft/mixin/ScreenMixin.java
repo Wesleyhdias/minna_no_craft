@@ -34,7 +34,7 @@ public abstract class ScreenMixin {
     // We inject at the TAIL (end) of the master method that combines the screen and native tooltips.
     @Inject(method = "extractRenderStateWithTooltipAndSubtitles", at = @At("TAIL"))
     private void renderPinnedTooltipOnTop(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
-        if (!ModConfig.isEnabled()) {
+        if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 

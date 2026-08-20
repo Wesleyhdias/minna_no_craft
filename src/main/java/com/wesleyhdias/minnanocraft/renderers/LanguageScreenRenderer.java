@@ -56,11 +56,12 @@ public class LanguageScreenRenderer {
 
             // --- LANGUAGE VALIDATION LOGIC ---
             String currentLanguage = client.options.languageCode;
-            boolean isSupported = ModConfig.getSupportedLanguages().contains(currentLanguage);
+            boolean isSupported = ModConfig.getConfig().getSupportedLanguages().contains(currentLanguage);
 
             // Forces the config to turn off if the active language is not supported
             if (!isSupported) {
-                ModConfig.setEnabled(false);
+                ModConfig.getConfig().setEnabled(false);
+                ModConfig.save();
             }
             // ---------------------------------
 
@@ -92,7 +93,9 @@ public class LanguageScreenRenderer {
             int buttonY = searchCenterY - (buttonHeight / 2);
 
             Button modToggleButton = Button.builder(getButtonStateText(isSupported), button -> {
-                        ModConfig.toggle();
+                        ModConfig.getConfig().toggleEnabled();
+                        ModConfig.save();
+
                         button.setMessage(getButtonStateText(isSupported));
 
                         Minecraft clientInstance = Minecraft.getInstance();
@@ -139,7 +142,7 @@ public class LanguageScreenRenderer {
             return Component.literal("INCOMPATIBLE").withStyle(ChatFormatting.GRAY);
         }
 
-        if (ModConfig.isEnabled()) {
+        if (ModConfig.getConfig().isEnabled()) {
             return Component.literal("ENABLED").withStyle(ChatFormatting.GREEN);
         } else {
             return Component.literal("DISABLED").withStyle(ChatFormatting.RED);

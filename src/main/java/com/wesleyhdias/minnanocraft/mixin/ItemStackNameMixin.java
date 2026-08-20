@@ -1,6 +1,7 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.config.ConfigData;
 import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
@@ -32,7 +33,7 @@ public abstract class ItemStackNameMixin {
      */
     @Inject(method = "getHoverName", at = @At("RETURN"), cancellable = true)
     private void onGetHoverName(CallbackInfoReturnable<Component> cir) {
-        if (!ModConfig.isEnabled()) {
+        if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 

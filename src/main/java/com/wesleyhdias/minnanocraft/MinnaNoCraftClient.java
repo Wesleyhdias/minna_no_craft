@@ -18,8 +18,6 @@ public class MinnaNoCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        ModConfig.load();
-
         LanguageScreenHandler.register();
 
         // 1. Loads saved vocabulary progress

@@ -21,6 +21,9 @@
 		"client": [
 			"com.wesleyhdias.minnanocraft.MinnaNoCraftClient"
 		],
+		"modmenu": [
+			"com.wesleyhdias.minnanocraft.config.ModMenuIntegration"
+		],
 		"fabric-datagen": [
 			"com.wesleyhdias.minnanocraft.MinnaNoCraftDataGenerator"
 		]

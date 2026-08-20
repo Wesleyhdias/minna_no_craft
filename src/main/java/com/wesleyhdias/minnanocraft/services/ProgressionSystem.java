@@ -4,6 +4,7 @@ import com.wesleyhdias.minnanocraft.utils.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.data.models.LearningState;
 import com.wesleyhdias.minnanocraft.data.models.WordProgress;
 import com.wesleyhdias.minnanocraft.data.models.Event;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import java.util.Comparator;
 import java.util.List;
@@ -21,42 +22,9 @@ public class ProgressionSystem {
     // =========================================================
 
     /**
-     * Maximum number of words actively gaining Exposure at the same time.
-     */
-    private final int maxActiveWords = 30;
-
-    /**
      * Exposure points required to reach the MASTERED state.
      */
     private final double masteryExposure = 100.0;
-
-    // REAL-TIME SETTINGS (In Milliseconds)
-    // 1 Day = 1000L * 60 * 60 * 24; (Use 5000L for 5-second testing)
-
-    /**
-     * Time the player can go without seeing a word before it starts losing XP.
-     */
-    private final long gracePeriodMs = 1000L * 60 * 60 * 24;
-
-    /**
-     * Time without seeing a word before it gets demoted back to WAITING (3 days).
-     */
-    private final long demotionTimeoutMs = gracePeriodMs * 3;
-
-    /**
-     * Amount of XP lost per missed time cycle.
-     */
-    private final double decayPerCycle = 5.0;
-
-    /**
-     * The minimum percentage of the peak exposure a word can drop to (70%).
-     */
-    private final double decayFloorRatio = 0.70;
-
-    /**
-     * Bonus multiplier applied when relearning a forgotten word.
-     */
-    private final double relearnMultiplier = 2.5;
 
     /**
      * Default constructor.
@@ -123,7 +91,9 @@ public class ProgressionSystem {
      * @param baseAmount The base amount of exposure to add.
      */
     private void addExposure(WordProgress progress, double baseAmount) {
-        double multiplier = (progress.getExposure() < progress.getPeakExposure()) ? this.relearnMultiplier : 1.0;
+        double multiplier = (progress.getExposure() < progress.getPeakExposure()) ?
+                ModConfig.getConfig().getRelearnMultiplier() : 1.0;
+
         progress.updateExposure(baseAmount * multiplier);
         progress.incrementSeenCount();
     }
@@ -140,6 +110,7 @@ public class ProgressionSystem {
      */
     public void updateStates(Map<String, WordProgress> vocabulary) {
         long now = System.currentTimeMillis();
+        long inactivityTimeThreshold = ModConfig.getConfig().getInactivityTimeThreshold();
 
         // 1. APPLY DECAY AND DEMOTIONS TO ACTIVE WORDS
         for (WordProgress progress : vocabulary.values()) {
@@ -155,14 +126,14 @@ public class ProgressionSystem {
             }
 
             // If the player hasn't seen the word for the demotion timeout, send it back to WAITING
-            if (timeInactive > this.demotionTimeoutMs) {
+            if (timeInactive > ModConfig.getConfig().getDemotionTimeThreshold()) {
                 progress.setState(LearningState.WAITING);
             }
             // Otherwise, calculate if it lost XP due to inactivity (past the grace period)
-            else if (timeInactive > this.gracePeriodMs) {
-                double cyclesMissed = Math.floor((double) timeInactive / gracePeriodMs);
-                double totalDecay = cyclesMissed * decayPerCycle;
-                double decayFloor = progress.getPeakExposure() * decayFloorRatio;
+            else if (timeInactive > inactivityTimeThreshold) {
+                double cyclesMissed = Math.floor((double) timeInactive / inactivityTimeThreshold);
+                double totalDecay = cyclesMissed * ModConfig.getConfig().getExpLossPerInactivityCycle();
+                double decayFloor = progress.getPeakExposure() * ModConfig.getConfig().getMaxExpLossPercentage();
 
                 double newExposure = Math.max(decayFloor, progress.getExposure() - totalDecay);
 
@@ -178,7 +149,7 @@ public class ProgressionSystem {
                 .filter(p -> p.getState() == LearningState.ACTIVE)
                 .count();
 
-        int freeSlots = this.maxActiveWords - (int) activeCount;
+        int freeSlots = ModConfig.getConfig().getMaxActiveWords() - (int) activeCount;
 
         if (freeSlots > 0) {
             // Gets the most seen WAITING words and promotes them to ACTIVE

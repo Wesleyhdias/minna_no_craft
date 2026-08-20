@@ -6,7 +6,9 @@ import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
+import net.fabricmc.loader.api.FabricLoader;
 
+import java.nio.file.Path;
 import java.util.concurrent.ConcurrentHashMap;
 import java.nio.charset.StandardCharsets;
 import java.lang.reflect.Type;
@@ -22,7 +24,7 @@ public class VocabularyRepository {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     /** File path for storing player progress inside the Minecraft configuration folder. */
-    private static final File SAVE_FILE = new File("config/minnanocraft/player_progress.json");
+    private static final Path SAVE_FILE_PATH = FabricLoader.getInstance().getConfigDir().resolve("minnanocraft/player_progress.json");
 
     /**
      * Loads the progress file from disk.
@@ -31,12 +33,12 @@ public class VocabularyRepository {
      * @return The loaded player progress map.
      */
     public ConcurrentHashMap<String, WordProgress> loadAll() {
-        if (!SAVE_FILE.exists()) {
+        if (!Files.exists(SAVE_FILE_PATH)) {
             MinnaNoCraft.LOGGER.info("Progress file not found. Creating a new profile for the player.");
             return new ConcurrentHashMap<>();
         }
 
-        try (Reader reader = Files.newBufferedReader(SAVE_FILE.toPath(), StandardCharsets.UTF_8)) {
+        try (Reader reader = Files.newBufferedReader(SAVE_FILE_PATH, StandardCharsets.UTF_8)) {
             Type type = new TypeToken<ConcurrentHashMap<String, WordProgress>>() {}.getType();
             ConcurrentHashMap<String, WordProgress> loaded = GSON.fromJson(reader, type);
 
@@ -57,11 +59,11 @@ public class VocabularyRepository {
     public void saveAll(ConcurrentHashMap<String, WordProgress> progressMap) {
         try {
             // Ensures parent directories (config/minnanocraft) exist before saving
-            if (SAVE_FILE.getParentFile() != null) {
-                SAVE_FILE.getParentFile().mkdirs();
+            if (SAVE_FILE_PATH.getParent() != null) {
+                Files.createDirectories(SAVE_FILE_PATH.getParent());
             }
 
-            try (Writer writer = Files.newBufferedWriter(SAVE_FILE.toPath(), StandardCharsets.UTF_8)) {
+            try (Writer writer = Files.newBufferedWriter(SAVE_FILE_PATH, StandardCharsets.UTF_8)) {
                 GSON.toJson(progressMap, writer);
             }
         } catch (Exception e) {
