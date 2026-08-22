@@ -1,10 +1,9 @@
 package com.wesleyhdias.minnanocraft;
 
-import com.wesleyhdias.minnanocraft.events.LanguageScreenHandler;
-import com.wesleyhdias.minnanocraft.services.VocabularyManager;
-import com.wesleyhdias.minnanocraft.events.TooltipEventHandler;
-import com.wesleyhdias.minnanocraft.events.ClientTickHandler;
-import com.wesleyhdias.minnanocraft.config.ModConfig;
+import com.wesleyhdias.minnanocraft.config.vanilla_injection.LanguageScreenHandler;
+import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.client.tooltip.TooltipEventHandler;
+import com.wesleyhdias.minnanocraft.client.ClientTickHandler;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.api.ClientModInitializer;

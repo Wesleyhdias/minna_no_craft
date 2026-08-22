@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.renderers.HudOverlayRenderer;
-import com.wesleyhdias.minnanocraft.config.ModConfig;
+import com.wesleyhdias.minnanocraft.client.hud.HudOverlayRenderer;
+import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.DeltaTracker;

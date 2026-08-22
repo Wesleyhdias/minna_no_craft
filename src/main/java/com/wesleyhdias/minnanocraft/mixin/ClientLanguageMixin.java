@@ -1,10 +1,10 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 
-import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
+import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import net.minecraft.client.resources.language.ClientLanguage;
-import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.ItemNameBuilder;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.Inject;

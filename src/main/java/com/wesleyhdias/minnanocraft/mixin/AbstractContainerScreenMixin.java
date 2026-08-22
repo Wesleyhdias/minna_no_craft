@@ -1,10 +1,10 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.config.ModConfig;
-import com.wesleyhdias.minnanocraft.renderers.DictionaryLookupOverlayRenderer;
+import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupOverlayRenderer;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import com.wesleyhdias.minnanocraft.events.PinnedTooltipInputHandler;
-import com.wesleyhdias.minnanocraft.services.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipInputHandler;
+import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipService;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.input.KeyEvent;

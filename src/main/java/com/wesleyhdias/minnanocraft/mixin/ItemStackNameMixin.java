@@ -1,11 +1,10 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.builders.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.config.ConfigData;
-import com.wesleyhdias.minnanocraft.data.loader.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.utils.TranslationModeResolver;
-import com.wesleyhdias.minnanocraft.builders.ItemNameBuilder;
-import com.wesleyhdias.minnanocraft.config.ModConfig;
+import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
+import com.wesleyhdias.minnanocraft.language.builder.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
