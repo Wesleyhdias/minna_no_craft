@@ -2,16 +2,16 @@ package com.wesleyhdias.minnanocraft.config.vanilla_injection;
 
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
-import net.fabricmc.fabric.api.client.screen.v1.Screens;
-import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.AbstractSelectionList;
 import net.minecraft.client.gui.components.AbstractWidget;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.components.EditBox;
+import net.fabricmc.fabric.api.client.screen.v1.Screens;
 import net.minecraft.client.gui.components.StringWidget;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
+import net.minecraft.ChatFormatting;
 
 import java.util.WeakHashMap;
 

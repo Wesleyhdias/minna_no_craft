@@ -1,10 +1,10 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryProvider;
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
  * Utility builder responsible for constructing an item's Japanese name
  * by resolving its tokens through a list of providers.
  */
-public class ItemNameBuilder {
+public class JapaneseItemNameBuilder {
 
     private static final List<TokenProvider> PROVIDERS = List.of(
             new DictionaryProvider(),

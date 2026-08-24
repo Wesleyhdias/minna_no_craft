@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.client.hud;
 
-import com.wesleyhdias.minnanocraft.srs.ExposureTracker;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
+import com.wesleyhdias.minnanocraft.srs.ExposureTracker;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;

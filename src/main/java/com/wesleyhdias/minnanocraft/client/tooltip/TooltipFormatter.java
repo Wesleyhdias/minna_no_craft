@@ -1,13 +1,13 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
-import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
-import com.wesleyhdias.minnanocraft.language.builder.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import net.minecraft.network.chat.MutableComponent;
@@ -103,7 +103,7 @@ public class TooltipFormatter {
 
         String fullText;
         if (TranslationModeResolver.useJapanese(translationKey)) {
-            fullText = ItemNameBuilder.build(translationKey);
+            fullText = JapaneseItemNameBuilder.build(translationKey);
         } else {
             fullText = PortugueseItemNameBuilder.build(translationKey, originalName);
         }
@@ -121,12 +121,12 @@ public class TooltipFormatter {
 
             if (structure != null) {
                 for (String token : structure) {
-                    if (VocabularyManager.isParticle(token)) continue;
+                    if (PlayerVocabularyManager.isParticle(token)) continue;
 
                     Word wordObj = DictionaryLoader.getDictionary().get(token);
                     if (wordObj == null) continue;
 
-                    WordProgress progress = VocabularyManager.getProgress(token);
+                    WordProgress progress = PlayerVocabularyManager.getProgress(token);
                     int level = (progress != null) ? progress.getScriptLevel() : 0;
 
                     String renderedText = DifficultyResolver.render(wordObj, level);

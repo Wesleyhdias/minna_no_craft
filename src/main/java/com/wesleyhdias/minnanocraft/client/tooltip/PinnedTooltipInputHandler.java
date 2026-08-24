@@ -2,9 +2,9 @@ package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
-import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.Minecraft;
@@ -61,11 +61,11 @@ public class PinnedTooltipInputHandler {
 
             if (clickedHitbox != null) {
                 // The user clicked on a specific interactive vocabulary word
-                VocabularyManager.registerEvent(clickedHitbox.token(), ExpEvents.LOOKUP);
+                PlayerVocabularyManager.registerEvent(clickedHitbox.token(), ExpEvents.LOOKUP);
                 String token = clickedHitbox.token();
 
                 // 1. Register the SRS event
-                VocabularyManager.registerEvent(token, ExpEvents.LOOKUP);
+                PlayerVocabularyManager.registerEvent(token, ExpEvents.LOOKUP);
 
                 // 2. Fetch the Word object associated with this token from your manager/loader
                 Word word = DictionaryLoader.getDictionary().get(token);

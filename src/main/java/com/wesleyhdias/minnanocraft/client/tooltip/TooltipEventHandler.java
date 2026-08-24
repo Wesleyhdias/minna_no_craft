@@ -2,9 +2,9 @@ package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
-import com.wesleyhdias.minnanocraft.language.builder.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
@@ -58,7 +58,7 @@ public class TooltipEventHandler {
                     String customText;
 
                     if (TranslationModeResolver.useJapanese(translationKey)) {
-                        customText = ItemNameBuilder.build(translationKey);
+                        customText = JapaneseItemNameBuilder.build(translationKey);
                     } else {
                         customText = PortugueseItemNameBuilder.build(translationKey, originalText);
                     }
@@ -86,11 +86,11 @@ public class TooltipEventHandler {
                 List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
                 if (structure != null) {
-                    String target = VocabularyManager.getNextTokenToUpgrade(structure);
+                    String target = PlayerVocabularyManager.getNextTokenToUpgrade(structure);
                     lines.add(Component.literal("§7Priority Target: §f" + (target != null ? target : "None")));
 
                     for (String token : structure) {
-                        WordProgress p = VocabularyManager.getProgress(token);
+                        WordProgress p = PlayerVocabularyManager.getProgress(token);
                         double exp = (p != null) ? p.getExposure() : 0.0;
                         int level = (p != null) ? p.getScriptLevel() : 0;
 

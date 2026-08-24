@@ -2,6 +2,7 @@ package com.wesleyhdias.minnanocraft.config.modmenu;
 
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
+import com.wesleyhdias.minnanocraft.config.modmenu.progress.PlayerProgressScreen;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -31,7 +32,7 @@ public class MinnaNoCraftConfigScreen extends Screen {
         // 1. Botão do Dicionário (Mantido no topo)
         this.addRenderableWidget(
                 Button.builder(Component.literal("Dicionário e Progresso"), button -> {
-                            // Futuramente abrirá a tela do dicionário
+                            this.minecraft.setScreen(new PlayerProgressScreen(this));
                         })
                         .bounds(center - (buttonWidth / 2), 10, buttonWidth, buttonHeight)
                         .build()

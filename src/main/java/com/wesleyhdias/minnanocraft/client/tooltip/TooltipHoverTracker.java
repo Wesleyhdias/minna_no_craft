@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.srs.ExposureTracker;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
+import com.wesleyhdias.minnanocraft.srs.ExposureTracker;
 
 import net.minecraft.client.Minecraft;
 

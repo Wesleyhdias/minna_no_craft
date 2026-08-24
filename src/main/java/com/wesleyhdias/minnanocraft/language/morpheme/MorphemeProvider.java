@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.language.morpheme;
 
 import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 /**
@@ -19,7 +19,7 @@ public class MorphemeProvider implements TokenProvider {
         }
 
         // Retrieves progress for this morpheme using the same logic as content words
-        WordProgress progress = VocabularyManager.getProgress(token);
+        WordProgress progress = PlayerVocabularyManager.getProgress(token);
         int level = (progress != null) ? progress.getScriptLevel() : 0;
 
         if (level == 0) {

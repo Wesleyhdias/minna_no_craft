@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner;
@@ -105,7 +105,7 @@ public class PinnedTooltipRenderer {
                 PinnedTooltipService.updateHoverState(token, System.currentTimeMillis(), false);
             } else if (!PinnedTooltipService.isHoverPunished() && (System.currentTimeMillis() - PinnedTooltipService.getHoverStartTime() >= 1000)) {
                 // Punish the player if they hover for 1 second or more (triggering a lookup event)
-                VocabularyManager.registerEvent(token, ExpEvents.HOVER_LOOKUP);
+                PlayerVocabularyManager.registerEvent(token, ExpEvents.HOVER_LOOKUP);
                 PinnedTooltipService.updateHoverState(token, PinnedTooltipService.getHoverStartTime(), true);
             }
 

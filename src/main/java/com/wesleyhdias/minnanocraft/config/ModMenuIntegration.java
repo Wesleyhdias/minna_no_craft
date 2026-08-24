@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.config;
 
+import com.wesleyhdias.minnanocraft.config.modmenu.MinnaNoCraftConfigScreen;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
-import com.wesleyhdias.minnanocraft.config.modmenu.MinnaNoCraftConfigScreen;
 
 public class ModMenuIntegration implements ModMenuApi {
 

@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.config.modmenu;
 
-import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.components.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.Font;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

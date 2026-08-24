@@ -1,9 +1,9 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
-import com.wesleyhdias.minnanocraft.language.builder.ItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
 import net.minecraft.core.component.DataComponents;
@@ -52,7 +52,7 @@ public abstract class ItemStackNameMixin {
             String customText;
 
             if (TranslationModeResolver.useJapanese(translationKey)) {
-                customText = ItemNameBuilder.build(translationKey);
+                customText = JapaneseItemNameBuilder.build(translationKey);
             } else {
                 customText = PortugueseItemNameBuilder.build(translationKey, originalText);
             }

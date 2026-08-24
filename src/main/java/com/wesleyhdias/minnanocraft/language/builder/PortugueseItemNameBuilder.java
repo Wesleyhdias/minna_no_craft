@@ -1,12 +1,12 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
-import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
-import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.Locale;
 import java.util.List;
@@ -49,7 +49,7 @@ public class PortugueseItemNameBuilder {
             }
 
             // Retrieves progress from VocabularyManager to obtain the highest achieved script level
-            WordProgress progress = VocabularyManager.getProgress(token);
+            WordProgress progress = PlayerVocabularyManager.getProgress(token);
             int level = (progress != null) ? progress.getScriptLevel() : 0;
 
             if (level == 0) {

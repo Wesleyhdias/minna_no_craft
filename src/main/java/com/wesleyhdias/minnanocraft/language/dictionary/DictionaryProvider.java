@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.language.dictionary;
 
-import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 /**
@@ -20,7 +20,7 @@ public class DictionaryProvider implements TokenProvider {
         }
 
         // Retrieves dynamic player progress from VocabularyManager (defaults to level 0 if untracked)
-        WordProgress progress = VocabularyManager.getProgress(token);
+        WordProgress progress = PlayerVocabularyManager.getProgress(token);
         int level = (progress != null) ? progress.getScriptLevel() : 0;
 
         return DifficultyResolver.render(word, level);

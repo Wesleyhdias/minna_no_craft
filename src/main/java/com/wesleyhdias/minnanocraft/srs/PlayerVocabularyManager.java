@@ -13,7 +13,7 @@ import java.util.List;
  * Serves as an in-memory cache and orchestrates data persistence,
  * event handling, and target token selection algorithms.
  */
-public class VocabularyManager {
+public class PlayerVocabularyManager {
 
     /**
      * In-memory cache holding word progress data for thread-safe access.
@@ -21,7 +21,7 @@ public class VocabularyManager {
     private static ConcurrentHashMap<String, WordProgress> vocabularyCache = new ConcurrentHashMap<>();
 
     // Dependencies
-    private static final VocabularyRepository repository = new VocabularyRepository();
+    private static final PlayerVocabularyRepository repository = new PlayerVocabularyRepository();
     private static final ProgressionSystem progressionSystem = new ProgressionSystem();
 
     /**

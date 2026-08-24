@@ -2,23 +2,23 @@ package com.wesleyhdias.minnanocraft.srs;
 
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.MinnaNoCraft;
-
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
+
 import net.fabricmc.loader.api.FabricLoader;
 
-import java.nio.file.Path;
 import java.util.concurrent.ConcurrentHashMap;
 import java.nio.charset.StandardCharsets;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.io.*;
 
 /**
  * Repository responsible for persisting and loading the player's vocabulary progress to/from disk in JSON format.
  */
-public class VocabularyRepository {
+public class PlayerVocabularyRepository {
 
     /** Pretty-printed Gson instance for human-readable JSON files. */
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();

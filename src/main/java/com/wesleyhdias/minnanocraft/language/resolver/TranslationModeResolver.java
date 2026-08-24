@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.srs.VocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.List;
@@ -25,9 +25,9 @@ public class TranslationModeResolver {
 
         for (String token : structure) {
             // Ignores particles (like "no") since they don't dictate whether the item format should change
-            if (VocabularyManager.isParticle(token)) continue;
+            if (PlayerVocabularyManager.isParticle(token)) continue;
 
-            WordProgress progress = VocabularyManager.getProgress(token);
+            WordProgress progress = PlayerVocabularyManager.getProgress(token);
 
             if (progress == null || progress.getScriptLevel() < 2) {
                 return false;

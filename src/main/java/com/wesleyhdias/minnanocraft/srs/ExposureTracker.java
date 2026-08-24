@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.srs;
 
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  * <p>
  * Handles focus timers, detects item transitions or timeouts (mouse leaving a tooltip area),
  * triggers cache invalidations when necessary, and delegates vocabulary event registration
- * to the {@link VocabularyManager} once the required focus duration is met.
+ * to the {@link PlayerVocabularyManager} once the required focus duration is met.
  */
 public class ExposureTracker {
 
@@ -85,9 +85,9 @@ public class ExposureTracker {
             List<String> structure = ItemStructureLoader.getStructures().get(targetKey);
 
             if (structure != null && !structure.isEmpty()) {
-                String targetToken = VocabularyManager.getNextTokenToUpgrade(structure);
+                String targetToken = PlayerVocabularyManager.getNextTokenToUpgrade(structure);
                 if (targetToken != null) {
-                    VocabularyManager.registerEvent(targetToken, expEventsType);
+                    PlayerVocabularyManager.registerEvent(targetToken, expEventsType);
                 }
             }
 
