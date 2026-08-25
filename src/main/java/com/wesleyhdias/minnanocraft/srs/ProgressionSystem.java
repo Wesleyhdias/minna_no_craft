@@ -3,8 +3,8 @@ package com.wesleyhdias.minnanocraft.srs;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.srs.models.LearningState;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
-import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import java.util.Comparator;
 import java.util.List;
@@ -24,7 +24,7 @@ public class ProgressionSystem {
     /**
      * Exposure points required to reach the MASTERED state.
      */
-    private final double masteryExposure = 100.0;
+    private final double masteryExposure = ModConfig.getConfig().getMasteryExposure();
 
     /**
      * Default constructor.
@@ -57,9 +57,9 @@ public class ProgressionSystem {
         progress.setLastSeen(now);
 
         switch (expEvents) {
-            case HOVER -> addExposure(progress, 2.0);
-            case HUD_LOOK -> addExposure(progress, 1.0);
-            case SEEN -> addExposure(progress, 0.5);
+            case HOVER -> addExposure(progress, ModConfig.getConfig().getEventHover());
+            case SEEN -> addExposure(progress, ModConfig.getConfig().getEventSeen());
+            case HUD_LOOK -> addExposure(progress, ModConfig.getConfig().getEventHudSeen());
             case HOVER_LOOKUP, LOOKUP -> {
                 progress.incrementLookupCount();
 
@@ -69,7 +69,8 @@ public class ProgressionSystem {
                     progress.updateExposure(-Math.max(0, dropAmount));
                 } else {
                     // Set the penalty value based on which lookup event was triggered
-                    double penalty = (expEvents == ExpEvents.HOVER_LOOKUP) ? 2.0 : 5.0;
+                    double penalty = (expEvents == ExpEvents.HOVER_LOOKUP) ?
+                            ModConfig.getConfig().getEventHoverLookup() : ModConfig.getConfig().getEventLookup();
 
                     double droppedExposure = Math.max(0.0, progress.getExposure() - penalty);
                     progress.updateExposure(droppedExposure - progress.getExposure());

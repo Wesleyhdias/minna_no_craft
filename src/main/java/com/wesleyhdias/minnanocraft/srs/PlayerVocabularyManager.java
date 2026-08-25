@@ -49,6 +49,10 @@ public class PlayerVocabularyManager {
         return vocabularyCache.get(token);
     }
 
+    public static ConcurrentHashMap<String, WordProgress> getVocabularyCache() {
+        return vocabularyCache;
+    }
+
     /**
      * Retrieves the progress for a token, creating a new instance if it doesn't exist.
      *

@@ -47,6 +47,62 @@ public class ConfigData {
      */
     private float maxExpLossPercentage = 0.7f;
 
+    /**
+     * Difficult levels for the progress of the words.
+     */
+    private double expLevel1 = 15.0;
+    private double expLevel2 = 30.0;
+    private double expLevel3 = 45.0;
+    private double expLevel4 = 100.0;
+
+    private double masteryExposure = 115.0;
+
+    private double eventSeen = 2.0;
+    private double eventHudSeen = 1.0;
+    private double eventHover = 0.5;
+    private double eventLookup = 5.0; // esse tira exp
+    private double eventHoverLookup = 5.0; // esse tira exp
+
+    public double getEventSeen() {
+        return eventSeen;
+    }
+
+    public void setEventSeen(double eventSeen) {
+        this.eventSeen = eventSeen;
+    }
+
+    public double getEventHudSeen() {
+        return eventHudSeen;
+    }
+
+    public void setEventHudSeen(double eventHudSeen) {
+        this.eventHudSeen = eventHudSeen;
+    }
+
+    public double getEventHover() {
+        return eventHover;
+    }
+
+    public void setEventHover(double eventHover) {
+        this.eventHover = eventHover;
+    }
+
+    public double getEventLookup() {
+        return eventLookup;
+    }
+
+    public void setEventLookup(double eventLookup) {
+        this.eventLookup = eventLookup;
+    }
+
+    public double getEventHoverLookup() {
+        return eventHoverLookup;
+    }
+
+    public void setEventHoverLookup(double eventHoverLookup) {
+        this.eventHoverLookup = eventHoverLookup;
+    }
+
     public boolean isEnabled() {
         return enabled;
     }
@@ -111,5 +167,45 @@ public class ConfigData {
 
     public void setMaxExpLossPercentage(float maxExpLossPercentage) {
         this.maxExpLossPercentage = maxExpLossPercentage;
+    }
+
+    public double getExpLevel1() {
+        return expLevel1;
+    }
+
+    public void setExpLevel1(double expLevel1) {
+        this.expLevel1 = expLevel1;
+    }
+
+    public double getExpLevel2() {
+        return expLevel2;
+    }
+
+    public void setExpLevel2(double expLevel2) {
+        this.expLevel2 = expLevel2;
+    }
+
+    public double getExpLevel3() {
+        return expLevel3;
+    }
+
+    public void setExpLevel3(double expLevel3) {
+        this.expLevel3 = expLevel3;
+    }
+
+    public double getExpLevel4() {
+        return expLevel4;
+    }
+
+    public void setExpLevel4(double expLevel4) {
+        this.expLevel4 = expLevel4;
+    }
+
+    public double getMasteryExposure() {
+        return masteryExposure;
+    }
+
+    public void setMasteryExposure(double masteryExposure) {
+        this.masteryExposure = masteryExposure;
     }
 }

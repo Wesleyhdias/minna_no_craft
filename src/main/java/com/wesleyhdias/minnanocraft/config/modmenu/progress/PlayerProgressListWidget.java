@@ -2,7 +2,7 @@ package com.wesleyhdias.minnanocraft.config.modmenu.progress;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyRepository;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
@@ -16,7 +16,7 @@ import java.util.List;
 public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgressListEntry> {
 
     private final List<PlayerProgressListEntry> originalEntries = new ArrayList<>();
-    private final PlayerVocabularyRepository repository = new PlayerVocabularyRepository();
+    private final ConcurrentHashMap<String, WordProgress> progressMap = PlayerVocabularyManager.getVocabularyCache();
     private final int listX;
     private final int listWidth;
 
@@ -33,7 +33,6 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
     public enum SortDir { NONE, ASC, DESC }
 
     private void loadWords() {
-        ConcurrentHashMap<String, WordProgress> progressMap = repository.loadAll();
 
         if (progressMap.isEmpty()) {
             this.addEntry(new PlayerProgressListEntry("Nenhuma palavra", "-/-", null, null, this.listX, this.listWidth));
@@ -44,8 +43,8 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
             String token = progress.getWord();
             int level = progress.getScriptLevel();
 
-            String middleText = null;
-            String displayText = token;
+            String middleText;
+            String displayText;
             Word word = DictionaryLoader.getDictionary().get(token);
             if (word == null) {
                 continue;

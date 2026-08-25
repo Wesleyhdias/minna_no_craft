@@ -1,5 +1,7 @@
 package com.wesleyhdias.minnanocraft.srs.models;
 
+import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+
 /**
  * Represents the dynamic learning progress of a specific word by the player.
  * This class is mutable and is serialized/deserialized to JSON via Gson.
@@ -46,6 +48,7 @@ public class WordProgress {
         if (this.exposure > this.peakExposure) {
             this.peakExposure = this.exposure;
         }
+        System.out.println("Exposure final: " + this.exposure);
     }
 
     /**
@@ -64,11 +67,11 @@ public class WordProgress {
      * @return The corresponding script level.
      */
     private int calculateLevelFromExposure(double exp) {
-        if (exp >= 100.0) return 4; // Kanji
-        if (exp >= 45.0) return 3;  // Hiragana
-        if (exp >= 30.0) return 2;  // Romaji inverted structure
-        if (exp >= 15.0) return 1;  // Romaji
-        return 0;                   // Native Language (Portuguese)
+        if (exp >= ModConfig.getConfig().getExpLevel4()) return 4;  // Kanji
+        if (exp >= ModConfig.getConfig().getExpLevel3()) return 3;  // Hiragana
+        if (exp >= ModConfig.getConfig().getExpLevel2()) return 2;  // Romaji inverted structure
+        if (exp >= ModConfig.getConfig().getExpLevel1()) return 1;  // Romaji
+        return 0;                                                   // Native Language (Portuguese)
     }
 
     // =========================================================
