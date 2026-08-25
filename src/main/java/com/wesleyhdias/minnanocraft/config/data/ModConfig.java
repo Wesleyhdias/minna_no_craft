@@ -1,27 +1,32 @@
 package com.wesleyhdias.minnanocraft.config.data;
 
 /**
- * Manages the in-memory state of the global configurations.
+ * Singleton manager responsible for maintaining the in-memory state of global configurations.
+ * Serves as the primary bridge between runtime application settings and disk persistence.
  */
 public class ModConfig {
 
+    /** In-memory cached instance of the configuration data schema. */
     private static ConfigData config;
 
     /**
-     * Universal access point to read or alter configurations.
-     * Lazy-loads the config the first time it is called.
+     * Universal access point to retrieve or modify global configurations.
+     * Lazy-loads settings from disk on the first invocation and ensures
+     * default file creation if the configuration file does not yet exist.
+     *
+     * @return The active {@link ConfigData} instance.
      */
     public static ConfigData getConfig() {
         if (config == null) {
             config = ConfigLoader.load();
-            // Salva logo após carregar para garantir que o arquivo seja criado na primeira vez
+            // Saves immediately after loading to ensure default config creation on first run
             ConfigLoader.save(config);
         }
         return config;
     }
 
     /**
-     * Tells the loader to save the current state to disk.
+     * Persists the current in-memory configuration state to disk via {@link ConfigLoader}.
      */
     public static void save() {
         if (config != null) {

@@ -8,31 +8,51 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 
+/**
+ * Scrollable container widget holding configurable options, controls, and category headers
+ * for the SRS (Spaced Repetition System) configuration menu.
+ */
 public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEntry> {
 
+    /**
+     * Constructs the configuration list widget and populates it with interactive options.
+     *
+     * @param minecraft  The Minecraft client instance.
+     * @param width      Widget total width.
+     * @param height     Widget total height.
+     * @param y          Vertical Y-position of the widget.
+     * @param itemHeight Height allocated per row entry.
+     */
     public ConfigListWidget(Minecraft minecraft, int width, int height, int y, int itemHeight) {
         super(minecraft, width, height, y, itemHeight);
         loadConfigs(minecraft.font, width);
     }
 
+    /**
+     * Populates the widget entries grouped by functional categories:
+     * SRS General Settings, Script Level Thresholds, and Exposure Gain/Loss Events.
+     *
+     * @param font        Font renderer for text layout calculations.
+     * @param screenWidth Screen width used for horizontal centering.
+     */
     private void loadConfigs(Font font, int screenWidth) {
         int center = screenWidth / 2;
         int rowWidth = 310;
         int leftX = center - (rowWidth / 2);
         int rightX = center + (rowWidth / 2);
 
-        // --- Adicionando as configurações ---
+        // --- Category: General SRS Settings ---
 
         this.addEntry(new ConfigListEntry(adder -> {
             Component titleText = Component.literal("--- Configurações gerais do SRS ---");
 
-            // Descobre exatamente qual o tamanho da frase em pixels
+            // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
 
-            // Calcula a posição X para ficar no centro exato da tela
+            // Calculate starting X position to achieve horizontal center alignment
             int startX = (screenWidth - textWidth) / 2;
 
-            // Cria o widget passando o X, Y, Largura, Altura, Texto e Fonte
+            // Instantiate header StringWidget with calculated position and bounds
             StringWidget title = new StringWidget(startX, 0, textWidth, 20, titleText, font);
 
             adder.accept(title);
@@ -86,20 +106,20 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
                 val -> ModConfig.getConfig().setMaxExpLossPercentage(val)
         ));
 
-        // 1. Linha vazia para dar respiro
+        // Empty row entry for visual spacing padding
         this.addEntry(new ConfigListEntry(adder -> {}));
 
-        // 2. Linha de Título
+        // --- Category: Script Level Thresholds ---
         this.addEntry(new ConfigListEntry(adder -> {
             Component titleText = Component.literal("--- Configurações de nivel ---");
 
-            // Descobre exatamente qual o tamanho da frase em pixels
+            // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
 
-            // Calcula a posição X para ficar no centro exato da tela
+            // Calculate starting X position to achieve horizontal center alignment
             int startX = (screenWidth - textWidth) / 2;
 
-            // Cria o widget passando o X, Y, Largura, Altura, Texto e Fonte
+            // Instantiate header StringWidget with calculated position and bounds
             StringWidget title = new StringWidget(startX, 0, textWidth, 20, titleText, font);
 
             adder.accept(title);
@@ -145,20 +165,20 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
                 val -> ModConfig.getConfig().setMasteryExposure(val)
         ));
 
-        // 1. Linha vazia para dar respiro
+        // Empty row entry for visual spacing padding
         this.addEntry(new ConfigListEntry(adder -> {}));
 
-        // 2. Linha de Título
+        // --- Category: EXP Gain / Loss Rules ---
         this.addEntry(new ConfigListEntry(adder -> {
             Component titleText = Component.literal("--- Configurações de ganho de EXP ---");
 
-            // Descobre exatamente qual o tamanho da frase em pixels
+            // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
 
-            // Calcula a posição X para ficar no centro exato da tela
+            // Calculate starting X position to achieve horizontal center alignment
             int startX = (screenWidth - textWidth) / 2;
 
-            // Cria o widget passando o X, Y, Largura, Altura, Texto e Fonte
+            // Instantiate header StringWidget with calculated position and bounds
             StringWidget title = new StringWidget(startX, 0, textWidth, 20, titleText, font);
 
             adder.accept(title);
@@ -205,6 +225,11 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         ));
     }
 
+    /**
+     * Gets the custom width allocated for row rendering inside the selection list.
+     *
+     * @return The row width in pixels.
+     */
     @Override
     public int getRowWidth() {
         return 320;

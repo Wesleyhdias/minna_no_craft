@@ -13,27 +13,50 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 
+/**
+ * GUI Screen for displaying and managing player vocabulary progress.
+ * Provides a split-screen layout containing a scrollable word list on the left
+ * and a detailed inspection panel with level controls on the right.
+ */
 public class PlayerProgressScreen extends Screen {
 
+    /** Reference to the parent screen to return to upon closing. */
     private final Screen parent;
+
+    /** Scrollable list widget displaying player vocabulary entries. */
     private PlayerProgressListWidget listWidget;
 
-    // Precisamos guardar essas medidas para saber onde o jogador clicou
+    /** Left boundary X position for the vocabulary list layout. */
     private int listX;
+
+    /** Calculated width allocation for the vocabulary list layout. */
     private int listWidth;
 
+    /** Interactive button to manually increment selected word script level. */
     private Button btnIncrementLevel;
+
+    /** Interactive button to manually decrement selected word script level. */
     private Button btnDecrementLevel;
 
-    // Controle de estado da ordenação
+    /** Tracks the currently active sorting column. */
     private PlayerProgressListWidget.SortColumn currentSortCol = PlayerProgressListWidget.SortColumn.NONE;
+
+    /** Tracks the currently active sorting direction. */
     private PlayerProgressListWidget.SortDir currentSortDir = PlayerProgressListWidget.SortDir.NONE;
 
+    /**
+     * Constructs the vocabulary progress inspection screen.
+     *
+     * @param parent The parent screen instance.
+     */
     public PlayerProgressScreen(Screen parent) {
         super(Component.literal("Meu Progresso e Vocabulário"));
         this.parent = parent;
     }
 
+    /**
+     * Initializes screen components, list layout bounds, and level control buttons.
+     */
     @Override
     protected void init() {
         super.init();
@@ -54,16 +77,16 @@ public class PlayerProgressScreen extends Screen {
         this.addRenderableWidget(this.listWidget);
 
         int rightPanelX = this.width / 2 + 20;
-        int levelY = 116; // Alinhado verticalmente com o Y = 120 do texto de nível
+        int levelY = 116; // Vertically aligned with Y = 120 level text
 
-        // CORREÇÃO: Usando 'this.btnDecrementLevel' em vez de criar uma variável local 'Button btnDecrementLevel'
+        // Decrement Level (-) Button
         this.btnDecrementLevel = this.addRenderableWidget(
                 Button.builder(Component.literal("-"), button -> this.adjustSelectedLevel(-1))
                         .bounds(rightPanelX + 80, levelY, 16, 16)
                         .build()
         );
 
-        // Botão de Aumentar (+)
+        // Increment Level (+) Button
         this.btnIncrementLevel = this.addRenderableWidget(
                 Button.builder(Component.literal("+"), button -> this.adjustSelectedLevel(1))
                         .bounds(rightPanelX + 100, levelY, 16, 16)
@@ -71,6 +94,12 @@ public class PlayerProgressScreen extends Screen {
         );
     }
 
+    /**
+     * Adjusts the script level of the currently selected word by a delta offset,
+     * recalculating exposure points and persisting changes to disk.
+     *
+     * @param delta The level change step (-1 or +1).
+     */
     private void adjustSelectedLevel(int delta) {
         PlayerProgressListEntry selected = this.listWidget.getSelected();
         if (selected == null || selected.getProgressObj() == null) return;
@@ -78,14 +107,14 @@ public class PlayerProgressScreen extends Screen {
         WordProgress progress = selected.getProgressObj();
         int currentLevel = progress.getScriptLevel();
 
-        // Trava o nível entre 0 e 4
+        // Clamp script level boundary between Level 0 and Level 4
         int newLevel = Math.clamp(currentLevel + delta, 0, 4);
 
         if (newLevel != currentLevel) {
-            // Pega qual deve ser a nova EXP exata
+            // Retrieve required exposure threshold for target level
             double targetExp = getExpForLevel(newLevel);
 
-            // Calcula a diferença (o 'delta') que falta para chegar lá
+            // Calculate exposure difference needed to reach target level
             double expDifference = targetExp - progress.getExposure();
 
             progress.updateExposure(expDifference);
@@ -94,6 +123,12 @@ public class PlayerProgressScreen extends Screen {
         }
     }
 
+    /**
+     * Retrieves target exposure XP threshold required for a given script level.
+     *
+     * @param level Target script level (0-4).
+     * @return Required exposure points.
+     */
     private double getExpForLevel(int level) {
         ConfigData config = ModConfig.getConfig();
         return switch (level) {
@@ -101,10 +136,17 @@ public class PlayerProgressScreen extends Screen {
             case 2 -> config.getExpLevel2();
             case 3 -> config.getExpLevel3();
             case 4 -> config.getExpLevel4();
-            default -> 0.0; // Nível 0
+            default -> 0.0; // Script Level 0
         };
     }
 
+    /**
+     * Handles mouse click input events to detect column header clicks for sorting operations.
+     *
+     * @param event       Mouse button event information.
+     * @param doubleClick True if event originates from a double click.
+     * @return True if mouse click event was processed.
+     */
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         double mouseX = event.x();
@@ -112,7 +154,7 @@ public class PlayerProgressScreen extends Screen {
         int button = event.button();
 
         if (button == 0 && mouseY >= 25 && mouseY <= 40) {
-            // Recriando os mesmos limites fracionados
+            // Fractional bounds corresponding to header column widths
             int col1End = this.listX + (int) (this.listWidth * 0.45);
             int col2End = col1End + (int) (this.listWidth * 0.30);
 
@@ -132,14 +174,19 @@ public class PlayerProgressScreen extends Screen {
         return super.mouseClicked(event, doubleClick);
     }
 
+    /**
+     * Toggles through column sorting states (ASC -> DESC -> NONE).
+     *
+     * @param col Target column to apply sorting on.
+     */
     private void toggleSort(PlayerProgressListWidget.SortColumn col) {
         if (currentSortCol == col) {
-            // Rotaciona: ASC -> DESC -> NONE
+            // Rotate sort direction cycle: ASC -> DESC -> NONE
             currentSortDir = currentSortDir == PlayerProgressListWidget.SortDir.ASC ? PlayerProgressListWidget.SortDir.DESC
                     : currentSortDir == PlayerProgressListWidget.SortDir.DESC ? PlayerProgressListWidget.SortDir.NONE
                     : PlayerProgressListWidget.SortDir.ASC;
         } else {
-            // Nova coluna clicada, começa com ASC
+            // Selected new column, reset direction to ASC
             currentSortCol = col;
             currentSortDir = PlayerProgressListWidget.SortDir.ASC;
         }
@@ -151,6 +198,15 @@ public class PlayerProgressScreen extends Screen {
         this.listWidget.applySorting(currentSortCol, currentSortDir);
     }
 
+    /**
+     * Extracts and processes rendering states for screen elements, including
+     * interactive headers and right-side word detail inspection panel.
+     *
+     * @param guiGraphics Graphics context extractor.
+     * @param mouseX      Current mouse cursor X coordinate.
+     * @param mouseY      Current mouse cursor Y coordinate.
+     * @param partialTick Render tick delta time.
+     */
     @Override
     public void extractRenderState(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTick) {
         guiGraphics.fill(0, 0, this.width, this.height, 0x99000000);
@@ -158,38 +214,38 @@ public class PlayerProgressScreen extends Screen {
 
         guiGraphics.centeredText(this.font, this.title, this.width / 2, 10, 0xFFFFFFFF);
 
-        // --- RENDERIZA O CABEÇALHO CLICÁVEL ---
+        // --- Render Clickable List Header ---
         int headerY = 28;
         int hoverColor = 0xFFFFFFFF;
         int normalColor = 0xFFAAAAAA;
 
-        // Limites para detectar onde o mouse está passando
+        // Hover detection column boundaries
         int col1End = this.listX + (int) (this.listWidth * 0.40);
         int col2End = col1End + (int) (this.listWidth * 0.35);
 
-        // 1. Cabecalho Palavra
+        // 1. "Word" Column Header
         boolean hoverWord = mouseY >= 25 && mouseY <= 40 && mouseX >= this.listX && mouseX < col1End;
         String wordHead = "Palavra" + getSortIcon(PlayerProgressListWidget.SortColumn.WORD);
         guiGraphics.text(this.font, wordHead, this.listX + 6, headerY, hoverWord ? hoverColor : normalColor, false);
 
-        // 2. Cabecalho Meio (Tradução)
+        // 2. "Translation" Column Header
         boolean hoverMid = mouseY >= 25 && mouseY <= 40 && mouseX >= col1End && mouseX < col2End;
         String midHead = "Tradução" + getSortIcon(PlayerProgressListWidget.SortColumn.MIDDLE);
         guiGraphics.text(this.font, midHead, col1End, headerY, hoverMid ? hoverColor : normalColor, false);
 
-        // 3. Cabecalho Nível
+        // 3. "Level" Column Header
         boolean hoverLvl = mouseY >= 25 && mouseY <= 40 && mouseX >= col2End && mouseX <= this.listX + this.listWidth;
         String lvlHead = "Nível" + getSortIcon(PlayerProgressListWidget.SortColumn.LEVEL);
         int lvlWidth = this.font.width(lvlHead);
         guiGraphics.text(this.font, lvlHead, this.listX + this.listWidth - lvlWidth - 10, headerY, hoverLvl ? hoverColor : normalColor, false);
 
-        // --- PAINEL DIREITO ---
+        // --- Render Right Detail Inspection Panel ---
         int rightPanelX = this.width / 2 + 20;
 
         PlayerProgressListEntry selected = this.listWidget.getSelected();
         boolean hasSelection = (selected != null && selected.getWordObj() != null && selected.getProgressObj() != null);
 
-        // CORREÇÃO: A visibilidade dos botões é atualizada SEMPRE, independente de ter seleção ou não
+        // Ensure level control buttons visibility tracks selection state
         if (this.btnDecrementLevel != null) this.btnDecrementLevel.visible = hasSelection;
         if (this.btnIncrementLevel != null) this.btnIncrementLevel.visible = hasSelection;
 
@@ -198,7 +254,7 @@ public class PlayerProgressScreen extends Screen {
                 Word word = selected.getWordObj();
                 WordProgress progress = selected.getProgressObj();
 
-                // 1. Kanji (apenas se existir)
+                // 1. Kanji Representation (Rendered scaled if available)
                 if (word.kanji() != null && !word.kanji().isBlank()) {
                     guiGraphics.text(this.font, "Kanji: ", rightPanelX, 40, 0xFFAAAAAA, false);
 
@@ -213,13 +269,13 @@ public class PlayerProgressScreen extends Screen {
                     guiGraphics.pose().popMatrix();
                 }
 
-                // 2. Romaji
+                // 2. Romaji Representation
                 if (word.romaji() != null && !word.romaji().isBlank()) {
                     guiGraphics.text(this.font, "Romaji: ", rightPanelX, 60, 0xFFAAAAAA, false);
                     guiGraphics.text(this.font, word.romaji(), rightPanelX + 37, 60, 0xFFFF8888, false);
                 }
 
-                // 3. Tradução
+                // 3. Translation
                 String trad = "Nenhuma";
                 if (word.translations() != null && !word.translations().isEmpty()) {
                     trad = word.translations().getFirst();
@@ -227,15 +283,15 @@ public class PlayerProgressScreen extends Screen {
                 guiGraphics.text(this.font, "Tradução: ", rightPanelX, 80, 0xFFAAAAAA, false);
                 guiGraphics.text(this.font, trad, rightPanelX + 55, 80, 0xFFFFFFAA, false);
 
-                // 4. Linha Divisória de Status
+                // 4. Statistics Separator Line
                 guiGraphics.text(this.font, "--- Estatísticas de Aprendizado ---", rightPanelX, 105, 0xFF555555, false);
 
-                // Estado dos botões (desativa se estiver nos limites)
+                // Update level control button active states based on boundary limits
                 int currentLevel = progress.getScriptLevel();
                 this.btnDecrementLevel.active = (currentLevel > 0);
                 this.btnIncrementLevel.active = (currentLevel < 4);
 
-                // 5. Dados do Progresso
+                // 5. Progress Statistics
                 guiGraphics.text(this.font, "Nível Atual: " + currentLevel, rightPanelX, 120, 0xFF55FF55, false);
 
                 String expText = String.format("Exposição Total: %.1f", progress.getExposure());
@@ -248,18 +304,27 @@ public class PlayerProgressScreen extends Screen {
                 guiGraphics.text(this.font, "ERRO: " + e.getClass().getSimpleName(), rightPanelX, 40, 0xFFFF0000, false);
             }
         } else {
-            // Nenhum item selecionado (Tela padrão)
+            // Default placeholder view when no item is selected
             guiGraphics.text(this.font, "Detalhes da Palavra", rightPanelX, 40, 0xFFAAAAAA, false);
             guiGraphics.text(this.font, "Selecione uma palavra na lista", rightPanelX, 60, 0xFF555555, false);
             guiGraphics.text(this.font, "para inspecionar os detalhes...", rightPanelX, 75, 0xFF555555, false);
         }
     }
 
+    /**
+     * Returns a string arrow indicator matching active sorting state for column headers.
+     *
+     * @param col Target column.
+     * @return Sorting indicator icon string or empty string.
+     */
     private String getSortIcon(PlayerProgressListWidget.SortColumn col) {
         if (currentSortCol != col) return "";
         return currentSortDir == PlayerProgressListWidget.SortDir.ASC ? " ▲" : " ▼";
     }
 
+    /**
+     * Screen close handler, updating progression state and clearing active translation caches.
+     */
     @Override
     public void onClose() {
         PlayerVocabularyManager.updateProgression();

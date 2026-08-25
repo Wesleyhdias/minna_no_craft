@@ -3,65 +3,78 @@ package com.wesleyhdias.minnanocraft.config.data;
 import java.util.List;
 
 /**
- * Internal data structure acting as a schema template
- * for Gson to read and write the configuration JSON.
+ * Data structure acting as a schema template for Gson
+ * serialization and deserialization of the mod's configuration JSON file.
  */
 public class ConfigData {
 
+    /** Indicates whether the main mod features are enabled. */
     private boolean enabled = true;
+
+    /** Supported target language codes available in the mod. */
     private List<String> supportedLanguages = List.of("pt_br");
 
-    // --- REGRAS DO SISTEMA ---
+    // --- System Rules ---
 
-    /**
-     * Maximum number of words actively gaining Exposure at the same time.
-     */
+    /** Maximum number of words actively gaining exposure at the same time. */
     private int maxActiveWords = 30;
 
     /**
-     * Time (Ms) the player can go without seeing a word before it starts losing XP.
+     * Elapsed time in milliseconds before a word starts losing exposure points due to player inactivity.
+     * Default: 1 day (86,400,000 ms).
      */
     private long inactivityTimeThreshold = 1000L * 60 * 60 * 24;
-    // 1000L * 60 * 60 * 24 = 1 Day
 
     /**
-     * Time without seeing a word before it gets demoted back to WAITING (3 days).
+     * Elapsed time in milliseconds before an inactive word is demoted back to the WAITING learning state.
+     * Default: 3 days (inactivityTimeThreshold * 3).
      */
     private long demotionTimeThreshold = inactivityTimeThreshold * 3;
 
+    // --- Progression & Balancing Settings ---
 
-    // --- BALANCEAMENTO (MATEMÁTICA DE XP) ---
-
-    /**
-     * Bonus multiplier applied when relearning a forgotten word.
-     */
+    /** Bonus multiplier applied to exposure gain when relearning a previously forgotten word. */
     private float relearnMultiplier = 2.5f;
 
-    /**
-     * Amount of XP lost per missed time cycle.
-     */
+    /** Amount of exposure points lost per inactivity decay cycle. */
     private float expLossPerInactivityCycle = 5.0f;
 
-    /**
-     * The minimum percentage of the peak exposure a word can drop to (70%).
-     */
+    /** Minimum exposure retention floor relative to peak exposure (e.g., 0.7 = 70% retention). */
     private float maxExpLossPercentage = 0.7f;
 
-    /**
-     * Difficult levels for the progress of the words.
-     */
+    /** Exposure required to unlock Script Level 1 (e.g., Romaji). */
     private double expLevel1 = 15.0;
+
+    /** Exposure required to unlock Script Level 2 (e.g., Romaji inverted structure). */
     private double expLevel2 = 30.0;
+
+    /** Exposure required to unlock Script Level 3 (e.g., Hiragana/Katakana). */
     private double expLevel3 = 45.0;
+
+    /** Exposure required to unlock Script Level 4 (e.g., Kanji). */
     private double expLevel4 = 100.0;
 
+    /** Exposure required to consider a word fully mastered. */
     private double masteryExposure = 115.0;
 
+    /** Exposure points awarded when encountering a word in the world. */
     private double eventSeen = 2.0;
+
+    /** Exposure points awarded when seeing a word on the HUD. */
     private double eventHudSeen = 1.0;
+
+    /** Exposure points awarded when hovering over a target item or word. */
     private double eventHover = 0.5;
-    private double eventLookup = 5.0; // esse tira exp
-    private double eventHoverLookup = 5.0; // esse tira exp
+
+    /** Exposure points deducted when actively using the dictionary lookup feature. */
+    private double eventLookup = 5.0;
+
+    /** Exposure points deducted when looking up a word during hover. */
+    private double eventHoverLookup = 5.0;
+
+    // =========================================================
+    // Getters and Setters
+    // =========================================================
 
     public double getEventSeen() {
         return eventSeen;
