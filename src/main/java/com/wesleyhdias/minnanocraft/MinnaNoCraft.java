@@ -5,6 +5,8 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 /**
  * Main common initializer for MinnaNoCraft.
  */
@@ -12,6 +14,9 @@ public class MinnaNoCraft implements ModInitializer {
 
 	public static final String MOD_ID = "minnanocraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	/** Supported language available in the mod. */
+	public static final List<String> SUPPORTED_LANGUAGES = List.of("pt_br", "en_us");
 
 	@Override
 	public void onInitialize() {

@@ -44,7 +44,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         // --- Category: General SRS Settings ---
 
         this.addEntry(new ConfigListEntry(adder -> {
-            Component titleText = Component.literal("--- Configurações gerais do SRS ---");
+            Component titleText = Component.translatable("config.minnanocraft.title.srs_general_settings");
 
             // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
@@ -60,7 +60,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createInt(
                 font, leftX, rightX,
-                Component.literal("Máximo de Palavras Ativas:"),
+                Component.translatable("config.minnanocraft.srs_max_words"),
                 ModConfig.getConfig().getMaxActiveWords(), 30,
                 val -> ModConfig.getConfig().setMaxActiveWords(val)
         ));
@@ -68,7 +68,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         long defaultInactivityMs = 1000L * 60 * 60 * 24;
         this.addEntry(ConfigListEntry.createInt(
                 font, leftX, rightX,
-                Component.literal("Inatividade para perder XP (h):"),
+                Component.translatable("config.minnanocraft.srs_inactivity_time"),
                 (int) (ModConfig.getConfig().getInactivityTimeThreshold() / (1000L * 60 * 60)),
                 (int) (defaultInactivityMs / (1000L * 60 * 60)),
                 val -> ModConfig.getConfig().setInactivityTimeThreshold(val * 1000L * 60 * 60)
@@ -77,8 +77,8 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         long defaultDemotionMs = 1000L * 60 * 60 * 24 * 3;
         this.addEntry(ConfigListEntry.createInt(
                 font, leftX, rightX,
-                Component.literal("Tempo para rebaixamento (h):"),
-                Component.literal("Quando uma palavra sai do estado de ACTIVE (sendo aprendida) e volta para a fila de espera"),
+                Component.translatable("config.minnanocraft.srs_demotion_time"),
+                Component.translatable("config.minnanocraft.hover.srs_demotion_time"),
                 (int) (ModConfig.getConfig().getDemotionTimeThreshold() / (1000L * 60 * 60)),
                 (int) (defaultDemotionMs / (1000L * 60 * 60)),
                 val -> ModConfig.getConfig().setDemotionTimeThreshold(val * 1000L * 60 * 60)
@@ -86,21 +86,21 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createFloat(
                 font, leftX, rightX,
-                Component.literal("Perda de XP por inatividade:"),
+                Component.translatable("config.minnanocraft.srs_exp_loss_per_cycle"),
                 ModConfig.getConfig().getExpLossPerInactivityCycle(), 5.0f,
                 val -> ModConfig.getConfig().setExpLossPerInactivityCycle(val)
         ));
 
         this.addEntry(ConfigListEntry.createFloat(
                 font, leftX, rightX,
-                Component.literal("Multiplicador ao reaprender:"),
+                Component.translatable("config.minnanocraft.srs_relearn_multiplier"),
                 ModConfig.getConfig().getRelearnMultiplier(), 2.5f,
                 val -> ModConfig.getConfig().setRelearnMultiplier(val)
         ));
 
         this.addEntry(ConfigListEntry.createSlider(
                 font, leftX, rightX,
-                Component.literal("Limite Máx. de perda de XP:"),
+                Component.translatable("config.minnanocraft.srs_max_exp_loss_percentage"),
                 ModConfig.getConfig().getMaxExpLossPercentage(),
                 0.7f,
                 val -> ModConfig.getConfig().setMaxExpLossPercentage(val)
@@ -111,7 +111,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         // --- Category: Script Level Thresholds ---
         this.addEntry(new ConfigListEntry(adder -> {
-            Component titleText = Component.literal("--- Configurações de nivel ---");
+            Component titleText = Component.translatable("config.minnanocraft.title.srs_level_settings");
 
             // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
@@ -127,7 +127,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("EXP para atingir Lv.1 (Romaji):"),
+                Component.translatable("config.minnanocraft.srs_exp_level_1"),
                 ModConfig.getConfig().getExpLevel1(),
                 15.0,
                 val -> ModConfig.getConfig().setExpLevel1(val)
@@ -135,7 +135,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("EXP para atingir Lv.2 (Romaji Inv.):"),
+                Component.translatable("config.minnanocraft.srs_exp_level_2"),
                 ModConfig.getConfig().getExpLevel2(),
                 30.0,
                 val -> ModConfig.getConfig().setExpLevel2(val)
@@ -143,7 +143,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("EXP para atingir Lv.3 (Hiragana):"),
+                Component.translatable("config.minnanocraft.srs_exp_level_3"),
                 ModConfig.getConfig().getExpLevel3(),
                 45.0,
                 val -> ModConfig.getConfig().setExpLevel3(val)
@@ -151,7 +151,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("EXP para atingir Lv.4 (Kanji):"),
+                Component.translatable("config.minnanocraft.srs_exp_level_4"),
                 ModConfig.getConfig().getExpLevel4(),
                 100.0,
                 val -> ModConfig.getConfig().setExpLevel4(val)
@@ -159,7 +159,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("EXP para atingir MASTERED:"),
+                Component.translatable("config.minnanocraft.srs_exp_level_mastered"),
                 ModConfig.getConfig().getMasteryExposure(),
                 115.0,
                 val -> ModConfig.getConfig().setMasteryExposure(val)
@@ -170,7 +170,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         // --- Category: EXP Gain / Loss Rules ---
         this.addEntry(new ConfigListEntry(adder -> {
-            Component titleText = Component.literal("--- Configurações de ganho de EXP ---");
+            Component titleText = Component.translatable("config.minnanocraft.title.srs_exp_gain_settings");
 
             // Calculate exact width of the title string in pixels
             int textWidth = font.width(titleText);
@@ -186,39 +186,39 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
 
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("Ganho de EXP para hover::"),
-                Component.literal("EXP concedido ao parar o mouse sobre um item por um tempo"),
+                Component.translatable("config.minnanocraft.srs_exp_gain_per_hover"),
+                Component.translatable("config.minnanocraft.hover.srs_exp_gain_per_hover"),
                 ModConfig.getConfig().getEventHover(),
                 2.0,
                 val -> ModConfig.getConfig().setEventHover(val)
         ));
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("Ganho de EXP pela tela no hud:"),
-                Component.literal("EXP concedido ao olhar para um bloco ou entidade no mundo por um tempo (o seu nome pode ser lido pela tela no hud)"),
+                Component.translatable("config.minnanocraft.srs_exp_gain_per_hud_look"),
+                Component.translatable("config.minnanocraft.hover.srs_exp_gain_per_hud_look"),
                 ModConfig.getConfig().getEventHudSeen(),
                 1.0,
                 val -> ModConfig.getConfig().setEventHudSeen(val)
         ));
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("Ganho de EXP por segurar um item:"),
+                Component.translatable("config.minnanocraft.srs_exp_gain_per_seen"),
                 ModConfig.getConfig().getEventSeen(),
                 0.5,
                 val -> ModConfig.getConfig().setEventSeen(val)
         ));
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("Perda de EXP para hover no tooltip:"),
-                Component.literal("Passar o mouse sobre uma palavra do nome de um item no Tooltip congelado ao pressionar a tecla ALT:"),
+                Component.translatable("config.minnanocraft.srs_exp_gain_per_lookup"),
+                Component.translatable("config.minnanocraft.hover.srs_exp_gain_per_lookup"),
                 ModConfig.getConfig().getEventHoverLookup(),
                 2.0,
                 val -> ModConfig.getConfig().setEventHoverLookup(val)
         ));
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
-                Component.literal("Perda de EXP para abrir o dicionário:"),
-                Component.literal("Ao clicar em uma palavra no tooltip congelado ao pressionar a tecla ALT"),
+                Component.translatable("config.minnanocraft.srs_exp_gain_per_dictionary_lookup"),
+                Component.translatable("config.minnanocraft.hover.srs_exp_gain_per_dictionary_lookup"),
                 ModConfig.getConfig().getEventLookup(),
                 5.0,
                 val -> ModConfig.getConfig().setEventLookup(val)

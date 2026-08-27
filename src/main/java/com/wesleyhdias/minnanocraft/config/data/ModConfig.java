@@ -19,8 +19,6 @@ public class ModConfig {
     public static ConfigData getConfig() {
         if (config == null) {
             config = ConfigLoader.load();
-            // Saves immediately after loading to ensure default config creation on first run
-            ConfigLoader.save(config);
         }
         return config;
     }

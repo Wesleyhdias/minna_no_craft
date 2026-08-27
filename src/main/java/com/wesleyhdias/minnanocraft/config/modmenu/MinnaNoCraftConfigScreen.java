@@ -27,7 +27,7 @@ public class MinnaNoCraftConfigScreen extends Screen {
      * @param parent The parent screen to display when this screen is closed.
      */
     public MinnaNoCraftConfigScreen(Screen parent) {
-        super(Component.literal("MinnaNoCraft - Configurações"));
+        super(Component.translatable("config.minnanocraft.title"));
         this.parent = parent;
     }
 
@@ -53,7 +53,7 @@ public class MinnaNoCraftConfigScreen extends Screen {
 
         // Left button: Opens Dictionary & Vocabulary Progress Screen
         this.addRenderableWidget(
-                Button.builder(Component.literal("Dicionário e Progresso"), button ->
+                Button.builder(Component.translatable("config.minnanocraft.progress_buton"), button ->
                                 this.minecraft.setScreen(new PlayerProgressScreen(this)))
                         .bounds(center - buttonWidth - 5, bottomY, buttonWidth, buttonHeight)
                         .build()

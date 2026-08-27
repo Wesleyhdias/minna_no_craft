@@ -48,7 +48,6 @@ public class WordProgress {
         if (this.exposure > this.peakExposure) {
             this.peakExposure = this.exposure;
         }
-        System.out.println("Exposure final: " + this.exposure);
     }
 
     /**

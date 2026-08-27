@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
@@ -60,7 +60,7 @@ public class TooltipEventHandler {
                     if (TranslationModeResolver.useJapanese(translationKey)) {
                         customText = JapaneseItemNameBuilder.build(translationKey);
                     } else {
-                        customText = PortugueseItemNameBuilder.build(translationKey, originalText);
+                        customText = CurrentLangItemNameBuilder.build(translationKey, originalText);
                     }
 
                     if (customText != null) {

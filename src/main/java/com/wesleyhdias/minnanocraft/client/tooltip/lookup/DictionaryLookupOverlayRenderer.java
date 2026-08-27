@@ -55,7 +55,7 @@ public class DictionaryLookupOverlayRenderer {
             String kanji = word.kanji();
             String hiragana = word.hiragana();
             String romaji = word.romaji();
-            String portuguese = String.valueOf(word.translations());
+            String portuguese = String.valueOf(word.getLocalTranslations());
 
             // 2. Fallback logic for the main title
             // If there is no Kanji, use Hiragana/Katakana as the main title
@@ -79,13 +79,13 @@ public class DictionaryLookupOverlayRenderer {
             graphics.text(mc.font, Component.literal(mainText), x + 12, y + 32, 0xFF55FFFF, true);
 
             // Reading / Pronunciation (Hiragana + Romaji)
-            graphics.text(mc.font, Component.literal("Leitura: " + readingText), x + 12, y + 48, 0xFFDCDCDC, true);
+            graphics.text(mc.font, Component.translatable("lookup_overlay.minnanocraft.reading", readingText), x + 12, y + 48, 0xFFDCDCDC, true);
 
             // Central Divider Line
             graphics.fill(x + 10, y + 64, x + width - 10, y + 65, 0xFF222222);
 
             // Translation / Meaning
-            graphics.text(mc.font, Component.literal("Significado:"), x + 12, y + 72, 0xFF888888, true);
+            graphics.text(mc.font, Component.translatable("lookup_overlay.minnanocraft.meaning"), x + 12, y + 72, 0xFF888888, true);
             graphics.text(mc.font, Component.literal(translationText), x + 12, y + 86, 0xFF55FF55, true);
 
         } else {
@@ -93,9 +93,9 @@ public class DictionaryLookupOverlayRenderer {
         }
 
         // 7. Footer (Shortcut Hint)
-        String closeHint = "[ESC] Fechar";
+        Component closeHint = Component.translatable("lookup_overlay.minnanocraft.close_overlay");
         int hintWidth = mc.font.width(closeHint);
-        graphics.text(mc.font, Component.literal(closeHint), x + width - hintWidth - 12, y + height - 16, 0xFF666666, true);
+        graphics.text(mc.font, closeHint, x + width - hintWidth - 12, y + height - 16, 0xFF666666, true);
     }
 
     /**

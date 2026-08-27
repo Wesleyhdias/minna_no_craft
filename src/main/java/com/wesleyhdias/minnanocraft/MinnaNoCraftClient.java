@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft;
 
+import com.wesleyhdias.minnanocraft.config.vanilla_injection.LanguageChangeHandler;
 import com.wesleyhdias.minnanocraft.config.vanilla_injection.LanguageScreenHandler;
 import com.wesleyhdias.minnanocraft.client.tooltip.TooltipEventHandler;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
@@ -19,13 +20,16 @@ public class MinnaNoCraftClient implements ClientModInitializer {
 
         LanguageScreenHandler.register();
 
-        // 1. Loads saved vocabulary progress
+        // Loads saved vocabulary progress
         PlayerVocabularyManager.load();
         MinnaNoCraft.LOGGER.info("MinnaNoCraft (Client) initialized and progress loaded successfully!");
 
-        // 2. Registers modular event handlers
+        // Registers modular event handlers
         ClientTickHandler.register();
         TooltipEventHandler.register();
+
+        // Registers the vanilla language change observer
+        LanguageChangeHandler.register();
 
         // Ensures the latest state is written to JSON before the client shuts down
         ClientLifecycleEvents.CLIENT_STOPPING.register(client -> {

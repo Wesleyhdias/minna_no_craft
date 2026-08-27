@@ -16,7 +16,7 @@ import java.util.Map;
  * Utility builder responsible for progressively replacing native language words
  * in item names with Japanese scripts based on the player's unlocked script level.
  */
-public class PortugueseItemNameBuilder {
+public class CurrentLangItemNameBuilder {
 
     /**
      * Builds the item name in the native language template, replacing learned words
@@ -58,7 +58,7 @@ public class PortugueseItemNameBuilder {
 
             String replacement = DifficultyResolver.render(word, level);
 
-            for (String translation : word.translations()) {
+            for (String translation : word.getLocalTranslations()) {
                 result = replaceIgnoreCase(result, translation, replacement);
             }
         }

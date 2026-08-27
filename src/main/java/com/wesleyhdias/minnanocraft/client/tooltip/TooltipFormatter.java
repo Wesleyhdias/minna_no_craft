@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
@@ -105,7 +105,7 @@ public class TooltipFormatter {
         if (TranslationModeResolver.useJapanese(translationKey)) {
             fullText = JapaneseItemNameBuilder.build(translationKey);
         } else {
-            fullText = PortugueseItemNameBuilder.build(translationKey, originalName);
+            fullText = CurrentLangItemNameBuilder.build(translationKey, originalName);
         }
 
         if (fullText == null) fullText = originalName;
@@ -133,8 +133,8 @@ public class TooltipFormatter {
 
                     boolean matchRender = (word.equalsIgnoreCase(renderedText));
                     boolean matchToken = word.equalsIgnoreCase(token);
-                    boolean matchTranslation = wordObj.translations() != null &&
-                            wordObj.translations().stream().anyMatch(word::equalsIgnoreCase);
+                    boolean matchTranslation = wordObj.getLocalTranslations() != null &&
+                            wordObj.getLocalTranslations().stream().anyMatch(word::equalsIgnoreCase);
 
                     if (matchRender || matchToken || matchTranslation) {
                         pw.isInteractive = true;
@@ -142,8 +142,8 @@ public class TooltipFormatter {
 
                         String prevText = DifficultyResolver.renderPrevious(wordObj, level);
                         if (prevText == null) {
-                            prevText = (wordObj.translations() != null && !wordObj.translations().isEmpty())
-                                    ? wordObj.translations().getFirst()
+                            prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
+                                    ? wordObj.getLocalTranslations().getFirst()
                                     : token;
                         }
                         pw.prevText = prevText;

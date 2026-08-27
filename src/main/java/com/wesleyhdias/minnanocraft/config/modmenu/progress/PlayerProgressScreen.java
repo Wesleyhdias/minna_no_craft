@@ -77,19 +77,19 @@ public class PlayerProgressScreen extends Screen {
         this.addRenderableWidget(this.listWidget);
 
         int rightPanelX = this.width / 2 + 20;
-        int levelY = 116; // Vertically aligned with Y = 120 level text
+        int levelY = 146; // Vertically aligned with Y = 120 level text
 
         // Decrement Level (-) Button
         this.btnDecrementLevel = this.addRenderableWidget(
                 Button.builder(Component.literal("-"), button -> this.adjustSelectedLevel(-1))
-                        .bounds(rightPanelX + 80, levelY, 16, 16)
+                        .bounds(rightPanelX + 85, levelY, 16, 16)
                         .build()
         );
 
         // Increment Level (+) Button
         this.btnIncrementLevel = this.addRenderableWidget(
                 Button.builder(Component.literal("+"), button -> this.adjustSelectedLevel(1))
-                        .bounds(rightPanelX + 100, levelY, 16, 16)
+                        .bounds(rightPanelX + 105, levelY, 16, 16)
                         .build()
         );
     }
@@ -225,17 +225,17 @@ public class PlayerProgressScreen extends Screen {
 
         // 1. "Word" Column Header
         boolean hoverWord = mouseY >= 25 && mouseY <= 40 && mouseX >= this.listX && mouseX < col1End;
-        String wordHead = "Palavra" + getSortIcon(PlayerProgressListWidget.SortColumn.WORD);
+        Component wordHead = Component.translatable("progress_screen.minnanocraft.column_word").append(getSortIcon(PlayerProgressListWidget.SortColumn.WORD));
         guiGraphics.text(this.font, wordHead, this.listX + 6, headerY, hoverWord ? hoverColor : normalColor, false);
 
         // 2. "Translation" Column Header
         boolean hoverMid = mouseY >= 25 && mouseY <= 40 && mouseX >= col1End && mouseX < col2End;
-        String midHead = "Tradução" + getSortIcon(PlayerProgressListWidget.SortColumn.MIDDLE);
+        Component midHead = Component.translatable("progress_screen.minnanocraft.column_translation").append(getSortIcon(PlayerProgressListWidget.SortColumn.MIDDLE));
         guiGraphics.text(this.font, midHead, col1End, headerY, hoverMid ? hoverColor : normalColor, false);
 
         // 3. "Level" Column Header
         boolean hoverLvl = mouseY >= 25 && mouseY <= 40 && mouseX >= col2End && mouseX <= this.listX + this.listWidth;
-        String lvlHead = "Nível" + getSortIcon(PlayerProgressListWidget.SortColumn.LEVEL);
+        Component lvlHead = Component.translatable("progress_screen.minnanocraft.column_level").append(getSortIcon(PlayerProgressListWidget.SortColumn.LEVEL));
         int lvlWidth = this.font.width(lvlHead);
         guiGraphics.text(this.font, lvlHead, this.listX + this.listWidth - lvlWidth - 10, headerY, hoverLvl ? hoverColor : normalColor, false);
 
@@ -254,60 +254,82 @@ public class PlayerProgressScreen extends Screen {
                 Word word = selected.getWordObj();
                 WordProgress progress = selected.getProgressObj();
 
+                int padding = 4;
+
                 // 1. Kanji Representation (Rendered scaled if available)
                 if (word.kanji() != null && !word.kanji().isBlank()) {
-                    guiGraphics.text(this.font, "Kanji: ", rightPanelX, 40, 0xFFAAAAAA, false);
+                    Component kanjiLabel = Component.literal("Kanji: ");
+                    int labelWidth = this.font.width(kanjiLabel);
+
+                    guiGraphics.text(this.font, kanjiLabel, rightPanelX, 40, 0xFFAAAAAA, false);
 
                     float scale = 1.5f;
                     guiGraphics.pose().pushMatrix();
                     guiGraphics.pose().scale(scale, scale);
 
-                    int scaledX = (int) ((rightPanelX + 30) / scale);
+                    // Adjust X according to the real width of the word "Kanji: "
+                    int scaledX = (int) ((rightPanelX + labelWidth + padding) / scale);
                     int scaledY = (int) (38 / scale);
 
                     guiGraphics.text(this.font, word.kanji(), scaledX, scaledY, 0xFFAAFFFF, false);
                     guiGraphics.pose().popMatrix();
                 }
 
-                // 2. Romaji Representation
+                // 2. Hiragana Representation
+                if (word.hiragana() != null && !word.hiragana().isBlank()) {
+                    Component hiraLabel = Component.literal("Hiragana: ");
+                    int labelWidth = this.font.width(hiraLabel);
+
+                    guiGraphics.text(this.font, hiraLabel, rightPanelX, 60, 0xFFAAAAAA, false);
+                    guiGraphics.text(this.font, word.hiragana(), rightPanelX + labelWidth + padding, 60, 0xFFFF8888, false);
+                }
+
+                // 3. Romaji Representation
                 if (word.romaji() != null && !word.romaji().isBlank()) {
-                    guiGraphics.text(this.font, "Romaji: ", rightPanelX, 60, 0xFFAAAAAA, false);
-                    guiGraphics.text(this.font, word.romaji(), rightPanelX + 37, 60, 0xFFFF8888, false);
+                    Component romajiLabel = Component.literal("Romaji: ");
+                    int labelWidth = this.font.width(romajiLabel);
+
+                    guiGraphics.text(this.font, romajiLabel, rightPanelX, 80, 0xFFAAAAAA, false);
+                    guiGraphics.text(this.font, word.romaji(), rightPanelX + labelWidth + padding, 80, 0xFFFF8888, false);
                 }
 
-                // 3. Translation
-                String trad = "Nenhuma";
-                if (word.translations() != null && !word.translations().isEmpty()) {
-                    trad = word.translations().getFirst();
+                // 4. Translation
+                String trad = "- / -";
+                if (word.getLocalTranslations() != null && !word.getLocalTranslations().isEmpty()) {
+                    trad = word.getLocalTranslations().getFirst();
                 }
-                guiGraphics.text(this.font, "Tradução: ", rightPanelX, 80, 0xFFAAAAAA, false);
-                guiGraphics.text(this.font, trad, rightPanelX + 55, 80, 0xFFFFFFAA, false);
 
-                // 4. Statistics Separator Line
-                guiGraphics.text(this.font, "--- Estatísticas de Aprendizado ---", rightPanelX, 105, 0xFF555555, false);
+                Component transLabel = Component.translatable("progress_screen.minnanocraft.column_translation").append(": ");
+                int transLabelWidth = this.font.width(transLabel);
+
+                guiGraphics.text(this.font, transLabel, rightPanelX, 100, 0xFFAAAAAA, false);
+                guiGraphics.text(this.font, trad, rightPanelX + transLabelWidth + padding, 100, 0xFFFFFFAA, false);
+
+                // 5. Statistics Separator Line
+                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.title.lerning_statistics"), rightPanelX, 120, 0xFF555555, false);
 
                 // Update level control button active states based on boundary limits
                 int currentLevel = progress.getScriptLevel();
                 this.btnDecrementLevel.active = (currentLevel > 0);
                 this.btnIncrementLevel.active = (currentLevel < 4);
 
-                // 5. Progress Statistics
-                guiGraphics.text(this.font, "Nível Atual: " + currentLevel, rightPanelX, 120, 0xFF55FF55, false);
+                // 6. Progress Statistics
+                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.word.current_level", currentLevel), rightPanelX, 150, 0xFF55FF55, false);
 
-                String expText = String.format("Exposição Total: %.1f", progress.getExposure());
-                guiGraphics.text(this.font, expText, rightPanelX, 135, 0xFFAAAAAA, false);
+                String formattedExposure = String.format("%.1f", progress.getExposure());
+                Component expText = Component.translatable("progress_screen.minnanocraft.total_exposure", formattedExposure);
+                guiGraphics.text(this.font, expText, rightPanelX, 165, 0xFFAAAAAA, false);
 
-                guiGraphics.text(this.font, "Visto no Mundo: " + progress.getSeenCount() + " vezes", rightPanelX, 150, 0xFFAAAAAA, false);
-                guiGraphics.text(this.font, "Total de Consultas: " + progress.getLookupCount(), rightPanelX, 165, 0xFFAAAAAA, false);
-
+                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.seen_count", progress.getSeenCount()), rightPanelX, 180, 0xFFAAAAAA, false);
+                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.total_lookups", progress.getLookupCount()), rightPanelX, 195, 0xFFAAAAAA, false);
             } catch (Exception e) {
                 guiGraphics.text(this.font, "ERRO: " + e.getClass().getSimpleName(), rightPanelX, 40, 0xFFFF0000, false);
             }
         } else {
             // Default placeholder view when no item is selected
-            guiGraphics.text(this.font, "Detalhes da Palavra", rightPanelX, 40, 0xFFAAAAAA, false);
-            guiGraphics.text(this.font, "Selecione uma palavra na lista", rightPanelX, 60, 0xFF555555, false);
-            guiGraphics.text(this.font, "para inspecionar os detalhes...", rightPanelX, 75, 0xFF555555, false);
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint"), rightPanelX, 40, 0xFFAAAAAA, false);
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_1"), rightPanelX, 60, 0xFF555555, false);
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_2"), rightPanelX, 75, 0xFF555555, false);
         }
     }
 

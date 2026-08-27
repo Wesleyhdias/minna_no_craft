@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 
-import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import net.minecraft.client.resources.language.ClientLanguage;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
@@ -43,7 +43,7 @@ public class ClientLanguageMixin {
 
         }else {
 
-            customText = PortugueseItemNameBuilder.build(
+            customText = CurrentLangItemNameBuilder.build(
                     key,
                     originalText
             );

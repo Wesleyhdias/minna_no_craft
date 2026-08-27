@@ -2545,8 +2545,8 @@
     "block"
   ],
   "block.minecraft.packed_mud": [
-    "packed",
-    "mud"
+    "mud",
+    "dry"
   ],
   "block.minecraft.weathered_copper_bulb": [
     "weathered",
@@ -4451,8 +4451,7 @@
     "sign"
   ],
   "block.minecraft.jack_o_lantern": [
-    "jack_o",
-    "lantern"
+    "jack_o_lanterns"
   ],
   "block.minecraft.mud_brick_stairs": [
     "mud",

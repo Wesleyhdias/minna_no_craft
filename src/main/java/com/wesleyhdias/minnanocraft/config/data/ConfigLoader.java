@@ -7,6 +7,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 
+import java.nio.file.StandardCopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.io.Reader;
@@ -35,25 +36,45 @@ public class ConfigLoader {
      */
     public static ConfigData load() {
         try {
-            // Ensures the parent configuration directory exists
+            // Ensure the configuration directory exists
             if (!Files.exists(CONFIG_DIR)) {
                 Files.createDirectories(CONFIG_DIR);
             }
 
-            if (Files.exists(CONFIG_FILE)) {
-                try (Reader reader = Files.newBufferedReader(CONFIG_FILE)) {
-                    ConfigData loadedData = GSON.fromJson(reader, ConfigData.class);
-                    if (loadedData != null) {
-                        return loadedData;
-                    }
+            // If the file does not exist (first run), create and save default data
+            if (!Files.exists(CONFIG_FILE)) {
+                ConfigData defaultData = new ConfigData();
+                save(defaultData);
+                return defaultData;
+            }
+
+            // Attempt to read the existing configuration file
+            try (Reader reader = Files.newBufferedReader(CONFIG_FILE)) {
+                ConfigData loadedData = GSON.fromJson(reader, ConfigData.class);
+                if (loadedData != null) {
+                    return loadedData;
                 }
             }
         } catch (Exception e) {
-            MinnaNoCraft.LOGGER.error("Failed to load global configurations!", e);
+            MinnaNoCraft.LOGGER.error("Failed to load configurations! Creating a backup of the corrupted file.", e);
+
+            // FAILSAFE: Rename the corrupted JSON to .bak to prevent data loss
+            try {
+                if (Files.exists(CONFIG_FILE)) {
+                    Path backup = CONFIG_FILE.resolveSibling(CONFIG_FILE.getFileName() + ".bak");
+                    Files.move(CONFIG_FILE, backup, StandardCopyOption.REPLACE_EXISTING);
+                    MinnaNoCraft.LOGGER.info("Configuration backup saved to: {}", backup.toString());
+                }
+            } catch (Exception ex) {
+                MinnaNoCraft.LOGGER.error("Failed to create config backup!", ex);
+            }
         }
 
-        // Fallback: Returns a fresh instance with default values if loading fails or file does not exist
-        return new ConfigData();
+        // Fallback: Returns a fresh instance if reading fails or JSON was null/corrupted.
+        // Since a backup was created above, it is safe to overwrite the corrupted file.
+        ConfigData fallback = new ConfigData();
+        save(fallback);
+        return fallback;
     }
 
     /**

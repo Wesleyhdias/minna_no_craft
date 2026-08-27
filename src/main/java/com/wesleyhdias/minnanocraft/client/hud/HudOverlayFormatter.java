@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.client.hud;
 
-import com.wesleyhdias.minnanocraft.language.builder.PortugueseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 
@@ -67,7 +67,7 @@ public class HudOverlayFormatter {
             if (TranslationModeResolver.useJapanese(translationKey)) {
                 return JapaneseItemNameBuilder.build(translationKey);
             } else {
-                return PortugueseItemNameBuilder.build(translationKey, Component.translatable(translationKey).getString());
+                return CurrentLangItemNameBuilder.build(translationKey, Component.translatable(translationKey).getString());
             }
         }
         return Component.translatable(translationKey).getString();

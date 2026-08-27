@@ -1,7 +1,5 @@
 package com.wesleyhdias.minnanocraft.config.data;
 
-import java.util.List;
-
 /**
  * Data structure acting as a schema template for Gson
  * serialization and deserialization of the mod's configuration JSON file.
@@ -10,9 +8,6 @@ public class ConfigData {
 
     /** Indicates whether the main mod features are enabled. */
     private boolean enabled = true;
-
-    /** Supported target language codes available in the mod. */
-    private List<String> supportedLanguages = List.of("pt_br");
 
     // --- System Rules ---
 
@@ -117,21 +112,13 @@ public class ConfigData {
     }
 
     public boolean isEnabled() {
-        return enabled;
+        return this.enabled;
     }
 
-    public void setEnabled(boolean enabled) {}
+    public void setEnabled(boolean enabled) { this.enabled = enabled; }
 
     public void toggleEnabled() {
         this.enabled = !this.enabled;
-    }
-
-    public List<String> getSupportedLanguages() {
-        return supportedLanguages;
-    }
-
-    public void setSupportedLanguages(List<String> supportedLanguages) {
-        this.supportedLanguages = supportedLanguages;
     }
 
     public int getMaxActiveWords() {

@@ -84,7 +84,7 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
             if (rendered != null && !rendered.isBlank()) {
                 displayText = rendered;
             } else {
-                displayText = word.translations().getFirst();
+                displayText = word.getLocalTranslations().getFirst();
             }
 
             this.addEntry(new PlayerProgressListEntry(

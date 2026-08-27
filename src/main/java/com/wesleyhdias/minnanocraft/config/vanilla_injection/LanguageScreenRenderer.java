@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.config.vanilla_injection;
 
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 
 import net.minecraft.client.gui.components.AbstractSelectionList;
@@ -56,14 +57,8 @@ public class LanguageScreenRenderer {
 
             // --- LANGUAGE VALIDATION LOGIC ---
             String currentLanguage = client.options.languageCode;
-            boolean isSupported = ModConfig.getConfig().getSupportedLanguages().contains(currentLanguage);
+            boolean isSupported = MinnaNoCraft.SUPPORTED_LANGUAGES.contains(currentLanguage);
 
-            // Forces the config to turn off if the active language is not supported
-            if (!isSupported) {
-                ModConfig.getConfig().setEnabled(false);
-                ModConfig.save();
-            }
-            // ---------------------------------
 
             // 3. LAYOUT RESET DETECTION TRICK
             Integer expectedY = MODIFIED_Y_CACHE.get(searchBox);
@@ -139,13 +134,13 @@ public class LanguageScreenRenderer {
      */
     private static Component getButtonStateText(boolean isSupported) {
         if (!isSupported) {
-            return Component.literal("INCOMPATIBLE").withStyle(ChatFormatting.GRAY);
+            return Component.translatable("config.minnanocraft.vanilia_screen.incompatible_button").withStyle(ChatFormatting.GRAY);
         }
 
         if (ModConfig.getConfig().isEnabled()) {
-            return Component.literal("ENABLED").withStyle(ChatFormatting.GREEN);
+            return Component.translatable("config.minnanocraft.vanilia_screen.enable_button").withStyle(ChatFormatting.GREEN);
         } else {
-            return Component.literal("DISABLED").withStyle(ChatFormatting.RED);
+            return Component.translatable("config.minnanocraft.vanilia_screen.disable_button").withStyle(ChatFormatting.RED);
         }
     }
 }
