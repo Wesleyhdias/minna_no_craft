@@ -105,7 +105,7 @@ public class PinnedTooltipRenderer {
                 PinnedTooltipService.updateHoverState(token, System.currentTimeMillis(), false);
             } else if (!PinnedTooltipService.isHoverPunished() && (System.currentTimeMillis() - PinnedTooltipService.getHoverStartTime() >= 1000)) {
                 // Punish the player if they hover for 1 second or more (triggering a lookup event)
-                PlayerVocabularyManager.registerEvent(token, ExpEvents.HOVER_LOOKUP);
+                PlayerVocabularyManager.getInstance().registerEvent(token, ExpEvents.HOVER_LOOKUP);
                 PinnedTooltipService.updateHoverState(token, PinnedTooltipService.getHoverStartTime(), true);
             }
 

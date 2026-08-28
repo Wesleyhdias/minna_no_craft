@@ -49,7 +49,7 @@ public class CurrentLangItemNameBuilder {
             }
 
             // Retrieves progress from VocabularyManager to obtain the highest achieved script level
-            WordProgress progress = PlayerVocabularyManager.getProgress(token);
+            WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
             int level = (progress != null) ? progress.getScriptLevel() : 0;
 
             if (level == 0) {

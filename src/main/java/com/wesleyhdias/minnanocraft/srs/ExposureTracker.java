@@ -85,9 +85,9 @@ public class ExposureTracker {
             List<String> structure = ItemStructureLoader.getStructures().get(targetKey);
 
             if (structure != null && !structure.isEmpty()) {
-                String targetToken = PlayerVocabularyManager.getNextTokenToUpgrade(structure);
+                String targetToken = PlayerVocabularyManager.getInstance().getNextTokenToUpgrade(structure);
                 if (targetToken != null) {
-                    PlayerVocabularyManager.registerEvent(targetToken, expEventsType);
+                    PlayerVocabularyManager.getInstance().registerEvent(targetToken, expEventsType);
                 }
             }
 

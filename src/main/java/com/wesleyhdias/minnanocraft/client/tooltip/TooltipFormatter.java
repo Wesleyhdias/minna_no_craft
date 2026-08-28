@@ -121,12 +121,12 @@ public class TooltipFormatter {
 
             if (structure != null) {
                 for (String token : structure) {
-                    if (PlayerVocabularyManager.isParticle(token)) continue;
+                    if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
 
                     Word wordObj = DictionaryLoader.getDictionary().get(token);
                     if (wordObj == null) continue;
 
-                    WordProgress progress = PlayerVocabularyManager.getProgress(token);
+                    WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
                     int level = (progress != null) ? progress.getScriptLevel() : 0;
 
                     String renderedText = DifficultyResolver.render(wordObj, level);

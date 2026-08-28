@@ -6,7 +6,7 @@ import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.core.component.DataComponents;
@@ -86,11 +86,11 @@ public class TooltipEventHandler {
                 List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
                 if (structure != null) {
-                    String target = PlayerVocabularyManager.getNextTokenToUpgrade(structure);
+                    String target = PlayerVocabularyManager.getInstance().getNextTokenToUpgrade(structure);
                     lines.add(Component.literal("§7Priority Target: §f" + (target != null ? target : "None")));
 
                     for (String token : structure) {
-                        WordProgress p = PlayerVocabularyManager.getProgress(token);
+                        WordProgress p = PlayerVocabularyManager.getInstance().getProgress(token);
                         double exp = (p != null) ? p.getExposure() : 0.0;
                         int level = (p != null) ? p.getScriptLevel() : 0;
 

@@ -20,11 +20,25 @@ import java.io.*;
  */
 public class PlayerVocabularyRepository {
 
-    /** Pretty-printed Gson instance for human-readable JSON files. */
+    /** Pretty-printed Gson instance for readable JSON files. */
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
+    private static PlayerVocabularyRepository instance;
+
     /** File path for storing player progress inside the Minecraft configuration folder. */
-    private static final Path SAVE_FILE_PATH = FabricLoader.getInstance().getConfigDir().resolve("minnanocraft/player_progress.json");
+    private final Path saveFilePath;
+
+    private PlayerVocabularyRepository() {
+
+        this.saveFilePath = FabricLoader.getInstance().getConfigDir().resolve("minnanocraft/player_progress.json");
+    }
+
+    public static PlayerVocabularyRepository getInstance() {
+        if (instance == null) {
+            instance = new PlayerVocabularyRepository();
+        }
+        return instance;
+    }
 
     /**
      * Loads the progress file from disk.
@@ -33,12 +47,12 @@ public class PlayerVocabularyRepository {
      * @return The loaded player progress map.
      */
     public ConcurrentHashMap<String, WordProgress> loadAll() {
-        if (!Files.exists(SAVE_FILE_PATH)) {
+        if (!Files.exists(this.saveFilePath)) {
             MinnaNoCraft.LOGGER.info("Progress file not found. Creating a new profile for the player.");
             return new ConcurrentHashMap<>();
         }
 
-        try (Reader reader = Files.newBufferedReader(SAVE_FILE_PATH, StandardCharsets.UTF_8)) {
+        try (Reader reader = Files.newBufferedReader(this.saveFilePath, StandardCharsets.UTF_8)) {
             Type type = new TypeToken<ConcurrentHashMap<String, WordProgress>>() {}.getType();
             ConcurrentHashMap<String, WordProgress> loaded = GSON.fromJson(reader, type);
 
@@ -59,11 +73,11 @@ public class PlayerVocabularyRepository {
     public void saveAll(ConcurrentHashMap<String, WordProgress> progressMap) {
         try {
             // Ensures parent directories (config/minnanocraft) exist before saving
-            if (SAVE_FILE_PATH.getParent() != null) {
-                Files.createDirectories(SAVE_FILE_PATH.getParent());
+            if (this.saveFilePath.getParent() != null) {
+                Files.createDirectories(this.saveFilePath.getParent());
             }
 
-            try (Writer writer = Files.newBufferedWriter(SAVE_FILE_PATH, StandardCharsets.UTF_8)) {
+            try (Writer writer = Files.newBufferedWriter(this.saveFilePath, StandardCharsets.UTF_8)) {
                 GSON.toJson(progressMap, writer);
             }
         } catch (Exception e) {

@@ -1,11 +1,11 @@
 package com.wesleyhdias.minnanocraft.client;
 
-import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.world.item.ItemStack;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import java.util.List;
@@ -47,10 +47,10 @@ public class ClientTickHandler {
                         List<String> structure = ItemStructureLoader.getStructures().get(currentKey);
 
                         if (structure != null) {
-                            String targetToken = PlayerVocabularyManager.getNextTokenToUpgrade(structure);
+                            String targetToken = PlayerVocabularyManager.getInstance().getNextTokenToUpgrade(structure);
                             if (targetToken != null) {
                                 // Awards the SEEN event for bringing a new item to the main hand
-                                PlayerVocabularyManager.registerEvent(targetToken, ExpEvents.SEEN);
+                                PlayerVocabularyManager.getInstance().registerEvent(targetToken, ExpEvents.SEEN);
                             }
                         }
                     }
@@ -60,7 +60,7 @@ public class ClientTickHandler {
             // 3. Real-Time Auto-Save
             long now = System.currentTimeMillis();
             if (now - lastSaveTime >= SAVE_INTERVAL_MS) {
-                PlayerVocabularyManager.updateProgression(); // Persists data to disk
+                PlayerVocabularyManager.getInstance().updateProgression(); // Persists data to disk
                 lastSaveTime = now;
             }
         });

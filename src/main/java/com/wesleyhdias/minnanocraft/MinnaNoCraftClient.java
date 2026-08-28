@@ -21,7 +21,7 @@ public class MinnaNoCraftClient implements ClientModInitializer {
         LanguageScreenHandler.register();
 
         // Loads saved vocabulary progress
-        PlayerVocabularyManager.load();
+        PlayerVocabularyManager.getInstance().load();
         MinnaNoCraft.LOGGER.info("MinnaNoCraft (Client) initialized and progress loaded successfully!");
 
         // Registers modular event handlers
@@ -33,7 +33,7 @@ public class MinnaNoCraftClient implements ClientModInitializer {
 
         // Ensures the latest state is written to JSON before the client shuts down
         ClientLifecycleEvents.CLIENT_STOPPING.register(client -> {
-            PlayerVocabularyManager.save();
+            PlayerVocabularyManager.getInstance().save();
             MinnaNoCraft.LOGGER.info("MinnaNoCraft (Client) stopping. Progress saved.");
         });
     }

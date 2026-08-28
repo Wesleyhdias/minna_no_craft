@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.srs.models;
 
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 /**
  * Represents the dynamic learning progress of a specific word by the player.

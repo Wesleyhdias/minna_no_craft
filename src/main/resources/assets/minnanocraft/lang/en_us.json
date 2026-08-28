@@ -14,6 +14,7 @@
   "config.minnanocraft.title.srs_level_settings": "Level Settings",
   "config.minnanocraft.srs_exp_level_1": "EXP required to reach Lv.1 (Romaji):",
   "config.minnanocraft.srs_exp_level_2": "EXP required to reach Lv.2 (Romaji Inv.):",
+  "config.minnanocraft.hover.srs_exp_level_2": "In this level the words stays in romaji but change their order according to the japanese structure",
   "config.minnanocraft.srs_exp_level_3": "EXP required to reach Lv.3 (Hiragana):",
   "config.minnanocraft.srs_exp_level_4": "EXP required to reach Lv.4 (Kanji):",
   "config.minnanocraft.srs_exp_level_mastered": "EXP required to reach MASTERED:",

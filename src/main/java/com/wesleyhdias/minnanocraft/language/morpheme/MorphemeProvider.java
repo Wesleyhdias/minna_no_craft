@@ -19,7 +19,7 @@ public class MorphemeProvider implements TokenProvider {
         }
 
         // Retrieves progress for this morpheme using the same logic as content words
-        WordProgress progress = PlayerVocabularyManager.getProgress(token);
+        WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
         int level = (progress != null) ? progress.getScriptLevel() : 0;
 
         if (level == 0) {

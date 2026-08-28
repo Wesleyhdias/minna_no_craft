@@ -1,6 +1,6 @@
 package com.wesleyhdias.minnanocraft.config.modmenu;
 
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.components.ContainerObjectSelectionList;
 import net.minecraft.client.gui.components.StringWidget;
@@ -136,6 +136,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         this.addEntry(ConfigListEntry.createDouble(
                 font, leftX, rightX,
                 Component.translatable("config.minnanocraft.srs_exp_level_2"),
+                Component.translatable("config.minnanocraft.hover.srs_exp_level_2"),
                 ModConfig.getConfig().getExpLevel2(),
                 30.0,
                 val -> ModConfig.getConfig().setExpLevel2(val)

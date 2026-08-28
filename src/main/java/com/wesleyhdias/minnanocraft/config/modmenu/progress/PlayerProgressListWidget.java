@@ -24,7 +24,7 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
     private final List<PlayerProgressListEntry> originalEntries = new ArrayList<>();
 
     /** Thread-safe map holding cached word progress instances mapped by token. */
-    private final ConcurrentHashMap<String, WordProgress> progressMap = PlayerVocabularyManager.getVocabularyCache();
+    private final ConcurrentHashMap<String, WordProgress> progressMap = PlayerVocabularyManager.getInstance().getVocabularyCache();
 
     /** X position boundary for the list widget layout. */
     private final int listX;

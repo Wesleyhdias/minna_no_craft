@@ -5,7 +5,7 @@ import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.config.data.ConfigData;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.input.MouseButtonEvent;
@@ -119,7 +119,7 @@ public class PlayerProgressScreen extends Screen {
 
             progress.updateExposure(expDifference);
 
-            PlayerVocabularyManager.save();
+            PlayerVocabularyManager.getInstance().save();
         }
     }
 
@@ -349,7 +349,7 @@ public class PlayerProgressScreen extends Screen {
      */
     @Override
     public void onClose() {
-        PlayerVocabularyManager.updateProgression();
+        PlayerVocabularyManager.getInstance().updateProgression();
         TranslationCacheManager.clearAll();
         this.minecraft.setScreen(this.parent);
     }

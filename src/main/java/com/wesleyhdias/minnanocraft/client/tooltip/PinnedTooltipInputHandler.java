@@ -61,11 +61,11 @@ public class PinnedTooltipInputHandler {
 
             if (clickedHitbox != null) {
                 // The user clicked on a specific interactive vocabulary word
-                PlayerVocabularyManager.registerEvent(clickedHitbox.token(), ExpEvents.LOOKUP);
+                PlayerVocabularyManager.getInstance().registerEvent(clickedHitbox.token(), ExpEvents.LOOKUP);
                 String token = clickedHitbox.token();
 
                 // 1. Register the SRS event
-                PlayerVocabularyManager.registerEvent(token, ExpEvents.LOOKUP);
+                PlayerVocabularyManager.getInstance().registerEvent(token, ExpEvents.LOOKUP);
 
                 // 2. Fetch the Word object associated with this token from your manager/loader
                 Word word = DictionaryLoader.getDictionary().get(token);

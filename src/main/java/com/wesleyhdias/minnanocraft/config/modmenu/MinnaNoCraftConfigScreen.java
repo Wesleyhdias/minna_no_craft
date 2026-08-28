@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.config.modmenu;
 
 import com.wesleyhdias.minnanocraft.config.modmenu.progress.PlayerProgressScreen;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;

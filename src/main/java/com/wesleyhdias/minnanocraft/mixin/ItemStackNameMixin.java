@@ -4,7 +4,7 @@ import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;

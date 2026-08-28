@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.config.vanilla_injection;
 
 import com.wesleyhdias.minnanocraft.MinnaNoCraft;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.components.AbstractSelectionList;
 import net.minecraft.client.gui.components.AbstractWidget;

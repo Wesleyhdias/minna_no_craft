@@ -25,9 +25,9 @@ public class TranslationModeResolver {
 
         for (String token : structure) {
             // Ignores particles (like "no") since they don't dictate whether the item format should change
-            if (PlayerVocabularyManager.isParticle(token)) continue;
+            if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
 
-            WordProgress progress = PlayerVocabularyManager.getProgress(token);
+            WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
 
             if (progress == null || progress.getScriptLevel() < 2) {
                 return false;

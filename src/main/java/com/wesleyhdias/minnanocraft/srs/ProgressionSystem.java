@@ -3,8 +3,8 @@ package com.wesleyhdias.minnanocraft.srs;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.srs.models.LearningState;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
-import com.wesleyhdias.minnanocraft.config.data.ModConfig;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import java.util.Comparator;
 import java.util.List;
@@ -17,6 +17,8 @@ import java.util.Map;
  */
 public class ProgressionSystem {
 
+    private static ProgressionSystem instance;
+
     // =========================================================
     // QUEUE SETTINGS & BALANCING
     // =========================================================
@@ -24,13 +26,22 @@ public class ProgressionSystem {
     /**
      * Exposure points required to reach the MASTERED state.
      */
-    private final double masteryExposure = ModConfig.getConfig().getMasteryExposure();
+    private final double masteryExposure;
 
     /**
      * Default constructor.
      */
-    public ProgressionSystem() {
+    private ProgressionSystem() {
+        this.masteryExposure = ModConfig.getConfig().getMasteryExposure();
     }
+
+    public static ProgressionSystem getInstance() {
+        if (instance == null) {
+            instance = new ProgressionSystem();
+        }
+        return instance;
+    }
+
 
     // =========================================================
     // PLAYER EVENTS

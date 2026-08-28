@@ -15,27 +15,45 @@ import java.util.List;
  */
 public class PlayerVocabularyManager {
 
+    private static PlayerVocabularyManager instance;
+
     /**
      * In-memory cache holding word progress data for thread-safe access.
      */
-    private static ConcurrentHashMap<String, WordProgress> vocabularyCache = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, WordProgress> vocabularyCache = new ConcurrentHashMap<>();
 
     // Dependencies
-    private static final PlayerVocabularyRepository repository = new PlayerVocabularyRepository();
-    private static final ProgressionSystem progressionSystem = new ProgressionSystem();
+    private final PlayerVocabularyRepository repository;
+    private final ProgressionSystem progressionSystem;
+
+    private PlayerVocabularyManager() {
+        this.repository = PlayerVocabularyRepository.getInstance();
+        this.progressionSystem = ProgressionSystem.getInstance();
+    }
+
+    public static PlayerVocabularyManager getInstance() {
+        if (instance == null) {
+            instance = new PlayerVocabularyManager();
+        }
+        return instance;
+    }
+
+    public static void setInstanceForTesting(PlayerVocabularyManager mockInstance) {
+        instance = mockInstance;
+    }
 
     /**
      * Loads the vocabulary data from disk into the memory cache.
      * Should be called during mod/world initialization.
      */
-    public static void load() {
+    public void load() {
         vocabularyCache = repository.loadAll();
     }
 
     /**
      * Saves the current in-memory vocabulary state to disk.
      */
-    public static void save() {
+    public void save() {
         repository.saveAll(vocabularyCache);
     }
 
@@ -45,11 +63,11 @@ public class PlayerVocabularyManager {
      * @param token The target token string.
      * @return The WordProgress instance, or null if not found.
      */
-    public static WordProgress getProgress(String token) {
+    public WordProgress getProgress(String token) {
         return vocabularyCache.get(token);
     }
 
-    public static ConcurrentHashMap<String, WordProgress> getVocabularyCache() {
+    public ConcurrentHashMap<String, WordProgress> getVocabularyCache() {
         return vocabularyCache;
     }
 
@@ -59,7 +77,7 @@ public class PlayerVocabularyManager {
      * @param token The target token string.
      * @return The existing or newly created WordProgress instance.
      */
-    public static WordProgress getOrCreateProgress(String token) {
+    public WordProgress getOrCreateProgress(String token) {
         return vocabularyCache.computeIfAbsent(token, WordProgress::new);
     }
 
@@ -73,7 +91,7 @@ public class PlayerVocabularyManager {
      * @param token The target word or particle.
      * @param expEvents The triggered event type.
      */
-    public static void registerEvent(String token, ExpEvents expEvents) {
+    public void registerEvent(String token, ExpEvents expEvents) {
         WordProgress progress = getOrCreateProgress(token);
         long now = System.currentTimeMillis();
 
@@ -92,7 +110,7 @@ public class PlayerVocabularyManager {
      * @param token The target token to verify.
      * @return true if the token is a particle, false if it is a content word.
      */
-    public static boolean isParticle(String token) {
+    public boolean isParticle(String token) {
         return !DictionaryLoader.getDictionary().containsKey(token);
     }
 
@@ -103,7 +121,7 @@ public class PlayerVocabularyManager {
      * @param structure The list of tokens representing the item's name structure.
      * @return The priority token string to upgrade, or null if the structure is empty.
      */
-    public static String getNextTokenToUpgrade(List<String> structure) {
+    public String getNextTokenToUpgrade(List<String> structure) {
         if (structure == null || structure.isEmpty()) return null;
 
         List<String> contentTokens = new ArrayList<>();
@@ -161,7 +179,7 @@ public class PlayerVocabularyManager {
     /**
      * Helper fallback method to find the token with the lowest script level in a list.
      */
-    private static String getLowestLevelToken(List<String> tokens) {
+    private String getLowestLevelToken(List<String> tokens) {
         int minLevel = 4;
         for (String token : tokens) {
             WordProgress p = getProgress(token);
@@ -174,7 +192,7 @@ public class PlayerVocabularyManager {
     /**
      * Helper method to find the first token matching a target script level (left-to-right).
      */
-    private static String getFirstTokenAtLevel(List<String> tokens, int targetLevel) {
+    private String getFirstTokenAtLevel(List<String> tokens, int targetLevel) {
         for (String token : tokens) {
             WordProgress p = getProgress(token);
             int level = (p != null) ? p.getScriptLevel() : 0;
@@ -189,7 +207,7 @@ public class PlayerVocabularyManager {
      * Real-time progression decay loop (called during auto-save ticks every ~5 minutes).
      * Processes inactivity decays and updates word learning states.
      */
-    public static void updateProgression() {
+    public void updateProgression() {
         progressionSystem.updateStates(vocabularyCache);
     }
 }
