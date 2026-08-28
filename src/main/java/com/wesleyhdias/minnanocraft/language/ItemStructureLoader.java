@@ -34,6 +34,10 @@ public class ItemStructureLoader {
         return structures;
     }
 
+    public static void setInstanceForTesting(Map<String, List<String>> mockInstance) {
+        structures = mockInstance;
+    }
+
     /**
      * Loads the item structure configuration from resources using UTF-8 encoding.
      */

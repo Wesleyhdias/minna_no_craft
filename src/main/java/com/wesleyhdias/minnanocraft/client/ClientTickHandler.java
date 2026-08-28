@@ -6,6 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import com.wesleyhdias.minnanocraft.client.tooltip.TooltipHoverTracker;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.TokenUpgradeSelector;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
 import java.util.List;
@@ -47,7 +48,7 @@ public class ClientTickHandler {
                         List<String> structure = ItemStructureLoader.getStructures().get(currentKey);
 
                         if (structure != null) {
-                            String targetToken = PlayerVocabularyManager.getInstance().getNextTokenToUpgrade(structure);
+                            String targetToken = TokenUpgradeSelector.getNextTokenToUpgrade(structure, PlayerVocabularyManager.getInstance());
                             if (targetToken != null) {
                                 // Awards the SEEN event for bringing a new item to the main hand
                                 PlayerVocabularyManager.getInstance().registerEvent(targetToken, ExpEvents.SEEN);
