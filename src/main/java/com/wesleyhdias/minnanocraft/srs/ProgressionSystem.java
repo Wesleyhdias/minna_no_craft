@@ -42,6 +42,10 @@ public class ProgressionSystem {
         return instance;
     }
 
+    public static void setInstanceForTesting(ProgressionSystem mockInstance) {
+        instance = mockInstance;
+    }
+
 
     // =========================================================
     // PLAYER EVENTS

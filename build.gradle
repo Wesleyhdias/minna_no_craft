@@ -36,6 +36,24 @@ dependencies {
 
 	implementation "maven.modrinth:mOgUt4GM:3rsoV1bk"
 
+	// Dependências para testes unitários com JUnit 5
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.mockito:mockito-core:5.11.0'
+}
+
+test {
+	useJUnitPlatform()
+	jvmArgs '-Dnet.bytebuddy.experimental=true'
+	jvmArgs("-XX:+EnableDynamicAgentLoading")
+}
+
+javadoc {
+	// Configura o Javadoc para incluir elementos privados e package-private
+	options.memberLevel = JavadocMemberLevel.PRIVATE
+
+	// Ignora falhas de links quebrados (como o @link para classes do Minecraft)
+	options.addStringOption('Xdoclint:all,-missing', '-quiet')
 }
 
 processResources {

@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.config;
 
-import com.wesleyhdias.minnanocraft.config.data.ConfigData;
 import com.wesleyhdias.minnanocraft.config.data.ConfigLoader;
+import com.wesleyhdias.minnanocraft.config.data.ConfigData;
 
 /**
  * Singleton manager responsible for maintaining the in-memory state of global configurations.
@@ -24,6 +24,10 @@ public class ModConfig {
             config = ConfigLoader.load();
         }
         return config;
+    }
+
+    public static void setInstanceForTesting(ConfigData mockInstance) {
+        config = mockInstance;
     }
 
     /**
