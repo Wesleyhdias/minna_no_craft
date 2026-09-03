@@ -1,15 +1,15 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
-import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
-import java.util.Locale;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -34,33 +34,15 @@ public class CurrentLangItemNameBuilder {
 
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
+        // If no structure exists, keep the original Minecraft translation.
         if (structure == null) {
             return originalText;
         }
 
         String result = originalText;
-        Map<String, Word> dictionary = DictionaryLoader.getDictionary();
 
         for (String token : structure) {
-            Word word = dictionary.get(token);
-
-            if (word == null) {
-                continue;
-            }
-
-            // Retrieves progress from VocabularyManager to obtain the highest achieved script level
-            WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
-            int level = (progress != null) ? progress.getScriptLevel() : 0;
-
-            if (level == 0) {
-                continue;
-            }
-
-            String replacement = DifficultyResolver.render(word, level);
-
-            for (String translation : word.getLocalTranslations()) {
-                result = replaceIgnoreCase(result, translation, replacement);
-            }
+            result = resolve(token, result);
         }
 
         TranslationCacheManager.BUILDER_CACHE.put(translationKey, result);
@@ -69,14 +51,53 @@ public class CurrentLangItemNameBuilder {
     }
 
     /**
-     * Replaces all occurrences of a target search string within a text, ignoring case sensitivity.
+     * Resolves a single dictionary token and replaces its native-language
+     * translations in the current item name if the player has learned it.
+     *
+     * @param token The dictionary key.
+     * @param text  The current item name.
+     * @return The item name after resolving the token.
+     */
+    private static String resolve(String token, String text) {
+
+        Map<String, Word> dictionary = DictionaryLoader.getDictionary();
+        Word word = dictionary.get(token);
+
+        if (word == null) {
+            return text;
+        }
+
+        WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
+
+        int level = (progress != null) ? progress.getScriptLevel() : 0;
+
+        if (level == 0) {
+            return text;
+        }
+
+        String replacement = DifficultyResolver.render(word, level);
+
+        for (String translation : word.getLocalTranslations()) {
+            text = replaceIgnoreCase(text, translation, replacement);
+        }
+
+        return text;
+    }
+
+    /**
+     * Replaces all occurrences of a target search string within a text,
+     * ignoring case sensitivity.
      *
      * @param text        The full text to perform replacements on.
      * @param search      The target substring to search for.
      * @param replacement The string to substitute into the text.
      * @return The updated string with replaced text.
      */
-    private static String replaceIgnoreCase(String text, String search, String replacement) {
+    private static String replaceIgnoreCase(
+            String text,
+            String search,
+            String replacement
+    ) {
         String lowerText = text.toLowerCase(Locale.ROOT);
         String lowerSearch = search.toLowerCase(Locale.ROOT);
 

@@ -40,6 +40,10 @@ public class PlayerVocabularyRepository {
         return instance;
     }
 
+    public static void setInstanceForTesting(PlayerVocabularyRepository mockInstance) {
+        instance = mockInstance;
+    }
+
     /**
      * Loads the progress file from disk.
      * Returns an empty ConcurrentHashMap if the file does not exist or an error occurs.

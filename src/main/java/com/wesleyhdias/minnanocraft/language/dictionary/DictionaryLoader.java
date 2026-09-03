@@ -33,6 +33,10 @@ public class DictionaryLoader {
         return dictionary;
     }
 
+    public static void setDictionaryForTesting(Map<String, Word> mockInstance) {
+        dictionary = mockInstance;
+    }
+
     /**
      * Loads the dictionary file from resources using UTF-8 encoding.
      */

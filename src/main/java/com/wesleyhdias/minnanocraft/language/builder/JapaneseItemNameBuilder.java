@@ -14,10 +14,14 @@ import java.util.List;
  */
 public class JapaneseItemNameBuilder {
 
-    private static final List<TokenProvider> PROVIDERS = List.of(
+    private static List<TokenProvider> providers = List.of(
             new DictionaryProvider(),
             new MorphemeProvider()
     );
+
+    public static void setProvidersForTesting(List<TokenProvider> testProviders) {
+        providers = testProviders;
+    }
 
     /**
      * Builds the resolved item name for a given translation key.
@@ -57,7 +61,7 @@ public class JapaneseItemNameBuilder {
      * @return The resolved text, or the original token if no provider can handle it.
      */
     private static String resolve(String token) {
-        for (TokenProvider provider : PROVIDERS) {
+        for (TokenProvider provider : providers) {
             String value = provider.resolve(token);
 
             if (value != null) {
