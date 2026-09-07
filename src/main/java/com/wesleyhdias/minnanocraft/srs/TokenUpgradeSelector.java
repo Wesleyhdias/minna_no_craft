@@ -1,5 +1,7 @@
 package com.wesleyhdias.minnanocraft.srs;
 
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.ArrayList;
@@ -17,10 +19,25 @@ public class TokenUpgradeSelector {
     public static String getNextTokenToUpgrade(List<String> structure, PlayerVocabularyManager manager) {
         if (structure == null || structure.isEmpty()) return null;
 
+        // 1. Expande a estrutura para desmembrar palavras compostas em seus componentes e separadores
+        List<String> expandedStructure = new ArrayList<>();
+        for (String token : structure) {
+            CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+            if (compound != null) {
+                // Adiciona os componentes
+                expandedStructure.addAll(compound.components());
+
+            } else {
+                // Se for um token normal ou morfema comum, mantém
+                expandedStructure.add(token);
+            }
+        }
+
         List<String> contentTokens = new ArrayList<>();
         List<String> particleTokens = new ArrayList<>();
 
-        for (String token : structure) {
+        // 2. Classifica os tokens expandidos (agora focando nos pedaços reais)
+        for (String token : expandedStructure) {
             if (manager.isParticle(token)) {
                 particleTokens.add(token);
             } else {

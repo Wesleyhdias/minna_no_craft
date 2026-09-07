@@ -1,6 +1,8 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
@@ -24,13 +26,26 @@ public class TranslationModeResolver {
         if (structure == null || structure.isEmpty()) return false;
 
         for (String token : structure) {
-            // Ignores particles (like "no") since they don't dictate whether the item format should change
-            if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
+            CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
 
-            WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
+            if (compound != null) {
+                // Se for composto, verifica o progresso de cada componente individualmente
+                for (String comp : compound.components()) {
+                    if (PlayerVocabularyManager.getInstance().isParticle(comp)) continue;
 
-            if (progress == null || progress.getScriptLevel() < 2) {
-                return false;
+                    WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(comp);
+                    if (progress == null || progress.getScriptLevel() < 2) {
+                        return false;
+                    }
+                }
+            } else {
+                // Lógica normal para palavras simples
+                if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
+
+                WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
+                if (progress == null || progress.getScriptLevel() < 2) {
+                    return false;
+                }
             }
         }
 

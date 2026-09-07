@@ -11,7 +11,7 @@
   "item.minecraft.warped_fungus_on_a_stick": [
     "warped",
     "mushroom",
-    "tsuki",
+    "with",
     "no",
     "stick"
   ],
@@ -64,9 +64,7 @@
   "item.minecraft.prize_pottery_sherd": [
     "prize",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.purple_terracotta": [
     "purple",
@@ -84,8 +82,7 @@
     "slab"
   ],
   "item.minecraft.redstone": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "dust"
   ],
   "block.minecraft.crimson_button": [
@@ -110,7 +107,7 @@
   ],
   "item.minecraft.tipped_arrow": [
     "tipped",
-    "tsuki",
+    "with",
     "no",
     "arrow"
   ],
@@ -169,7 +166,7 @@
   ],
   "block.minecraft.dead_bubble_coral": [
     "dead",
-    "bubble",
+    "bubble_1",
     "coral"
   ],
   "block.minecraft.resin_brick_stairs": [
@@ -190,7 +187,7 @@
   ],
   "block.minecraft.end_stone_bricks": [
     "end_stone",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.stone_shovel": [
     "stone",
@@ -221,8 +218,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.horn_coral_fan": [
     "horn",
@@ -237,9 +233,7 @@
   "item.minecraft.heart_pottery_sherd": [
     "heart",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.prismarine_brick_slab": [
     "prismarine",
@@ -287,7 +281,7 @@
   ],
   "item.minecraft.mangrove_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "mangrove",
     "no",
@@ -297,14 +291,15 @@
     "gray",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.calcite": [
     "calcite"
   ],
   "block.minecraft.small_dripleaf": [
     "small",
+    "sa",
+    "na",
     "dripleaf"
   ],
   "item.minecraft.sugar": [
@@ -314,8 +309,7 @@
     "cyan",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.charcoal": [
     "charcoal"
@@ -368,6 +362,7 @@
   ],
   "block.minecraft.white_stained_glass": [
     "white",
+    "no",
     "stained",
     "glass"
   ],
@@ -425,7 +420,7 @@
     "iri",
     "no",
     "tuff",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.chorus_flower": [
     "chorus",
@@ -433,6 +428,7 @@
   ],
   "item.minecraft.white_bundle": [
     "white",
+    "no",
     "bundle"
   ],
   "item.minecraft.popped_chorus_fruit": [
@@ -459,8 +455,7 @@
     "tiles"
   ],
   "item.minecraft.elder_guardian_spawn_egg": [
-    "elder",
-    "guardian",
+    "elder_guardian",
     "no",
     "spawn_egg"
   ],
@@ -487,9 +482,7 @@
   "item.minecraft.brewer_pottery_sherd": [
     "brewer",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.stripped_mangrove_wood": [
     "bark",
@@ -522,6 +515,7 @@
   ],
   "item.minecraft.white_harness": [
     "white",
+    "no",
     "harness"
   ],
   "block.minecraft.chiseled_deepslate": [
@@ -549,7 +543,7 @@
   ],
   "item.minecraft.prismarine_crystals": [
     "prismarine",
-    "crystals"
+    "crystal"
   ],
   "block.minecraft.waxed_weathered_copper_golem_statue": [
     "waxed",
@@ -589,15 +583,13 @@
   "item.minecraft.plenty_pottery_sherd": [
     "plenty",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.end_stone": [
     "end_stone"
   ],
   "block.minecraft.fire_coral_block": [
-    "fire",
+    "fire_1",
     "coral",
     "block"
   ],
@@ -617,6 +609,8 @@
   ],
   "block.minecraft.small_amethyst_bud": [
     "small",
+    "sa",
+    "na",
     "amethyst",
     "no",
     "bud"
@@ -628,8 +622,7 @@
   ],
   "block.minecraft.deepslate_redstone_ore": [
     "deepslate_1",
-    "red_1",
-    "stone_1",
+    "redstone",
     "ore"
   ],
   "block.minecraft.nether_sprouts": [
@@ -667,16 +660,14 @@
   ],
   "item.minecraft.furnace_minecart": [
     "furnace",
-    "tsuki",
+    "with",
     "no",
     "minecart"
   ],
   "item.minecraft.mourner_pottery_sherd": [
     "mourner",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.andesite_slab": [
     "andesite",
@@ -713,8 +704,7 @@
     "cyan",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.copper_chestplate": [
     "copper",
@@ -768,8 +758,7 @@
     "gray",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.blue_egg": [
     "blue",
@@ -821,15 +810,14 @@
   ],
   "block.minecraft.white_glazed_terracotta": [
     "white",
-    "glazed",
-    "terracotta"
+    "no",
+    "glazed_terracotta"
   ],
   "block.minecraft.orange_concrete_powder": [
     "orange",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.purple_shulker_box": [
     "purple",
@@ -859,7 +847,7 @@
   ],
   "block.minecraft.nether_bricks": [
     "nether",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.copper_block": [
     "copper",
@@ -906,10 +894,10 @@
     "tuff"
   ],
   "item.minecraft.rabbit": [
-    "nama",
+    "raw_1",
     "no",
     "rabbit",
-    "niku"
+    "flesh"
   ],
   "block.minecraft.yellow_banner": [
     "yellow",
@@ -948,8 +936,7 @@
     "light_blue",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.quartz": [
     "nether",
@@ -966,21 +953,21 @@
     "wood"
   ],
   "block.minecraft.glass_pane": [
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.clay": [
     "clay"
   ],
   "block.minecraft.white_concrete": [
     "white",
+    "no",
     "concrete"
   ],
   "block.minecraft.cracked_nether_bricks": [
     "cracked",
     "reta",
     "nether",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.polished_blackstone_brick_slab": [
     "polished",
@@ -1094,7 +1081,7 @@
   ],
   "block.minecraft.stone_bricks": [
     "stone",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.slime_spawn_egg": [
     "slime",
@@ -1102,7 +1089,7 @@
     "spawn_egg"
   ],
   "item.minecraft.experience_bottle": [
-    "experience",
+    "enchanted",
     "no",
     "bottle"
   ],
@@ -1130,6 +1117,8 @@
   ],
   "block.minecraft.big_dripleaf": [
     "big",
+    "ki",
+    "na",
     "dripleaf"
   ],
   "block.minecraft.sandstone": [
@@ -1182,8 +1171,7 @@
     "magenta",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.blackstone_stairs": [
     "blackstone",
@@ -1245,8 +1233,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.stone_brick_wall": [
     "stone",
@@ -1256,7 +1243,7 @@
   ],
   "item.minecraft.bamboo_chest_raft": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "bamboo",
     "no",
@@ -1338,8 +1325,7 @@
     "black",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.iron_hoe": [
     "iron",
@@ -1361,8 +1347,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.apple": [
     "apple"
@@ -1566,14 +1551,13 @@
     "orange",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.red_nether_bricks": [
     "red",
     "i",
     "nether",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.golden_spear": [
     "golden",
@@ -1621,16 +1605,14 @@
   ],
   "block.minecraft.warped_fence_gate": [
     "warped",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.magenta_stained_glass_pane": [
     "magenta",
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.cherry_boat": [
     "cherry",
@@ -1716,8 +1698,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.waxed_copper_trapdoor": [
     "waxed",
@@ -1748,8 +1729,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.magenta_bundle": [
     "magenta",
@@ -1873,8 +1853,7 @@
     "pink",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.exposed_copper_door": [
     "exposed",
@@ -1923,8 +1902,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.oak_trapdoor": [
     "oak",
@@ -1950,7 +1928,7 @@
     "polished",
     "reta",
     "blackstone",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.red_dye": [
     "red",
@@ -1978,6 +1956,7 @@
   ],
   "block.minecraft.white_bed": [
     "white",
+    "no",
     "bed"
   ],
   "block.minecraft.cyan_wool": [
@@ -1993,7 +1972,7 @@
   ],
   "block.minecraft.chorus_plant": [
     "chorus",
-    "plant"
+    "plant_1"
   ],
   "item.minecraft.turtle_spawn_egg": [
     "turtle",
@@ -2023,7 +2002,7 @@
   "item.minecraft.cooked_rabbit": [
     "cooked",
     "rabbit",
-    "niku"
+    "flesh"
   ],
   "block.minecraft.brain_coral_block": [
     "brain",
@@ -2054,8 +2033,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.cherry_hanging_sign": [
     "cherry",
@@ -2064,8 +2042,7 @@
     "sign"
   ],
   "item.minecraft.firework_rocket": [
-    "rocket",
-    "firework"
+    "firework_rocket"
   ],
   "block.minecraft.crimson_pressure_plate": [
     "crimson",
@@ -2211,7 +2188,7 @@
   "item.minecraft.command_block_minecart": [
     "command",
     "block",
-    "tsuki",
+    "with",
     "no",
     "minecart"
   ],
@@ -2259,9 +2236,7 @@
   "item.minecraft.scrape_pottery_sherd": [
     "axe",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.oak_sign": [
     "oak",
@@ -2321,8 +2296,7 @@
     "trapdoor"
   ],
   "block.minecraft.structure_block": [
-    "structure",
-    "block"
+    "structure_block"
   ],
   "block.minecraft.red_wool": [
     "red",
@@ -2393,8 +2367,7 @@
     "lime",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.waxed_copper_block": [
     "waxed",
@@ -2405,6 +2378,7 @@
   ],
   "block.minecraft.white_carpet": [
     "white",
+    "no",
     "carpet"
   ],
   "item.minecraft.hoglin_spawn_egg": [
@@ -2487,8 +2461,7 @@
     "stew"
   ],
   "block.minecraft.pale_hanging_moss": [
-    "iro",
-    "aseta",
+    "pale_1",
     "hanging_1",
     "moss"
   ],
@@ -2545,8 +2518,8 @@
     "block"
   ],
   "block.minecraft.packed_mud": [
-    "mud",
-    "dry"
+    "packed",
+    "mud"
   ],
   "block.minecraft.weathered_copper_bulb": [
     "weathered",
@@ -2581,8 +2554,7 @@
     "azalea"
   ],
   "item.minecraft.torchflower_seeds": [
-    "torch_1",
-    "flower_1",
+    "torchflower",
     "no",
     "seeds"
   ],
@@ -2598,7 +2570,7 @@
     "skull"
   ],
   "block.minecraft.bubble_coral": [
-    "bubble",
+    "bubble_1",
     "coral"
   ],
   "item.minecraft.shears": [
@@ -2671,15 +2643,13 @@
     "pale",
     "oak",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.blue_concrete_powder": [
     "blue",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.copper_axe": [
     "copper",
@@ -2725,7 +2695,7 @@
     "slab"
   ],
   "block.minecraft.bricks": [
-    "bricks"
+    "brick"
   ],
   "block.minecraft.birch_fence": [
     "birch",
@@ -2777,8 +2747,7 @@
     "black",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.copper_helmet": [
     "copper",
@@ -2925,7 +2894,7 @@
     "grate"
   ],
   "item.minecraft.cod": [
-    "nama",
+    "raw_1",
     "cod"
   ],
   "item.minecraft.wooden_spear": [
@@ -2961,8 +2930,7 @@
     "purple",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.waxed_exposed_cut_copper_stairs": [
     "waxed",
@@ -3009,8 +2977,7 @@
     "sapling"
   ],
   "block.minecraft.glowstone": [
-    "glow_2",
-    "stone_1"
+    "glowstone"
   ],
   "block.minecraft.waxed_oxidized_copper_chain": [
     "waxed",
@@ -3028,8 +2995,7 @@
   "block.minecraft.jungle_fence_gate": [
     "jungle",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.chiseled_red_sandstone": [
     "pattern",
@@ -3049,9 +3015,7 @@
   "item.minecraft.angler_pottery_sherd": [
     "angler",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "item.minecraft.light_gray_harness": [
     "light_gray",
@@ -3071,7 +3035,7 @@
     "wall"
   ],
   "block.minecraft.bubble_coral_fan": [
-    "bubble",
+    "bubble_1",
     "fan",
     "coral"
   ],
@@ -3082,7 +3046,7 @@
   ],
   "block.minecraft.dead_fire_coral": [
     "dead",
-    "fire",
+    "fire_1",
     "coral"
   ],
   "item.minecraft.stone_spear": [
@@ -3106,8 +3070,7 @@
     "coral"
   ],
   "block.minecraft.pale_moss_block": [
-    "iro",
-    "aseta",
+    "pale_1",
     "moss",
     "block"
   ],
@@ -3116,8 +3079,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.dark_oak_trapdoor": [
     "dark",
@@ -3168,7 +3130,7 @@
   "block.minecraft.infested_stone_bricks": [
     "infested",
     "stone",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.iron_helmet": [
     "iron",
@@ -3265,8 +3227,7 @@
     "candle"
   ],
   "block.minecraft.pale_moss_carpet": [
-    "iro",
-    "aseta",
+    "pale_1",
     "moss",
     "no",
     "carpet"
@@ -3285,8 +3246,7 @@
     "brown",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.cherry_door": [
     "cherry",
@@ -3338,15 +3298,12 @@
   "block.minecraft.birch_fence_gate": [
     "birch",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "item.minecraft.archer_pottery_sherd": [
     "archer",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.iron_door": [
     "iron",
@@ -3402,8 +3359,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.waxed_weathered_copper_trapdoor": [
     "waxed",
@@ -3417,8 +3373,7 @@
   "block.minecraft.mangrove_fence_gate": [
     "mangrove",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "item.minecraft.wooden_axe": [
     "wood",
@@ -3539,8 +3494,7 @@
     "trapdoor"
   ],
   "item.minecraft.powder_snow_bucket": [
-    "powder_1",
-    "snow",
+    "powder_snow",
     "iri",
     "bucket"
   ],
@@ -3564,7 +3518,7 @@
   ],
   "block.minecraft.deepslate_bricks": [
     "deepslate",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.blackstone_wall": [
     "blackstone",
@@ -3595,15 +3549,14 @@
     "shovel"
   ],
   "block.minecraft.fire_coral_fan": [
-    "fire",
+    "fire_1",
     "fan",
     "coral"
   ],
   "block.minecraft.acacia_fence_gate": [
     "acacia",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "item.minecraft.villager_spawn_egg": [
     "villager",
@@ -3653,12 +3606,10 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.glowstone_dust": [
-    "glow_2",
-    "stone_1",
+    "glowstone",
     "dust"
   ],
   "block.minecraft.dark_oak_wood": [
@@ -3686,8 +3637,7 @@
     "green",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.happy_ghast_spawn_egg": [
     "happy",
@@ -3735,7 +3685,7 @@
     "no",
     "infested",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.coal_block": [
     "coal",
@@ -3749,9 +3699,7 @@
   "item.minecraft.shelter_pottery_sherd": [
     "shelter",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.cracked_polished_blackstone_bricks": [
     "cracked",
@@ -3759,7 +3707,7 @@
     "polished",
     "reta",
     "blackstone",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.wolf_spawn_egg": [
     "wolf",
@@ -3769,15 +3717,13 @@
   "item.minecraft.danger_pottery_sherd": [
     "danger",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.cracked_deepslate_bricks": [
     "cracked",
     "reta",
     "deepslate",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.raw_gold": [
     "gold",
@@ -3786,11 +3732,11 @@
   ],
   "block.minecraft.white_wool": [
     "white",
+    "no",
     "wool"
   ],
   "item.minecraft.slime_ball": [
-    "slime",
-    "ball"
+    "slimeball"
   ],
   "block.minecraft.dark_oak_fence": [
     "dark",
@@ -3816,7 +3762,7 @@
   ],
   "item.minecraft.cherry_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "cherry",
     "no",
@@ -3838,7 +3784,7 @@
   ],
   "block.minecraft.resin_bricks": [
     "resin",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.wither_skeleton_skull": [
     "wither",
@@ -3849,9 +3795,7 @@
   "item.minecraft.skull_pottery_sherd": [
     "skull",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "item.minecraft.raw_copper": [
     "copper",
@@ -3909,8 +3853,7 @@
     "red",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.dried_kelp_block": [
     "dried",
@@ -3928,7 +3871,7 @@
     "shita",
     "infested",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.sunflower": [
     "sunflower"
@@ -3960,16 +3903,14 @@
   ],
   "block.minecraft.white_stained_glass_pane": [
     "white",
+    "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.blade_pottery_sherd": [
     "sword",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.damaged_anvil": [
     "damaged",
@@ -3980,8 +3921,7 @@
     "green",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.light_gray_dye": [
     "light_gray",
@@ -4013,8 +3953,7 @@
     "light_gray",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.brown_harness": [
     "brown",
@@ -4116,7 +4055,7 @@
   ],
   "item.minecraft.pale_oak_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "pale",
     "oak",
@@ -4292,7 +4231,7 @@
     "carpet"
   ],
   "block.minecraft.bubble_coral_block": [
-    "bubble",
+    "bubble_1",
     "coral",
     "block"
   ],
@@ -4309,7 +4248,7 @@
     "mossy",
     "shita",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.waxed_weathered_copper_chain": [
     "waxed",
@@ -4350,7 +4289,7 @@
   ],
   "item.minecraft.birch_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "birch",
     "no",
@@ -4420,11 +4359,12 @@
   ],
   "item.minecraft.white_dye": [
     "white",
+    "no",
     "dye"
   ],
   "item.minecraft.piglin_brute_spawn_egg": [
     "piglin",
-    "piglin_brute",
+    "brute",
     "no",
     "spawn_egg"
   ],
@@ -4451,7 +4391,7 @@
     "sign"
   ],
   "block.minecraft.jack_o_lantern": [
-    "jack_o_lanterns"
+    "jack_o_lantern"
   ],
   "block.minecraft.mud_brick_stairs": [
     "mud",
@@ -4463,8 +4403,7 @@
     "magenta",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.lime_wool": [
     "lime",
@@ -4480,6 +4419,7 @@
   ],
   "block.minecraft.white_terracotta": [
     "white",
+    "no",
     "terracotta"
   ],
   "block.minecraft.deepslate_tile_stairs": [
@@ -4644,23 +4584,21 @@
     "snowball"
   ],
   "block.minecraft.redstone_torch": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "torch_1"
   ],
   "block.minecraft.lime_glazed_terracotta": [
     "lime",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.dropper": [
     "dropper"
   ],
   "block.minecraft.dead_bubble_coral_fan": [
     "dead",
-    "bubble",
+    "bubble_1",
     "fan",
     "coral"
   ],
@@ -4674,11 +4612,11 @@
     "cracked",
     "reta",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.quartz_bricks": [
     "quartz",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.waxed_oxidized_copper": [
     "waxed",
@@ -4723,8 +4661,7 @@
     "purple",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "block.minecraft.stripped_spruce_wood": [
     "bark",
@@ -4788,8 +4725,7 @@
     "pink",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.axolotl_spawn_egg": [
     "axolotl",
@@ -4809,6 +4745,7 @@
   ],
   "block.minecraft.white_shulker_box": [
     "white",
+    "no",
     "shulker_box"
   ],
   "item.minecraft.purple_dye": [
@@ -4856,7 +4793,7 @@
     "iri",
     "no",
     "nether",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.light_blue_carpet": [
     "light_blue",
@@ -4890,8 +4827,7 @@
     "wall"
   ],
   "block.minecraft.redstone_block": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "block"
   ],
   "item.minecraft.golden_shovel": [
@@ -4929,6 +4865,7 @@
   ],
   "block.minecraft.white_candle": [
     "white",
+    "no",
     "candle"
   ],
   "block.minecraft.acacia_hanging_sign": [
@@ -4938,8 +4875,7 @@
     "sign"
   ],
   "block.minecraft.redstone_lamp": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "lamp"
   ],
   "block.minecraft.polished_deepslate_stairs": [
@@ -5018,8 +4954,7 @@
     "light_blue",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.copper_boots": [
     "copper",
@@ -5116,8 +5051,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "item.minecraft.painting": [
     "painting"
@@ -5236,7 +5170,7 @@
   ],
   "item.minecraft.acacia_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "acacia",
     "no",
@@ -5273,8 +5207,7 @@
     "red",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.crimson_shelf": [
     "crimson",
@@ -5297,8 +5230,7 @@
     "yellow",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.copper_sword": [
     "copper",
@@ -5362,8 +5294,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.polished_deepslate_slab": [
     "polished",
@@ -5382,7 +5313,7 @@
   ],
   "item.minecraft.dark_oak_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "dark",
     "oak",
@@ -5431,8 +5362,7 @@
   "block.minecraft.cherry_fence_gate": [
     "cherry",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.exposed_cut_copper_stairs": [
     "exposed",
@@ -5445,11 +5375,11 @@
   ],
   "block.minecraft.tuff_bricks": [
     "tuff",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.chest_minecart": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "minecart"
   ],
@@ -5460,8 +5390,7 @@
     "blue",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.vindicator_spawn_egg": [
     "vindicator",
@@ -5483,7 +5412,7 @@
   ],
   "item.minecraft.oak_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "oak",
     "no",
@@ -5515,8 +5444,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.spawner": [
     "monster",
@@ -5533,6 +5461,7 @@
   ],
   "block.minecraft.white_tulip": [
     "white",
+    "no",
     "tulip"
   ],
   "block.minecraft.green_bed": [
@@ -5543,7 +5472,7 @@
   ],
   "item.minecraft.jungle_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "jungle",
     "no",
@@ -5578,16 +5507,15 @@
     "button"
   ],
   "item.minecraft.chicken": [
-    "nama",
+    "raw_1",
     "no",
     "chicken",
-    "niku"
+    "flesh"
   ],
   "block.minecraft.spruce_fence_gate": [
     "spruce",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.yellow_stained_glass": [
     "yellow",
@@ -5735,8 +5663,7 @@
   "block.minecraft.bamboo_fence_gate": [
     "bamboo",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "item.minecraft.breeze_spawn_egg": [
     "breeze",
@@ -5839,8 +5766,8 @@
   ],
   "block.minecraft.white_concrete_powder": [
     "white",
-    "concrete",
-    "powder"
+    "no",
+    "concrete_powder"
   ],
   "block.minecraft.waxed_exposed_cut_copper": [
     "waxed",
@@ -5942,6 +5869,8 @@
   ],
   "block.minecraft.large_amethyst_bud": [
     "big",
+    "ki",
+    "na",
     "amethyst",
     "no",
     "bud"
@@ -6039,7 +5968,7 @@
     "iri",
     "no",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.hay_block": [
     "hay",
@@ -6047,7 +5976,7 @@
     "block_1"
   ],
   "item.minecraft.salmon": [
-    "nama",
+    "raw_1",
     "salmon"
   ],
   "block.minecraft.bamboo_planks": [
@@ -6071,11 +6000,10 @@
     "iri",
     "no",
     "resin",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.comparator": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "comparator"
   ],
   "block.minecraft.light_blue_concrete": [
@@ -6118,8 +6046,7 @@
     "light_gray",
     "iro",
     "no",
-    "concrete",
-    "powder"
+    "concrete_powder"
   ],
   "item.minecraft.coal": [
     "coal"
@@ -6241,7 +6168,7 @@
   ],
   "item.minecraft.spruce_chest_boat": [
     "chest",
-    "tsuki",
+    "with",
     "no",
     "spruce",
     "no",
@@ -6285,9 +6212,7 @@
   "item.minecraft.friend_pottery_sherd": [
     "friend",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.diorite_stairs": [
     "diorite",
@@ -6365,9 +6290,7 @@
   "item.minecraft.explorer_pottery_sherd": [
     "explorer",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.birch_leaves": [
     "birch",
@@ -6375,9 +6298,7 @@
     "leaves"
   ],
   "block.minecraft.bee_nest": [
-    "bee",
-    "no",
-    "nest"
+    "bee_nest"
   ],
   "item.minecraft.diamond_pickaxe": [
     "diamond",
@@ -6395,8 +6316,7 @@
     "spawn_egg"
   ],
   "block.minecraft.sea_pickle": [
-    "sea_1",
-    "pickle"
+    "sea_pickle"
   ],
   "block.minecraft.dark_oak_door": [
     "dark",
@@ -6424,7 +6344,7 @@
   ],
   "block.minecraft.dead_fire_coral_fan": [
     "dead",
-    "fire",
+    "fire_1",
     "fan",
     "coral"
   ],
@@ -6546,8 +6466,7 @@
     "iro",
     "no",
     "stained",
-    "glass",
-    "pane"
+    "glass_pane"
   ],
   "block.minecraft.oak_fence": [
     "oak",
@@ -6579,8 +6498,7 @@
   "block.minecraft.oak_fence_gate": [
     "oak",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "item.minecraft.bucket": [
     "bucket"
@@ -6609,7 +6527,7 @@
   ],
   "block.minecraft.mud_bricks": [
     "mud",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.nether_brick_fence": [
     "nether",
@@ -6636,19 +6554,16 @@
   "block.minecraft.crimson_fence_gate": [
     "crimson",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.yellow_glazed_terracotta": [
     "yellow",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "block.minecraft.redstone_ore": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "ore"
   ],
   "item.minecraft.golden_chestplate": [
@@ -6688,9 +6603,7 @@
   "item.minecraft.heartbreak_pottery_sherd": [
     "heartbreak",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.cherry_pressure_plate": [
     "cherry",
@@ -6739,9 +6652,7 @@
   "item.minecraft.miner_pottery_sherd": [
     "miner",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.waxed_exposed_copper": [
     "waxed",
@@ -6773,8 +6684,7 @@
     "brown",
     "iro",
     "no",
-    "glazed",
-    "terracotta"
+    "glazed_terracotta"
   ],
   "item.minecraft.cyan_bundle": [
     "cyan",
@@ -6803,8 +6713,7 @@
     "dark",
     "oak",
     "no",
-    "fence",
-    "gate"
+    "fence_gate"
   ],
   "block.minecraft.crimson_hanging_sign": [
     "crimson",
@@ -6830,11 +6739,10 @@
     "reta",
     "infested",
     "stone",
-    "bricks"
+    "brick"
   ],
   "block.minecraft.torchflower": [
-    "torch_1",
-    "flower_1"
+    "torchflower"
   ],
   "block.minecraft.oxidized_chiseled_copper": [
     "oxidized",
@@ -6967,7 +6875,7 @@
   ],
   "item.minecraft.hopper_minecart": [
     "hopper",
-    "tsuki",
+    "with",
     "no",
     "minecart"
   ],
@@ -6987,8 +6895,7 @@
     "spawn_egg"
   ],
   "block.minecraft.repeater": [
-    "red_1",
-    "stone_1",
+    "redstone",
     "repeater"
   ],
   "block.minecraft.tuff": [
@@ -7007,9 +6914,7 @@
   "item.minecraft.flow_pottery_sherd": [
     "flow",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.horn_coral": [
     "horn",
@@ -7031,13 +6936,13 @@
     "spawn_egg"
   ],
   "item.minecraft.porkchop": [
-    "nama",
+    "raw_1",
     "no",
-    "pig",
-    "niku"
+    "porkchop"
   ],
   "block.minecraft.white_banner": [
     "white",
+    "no",
     "banner"
   ],
   "block.minecraft.waxed_weathered_chiseled_copper": [
@@ -7052,6 +6957,8 @@
   ],
   "block.minecraft.large_fern": [
     "big",
+    "ki",
+    "na",
     "fern"
   ],
   "item.minecraft.clay_ball": [
@@ -7121,7 +7028,7 @@
   ],
   "block.minecraft.dead_bubble_coral_block": [
     "dead",
-    "bubble",
+    "bubble_1",
     "coral",
     "block"
   ],
@@ -7170,10 +7077,10 @@
     "roots"
   ],
   "item.minecraft.beef": [
-    "nama",
+    "raw_1",
     "no",
     "beef",
-    "niku"
+    "flesh"
   ],
   "block.minecraft.fern": [
     "fern"
@@ -7210,7 +7117,7 @@
   ],
   "block.minecraft.dead_fire_coral_block": [
     "dead",
-    "fire",
+    "fire_1",
     "coral",
     "block"
   ],
@@ -7231,7 +7138,7 @@
   ],
   "block.minecraft.prismarine_bricks": [
     "prismarine",
-    "bricks"
+    "brick"
   ],
   "item.minecraft.yellow_dye": [
     "yellow",
@@ -7249,7 +7156,7 @@
   ],
   "item.minecraft.tnt_minecart": [
     "tnt",
-    "tsuki",
+    "with",
     "no",
     "minecart"
   ],
@@ -7271,7 +7178,7 @@
     "wool"
   ],
   "block.minecraft.fire_coral": [
-    "fire",
+    "fire_1",
     "coral"
   ],
   "item.minecraft.netherite_horse_armor": [
@@ -7287,9 +7194,7 @@
     "dye"
   ],
   "item.minecraft.knowledge_book": [
-    "knowledge",
-    "no",
-    "book"
+    "knowledge_book"
   ],
   "block.minecraft.pearlescent_froglight": [
     "pearlescent",
@@ -7300,9 +7205,7 @@
   "item.minecraft.howl_pottery_sherd": [
     "howl",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "item.minecraft.piglin_banner_pattern": [
     "pig_1",
@@ -7314,7 +7217,7 @@
     "pattern"
   ],
   "item.minecraft.creeper_banner_pattern": [
-    "creeper",
+    "creeper_charge",
     "no",
     "banner",
     "no",
@@ -7331,7 +7234,7 @@
     "heart"
   ],
   "item.minecraft.parched_spawn_egg": [
-    "perched",
+    "parched",
     "no",
     "spawn_egg"
   ],
@@ -7342,9 +7245,7 @@
   "item.minecraft.burn_pottery_sherd": [
     "burn",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "item.minecraft.snort_pottery_sherd": [
     "nose",
@@ -7352,9 +7253,7 @@
     "to_sound",
     "animal",
     "no",
-    "pottery",
-    "no",
-    "shard"
+    "pottery_shard"
   ],
   "block.minecraft.dead_bush": [
     "dry",
@@ -7428,7 +7327,7 @@
     "bucket"
   ],
   "item.minecraft.flower_banner_pattern": [
-    "flower",
+    "flower_charge",
     "no",
     "banner",
     "no",
@@ -7463,12 +7362,12 @@
   ],
   "item.minecraft.carrot_on_a_stick": [
     "carrot",
-    "tsuki",
+    "with",
     "no",
     "stick"
   ],
   "item.minecraft.skull_banner_pattern": [
-    "skull_1",
+    "skull_charge",
     "no",
     "banner",
     "no",
@@ -7502,7 +7401,7 @@
     "spawn_egg"
   ],
   "block.minecraft.petrified_oak_slab": [
-    "petrification",
+    "petrified",
     "shita",
     "oak",
     "no",
@@ -7524,24 +7423,20 @@
     "bucket"
   ],
   "block.minecraft.frogspawn": [
-    "frog",
-    "no",
-    "egg"
+    "frogspawn"
   ],
   "item.minecraft.bowl": [
     "bowl"
   ],
   "block.minecraft.sculk_sensor": [
-    "skulk",
+    "sculk",
     "sensor"
   ],
   "block.minecraft.vault": [
     "vault"
   ],
   "block.minecraft.lily_pad": [
-    "lily",
-    "no",
-    "leaves"
+    "lily_pad"
   ],
   "block.minecraft.pointed_dripstone": [
     "dripstone"
@@ -7625,9 +7520,7 @@
     "fragments"
   ],
   "block.minecraft.cobweb": [
-    "spider_1",
-    "no",
-    "nest"
+    "cobweb"
   ],
   "block.minecraft.mycelium": [
     "mycelium"
@@ -7647,7 +7540,7 @@
     "bush"
   ],
   "block.minecraft.sculk_catalyst": [
-    "skulk",
+    "sculk",
     "catalyst"
   ],
   "block.minecraft.glow_lichen": [
@@ -7696,6 +7589,3157 @@
     "scaffolding"
   ],
   "block.minecraft.sculk": [
-    "skulk"
+    "sculk"
+  ],
+  "block.minecraft.acacia_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "acacia",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.acacia_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "acacia",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.allium": [
+    "allium"
+  ],
+  "block.minecraft.ancient_debris": [
+    "ancient",
+    "no",
+    "debris"
+  ],
+  "block.minecraft.bamboo_sapling": [
+    "bamboo_shoot"
+  ],
+  "block.minecraft.bamboo_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "bamboo",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.bamboo_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "bamboo",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.beacon.primary": [
+    "primary",
+    "effect"
+  ],
+  "block.minecraft.beacon.secondary": [
+    "duplicate",
+    "effect"
+  ],
+  "block.minecraft.beetroots": [
+    "beetroot"
+  ],
+  "block.minecraft.big_dripleaf_stem": [
+    "big",
+    "ki",
+    "na",
+    "dripleaf",
+    "no",
+    "stem_2"
+  ],
+  "block.minecraft.birch_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "birch",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.birch_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "birch",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.brewing_stand": [
+    "brewing",
+    "table"
+  ],
+  "block.minecraft.bubble_column": [
+    "bubble",
+    "pillar"
+  ],
+  "block.minecraft.budding_amethyst": [
+    "budding",
+    "eta",
+    "amethyst"
+  ],
+  "block.minecraft.calibrated_sculk_sensor": [
+    "calibrated",
+    "sa",
+    "reta",
+    "sculk",
+    "sensor"
+  ],
+  "block.minecraft.carrots": [
+    "carrot"
+  ],
+  "block.minecraft.cartography_table": [
+    "cartography",
+    "table"
+  ],
+  "block.minecraft.carved_pumpkin": [
+    "carved",
+    "pumpkin"
+  ],
+  "block.minecraft.cave_air": [
+    "cave",
+    "no",
+    "air"
+  ],
+  "block.minecraft.cave_vines": [
+    "cave",
+    "no",
+    "vine"
+  ],
+  "block.minecraft.cave_vines_plant": [
+    "cave",
+    "no",
+    "vine",
+    "no",
+    "plant"
+  ],
+  "block.minecraft.chain": [
+    "iron_chain"
+  ],
+  "block.minecraft.cherry_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "cherry",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.cherry_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "cherry",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.chipped_anvil": [
+    "chipped",
+    "keta",
+    "anvil"
+  ],
+  "block.minecraft.closed_eyeblossom": [
+    "closed",
+    "eyeblossom"
+  ],
+  "block.minecraft.cocoa": [
+    "cocoa_nut"
+  ],
+  "block.minecraft.copper_wall_torch": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "copper",
+    "no",
+    "torch"
+  ],
+  "block.minecraft.crafter": [
+    "crafter"
+  ],
+  "block.minecraft.crafting_table": [
+    "crafting",
+    "table"
+  ],
+  "block.minecraft.creeper_wall_head": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "creeper",
+    "no",
+    "head"
+  ],
+  "block.minecraft.crimson_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "crimson",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.crimson_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "crimson",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.dark_oak_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "dark",
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.dark_oak_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "dark",
+    "oak",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.daylight_detector": [
+    "daylight",
+    "sensor"
+  ],
+  "block.minecraft.dragon_wall_head": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "dragon",
+    "no",
+    "head"
+  ],
+  "block.minecraft.enchanting_table": [
+    "enchanted",
+    "table_1"
+  ],
+  "block.minecraft.end_gateway": [
+    "end",
+    "gateway"
+  ],
+  "block.minecraft.end_portal": [
+    "end",
+    "portal"
+  ],
+  "block.minecraft.farmland": [
+    "farmland"
+  ],
+  "block.minecraft.fire": [
+    "flame"
+  ],
+  "block.minecraft.fletching_table": [
+    "fletching",
+    "table"
+  ],
+  "block.minecraft.frosted_ice": [
+    "frosted_ice"
+  ],
+  "block.minecraft.golden_dandelion": [
+    "golden",
+    "no",
+    "dandelion"
+  ],
+  "block.minecraft.heavy_core": [
+    "heavy",
+    "core"
+  ],
+  "block.minecraft.heavy_weighted_pressure_plate": [
+    "heavy_weighted",
+    "purpose",
+    "pressure_plate"
+  ],
+  "block.minecraft.jigsaw": [
+    "jigsaw",
+    "block"
+  ],
+  "block.minecraft.jungle_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "jungle",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.jungle_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "jungle",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.kelp_plant": [
+    "kelp",
+    "no",
+    "stem_2"
+  ],
+  "block.minecraft.lava": [
+    "lava"
+  ],
+  "block.minecraft.lava_cauldron": [
+    "lava",
+    "iri",
+    "no",
+    "cauldron"
+  ],
+  "block.minecraft.leaf_litter": [
+    "leaf_litter"
+  ],
+  "block.minecraft.light": [
+    "light_block"
+  ],
+  "block.minecraft.light_weighted_pressure_plate": [
+    "light_weighted",
+    "purpose",
+    "pressure_plate"
+  ],
+  "block.minecraft.loom": [
+    "loom"
+  ],
+  "block.minecraft.mangrove_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "mangrove",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.mangrove_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "mangrove",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.melon_stem": [
+    "melon",
+    "no",
+    "stem_2"
+  ],
+  "block.minecraft.moving_piston": [
+    "moving",
+    "no",
+    "piston"
+  ],
+  "block.minecraft.nether_portal": [
+    "nether",
+    "portal"
+  ],
+  "block.minecraft.nether_wart": [
+    "nether",
+    "wart"
+  ],
+  "block.minecraft.oak_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.oak_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "oak",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.ominous_banner": [
+    "ominous",
+    "banner"
+  ],
+  "block.minecraft.open_eyeblossom": [
+    "open",
+    "i",
+    "ta",
+    "eyeblossom"
+  ],
+  "block.minecraft.oxeye_daisy": [
+    "oxeye_daisy"
+  ],
+  "block.minecraft.pale_oak_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "pale",
+    "oak",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.pale_oak_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "pale",
+    "oak",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.peony": [
+    "button"
+  ],
+  "block.minecraft.piglin_wall_head": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "piglin",
+    "no",
+    "head"
+  ],
+  "block.minecraft.piston_head": [
+    "piston",
+    "head_1"
+  ],
+  "block.minecraft.pitcher_crop": [
+    "pitcher_plant"
+  ],
+  "block.minecraft.pitcher_plant": [
+    "pitcher_plant"
+  ],
+  "block.minecraft.player_wall_head": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "player",
+    "no",
+    "head"
+  ],
+  "block.minecraft.potatoes": [
+    "potato"
+  ],
+  "block.minecraft.potted_acacia_sapling": [
+    "acacia",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_allium": [
+    "allium",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_azalea_bush": [
+    "azalea",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_azure_bluet": [
+    "azure_bluet",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_bamboo": [
+    "bamboo",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_birch_sapling": [
+    "birch",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_blue_orchid": [
+    "blue_orchid",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_brown_mushroom": [
+    "brown",
+    "iro",
+    "no",
+    "mushroom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_cactus": [
+    "cactus",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_cherry_sapling": [
+    "cherry",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_closed_eyeblossom": [
+    "closed",
+    "eyeblossom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_cornflower": [
+    "cornflower",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_crimson_fungus": [
+    "crimson",
+    "no",
+    "mushroom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_crimson_roots": [
+    "crimson",
+    "no",
+    "roots",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_dandelion": [
+    "dandelion",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_dark_oak_sapling": [
+    "dark",
+    "oak",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_dead_bush": [
+    "dry",
+    "wood",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_fern": [
+    "fern",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_flowering_azalea_bush": [
+    "flowering",
+    "shita",
+    "azalea",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_golden_dandelion": [
+    "golden",
+    "no",
+    "dandelion",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_jungle_sapling": [
+    "jungle",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_lily_of_the_valley": [
+    "lily_of_the_valley",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_mangrove_propagule": [
+    "mangrove",
+    "no",
+    "bud",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_oak_sapling": [
+    "oak",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_open_eyeblossom": [
+    "open",
+    "i",
+    "ta",
+    "eyeblossom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_orange_tulip": [
+    "orange",
+    "iro",
+    "no",
+    "tulip",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_oxeye_daisy": [
+    "oxeye_daisy",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_pale_oak_sapling": [
+    "pale",
+    "oak",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_pink_tulip": [
+    "pink",
+    "iro",
+    "no",
+    "tulip",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_poppy": [
+    "poppy",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_red_mushroom": [
+    "red",
+    "iro",
+    "no",
+    "mushroom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_red_tulip": [
+    "red",
+    "iro",
+    "no",
+    "tulip",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_spruce_sapling": [
+    "spruce",
+    "no",
+    "sapling",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_torchflower": [
+    "torchflower",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_warped_fungus": [
+    "warped",
+    "mushroom",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_warped_roots": [
+    "warped",
+    "roots",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_white_tulip": [
+    "white",
+    "no",
+    "tulip",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.potted_wither_rose": [
+    "wither",
+    "rose_1",
+    "iri",
+    "potted"
+  ],
+  "block.minecraft.powder_snow": [
+    "powder_snow"
+  ],
+  "block.minecraft.powder_snow_cauldron": [
+    "powder_snow",
+    "iri",
+    "no",
+    "cauldron"
+  ],
+  "block.minecraft.pumpkin_stem": [
+    "pumpkin",
+    "no",
+    "stem_2"
+  ],
+  "block.minecraft.redstone_wall_torch": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "redstone",
+    "torch_1"
+  ],
+  "block.minecraft.redstone_wire": [
+    "redstone",
+    "wire"
+  ],
+  "block.minecraft.repeating_command_block": [
+    "repeating",
+    "command",
+    "block"
+  ],
+  "block.minecraft.resin_clump": [
+    "resin",
+    "no",
+    "clump"
+  ],
+  "block.minecraft.respawn_anchor": [
+    "respawn",
+    "anchor"
+  ],
+  "block.minecraft.rose_bush": [
+    "rose_bush"
+  ],
+  "block.minecraft.sculk_shrieker": [
+    "sculk",
+    "shrieker"
+  ],
+  "block.minecraft.sculk_vein": [
+    "sculk",
+    "vein"
+  ],
+  "block.minecraft.skeleton_wall_skull": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "skeleton",
+    "no",
+    "skull"
+  ],
+  "block.minecraft.smithing_table": [
+    "smithing_table"
+  ],
+  "block.minecraft.soul_fire": [
+    "soul",
+    "no",
+    "flame"
+  ],
+  "block.minecraft.soul_wall_torch": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "soul",
+    "no",
+    "torch"
+  ],
+  "block.minecraft.spawn.not_valid": [
+    "you",
+    "have",
+    "no",
+    "home",
+    "bed",
+    "or",
+    "charged",
+    "respawn",
+    "anchor",
+    "or",
+    "it",
+    "was",
+    "obstructed"
+  ],
+  "block.minecraft.spore_blossom": [
+    "spore",
+    "no",
+    "blossom"
+  ],
+  "block.minecraft.spruce_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "spruce",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.spruce_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "spruce",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.stonecutter": [
+    "stonecutter_table"
+  ],
+  "block.minecraft.sweet_berry_bush": [
+    "sweet",
+    "berry",
+    "no",
+    "shrub"
+  ],
+  "block.minecraft.tall_seagrass": [
+    "tall",
+    "seagrass"
+  ],
+  "block.minecraft.tinted_glass": [
+    "tinted",
+    "glass"
+  ],
+  "block.minecraft.torchflower_crop": [
+    "torchflower"
+  ],
+  "block.minecraft.tripwire": [
+    "tripwire"
+  ],
+  "block.minecraft.tripwire_hook": [
+    "tripwire",
+    "hook"
+  ],
+  "block.minecraft.twisting_vines": [
+    "twisting",
+    "vine"
+  ],
+  "block.minecraft.twisting_vines_plant": [
+    "twisting",
+    "vine",
+    "no",
+    "plant"
+  ],
+  "block.minecraft.void_air": [
+    "void_1",
+    "no",
+    "air"
+  ],
+  "block.minecraft.wall_torch": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "torch"
+  ],
+  "block.minecraft.warped_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "warped",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.warped_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "warped",
+    "sign"
+  ],
+  "block.minecraft.water": [
+    "water"
+  ],
+  "block.minecraft.water_cauldron": [
+    "water",
+    "iri",
+    "no",
+    "cauldron"
+  ],
+  "block.minecraft.waxed_oxidized_lightning_rod": [
+    "waxed",
+    "sa",
+    "reta",
+    "oxidized",
+    "shita",
+    "lightning_rod"
+  ],
+  "block.minecraft.weeping_vines_plant": [
+    "weeping",
+    "vine",
+    "no",
+    "plant"
+  ],
+  "block.minecraft.wheat": [
+    "wheat"
+  ],
+  "block.minecraft.wither_skeleton_wall_skull": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "wither",
+    "skeleton",
+    "no",
+    "skull"
+  ],
+  "block.minecraft.zombie_wall_head": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "zombie",
+    "no",
+    "head"
+  ],
+  "container.barrel": [
+    "barrel"
+  ],
+  "container.beacon": [
+    "beacon"
+  ],
+  "container.blast_furnace": [
+    "blast",
+    "furnace"
+  ],
+  "container.brewing": [
+    "brewing",
+    "table"
+  ],
+  "container.cartography_table": [
+    "cartography",
+    "table"
+  ],
+  "container.chest": [
+    "chest"
+  ],
+  "container.chestDouble": [
+    "large",
+    "chest"
+  ],
+  "container.crafter": [
+    "crafter"
+  ],
+  "container.crafting": [
+    "crafting"
+  ],
+  "container.creative": [
+    "item",
+    "selection"
+  ],
+  "container.dispenser": [
+    "dispenser"
+  ],
+  "container.dropper": [
+    "dropper"
+  ],
+  "container.enchant": [
+    "enchant"
+  ],
+  "container.enchant.lapis.one": [
+    "1",
+    "lapis",
+    "lazuli"
+  ],
+  "container.enchant.level.one": [
+    "1",
+    "enchantment",
+    "level"
+  ],
+  "container.enderchest": [
+    "ender",
+    "chest"
+  ],
+  "container.furnace": [
+    "furnace"
+  ],
+  "container.grindstone_title": [
+    "repair",
+    "disenchant"
+  ],
+  "container.hopper": [
+    "item",
+    "hopper"
+  ],
+  "container.inventory": [
+    "inventory"
+  ],
+  "container.lectern": [
+    "lectern"
+  ],
+  "container.loom": [
+    "loom"
+  ],
+  "container.repair": [
+    "repair",
+    "name"
+  ],
+  "container.repair.expensive": [
+    "too",
+    "expensive"
+  ],
+  "container.shulkerBox": [
+    "shulker",
+    "box"
+  ],
+  "container.smoker": [
+    "smoker"
+  ],
+  "container.spectatorCantOpen": [
+    "unable",
+    "to",
+    "open",
+    "loot",
+    "not",
+    "generated",
+    "yet"
+  ],
+  "container.stonecutter": [
+    "stonecutter"
+  ],
+  "container.upgrade": [
+    "upgrade",
+    "gear"
+  ],
+  "container.upgrade.error_tooltip": [
+    "item",
+    "can",
+    "t",
+    "be",
+    "upgraded",
+    "this",
+    "way"
+  ],
+  "container.upgrade.missing_template_tooltip": [
+    "add",
+    "smithing",
+    "template"
+  ],
+  "entity.minecraft.acacia_boat": [
+    "acacia",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.acacia_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "acacia",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.allay": [
+    "allay"
+  ],
+  "entity.minecraft.area_effect_cloud": [
+    "area_effect_cloud"
+  ],
+  "entity.minecraft.armadillo": [
+    "armadillo"
+  ],
+  "entity.minecraft.armor_stand": [
+    "armor_1",
+    "stand"
+  ],
+  "entity.minecraft.arrow": [
+    "arrow"
+  ],
+  "entity.minecraft.axolotl": [
+    "axolotl"
+  ],
+  "entity.minecraft.bamboo_chest_raft": [
+    "chest",
+    "with",
+    "no",
+    "bamboo",
+    "no",
+    "raft"
+  ],
+  "entity.minecraft.bamboo_raft": [
+    "bamboo",
+    "no",
+    "raft"
+  ],
+  "entity.minecraft.bat": [
+    "bat"
+  ],
+  "entity.minecraft.bee": [
+    "bee"
+  ],
+  "entity.minecraft.birch_boat": [
+    "birch",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.birch_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "birch",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.blaze": [
+    "blaze"
+  ],
+  "entity.minecraft.block_display": [
+    "block",
+    "display",
+    "entity"
+  ],
+  "entity.minecraft.bogged": [
+    "bogged"
+  ],
+  "entity.minecraft.breeze": [
+    "breeze"
+  ],
+  "entity.minecraft.breeze_wind_charge": [
+    "wind_charge"
+  ],
+  "entity.minecraft.camel": [
+    "camel"
+  ],
+  "entity.minecraft.camel_husk": [
+    "camel",
+    "husk"
+  ],
+  "entity.minecraft.cat": [
+    "cat"
+  ],
+  "entity.minecraft.cave_spider": [
+    "cave",
+    "spider"
+  ],
+  "entity.minecraft.cherry_boat": [
+    "cherry",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.cherry_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "cherry",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.chest_minecart": [
+    "chest",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.chicken": [
+    "chicken_1"
+  ],
+  "entity.minecraft.cod": [
+    "cod_1"
+  ],
+  "entity.minecraft.command_block_minecart": [
+    "command",
+    "block",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.copper_golem": [
+    "copper_1",
+    "golem"
+  ],
+  "entity.minecraft.cow": [
+    "cow"
+  ],
+  "entity.minecraft.creaking": [
+    "creaking"
+  ],
+  "entity.minecraft.creeper": [
+    "creeper"
+  ],
+  "entity.minecraft.dark_oak_boat": [
+    "dark",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.dark_oak_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "dark",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.dolphin": [
+    "dolphin"
+  ],
+  "entity.minecraft.donkey": [
+    "donkey"
+  ],
+  "entity.minecraft.dragon_fireball": [
+    "dragon",
+    "no",
+    "fireball"
+  ],
+  "entity.minecraft.drowned": [
+    "drowned"
+  ],
+  "entity.minecraft.egg": [
+    "thrown",
+    "egg"
+  ],
+  "entity.minecraft.elder_guardian": [
+    "elder_guardian"
+  ],
+  "entity.minecraft.end_crystal": [
+    "end",
+    "crystal"
+  ],
+  "entity.minecraft.ender_dragon": [
+    "ender",
+    "dragon"
+  ],
+  "entity.minecraft.enderman": [
+    "enderman"
+  ],
+  "entity.minecraft.endermite": [
+    "endermite"
+  ],
+  "entity.minecraft.evoker": [
+    "evoker"
+  ],
+  "entity.minecraft.experience_bottle": [
+    "thrown",
+    "enchanted",
+    "no",
+    "bottle"
+  ],
+  "entity.minecraft.eye_of_ender": [
+    "ender",
+    "eye_1"
+  ],
+  "entity.minecraft.fireball": [
+    "fireball"
+  ],
+  "entity.minecraft.firework_rocket": [
+    "firework_rocket"
+  ],
+  "entity.minecraft.fishing_bobber": [
+    "bobber"
+  ],
+  "entity.minecraft.fox": [
+    "fox"
+  ],
+  "entity.minecraft.frog": [
+    "frog"
+  ],
+  "entity.minecraft.furnace_minecart": [
+    "furnace",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.ghast": [
+    "ghast"
+  ],
+  "entity.minecraft.giant": [
+    "giant"
+  ],
+  "entity.minecraft.glow_item_frame": [
+    "glow",
+    "item_frame"
+  ],
+  "entity.minecraft.glow_squid": [
+    "glow_1",
+    "squid"
+  ],
+  "entity.minecraft.goat": [
+    "goat"
+  ],
+  "entity.minecraft.guardian": [
+    "guardian"
+  ],
+  "entity.minecraft.happy_ghast": [
+    "happy",
+    "ghast"
+  ],
+  "entity.minecraft.hoglin": [
+    "hoglin"
+  ],
+  "entity.minecraft.hopper_minecart": [
+    "hopper",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.horse": [
+    "horse_2"
+  ],
+  "entity.minecraft.husk": [
+    "husk"
+  ],
+  "entity.minecraft.iron_golem": [
+    "iron_1",
+    "golem"
+  ],
+  "entity.minecraft.item_display": [
+    "item",
+    "display",
+    "entity"
+  ],
+  "entity.minecraft.item_frame": [
+    "item_frame"
+  ],
+  "entity.minecraft.jungle_boat": [
+    "jungle",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.jungle_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "jungle",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.killer_bunny": [
+    "killer_bunny"
+  ],
+  "entity.minecraft.leash_knot": [
+    "leash",
+    "no",
+    "knot"
+  ],
+  "entity.minecraft.lightning_bolt": [
+    "lightning_bolt"
+  ],
+  "entity.minecraft.lingering_potion": [
+    "lingering",
+    "potion"
+  ],
+  "entity.minecraft.llama": [
+    "llama"
+  ],
+  "entity.minecraft.llama_spit": [
+    "llama",
+    "no",
+    "spit"
+  ],
+  "entity.minecraft.magma_cube": [
+    "magma",
+    "cube"
+  ],
+  "entity.minecraft.mangrove_boat": [
+    "mangrove",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.mangrove_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "mangrove",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.mannequin": [
+    "mannequin"
+  ],
+  "entity.minecraft.marker": [
+    "marker"
+  ],
+  "entity.minecraft.minecart": [
+    "minecart"
+  ],
+  "entity.minecraft.mooshroom": [
+    "mooshroom"
+  ],
+  "entity.minecraft.mule": [
+    "mule"
+  ],
+  "entity.minecraft.nautilus": [
+    "nautilus"
+  ],
+  "entity.minecraft.oak_boat": [
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.oak_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.ocelot": [
+    "ocelot"
+  ],
+  "entity.minecraft.ominous_item_spawner": [
+    "ominous",
+    "item",
+    "spawner"
+  ],
+  "entity.minecraft.painting": [
+    "painting"
+  ],
+  "entity.minecraft.pale_oak_boat": [
+    "pale",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.pale_oak_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "pale",
+    "oak",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.panda": [
+    "panda"
+  ],
+  "entity.minecraft.parched": [
+    "parched"
+  ],
+  "entity.minecraft.parrot": [
+    "parrot"
+  ],
+  "entity.minecraft.phantom": [
+    "phantom"
+  ],
+  "entity.minecraft.pig": [
+    "pig_1"
+  ],
+  "entity.minecraft.piglin": [
+    "piglin"
+  ],
+  "entity.minecraft.piglin_brute": [
+    "piglin",
+    "brute"
+  ],
+  "entity.minecraft.pillager": [
+    "pillager"
+  ],
+  "entity.minecraft.player": [
+    "player"
+  ],
+  "entity.minecraft.polar_bear": [
+    "polar_bear"
+  ],
+  "entity.minecraft.pufferfish": [
+    "pufferfish"
+  ],
+  "entity.minecraft.rabbit": [
+    "rabbit_1"
+  ],
+  "entity.minecraft.ravager": [
+    "ravager"
+  ],
+  "entity.minecraft.salmon": [
+    "salmon_1"
+  ],
+  "entity.minecraft.sheep": [
+    "sheep"
+  ],
+  "entity.minecraft.shulker": [
+    "shulker"
+  ],
+  "entity.minecraft.shulker_bullet": [
+    "shulker",
+    "no",
+    "bullet"
+  ],
+  "entity.minecraft.silverfish": [
+    "silverfish"
+  ],
+  "entity.minecraft.skeleton": [
+    "skeleton"
+  ],
+  "entity.minecraft.skeleton_horse": [
+    "skeleton",
+    "horse_1"
+  ],
+  "entity.minecraft.slime": [
+    "slime"
+  ],
+  "entity.minecraft.small_fireball": [
+    "small",
+    "sa",
+    "na",
+    "fireball"
+  ],
+  "entity.minecraft.sniffer": [
+    "sniffer"
+  ],
+  "entity.minecraft.snow_golem": [
+    "snow_1",
+    "golem"
+  ],
+  "entity.minecraft.snowball": [
+    "snowball"
+  ],
+  "entity.minecraft.spawner_minecart": [
+    "monster",
+    "spawner",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.spectral_arrow": [
+    "spectral",
+    "no",
+    "arrow"
+  ],
+  "entity.minecraft.spider": [
+    "spider_1"
+  ],
+  "entity.minecraft.splash_potion": [
+    "splash",
+    "potion"
+  ],
+  "entity.minecraft.spruce_boat": [
+    "spruce",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.spruce_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "spruce",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.squid": [
+    "squid"
+  ],
+  "entity.minecraft.stray": [
+    "stray"
+  ],
+  "entity.minecraft.strider": [
+    "strider"
+  ],
+  "entity.minecraft.tadpole": [
+    "tadpole"
+  ],
+  "entity.minecraft.text_display": [
+    "text",
+    "display",
+    "entity"
+  ],
+  "entity.minecraft.tnt": [
+    "ignition",
+    "sa",
+    "reta",
+    "tnt"
+  ],
+  "entity.minecraft.tnt_minecart": [
+    "tnt",
+    "with",
+    "no",
+    "minecart"
+  ],
+  "entity.minecraft.trader_llama": [
+    "trader",
+    "no",
+    "llama"
+  ],
+  "entity.minecraft.trident": [
+    "trident"
+  ],
+  "entity.minecraft.tropical_fish": [
+    "tropical_fish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.0": [
+    "anemone"
+  ],
+  "entity.minecraft.tropical_fish.predefined.1": [
+    "black_tang"
+  ],
+  "entity.minecraft.tropical_fish.predefined.10": [
+    "moorish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.11": [
+    "ornate",
+    "butterflyfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.12": [
+    "parrotfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.13": [
+    "queen_angelfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.14": [
+    "red_1",
+    "cichlid"
+  ],
+  "entity.minecraft.tropical_fish.predefined.15": [
+    "pholidae"
+  ],
+  "entity.minecraft.tropical_fish.predefined.16": [
+    "red_snapper"
+  ],
+  "entity.minecraft.tropical_fish.predefined.17": [
+    "threadfin"
+  ],
+  "entity.minecraft.tropical_fish.predefined.18": [
+    "tomato_clownfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.19": [
+    "triggerfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.2": [
+    "blue_tang"
+  ],
+  "entity.minecraft.tropical_fish.predefined.20": [
+    "yellowtail",
+    "parrotfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.21": [
+    "yellow_tang"
+  ],
+  "entity.minecraft.tropical_fish.predefined.3": [
+    "butterflyfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.4": [
+    "cichlid"
+  ],
+  "entity.minecraft.tropical_fish.predefined.5": [
+    "clownfish"
+  ],
+  "entity.minecraft.tropical_fish.predefined.6": [
+    "betta"
+  ],
+  "entity.minecraft.tropical_fish.predefined.7": [
+    "dottyback"
+  ],
+  "entity.minecraft.tropical_fish.predefined.8": [
+    "emperor_red_snapper"
+  ],
+  "entity.minecraft.tropical_fish.predefined.9": [
+    "goatfish"
+  ],
+  "entity.minecraft.tropical_fish.type.betty": [
+    "betty"
+  ],
+  "entity.minecraft.tropical_fish.type.blockfish": [
+    "blockfish"
+  ],
+  "entity.minecraft.tropical_fish.type.brinely": [
+    "brinely"
+  ],
+  "entity.minecraft.tropical_fish.type.clayfish": [
+    "clayfish"
+  ],
+  "entity.minecraft.tropical_fish.type.dasher": [
+    "dasher"
+  ],
+  "entity.minecraft.tropical_fish.type.flopper": [
+    "flopper"
+  ],
+  "entity.minecraft.tropical_fish.type.glitter": [
+    "glitter"
+  ],
+  "entity.minecraft.tropical_fish.type.kob": [
+    "kob"
+  ],
+  "entity.minecraft.tropical_fish.type.snooper": [
+    "snooper"
+  ],
+  "entity.minecraft.tropical_fish.type.spotty": [
+    "spotty"
+  ],
+  "entity.minecraft.tropical_fish.type.stripey": [
+    "stripey"
+  ],
+  "entity.minecraft.tropical_fish.type.sunstreak": [
+    "sunstreak"
+  ],
+  "entity.minecraft.turtle": [
+    "turtle"
+  ],
+  "entity.minecraft.vex": [
+    "vex"
+  ],
+  "entity.minecraft.villager": [
+    "villager"
+  ],
+  "entity.minecraft.villager.armorer": [
+    "armorer"
+  ],
+  "entity.minecraft.villager.butcher": [
+    "butcher"
+  ],
+  "entity.minecraft.villager.cartographer": [
+    "cartographer"
+  ],
+  "entity.minecraft.villager.cleric": [
+    "cleric"
+  ],
+  "entity.minecraft.villager.farmer": [
+    "farmer"
+  ],
+  "entity.minecraft.villager.fisherman": [
+    "angler"
+  ],
+  "entity.minecraft.villager.fletcher": [
+    "fletcher"
+  ],
+  "entity.minecraft.villager.leatherworker": [
+    "leatherworker"
+  ],
+  "entity.minecraft.villager.librarian": [
+    "librarian"
+  ],
+  "entity.minecraft.villager.mason": [
+    "mason"
+  ],
+  "entity.minecraft.villager.nitwit": [
+    "nitwit"
+  ],
+  "entity.minecraft.villager.none": [
+    "villager"
+  ],
+  "entity.minecraft.villager.shepherd": [
+    "shepherd"
+  ],
+  "entity.minecraft.villager.toolsmith": [
+    "toolsmith"
+  ],
+  "entity.minecraft.villager.weaponsmith": [
+    "weaponsmith"
+  ],
+  "entity.minecraft.vindicator": [
+    "vindicator"
+  ],
+  "entity.minecraft.wandering_trader": [
+    "wandering_trader"
+  ],
+  "entity.minecraft.warden": [
+    "warden"
+  ],
+  "entity.minecraft.wind_charge": [
+    "wind_charge"
+  ],
+  "entity.minecraft.witch": [
+    "witch"
+  ],
+  "entity.minecraft.wither": [
+    "wither"
+  ],
+  "entity.minecraft.wither_skeleton": [
+    "wither",
+    "skeleton"
+  ],
+  "entity.minecraft.wither_skull": [
+    "wither",
+    "no",
+    "skull"
+  ],
+  "entity.minecraft.wolf": [
+    "wolf"
+  ],
+  "entity.minecraft.zoglin": [
+    "zoglin"
+  ],
+  "entity.minecraft.zombie": [
+    "zombie"
+  ],
+  "entity.minecraft.zombie_horse": [
+    "zombie",
+    "horse_1"
+  ],
+  "entity.minecraft.zombie_nautilus": [
+    "zombie",
+    "nautilus"
+  ],
+  "entity.minecraft.zombie_villager": [
+    "villager",
+    "zombie"
+  ],
+  "entity.minecraft.zombified_piglin": [
+    "zombie",
+    "piglin"
+  ],
+  "item.minecraft.arms_up_pottery_sherd": [
+    "arms_up",
+    "no",
+    "pottery_shard"
+  ],
+  "item.minecraft.bogged_spawn_egg": [
+    "bogged",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.bordure_indented_banner_pattern": [
+    "indented",
+    "no",
+    "bordure",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.brewing_stand": [
+    "brewing",
+    "table"
+  ],
+  "item.minecraft.bundle.empty": [
+    "empty"
+  ],
+  "item.minecraft.bundle.empty.description": [
+    "can",
+    "hold",
+    "a",
+    "mixed",
+    "stack",
+    "items"
+  ],
+  "item.minecraft.bundle.full": [
+    "full"
+  ],
+  "item.minecraft.cauldron": [
+    "cauldron"
+  ],
+  "item.minecraft.cocoa_beans": [
+    "cocoa_1",
+    "beans_1"
+  ],
+  "item.minecraft.cooked_mutton": [
+    "cooked",
+    "mutton",
+    "flesh"
+  ],
+  "item.minecraft.fermented_spider_eye": [
+    "fermented",
+    "shita",
+    "spider_1",
+    "no",
+    "eye"
+  ],
+  "item.minecraft.field_masoned_banner_pattern": [
+    "field_masoned",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.firework_rocket.flight": [
+    "flight",
+    "duration",
+    ":"
+  ],
+  "item.minecraft.firework_star.black": [
+    "black",
+    "iro"
+  ],
+  "item.minecraft.firework_star.blue": [
+    "blue",
+    "iro"
+  ],
+  "item.minecraft.firework_star.brown": [
+    "brown",
+    "iro"
+  ],
+  "item.minecraft.firework_star.custom_color": [
+    "custom"
+  ],
+  "item.minecraft.firework_star.cyan": [
+    "cyan",
+    "iro"
+  ],
+  "item.minecraft.firework_star.flicker": [
+    "twinkle"
+  ],
+  "item.minecraft.firework_star.gray": [
+    "gray",
+    "iro"
+  ],
+  "item.minecraft.firework_star.green": [
+    "green",
+    "iro"
+  ],
+  "item.minecraft.firework_star.light_blue": [
+    "light_blue",
+    "iro"
+  ],
+  "item.minecraft.firework_star.light_gray": [
+    "light_gray",
+    "iro"
+  ],
+  "item.minecraft.firework_star.lime": [
+    "lime",
+    "iro"
+  ],
+  "item.minecraft.firework_star.magenta": [
+    "magenta",
+    "iro"
+  ],
+  "item.minecraft.firework_star.orange": [
+    "orange",
+    "iro"
+  ],
+  "item.minecraft.firework_star.pink": [
+    "pink",
+    "iro"
+  ],
+  "item.minecraft.firework_star.purple": [
+    "purple",
+    "iro"
+  ],
+  "item.minecraft.firework_star.red": [
+    "red",
+    "iro"
+  ],
+  "item.minecraft.firework_star.shape": [
+    "unknown",
+    "shape"
+  ],
+  "item.minecraft.firework_star.shape.burst": [
+    "burst"
+  ],
+  "item.minecraft.firework_star.shape.creeper": [
+    "creeper",
+    "template"
+  ],
+  "item.minecraft.firework_star.shape.large_ball": [
+    "big",
+    "ball_1"
+  ],
+  "item.minecraft.firework_star.shape.small_ball": [
+    "small",
+    "ball_1"
+  ],
+  "item.minecraft.firework_star.shape.star": [
+    "star",
+    "template"
+  ],
+  "item.minecraft.firework_star.trail": [
+    "trail"
+  ],
+  "item.minecraft.firework_star.white": [
+    "white"
+  ],
+  "item.minecraft.firework_star.yellow": [
+    "yellow",
+    "iro"
+  ],
+  "item.minecraft.flint_and_steel": [
+    "flint",
+    "to",
+    "steel"
+  ],
+  "item.minecraft.flower_pot": [
+    "flower_pot"
+  ],
+  "item.minecraft.glistering_melon_slice": [
+    "glistering",
+    "melon",
+    "no",
+    "slice"
+  ],
+  "item.minecraft.guster_banner_pattern": [
+    "guster",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.guster_pottery_sherd": [
+    "guster",
+    "no",
+    "pottery_shard"
+  ],
+  "item.minecraft.harness": [
+    "harness"
+  ],
+  "item.minecraft.lingering_potion": [
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.awkward": [
+    "awkward",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.empty": [
+    "uncraftable",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.fire_resistance": [
+    "fireproof",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.harming": [
+    "harming",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.healing": [
+    "healing",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.infested": [
+    "infested",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.invisibility": [
+    "invisibility",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.leaping": [
+    "leaping",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.levitation": [
+    "levitation",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.luck": [
+    "luck",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.mundane": [
+    "common",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.night_vision": [
+    "night_vision",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.oozing": [
+    "oozing",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.poison": [
+    "poison",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.regeneration": [
+    "regeneration",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.slow_falling": [
+    "slow_speed",
+    "fall",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.slowness": [
+    "slowness",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.strength": [
+    "strength",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.swiftness": [
+    "swiftness",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.thick": [
+    "thick",
+    "na",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.turtle_master": [
+    "turtle_master",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.water": [
+    "water",
+    "iri",
+    "lingering",
+    "bottle"
+  ],
+  "item.minecraft.lingering_potion.effect.water_breathing": [
+    "underwater",
+    "breathing",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.weakness": [
+    "weakness",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.weaving": [
+    "weaving",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lingering_potion.effect.wind_charged": [
+    "wind_charged",
+    "no",
+    "lingering",
+    "potion"
+  ],
+  "item.minecraft.lodestone_compass": [
+    "lodestone",
+    "compass"
+  ],
+  "item.minecraft.map": [
+    "blank_paper",
+    "no",
+    "map"
+  ],
+  "item.minecraft.mojang_banner_pattern": [
+    "mojang",
+    "no",
+    "banner",
+    "no",
+    "pattern"
+  ],
+  "item.minecraft.music_disc_otherside": [
+    "record"
+  ],
+  "item.minecraft.mutton": [
+    "raw_1",
+    "no",
+    "mutton",
+    "flesh"
+  ],
+  "item.minecraft.netherite_upgrade_smithing_template": [
+    "netherite",
+    "upgrade"
+  ],
+  "item.minecraft.pitcher_plant": [
+    "pitcher_plant"
+  ],
+  "item.minecraft.pitcher_pod": [
+    "pitcher_plant",
+    "no",
+    "pod"
+  ],
+  "item.minecraft.poisonous_potato": [
+    "poisonous",
+    "potato"
+  ],
+  "item.minecraft.potion": [
+    "potion"
+  ],
+  "item.minecraft.potion.effect.awkward": [
+    "awkward",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.empty": [
+    "uncraftable",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.fire_resistance": [
+    "fireproof",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.harming": [
+    "harming",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.healing": [
+    "healing",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.infested": [
+    "infested",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.invisibility": [
+    "invisibility",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.leaping": [
+    "leaping",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.levitation": [
+    "levitation",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.luck": [
+    "luck",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.mundane": [
+    "common",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.night_vision": [
+    "night_vision",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.oozing": [
+    "oozing",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.poison": [
+    "poison",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.regeneration": [
+    "regeneration",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.slow_falling": [
+    "slow_speed",
+    "fall",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.slowness": [
+    "slowness",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.strength": [
+    "strength",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.swiftness": [
+    "swiftness",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.thick": [
+    "thick",
+    "na",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.turtle_master": [
+    "turtle_master",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.water": [
+    "water",
+    "iri",
+    "bottle"
+  ],
+  "item.minecraft.potion.effect.water_breathing": [
+    "underwater",
+    "breathing",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.weakness": [
+    "weakness",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.weaving": [
+    "weaving",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.potion.effect.wind_charged": [
+    "wind_charged",
+    "no",
+    "potion"
+  ],
+  "item.minecraft.rotten_flesh": [
+    "rotted",
+    "flesh"
+  ],
+  "item.minecraft.sheaf_pottery_sherd": [
+    "wheat_sheaf",
+    "no",
+    "pottery_shard"
+  ],
+  "item.minecraft.shield.black": [
+    "black",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.blue": [
+    "blue",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.brown": [
+    "brown",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.cyan": [
+    "cyan",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.gray": [
+    "gray",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.green": [
+    "green",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.light_blue": [
+    "light_blue",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.light_gray": [
+    "light_gray",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.lime": [
+    "lime",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.magenta": [
+    "magenta",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.orange": [
+    "orange",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.pink": [
+    "pink",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.purple": [
+    "purple",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.red": [
+    "red",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.white": [
+    "white",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.shield.yellow": [
+    "yellow",
+    "iro",
+    "no",
+    "shield"
+  ],
+  "item.minecraft.sign": [
+    "sign"
+  ],
+  "item.minecraft.smithing_template": [
+    "smithing",
+    "template"
+  ],
+  "item.minecraft.smithing_template.armor_trim.applies_to": [
+    "armor_1"
+  ],
+  "item.minecraft.smithing_template.armor_trim.base_slot_description": [
+    "add",
+    "a",
+    "piece",
+    "armor"
+  ],
+  "item.minecraft.smithing_template.armor_trim.ingredients": [
+    "ingot",
+    "mineral"
+  ],
+  "item.minecraft.smithing_template.ingredients": [
+    "ingredients",
+    ":"
+  ],
+  "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": [
+    "add",
+    "netherite",
+    "ingot"
+  ],
+  "item.minecraft.smithing_template.netherite_upgrade.applies_to": [
+    "diamond",
+    "no",
+    "equipment"
+  ],
+  "item.minecraft.smithing_template.netherite_upgrade.base_slot_description": [
+    "add",
+    "diamond",
+    "armor",
+    "weapon",
+    "or",
+    "tool"
+  ],
+  "item.minecraft.smithing_template.netherite_upgrade.ingredients": [
+    "netherite",
+    "ingot"
+  ],
+  "item.minecraft.smithing_template.upgrade": [
+    "upgrade",
+    ":"
+  ],
+  "item.minecraft.splash_potion": [
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.awkward": [
+    "awkward",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.empty": [
+    "uncraftable",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.fire_resistance": [
+    "fireproof",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.harming": [
+    "harming",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.healing": [
+    "healing",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.infested": [
+    "infested",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.invisibility": [
+    "invisibility",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.leaping": [
+    "leaping",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.levitation": [
+    "levitation",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.luck": [
+    "luck",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.mundane": [
+    "common",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.night_vision": [
+    "night_vision",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.oozing": [
+    "oozing",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.poison": [
+    "poison",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.regeneration": [
+    "regeneration",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.slow_falling": [
+    "slow_speed",
+    "fall",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.slowness": [
+    "slowness",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.strength": [
+    "strength",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.swiftness": [
+    "swiftness",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.thick": [
+    "thick",
+    "na",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.turtle_master": [
+    "turtle_master",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.water": [
+    "water",
+    "iri",
+    "splash",
+    "bottle"
+  ],
+  "item.minecraft.splash_potion.effect.water_breathing": [
+    "underwater",
+    "breathing",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.weakness": [
+    "weakness",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.weaving": [
+    "weaving",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.splash_potion.effect.wind_charged": [
+    "wind_charged",
+    "no",
+    "splash",
+    "potion"
+  ],
+  "item.minecraft.tipped_arrow.effect.awkward": [
+    "peculiar",
+    "na",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.empty": [
+    "uncraftable",
+    "tipped",
+    "with",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.fire_resistance": [
+    "fireproof",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.harming": [
+    "harming",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.healing": [
+    "healing",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.infested": [
+    "infested",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.invisibility": [
+    "invisibility",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.leaping": [
+    "leaping",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.levitation": [
+    "levitation",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.luck": [
+    "luck",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.mundane": [
+    "common",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.night_vision": [
+    "night_vision",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.oozing": [
+    "oozing",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.poison": [
+    "poison",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.regeneration": [
+    "regeneration",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.slow_falling": [
+    "slow_speed",
+    "fall",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.slowness": [
+    "slowness",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.strength": [
+    "strength",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.swiftness": [
+    "swiftness",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.thick": [
+    "thick",
+    "na",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.turtle_master": [
+    "turtle_master",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.water": [
+    "no_effect",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.water_breathing": [
+    "underwater",
+    "breathing",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.weakness": [
+    "weakness",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.weaving": [
+    "weaving",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.tipped_arrow.effect.wind_charged": [
+    "wind_charged",
+    "no",
+    "arrow"
+  ],
+  "item.minecraft.totem_of_undying": [
+    "undying",
+    "no",
+    "totem"
+  ],
+  "item.minecraft.wandering_trader_spawn_egg": [
+    "wandering_trader",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.wind_charge": [
+    "wind_charge"
+  ],
+  "item.minecraft.writable_book": [
+    "book",
+    "to",
+    "quill"
+  ],
+  "item.minecraft.written_book": [
+    "written",
+    "no",
+    "book"
+  ],
+  "block.minecraft.brain_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "brain",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.bubble_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "bubble_1",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.dead_brain_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "dead",
+    "brain",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.dead_bubble_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "dead",
+    "bubble_1",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.dead_fire_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "dead",
+    "fire_1",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.dead_horn_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "dead",
+    "horn",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.dead_tube_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "dead",
+    "tube",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.fire_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "fire_1",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.horn_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "horn",
+    "fan",
+    "coral"
+  ],
+  "block.minecraft.tube_coral_wall_fan": [
+    "wall_1",
+    "with",
+    "no",
+    "tube",
+    "fan",
+    "coral"
+  ],
+  "item.minecraft.bolt_armor_trim_smithing_template": [
+    "bolt",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.coast_armor_trim_smithing_template": [
+    "sea",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.dune_armor_trim_smithing_template": [
+    "dune",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.eye_armor_trim_smithing_template": [
+    "ender",
+    "eye_1",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.flow_armor_trim_smithing_template": [
+    "whirlwind",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.host_armor_trim_smithing_template": [
+    "host",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.raiser_armor_trim_smithing_template": [
+    "raiser",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.rib_armor_trim_smithing_template": [
+    "rib",
+    "pattern",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.sentry_armor_trim_smithing_template": [
+    "sentry",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.shaper_armor_trim_smithing_template": [
+    "shaper",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.silence_armor_trim_smithing_template": [
+    "silence",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.snout_armor_trim_smithing_template": [
+    "pig_1",
+    "no",
+    "nose",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.spire_armor_trim_smithing_template": [
+    "spire",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.tide_armor_trim_smithing_template": [
+    "tide",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.vex_armor_trim_smithing_template": [
+    "vex",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.ward_armor_trim_smithing_template": [
+    "ward",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.wayfinder_armor_trim_smithing_template": [
+    "wayfinder",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.wild_armor_trim_smithing_template": [
+    "wild",
+    "style",
+    "no",
+    "ornament"
+  ],
+  "item.minecraft.abandoned_camp_map": [
+    "abandoned",
+    "sa",
+    "reta",
+    "camp",
+    "no",
+    "map"
+  ],
+  "item.minecraft.abandoned_campsite_map": [
+    "abandoned",
+    "sa",
+    "reta",
+    "camp",
+    "no",
+    "map"
+  ],
+  "item.minecraft.ancient_city_map": [
+    "ancient",
+    "city",
+    "no",
+    "map"
+  ],
+  "item.minecraft.buried_ancient_city_map": [
+    "buried",
+    "ancient",
+    "city",
+    "no",
+    "map"
+  ],
+  "item.minecraft.buried_mineshaft_map": [
+    "buried",
+    "mineshaft",
+    "no",
+    "map"
+  ],
+  "item.minecraft.buried_treasure_map": [
+    "buried",
+    "treasure",
+    "no",
+    "map"
+  ],
+  "item.minecraft.desert_pyramid_map": [
+    "desert",
+    "no",
+    "pyramid",
+    "no",
+    "map"
+  ],
+  "item.minecraft.desert_village_map": [
+    "desert",
+    "no",
+    "village",
+    "no",
+    "map"
+  ],
+  "item.minecraft.jungle_explorer_map": [
+    "jungle",
+    "explorer",
+    "no",
+    "map"
+  ],
+  "item.minecraft.mineshaft_map": [
+    "mineshaft",
+    "no",
+    "map"
+  ],
+  "item.minecraft.ocean_explorer_map": [
+    "sea",
+    "explorer",
+    "no",
+    "map"
+  ],
+  "item.minecraft.plains_village_map": [
+    "plains",
+    "no",
+    "village",
+    "no",
+    "map"
+  ],
+  "item.minecraft.savanna_village_map": [
+    "savanna",
+    "no",
+    "village",
+    "no",
+    "map"
+  ],
+  "item.minecraft.snowy_village_map": [
+    "snowy",
+    "no",
+    "village",
+    "no",
+    "map"
+  ],
+  "item.minecraft.swamp_explorer_map": [
+    "swamp",
+    "explorer",
+    "no",
+    "map"
+  ],
+  "item.minecraft.taiga_village_map": [
+    "taiga",
+    "no",
+    "village",
+    "no",
+    "map"
+  ],
+  "item.minecraft.trial_explorer_map": [
+    "trial_explorer",
+    "no",
+    "map"
+  ],
+  "item.minecraft.warm_ocean_ruins_map": [
+    "warm",
+    "seafloor",
+    "ruins",
+    "no",
+    "map"
+  ],
+  "item.minecraft.woodland_explorer_map": [
+    "woodland",
+    "explorer",
+    "no",
+    "map"
   ]
 }

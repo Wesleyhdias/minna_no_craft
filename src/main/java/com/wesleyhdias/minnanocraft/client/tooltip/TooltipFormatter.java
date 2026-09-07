@@ -2,6 +2,8 @@ package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
@@ -114,40 +116,59 @@ public class TooltipFormatter {
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
         String[] words = fullText.split(" ");
 
+        // 1. Expande a estrutura para garantir que tokens compostos sejam quebrados em suas partes reais
+        List<String> expandedStructure = new java.util.ArrayList<>();
+        if (structure != null) {
+            for (String token : structure) {
+                CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+                if (compound != null) {
+                    expandedStructure.addAll(compound.components());
+                    String sepToken = compound.getSafeSeparator();
+                    if (sepToken != null && !sepToken.isEmpty() && !sepToken.equals(" ")) {
+                        expandedStructure.add(sepToken);
+                    }
+                } else {
+                    expandedStructure.add(token);
+                }
+            }
+        }
+
         for (String word : words) {
             ParsedWord pw = new ParsedWord();
             pw.text = word;
             pw.isInteractive = false;
 
-            if (structure != null) {
-                for (String token : structure) {
+            if (!expandedStructure.isEmpty()) {
+                for (String token : expandedStructure) {
                     if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
 
+                    // Tenta buscar como Palavra Simples primeiro
                     Word wordObj = DictionaryLoader.getDictionary().get(token);
-                    if (wordObj == null) continue;
 
-                    WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
-                    int level = (progress != null) ? progress.getScriptLevel() : 0;
+                    if (wordObj != null) {
+                        WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
+                        int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                    String renderedText = DifficultyResolver.render(wordObj, level);
+                        String renderedText = DifficultyResolver.render(wordObj, level);
 
-                    boolean matchRender = (word.equalsIgnoreCase(renderedText));
-                    boolean matchToken = word.equalsIgnoreCase(token);
-                    boolean matchTranslation = wordObj.getLocalTranslations() != null &&
-                            wordObj.getLocalTranslations().stream().anyMatch(word::equalsIgnoreCase);
+                        boolean matchRender = (word.equalsIgnoreCase(renderedText));
+                        boolean matchToken = word.equalsIgnoreCase(token);
+                        boolean matchTranslation = wordObj.getLocalTranslations() != null &&
+                                wordObj.getLocalTranslations().stream().anyMatch(word::equalsIgnoreCase);
 
-                    if (matchRender || matchToken || matchTranslation) {
-                        pw.isInteractive = true;
-                        pw.token = token;
+                        if (matchRender || matchToken || matchTranslation) {
+                            pw.isInteractive = true;
+                            pw.token = token;
 
-                        String prevText = DifficultyResolver.renderPrevious(wordObj, level);
-                        if (prevText == null) {
-                            prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
-                                    ? wordObj.getLocalTranslations().getFirst()
-                                    : token;
+                            String prevText = DifficultyResolver.renderPrevious(wordObj, level);
+                            if (prevText == null) {
+                                prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
+                                        ? wordObj.getLocalTranslations().getFirst()
+                                        : token;
+                            }
+                            pw.prevText = prevText;
+                            break;
                         }
-                        pw.prevText = prevText;
-                        break;
                     }
                 }
             }

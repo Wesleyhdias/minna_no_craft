@@ -15,7 +15,8 @@
   "light_gray": {
     "translations": {
       "pt_br": [
-        "Azul Claro"
+        "Cinza-Claro",
+        "Cinza-Clara"
       ],
       "en_us": [
         "Light Gray"
@@ -28,7 +29,10 @@
   "red": {
     "translations": {
       "pt_br": [
-        "Vermelho"
+        "Vermelhos",
+        "Vermelho",
+        "Vermelhas",
+        "Vermelha"
       ],
       "en_us": [
         "Red"
@@ -41,7 +45,8 @@
   "red_1": {
     "translations": {
       "pt_br": [
-        "Vermelho"
+        "Vermelho",
+        "Vermelha"
       ],
       "en_us": [
         "Red"
@@ -54,7 +59,7 @@
   "lime": {
     "translations": {
       "pt_br": [
-        "Verde_limão"
+        "Verde-limão"
       ],
       "en_us": [
         "Lime"
@@ -80,7 +85,8 @@
   "light_blue": {
     "translations": {
       "pt_br": [
-        "Azul Claro"
+        "Azul-Claro",
+        "Azul-Clara"
       ],
       "en_us": [
         "Light Blue"
@@ -145,7 +151,8 @@
   "purple": {
     "translations": {
       "pt_br": [
-        "Roxo"
+        "Roxo",
+        "Roxa"
       ],
       "en_us": [
         "Purple"
@@ -158,7 +165,8 @@
   "yellow": {
     "translations": {
       "pt_br": [
-        "Amarelo"
+        "Amarelo",
+        "Amarela"
       ],
       "en_us": [
         "Yellow"
@@ -210,7 +218,8 @@
   "black": {
     "translations": {
       "pt_br": [
-        "Preto"
+        "Preto",
+        "Preta"
       ],
       "en_us": [
         "Black"
@@ -223,14 +232,15 @@
   "white": {
     "translations": {
       "pt_br": [
-        "Branco"
+        "Branco",
+        "Branca"
       ],
       "en_us": [
         "White"
       ]
     },
-    "kanji": "白色の",
-    "hiragana": "はくしょくの",
+    "kanji": "白色",
+    "hiragana": "はくしょく",
     "romaji": "hakushoku"
   },
   "pink": {
@@ -249,6 +259,7 @@
   "pink_1": {
     "translations": {
       "pt_br": [
+        "Rosas",
         "Rosa"
       ],
       "en_us": [
@@ -340,7 +351,7 @@
   "pale": {
     "translations": {
       "pt_br": [
-        "Palido"
+        "Pálido"
       ],
       "en_us": [
         "Pale"
@@ -418,10 +429,12 @@
   "block_1": {
     "translations": {
       "pt_br": [
-        "Bloco"
+        "Bloco",
+        "Fardo"
       ],
       "en_us": [
-        "Block"
+        "Block",
+        "Bale"
       ]
     },
     "kanji": "俵",
@@ -431,7 +444,10 @@
   "warped": {
     "translations": {
       "pt_br": [
-        "Distorcido"
+        "Distorcidos",
+        "Distorcido",
+        "Distorcidas",
+        "Distorcida"
       ],
       "en_us": [
         "Warped"
@@ -457,10 +473,13 @@
   "wood": {
     "translations": {
       "pt_br": [
-        "Madeira"
+        "Madeira",
+        "Arbusto"
       ],
       "en_us": [
-        "Wood"
+        "Wooden",
+        "Wood",
+        "Bush"
       ]
     },
     "kanji": "木",
@@ -483,7 +502,7 @@
   "bedrock": {
     "translations": {
       "pt_br": [
-        "Alicerce"
+        "Rocha Matriz"
       ],
       "en_us": [
         "Bedrock"
@@ -496,6 +515,7 @@
   "flint": {
     "translations": {
       "pt_br": [
+        "Sílex",
         "Pederneira"
       ],
       "en_us": [
@@ -642,7 +662,8 @@
         "Pedregulho"
       ],
       "en_us": [
-        "Cobblestone"
+        "Cobblestone",
+        "Cobbled"
       ]
     },
     "kanji": "丸石",
@@ -665,7 +686,8 @@
   "chainmail": {
     "translations": {
       "pt_br": [
-        "Carvão Vegetal"
+        "Cota de Malha",
+        "Malha"
       ],
       "en_us": [
         "Chainmail"
@@ -782,7 +804,9 @@
   "golden": {
     "translations": {
       "pt_br": [
-        "Ouro"
+        "Ouro",
+        "Dourado",
+        "Dourada"
       ],
       "en_us": [
         "Golden"
@@ -834,7 +858,7 @@
   "netherite": {
     "translations": {
       "pt_br": [
-        "Netheritia"
+        "Netherita"
       ],
       "en_us": [
         "Netherite"
@@ -938,6 +962,7 @@
   "armor_1": {
     "translations": {
       "pt_br": [
+        "Armaduras",
         "Armadura"
       ],
       "en_us": [
@@ -967,7 +992,7 @@
         "Capuz"
       ],
       "en_us": [
-        "Helmet"
+        "Cap"
       ]
     },
     "kanji": "帽子",
@@ -980,7 +1005,7 @@
         "Casco"
       ],
       "en_us": [
-        "Helmet"
+        "shell"
       ]
     },
     "kanji": "甲羅",
@@ -1003,10 +1028,12 @@
   "chestplate_1": {
     "translations": {
       "pt_br": [
-        "Peitoral"
+        "Peitoral",
+        "Túnica"
       ],
       "en_us": [
-        "Chestplate"
+        "Chestplate",
+        "Tunic"
       ]
     },
     "kanji": "上着",
@@ -1032,7 +1059,7 @@
         "Calças"
       ],
       "en_us": [
-        "Leggings"
+        "Pants"
       ]
     },
     "kanji": "ズボン",
@@ -1055,7 +1082,7 @@
   "foot": {
     "translations": {
       "pt_br": [
-        "Pés"
+        "Pé"
       ],
       "en_us": [
         "Foot"
@@ -1068,10 +1095,14 @@
   "nose": {
     "translations": {
       "pt_br": [
-        "Nariz"
+        "Nariz",
+        "Focinho",
+        "Farejador"
       ],
       "en_us": [
-        "Nose"
+        "Nose",
+        "Snout",
+        "Snort"
       ]
     },
     "kanji": "鼻",
@@ -1092,6 +1123,19 @@
     "romaji": "narasu"
   },
   "detector": {
+    "translations": {
+      "pt_br": [
+        "Detector"
+      ],
+      "en_us": [
+        "Detector"
+      ]
+    },
+    "kanji": "ディテクター",
+    "hiragana": "でぃてくたー",
+    "romaji": "ditekutaa"
+  },
+  "detector_1": {
     "translations": {
       "pt_br": [
         "Detector"
@@ -1146,7 +1190,7 @@
   "hopper": {
     "translations": {
       "pt_br": [
-        "Tremonha"
+        "Funil"
       ],
       "en_us": [
         "Hopper"
@@ -1159,7 +1203,7 @@
   "dropper": {
     "translations": {
       "pt_br": [
-        "Conta-gotas"
+        "Liberador"
       ],
       "en_us": [
         "Dropper"
@@ -1172,7 +1216,7 @@
   "dispenser": {
     "translations": {
       "pt_br": [
-        "Distribuidor"
+        "Ejetor"
       ],
       "en_us": [
         "Dispenser"
@@ -1211,7 +1255,8 @@
   "recovery": {
     "translations": {
       "pt_br": [
-        "Recuperação"
+        "Recuperação",
+        "Retomada"
       ],
       "en_us": [
         "Recovery"
@@ -1237,7 +1282,7 @@
   "rod": {
     "translations": {
       "pt_br": [
-        "Haste"
+        "Haste", "Vara"
       ],
       "en_us": [
         "Rod"
@@ -1250,7 +1295,9 @@
   "stick": {
     "translations": {
       "pt_br": [
-        "Haste"
+        "Haste",
+        "Vara",
+        "Graveto"
       ],
       "en_us": [
         "Stick"
@@ -1315,7 +1362,7 @@
   "elytra": {
     "translations": {
       "pt_br": [
-        "Élitro"
+        "Élitros"
       ],
       "en_us": [
         "Elytra"
@@ -1328,7 +1375,7 @@
   "fishing_rod": {
     "translations": {
       "pt_br": [
-        "Vara de Pescar"
+        "Vara de Pesca"
       ],
       "en_us": [
         "Fishing Rod"
@@ -1341,7 +1388,7 @@
   "brush": {
     "translations": {
       "pt_br": [
-        "Escovar"
+        "Pincel"
       ],
       "en_us": [
         "Brush"
@@ -1354,7 +1401,8 @@
   "spyglass": {
     "translations": {
       "pt_br": [
-        "Telescópio"
+        "Telescópio",
+        "Luneta"
       ],
       "en_us": [
         "Spyglass"
@@ -1380,7 +1428,8 @@
   "mace": {
     "translations": {
       "pt_br": [
-        "Maça"
+        "Maça",
+        "Clava"
       ],
       "en_us": [
         "Mace"
@@ -1435,7 +1484,8 @@
         "Machado"
       ],
       "en_us": [
-        "Axe"
+        "Axe",
+        "Scrape"
       ]
     },
     "kanji": "斧",
@@ -1461,7 +1511,8 @@
         "Espada"
       ],
       "en_us": [
-        "Sword"
+        "Sword",
+        "Blade"
       ]
     },
     "kanji": "剣",
@@ -1510,7 +1561,8 @@
   "coarse": {
     "translations": {
       "pt_br": [
-        "Duro"
+        "Duro",
+        "Infértil"
       ],
       "en_us": [
         "Coarse"
@@ -1536,7 +1588,7 @@
   "soul_soil": {
     "translations": {
       "pt_br": [
-        "Solo"
+        "Terra das Almas"
       ],
       "en_us": [
         "Soul Soil"
@@ -1575,10 +1627,14 @@
   "clump": {
     "translations": {
       "pt_br": [
-        "Massa"
+        "Massa",
+        "Agregado",
+        "Pepita"
       ],
       "en_us": [
-        "Clump"
+        "Cluster",
+        "Clump",
+        "Nugget"
       ]
     },
     "kanji": "塊",
@@ -1614,23 +1670,12 @@
   "brick": {
     "translations": {
       "pt_br": [
+        "Tijolos",
         "Tijolo"
       ],
       "en_us": [
+        "Bricks",
         "Brick"
-      ]
-    },
-    "kanji": "レンガ",
-    "hiragana": "れんが",
-    "romaji": "renga"
-  },
-  "bricks": {
-    "translations": {
-      "pt_br": [
-        "Tijolo"
-      ],
-      "en_us": [
-        "Bricks"
       ]
     },
     "kanji": "レンガ",
@@ -1640,6 +1685,7 @@
   "mossy": {
     "translations": {
       "pt_br": [
+        "Musgosos",
         "Musgoso"
       ],
       "en_us": [
@@ -1666,7 +1712,8 @@
   "slab": {
     "translations": {
       "pt_br": [
-        "Meio Bloco"
+        "Meio Bloco",
+        "Laje"
       ],
       "en_us": [
         "Slab"
@@ -1679,10 +1726,12 @@
   "pillar": {
     "translations": {
       "pt_br": [
-        "Pilar"
+        "Pilar",
+        "Coluna"
       ],
       "en_us": [
-        "Pillar"
+        "Pillar",
+        "Column"
       ]
     },
     "kanji": "柱",
@@ -1692,7 +1741,8 @@
   "mosaic": {
     "translations": {
       "pt_br": [
-        "Artesanato"
+        "Artesanato",
+        "Mosaico"
       ],
       "en_us": [
         "Mosaic"
@@ -1705,7 +1755,7 @@
   "prismarine": {
     "translations": {
       "pt_br": [
-        "Prismarino"
+        "Prismarinho"
       ],
       "en_us": [
         "Prismarine"
@@ -1731,7 +1781,8 @@
   "banner": {
     "translations": {
       "pt_br": [
-        "Banner"
+        "Banner",
+        "Estandarte"
       ],
       "en_us": [
         "Banner"
@@ -1757,7 +1808,8 @@
   "concrete": {
     "translations": {
       "pt_br": [
-        "Concreto"
+        "Concreto",
+        "Cimento"
       ],
       "en_us": [
         "Concrete"
@@ -1770,7 +1822,7 @@
   "nylium": {
     "translations": {
       "pt_br": [
-        "Nílio"
+        "Nicélio"
       ],
       "en_us": [
         "Nylium"
@@ -1796,7 +1848,8 @@
   "purpur": {
     "translations": {
       "pt_br": [
-        "Púrpura"
+        "Púrpura",
+        "Purpur"
       ],
       "en_us": [
         "Purpur"
@@ -1822,9 +1875,13 @@
   "ingot": {
     "translations": {
       "pt_br": [
-        "Barra"
+        "Barras",
+        "Barra",
+        "Lingotes",
+        "Lingote"
       ],
       "en_us": [
+        "Ingots",
         "Ingot"
       ]
     },
@@ -1861,6 +1918,7 @@
   "raw_1": {
     "translations": {
       "pt_br": [
+        "Crua",
         "Cru"
       ],
       "en_us": [
@@ -1884,6 +1942,19 @@
     "hiragana": "へい",
     "romaji": "hei"
   },
+  "wall_1": {
+    "translations": {
+      "pt_br": [
+        "parede"
+      ],
+      "en_us": [
+        "Wall"
+      ]
+    },
+    "kanji": "壁",
+    "hiragana": "かべ",
+    "romaji": "kabe"
+  },
   "scaffolding": {
     "translations": {
       "pt_br": [
@@ -1900,10 +1971,11 @@
   "fragments": {
     "translations": {
       "pt_br": [
-        "Fragmentos"
+        "Fragmento"
       ],
       "en_us": [
-        "Fragments"
+        "Fragments",
+        "Fragment"
       ]
     },
     "kanji": "破片",
@@ -1978,7 +2050,9 @@
   "bars": {
     "translations": {
       "pt_br": [
-        "Grade"
+        "Grades",
+        "Grade",
+        "Barras"
       ],
       "en_us": [
         "Bars"
@@ -2017,7 +2091,8 @@
   "bundle": {
     "translations": {
       "pt_br": [
-        "Pacote"
+        "Pacote",
+        "Trouxa"
       ],
       "en_us": [
         "Bundle"
@@ -2043,7 +2118,8 @@
   "conduit": {
     "translations": {
       "pt_br": [
-        "Conduíte"
+        "Conduto",
+        "Aqueduto"
       ],
       "en_us": [
         "Conduit"
@@ -2111,6 +2187,7 @@
         "Armadilha"
       ],
       "en_us": [
+        "Trapped",
         "Trap"
       ]
     },
@@ -2121,9 +2198,10 @@
   "arrow": {
     "translations": {
       "pt_br": [
-        "Seta"
+        "Flecha"
       ],
       "en_us": [
+        "Tipped Arrow",
         "Arrow"
       ]
     },
@@ -2160,7 +2238,7 @@
   "bulb": {
     "translations": {
       "pt_br": [
-        "Lâmpada Elétrica"
+        "Lâmpada"
       ],
       "en_us": [
         "Bulb"
@@ -2235,25 +2313,29 @@
     "hiragana": "ばけつ",
     "romaji": "baketsu"
   },
-  "crystal": {
+  "mineral": {
     "translations": {
       "pt_br": [
+        "Cristais",
         "Cristal"
       ],
       "en_us": [
+        "Crystals",
         "Crystal"
       ]
     },
-    "kanji": "クリスタル",
-    "hiragana": "くりすたる",
-    "romaji": "kurisutaru"
+    "kanji": "や鉱物",
+    "hiragana": "やこうぶつ",
+    "romaji": "yakoubutsu"
   },
-  "crystals": {
+  "crystal": {
     "translations": {
       "pt_br": [
-        "Cristal"
+        "Cristal",
+        "Cristais"
       ],
       "en_us": [
+        "Crystal",
         "Crystals"
       ]
     },
@@ -2264,7 +2346,7 @@
   "statue": {
     "translations": {
       "pt_br": [
-        "Imagem"
+        "Estátua"
       ],
       "en_us": [
         "Statue"
@@ -2280,7 +2362,7 @@
         "Mapa"
       ],
       "en_us": [
-        "Filled Map"
+        "Map"
       ]
     },
     "kanji": "地図",
@@ -2303,7 +2385,8 @@
   "ball_1": {
     "translations": {
       "pt_br": [
-        "Bola"
+        "Bola",
+        "Esfera"
       ],
       "en_us": [
         "Ball"
@@ -2316,7 +2399,7 @@
   "note": {
     "translations": {
       "pt_br": [
-        "Observação"
+        "Musical"
       ],
       "en_us": [
         "Note"
@@ -2342,6 +2425,8 @@
   "bookshelf": {
     "translations": {
       "pt_br": [
+        "Estante de livros",
+        "Porta-livros",
         "Estante"
       ],
       "en_us": [
@@ -2355,7 +2440,8 @@
   "shelf": {
     "translations": {
       "pt_br": [
-        "Estante"
+        "Estante",
+        "Prateleira"
       ],
       "en_us": [
         "Shelf"
@@ -2368,6 +2454,7 @@
   "minecart": {
     "translations": {
       "pt_br": [
+        "Carrinho de Mina",
         "Carrinho"
       ],
       "en_us": [
@@ -2446,7 +2533,8 @@
   "glow_1": {
     "translations": {
       "pt_br": [
-        "Brilhar"
+        "Brilhar",
+        "Brilhante"
       ],
       "en_us": [
         "Glow"
@@ -2459,7 +2547,9 @@
   "glow_2": {
     "translations": {
       "pt_br": [
-        "Brilhar"
+        "Luminoso",
+        "Luminosa",
+        "Brilhantes"
       ],
       "en_us": [
         "Glow"
@@ -2472,7 +2562,7 @@
   "blue_orchid": {
     "translations": {
       "pt_br": [
-        "Jade Oran"
+        "Orquídea-Azul"
       ],
       "en_us": [
         "Blue Orchid"
@@ -2524,10 +2614,13 @@
   "wheat": {
     "translations": {
       "pt_br": [
+        "Plantio de Trigo",
         "Trigo"
       ],
       "en_us": [
-        "Wheat"
+        "Wheat crops",
+        "Wheat",
+        "Hey"
       ]
     },
     "kanji": "小麦",
@@ -2537,6 +2630,7 @@
   "seeds": {
     "translations": {
       "pt_br": [
+        "Sementes",
         "Semente"
       ],
       "en_us": [
@@ -2602,6 +2696,7 @@
   "sprouts": {
     "translations": {
       "pt_br": [
+        "Brotos",
         "Broto"
       ],
       "en_us": [
@@ -2615,10 +2710,13 @@
   "bud": {
     "translations": {
       "pt_br": [
-        "Broto"
+        "Broto",
+        "Cristal",
+        "Propágulo"
       ],
       "en_us": [
-        "Bud"
+        "Bud",
+        "Propagule"
       ]
     },
     "kanji": "芽",
@@ -2654,10 +2752,12 @@
   "button": {
     "translations": {
       "pt_br": [
-        "Botão"
+        "Botão",
+        "Peônia"
       ],
       "en_us": [
-        "Button"
+        "Button",
+        "Peony"
       ]
     },
     "kanji": "ボタン",
@@ -2693,7 +2793,7 @@
   "composter": {
     "translations": {
       "pt_br": [
-        "Compostor"
+        "Composteira"
       ],
       "en_us": [
         "Composter"
@@ -2732,7 +2832,8 @@
   "nest": {
     "translations": {
       "pt_br": [
-        "Ninho"
+        "Ninho",
+        "Colmeia"
       ],
       "en_us": [
         "Nest"
@@ -2771,7 +2872,7 @@
   "shulker_box": {
     "translations": {
       "pt_br": [
-        "Caixa Shulker"
+        "Caixa de Shulker"
       ],
       "en_us": [
         "Shulker Box"
@@ -2810,7 +2911,9 @@
   "flower_pot": {
     "translations": {
       "pt_br": [
-        "Vaso de Flores"
+        "Vaso de Flores",
+        "Vaso de Flor",
+        "Vaso"
       ],
       "en_us": [
         "Flower Pot"
@@ -2823,10 +2926,12 @@
   "pottery": {
     "translations": {
       "pt_br": [
-        "Jarro"
+        "Jarro",
+        "Vaso"
       ],
       "en_us": [
-        "Pottery"
+        "Pottery",
+        "Pot"
       ]
     },
     "kanji": "壺",
@@ -2836,7 +2941,7 @@
   "jukebox": {
     "translations": {
       "pt_br": [
-        "Jukebox"
+        "Toca-Discos"
       ],
       "en_us": [
         "Jukebox"
@@ -2849,7 +2954,7 @@
   "beehive": {
     "translations": {
       "pt_br": [
-        "Colméia"
+        "Colmeia Artificial"
       ],
       "en_us": [
         "Beehive"
@@ -2862,7 +2967,7 @@
   "beacon": {
     "translations": {
       "pt_br": [
-        "Baliza"
+        "Sinalizador"
       ],
       "en_us": [
         "Beacon"
@@ -2901,7 +3006,8 @@
   "chain_1": {
     "translations": {
       "pt_br": [
-        "Corrente"
+        "Corrente",
+        "Cadeia"
       ],
       "en_us": [
         "Chain"
@@ -2927,6 +3033,7 @@
   "bone": {
     "translations": {
       "pt_br": [
+        "Ossos",
         "Osso"
       ],
       "en_us": [
@@ -2940,7 +3047,7 @@
   "bone_meal": {
     "translations": {
       "pt_br": [
-        "Farinha de Ossos"
+        "Farinha de Osso"
       ],
       "en_us": [
         "Bone Meal"
@@ -2966,7 +3073,8 @@
   "bottle": {
     "translations": {
       "pt_br": [
-        "Garrafa"
+        "Garrafa",
+        "Frasco"
       ],
       "en_us": [
         "Bottle"
@@ -3005,7 +3113,8 @@
   "packed": {
     "translations": {
       "pt_br": [
-        "Compactado"
+        "Compactado",
+        "Seco"
       ],
       "en_us": [
         "Packed"
@@ -3070,7 +3179,9 @@
   "husk": {
     "translations": {
       "pt_br": [
-        "Husk"
+        "Husk",
+        "Cascoso",
+        "Zumbi-Múmia"
       ],
       "en_us": [
         "Husk"
@@ -3096,7 +3207,9 @@
   "phantom": {
     "translations": {
       "pt_br": [
-        "Fantasma"
+        "Fantasma",
+        "Espectro",
+        "Phantom"
       ],
       "en_us": [
         "Phantom"
@@ -3118,19 +3231,6 @@
     "kanji": "ピグリン",
     "hiragana": "ぴぐりん",
     "romaji": "pigurin"
-  },
-  "piglin_brute": {
-    "translations": {
-      "pt_br": [
-        "Piglin Bruto"
-      ],
-      "en_us": [
-        "Piglin Brute"
-      ]
-    },
-    "kanji": "ブルート",
-    "hiragana": "ぶるーと",
-    "romaji": "buruuto"
   },
   "hoglin": {
     "translations": {
@@ -3161,7 +3261,8 @@
   "warden": {
     "translations": {
       "pt_br": [
-        "Diretor"
+        "Diretor",
+        "Defensor"
       ],
       "en_us": [
         "Warden"
@@ -3174,7 +3275,8 @@
   "vex": {
     "translations": {
       "pt_br": [
-        "Vex"
+        "Vex",
+        "Obsessor"
       ],
       "en_us": [
         "Vex"
@@ -3252,7 +3354,7 @@
   "breeze": {
     "translations": {
       "pt_br": [
-        "Breeze"
+        "Vórtice"
       ],
       "en_us": [
         "Breeze"
@@ -3265,7 +3367,8 @@
   "blaze": {
     "translations": {
       "pt_br": [
-        "Chama"
+        "Chama",
+        "Blaze"
       ],
       "en_us": [
         "Blaze"
@@ -3278,7 +3381,7 @@
   "wither": {
     "translations": {
       "pt_br": [
-        "Whiter"
+        "Wither"
       ],
       "en_us": [
         "Wither"
@@ -3330,10 +3433,12 @@
   "zombie": {
     "translations": {
       "pt_br": [
+        "Zumbificado",
         "Zumbi"
       ],
       "en_us": [
-        "Zombie"
+        "Zombie",
+        "Zombified"
       ]
     },
     "kanji": "ゾンビ",
@@ -3369,7 +3474,8 @@
   "strider": {
     "translations": {
       "pt_br": [
-        "Andarilho"
+        "Andarilho",
+        "Lavagante"
       ],
       "en_us": [
         "Strider"
@@ -3421,7 +3527,7 @@
   "evoker": {
     "translations": {
       "pt_br": [
-        "Evocador"
+        "Invocador"
       ],
       "en_us": [
         "Evoker"
@@ -3486,7 +3592,8 @@
   "vindicator": {
     "translations": {
       "pt_br": [
-        "Vindicador"
+        "Vindicador",
+        "Vingador"
       ],
       "en_us": [
         "Vindicator"
@@ -3499,7 +3606,9 @@
   "trader": {
     "translations": {
       "pt_br": [
-        "Comerciante"
+        "Comerciante",
+        "Mercador",
+        "Vendedor"
       ],
       "en_us": [
         "Trader"
@@ -3512,7 +3621,8 @@
   "allay": {
     "translations": {
       "pt_br": [
-        "Array"
+        "Sereno",
+        "Allay"
       ],
       "en_us": [
         "Allay"
@@ -3564,7 +3674,8 @@
   "stray": {
     "translations": {
       "pt_br": [
-        "Stray"
+        "Stray",
+        "Errante"
       ],
       "en_us": [
         "Stray"
@@ -3655,7 +3766,7 @@
   "mooshroom": {
     "translations": {
       "pt_br": [
-        "Mushuroom"
+        "Mooshroom"
       ],
       "en_us": [
         "Mooshroom"
@@ -3694,7 +3805,7 @@
   "ocelot": {
     "translations": {
       "pt_br": [
-        "Gato Selvagem"
+        "Jaguatirica"
       ],
       "en_us": [
         "Ocelot"
@@ -3759,6 +3870,7 @@
   "polar_bear": {
     "translations": {
       "pt_br": [
+        "Urso-Polar",
         "Urso Polar"
       ],
       "en_us": [
@@ -3811,9 +3923,11 @@
   "angler": {
     "translations": {
       "pt_br": [
-        "Pescador"
+        "Pescador",
+        "Pesca"
       ],
       "en_us": [
+        "Fisherman",
         "Angler"
       ]
     },
@@ -3993,10 +4107,12 @@
   "pig": {
     "translations": {
       "pt_br": [
-        "Porco"
+        "Porco",
+        "Costeleta"
       ],
       "en_us": [
-        "Pig"
+        "Pig",
+        "porkchop"
       ]
     },
     "kanji": "豚",
@@ -4032,7 +4148,8 @@
   "chicken_1": {
     "translations": {
       "pt_br": [
-        "Frango"
+        "Frango",
+        "Galinha"
       ],
       "en_us": [
         "Chicken"
@@ -4045,7 +4162,7 @@
   "chicken_2": {
     "translations": {
       "pt_br": [
-        "Pássaro"
+        "Frango"
       ],
       "en_us": [
         "Chicken"
@@ -4123,6 +4240,7 @@
   "petals": {
     "translations": {
       "pt_br": [
+        "Pétalas",
         "Pétala"
       ],
       "en_us": [
@@ -4175,7 +4293,7 @@
   "fan": {
     "translations": {
       "pt_br": [
-        "Fan?"
+        "Gorgônia"
       ],
       "en_us": [
         "Fan"
@@ -4188,7 +4306,7 @@
   "tube": {
     "translations": {
       "pt_br": [
-        "Tube"
+        "Tubo"
       ],
       "en_us": [
         "Tube"
@@ -4201,7 +4319,7 @@
   "brain": {
     "translations": {
       "pt_br": [
-        "Cerebro"
+        "Cérebro"
       ],
       "en_us": [
         "Brain"
@@ -4214,7 +4332,7 @@
   "horn": {
     "translations": {
       "pt_br": [
-        "Chifre?"
+        "Chifre"
       ],
       "en_us": [
         "Horn"
@@ -4222,12 +4340,12 @@
     },
     "kanji": "シカツノ",
     "hiragana": "しかつの",
-    "romaji": "shikatsunouchiwa"
+    "romaji": "shikatsuno"
   },
   "horn_1": {
     "translations": {
       "pt_br": [
-        "Chifre?"
+        "Chifre"
       ],
       "en_us": [
         "Horn"
@@ -4237,9 +4355,26 @@
     "hiragana": "つのぶえ",
     "romaji": "tsunobue"
   },
-  "fire": {
+  "flame": {
     "translations": {
       "pt_br": [
+        "Fogo",
+        "Chama"
+      ],
+      "en_us": [
+        "Fire",
+        "Blaze",
+        "Flame"
+      ]
+    },
+    "kanji": "炎",
+    "hiragana": "みれぽら",
+    "romaji": "mirepora"
+  },
+  "fire_1": {
+    "translations": {
+      "pt_br": [
+        "Fogo",
         "Millepora"
       ],
       "en_us": [
@@ -4249,6 +4384,19 @@
     "kanji": "ミレポラ",
     "hiragana": "みれぽら",
     "romaji": "mirepora"
+  },
+  "fireproof": {
+    "translations": {
+      "pt_br": [
+        "Resistência ao Fogo"
+      ],
+      "en_us": [
+        "Fire Resistance"
+      ]
+    },
+    "kanji": "耐火",
+    "hiragana": "たいか",
+    "romaji": "たいか"
   },
   "water": {
     "translations": {
@@ -4263,10 +4411,38 @@
     "hiragana": "みず",
     "romaji": "mizu"
   },
+  "underwater": {
+    "translations": {
+      "pt_br": [
+        "Aquática"
+      ],
+      "en_us": [
+        "Water"
+      ]
+    },
+    "kanji": "水中",
+    "hiragana": "すいちゅう",
+    "romaji": "suichuu"
+  },
   "bubble": {
     "translations": {
       "pt_br": [
-        "Mizutamauchiwa"
+        "Bolhas",
+        "Bolha"
+      ],
+      "en_us": [
+        "Bubble"
+      ]
+    },
+    "kanji": "気泡",
+    "hiragana": "きほう",
+    "romaji": "kihou"
+  },
+  "bubble_1": {
+    "translations": {
+      "pt_br": [
+        "Mizutamauchiwa",
+        "Bolha"
       ],
       "en_us": [
         "Bubble"
@@ -4279,7 +4455,7 @@
   "glazed": {
     "translations": {
       "pt_br": [
-        "Envidraçado"
+        "Vidrada"
       ],
       "en_us": [
         "Glazed"
@@ -4393,10 +4569,24 @@
     "hiragana": "あたま",
     "romaji": "atama"
   },
+  "head_1": {
+    "translations": {
+      "pt_br": [
+        "Cabeça"
+      ],
+      "en_us": [
+        "Head"
+      ]
+    },
+    "kanji": "ヘッド",
+    "hiragana": "へっど",
+    "romaji": "heddo"
+  },
   "skull": {
     "translations": {
       "pt_br": [
-        "Crânio"
+        "Crânio",
+        "Caveira"
       ],
       "en_us": [
         "Skull"
@@ -4419,19 +4609,6 @@
     "hiragana": "がいこつ",
     "romaji": "gaikotsu"
   },
-  "skulk": {
-    "translations": {
-      "pt_br": [
-        "Esquivar"
-      ],
-      "en_us": [
-        "Skulk"
-      ]
-    },
-    "kanji": "スカルク",
-    "hiragana": "すかるく",
-    "romaji": "sukaruku"
-  },
   "lectern": {
     "translations": {
       "pt_br": [
@@ -4448,7 +4625,7 @@
   "name_tag": {
     "translations": {
       "pt_br": [
-        "Crachá"
+        "Etiqueta"
       ],
       "en_us": [
         "Name Tag"
@@ -4461,6 +4638,7 @@
   "ladder": {
     "translations": {
       "pt_br": [
+        "Escada de mão",
         "Escada"
       ],
       "en_us": [
@@ -4474,10 +4652,13 @@
   "shard": {
     "translations": {
       "pt_br": [
-        "Fragmento"
+        "Fragmentos",
+        "Fragmento",
+        "Pedaço"
       ],
       "en_us": [
-        "Shard"
+        "Shard",
+        "Scrap"
       ]
     },
     "kanji": "欠片",
@@ -4526,7 +4707,7 @@
   "tear": {
     "translations": {
       "pt_br": [
-        "Lágrimas"
+        "Lágrima"
       ],
       "en_us": [
         "Tear"
@@ -4539,7 +4720,8 @@
   "spawn_egg": {
     "translations": {
       "pt_br": [
-        "Ovo de Invocação"
+        "Ovo de Invocação",
+        "Ovo Gerador"
       ],
       "en_us": [
         "Spawn Egg"
@@ -4552,7 +4734,8 @@
   "monster": {
     "translations": {
       "pt_br": [
-        "Monstros"
+        "Monstros",
+        "Criaturas"
       ],
       "en_us": [
         "Monster"
@@ -4643,7 +4826,8 @@
   "stem": {
     "translations": {
       "pt_br": [
-        "Tronco"
+        "Tronco",
+        "Caule"
       ],
       "en_us": [
         "Stem"
@@ -4656,7 +4840,8 @@
   "stem_1": {
     "translations": {
       "pt_br": [
-        "Tronco"
+        "Tronco",
+        "Caule"
       ],
       "en_us": [
         "Stem"
@@ -4666,10 +4851,26 @@
     "hiragana": "がら",
     "romaji": "gara"
   },
+  "stem_2": {
+    "translations": {
+      "pt_br": [
+        "Caule",
+        "Talo"
+      ],
+      "en_us": [
+        "Stem",
+        "Plant"
+      ]
+    },
+    "kanji": "茎",
+    "hiragana": "くき",
+    "romaji": "kuki"
+  },
   "wart": {
     "translations": {
       "pt_br": [
-        "Verruga"
+        "Fungos",
+        "Fungo"
       ],
       "en_us": [
         "Wart"
@@ -4682,7 +4883,8 @@
   "hyphae": {
     "translations": {
       "pt_br": [
-        "Micélio"
+        "Micélio",
+        "Hifas"
       ],
       "en_us": [
         "Hyphae"
@@ -4721,7 +4923,8 @@
   "mud": {
     "translations": {
       "pt_br": [
-        "Lama"
+        "Lama",
+        "Barro"
       ],
       "en_us": [
         "Mud"
@@ -4760,7 +4963,8 @@
   "plenty": {
     "translations": {
       "pt_br": [
-        "Fortuna"
+        "Fortuna",
+        "Baú"
       ],
       "en_us": [
         "Plenty"
@@ -4773,22 +4977,14 @@
   "enchanted": {
     "translations": {
       "pt_br": [
-        "Encantado"
+        "Encantamentos",
+        "Experiência",
+        "Encantado",
+        "Encantada"
       ],
       "en_us": [
-        "Enchanted"
-      ]
-    },
-    "kanji": "エンチャント",
-    "hiragana": "えんちゃんと",
-    "romaji": "enchanto"
-  },
-  "experience": {
-    "translations": {
-      "pt_br": [
-        "Experiencia"
-      ],
-      "en_us": [
+        "Enchanted",
+        "Enchanting",
         "Experience"
       ]
     },
@@ -4799,6 +4995,7 @@
   "cracked": {
     "translations": {
       "pt_br": [
+        "Rachados",
         "Rachado"
       ],
       "en_us": [
@@ -4812,7 +5009,7 @@
   "damaged": {
     "translations": {
       "pt_br": [
-        "Quebrado"
+        "Danificada"
       ],
       "en_us": [
         "Damaged"
@@ -4825,7 +5022,9 @@
   "dried": {
     "translations": {
       "pt_br": [
-        "Seca"
+        "Secas",
+        "Seca",
+        "Seco"
       ],
       "en_us": [
         "Dried"
@@ -4838,7 +5037,8 @@
   "polished": {
     "translations": {
       "pt_br": [
-        "Polido"
+        "Polido",
+        "Polida"
       ],
       "en_us": [
         "Polished"
@@ -4851,7 +5051,7 @@
   "oxidized": {
     "translations": {
       "pt_br": [
-        "Oxidação"
+        "Oxidado"
       ],
       "en_us": [
         "Oxidized"
@@ -4903,7 +5103,9 @@
   "stripped": {
     "translations": {
       "pt_br": [
+        "Descascados",
         "Descascado",
+        "Descascadas",
         "Descascada"
       ],
       "en_us": [
@@ -4917,10 +5119,14 @@
   "infested": {
     "translations": {
       "pt_br": [
-        "Infestado"
+        "Infestação",
+        "Infestados",
+        "Infestado",
+        "Infestada"
       ],
       "en_us": [
-        "Infested"
+        "Infested",
+        "infestation"
       ]
     },
     "kanji": "虫食い",
@@ -4930,20 +5136,123 @@
   "tipped": {
     "translations": {
       "pt_br": [
-        "Effeito"
+        "Efeito"
       ],
       "en_us": [
-        "Tipped"
+        "Tipped",
+        "Effect"
       ]
     },
     "kanji": "効能",
     "hiragana": "こうのう",
     "romaji": "kounou"
   },
+  "primary": {
+    "translations": {
+      "pt_br": [
+        "Principal",
+        "Primário"
+      ],
+      "en_us": [
+        "Primary"
+      ]
+    },
+    "kanji": "主",
+    "hiragana": "おも",
+    "romaji": "omo"
+  },
+  "ignition": {
+    "translations": {
+      "pt_br": [
+        "preparado",
+        "Acionada"
+      ],
+      "en_us": [
+        "Primed"
+      ]
+    },
+    "kanji": "着火",
+    "hiragana": "ちゃっか",
+    "romaji": "chakka"
+  },
+  "propagule": {
+    "translations": {
+      "pt_br": [
+        "propágulo"
+      ],
+      "en_us": [
+        "Propagule"
+      ]
+    },
+    "kanji": "零余子",
+    "hiragana": "むかご",
+    "romaji": "mukago"
+  },
+  "quill": {
+    "translations": {
+      "pt_br": [
+        "Pena"
+      ],
+      "en_us": [
+        "Quill"
+      ]
+    },
+    "kanji": "羽根ペン",
+    "hiragana": "はねペン",
+    "romaji": "hanepen"
+  },
+  "peculiar": {
+    "translations": {
+      "pt_br": [
+        "Efeito",
+        "Estranho",
+        "Peculiar"
+      ],
+      "en_us": [
+        "Odd",
+        "Strange",
+        "Peculiar"
+      ]
+    },
+    "kanji": "奇妙",
+    "hiragana": "きみょう",
+    "romaji": "kimyou"
+  },
+  "common": {
+    "translations": {
+      "pt_br": [
+        "Efeito",
+        "Comum"
+      ],
+      "en_us": [
+        "Effect",
+        "Common",
+        "Mundane"
+      ]
+    },
+    "kanji": "ありふれた",
+    "hiragana": "ありふれた",
+    "romaji": "arifureta"
+  },
+  "thick": {
+    "translations": {
+      "pt_br": [
+        "Espessa",
+        "Efeito"
+      ],
+      "en_us": [
+        "Effect",
+        "Thick"
+      ]
+    },
+    "kanji": "濃厚",
+    "hiragana": "のうこう",
+    "romaji": "noukou"
+  },
   "creaking": {
     "translations": {
       "pt_br": [
-        "Rangendo"
+        "Rangente"
       ],
       "en_us": [
         "Creaking"
@@ -4956,7 +5265,7 @@
   "heartbreak": {
     "translations": {
       "pt_br": [
-        "Desgosto"
+        "Coração Partido"
       ],
       "en_us": [
         "Heartbreak"
@@ -5021,10 +5330,15 @@
   "pattern": {
     "translations": {
       "pt_br": [
-        "Padrão"
+        "Padrão",
+        "Talhados",
+        "Talhado",
+        "Talhada",
+        "figura"
       ],
       "en_us": [
-        "Pattern"
+        "Pattern",
+        "Chiseled"
       ]
     },
     "kanji": "模様",
@@ -5034,7 +5348,8 @@
   "powered": {
     "translations": {
       "pt_br": [
-        "Alimentado"
+        "Alimentado",
+        "Elétrico"
       ],
       "en_us": [
         "Powered"
@@ -5043,6 +5358,19 @@
     "kanji": "パワード",
     "hiragana": "ぱわーど",
     "romaji": "pawaado"
+  },
+  "attached": {
+    "translations": {
+      "pt_br": [
+        "Anexar"
+      ],
+      "en_us": [
+        "Attach"
+      ]
+    },
+    "kanji": "付",
+    "hiragana": "つ",
+    "romaji": "tsu"
   },
   "activator": {
     "translations": {
@@ -5074,10 +5402,13 @@
     "translations": {
       "pt_br": [
         "Seca",
-        "Seco"
+        "Seco",
+        "Morta",
+        "Morto"
       ],
       "en_us": [
-        "Dry"
+        "Dry",
+        "Dead"
       ]
     },
     "kanji": "枯れ",
@@ -5087,7 +5418,8 @@
   "suspicious": {
     "translations": {
       "pt_br": [
-        "Suspeito"
+        "Suspeito",
+        "Suspeita"
       ],
       "en_us": [
         "Suspicious"
@@ -5100,7 +5432,7 @@
   "spectral": {
     "translations": {
       "pt_br": [
-        "Luz"
+        "Espectral"
       ],
       "en_us": [
         "Spectral"
@@ -5113,7 +5445,8 @@
   "smooth": {
     "translations": {
       "pt_br": [
-        "Liso"
+        "Liso",
+        "Lisa"
       ],
       "en_us": [
         "Smooth"
@@ -5126,6 +5459,7 @@
   "sweet": {
     "translations": {
       "pt_br": [
+        "Doces",
         "Doce"
       ],
       "en_us": [
@@ -5139,7 +5473,8 @@
   "wet": {
     "translations": {
       "pt_br": [
-        "Molhado"
+        "Molhado",
+        "Úmida"
       ],
       "en_us": [
         "Wet"
@@ -5191,7 +5526,7 @@
   "brewer": {
     "translations": {
       "pt_br": [
-        "Cervejeiro"
+        "Poção"
       ],
       "en_us": [
         "Brewer"
@@ -5204,7 +5539,8 @@
   "dead": {
     "translations": {
       "pt_br": [
-        "Morto"
+        "Morto",
+        "Morta"
       ],
       "en_us": [
         "Dead"
@@ -5217,8 +5553,8 @@
   "shelter": {
     "translations": {
       "pt_br": [
-        "Arvore",
-        "Abrigo"
+        "Abrigo",
+        "Árvore"
       ],
       "en_us": [
         "Shelter"
@@ -5231,7 +5567,8 @@
   "flow": {
     "translations": {
       "pt_br": [
-        "Redemoinho"
+        "Fluxo",
+        "Espiral"
       ],
       "en_us": [
         "Flow"
@@ -5241,10 +5578,26 @@
     "hiragana": "うずまき",
     "romaji": "uzumaki"
   },
+  "whirlwind": {
+    "translations": {
+      "pt_br": [
+        "Fluxo",
+        "Espiral"
+      ],
+      "en_us": [
+        "Flow",
+        "Whirlwind"
+      ]
+    },
+    "kanji": "旋風",
+    "hiragana": "せんぷう",
+    "romaji": "senpuu"
+  },
   "trial": {
     "translations": {
       "pt_br": [
-        "Provação"
+        "Provação",
+        "Desafio"
       ],
       "en_us": [
         "Trial"
@@ -5268,10 +5621,23 @@
     "hiragana": "きょうい",
     "romaji": "kyoui"
   },
+  "gap": {
+    "translations": {
+      "pt_br": [
+        "Espaço (entre)"
+      ],
+      "en_us": [
+        "Gap"
+      ]
+    },
+    "kanji": "間",
+    "hiragana": "ま",
+    "romaji": "ma"
+  },
   "gilded": {
     "translations": {
       "pt_br": [
-        "Brilhante"
+        "Dourada"
       ],
       "en_us": [
         "Gilded"
@@ -5284,7 +5650,9 @@
   "explorer": {
     "translations": {
       "pt_br": [
-        "Explorador"
+        "Explorador",
+        "Exploração",
+        "Mapa"
       ],
       "en_us": [
         "Explorer"
@@ -5297,7 +5665,8 @@
   "howl": {
     "translations": {
       "pt_br": [
-        "Uivo"
+        "Uivo",
+        "Lobo"
       ],
       "en_us": [
         "Howl"
@@ -5336,7 +5705,10 @@
   "ominous": {
     "translations": {
       "pt_br": [
-        "Sinistro"
+        "Sinistro",
+        "Sombria",
+        "Sombrio",
+        "Ameaçador"
       ],
       "en_us": [
         "Ominous"
@@ -5349,7 +5721,8 @@
   "miner": {
     "translations": {
       "pt_br": [
-        "Mineiro"
+        "Mineiro",
+        "picareta"
       ],
       "en_us": [
         "Miner"
@@ -5375,7 +5748,9 @@
   "cooked": {
     "translations": {
       "pt_br": [
-        "Cozido"
+        "Cozido",
+        "Assado",
+        "Assada"
       ],
       "en_us": [
         "Cooked"
@@ -5388,7 +5763,7 @@
   "popped": {
     "translations": {
       "pt_br": [
-        "Cozido"
+        "Cozida"
       ],
       "en_us": [
         "Popped"
@@ -5401,7 +5776,8 @@
   "reinforced": {
     "translations": {
       "pt_br": [
-        "Reforço"
+        "Reforçado",
+        "Reforçada"
       ],
       "en_us": [
         "Reinforced"
@@ -5427,7 +5803,9 @@
   "hanging_1": {
     "translations": {
       "pt_br": [
-        "Suspensa"
+        "Suspensas",
+        "Suspensa",
+        "Suspenso"
       ],
       "en_us": [
         "Hanging"
@@ -5440,7 +5818,9 @@
   "flowering": {
     "translations": {
       "pt_br": [
-        "Floração"
+        "Florida",
+        "Florescentes",
+        "Florescente"
       ],
       "en_us": [
         "Flowering"
@@ -5479,7 +5859,8 @@
   "archer": {
     "translations": {
       "pt_br": [
-        "Arqueiro"
+        "Arqueiro",
+        "Arco"
       ],
       "en_us": [
         "Archer"
@@ -5495,17 +5876,19 @@
         "Grande"
       ],
       "en_us": [
-        "Big"
+        "Big",
+        "Large"
       ]
     },
-    "kanji": "大きな",
-    "hiragana": "おおきな",
-    "romaji": "ookina"
+    "kanji": "大",
+    "hiragana": "おお",
+    "romaji": "oo"
   },
   "tall": {
     "translations": {
       "pt_br": [
-        "Alto"
+        "Alto",
+        "Alta"
       ],
       "en_us": [
         "Tall"
@@ -5531,20 +5914,23 @@
   "small": {
     "translations": {
       "pt_br": [
-        "Pequeno"
+        "Pequeno",
+        "Pequena"
       ],
       "en_us": [
         "Small"
       ]
     },
-    "kanji": "小さな",
-    "hiragana": "ちいさな",
-    "romaji": "chiisana"
+    "kanji": "小",
+    "hiragana": "ちい",
+    "romaji": "chii"
   },
   "short": {
     "translations": {
       "pt_br": [
-        "Pequeno (estatura)"
+        "Pequeno",
+        "Baixa",
+        "Baixo"
       ],
       "en_us": [
         "Short"
@@ -5557,7 +5943,7 @@
   "soul_sand": {
     "translations": {
       "pt_br": [
-        "Areia Da Alma"
+        "Areia das Almas"
       ],
       "en_us": [
         "Soul Sand"
@@ -5570,6 +5956,7 @@
   "soul": {
     "translations": {
       "pt_br": [
+        "Almas",
         "Alma"
       ],
       "en_us": [
@@ -5609,7 +5996,8 @@
   "prize": {
     "translations": {
       "pt_br": [
-        "Tesouro"
+        "Tesouro",
+        "Joia"
       ],
       "en_us": [
         "Prize"
@@ -5622,7 +6010,7 @@
   "scute": {
     "translations": {
       "pt_br": [
-        "Escalas"
+        "Escama"
       ],
       "en_us": [
         "Scute"
@@ -5635,7 +6023,8 @@
   "breath": {
     "translations": {
       "pt_br": [
-        "Respiração"
+        "Respiração",
+        "Bafo"
       ],
       "en_us": [
         "Breath"
@@ -5648,7 +6037,8 @@
   "painting": {
     "translations": {
       "pt_br": [
-        "Pintura"
+        "Pintura",
+        "Quadro"
       ],
       "en_us": [
         "Painting"
@@ -5661,6 +6051,7 @@
   "item_frame": {
     "translations": {
       "pt_br": [
+        "Moldura de Item",
         "Moldura"
       ],
       "en_us": [
@@ -5674,6 +6065,7 @@
   "cave": {
     "translations": {
       "pt_br": [
+        "Cavernas",
         "Caverna"
       ],
       "en_us": [
@@ -5723,23 +6115,24 @@
     "hiragana": "たいる",
     "romaji": "tairu"
   },
-  "jack_o_lanterns": {
+  "jack_o_lantern": {
     "translations": {
       "pt_br": [
-        "Jack O'lanterns"
+        "Abóbora de Halloween"
       ],
       "en_us": [
-        "Jack O'lanterns"
+        "Jack o'Lantern"
       ]
     },
-    "kanji": "ジャック・オ・",
-    "hiragana": "じゃっく・お・",
-    "romaji": "jakku・o・"
+    "kanji": "ジャック・オ・ランタン",
+    "hiragana": "じゃっく・お・らんたん",
+    "romaji": "jakku・o・rantan"
   },
   "lantern": {
     "translations": {
       "pt_br": [
-        "Lanterna"
+        "Lanterna",
+        "Lampião"
       ],
       "en_us": [
         "Lantern"
@@ -5778,7 +6171,8 @@
   "sac": {
     "translations": {
       "pt_br": [
-        "Saco"
+        "Saco",
+        "Bolsa"
       ],
       "en_us": [
         "Sac"
@@ -5791,7 +6185,7 @@
   "end": {
     "translations": {
       "pt_br": [
-        "Fim"
+        "End"
       ],
       "en_us": [
         "End"
@@ -5804,7 +6198,7 @@
   "end_stone": {
     "translations": {
       "pt_br": [
-        "Pedra Do Fim"
+        "Pedra Do End"
       ],
       "en_us": [
         "End Stone"
@@ -5830,10 +6224,13 @@
   "mushroom": {
     "translations": {
       "pt_br": [
-        "Cogumelo"
+        "Cogumelos",
+        "Cogumelo",
+        "Fungo"
       ],
       "en_us": [
-        "Mushroom"
+        "Mushroom",
+        "Fungus"
       ]
     },
     "kanji": "キノコ",
@@ -5843,7 +6240,7 @@
   "seagrass": {
     "translations": {
       "pt_br": [
-        "Alga"
+        "Erva Marinha"
       ],
       "en_us": [
         "Seagrass"
@@ -5908,7 +6305,7 @@
   "lily_of_the_valley": {
     "translations": {
       "pt_br": [
-        "Lírio Do Vale"
+        "Lírio-do-Vale"
       ],
       "en_us": [
         "Lily Of The Valley"
@@ -5960,6 +6357,7 @@
   "wildflowers": {
     "translations": {
       "pt_br": [
+        "Flores-Selvagens",
         "Flores-do-campo"
       ],
       "en_us": [
@@ -5986,7 +6384,8 @@
   "azalea": {
     "translations": {
       "pt_br": [
-        "Azaléia"
+        "Azaléia",
+        "Azaleia"
       ],
       "en_us": [
         "Azalea"
@@ -5999,7 +6398,7 @@
   "kelp": {
     "translations": {
       "pt_br": [
-        "Kelp"
+        "Alga"
       ],
       "en_us": [
         "Kelp"
@@ -6012,7 +6411,7 @@
   "kelp_1": {
     "translations": {
       "pt_br": [
-        "Kelp"
+        "Algas"
       ],
       "en_us": [
         "Kelp"
@@ -6090,7 +6489,20 @@
   "plant": {
     "translations": {
       "pt_br": [
-        "Plantar"
+        "Planta"
+      ],
+      "en_us": [
+        "Plant"
+      ]
+    },
+    "kanji": "つる",
+    "hiragana": "つる",
+    "romaji": "tsuru"
+  },
+  "plant_1": {
+    "translations": {
+      "pt_br": [
+        "Planta"
       ],
       "en_us": [
         "Plant"
@@ -6103,6 +6515,7 @@
   "berries": {
     "translations": {
       "pt_br": [
+        "Bagas",
         "Baga"
       ],
       "en_us": [
@@ -6142,9 +6555,11 @@
   "carrot": {
     "translations": {
       "pt_br": [
+        "Cenouras",
         "Cenoura"
       ],
       "en_us": [
+        "Carrots",
         "Carrot"
       ]
     },
@@ -6155,9 +6570,11 @@
   "potato": {
     "translations": {
       "pt_br": [
+        "Batatas",
         "Batata"
       ],
       "en_us": [
+        "Potatoes",
         "Potato"
       ]
     },
@@ -6168,9 +6585,11 @@
   "beetroot": {
     "translations": {
       "pt_br": [
+        "Beterrabas",
         "Beterraba"
       ],
       "en_us": [
+        "Beetroots",
         "Beetroot"
       ]
     },
@@ -6259,6 +6678,7 @@
   "soup": {
     "translations": {
       "pt_br": [
+        "Ensopado",
         "Sopa"
       ],
       "en_us": [
@@ -6298,23 +6718,42 @@
   "cooked_beef": {
     "translations": {
       "pt_br": [
-        "Bife Assado"
+        "Bife Assado",
+        "Filé"
       ],
       "en_us": [
-        "Cooked Beef"
+        "Cooked Beef",
+        "Steak"
       ]
     },
     "kanji": "ステーキ",
     "hiragana": "すてーき",
     "romaji": "suteeki"
   },
-  "sea": {
+  "seafloor": {
     "translations": {
       "pt_br": [
-        "Mar"
+        "Mar",
+        "Oceânicas"
       ],
       "en_us": [
         "Sea"
+      ]
+    },
+    "kanji": "海底",
+    "hiragana": "かいてい",
+    "romaji": "kaitei"
+  },
+  "sea": {
+    "translations": {
+      "pt_br": [
+        "Mar",
+        "Oceano",
+        "Litoral"
+      ],
+      "en_us": [
+        "Sea",
+        "Coast"
       ]
     },
     "kanji": "海洋",
@@ -6324,6 +6763,7 @@
   "sea_1": {
     "translations": {
       "pt_br": [
+        "Marinha",
         "Mar"
       ],
       "en_us": [
@@ -6337,7 +6777,8 @@
   "shell": {
     "translations": {
       "pt_br": [
-        "Concha"
+        "Concha",
+        "Casco"
       ],
       "en_us": [
         "Shell"
@@ -6350,7 +6791,8 @@
   "roots": {
     "translations": {
       "pt_br": [
-        "Raiz"
+        "Raiz",
+        "Raízes"
       ],
       "en_us": [
         "Roots"
@@ -6363,7 +6805,8 @@
   "rooted": {
     "translations": {
       "pt_br": [
-        "Enraizado"
+        "Enraizado",
+        "Enraizada"
       ],
       "en_us": [
         "Rooted"
@@ -6402,7 +6845,8 @@
   "furnace": {
     "translations": {
       "pt_br": [
-        "Forno"
+        "Forno",
+        "Fornalha"
       ],
       "en_us": [
         "Furnace"
@@ -6428,7 +6872,7 @@
   "smoker": {
     "translations": {
       "pt_br": [
-        "Fumante"
+        "Defumador"
       ],
       "en_us": [
         "Smoker"
@@ -6454,6 +6898,7 @@
   "structure": {
     "translations": {
       "pt_br": [
+        "Estrutural",
         "Estrutura"
       ],
       "en_us": [
@@ -6467,7 +6912,8 @@
   "tnt": {
     "translations": {
       "pt_br": [
-        "Tnt"
+        "Tnt",
+        "Dinamite"
       ],
       "en_us": [
         "Tnt"
@@ -6529,10 +6975,38 @@
     "hiragana": "ゔぉいど",
     "romaji": "voido"
   },
+  "void_1": {
+    "translations": {
+      "pt_br": [
+        "Vazio"
+      ],
+      "en_us": [
+        "Void"
+      ]
+    },
+    "kanji": "奈落",
+    "hiragana": "ならく",
+    "romaji": "naraku"
+  },
+  "blank_paper": {
+    "translations": {
+      "pt_br": [
+        "Papel em Branco",
+        "Branco"
+      ],
+      "en_us": [
+        "Blank Paper",
+        "Empty"
+      ]
+    },
+    "kanji": "白紙",
+    "hiragana": "はくし",
+    "romaji": "hakushi"
+  },
   "instance": {
     "translations": {
       "pt_br": [
-        "Exemplo"
+        "Instância"
       ],
       "en_us": [
         "Instance"
@@ -6558,9 +7032,12 @@
   "dripstone": {
     "translations": {
       "pt_br": [
-        "Estalactite"
+        "Estalactite",
+        "Espeleotema Pontiagudo",
+        "Espeleotema"
       ],
       "en_us": [
+        "Pointed Dripstone",
         "Dripstone"
       ]
     },
@@ -6571,7 +7048,8 @@
   "burn": {
     "translations": {
       "pt_br": [
-        "Chama"
+        "Chama",
+        "Fogo"
       ],
       "en_us": [
         "Burn"
@@ -6597,7 +7075,7 @@
   "lightning_rod": {
     "translations": {
       "pt_br": [
-        "Para-raio"
+        "Para-raios"
       ],
       "en_us": [
         "Lightning Rod"
@@ -6613,7 +7091,8 @@
         "Pele"
       ],
       "en_us": [
-        "Skin"
+        "Skin",
+        "Hide"
       ]
     },
     "kanji": "皮",
@@ -6646,13 +7125,13 @@
     "hiragana": "ふぁいやーちゃーづ",
     "romaji": "faiyaachaadzu"
   },
-  "petrification": {
+  "petrified": {
     "translations": {
       "pt_br": [
-        "Petrificação"
+        "Petrificado"
       ],
       "en_us": [
-        "Petrification"
+        "Petrified"
       ]
     },
     "kanji": "石化",
@@ -6701,10 +7180,12 @@
   "sensor": {
     "translations": {
       "pt_br": [
-        "Sensor"
+        "Sensor",
+        "Detector"
       ],
       "en_us": [
-        "Sensor"
+        "Sensor",
+        "Detector"
       ]
     },
     "kanji": "センサー",
@@ -6737,6 +7218,20 @@
     "hiragana": "しげみ",
     "romaji": "shigemi"
   },
+  "shrub": {
+    "translations": {
+      "pt_br": [
+        "Arbusto"
+      ],
+      "en_us": [
+        "Shrub",
+        "Bush"
+      ]
+    },
+    "kanji": "低木",
+    "hiragana": "ていぼく",
+    "romaji": "teiboku"
+  },
   "obsidian": {
     "translations": {
       "pt_br": [
@@ -6753,7 +7248,7 @@
   "crying": {
     "translations": {
       "pt_br": [
-        "Obsidiana"
+        "Chorona"
       ],
       "en_us": [
         "Crying"
@@ -6766,7 +7261,8 @@
   "lodestone": {
     "translations": {
       "pt_br": [
-        "Magnetita"
+        "Magnetita",
+        "Magnetizada"
       ],
       "en_us": [
         "Lodestone"
@@ -6779,10 +7275,13 @@
   "record": {
     "translations": {
       "pt_br": [
-        "Gravação"
+        "Disco Musical",
+        "Disco"
       ],
       "en_us": [
-        "Record"
+        "Music Disc",
+        "Record",
+        "Disc"
       ]
     },
     "kanji": "レコード",
@@ -6831,7 +7330,7 @@
   "azure_bluet": {
     "translations": {
       "pt_br": [
-        "Flor-silvestre-azul"
+        "Flor-silvestre-azul", "Azul-Azul"
       ],
       "en_us": [
         "Azure Bluet"
@@ -6883,9 +7382,11 @@
   "vine": {
     "translations": {
       "pt_br": [
+        "Trepadeiras",
         "Trepadeira"
       ],
       "en_us": [
+        "Vines",
         "Vine"
       ]
     },
@@ -6909,7 +7410,8 @@
   "weeping": {
     "translations": {
       "pt_br": [
-        "Chorão"
+        "Chorona",
+        "Choronas"
       ],
       "en_us": [
         "Weeping"
@@ -6922,7 +7424,7 @@
   "barrier": {
     "translations": {
       "pt_br": [
-        "Berreira"
+        "Barreira"
       ],
       "en_us": [
         "Barrier"
@@ -6935,7 +7437,7 @@
   "cookie": {
     "translations": {
       "pt_br": [
-        "Cookie"
+        "Biscoito"
       ],
       "en_us": [
         "Cookie"
@@ -6970,5 +7472,3330 @@
     "kanji": "リード",
     "hiragana": "りーど",
     "romaji": "riido"
+  },
+  "yellowtail": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Papagaio-da-Cauda-Amarela"
+      ],
+      "en_us": [
+        "Yellowtail"
+      ]
+    },
+    "kanji": "キビレ",
+    "hiragana": "きびれ",
+    "romaji": "kibire"
+  },
+  "zombified": {
+    "translations": {
+      "pt_br": [
+        "zumbificado"
+      ],
+      "en_us": [
+        "Zombified"
+      ]
+    },
+    "kanji": "q",
+    "hiragana": "q",
+    "romaji": "q"
+  },
+  "weaving": {
+    "translations": {
+      "pt_br": [
+        "Tecitura"
+      ],
+      "en_us": [
+        "Weaving"
+      ]
+    },
+    "kanji": "巣張り",
+    "hiragana": "すばり",
+    "romaji": "subari"
+  },
+  "light_weighted": {
+    "translations": {
+      "pt_br": [
+        "leve"
+      ],
+      "en_us": [
+        "light Weighted"
+      ]
+    },
+    "kanji": "軽量",
+    "hiragana": "けいりょう",
+    "romaji": "keiryou"
+  },
+  "heavy_weighted": {
+    "translations": {
+      "pt_br": [
+        "pesada"
+      ],
+      "en_us": [
+        "heavy weighted"
+      ]
+    },
+    "kanji": "重量",
+    "hiragana": "じゅうりょう",
+    "romaji": "juuryou"
+  },
+  "purpose": {
+    "translations": {
+      "pt_br": [
+        "proposito",
+        "Uso",
+        "Pesagem"
+      ],
+      "en_us": [
+        "Purpose",
+        "Use"
+
+      ]
+    },
+    "kanji": "用",
+    "hiragana": "よう",
+    "romaji": "you"
+  },
+  "wind_charge": {
+    "translations": {
+      "pt_br": [
+        "Projétil de Vento"
+      ],
+      "en_us": [
+        "Wind Charge"
+      ]
+    },
+    "kanji": "ウィンドチャージ",
+    "hiragana": "ういんぢちゃーづ",
+    "romaji": "uindochaadzu"
+  },
+  "wind_charged": {
+    "translations": {
+      "pt_br": [
+        "Ventania"
+      ],
+      "en_us": [
+        "Wind Charged",
+        "Wind Charging"
+      ]
+    },
+    "kanji": "蓄風",
+    "hiragana": "ちくふう",
+    "romaji": "chikufuu"
+  },
+  "wire": {
+    "translations": {
+      "pt_br": [
+        "Cabo"
+      ],
+      "en_us": [
+        "Wire"
+      ]
+    },
+    "kanji": "ワイヤー",
+    "hiragana": "うあやー",
+    "romaji": "uayaa"
+  },
+  "written": {
+    "translations": {
+      "pt_br": [
+        "escrito"
+      ],
+      "en_us": [
+        "Written"
+      ]
+    },
+    "kanji": "記入済み",
+    "hiragana": "きにゅうずみ",
+    "romaji": "kinyuuzumi"
+  },
+  "wandering_trader": {
+    "translations": {
+      "pt_br": [
+        "Vendedor Ambulante",
+        "Mercador Ambulante"
+      ],
+      "en_us": [
+        "Wandering Trader"
+      ]
+    },
+    "kanji": "行商人",
+    "hiragana": "ぎょうしょうにん",
+    "romaji": "gyoushounin"
+  },
+  "weakness": {
+    "translations": {
+      "pt_br": [
+        "fraqueza"
+      ],
+      "en_us": [
+        "Weakness"
+      ]
+    },
+    "kanji": "弱化",
+    "hiragana": "じゃっか",
+    "romaji": "jakka"
+  },
+  "weapon": {
+    "translations": {
+      "pt_br": [
+        "armeiro"
+      ],
+      "en_us": [
+        "Weapon"
+      ]
+    },
+    "kanji": "武器",
+    "hiragana": "ぶき",
+    "romaji": "buki"
+  },
+  "unknown": {
+    "translations": {
+      "pt_br": [
+        "Desconhecido",
+        "Desconhecida"
+      ],
+      "en_us": [
+        "Unknown"
+      ]
+    },
+    "kanji": "不明な",
+    "hiragana": "ふめいな",
+    "romaji": "fumeina"
+  },
+  "upgrade": {
+    "translations": {
+      "pt_br": [
+        "Atualizar",
+        "Melhorias",
+        "Melhoria"
+      ],
+      "en_us": [
+        "Upgrade"
+      ]
+    },
+    "kanji": "強化",
+    "hiragana": "きょうか",
+    "romaji": "kyouka"
+  },
+  "valley": {
+    "translations": {
+      "pt_br": [
+        "Água-furtada"
+      ],
+      "en_us": [
+        "Valley"
+      ]
+    },
+    "kanji": "谷",
+    "hiragana": "たに",
+    "romaji": "tani"
+  },
+  "vein": {
+    "translations": {
+      "pt_br": [
+        "Veio"
+      ],
+      "en_us": [
+        "Vein"
+      ]
+    },
+    "kanji": "ヴェイン",
+    "hiragana": "ぶえいん",
+    "romaji": "buein"
+  },
+  "twinkle": {
+    "translations": {
+      "pt_br": [
+        "Cintilante"
+      ],
+      "en_us": [
+        "Twinkle"
+      ]
+    },
+    "kanji": "点滅",
+    "hiragana": "てんめつ",
+    "romaji": "tenmetsu"
+  },
+  "twisting": {
+    "translations": {
+      "pt_br": [
+        "Retorcidas"
+      ],
+      "en_us": [
+        "Twisting"
+      ]
+    },
+    "kanji": "ねじれ",
+    "hiragana": "ねじれ",
+    "romaji": "nejire"
+  },
+  "type": {
+    "translations": {
+      "pt_br": [
+        "tipo"
+      ],
+      "en_us": [
+        "Type"
+      ]
+    },
+    "kanji": "活字",
+    "hiragana": "かつじ",
+    "romaji": "katsuji"
+  },
+  "uncraftable": {
+    "translations": {
+      "pt_br": [
+        "Não Fabricável"
+      ],
+      "en_us": [
+        "Uncraftable"
+      ]
+    },
+    "kanji": "クラフト不可能な",
+    "hiragana": "くらふとふかのうな",
+    "romaji": "kurafutofukanouna"
+  },
+  "undying": {
+    "translations": {
+      "pt_br": [
+        "imortalidade",
+        "imortal"
+      ],
+      "en_us": [
+        "Undying"
+      ]
+    },
+    "kanji": "不死",
+    "hiragana": "ふし",
+    "romaji": "fushi"
+  },
+  "trail": {
+    "translations": {
+      "pt_br": [
+        "Rastro de Luz",
+        "Feixe de Luz"
+      ],
+      "en_us": [
+        "Trail"
+      ]
+    },
+    "kanji": "流星",
+    "hiragana": "りゅうせい",
+    "romaji": "ryuusei"
+  },
+  "triggerfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-porco"
+      ],
+      "en_us": [
+        "Triggerfish"
+      ]
+    },
+    "kanji": "モンガラカワハギ",
+    "hiragana": "もんがらかわはぎ",
+    "romaji": "mongarawahagi"
+  },
+  "tripwire": {
+    "translations": {
+      "pt_br": [
+        "Armadilha",
+        "Fio"
+      ],
+      "en_us": [
+        "Tripwire"
+      ]
+    },
+    "kanji": "トリップワイヤー",
+    "hiragana": "とりっぷわいやー",
+    "romaji": "torippuwaiyaa"
+  },
+  "mojang": {
+    "translations": {
+      "pt_br": [
+        "Emblema"
+      ],
+      "en_us": [
+        "Thing"
+      ]
+    },
+    "kanji": "何か",
+    "hiragana": "なにか",
+    "romaji": "nanika"
+  },
+  "threadfin": {
+    "translations": {
+      "pt_br": [
+        "Barbudo"
+      ],
+      "en_us": [
+        "Threadfin"
+      ]
+    },
+    "kanji": "ツバメコノシロ",
+    "hiragana": "つばめこのしろ",
+    "romaji": "tsubamekonoshiro"
+  },
+  "thrown": {
+    "translations": {
+      "pt_br": [
+        "Lançado"
+      ],
+      "en_us": [
+        "Thrown"
+      ]
+    },
+    "kanji": "投げられた",
+    "hiragana": "なげられた",
+    "romaji": "nagerareta"
+  },
+  "tinted": {
+    "translations": {
+      "pt_br": [
+        "Fosco", "Colorido"
+      ],
+      "en_us": [
+        "Tinted"
+      ]
+    },
+    "kanji": "遮光",
+    "hiragana": "しゃこう",
+    "romaji": "shakou"
+  },
+  "tomato_clownfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Palhaço-Tomate"
+      ],
+      "en_us": [
+        "Tomato Clownfish"
+      ]
+    },
+    "kanji": "ハマクマノミ",
+    "hiragana": "はまくまのみ",
+    "romaji": "hamakumanomi"
+  },
+  "sunstreak": {
+    "translations": {
+      "pt_br": [
+        "Raio-de-Sol"
+      ],
+      "en_us": [
+        "Sunstreak"
+      ]
+    },
+    "kanji": "サンストリーク",
+    "hiragana": "さんすとりーく",
+    "romaji": "sansutoriiku"
+  },
+  "swiftness": {
+    "translations": {
+      "pt_br": [
+        "Rapidez",
+        "Agilidade"
+      ],
+      "en_us": [
+        "Swiftness"
+      ]
+    },
+    "kanji": "俊敏",
+    "hiragana": "しゅんびん",
+    "romaji": "shunbin"
+  },
+  "blue_tang": {
+    "translations": {
+      "pt_br": [
+        "Cirurgião-Azul"
+      ],
+      "en_us": [
+        "Blue Tang"
+      ]
+    },
+    "kanji": "ナンヨウハギ",
+    "hiragana": "なんようはぎ",
+    "romaji": "nanyouhagi"
+  },
+  "black_tang": {
+    "translations": {
+      "pt_br": [
+        "Cirurgião-Negro"
+      ],
+      "en_us": [
+        "Black Tang"
+      ]
+    },
+    "kanji": "ヒレナガハギ",
+    "hiragana": "ひれながはぎ",
+    "romaji": "hirenagahagi"
+  },
+  "yellow_tang": {
+    "translations": {
+      "pt_br": [
+        "Cirurgião-Amarelo"
+      ],
+      "en_us": [
+        "yellow tang"
+      ]
+    },
+    "kanji": "キイロハギ",
+    "hiragana": "きいろはぎ",
+    "romaji": "kiirohagi"
+  },
+  "template": {
+    "translations": {
+      "pt_br": [
+        "Formato",
+        "Modelo",
+        "Forma",
+        "Molde"
+      ],
+      "en_us": [
+        "Template",
+        "shaped",
+        "shape"
+      ]
+    },
+    "kanji": "型",
+    "hiragana": "かた",
+    "romaji": "kata"
+  },
+  "text": {
+    "translations": {
+      "pt_br": [
+        "texto"
+      ],
+      "en_us": [
+        "Text"
+      ]
+    },
+    "kanji": "テキスト",
+    "hiragana": "テキスト",
+    "romaji": "tekisuto"
+  },
+  "steel": {
+    "translations": {
+      "pt_br": [
+        "aço",
+        "Pederneira"
+      ],
+      "en_us": [
+        "Steel"
+      ]
+    },
+    "kanji": "打ち金",
+    "hiragana": "うちがね",
+    "romaji": "uchigane"
+  },
+  "stonecutter": {
+    "translations": {
+      "pt_br": [
+        "Cortador de Pedras"
+      ],
+      "en_us": [
+        "Stonecutter"
+      ]
+    },
+    "kanji": "石切",
+    "hiragana": "いしき",
+    "romaji": "ishiki"
+  },
+  "strength": {
+    "translations": {
+      "pt_br": [
+        "força"
+      ],
+      "en_us": [
+        "Strength"
+      ]
+    },
+    "kanji": "力",
+    "hiragana": "ちから",
+    "romaji": "chikara"
+  },
+  "stripey": {
+    "translations": {
+      "pt_br": [
+        "Estriado"
+      ],
+      "en_us": [
+        "Stripey"
+      ]
+    },
+    "kanji": "ストライピー",
+    "hiragana": "すとらいぴー",
+    "romaji": "sutoraipii"
+  },
+  "spit": {
+    "translations": {
+      "pt_br": [
+        "Cuspe"
+      ],
+      "en_us": [
+        "Spit"
+      ]
+    },
+    "kanji": "唾",
+    "hiragana": "つば",
+    "romaji": "tsuba"
+  },
+  "splash": {
+    "translations": {
+      "pt_br": [
+        "Arremessável"
+      ],
+      "en_us": [
+        "Splash"
+      ]
+    },
+    "kanji": "スプラッシュ",
+    "hiragana": "すぷらっしゅ",
+    "romaji": "supurasshu"
+  },
+  "spore": {
+    "translations": {
+      "pt_br": [
+        "Esporos",
+        "Esporo"
+      ],
+      "en_us": [
+        "Spore"
+      ]
+    },
+    "kanji": "胞子",
+    "hiragana": "ほうし",
+    "romaji": "houshi"
+  },
+  "spotty": {
+    "translations": {
+      "pt_br": [
+        "Malhado"
+      ],
+      "en_us": [
+        "Spotty"
+      ]
+    },
+    "kanji": "スポッティー",
+    "hiragana": "すぽっちー",
+    "romaji": "supottii"
+  },
+  "with": {
+    "translations": {
+      "pt_br": [
+        "com"
+      ],
+      "en_us": [
+        "With",
+        "on a"
+      ]
+    },
+    "kanji": "付き",
+    "hiragana": "つき",
+    "romaji": "tsuki"
+  },
+  "slowness": {
+    "translations": {
+      "pt_br": [
+        "Lentidão"
+      ],
+      "en_us": [
+        "Slowness"
+      ]
+    },
+    "kanji": "鈍化",
+    "hiragana": "どんか",
+    "romaji": "donka"
+  },
+  "smithing": {
+    "translations": {
+      "pt_br": [
+        "ferraria"
+      ],
+      "en_us": [
+        "Smithing"
+      ]
+    },
+    "kanji": "鍛冶",
+    "hiragana": "かじ",
+    "romaji": "kaji"
+  },
+  "tool": {
+    "translations": {
+      "pt_br": [
+        "ferraria"
+      ],
+      "en_us": [
+        "Smithing"
+      ]
+    },
+    "kanji": "道具",
+    "hiragana": "どうぐ",
+    "romaji": "dougu"
+  },
+  "red_snapper": {
+    "translations": {
+      "pt_br": [
+        "Pargo Vermelho"
+      ],
+      "en_us": [
+        "Red Snapper"
+      ]
+    },
+    "kanji": "フエダイ",
+    "hiragana": "ふぇだい",
+    "romaji": "fedai"
+  },
+  "snooper": {
+    "translations": {
+      "pt_br": [
+        "Recife"
+      ],
+      "en_us": [
+        "Snooper"
+      ]
+    },
+    "kanji": "スヌーパー",
+    "hiragana": "すたーぱー",
+    "romaji": "sutaapaa"
+  },
+  "wheat_sheaf": {
+    "translations": {
+      "pt_br": [
+        "Trigo"
+      ],
+      "en_us": [
+        "Wheat Sheaf",
+        "Sheaf"
+      ]
+    },
+    "kanji": "麦束",
+    "hiragana": "むぎたば",
+    "romaji": "mugitaha"
+  },
+  "shepherd": {
+    "translations": {
+      "pt_br": [
+        "Pastor"
+      ],
+      "en_us": [
+        "Shepherd"
+      ]
+    },
+    "kanji": "羊飼い",
+    "hiragana": "ひつじかい",
+    "romaji": "hitsujikai"
+  },
+  "bamboo_shoot": {
+    "translations": {
+      "pt_br": [
+        "Muda de Bambu"
+      ],
+      "en_us": [
+        "Bamboo Shoot"
+      ]
+    },
+    "kanji": "タケノコ",
+    "hiragana": "たけのこ",
+    "romaji": "takenoko"
+  },
+  "shrieker": {
+    "translations": {
+      "pt_br": [
+        "Emissor"
+      ],
+      "en_us": [
+        "Shrieker"
+      ]
+    },
+    "kanji": "シュリーカー",
+    "hiragana": "しゅりーかー",
+    "romaji": "shuriikaa"
+  },
+  "slow_speed": {
+    "translations": {
+      "pt_br": [
+        "devagar",
+        "Lenta",
+        "Lento"
+      ],
+      "en_us": [
+        "Slow"
+      ]
+    },
+    "kanji": "低速",
+    "hiragana": "ていそく",
+    "romaji": "teisoku"
+  },
+  "repeating": {
+    "translations": {
+      "pt_br": [
+        "Repetindo",
+        "Repetição"
+      ],
+      "en_us": [
+        "Repeating"
+      ]
+    },
+    "kanji": "リピート",
+    "hiragana": "りぴーと",
+    "romaji": "ripiito"
+  },
+  "resistance": {
+    "translations": {
+      "pt_br": [
+        "resistência"
+      ],
+      "en_us": [
+        "Resistance"
+      ]
+    },
+    "kanji": "抵抗",
+    "hiragana": "ていこう",
+    "romaji": "teikou"
+  },
+  "respawn": {
+    "translations": {
+      "pt_br": [
+        "reaparecimento",
+        "renascimento"
+      ],
+      "en_us": [
+        "Respawn"
+      ]
+    },
+    "kanji": "リスポーン",
+    "hiragana": "リスポーン",
+    "romaji": "risupoon"
+  },
+  "rotten": {
+    "translations": {
+      "pt_br": [
+        "podre"
+      ],
+      "en_us": [
+        "Rotten"
+      ]
+    },
+    "kanji": "腐臭",
+    "hiragana": "ふしゅう",
+    "romaji": "fushuu"
+  },
+  "rotted": {
+    "translations": {
+      "pt_br": [
+        "podre"
+      ],
+      "en_us": [
+        "Rotten"
+      ]
+    },
+    "kanji": "腐った",
+    "hiragana": "くさった",
+    "romaji": "kusatta"
+  },
+  "sculk": {
+    "translations": {
+      "pt_br": [
+        "sculk"
+      ],
+      "en_us": [
+        "Sculk"
+      ]
+    },
+    "kanji": "スカルク",
+    "hiragana": "すかるく",
+    "romaji": "sukaruku"
+  },
+  "duplicate": {
+    "translations": {
+      "pt_br": [
+        "secundário"
+      ],
+      "en_us": [
+        "Secondary"
+      ]
+    },
+    "kanji": "副",
+    "hiragana": "ふく",
+    "romaji": "fuku"
+  },
+  "shape": {
+    "translations": {
+      "pt_br": [
+        "Formato",
+        "Forma"
+      ],
+      "en_us": [
+        "Shape"
+      ]
+    },
+    "kanji": "形状",
+    "hiragana": "けいじょう",
+    "romaji": "keijou"
+  },
+  "shaped": {
+    "translations": {
+      "pt_br": [
+        "Moldado"
+      ],
+      "en_us": [
+        "Shaped"
+      ]
+    },
+    "kanji": "傘",
+    "hiragana": "かさ",
+    "romaji": "kasa"
+  },
+  "regeneration": {
+    "translations": {
+      "pt_br": [
+        "Regeneração"
+      ],
+      "en_us": [
+        "Regeneration"
+      ]
+    },
+    "kanji": "再生",
+    "hiragana": "さいせい",
+    "romaji": "saisei"
+  },
+  "potion": {
+    "translations": {
+      "pt_br": [
+        "poção"
+      ],
+      "en_us": [
+        "Potion"
+      ]
+    },
+    "kanji": "ポーション",
+    "hiragana": "ポーション",
+    "romaji": "pooshon"
+  },
+  "potted": {
+    "translations": {
+      "pt_br": [
+        "envasados",
+        "envasado",
+        "envasadas",
+        "envasada"
+      ],
+      "en_us": [
+        "Potted"
+      ]
+    },
+    "kanji": "植木鉢",
+    "hiragana": "うえきばち",
+    "romaji": "uekibachi"
+  },
+  "effect": {
+    "translations": {
+      "pt_br": [
+        "Efeito",
+        "Poder"
+      ],
+      "en_us": [
+        "Effect",
+        "Power"
+      ]
+    },
+    "kanji": "効果",
+    "hiragana": "こおか",
+    "romaji": "kouka"
+  },
+  "pressure": {
+    "translations": {
+      "pt_br": [
+        "pressão"
+      ],
+      "en_us": [
+        "Pressure"
+      ]
+    },
+    "kanji": "圧力",
+    "hiragana": "あつりょく",
+    "romaji": "atsuryoku"
+  },
+  "pod": {
+    "translations": {
+      "pt_br": [
+        "Vagem"
+      ],
+      "en_us": [
+        "Pod"
+      ]
+    },
+    "kanji": "さや",
+    "hiragana": "さや",
+    "romaji": "saya"
+  },
+  "point": {
+    "translations": {
+      "pt_br": [
+        "ponto"
+      ],
+      "en_us": [
+        "Point"
+      ]
+    },
+    "kanji": "先",
+    "hiragana": "さき",
+    "romaji": "saki"
+  },
+  "poison": {
+    "translations": {
+      "pt_br": [
+        "veneno"
+      ],
+      "en_us": [
+        "Poison"
+      ]
+    },
+    "kanji": "毒",
+    "hiragana": "どく",
+    "romaji": "doku"
+  },
+  "poisonous": {
+    "translations": {
+      "pt_br": [
+        "Venenosa"
+      ],
+      "en_us": [
+        "Poisonous"
+      ]
+    },
+    "kanji": "青くなった",
+    "hiragana": "あおくなった",
+    "romaji": "aokunatta"
+  },
+  "parrotfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-papagaio"
+      ],
+      "en_us": [
+        "Parrotfish"
+      ]
+    },
+    "kanji": "ブダイ",
+    "hiragana": "ぶだい",
+    "romaji": "budai"
+  },
+  "pitcher_plant": {
+    "translations": {
+      "pt_br": [
+        "Plantio de Planta Ancestral",
+        "Planta Ancestral"
+      ],
+      "en_us": [
+        "Pitcher Crop",
+        "Pitcher Plant",
+        "Pitcher"
+      ]
+    },
+    "kanji": "ウツボカズラ",
+    "hiragana": "うつぼかずら",
+    "romaji": "utsubokazura"
+  },
+  "plate": {
+    "translations": {
+      "pt_br": [
+        "placa"
+      ],
+      "en_us": [
+        "Plate"
+      ]
+    },
+    "kanji": "皿",
+    "hiragana": "さら",
+    "romaji": "sara"
+  },
+  "oozing": {
+    "translations": {
+      "pt_br": [
+        "Pegajosa"
+      ],
+      "en_us": [
+        "Oozing"
+      ]
+    },
+    "kanji": "滲出",
+    "hiragana": "しんしゅつ",
+    "romaji": "shinshutsu"
+  },
+  "open": {
+    "translations": {
+      "pt_br": [
+        "aberto",
+        "aberta"
+      ],
+      "en_us": [
+        "Open"
+      ]
+    },
+    "kanji": "開",
+    "hiragana": "ひら",
+    "romaji": "hira"
+  },
+  "ornate": {
+    "translations": {
+      "pt_br": [
+        "Ornado"
+      ],
+      "en_us": [
+        "Ornate"
+      ]
+    },
+    "kanji": "ハナグロ",
+    "hiragana": "はなぐろ",
+    "romaji": "hanaguro"
+  },
+  "oxeye": {
+    "translations": {
+      "pt_br": [
+        "olho de boi"
+      ],
+      "en_us": [
+        "Oxeye"
+      ]
+    },
+    "kanji": "フランス",
+    "hiragana": "ふらんす",
+    "romaji": "furansu"
+  },
+  "style": {
+    "translations": {
+      "pt_br": [
+        "Estilo",
+        "template"
+      ],
+      "en_us": [
+        "style",
+        "Template"
+      ]
+    },
+    "kanji": "風",
+    "hiragana": "ふう",
+    "romaji": "fuu"
+  },
+  "ornament": {
+    "translations": {
+      "pt_br": [
+        "Ornamento",
+        "Decoração",
+        "Enfeite",
+        "Molde de Ferraria"
+      ],
+      "en_us": [
+        "Ornament",
+        "Decoration",
+        "Armor Trim"
+      ]
+    },
+    "kanji": "装飾",
+    "hiragana": "そうしょく",
+    "romaji": "soushoku"
+  },
+  "music": {
+    "translations": {
+      "pt_br": [
+        "musica"
+      ],
+      "en_us": [
+        "Music"
+      ]
+    },
+    "kanji": "音楽",
+    "hiragana": "おんがく",
+    "romaji": "ongaku"
+  },
+  "mutton": {
+    "translations": {
+      "pt_br": [
+        "carneiro"
+      ],
+      "en_us": [
+        "Mutton"
+      ]
+    },
+    "kanji": "羊",
+    "hiragana": "よう",
+    "romaji": "hitsuji"
+  },
+  "night_vision": {
+    "translations": {
+      "pt_br": [
+        "Visão Noturna"
+      ],
+      "en_us": [
+        "Night Vision"
+      ]
+    },
+    "kanji": "暗視",
+    "hiragana": "あんし",
+    "romaji": "anshi"
+  },
+  "nitwit": {
+    "translations": {
+      "pt_br": [
+        "Palerma"
+      ],
+      "en_us": [
+        "Nitwit"
+      ]
+    },
+    "kanji": "無職",
+    "hiragana": "むしょく",
+    "romaji": "mushoku"
+  },
+  "turtle_master": {
+    "translations": {
+      "pt_br": [
+        "Mestre-Tartaruga"
+      ],
+      "en_us": [
+        "Turtle Master"
+      ]
+    },
+    "kanji": "タートルマスター",
+    "hiragana": "たーとるますたー",
+    "romaji": "taatorumasutaa"
+  },
+  "moorish": {
+    "translations": {
+      "pt_br": [
+        "Ídolo-Mouro"
+      ],
+      "en_us": [
+        "Moorish Idol"
+      ]
+    },
+    "kanji": "ツノダシ",
+    "hiragana": "ツノダシ",
+    "romaji": "tsunodashi"
+  },
+  "moving": {
+    "translations": {
+      "pt_br": [
+        "Acionado",
+        "Movimento"
+      ],
+      "en_us": [
+        "Actioned",
+        "Moving"
+      ]
+    },
+    "kanji": "作動中",
+    "hiragana": "さどうちゅう",
+    "romaji": "sadouchuu"
+  },
+  "luck": {
+    "translations": {
+      "pt_br": [
+        "sorte"
+      ],
+      "en_us": [
+        "Luck"
+      ]
+    },
+    "kanji": "幸運",
+    "hiragana": "こううん",
+    "romaji": "kouun"
+  },
+  "mannequin": {
+    "translations": {
+      "pt_br": [
+        "Manequim"
+      ],
+      "en_us": [
+        "Mannequin"
+      ]
+    },
+    "kanji": "マネキン",
+    "hiragana": "マネキン",
+    "romaji": "manekin"
+  },
+  "map": {
+    "translations": {
+      "pt_br": [
+        "mapa"
+      ],
+      "en_us": [
+        "Map"
+      ]
+    },
+    "kanji": "地図",
+    "hiragana": "ちず",
+    "romaji": "chizu"
+  },
+  "marker": {
+    "translations": {
+      "pt_br": [
+        "marcador"
+      ],
+      "en_us": [
+        "Marker"
+      ]
+    },
+    "kanji": "マーカー",
+    "hiragana": "まーかー",
+    "romaji": "maakaa"
+  },
+  "mason": {
+    "translations": {
+      "pt_br": [
+        "Pedreiro"
+      ],
+      "en_us": [
+        "Mason"
+      ]
+    },
+    "kanji": "石工",
+    "hiragana": "いしく",
+    "romaji": "ishiku"
+  },
+  "leaf_litter": {
+    "translations": {
+      "pt_br": [
+        "Serrapilheira"
+      ],
+      "en_us": [
+        "leaf litter"
+      ]
+    },
+    "kanji": "落ち葉",
+    "hiragana": "おちば",
+    "romaji": "ochiba"
+  },
+  "loom": {
+    "translations": {
+      "pt_br": [
+        "Tear"
+      ],
+      "en_us": [
+        "Loom"
+      ]
+    },
+    "kanji": "機織り機",
+    "hiragana": "はとおりき",
+    "romaji": "hataoriki"
+  },
+  "leaf": {
+    "translations": {
+      "pt_br": [
+        "folha"
+      ],
+      "en_us": [
+        "Leaf"
+      ]
+    },
+    "kanji": "葉",
+    "hiragana": "は",
+    "romaji": "ha"
+  },
+  "leaping": {
+    "translations": {
+      "pt_br": [
+        "Salto"
+      ],
+      "en_us": [
+        "Leaping"
+      ]
+    },
+    "kanji": "跳躍",
+    "hiragana": "ちょうやく",
+    "romaji": "chouyaku"
+  },
+  "leash": {
+    "translations": {
+      "pt_br": [
+        "Coleira", "Laço"
+      ],
+      "en_us": [
+        "Leash"
+      ]
+    },
+    "kanji": "リード",
+    "hiragana": "りいど",
+    "romaji": "riido"
+  },
+  "leatherworker": {
+    "translations": {
+      "pt_br": [
+        "Coureiro"
+      ],
+      "en_us": [
+        "Leatherworker"
+      ]
+    },
+    "kanji": "革細工師",
+    "hiragana": "かわざいくし",
+    "romaji": "kawasaikushi"
+  },
+  "levitation": {
+    "translations": {
+      "pt_br": [
+        "Levitação"
+      ],
+      "en_us": [
+        "Levitation"
+      ]
+    },
+    "kanji": "浮遊",
+    "hiragana": "ふゆう",
+    "romaji": "fuyuu"
+  },
+  "librarian": {
+    "translations": {
+      "pt_br": [
+        "Bibliotecário"
+      ],
+      "en_us": [
+        "Librarian"
+      ]
+    },
+    "kanji": "司書",
+    "hiragana": "ししょ",
+    "romaji": "shisho"
+  },
+  "light": {
+    "translations": {
+      "pt_br": [
+        "Clara"
+      ],
+      "en_us": [
+        "Light"
+      ]
+    },
+    "kanji": "光",
+    "hiragana": "ひかり",
+    "romaji": "hikari"
+  },
+  "lightning_bolt": {
+    "translations": {
+      "pt_br": [
+        "relâmpago"
+      ],
+      "en_us": [
+        "Lightning Bolt",
+        "Lightning"
+      ]
+    },
+    "kanji": "雷",
+    "hiragana": "かみなり",
+    "romaji": "kaminari"
+  },
+  "lingering": {
+    "translations": {
+      "pt_br": [
+        "Prolongada",
+        "Prolongado"
+      ],
+      "en_us": [
+        "Lingering"
+      ]
+    },
+    "kanji": "残留",
+    "hiragana": "ざんりょう",
+    "romaji": "zanryou"
+  },
+  "invisibility": {
+    "translations": {
+      "pt_br": [
+        "Invisibilidade"
+      ],
+      "en_us": [
+        "Invisibility"
+      ]
+    },
+    "kanji": "透明化",
+    "hiragana": "とうめいか",
+    "romaji": "toumeika"
+  },
+  "item": {
+    "translations": {
+      "pt_br": [
+        "item"
+      ],
+      "en_us": [
+        "Item"
+      ]
+    },
+    "kanji": "アイテム",
+    "hiragana": "あいてむ",
+    "romaji": "aitemu"
+  },
+  "jigsaw": {
+    "translations": {
+      "pt_br": [
+        "Bloco-Quebra-Cabeça"
+      ],
+      "en_us": [
+        "Jigsaw"
+      ]
+    },
+    "kanji": "ジグソー",
+    "hiragana": "ジグソー",
+    "romaji": "jigusoo"
+  },
+  "killer": {
+    "translations": {
+      "pt_br": [
+        "Matadora", "Assassino"
+      ],
+      "en_us": [
+        "Killer"
+      ]
+    },
+    "kanji": "殺人",
+    "hiragana": "さつじん",
+    "romaji": "satsujin"
+  },
+  "knot": {
+    "translations": {
+      "pt_br": [
+        "Nó"
+      ],
+      "en_us": [
+        "Knot"
+      ]
+    },
+    "kanji": "結び目",
+    "hiragana": "むすびめ",
+    "romaji": "musubime"
+  },
+  "person": {
+    "translations": {
+      "pt_br": [
+        "pessoa"
+      ],
+      "en_us": [
+        "person"
+      ]
+    },
+    "kanji": "人",
+    "hiragana": "ひと",
+    "romaji": "hito"
+  },
+  "kob": {
+    "translations": {
+      "pt_br": [
+        "Austral"
+      ],
+      "en_us": [
+        "Kob"
+      ]
+    },
+    "kanji": "コーブ",
+    "hiragana": "こーぶ",
+    "romaji": "koobu"
+  },
+  "ingredients": {
+    "translations": {
+      "pt_br": [
+        "ingredientes"
+      ],
+      "en_us": [
+        "Ingredients"
+      ]
+    },
+    "kanji": "材料",
+    "hiragana": "ざいりょう",
+    "romaji": "zairyou"
+  },
+  "interact": {
+    "translations": {
+      "pt_br": [
+        "Interagir"
+      ],
+      "en_us": [
+        "Interact"
+      ]
+    },
+    "kanji": "交流",
+    "hiragana": "こうりゅう",
+    "romaji": "kouryuu"
+  },
+  "healing": {
+    "translations": {
+      "pt_br": [
+        "cura"
+      ],
+      "en_us": [
+        "Healing"
+      ]
+    },
+    "kanji": "治癒",
+    "hiragana": "ちゆ",
+    "romaji": "chiyu"
+  },
+  "heavy": {
+    "translations": {
+      "pt_br": [
+        "pesado"
+      ],
+      "en_us": [
+        "Heavy"
+      ]
+    },
+    "kanji": "ヘビー",
+    "hiragana": "へびー",
+    "romaji": "hebii"
+  },
+  "hook": {
+    "translations": {
+      "pt_br": [
+        "gancho"
+      ],
+      "en_us": [
+        "Hook"
+      ]
+    },
+    "kanji": "フック",
+    "hiragana": "ふっく",
+    "romaji": "fukku"
+  },
+  "indented": {
+    "translations": {
+      "pt_br": [
+        "Dentada"
+      ],
+      "en_us": [
+        "Indented"
+      ]
+    },
+    "kanji": "山形波",
+    "hiragana": "やまがたなみ",
+    "romaji": "yamagatanami"
+  },
+  "giant": {
+    "translations": {
+      "pt_br": [
+        "gigante"
+      ],
+      "en_us": [
+        "Giant"
+      ]
+    },
+    "kanji": "ジャイアント",
+    "hiragana": "じゃいあんと",
+    "romaji": "jaianto"
+  },
+  "glistering": {
+    "translations": {
+      "pt_br": [
+        "Reluzente"
+      ],
+      "en_us": [
+        "Glistering"
+      ]
+    },
+    "kanji": "きらめく",
+    "hiragana": "きらめく",
+    "romaji": "kirameku"
+  },
+  "glitter": {
+    "translations": {
+      "pt_br": [
+        "Faísca"
+      ],
+      "en_us": [
+        "Glitter"
+      ]
+    },
+    "kanji": "グリッター",
+    "hiragana": "ぐりったー",
+    "romaji": "gurittaa"
+  },
+  "goatfish": {
+    "translations": {
+      "pt_br": [
+        "Salmonete"
+      ],
+      "en_us": [
+        "Goatfish"
+      ]
+    },
+    "kanji": "ヒメジ",
+    "hiragana": "ひめじ",
+    "romaji": "himeji"
+  },
+  "guster": {
+    "translations": {
+      "pt_br": [
+        "Vórtice"
+      ],
+      "en_us": [
+        "Guster"
+      ]
+    },
+    "kanji": "風巻く者",
+    "hiragana": "かぜ巻くもの",
+    "romaji": "Kazemakumono"
+  },
+  "harming": {
+    "translations": {
+      "pt_br": [
+        "Dano"
+      ],
+      "en_us": [
+        "Harming"
+      ]
+    },
+    "kanji": "負傷",
+    "hiragana": "ふしょう",
+    "romaji": "fushou"
+  },
+  "flopper": {
+    "translations": {
+      "pt_br": [
+        "Roliço"
+      ],
+      "en_us": [
+        "Flopper"
+      ]
+    },
+    "kanji": "フロッパー",
+    "hiragana": "ふろっぱー",
+    "romaji": "furoppaa"
+  },
+  "frosted_ice": {
+    "translations": {
+      "pt_br": [
+        "Gelo Fosco"
+      ],
+      "en_us": [
+        "Frosted Ice"
+      ]
+    },
+    "kanji": "薄氷",
+    "hiragana": "はくひょう",
+    "romaji": "hakuhyou"
+  },
+  "full": {
+    "translations": {
+      "pt_br": [
+        "Cheia",
+        "Cheio"
+      ],
+      "en_us": [
+        "Full"
+      ]
+    },
+    "kanji": "満杯",
+    "hiragana": "まんぱい",
+    "romaji": "manpai"
+  },
+  "gateway": {
+    "translations": {
+      "pt_br": [
+        "Portal",
+        "Passagem"
+      ],
+      "en_us": [
+        "Gateway"
+      ]
+    },
+    "kanji": "ゲートウェイ",
+    "hiragana": "げーとうぇい",
+    "romaji": "geetoei"
+  },
+  "fishing": {
+    "translations": {
+      "pt_br": [
+        "pesca"
+      ],
+      "en_us": [
+        "Fishing"
+      ]
+    },
+    "kanji": "釣り",
+    "hiragana": "つり",
+    "romaji": "tsuri"
+  },
+  "flesh": {
+    "translations": {
+      "pt_br": [
+        "Carne"
+      ],
+      "en_us": [
+        "Flesh"
+      ]
+    },
+    "kanji": "肉",
+    "hiragana": "にく",
+    "romaji": "niku"
+  },
+  "fletcher": {
+    "translations": {
+      "pt_br": [
+        "Flecheiro"
+      ],
+      "en_us": [
+        "Fletcher"
+      ]
+    },
+    "kanji": "矢師",
+    "hiragana": "やし",
+    "romaji": "yashi"
+  },
+  "fletching": {
+    "translations": {
+      "pt_br": [
+        "Arco e Flecha"
+      ],
+      "en_us": [
+        "Fletching"
+      ]
+    },
+    "kanji": "矢細工",
+    "hiragana": "やざいく",
+    "romaji": "yasaiku"
+  },
+  "flight": {
+    "translations": {
+      "pt_br": [
+        "Voo"
+      ],
+      "en_us": [
+        "Flight"
+      ]
+    },
+    "kanji": "飛翔",
+    "hiragana": "ひしょう",
+    "romaji": "hishou"
+  },
+  "farmland": {
+    "translations": {
+      "pt_br": [
+        "Terra Arada"
+      ],
+      "en_us": [
+        "Farmland"
+      ]
+    },
+    "kanji": "耕地",
+    "hiragana": "こうち",
+    "romaji": "kouchi"
+  },
+  "fermented": {
+    "translations": {
+      "pt_br": [
+        "Fermentado"
+      ],
+      "en_us": [
+        "Fermented"
+      ]
+    },
+    "kanji": "発酵",
+    "hiragana": "はっこう",
+    "romaji": "hakkou"
+  },
+  "field": {
+    "translations": {
+      "pt_br": [
+        "field"
+      ],
+      "en_us": [
+        "Field"
+      ]
+    },
+    "kanji": "分野",
+    "hiragana": "ぶんや",
+    "romaji": "bunya"
+  },
+  "fireball": {
+    "translations": {
+      "pt_br": [
+        "Bola de Fogo"
+      ],
+      "en_us": [
+        "Fireball"
+      ]
+    },
+    "kanji": "火の玉",
+    "hiragana": "ひのたま",
+    "romaji": "hinotama"
+  },
+  "fish": {
+    "translations": {
+      "pt_br": [
+        "peixe"
+      ],
+      "en_us": [
+        "Fish"
+      ]
+    },
+    "kanji": "魚",
+    "hiragana": "さかな",
+    "romaji": "sakana"
+  },
+  "explosions": {
+    "translations": {
+      "pt_br": [
+        "Explosões"
+      ],
+      "en_us": [
+        "Explosions"
+      ]
+    },
+    "kanji": "原爆症",
+    "hiragana": "げんばくしょう",
+    "romaji": "genbakushou"
+  },
+  "eyeblossom": {
+    "translations": {
+      "pt_br": [
+        "Olhoquídea"
+      ],
+      "en_us": [
+        "Eyeblossom"
+      ]
+    },
+    "kanji": "ヒトミソウ",
+    "hiragana": "ひとみそう",
+    "romaji": "hitominu"
+  },
+  "fade": {
+    "translations": {
+      "pt_br": [
+        "desvanece-se"
+      ],
+      "en_us": [
+        "Fade"
+      ]
+    },
+    "kanji": "萎む",
+    "hiragana": "しぼむ",
+    "romaji": "shibomu"
+  },
+  "fall": {
+    "translations": {
+      "pt_br": [
+        "queda"
+      ],
+      "en_us": [
+        "Falling"
+      ]
+    },
+    "kanji": "落下",
+    "hiragana": "らっか",
+    "romaji": "rakka"
+  },
+  "farmer": {
+    "translations": {
+      "pt_br": [
+        "agricultor"
+      ],
+      "en_us": [
+        "Farmer"
+      ]
+    },
+    "kanji": "農民",
+    "hiragana": "のうみん",
+    "romaji": "noumin"
+  },
+  "area_effect_cloud": {
+    "translations": {
+      "pt_br": [
+        "Nuvem de Efeito de Área"
+      ],
+      "en_us": [
+        "Area Effect Cloud"
+      ]
+    },
+    "kanji": "エリアエフェクトクラウド",
+    "hiragana": "えりあえふぇくらうど",
+    "romaji": "eriaefekuraudo"
+  },
+  "emperor_red_snapper": {
+    "translations": {
+      "pt_br": [
+        "Pargo-Imperador-Vermelho"
+      ],
+      "en_us": [
+        "Emperor red snapper"
+      ]
+    },
+    "kanji": "センネンダイ",
+    "hiragana": "せんねんだい",
+    "romaji": "sennendai"
+  },
+  "empty": {
+    "translations": {
+      "pt_br": [
+        "vazio",
+        "vazia",
+        "Ar",
+        "Céu"
+      ],
+      "en_us": [
+        "Empty",
+        "Air",
+        "Sky"
+      ]
+    },
+    "kanji": "空",
+    "hiragana": "から",
+    "romaji": "karappo"
+  },
+  "equipment": {
+    "translations": {
+      "pt_br": [
+        "Equipamento",
+        "Item"
+      ],
+      "en_us": [
+        "Equipment",
+        "Item"
+      ]
+    },
+    "kanji": "装備品",
+    "hiragana": "そうびひん",
+    "romaji": "soubihin"
+  },
+  "disabled": {
+    "translations": {
+      "pt_br": [
+        "inativo"
+      ],
+      "en_us": [
+        "Disabled"
+      ]
+    },
+    "kanji": "障害者",
+    "hiragana": "しょうがいしゃ",
+    "romaji": "shougaisha"
+  },
+  "disc": {
+    "translations": {
+      "pt_br": [
+        "disco"
+      ],
+      "en_us": [
+        "Disc"
+      ]
+    },
+    "kanji": "皿",
+    "hiragana": "さら",
+    "romaji": "sara"
+  },
+  "display": {
+    "translations": {
+      "pt_br": [
+        "Mostrar",
+        "Display"
+      ],
+      "en_us": [
+        "Display"
+      ]
+    },
+    "kanji": "表示",
+    "hiragana": "ひょうじ",
+    "romaji": "byouji"
+  },
+  "entity": {
+    "translations": {
+      "pt_br": [
+        "Entidade"
+      ],
+      "en_us": [
+        "Entity"
+      ]
+    },
+    "kanji": "エンティティ",
+    "hiragana": "えんちいちい",
+    "romaji": "enchiichii"
+  },
+  "dottyback": {
+    "translations": {
+      "pt_br": [
+        "Royal-Gramma-Falso"
+      ],
+      "en_us": [
+        "Dottyback"
+      ]
+    },
+    "kanji": "メギス",
+    "hiragana": "メギス",
+    "romaji": "megisu"
+  },
+  "duration": {
+    "translations": {
+      "pt_br": [
+        "duração"
+      ],
+      "en_us": [
+        "Duration"
+      ]
+    },
+    "kanji": "時間",
+    "hiragana": "じかん",
+    "romaji": "jikan"
+  },
+  "custom": {
+    "translations": {
+      "pt_br": [
+        "personalizado",
+        "personalizada"
+      ],
+      "en_us": [
+        "Custom"
+      ]
+    },
+    "kanji": "カスタム",
+    "hiragana": "かすたむ",
+    "romaji": "kasutamu"
+  },
+  "daisy": {
+    "translations": {
+      "pt_br": [
+        "margarida"
+      ],
+      "en_us": [
+        "Daisy"
+      ]
+    },
+    "kanji": "ギク",
+    "hiragana": "ぎく",
+    "romaji": "giku"
+  },
+  "dasher": {
+    "translations": {
+      "pt_br": [
+        "Listrado"
+      ],
+      "en_us": [
+        "Dasher"
+      ]
+    },
+    "kanji": "ダッシャー",
+    "hiragana": "だっしゃー",
+    "romaji": "dasshaa"
+  },
+  "day": {
+    "translations": {
+      "pt_br": [
+        "Daylight",
+        "Dia",
+        "Sol"
+      ],
+      "en_us": [
+        "Daylight",
+        "day",
+        "sun"
+      ]
+    },
+    "kanji": "日",
+    "hiragana": "ひ",
+    "romaji": "nichi"
+  },
+  "shine": {
+    "translations": {
+      "pt_br": [
+        "Luz",
+        "Iluminação"
+      ],
+      "en_us": [
+        "Light",
+        "Shine"
+      ]
+    },
+    "kanji": "照",
+    "hiragana": "て",
+    "romaji": "te"
+  },
+  "light_1": {
+    "translations": {
+      "pt_br": [
+        "Luz"
+      ],
+      "en_us": [
+        "Light"
+      ]
+    },
+    "kanji": "ライト",
+    "hiragana": "らいと",
+    "romaji": "raito"
+  },
+  "debris": {
+    "translations": {
+      "pt_br": [
+        "Entulhos",
+        "Detritos"
+      ],
+      "en_us": [
+        "Debris"
+      ]
+    },
+    "kanji": "残骸",
+    "hiragana": "ざんがい",
+    "romaji": "zangaii"
+  },
+  "crops": {
+    "translations": {
+      "pt_br": [
+        "Lavouras"
+      ],
+      "en_us": [
+        "Crops"
+      ]
+    },
+    "kanji": "作物",
+    "hiragana": "さくもつ",
+    "romaji": "sakumotsu"
+  },
+  "core": {
+    "translations": {
+      "pt_br": [
+        "Núcleo"
+      ],
+      "en_us": [
+        "Core"
+      ]
+    },
+    "kanji": "コア",
+    "hiragana": "こあ",
+    "romaji": "koa"
+  },
+  "cotton": {
+    "translations": {
+      "pt_br": [
+        "algodão,"
+      ],
+      "en_us": [
+        "Cotton"
+      ]
+    },
+    "kanji": "綿",
+    "hiragana": "めん",
+    "romaji": "men"
+  },
+  "crafting": {
+    "translations": {
+      "pt_br": [
+        "Criação",
+        "Trabalho"
+      ],
+      "en_us": [
+        "Crafting"
+      ]
+    },
+    "kanji": "作業",
+    "hiragana": "さぎょう",
+    "romaji": "sagyou"
+  },
+  "crafting_1": {
+    "translations": {
+      "pt_br": [
+        "criação"
+      ],
+      "en_us": [
+        "Crafting"
+      ]
+    },
+    "kanji": "クラフト",
+    "hiragana": "クラフト",
+    "romaji": "kurafuto"
+  },
+  "automatic": {
+    "translations": {
+      "pt_br": [
+        "Automático",
+        "Automática"
+      ],
+      "en_us": [
+        "Automatic",
+        "Auto"
+      ]
+    },
+    "kanji": "自動",
+    "hiragana": "じどう",
+    "romaji": "jidou"
+  },
+  "clownfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-palhaço"
+      ],
+      "en_us": [
+        "Clownfish"
+      ]
+    },
+    "kanji": "クマノミ",
+    "hiragana": "くまのみ",
+    "romaji": "kumanomi"
+  },
+  "cocoa": {
+    "translations": {
+      "pt_br": [
+        "cacau"
+      ],
+      "en_us": [
+        "Cocoa"
+      ]
+    },
+    "kanji": "ココア",
+    "hiragana": "ココア",
+    "romaji": "kokoa"
+  },
+  "cocoa_1": {
+    "translations": {
+      "pt_br": [
+        "cacau"
+      ],
+      "en_us": [
+        "Cocoa"
+      ]
+    },
+    "kanji": "カカオ",
+    "hiragana": "かかお",
+    "romaji": "kakao"
+  },
+  "nut": {
+    "translations": {
+      "pt_br": [
+        "Noz",
+        "Fruta"
+      ],
+      "en_us": [
+        "Nut",
+        "Fruit"
+      ]
+    },
+    "kanji": "実",
+    "hiragana": "み",
+    "romaji": "mi"
+  },
+  "column": {
+    "translations": {
+      "pt_br": [
+        "column"
+      ],
+      "en_us": [
+        "Column"
+      ]
+    },
+    "kanji": "桁",
+    "hiragana": "けた",
+    "romaji": "keta"
+  },
+  "cichlid": {
+    "translations": {
+      "pt_br": [
+        "ciclídeo"
+      ],
+      "en_us": [
+        "Cichlid"
+      ]
+    },
+    "kanji": "シクリッド",
+    "hiragana": "シクリッド",
+    "romaji": "shikuriddo"
+  },
+  "clayfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Argila"
+      ],
+      "en_us": [
+        "Clayfish"
+      ]
+    },
+    "kanji": "クレイフィッシュ",
+    "hiragana": "くれいしっしゅ",
+    "romaji": "kureiifisshu"
+  },
+  "cleric": {
+    "translations": {
+      "pt_br": [
+        "Clérigo"
+      ],
+      "en_us": [
+        "Cleric"
+      ]
+    },
+    "kanji": "聖職者",
+    "hiragana": "せいしょくしゃ",
+    "romaji": "seishokusha"
+  },
+  "closed": {
+    "translations": {
+      "pt_br": [
+        "Fechada"
+      ],
+      "en_us": [
+        "Closed"
+      ]
+    },
+    "kanji": "閉じた",
+    "hiragana": "とじた",
+    "romaji": "tojita"
+  },
+  "cartography": {
+    "translations": {
+      "pt_br": [
+        "Cartografia"
+      ],
+      "en_us": [
+        "Cartography"
+      ]
+    },
+    "kanji": "製図",
+    "hiragana": "せいず",
+    "romaji": "seizu"
+  },
+  "carved": {
+    "translations": {
+      "pt_br": [
+        "Esculpida"
+      ],
+      "en_us": [
+        "Carved"
+      ]
+    },
+    "kanji": "くり抜かれた",
+    "hiragana": "くりぬかれた",
+    "romaji": "kurinukareta"
+  },
+  "charge": {
+    "translations": {
+      "pt_br": [
+        "cobrança"
+      ],
+      "en_us": [
+        "Charge"
+      ]
+    },
+    "kanji": "係",
+    "hiragana": "かかり",
+    "romaji": "kakari"
+  },
+  "chipped": {
+    "translations": {
+      "pt_br": [
+        "lascada",
+        "Rachada"
+      ],
+      "en_us": [
+        "Chipped"
+      ]
+    },
+    "kanji": "欠",
+    "hiragana": "か",
+    "romaji": "ka"
+  },
+  "butcher": {
+    "translations": {
+      "pt_br": [
+        "Açougueiro"
+      ],
+      "en_us": [
+        "Butcher"
+      ]
+    },
+    "kanji": "肉屋",
+    "hiragana": "にくや",
+    "romaji": "nikuya"
+  },
+  "butterflyfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Borboleta"
+      ],
+      "en_us": [
+        "Butterflyfish"
+      ]
+    },
+    "kanji": "チョウチョウウオ",
+    "hiragana": "ちょうちょううお",
+    "romaji": "chouchouuo"
+  },
+  "calibrated": {
+    "translations": {
+      "pt_br": [
+        "Calibrado"
+      ],
+      "en_us": [
+        "Calibrated"
+      ]
+    },
+    "kanji": "調律",
+    "hiragana": "ちょうりつ",
+    "romaji": "chouritsu"
+  },
+  "candy": {
+    "translations": {
+      "pt_br": [
+        "fácil de"
+      ],
+      "en_us": [
+        "Candy"
+      ]
+    },
+    "kanji": "飴",
+    "hiragana": "あめ",
+    "romaji": "ame"
+  },
+  "cartographer": {
+    "translations": {
+      "pt_br": [
+        "Cartógrafo"
+      ],
+      "en_us": [
+        "Cartographer"
+      ]
+    },
+    "kanji": "製図家",
+    "hiragana": "せいずか",
+    "romaji": "seizuie"
+  },
+  "budding": {
+    "translations": {
+      "pt_br": [
+        "Brotamento",
+        "Gemulação",
+        "Drusa"
+      ],
+      "en_us": [
+        "Budding",
+        "gemmation"
+      ]
+    },
+    "kanji": "芽生",
+    "hiragana": "がせい",
+    "romaji": "gasei"
+  },
+  "bullet": {
+    "translations": {
+      "pt_br": [
+        "Projétil"
+      ],
+      "en_us": [
+        "Bullet"
+      ]
+    },
+    "kanji": "弾",
+    "hiragana": "たま",
+    "romaji": "tama"
+  },
+  "bunny": {
+    "translations": {
+      "pt_br": [
+        "coelho"
+      ],
+      "en_us": [
+        "Bunny"
+      ]
+    },
+    "kanji": "バニー",
+    "hiragana": "バニー",
+    "romaji": "banii"
+  },
+  "burst": {
+    "translations": {
+      "pt_br": [
+        "Estouro"
+      ],
+      "en_us": [
+        "Burst"
+      ]
+    },
+    "kanji": "破裂",
+    "hiragana": "はれつ",
+    "romaji": "haretsu"
+  },
+  "bordure": {
+    "translations": {
+      "pt_br": [
+        "bordadura"
+      ],
+      "en_us": [
+        "Bordure"
+      ]
+    },
+    "kanji": "縁取り",
+    "hiragana": "ふちどり",
+    "romaji": "bochidori"
+  },
+  "table": {
+    "translations": {
+      "pt_br": [
+        "Mesa",
+        "Pedestal",
+        "Bancada",
+        "Suporte"
+      ],
+      "en_us": [
+        "Table",
+        "Stand"
+      ]
+    },
+    "kanji": "台",
+    "hiragana": "だい",
+    "romaji": "dai"
+  },
+  "table_1": {
+    "translations": {
+      "pt_br": [
+        "Mesa"
+      ],
+      "en_us": [
+        "Table"
+      ]
+    },
+    "kanji": "テーブル",
+    "hiragana": "てーぶる",
+    "romaji": "teeburu"
+  },
+  "breathing": {
+    "translations": {
+      "pt_br": [
+        "respiração"
+      ],
+      "en_us": [
+        "Breathing"
+      ]
+    },
+    "kanji": "呼吸",
+    "hiragana": "こきゅう",
+    "romaji": "kokyuu"
+  },
+  "brewing": {
+    "translations": {
+      "pt_br": [
+        "Poções"
+      ],
+      "en_us": [
+        "Brewing"
+      ]
+    },
+    "kanji": "醸造",
+    "hiragana": "じょうぞう",
+    "romaji": "jouzou"
+  },
+  "brinely": {
+    "translations": {
+      "pt_br": [
+        "salgado"
+      ],
+      "en_us": [
+        "Brinely"
+      ]
+    },
+    "kanji": "ブラインリー",
+    "hiragana": "ぶらいんりー",
+    "romaji": "burainrii"
+  },
+  "brute": {
+    "translations": {
+      "pt_br": [
+        "Bruto",
+        "Bárbaro"
+      ],
+      "en_us": [
+        "Brute"
+      ]
+    },
+    "kanji": "ブルート",
+    "hiragana": "ぶるーと",
+    "romaji": "buruuto"
+  },
+  "bobber": {
+    "translations": {
+      "pt_br": [
+        "Boia de Pesca",
+        "Boia",
+        "flutuador"
+      ],
+      "en_us": [
+        "Fishing Bobber",
+        "Bobber"
+      ]
+    },
+    "kanji": "浮き",
+    "hiragana": "うき",
+    "romaji": "uki"
+  },
+  "bogged": {
+    "translations": {
+      "pt_br": [
+        "Pantanoso"
+      ],
+      "en_us": [
+        "Bogged"
+      ]
+    },
+    "kanji": "ボグド",
+    "hiragana": "ぼぐど",
+    "romaji": "bogudo"
+  },
+  "blockfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Bloco"
+      ],
+      "en_us": [
+        "Blockfish"
+      ]
+    },
+    "kanji": "ブロックフィッシュ",
+    "hiragana": "ぶろっくふぃあふ",
+    "romaji": "burokkufisshu"
+  },
+  "pholidae": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Serpente-Vermelho"
+      ],
+      "en_us": [
+        "Red Lipped Blenny"
+      ]
+    },
+    "kanji": "イソギンポ",
+    "hiragana": "いんぎんぽ",
+    "romaji": "inginpo"
+  },
+  "blossom": {
+    "translations": {
+      "pt_br": [
+        "flor"
+      ],
+      "en_us": [
+        "Blossom"
+      ]
+    },
+    "kanji": "花",
+    "hiragana": "はな",
+    "romaji": "hana"
+  },
+  "berry": {
+    "translations": {
+      "pt_br": [
+        "Bagas",
+        "Baga"
+      ],
+      "en_us": [
+        "Berry"
+      ]
+    },
+    "kanji": "ベリー",
+    "hiragana": "べりー",
+    "romaji": "berii"
+  },
+  "betta": {
+    "translations": {
+      "pt_br": [
+        "Peixe-de-Briga-Siamês"
+      ],
+      "en_us": [
+        "Cotton Candy Betta"
+      ]
+    },
+    "kanji": "ベタ",
+    "hiragana": "べた",
+    "romaji": "beta"
+  },
+  "betty": {
+    "translations": {
+      "pt_br": [
+        "Betta"
+      ],
+      "en_us": [
+        "Betty"
+      ]
+    },
+    "kanji": "ベティー",
+    "hiragana": "ベティー",
+    "romaji": "betei"
+  },
+  "beans": {
+    "translations": {
+      "pt_br": [
+        "Feijões"
+      ],
+      "en_us": [
+        "Beans"
+      ]
+    },
+    "kanji": "隠元",
+    "hiragana": "いんげん",
+    "romaji": "ingen"
+  },
+  "beans_1": {
+    "translations": {
+      "pt_br": [
+        "Feijões",
+        "Sementes"
+      ],
+      "en_us": [
+        "Beans"
+      ]
+    },
+    "kanji": "豆",
+    "hiragana": "まめ",
+    "romaji": "mame"
+  },
+  "arms": {
+    "translations": {
+      "pt_br": [
+        "braços"
+      ],
+      "en_us": [
+        "Arms"
+      ]
+    },
+    "kanji": "両腕",
+    "hiragana": "りょううで",
+    "romaji": "ryouude"
+  },
+  "up": {
+    "translations": {
+      "pt_br": [
+        "para cima",
+        "cima"
+      ],
+      "en_us": [
+        "up"
+      ]
+    },
+    "kanji": "上げた",
+    "hiragana": "あげた",
+    "romaji": "ageta"
+  },
+  "awkward": {
+    "translations": {
+      "pt_br": [
+        "Estranha"
+      ],
+      "en_us": [
+        "Awkward"
+      ]
+    },
+    "kanji": "奇妙な",
+    "hiragana": "きみょうな",
+    "romaji": "kimyouna"
+  },
+  "area": {
+    "translations": {
+      "pt_br": [
+        "Área"
+      ],
+      "en_us": [
+        "Area"
+      ]
+    },
+    "kanji": "辺",
+    "hiragana": "へん",
+    "romaji": "hen"
+  },
+  "armorer": {
+    "translations": {
+      "pt_br": [
+        "Armadureiro"
+      ],
+      "en_us": [
+        "Armorer"
+      ]
+    },
+    "kanji": "防具鍛冶",
+    "hiragana": "ぼうぐたんや",
+    "romaji": "bougutanya"
+  },
+  "queen_angelfish": {
+    "translations": {
+      "pt_br": [
+        "Peixe-Anjo-Rainha"
+      ],
+      "en_us": [
+        "Queen Angelfish"
+      ]
+    },
+    "kanji": "クィーンエンゼルフィッシュ",
+    "hiragana": "くいーんえんざるふぃっしゅ",
+    "romaji": "kuiinenzarufisshu"
+  },
+  "applies": {
+    "translations": {
+      "pt_br": [
+        "possui a aplicação"
+      ],
+      "en_us": [
+        "Applies"
+      ]
+    },
+    "kanji": "全入",
+    "hiragana": "ぜんにゅう",
+    "romaji": "zennyuu"
+  },
+  "anemone": {
+    "translations": {
+      "pt_br": [
+        "anêmona"
+      ],
+      "en_us": [
+        "Anemone"
+      ]
+    },
+    "kanji": "アネモネ",
+    "hiragana": "アネモネ",
+    "romaji": "anemone"
+  },
+  "ancient": {
+    "translations": {
+      "pt_br": [
+        "Ancestrais",
+        "Ancestral",
+        "Antigo"
+      ],
+      "en_us": [
+        "Ancient"
+      ]
+    },
+    "kanji": "古代",
+    "hiragana": "ごだい",
+    "romaji": "godai"
+  },
+  "anchor": {
+    "translations": {
+      "pt_br": [
+        "Âncora"
+      ],
+      "en_us": [
+        "Anchor"
+      ]
+    },
+    "kanji": "アンカー",
+    "hiragana": "あんかー",
+    "romaji": "ankaa"
+  },
+  "bolt": {
+    "translations": {
+      "pt_br": [
+        "parafuso"
+      ],
+      "en_us": [
+        "Bolt"
+      ]
+    },
+    "kanji": "ネジ止め",
+    "hiragana": "ねじねじどめ",
+    "romaji": "nejinejidome"
+  },
+  "dune": {
+    "translations": {
+      "pt_br": [
+        "Dunas"
+      ],
+      "en_us": [
+        "Dune"
+      ]
+    },
+    "kanji": "砂丘",
+    "hiragana": "さきゅう",
+    "romaji": "sakyuu"
+  },
+  "host": {
+    "translations": {
+      "pt_br": [
+        "anfitrião",
+        "Hospedeiro"
+      ],
+      "en_us": [
+        "Host",
+        "Landlord",
+        "Proprietor"
+      ]
+    },
+    "kanji": "主人",
+    "hiragana": "しゅじん",
+    "romaji": "shujin"
+  },
+  "raiser": {
+    "translations": {
+      "pt_br": [
+        "levante"
+      ],
+      "en_us": [
+        "Raiser",
+        "Herder"
+      ]
+    },
+    "kanji": "牧者",
+    "hiragana": "ぼくしゃ",
+    "romaji": "bokusha"
+  },
+  "rib": {
+    "translations": {
+      "pt_br": [
+        "costelas",
+        "costela"
+      ],
+      "en_us": [
+        "Rib"
+      ]
+    },
+    "kanji": "あばら",
+    "hiragana": "あばら",
+    "romaji": "abara"
+  },
+  "sentry": {
+    "translations": {
+      "pt_br": [
+        "SENTINELA"
+      ],
+      "en_us": [
+        "Sentry",
+        "Pillager",
+        "Looter"
+      ]
+    },
+    "kanji": "略奪者",
+    "hiragana": "りゃくだつしゃ",
+    "romaji": "ryakudatsusha"
+  },
+  "shaper": {
+    "translations": {
+      "pt_br": [
+        "Moldador"
+      ],
+      "en_us": [
+        "Shaper",
+        "Artisan",
+        "Craftsman"
+      ]
+    },
+    "kanji": "職人",
+    "hiragana": "しょくにん",
+    "romaji": "shokunin"
+  },
+  "silence": {
+    "translations": {
+      "pt_br": [
+        "silêncio"
+      ],
+      "en_us": [
+        "Silence"
+      ]
+    },
+    "kanji": "静寂",
+    "hiragana": "せいじゃく",
+    "romaji": "seijaku"
+  },
+  "spire": {
+    "translations": {
+      "pt_br": [
+        "Espiral"
+      ],
+      "en_us": [
+        "Spire"
+      ]
+    },
+    "kanji": "尖塔",
+    "hiragana": "せんとう",
+    "romaji": "sentou"
+  },
+  "tide": {
+    "translations": {
+      "pt_br": [
+        "Marés",
+        "Meré"
+      ],
+      "en_us": [
+        "Tide"
+      ]
+    },
+    "kanji": "潮流",
+    "hiragana": "ちょうりゅう",
+    "romaji": "chouryuu"
+  },
+  "ward": {
+    "translations": {
+      "pt_br": [
+        "profundezas"
+      ],
+      "en_us": [
+        "Ward",
+        "Prison"
+      ]
+    },
+    "kanji": "監獄",
+    "hiragana": "かんごく",
+    "romaji": "kangoku"
+  },
+  "wayfinder": {
+    "translations": {
+      "pt_br": [
+        "Navegador"
+      ],
+      "en_us": [
+        "Wayfinder",
+        "Pathfinder"
+      ]
+    },
+    "kanji": "先駆者",
+    "hiragana": "せんくしゃ",
+    "romaji": "senkusha"
+  },
+  "wild": {
+    "translations": {
+      "pt_br": [
+        "Selvagem",
+        "Selva"
+      ],
+      "en_us": [
+        "Wild"
+      ]
+    },
+    "kanji": "大自然",
+    "hiragana": "だいしぜん",
+    "romaji": "daishizen"
+  },
+  "allium": {
+    "translations": {
+      "pt_br": [
+        "Flor-de-Alho",
+        "Alho-silvestre"
+      ],
+      "en_us": [
+        "Allium"
+      ]
+    },
+    "kanji": "アリウム",
+    "hiragana": "ありうむ",
+    "romaji": "ariumu"
+  },
+  "abandoned": {
+    "translations": {
+      "pt_br": [
+        "abandonada",
+        "abandonado"
+      ],
+      "en_us": [
+        "Abandoned"
+      ]
+    },
+    "kanji": "放棄",
+    "hiragana": "ほうき",
+    "romaji": "houki"
+  },
+  "buried": {
+    "translations": {
+      "pt_br": [
+        "Enterrados",
+        "Enterrado",
+        "Enterradas",
+        "Enterrada",
+        "subterrânea"
+      ],
+      "en_us": [
+        "Buried"
+      ]
+    },
+    "kanji": "埋もれた",
+    "hiragana": "うもれた",
+    "romaji": "umoreta"
+  },
+  "camp": {
+    "translations": {
+      "pt_br": [
+        "acampamento"
+      ],
+      "en_us": [
+        "Camp"
+      ]
+    },
+    "kanji": "キャンプ",
+    "hiragana": "キャンプ",
+    "romaji": "kyanpu"
+  },
+  "city": {
+    "translations": {
+      "pt_br": [
+        "cidade"
+      ],
+      "en_us": [
+        "City",
+        "Town"
+      ]
+    },
+    "kanji": "都市",
+    "hiragana": "とし",
+    "romaji": "toshi"
+  },
+  "desert": {
+    "translations": {
+      "pt_br": [
+        "deserto"
+      ],
+      "en_us": [
+        "Desert"
+      ]
+    },
+    "kanji": "砂漠",
+    "hiragana": "さばく",
+    "romaji": "sabaku"
+  },
+  "mineshaft": {
+    "translations": {
+      "pt_br": [
+        "Mina Abandonada",
+        "Mina"
+      ],
+      "en_us": [
+        "Mineshaft",
+        "Abandoned Mine"
+      ]
+    },
+    "kanji": "廃坑",
+    "hiragana": "はいこう",
+    "romaji": "haikou"
+  },
+  "plains": {
+    "translations": {
+      "pt_br": [
+        "planícies",
+        "planície"
+      ],
+      "en_us": [
+        "Plains"
+      ]
+    },
+    "kanji": "平原",
+    "hiragana": "へいげん",
+    "romaji": "heigen"
+  },
+  "pyramid": {
+    "translations": {
+      "pt_br": [
+        "pirâmide"
+      ],
+      "en_us": [
+        "Pyramid",
+        "temple"
+      ]
+    },
+    "kanji": "寺院",
+    "hiragana": "じいん",
+    "romaji": "jiin"
+  },
+  "ruins": {
+    "translations": {
+      "pt_br": [
+        "Ruínas"
+      ],
+      "en_us": [
+        "Ruins"
+      ]
+    },
+    "kanji": "遺跡",
+    "hiragana": "いせき",
+    "romaji": "iseki"
+  },
+  "savanna": {
+    "translations": {
+      "pt_br": [
+        "Savana"
+      ],
+      "en_us": [
+        "Savanna"
+      ]
+    },
+    "kanji": "サバンナ",
+    "hiragana": "サバンナ",
+    "romaji": "sabanna"
+  },
+  "snowy": {
+    "translations": {
+      "pt_br": [
+        "Planície Nevada",
+        "nevando"
+      ],
+      "en_us": [
+        "Snowy"
+      ]
+    },
+    "kanji": "雪原",
+    "hiragana": "せつげん",
+    "romaji": "setsugen"
+  },
+  "swamp": {
+    "translations": {
+      "pt_br": [
+        "Pântano"
+      ],
+      "en_us": [
+        "Swamp"
+      ]
+    },
+    "kanji": "沼地",
+    "hiragana": "ぬまち",
+    "romaji": "numachi"
+  },
+  "taiga": {
+    "translations": {
+      "pt_br": [
+        "Taiga"
+      ],
+      "en_us": [
+        "Taiga"
+      ]
+    },
+    "kanji": "タイガ",
+    "hiragana": "たいが",
+    "romaji": "taiga"
+  },
+  "treasure": {
+    "translations": {
+      "pt_br": [
+        "tesouro"
+      ],
+      "en_us": [
+        "Treasure"
+      ]
+    },
+    "kanji": "宝",
+    "hiragana": "たから",
+    "romaji": "takara"
+  },
+  "village": {
+    "translations": {
+      "pt_br": [
+        "Vila",
+        "Aldeia"
+      ],
+      "en_us": [
+        "Village"
+      ]
+    },
+    "kanji": "村",
+    "hiragana": "むら",
+    "romaji": "mura"
+  },
+  "warm": {
+    "translations": {
+      "pt_br": [
+        "Quentes",
+        "Quentes"
+      ],
+      "en_us": [
+        "Warm"
+      ]
+    },
+    "kanji": "暖かい",
+    "hiragana": "あたたかい",
+    "romaji": "atatakai"
+  },
+  "woodland": {
+    "translations": {
+      "pt_br": [
+        "Floresta"
+      ],
+      "en_us": [
+        "Woodland"
+      ]
+    },
+    "kanji": "森林",
+    "hiragana": "しんりんち",
+    "romaji": "shinrin"
   }
 }

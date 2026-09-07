@@ -1,6 +1,9 @@
 package com.wesleyhdias.minnanocraft.srs;
 
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
@@ -77,9 +80,31 @@ public class PlayerVocabularyManager {
      * @param expEvents The triggered event type.
      */
     public void registerEvent(String token, ExpEvents expEvents) {
+        // 1. Verifica se o token é uma palavra composta
+        CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+
+        if (compound != null) {
+            // Se for composta, repassa o XP para cada componente base
+            for (String compToken : compound.components()) {
+                applyExpToToken(compToken, expEvents);
+            }
+            return;
+        }
+
+        // 2. Se não for composta, trata como uma palavra simples ou morfema normal
+        applyExpToToken(token, expEvents);
+    }
+
+    /**
+     * Método auxiliar privado para aplicar a regra de cooldown e o XP em um token específico.
+     */
+    private void applyExpToToken(String token, ExpEvents expEvents) {
         WordProgress progress = getOrCreateProgress(token);
         long now = System.currentTimeMillis();
+
+        // Opcional: Se quiser que o cooldown de 3 segundos seja independente por componente, mantém assim.
         if ((now - progress.getLastSeen()) < 3000) return;
+
         progressionSystem.applyEvent(progress, expEvents);
     }
 

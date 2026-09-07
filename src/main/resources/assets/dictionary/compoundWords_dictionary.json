@@ -1,0 +1,592 @@
+{
+  "redstone": {
+    "local_translations": {
+      "pt_br": [
+        "Redstone"
+      ],
+      "en_us": [
+        "Redstone"
+      ]
+    },
+    "components": [
+      "red_1",
+      "stone_1"
+    ]
+  },
+  "pottery_shard": {
+    "local_translations": {
+      "pt_br": [
+        "Óstraco"
+      ],
+      "en_us": [
+        "Pottery Sherd"
+      ]
+    },
+    "components": [
+      "pottery",
+      "no",
+      "shard"
+    ]
+  },
+  "bee_nest": {
+    "local_translations": {
+      "pt_br": [
+        "Colmeia"
+      ],
+      "en_us": [
+        "Bee Nest"
+      ]
+    },
+    "components": [
+      "bee",
+      "no",
+      "nest"
+    ]
+  },
+  "iron_chain": {
+    "local_translations": {
+      "pt_br": [
+        "Corrente"
+      ],
+      "en_us": [
+        "Chain"
+      ]
+    },
+    "components": [
+      "iron",
+      "no",
+      "chain"
+    ]
+  },
+  "cocoa_nut": {
+    "local_translations": {
+      "pt_br": [
+        "Cacau"
+      ],
+      "en_us": [
+        "Cocoa"
+      ]
+    },
+    "components": [
+      "cocoa_1",
+      "no",
+      "nut"
+    ]
+  },
+  "cobweb": {
+    "local_translations": {
+      "pt_br": [
+        "Teia de Aranha"
+      ],
+      "en_us": [
+        "Cobweb"
+      ]
+    },
+    "components": [
+      "spider_1",
+      "no",
+      "nest"
+    ]
+  },
+  "lily_pad": {
+    "local_translations": {
+      "pt_br": [
+        "Vitória-Régia"
+      ],
+      "en_us": [
+        "Lily Pad"
+      ]
+    },
+    "components": [
+      "lily",
+      "no",
+      "leaves"
+    ]
+  },
+  "oxeye_daisy": {
+    "local_translations": {
+      "pt_br": [
+        "Margarida"
+      ],
+      "en_us": [
+        "Oxeye Daisy"
+      ]
+    },
+    "components": [
+      "oxeye",
+      "daisy"
+    ]
+  },
+  "trial_explorer": {
+    "local_translations": {
+      "pt_br": [
+        "Camara do Desafio",
+        "Exploração de Desafios"
+      ],
+      "en_us": [
+        "Trial Explorer"
+      ]
+    },
+    "components": [
+      "trial",
+      "no",
+      "gap"
+    ]
+  },
+  "rose_bush": {
+    "local_translations": {
+      "pt_br": [
+        "Roseira"
+      ],
+      "en_us": [
+        "Rose Bush"
+      ]
+    },
+    "components": [
+      "rose",
+      "no",
+      "shrub"
+    ]
+  },
+  "coral_fan": {
+    "local_translations": {
+      "pt_br": [
+        "Gorgônia"
+      ],
+      "en_us": [
+        "Coral Fan"
+      ]
+    },
+    "components": [
+      "fan",
+      "coral"
+    ]
+  },
+  "skull_charge": {
+    "local_translations": {
+      "pt_br": [
+        "Caveira"
+      ],
+      "en_us": [
+        "Skull Charge"
+      ]
+    },
+    "components": [
+      "skull_1"
+    ]
+  },
+  "flower_charge": {
+    "local_translations": {
+      "pt_br": [
+        "Flor"
+      ],
+      "en_us": [
+        "flower Charge"
+      ]
+    },
+    "components": [
+      "flower"
+    ]
+  },
+  "creeper_charge": {
+    "local_translations": {
+      "pt_br": [
+        "Creeper"
+      ],
+      "en_us": [
+        "Creeper Charge"
+      ]
+    },
+    "components": [
+      "creeper"
+    ]
+  },
+  "no_effect": {
+    "local_translations": {
+      "pt_br": [
+        "Sem Efeito"
+      ],
+      "en_us": [
+        "Splashing"
+      ]
+    },
+    "components": [
+      "water"
+    ]
+  },
+  "field_masoned": {
+    "local_translations": {
+      "pt_br": [
+        "Muro"
+      ],
+      "en_us": [
+        "Field Masoned"
+      ]
+    },
+    "components": [
+      "brick"
+    ]
+  },
+  "glazed_terracotta": {
+    "local_translations": {
+      "pt_br": [
+        "Terracota Vidrada",
+        "Azulejo"
+      ],
+      "en_us": [
+        "Glazed Terracotta"
+      ]
+    },
+    "components": [
+      "glazed",
+      " ",
+      "terracotta"
+    ]
+  },
+  "frogspawn": {
+    "local_translations": {
+      "pt_br": [
+        "Ovos de Sapo"
+      ],
+      "en_us": [
+        "Frogspawn"
+      ]
+    },
+    "components": [
+      "frog",
+      "no",
+      "egg"
+    ]
+  },
+  "glowstone": {
+    "local_translations": {
+      "pt_br": [
+        "Pedra Luminosa"
+      ],
+      "en_us": [
+        "Glowstone"
+      ]
+    },
+    "components": [
+      "glow_2",
+      "stone_1"
+    ]
+  },
+  "glass_pane": {
+    "local_translations": {
+      "pt_br": [
+        "Vidraça"
+      ],
+      "en_us": [
+        "Glass Pane"
+      ]
+    },
+    "components": [
+      "glass",
+      "pane"
+    ]
+  },
+  "sea_pickle": {
+    "local_translations": {
+      "pt_br": [
+        "Pepino-do-Mar"
+      ],
+      "en_us": [
+        "Sea Pickle"
+      ]
+    },
+    "components": [
+      "sea_1",
+      "pickle"
+    ]
+  },
+  "light_block": {
+    "local_translations": {
+      "pt_br": [
+        "Luz"
+      ],
+      "en_us": [
+        "Light"
+      ]
+    },
+    "components": [
+      "light_1",
+      "block"
+    ]
+  },
+  "stonecutter_table": {
+    "local_translations": {
+      "pt_br": [
+        "Cortador de Pedras"
+      ],
+      "en_us": [
+        "Stonecutter"
+      ]
+    },
+    "components": [
+      "stonecutter",
+      "table"
+    ]
+  },
+  "smithing_table": {
+    "local_translations": {
+      "pt_br": [
+        "Cortador de Pedras",
+        "Bancada de Ferraria"
+      ],
+      "en_us": [
+        "Stonecutter",
+        "Smithing Table"
+      ]
+    },
+    "components": [
+      "smithing",
+      "table"
+    ]
+  },
+  "structure_block": {
+    "local_translations": {
+      "pt_br": [
+        "Gerador de Estruturas"
+      ],
+      "en_us": [
+        "Structure Block"
+      ]
+    },
+    "components": [
+      "structure",
+      "block"
+    ]
+  },
+  "elder_guardian": {
+    "local_translations": {
+      "pt_br": [
+        "Guardião-Mestre"
+      ],
+      "en_us": [
+        "Elder Guardian"
+      ]
+    },
+    "components": [
+      "elder",
+      "guardian"
+    ]
+  },
+  "concrete_powder": {
+    "local_translations": {
+      "pt_br": [
+        "Cimento"
+      ],
+      "en_us": [
+        "Concrete Powder"
+      ]
+    },
+    "components": [
+      "concrete",
+      " ",
+      "powder"
+    ]
+  },
+  "firework_rocket": {
+    "local_translations": {
+      "pt_br": [
+        "Fogo de Artifício"
+      ],
+      "en_us": [
+        "Firework Rocket"
+      ]
+    },
+    "components": [
+      "rocket",
+      "firework"
+    ]
+  },
+  "killer_bunny": {
+    "local_translations": {
+      "pt_br": [
+        "Coelho Assassino"
+      ],
+      "en_us": [
+        "The Killer Bunny"
+      ]
+    },
+    "components": [
+      "killer",
+      "rabbit_1"
+    ]
+  },
+  "fence_gate": {
+    "local_translations": {
+      "pt_br": [
+        "Portão"
+      ],
+      "en_us": [
+        "Fence Gate"
+      ]
+    },
+    "components": [
+      "fence",
+      "gate"
+    ]
+  },
+  "toolsmith": {
+    "local_translations": {
+      "pt_br": [
+        "Ferramenteiro"
+      ],
+      "en_us": [
+        "Toolsmith"
+      ]
+    },
+    "components": [
+      "tool",
+      "smithing"
+    ]
+  },
+  "weaponsmith": {
+    "local_translations": {
+      "pt_br": [
+        "Armeiro"
+      ],
+      "en_us": [
+        "Weaponsmith"
+      ]
+    },
+    "components": [
+      "weapon",
+      "smithing"
+    ]
+  },
+  "arms_up": {
+    "local_translations": {
+      "pt_br": [
+        "Figura"
+      ],
+      "en_us": [
+        "Arms Up"
+      ]
+    },
+    "components": [
+      "arms",
+      "wo",
+      "up",
+      "person"
+    ]
+  },
+  "daylight": {
+    "local_translations": {
+      "pt_br": [
+        "Luz Solar"
+      ],
+      "en_us": [
+        "Daylight"
+      ]
+    },
+    "components": [
+      "day",
+      "shine"
+    ]
+  },
+  "porkchop": {
+    "local_translations": {
+      "pt_br": [
+        "Costeleta de Porco"
+      ],
+      "en_us": [
+        "Porkchop"
+      ]
+    },
+    "components": [
+      "pig",
+      "flesh"
+    ]
+  },
+  "crafter": {
+    "local_translations": {
+      "pt_br": [
+        "Bancada Automática"
+      ],
+      "en_us": [
+        "Crafter"
+      ]
+    },
+    "components": [
+      "automatic",
+      "crafting",
+      "table"
+    ]
+  },
+  "slimeball": {
+    "local_translations": {
+      "pt_br": [
+        "Bola de Slime"
+      ],
+      "en_us": [
+        "Slimeball"
+      ]
+    },
+    "components": [
+      "slime",
+      "ball"
+    ]
+  },
+  "powder_snow": {
+    "local_translations": {
+      "pt_br": [
+        "Neve Fofa"
+      ],
+      "en_us": [
+        "Powder Snow"
+      ]
+    },
+    "components": [
+      "powder_1",
+      "snow"
+    ]
+  },
+  "knowledge_book": {
+    "local_translations": {
+      "pt_br": [
+        "Enciclopédia"
+      ],
+      "en_us": [
+        "Knowledge Book"
+      ]
+    },
+    "components": [
+      "knowledge",
+      "no",
+      "book"
+    ]
+  },
+  "pale_1": {
+    "local_translations": {
+      "pt_br": [
+        "Pálido"
+      ],
+      "en_us": [
+        "Pale"
+      ]
+    },
+    "components": [
+      "iro",
+      "aseta"
+    ]
+  },
+  "torchflower": {
+    "local_translations": {
+      "pt_br": [
+        "Plantio de Plantocha",
+        "Plantocha"
+      ],
+      "en_us": [
+        "Torchflower Crop",
+        "Torchflower"
+      ]
+    },
+    "components": [
+      "torch_1",
+      "flower_1"
+    ]
+  }
+}

@@ -1,6 +1,8 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
@@ -90,12 +92,38 @@ public class TooltipEventHandler {
                     String target = TokenUpgradeSelector.getNextTokenToUpgrade(structure, PlayerVocabularyManager.getInstance());
                     lines.add(Component.literal("§7Priority Target: §f" + (target != null ? target : "None")));
 
+                    // 1. Expande os tokens compostos evitando duplicadas indesejadas
+                    List<String> expandedTokens = new java.util.ArrayList<>();
                     for (String token : structure) {
+                        CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+                        if (compound != null) {
+                            // Adiciona os componentes
+                            for (String comp : compound.components()) {
+                                if (!expandedTokens.contains(comp)) {
+                                    expandedTokens.add(comp);
+                                }
+                            }
+
+                            // Adiciona o separador apenas se já não estiver na lista
+                            String sepToken = compound.getSafeSeparator();
+                            if (sepToken != null && !sepToken.isEmpty() && !sepToken.equals(" ")) {
+                                if (!expandedTokens.contains(sepToken)) {
+                                    expandedTokens.add(sepToken);
+                                }
+                            }
+                        } else {
+                            if (!expandedTokens.contains(token)) {
+                                expandedTokens.add(token);
+                            }
+                        }
+                    }
+
+                    // 2. Itera sobre os tokens expandidos únicos
+                    for (String token : expandedTokens) {
                         WordProgress p = PlayerVocabularyManager.getInstance().getProgress(token);
                         double exp = (p != null) ? p.getExposure() : 0.0;
                         int level = (p != null) ? p.getScriptLevel() : 0;
 
-                        // Shows the word, current level, and XP bar with 2 decimal places
                         lines.add(Component.literal(String.format("§8- %s: Lvl %d (XP: %.2f)", token, level, exp)));
                     }
                 } else {

@@ -1,22 +1,30 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
-import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.Word;
-import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
-import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
-import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.*;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Locale;
-import java.util.Map;
+import java.util.List;
 
 /**
  * Utility builder responsible for progressively replacing native language words
  * in item names with Japanese scripts based on the player's unlocked script level.
  */
 public class CurrentLangItemNameBuilder {
+
+    private static List<TokenProvider> providers = List.of(
+            new CompoundDictionaryProvider(),
+            new DictionaryProvider(),
+            new MorphemeProvider()
+    );
+
+    public static void setProvidersForTesting(List<TokenProvider> testProviders) {
+        providers = testProviders;
+    }
 
     /**
      * Builds the item name in the native language template, replacing learned words
@@ -27,61 +35,89 @@ public class CurrentLangItemNameBuilder {
      * @return The modified item name with partially or fully translated words.
      */
     public static String build(String translationKey, String originalText) {
-
         if (TranslationCacheManager.BUILDER_CACHE.containsKey(translationKey)) {
             return TranslationCacheManager.BUILDER_CACHE.get(translationKey);
         }
 
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
 
-        // If no structure exists, keep the original Minecraft translation.
         if (structure == null) {
             return originalText;
         }
 
         String result = originalText;
+        String remainingToMatch = originalText.toLowerCase(Locale.ROOT);
 
         for (String token : structure) {
-            result = resolve(token, result);
+            List<String> localTranslations = getLocalTranslationsForToken(token);
+
+            // 1. Apaga as palavras encontradas da string de controle
+            for (String translation : localTranslations) {
+                if (translation == null || translation.isBlank()) continue;
+                String lowerSearch = translation.toLowerCase(Locale.ROOT);
+                if (remainingToMatch.contains(lowerSearch)) {
+                    remainingToMatch = remainingToMatch.replace(lowerSearch, " ");
+                }
+            }
+
+            // 2. Pergunta para os providers se esse token tem tradução renderizada
+            String renderedValue = resolveFromProviders(token);
+
+            // 3. Substitui no texto original apenas se tiver uma tradução válida
+            if (renderedValue != null) {
+                for (String translation : localTranslations) {
+                    if (translation == null || translation.isBlank()) continue;
+                    result = replaceIgnoreCase(result, translation, renderedValue);
+                }
+            }
+
+            // 4. Se a string de controle ficou vazia, encerra precocemente
+            if (remainingToMatch.trim().isEmpty()) {
+                break;
+            }
         }
 
         TranslationCacheManager.BUILDER_CACHE.put(translationKey, result);
-
         return result;
     }
 
     /**
-     * Resolves a single dictionary token and replaces its native-language
-     * translations in the current item name if the player has learned it.
+     * Resolves a single token
      *
      * @param token The dictionary key.
-     * @param text  The current item name.
-     * @return The item name after resolving the token.
+     * @return The string of the word after resolving the token or null.
      */
-    private static String resolve(String token, String text) {
+    private static String resolveFromProviders(String token) {
+        for (TokenProvider provider : providers) {
+            String value = provider.resolve(token);
+            if (value != null) {
+                return value;
+            }
+        }
+        return null;
+    }
 
-        Map<String, Word> dictionary = DictionaryLoader.getDictionary();
-        Word word = dictionary.get(token);
-
-        if (word == null) {
-            return text;
+    private static List<String> getLocalTranslationsForToken(String token) {
+        CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+        if (compound != null) {
+            List<String> compoundLocals = compound.getLocalTranslations();
+            if (compoundLocals != null && !compoundLocals.isEmpty()) {
+                return compoundLocals;
+            }
+            // Se for palavra composta sem tradução própria, resolve os subcomponentes
+            List<String> collected = new ArrayList<>();
+            for (String compToken : compound.components()) {
+                collected.addAll(getLocalTranslationsForToken(compToken));
+            }
+            return collected;
         }
 
-        WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
-
-        int level = (progress != null) ? progress.getScriptLevel() : 0;
-
-        if (level == 0) {
-            return text;
+        Word word = DictionaryLoader.getDictionary().get(token);
+        if (word != null) {
+            return word.getLocalTranslations() != null ? word.getLocalTranslations() : List.of();
         }
 
-        String replacement = DifficultyResolver.render(word, level);
-
-        for (String translation : word.getLocalTranslations()) {
-            text = replaceIgnoreCase(text, translation, replacement);
-        }
-
-        return text;
+        return List.of();
     }
 
     /**
@@ -93,25 +129,38 @@ public class CurrentLangItemNameBuilder {
      * @param replacement The string to substitute into the text.
      * @return The updated string with replaced text.
      */
-    private static String replaceIgnoreCase(
-            String text,
-            String search,
-            String replacement
-    ) {
+    private static String replaceIgnoreCase(String text, String search, String replacement) {
+        if (text == null || search == null || search.isEmpty() || replacement == null) {
+            return text;
+        }
+
         String lowerText = text.toLowerCase(Locale.ROOT);
         String lowerSearch = search.toLowerCase(Locale.ROOT);
 
         int index = lowerText.indexOf(lowerSearch);
-
-        while (index >= 0) {
-            text = text.substring(0, index)
-                    + replacement
-                    + text.substring(index + search.length());
-
-            lowerText = text.toLowerCase(Locale.ROOT);
-            index = lowerText.indexOf(lowerSearch);
+        if (index < 0) {
+            return text;
         }
 
-        return text;
+        StringBuilder sb = new StringBuilder();
+        int lastIndex = 0;
+
+        while (index >= 0) {
+            // Copia o trecho que veio antes da correspondência
+            sb.append(text, lastIndex, index);
+            // Adiciona o valor substituído
+            sb.append(replacement);
+
+            // Avança o índice para DEPOIS do trecho original encontrado
+            lastIndex = index + search.length();
+
+            // Busca a PRÓXIMA ocorrência apenas a partir de lastIndex
+            index = lowerText.indexOf(lowerSearch, lastIndex);
+        }
+
+        // Copia o restante do texto que sobrou
+        sb.append(text.substring(lastIndex));
+
+        return sb.toString();
     }
 }

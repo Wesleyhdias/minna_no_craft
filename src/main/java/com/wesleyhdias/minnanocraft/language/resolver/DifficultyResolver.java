@@ -1,25 +1,25 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+
+import java.util.List;
 
 /**
  * Utility class responsible for determining the appropriate string representation
- * of a Japanese word based on the player's current vocabulary difficulty level.
+ * of Japanese words, morphemes, and compound words based on the player's SRS progress.
  */
 public class DifficultyResolver {
 
     /**
-     * Renders the word based on the target difficulty level.
-     * Progression scales from phonetic alphabet (Romaji) up to Kanji.
-     *
-     * @param word  The {@link Word} object containing the Japanese text variations.
-     * @param level The current SRS difficulty level for this word (1-4).
-     * @return The appropriate string representation, or {@code null} if the level is invalid.
+     * Renders a simple {@link Word} based on the target SRS level.
      */
-    public static String render(
-            Word word,
-            int level
-    ) {
+    public static String render(Word word, int level) {
         return switch (level) {
             case 1, 2 -> word.romaji();
             case 3 -> word.hiragana();
@@ -29,18 +29,80 @@ public class DifficultyResolver {
     }
 
     /**
-     * Retrieves the string representation of the word from the previous difficulty level.
-     * This is typically used for providing hints or sub-tooltips (e.g., showing the hiragana
-     * reading when the player hovers over a kanji character).
+     * Renders a {@link Morpheme} based on the target SRS level.
+     */
+    public static String render(Morpheme morpheme, int level) {
+        if (level > 2) {
+            return morpheme.kanji() != null ? morpheme.kanji() : morpheme.hiragana();
+        } else if (level > 1) {
+            return morpheme.hiragana();
+        } else {
+            return morpheme.romaji();
+        }
+    }
+
+    /**
+     * Renders a {@link CompoundWord} by resolving each of its internal components.
      *
-     * @param word  The {@link Word} object containing the Japanese text variations.
-     * @param level The current SRS difficulty level for this word.
-     * @return The string representation from the previous level, or {@code null} if there is no previous hint available.
+     * @return The formatted string representation, or {@code null} if the player has
+     * no progress in any part of the compound word.
+     */
+    public static String renderCompound(CompoundWord compound) {
+        StringBuilder builder = new StringBuilder();
+        boolean hasAnyProgress = false;
+        List<String> components = compound.components();
+
+        for (String compToken : components) {
+
+            if(compToken.contains(" ")) {
+                builder.append(" ");
+                continue;
+            }
+
+            // 1. Resolve componente do tipo Palavra
+            Word compWord = DictionaryLoader.getDictionary().get(compToken);
+            if (compWord != null) {
+                WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(compToken);
+                int level = (progress != null) ? progress.getScriptLevel() : 0;
+
+                if (level > 0) {
+                    hasAnyProgress = true;
+                    builder.append(render(compWord, level));
+                } else {
+                    // Nível 0: mantém o romaji/tradução primária para fluir junto
+                    builder.append(compWord.getLocalTranslations().getFirst());
+                }
+                continue;
+            }
+
+            // 2. Resolve componente do tipo Morfema
+            Morpheme mw = MorphemeLoader.getMorphemes().get(compToken);
+            if (mw != null) {
+                builder.append(" ");
+
+                WordProgress sepProgress = PlayerVocabularyManager.getInstance().getProgress(compToken);
+                int sepLevel = (sepProgress != null) ? sepProgress.getScriptLevel() : 0;
+
+                builder.append(render(mw, sepLevel));
+                builder.append(" ");
+            }
+        }
+
+        // Se o jogador não tem progresso em NENHUMA das partes, retorna null
+        if (!hasAnyProgress) {
+            return null;
+        }
+
+        return builder.toString();
+    }
+
+    /**
+     * Retrieves the string representation of the word from the previous difficulty level.
      */
     public static String renderPrevious(Word word, int level) {
         return switch (level) {
-            case 4 -> word.hiragana();     // Kanji (4) -> Shows Hiragana (3)
-            case 2, 3 -> word.romaji();    // Hiragana (3) -> Shows Romaji (1/2)
+            case 4 -> word.hiragana();
+            case 2, 3 -> word.romaji();
             default -> null;
         };
     }

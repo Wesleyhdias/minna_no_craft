@@ -39,7 +39,7 @@ public class MorphemeLoader {
     private static void load() {
         try (InputStream is = MorphemeLoader.class
                 .getClassLoader()
-                .getResourceAsStream("assets/dictionary/bancoMorfemas.json")) {
+                .getResourceAsStream("assets/dictionary/morphemes_bank.json")) {
 
             if (is == null) {
                 MinnaNoCraft.LOGGER.error("Morpheme file not found!");

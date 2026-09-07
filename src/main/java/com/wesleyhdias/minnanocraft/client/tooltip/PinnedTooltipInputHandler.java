@@ -2,6 +2,8 @@ package com.wesleyhdias.minnanocraft.client.tooltip;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
@@ -60,22 +62,20 @@ public class PinnedTooltipInputHandler {
             HitboxCalculator.TokenHitbox clickedHitbox = HitboxCalculator.getHitboxAt((int) mouseX, (int) mouseY);
 
             if (clickedHitbox != null) {
-                // The user clicked on a specific interactive vocabulary word
-                PlayerVocabularyManager.getInstance().registerEvent(clickedHitbox.token(), ExpEvents.LOOKUP);
                 String token = clickedHitbox.token();
 
-                // 1. Register the SRS event
+                // 1. Registra o evento SRS (agora com o nosso suporte a desmembrar compostas)
                 PlayerVocabularyManager.getInstance().registerEvent(token, ExpEvents.LOOKUP);
 
-                // 2. Fetch the Word object associated with this token from your manager/loader
+                // 2. Tenta buscar como Palavra Simples primeiro
                 Word word = DictionaryLoader.getDictionary().get(token);
 
-                // 3. Open the dictionary overlay if the word exists in the database
                 if (word != null) {
+                    // Abre o dicionário para a palavra simples
                     DictionaryLookupService.open(word);
                 }
             } else {
-                // The user clicked outside of any interactive word, so unpin the tooltip
+                // O usuário clicou fora, desfixa o tooltip
                 PinnedTooltipService.unpin();
             }
             return true;

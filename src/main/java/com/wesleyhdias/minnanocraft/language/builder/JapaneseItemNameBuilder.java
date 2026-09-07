@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryProvider;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryProvider;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
@@ -15,6 +16,7 @@ import java.util.List;
 public class JapaneseItemNameBuilder {
 
     private static List<TokenProvider> providers = List.of(
+            new CompoundDictionaryProvider(),
             new DictionaryProvider(),
             new MorphemeProvider()
     );
