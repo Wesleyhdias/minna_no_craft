@@ -1,80 +1,80 @@
 {
-    "i": {
-        "hiragana": "い",
-        "romaji": "i"
-    },
-    "iro": {
-        "kanji": "色",
-        "hiragana": "いろ",
-        "romaji": "iro"
-    },
-    "no": {
-        "hiragana": "の",
-        "romaji": "no"
-    },
-    "iri": {
-        "kanji": "入り",
-        "hiragana": "いり",
-        "romaji": "iri"
-    },
-    "aseta": {
-        "hiragana": "あせた",
-        "romaji": "aseta"
-    },
-    "shita": {
-        "hiragana": "した",
-        "romaji": "shita"
-    },
-    "reta": {
-        "hiragana": "れた",
-        "romaji": "reta"
-    },
-    "eta": {
-        "hiragana": "えた",
-        "romaji": "eta"
-    },
-    "kera": {
-        "hiragana": "けら",
-        "romaji": "kera"
-    },
-    "keta": {
-        "hiragana": "けた",
-        "romaji": "keta"
-    },
-    "kurai": {
-        "hiragana": "くらい",
-        "romaji": "kurai"
-    },
-    "sa": {
-        "hiragana": "さ",
-        "romaji": "sa"
-    },
-    "na": {
-        "hiragana": "な",
-        "romaji": "na"
-    },
-    "ni": {
-        "hiragana": "に",
-        "romaji": "ni"
-    },
-    "ki": {
-        "hiragana": "き",
-        "romaji": "ki"
-    },
-    "ta": {
-        "hiragana": "た",
-        "romaji": "ta"
-    },
-    "to": {
-        "hiragana": "と",
-        "romaji": "to"
-    },
-    ":": {
-        "hiragana": "：",
-        "romaji": ":"
-    },
-    "wo": {
-        "hiragana": "を",
-        "romaji": "wo"
-    }
+  "i": {
+    "hiragana": "い",
+    "romaji": "i"
+  },
+  "iro": {
+    "kanji": "色",
+    "hiragana": "いろ",
+    "romaji": "iro"
+  },
+  "no": {
+    "hiragana": "の",
+    "romaji": "no"
+  },
+  "iri": {
+    "kanji": "入り",
+    "hiragana": "いり",
+    "romaji": "iri"
+  },
+  "aseta": {
+    "hiragana": "あせた",
+    "romaji": "aseta"
+  },
+  "shita": {
+    "hiragana": "した",
+    "romaji": "shita"
+  },
+  "reta": {
+    "hiragana": "れた",
+    "romaji": "reta"
+  },
+  "eta": {
+    "hiragana": "えた",
+    "romaji": "eta"
+  },
+  "kera": {
+    "hiragana": "けら",
+    "romaji": "kera"
+  },
+  "keta": {
+    "hiragana": "けた",
+    "romaji": "keta"
+  },
+  "kurai": {
+    "hiragana": "くらい",
+    "romaji": "kurai"
+  },
+  "sa": {
+    "hiragana": "さ",
+    "romaji": "sa"
+  },
+  "na": {
+    "hiragana": "な",
+    "romaji": "na"
+  },
+  "ni": {
+    "hiragana": "に",
+    "romaji": "ni"
+  },
+  "ki": {
+    "hiragana": "き",
+    "romaji": "ki"
+  },
+  "ta": {
+    "hiragana": "た",
+    "romaji": "ta"
+  },
+  "to": {
+    "hiragana": "と",
+    "romaji": "to"
+  },
+  ":": {
+    "hiragana": "：",
+    "romaji": ":"
+  },
+  "wo": {
+    "hiragana": "を",
+    "romaji": "wo"
+  }
 }

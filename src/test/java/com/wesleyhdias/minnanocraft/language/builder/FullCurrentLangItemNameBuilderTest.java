@@ -66,7 +66,7 @@ public class FullCurrentLangItemNameBuilderTest {
             "cushion",
             "illusioner",
             "candle_cake"
-//            "coral"
+
     );
 
     // Lista de palavras de ligação (partículas) que sobram após consumir as traduções

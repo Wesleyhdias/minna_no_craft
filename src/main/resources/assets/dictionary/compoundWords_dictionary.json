@@ -258,6 +258,21 @@
       "egg"
     ]
   },
+  "armorer": {
+    "local_translations": {
+      "pt_br": [
+        "Armeiro",
+        "Armadureiro"
+      ],
+      "en_us": [
+        "Armorer"
+      ]
+    },
+    "components": [
+      "armor_1",
+      "smithing"
+    ]
+  },
   "glowstone": {
     "local_translations": {
       "pt_br": [

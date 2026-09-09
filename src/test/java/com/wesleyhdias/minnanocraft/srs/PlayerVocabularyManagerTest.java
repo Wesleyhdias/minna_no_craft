@@ -92,7 +92,7 @@ class PlayerVocabularyManagerTest {
 
         manager.registerEvent("ringo", ExpEvents.HOVER);
 
-        // O filtro antispam de 3000ms deve bloquear
+        // O filtro antispam de 5000ms deve bloquear
         verify(mockProgressionSystem, never()).applyEvent(any(), any());
     }
 
@@ -100,7 +100,7 @@ class PlayerVocabularyManagerTest {
     void testRegisterEventAppliesWhenOutsideCooldown() {
         // Cria a palavra e simula que ela foi vista há 4 segundos (4000ms)
         WordProgress progress = manager.getOrCreateProgress("ringo");
-        progress.setLastSeen(System.currentTimeMillis() - 4000);
+        progress.setLastSeen(System.currentTimeMillis() - 6000);
 
         manager.registerEvent("ringo", ExpEvents.HOVER);
 

@@ -6,9 +6,12 @@ import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.language.LanguageManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
 
 import java.util.HashMap;
 import java.util.List;
@@ -35,8 +38,8 @@ class CurrentLangItemNameBuilderTest {
     @AfterEach
     void tearDown() {
         PlayerVocabularyManager.setInstanceForTesting(null);
-        ItemStructureLoader.setInstanceForTesting(new HashMap<>());
-        DictionaryLoader.setDictionaryForTesting(new HashMap<>());
+        ItemStructureLoader.setInstanceForTesting(null);
+        DictionaryLoader.setDictionaryForTesting(null);
         TranslationCacheManager.BUILDER_CACHE.clear();
     }
 
@@ -69,9 +72,20 @@ class CurrentLangItemNameBuilderTest {
         // Nível 0 (ou sem progresso)
         when(mockVocabManager.getProgress("apple")).thenReturn(null);
 
-        String result = CurrentLangItemNameBuilder.build("item.minecraft.apple", original);
+        // Cria o mock estático do Minecraft e garante que ele seja fechado ao final do teste
+        try (MockedStatic<Minecraft> mockedMinecraft = mockStatic(Minecraft.class)) {
+            Minecraft mockMc = mock(Minecraft.class);
+            LanguageManager mockLangManager = mock(LanguageManager.class);
 
-        assertEquals("Red Apple", result, "Nível 0 não deve alterar o texto original.");
+            // Simula que o jogo está em inglês para ele conseguir achar a tradução "apple"
+            when(mockLangManager.getSelected()).thenReturn("en_us");
+            when(mockMc.getLanguageManager()).thenReturn(mockLangManager);
+            mockedMinecraft.when(Minecraft::getInstance).thenReturn(mockMc);
+
+            String result = CurrentLangItemNameBuilder.build("item.minecraft.apple", original);
+
+            assertEquals("Red Apple", result, "Nível 0 não deve alterar o texto original.");
+        }
     }
 
     @Test

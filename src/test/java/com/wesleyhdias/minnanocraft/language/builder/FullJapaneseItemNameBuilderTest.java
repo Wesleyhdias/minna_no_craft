@@ -1,17 +1,19 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.Word;
-import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
-import org.junit.jupiter.api.AfterAll;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.Gson;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileReader;
@@ -159,9 +161,12 @@ public class FullJapaneseItemNameBuilderTest {
                 CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
 
                 if (compound != null) {
+
                     // Verifica se os componentes internos existem
                     for (String compToken : compound.components()) {
+                        if(Objects.equals(compToken, " ")) continue;
                         if (DictionaryLoader.getDictionary().get(compToken) == null && MorphemeLoader.getMorphemes().get(compToken) == null) {
+
                             missingWords.add(compToken);
                             hasMissingWord = true;
                         }
@@ -213,6 +218,11 @@ public class FullJapaneseItemNameBuilderTest {
         }
 
         boolean allPassed = missingStructures.isEmpty() && missingWords.isEmpty() && mismatchedNames.isEmpty();
+
+//        System.out.println("Olha o que tem aqui: " + allPassed);
+//        System.out.println("e aqui: " + missingStructures);
+//        System.out.println("aqui...: " + missingWords);
+//        System.out.println("já sabe: " + mismatchedNames);
 
         Assertions.assertTrue(allPassed,
                 "Foram encontrados erros no JSON! " +
