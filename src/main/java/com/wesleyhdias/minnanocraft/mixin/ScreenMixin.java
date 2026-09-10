@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupOverlayRenderer;
-import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipRenderer;
-import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipRenderer;
+import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipService;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -22,7 +22,7 @@ import org.spongepowered.asm.mixin.Mixin;
 public abstract class ScreenMixin {
 
     /**
-     * Injects custom rendering code at the end of the screen's rendering cycle.
+     * Injects custom rendering code at the TAIL (end) of the method that combines the screen and native tooltips.
      * If a tooltip is currently pinned, it delegates the rendering to the {@link PinnedTooltipRenderer}.
      *
      * @param graphics The GUI graphics extractor used for drawing.
@@ -31,7 +31,6 @@ public abstract class ScreenMixin {
      * @param a        The partial tick time (delta).
      * @param ci       The callback information provided by Mixin.
      */
-    // We inject at the TAIL (end) of the master method that combines the screen and native tooltips.
     @Inject(method = "extractRenderStateWithTooltipAndSubtitles", at = @At("TAIL"))
     private void renderPinnedTooltipOnTop(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
         if (!ModConfig.getConfig().isEnabled()) {
@@ -39,7 +38,12 @@ public abstract class ScreenMixin {
         }
 
         if (PinnedTooltipService.isPinned()) {
-            PinnedTooltipRenderer.render(graphics);
+            PinnedTooltipService.setInternalRendering(true);
+            try {
+                PinnedTooltipRenderer.render(graphics);
+            } finally {
+                PinnedTooltipService.setInternalRendering(false); // Garante que reseta mesmo se der erro
+            }
         }
 
         DictionaryLookupOverlayRenderer.render(graphics);

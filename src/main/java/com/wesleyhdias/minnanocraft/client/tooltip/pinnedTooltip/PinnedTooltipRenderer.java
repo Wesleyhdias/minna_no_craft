@@ -1,5 +1,7 @@
-package com.wesleyhdias.minnanocraft.client.tooltip;
+package com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip;
 
+import com.wesleyhdias.minnanocraft.client.tooltip.HitboxCalculator;
+import com.wesleyhdias.minnanocraft.client.tooltip.TooltipFormatter;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
@@ -50,11 +52,11 @@ public class PinnedTooltipRenderer {
         String translationKey = stack.getItem().getDescriptionId();
         String originalText = originalLines.getFirst().getString();
 
-        // 1. Replaces the name only if the formatting returns a valid component
+        // Replaces the name only if the formatting returns a valid component
         Component formattedName = TooltipFormatter.formatItemName(translationKey, originalText);
         customLines.set(0, formattedName);
 
-        // 2. Converts to ClientTooltipComponent, ignoring any null elements
+        // Converts to ClientTooltipComponent, ignoring any null elements
         List<ClientTooltipComponent> clientLines = new ArrayList<>();
         for (Component comp : customLines) {
             if (comp != null) {
@@ -76,10 +78,10 @@ public class PinnedTooltipRenderer {
             return new Vector2i(boxX, boxY);
         };
 
-        // 3. Renders the main frozen/pinned tooltip
+        // Renders the main frozen/pinned tooltip
         graphics.tooltip(mc.font, clientLines, PinnedTooltipService.getPinMouseX(), PinnedTooltipService.getPinMouseY(), positioner, null);
 
-        // 4. Calculates hitboxes and processes mouse hover interactions
+        // Calculates hitboxes and processes mouse hover interactions
         HitboxCalculator.rebuildHitboxes(mc, translationKey, PinnedTooltipService.getTextX(), PinnedTooltipService.getTextY(), originalText);
         processHoverSRS(graphics, mc, realMouseX, realMouseY);
     }

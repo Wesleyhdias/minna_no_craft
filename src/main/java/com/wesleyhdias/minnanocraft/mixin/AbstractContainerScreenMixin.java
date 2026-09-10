@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupOverlayRenderer;
-import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipInputHandler;
-import com.wesleyhdias.minnanocraft.client.tooltip.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipInputHandler;
+import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipService;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -91,8 +91,40 @@ public abstract class AbstractContainerScreenMixin {
             return;
         }
 
+        boolean isPinned = PinnedTooltipService.isPinned();
+
+        // Se o clique foi DENTRO do próprio PinnedTooltip (ex: clicou numa palavra traduzida)
         if (PinnedTooltipInputHandler.handleMouseClick(event.x(), event.y(), event.button())) {
             cir.setReturnValue(true);
+            return;
+        }
+
+        // Se o tooltip estava aberto e o usuário clicou FORA (qualquer aba, livro ou fundo)
+        if (isPinned) {
+            PinnedTooltipService.unpin(); // Fecha o pinned tooltip
+            cir.setReturnValue(true);     // BLOQUEIA O CLIQUE! Não deixa a aba mudar nem o livro abrir.
+        }
+    }
+
+    /**
+     * Bloqueia a barra de rolagem do inventário criativo (Arrastar o clique)
+     * NOTA: Se você usar um evento específico do seu framework (ex: MouseDragEvent), ajuste a assinatura.
+     */
+    @Inject(method = "mouseDragged", at = @At("HEAD"), cancellable = true)
+    private void blockBackgroundDrag(MouseButtonEvent event, double dx, double dy, CallbackInfoReturnable<Boolean> cir) {
+        if (ModConfig.getConfig().isEnabled() && PinnedTooltipService.isPinned()) {
+            cir.setReturnValue(true); // Cancela o arraste
+        }
+    }
+
+    /**
+     * Bloqueia a barra de rolagem do inventário criativo (Bolinha do mouse)
+     * NOTA: Se você usar um evento específico do seu framework (ex: MouseScrollEvent), ajuste a assinatura.
+     */
+    @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
+    private void blockBackgroundScroll(double mouseX, double mouseY, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
+        if (ModConfig.getConfig().isEnabled() && PinnedTooltipService.isPinned()) {
+            cir.setReturnValue(true); // Cancela o scroll
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.wesleyhdias.minnanocraft.client.tooltip;
+package com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip;
 
 import net.minecraft.world.item.ItemStack;
 
@@ -8,6 +8,15 @@ import net.minecraft.world.item.ItemStack;
  * and tracks word hover state and duration for SRS vocabulary progression.
  */
 public class PinnedTooltipService {
+    private static boolean internalRendering = false;
+
+    public static boolean isInternalRendering() {
+        return internalRendering;
+    }
+
+    public static void setInternalRendering(boolean rendering) {
+        internalRendering = rendering;
+    }
 
     /** The item stack currently pinned on screen. */
     private static ItemStack pinnedStack = null;

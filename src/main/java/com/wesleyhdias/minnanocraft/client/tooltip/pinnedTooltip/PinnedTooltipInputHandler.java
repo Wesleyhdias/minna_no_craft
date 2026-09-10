@@ -1,9 +1,8 @@
-package com.wesleyhdias.minnanocraft.client.tooltip;
+package com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
-import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
+import com.wesleyhdias.minnanocraft.client.tooltip.HitboxCalculator;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
@@ -64,10 +63,10 @@ public class PinnedTooltipInputHandler {
             if (clickedHitbox != null) {
                 String token = clickedHitbox.token();
 
-                // 1. Registra o evento SRS (agora com o nosso suporte a desmembrar compostas)
+                // Registra o evento SRS (agora com o nosso suporte a desmembrar compostas)
                 PlayerVocabularyManager.getInstance().registerEvent(token, ExpEvents.LOOKUP);
 
-                // 2. Tenta buscar como Palavra Simples primeiro
+                // Tenta buscar como Palavra Simples primeiro
                 Word word = DictionaryLoader.getDictionary().get(token);
 
                 if (word != null) {
