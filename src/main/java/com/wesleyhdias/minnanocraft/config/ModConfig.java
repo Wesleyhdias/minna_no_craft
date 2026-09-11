@@ -9,6 +9,7 @@ import com.wesleyhdias.minnanocraft.config.data.ConfigData;
  */
 public class ModConfig {
 
+    public static ModConfig ModConfig;
     /** In-memory cached instance of the configuration data schema. */
     private static ConfigData config;
 

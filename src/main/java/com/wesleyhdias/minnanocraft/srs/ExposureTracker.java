@@ -7,30 +7,40 @@ import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 import java.util.List;
 
 /**
- * A generic tracker that monitors continuous exposure to a target (HUD or Hover).
+ * Generic tracker that monitors continuous exposure to a target element (e.g., HUD or Tooltip Hover).
  * <p>
- * Handles focus timers, detects item transitions or timeouts (mouse leaving a tooltip area),
- * triggers cache invalidations when necessary, and delegates vocabulary event registration
- * to the {@link PlayerVocabularyManager} once the required focus duration is met.
+ * Handles focus timing, detects item transitions or timeouts when the mouse leaves a tooltip,
+ * triggers translation cache invalidation when required, and delegates vocabulary event registration
+ * to {@link PlayerVocabularyManager} once the required focus duration is reached.
  */
 public class ExposureTracker {
 
+    /** Required continuous focus duration in milliseconds to award exposure points. */
     private final long requiredFocusTimeMs;
+
+    /** Specific event type to register upon completing focus (e.g., HOVER, SEEN). */
     private final ExpEvents expEventsType;
 
+    /** Unique key identifier of the target currently being tracked. */
     private String currentKey = "";
+
+    /** Timestamp in milliseconds when focus on the current key began. */
     private long startTime = 0;
+
+    /** Flag indicating whether exposure experience has already been awarded for the current focus cycle. */
     private boolean expAwarded = false;
 
-    /** Timeout threshold to detect when the game tooltip stops rendering or the mouse leaves the target. */
+    /** Timestamp in milliseconds of the last heartbeat update. */
     private long lastUpdateTime = 0;
+
+    /** Inactivity timeout threshold in milliseconds to detect target loss. */
     private static final long TIMEOUT_MS = 150;
 
     /**
-     * Constructs a new ExposureTracker.
+     * Constructs a new {@link ExposureTracker}.
      *
-     * @param requiredFocusTimeMs The continuous time in milliseconds required to trigger an exposure event.
-     * @param expEventsType           The specific type of vocabulary event to register (e.g., HOVER, SEEN).
+     * @param requiredFocusTimeMs The continuous focus duration in milliseconds needed to trigger exposure.
+     * @param expEventsType       The type of event to register when focus duration is met.
      */
     public ExposureTracker(long requiredFocusTimeMs, ExpEvents expEventsType) {
         this.requiredFocusTimeMs = requiredFocusTimeMs;
@@ -38,7 +48,7 @@ public class ExposureTracker {
     }
 
     /**
-     * Updates the tracker with the current target key, assuming standard conditions are met.
+     * Updates the tracker with the active target key assuming default conditions.
      *
      * @param targetKey The unique identifier of the target being observed.
      */
@@ -47,7 +57,7 @@ public class ExposureTracker {
     }
 
     /**
-     * Updates the tracker state, handling timeouts, item switching, and focus duration evaluation.
+     * Updates the tracker state, handling timeouts, target switching, and focus duration evaluation.
      *
      * @param targetKey      The unique identifier of the target being observed.
      * @param extraCondition Additional prerequisite condition required to award exposure progress.
@@ -55,15 +65,15 @@ public class ExposureTracker {
     public void update(String targetKey, boolean extraCondition) {
         long now = System.currentTimeMillis();
 
-        // 1. TIMEOUT VERIFICATION (Mouse left the item)
-        // If more than 150ms have passed since the last update, the player has moved away from the target.
+        // 1. TIMEOUT VERIFICATION (Mouse left the item/tooltip area)
+        // If more than 150ms passed since the last heartbeat, the target was unhovered.
         if (now - lastUpdateTime > TIMEOUT_MS) {
             if (TranslationCacheManager.pendingClear) {
                 TranslationCacheManager.clearAll();
             }
             reset();
         }
-        lastUpdateTime = now; // Refresh the "heartbeat" timestamp of the active tracker
+        lastUpdateTime = now; // Refresh the heartbeat timestamp
 
         if (targetKey == null || targetKey.isBlank()) {
             reset();
@@ -96,7 +106,7 @@ public class ExposureTracker {
     }
 
     /**
-     * Resets the internal state and tracking timers of the tracker.
+     * Resets internal tracking state and active target references.
      */
     public void reset() {
         currentKey = "";
@@ -104,25 +114,25 @@ public class ExposureTracker {
     }
 
     /**
-     * Retrieves the key of the current target being tracked.
+     * Retrieves the key of the target currently being tracked.
      *
-     * @return The active target key string, or empty if none.
+     * @return The active target key string, or empty string if no target is active.
      */
     public String getCurrentKey() {
         return currentKey;
     }
 
     /**
-     * Called every game tick to proactively check if the target has lost focus (e.g., mouse left the item).
-     * Ensures cached translations are cleared immediately even if the player closes the inventory interface.
+     * Ticks periodically to check whether the active target was lost unexpectedly.
+     * Ensures pending cache invalidations are cleared promptly even if UI screens close.
      */
     public void tick() {
-        // If an item is tracked, but more than the timeout threshold has passed since the last update...
+        // If an item is tracked, but more than the timeout threshold has passed since the last update
         if (!currentKey.isEmpty() && (System.currentTimeMillis() - lastUpdateTime > TIMEOUT_MS)) {
             if (TranslationCacheManager.pendingClear) {
                 TranslationCacheManager.clearAll();
             }
-            reset(); // Target lost! Proactively clear and reset state.
+            reset(); // Target lost! Proactively clear state and invalidate caches if needed.
         }
     }
 }

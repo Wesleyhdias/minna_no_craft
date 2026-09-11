@@ -27,13 +27,13 @@ public class DictionaryLookupOverlayRenderer {
         int screenWidth = mc.getWindow().getGuiScaledWidth();
         int screenHeight = mc.getWindow().getGuiScaledHeight();
 
-        // 1. Central card dimensions
+        // Central card dimensions
         int width = 240;
         int height = 135;
         int x = (screenWidth - width) / 2;
         int y = (screenHeight - height) / 2;
 
-        // 2. Modal background and borders
+        // Modal background and borders
         graphics.fill(x, y, x + width, y + height, 0xF0121212); // Semi-solid dark background
 
         int borderColor = 0xFF444444;
@@ -42,7 +42,7 @@ public class DictionaryLookupOverlayRenderer {
         graphics.fill(x - 1, y, x, y + height, borderColor);                // Left
         graphics.fill(x + width, y, x + width + 1, y + height, borderColor); // Right
 
-        // 3. Header
+        // Header
         graphics.text(mc.font, Component.literal("MINNA NO CRAFT"), x + 12, y + 10, 0xFFFFAA00, true);
 
         // Upper divider line
@@ -51,48 +51,58 @@ public class DictionaryLookupOverlayRenderer {
         Word word = DictionaryLookupService.getCurrentWord();
 
         if (word != null) {
-            // 1. Extract fields from the Word class
+            // Extract fields from the Word class
             String kanji = word.kanji();
             String hiragana = word.hiragana();
             String romaji = word.romaji();
-            String portuguese = String.valueOf(word.getLocalTranslations());
+            String translation = String.valueOf(word.getLocalTranslations());
 
-            // 2. Fallback logic for the main title
+            // Fallback logic for the main title
             // If there is no Kanji, use Hiragana/Katakana as the main title
             String mainText = (kanji != null && !kanji.isBlank()) ? kanji : hiragana;
             if (mainText == null || mainText.isBlank()) {
                 mainText = romaji; // Extreme fallback case
             }
 
-            // 3. Assemble the reading line (e.g., "ひらがな • hiragana" or just "hiragana")
+            // Assemble the reading line (e.g., "ひらがな • hiragana" or just "hiragana")
             String readingText = getReadingText(kanji, hiragana, romaji);
 
-            // 4. Translation text
-            String translationText = (portuguese != null && !portuguese.isBlank())
-                    ? portuguese
+            // Translation text
+            String translationText = (translation != null && !translation.isBlank())
+                    ? translation
                     : "Sem tradução cadastrada";
 
             // --- ON-SCREEN RENDERING ---
 
             // Featured Word (Kanji or Kana)
             assert mainText != null;
-            graphics.text(mc.font, Component.literal(mainText), x + 12, y + 32, 0xFF55FFFF, true);
+
+            float scale = 1.5f;
+            graphics.pose().pushMatrix();
+            graphics.pose().scale(scale, scale);
+
+            // Divide as coordenadas reais pelo tamanho da escala para encaixar no lugar certo
+            int scaledX = (int) ((x + 12) / scale);
+            int scaledY = (int) ((y + 28) / scale);
+
+            graphics.text(mc.font, Component.literal(mainText), scaledX, scaledY + 2, 0xFF55FFFF, true);
+            graphics.pose().popMatrix();
 
             // Reading / Pronunciation (Hiragana + Romaji)
-            graphics.text(mc.font, Component.translatable("lookup_overlay.minnanocraft.reading", readingText), x + 12, y + 48, 0xFFDCDCDC, true);
+            graphics.text(mc.font, Component.translatable("lookup_overlay.minnanocraft.reading", readingText), x + 12, y + 52, 0xFFDCDCDC, true);
 
             // Central Divider Line
-            graphics.fill(x + 10, y + 64, x + width - 10, y + 65, 0xFF222222);
+            graphics.fill(x + 10, y + 68, x + width - 10, y + 69, 0xFF222222);
 
             // Translation / Meaning
             graphics.text(mc.font, Component.translatable("lookup_overlay.minnanocraft.meaning"), x + 12, y + 72, 0xFF888888, true);
-            graphics.text(mc.font, Component.literal(translationText), x + 12, y + 86, 0xFF55FF55, true);
+            graphics.text(mc.font, Component.literal(translationText), x + 12, y + 90, 0xFF55FF55, true);
 
         } else {
             graphics.text(mc.font, Component.literal("Nenhuma palavra encontrada."), x + 12, y + 50, 0xFFFF5555, true);
         }
 
-        // 7. Footer (Shortcut Hint)
+        // Footer (Shortcut Hint)
         Component closeHint = Component.translatable("lookup_overlay.minnanocraft.close_overlay");
         int hintWidth = mc.font.width(closeHint);
         graphics.text(mc.font, closeHint, x + width - hintWidth - 12, y + height - 16, 0xFF666666, true);

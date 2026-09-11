@@ -1,10 +1,10 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.TokenUpgradeSelector;
@@ -45,10 +45,10 @@ public class TooltipEventHandler {
             String translationKey = stack.getItem().getDescriptionId();
             long now = System.currentTimeMillis();
 
-            // 1. NOTIFY HOVER TRACKER (To award progression points internally)
+            // NOTIFY HOVER TRACKER (To award progression points internally)
             TooltipHoverTracker.onTooltipRendered(translationKey);
 
-            // 2. FREEZE NAME DURING HOVER SESSION
+            // FREEZE NAME DURING HOVER SESSION
             // If more than 100 ms (~2 ticks) passed without rendering (mouse left) or item changed: recalculate!
             if (now - lastRenderTime > 100 || !translationKey.equals(currentHoverKey)) {
                 currentHoverKey = translationKey;
@@ -92,19 +92,19 @@ public class TooltipEventHandler {
                     String target = TokenUpgradeSelector.getNextTokenToUpgrade(structure, PlayerVocabularyManager.getInstance());
                     lines.add(Component.literal("§7Priority Target: §f" + (target != null ? target : "None")));
 
-                    // 1. Expande os tokens compostos evitando duplicadas indesejadas
+
                     List<String> expandedTokens = new java.util.ArrayList<>();
                     for (String token : structure) {
                         CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
                         if (compound != null) {
-                            // Adiciona os componentes
+
                             for (String comp : compound.components()) {
                                 if (!expandedTokens.contains(comp)) {
                                     expandedTokens.add(comp);
                                 }
                             }
 
-                            // Adiciona o separador apenas se já não estiver na lista
+
                             String sepToken = compound.getSafeSeparator();
                             if (sepToken != null && !sepToken.isEmpty() && !sepToken.equals(" ")) {
                                 if (!expandedTokens.contains(sepToken)) {
@@ -118,7 +118,6 @@ public class TooltipEventHandler {
                         }
                     }
 
-                    // 2. Itera sobre os tokens expandidos únicos
                     for (String token : expandedTokens) {
                         WordProgress p = PlayerVocabularyManager.getInstance().getProgress(token);
                         double exp = (p != null) ? p.getExposure() : 0.0;

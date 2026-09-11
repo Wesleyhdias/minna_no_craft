@@ -30,10 +30,10 @@ public class ClientTickHandler {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
 
-            // 1. Update Hover Tracker (checks if mouse left an item)
+            // Update Hover Tracker (checks if mouse left an item)
             TooltipHoverTracker.tick();
 
-            // 2. Hotbar Logic (SEEN Event)
+            // Hotbar Logic (SEEN Event)
             if (client.player != null) {
                 int currentSlot = client.player.getInventory().getSelectedSlot();
                 ItemStack mainHandStack = client.player.getMainHandItem();
@@ -58,7 +58,7 @@ public class ClientTickHandler {
                 }
             }
 
-            // 3. Real-Time Auto-Save
+            // Real-Time Auto-Save
             long now = System.currentTimeMillis();
             if (now - lastSaveTime >= SAVE_INTERVAL_MS) {
                 PlayerVocabularyManager.getInstance().updateProgression(); // Persists data to disk

@@ -12,29 +12,40 @@ import java.util.List;
 
 /**
  * Utility builder responsible for progressively replacing native language words
- * in item names with Japanese scripts based on the player's unlocked script level.
+ * in item names with Japanese script renderings based on the player's SRS script levels.
+ * <p>
+ * Evaluates the item's word structure and substitutes matching localized native words
+ * with their progressive Japanese script equivalents, caching results in
+ * {@link TranslationCacheManager#BUILDER_CACHE}.
  */
 public class CurrentLangItemNameBuilder {
 
+    /** Provider pipeline used to resolve tokens into rendered script strings. */
     private static List<TokenProvider> providers = List.of(
             new CompoundDictionaryProvider(),
             new DictionaryProvider(),
             new MorphemeProvider()
     );
 
+    /**
+     * Overrides the provider pipeline for unit testing purposes.
+     *
+     * @param testProviders List of mock or test {@link TokenProvider} instances.
+     */
     public static void setProvidersForTesting(List<TokenProvider> testProviders) {
         providers = testProviders;
     }
 
     /**
      * Builds the item name in the native language template, replacing learned words
-     * with their respective Japanese script renderings.
+     * with their respective Japanese script renderings based on current SRS progress.
      *
      * @param translationKey The unique translation key of the item.
-     * @param originalText   The original native item name.
+     * @param originalText   The original native item display name.
      * @return The modified item name with partially or fully translated words.
      */
     public static String build(String translationKey, String originalText) {
+        // Returns cached result if available
         if (TranslationCacheManager.BUILDER_CACHE.containsKey(translationKey)) {
             return TranslationCacheManager.BUILDER_CACHE.get(translationKey);
         }
@@ -51,27 +62,23 @@ public class CurrentLangItemNameBuilder {
         for (String token : structure) {
             List<String> localTranslations = getLocalTranslationsForToken(token);
 
-            // 1. Apaga as palavras encontradas da string de controle
             for (String translation : localTranslations) {
                 if (translation == null || translation.isBlank()) continue;
+
+                // Removes matched words from remaining text tracker to prevent redundant operations
                 String lowerSearch = translation.toLowerCase(Locale.ROOT);
                 if (remainingToMatch.contains(lowerSearch)) {
                     remainingToMatch = remainingToMatch.replace(lowerSearch, " ");
                 }
-            }
 
-            // 2. Pergunta para os providers se esse token tem tradução renderizada
-            String renderedValue = resolveFromProviders(token);
-
-            // 3. Substitui no texto original apenas se tiver uma tradução válida
-            if (renderedValue != null) {
-                for (String translation : localTranslations) {
-                    if (translation == null || translation.isBlank()) continue;
+                // Replaces target native word with its script-rendered value
+                String renderedValue = resolveFromProviders(token);
+                if (renderedValue != null) {
                     result = replaceIgnoreCase(result, translation, renderedValue);
                 }
             }
 
-            // 4. Se a string de controle ficou vazia, encerra precocemente
+            // Terminates early if all native words in the item name have been matched and processed
             if (remainingToMatch.trim().isEmpty()) {
                 break;
             }
@@ -82,10 +89,10 @@ public class CurrentLangItemNameBuilder {
     }
 
     /**
-     * Resolves a single token
+     * Resolves a token into its rendered string representation by querying registered providers sequentially.
      *
-     * @param token The dictionary key.
-     * @return The string of the word after resolving the token or null.
+     * @param token The dictionary key or compound token to resolve.
+     * @return The resolved rendered string, or {@code null} if no provider could resolve the token.
      */
     private static String resolveFromProviders(String token) {
         for (TokenProvider provider : providers) {
@@ -97,6 +104,12 @@ public class CurrentLangItemNameBuilder {
         return null;
     }
 
+    /**
+     * Retrieves all native local translation strings associated with a given token or compound components.
+     *
+     * @param token The dictionary or compound word token.
+     * @return A list of localized native translation strings.
+     */
     private static List<String> getLocalTranslationsForToken(String token) {
         CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
         if (compound != null) {
@@ -104,7 +117,7 @@ public class CurrentLangItemNameBuilder {
             if (compoundLocals != null && !compoundLocals.isEmpty()) {
                 return compoundLocals;
             }
-            // Se for palavra composta sem tradução própria, resolve os subcomponentes
+            // Fallback: collect native translations from individual compound components
             List<String> collected = new ArrayList<>();
             for (String compToken : compound.components()) {
                 collected.addAll(getLocalTranslationsForToken(compToken));
@@ -121,13 +134,13 @@ public class CurrentLangItemNameBuilder {
     }
 
     /**
-     * Replaces all occurrences of a target search string within a text,
-     * ignoring case sensitivity.
+     * Replaces all occurrences of a target search substring within a text string,
+     * ignoring case sensitivity while preserving non-matching original text casing.
      *
-     * @param text        The full text to perform replacements on.
+     * @param text        The full source string.
      * @param search      The target substring to search for.
-     * @param replacement The string to substitute into the text.
-     * @return The updated string with replaced text.
+     * @param replacement The replacement string to substitute.
+     * @return The updated string with all occurrences substituted.
      */
     private static String replaceIgnoreCase(String text, String search, String replacement) {
         if (text == null || search == null || search.isEmpty() || replacement == null) {
@@ -146,19 +159,12 @@ public class CurrentLangItemNameBuilder {
         int lastIndex = 0;
 
         while (index >= 0) {
-            // Copia o trecho que veio antes da correspondência
             sb.append(text, lastIndex, index);
-            // Adiciona o valor substituído
             sb.append(replacement);
-
-            // Avança o índice para DEPOIS do trecho original encontrado
             lastIndex = index + search.length();
-
-            // Busca a PRÓXIMA ocorrência apenas a partir de lastIndex
             index = lowerText.indexOf(lowerSearch, lastIndex);
         }
 
-        // Copia o restante do texto que sobrou
         sb.append(text.substring(lastIndex));
 
         return sb.toString();

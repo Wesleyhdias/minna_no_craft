@@ -1,12 +1,12 @@
 package com.wesleyhdias.minnanocraft.config.vanilla_injection;
 
-import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
+import com.wesleyhdias.minnanocraft.MinnaNoCraft;
 
 import net.minecraft.client.gui.components.AbstractSelectionList;
 import net.minecraft.client.gui.components.AbstractWidget;
-import net.fabricmc.fabric.api.client.screen.v1.Screens;
 import net.minecraft.client.gui.components.StringWidget;
+import net.fabricmc.fabric.api.client.screen.v1.Screens;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -38,13 +38,13 @@ public class LanguageScreenRenderer {
         EditBox searchBox = null;
         AbstractSelectionList<?> languageList = null;
 
-        // 1. Cleans up old custom widgets (including the "INCOMPATIBLE" label)
+        // Cleans up old custom widgets (including the "INCOMPATIBLE" label)
         Screens.getWidgets(screen).removeIf(widget -> {
             String txt = widget.getMessage().getString();
             return txt.contains("MinnaNoCraft:") || txt.equals("ENABLED") || txt.equals("DISABLED") || txt.equals("INCOMPATIBLE");
         });
 
-        // 2. Finds the native search bar and selection list components
+        // Finds the native search bar and selection list components
         for (AbstractWidget widget : Screens.getWidgets(screen)) {
             if (widget instanceof EditBox) {
                 searchBox = (EditBox) widget;
@@ -55,12 +55,12 @@ public class LanguageScreenRenderer {
 
         if (searchBox != null) {
 
-            // --- LANGUAGE VALIDATION LOGIC ---
+            // LANGUAGE VALIDATION LOGIC
             String currentLanguage = client.options.languageCode;
             boolean isSupported = MinnaNoCraft.SUPPORTED_LANGUAGES.contains(currentLanguage);
 
 
-            // 3. LAYOUT RESET DETECTION TRICK
+            // LAYOUT RESET DETECTION TRICK
             Integer expectedY = MODIFIED_Y_CACHE.get(searchBox);
 
             if (expectedY == null || searchBox.getY() != expectedY) {
@@ -75,7 +75,7 @@ public class LanguageScreenRenderer {
                 MODIFIED_Y_CACHE.put(searchBox, searchBox.getY());
             }
 
-            // 4. CENTER AXIS CALCULATION AND ALIGNMENT
+            // CENTER AXIS CALCULATION AND ALIGNMENT
             int searchCenterY = searchBox.getY() + (searchBox.getHeight() / 2);
             int center = scaledWidth / 2;
             int leftEdge = center - 155;

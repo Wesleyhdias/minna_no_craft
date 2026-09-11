@@ -15,24 +15,28 @@ import org.spongepowered.asm.mixin.Mixin;
 
 /**
  * Mixin for the base Minecraft {@link Screen} class.
- * Used to inject custom rendering logic for the pinned tooltip system,
- * ensuring that the pinned vocabulary tooltip is drawn on top of all other screen elements.
+ * <p>
+ * Injects custom rendering logic for the pinned tooltip system and dictionary overlay,
+ * ensuring that pinned vocabulary tooltips and overlays are drawn on top of standard screen elements.
  */
 @Mixin(Screen.class)
 public abstract class ScreenMixin {
 
     /**
-     * Injects custom rendering code at the TAIL (end) of the method that combines the screen and native tooltips.
-     * If a tooltip is currently pinned, it delegates the rendering to the {@link PinnedTooltipRenderer}.
+     * Injects custom rendering code at the TAIL (end) of the screen render state extraction method.
+     * <p>
+     * If a tooltip is currently pinned, delegates rendering to {@link PinnedTooltipRenderer}
+     * and proceeds to render the {@link DictionaryLookupOverlayRenderer}.
      *
-     * @param graphics The GUI graphics extractor used for drawing.
+     * @param graphics The {@link GuiGraphicsExtractor} instance used for drawing UI elements.
      * @param mouseX   The current X coordinate of the mouse cursor.
      * @param mouseY   The current Y coordinate of the mouse cursor.
-     * @param a        The partial tick time (delta).
-     * @param ci       The callback information provided by Mixin.
+     * @param a        The partial tick delta time.
+     * @param ci       The {@link CallbackInfo} provided by the Mixin framework.
      */
     @Inject(method = "extractRenderStateWithTooltipAndSubtitles", at = @At("TAIL"))
     private void renderPinnedTooltipOnTop(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
+        // Skips verification if the mod is disabled in configuration
         if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
@@ -42,7 +46,7 @@ public abstract class ScreenMixin {
             try {
                 PinnedTooltipRenderer.render(graphics);
             } finally {
-                PinnedTooltipService.setInternalRendering(false); // Garante que reseta mesmo se der erro
+                PinnedTooltipService.setInternalRendering(false); // Ensures state is reset even if an exception occurs
             }
         }
 

@@ -18,27 +18,29 @@ import org.spongepowered.asm.mixin.Mixin;
 import java.util.List;
 
 /**
- * Mixin targeting ItemStack to dynamically modify item hover names
- * according to the player's vocabulary and language progression.
+ * Mixin targeting Minecraft's {@link ItemStack} to dynamically modify item display names
+ * based on the player's SRS vocabulary progression and active learning mode.
  */
 @Mixin(ItemStack.class)
 public abstract class ItemStackNameMixin {
 
     /**
-     * Intercepts the getHoverName method to replace item names with progressive
-     * Japanese scripts or partial translations.
+     * Intercepts the return value of {@code getHoverName()} to replace or modify item names
+     * with progressive Japanese script representations or localized target strings.
      *
-     * @param cir Callback info returnable containing the item name component.
+     * @param cir The {@link CallbackInfoReturnable} containing the original item name {@link Component}.
      */
     @Inject(method = "getHoverName", at = @At("RETURN"), cancellable = true)
     private void onGetHoverName(CallbackInfoReturnable<Component> cir) {
+
+        // Skips name processing if the mod is disabled in configuration
         if (!ModConfig.getConfig().isEnabled()) {
             return;
         }
 
         ItemStack stack = (ItemStack) (Object) this;
 
-        // Skips if stack is empty or has a custom user-defined name (e.g., anvil rename)
+        // Ignores empty item stacks and items with custom anvil or user-defined names
         if (stack.isEmpty() || stack.has(DataComponents.CUSTOM_NAME)) {
             return;
         }
@@ -51,6 +53,7 @@ public abstract class ItemStackNameMixin {
             String originalText = original.getString();
             String customText;
 
+            // Determines whether to build full Japanese rendering or native/progressive structure
             if (TranslationModeResolver.useJapanese(translationKey)) {
                 customText = JapaneseItemNameBuilder.build(translationKey);
             } else {

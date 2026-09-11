@@ -7,28 +7,36 @@ import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Utility selector responsible for determining token progression priority during item vocabulary upgrades.
+ * <p>
+ * Implements a "wave" progression system where content/meaning words are prioritized first,
+ * allowing grammar particles to catch up once content words reach a minimum script level.
+ */
 public class TokenUpgradeSelector {
 
     /**
      * Determines which token in an item's structure should receive priority progression points.
-     * Implements a "wave" system where content words progress first, and particles catch up.
+     * <p>
+     * Expands compound tokens into sub-components, separates content words from particles,
+     * and evaluates script levels to balance progression left-to-right.
      *
-     * @param structure The list of tokens representing the item's name structure.
-     * @return The priority token string to upgrade, or null if the structure is empty.
+     * @param structure The list of token keys representing the item's name structure.
+     * @param manager   The {@link PlayerVocabularyManager} instance tracking player progress.
+     * @return The priority token string to upgrade, or {@code null} if the structure is empty.
      */
     public static String getNextTokenToUpgrade(List<String> structure, PlayerVocabularyManager manager) {
         if (structure == null || structure.isEmpty()) return null;
 
-        // 1. Expande a estrutura para desmembrar palavras compostas em seus componentes e separadores
+        // Expands the structure to break down compound words into their components
         List<String> expandedStructure = new ArrayList<>();
         for (String token : structure) {
             CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
             if (compound != null) {
-                // Adiciona os componentes
+                // Add all the components
                 expandedStructure.addAll(compound.components());
-
             } else {
-                // Se for um token normal ou morfema comum, mantém
+                // If it's a normal token, keep it
                 expandedStructure.add(token);
             }
         }
@@ -36,7 +44,7 @@ public class TokenUpgradeSelector {
         List<String> contentTokens = new ArrayList<>();
         List<String> particleTokens = new ArrayList<>();
 
-        // 2. Classifica os tokens expandidos (agora focando nos pedaços reais)
+        // Categorizes expanded tokens, focusing on their individual components
         for (String token : expandedStructure) {
             if (manager.isParticle(token)) {
                 particleTokens.add(token);
@@ -84,19 +92,35 @@ public class TokenUpgradeSelector {
 
     /**
      * Helper fallback method to find the token with the lowest script level in a list.
+     *
+     * @param tokens  The list of token keys to evaluate.
+     * @param manager The {@link PlayerVocabularyManager} instance tracking player progress.
+     * @return The token string with the lowest script level.
      */
     private static String getLowestLevelToken(List<String> tokens, PlayerVocabularyManager manager) {
+        if (tokens == null || tokens.isEmpty()) return null;
+
+        String lowestToken = tokens.getFirst();
         int minLevel = 4;
+
         for (String token : tokens) {
             WordProgress p = manager.getProgress(token);
             int level = (p != null) ? p.getScriptLevel() : 0;
-            if (level < minLevel) minLevel = level;
+            if (level < minLevel) {
+                minLevel = level;
+                lowestToken = token;
+            }
         }
-        return getFirstTokenAtLevel(tokens, minLevel, manager);
+        return lowestToken;
     }
 
     /**
-     * Helper method to find the first token matching a target script level (left-to-right).
+     * Helper method to find the first token matching a target script level evaluating left-to-right.
+     *
+     * @param tokens      The list of token keys to search through.
+     * @param targetLevel The target script level to match.
+     * @param manager     The {@link PlayerVocabularyManager} instance tracking player progress.
+     * @return The first matching token string, or the first token in the list as fallback.
      */
     private static String getFirstTokenAtLevel(List<String> tokens, int targetLevel, PlayerVocabularyManager manager) {
         for (String token : tokens) {

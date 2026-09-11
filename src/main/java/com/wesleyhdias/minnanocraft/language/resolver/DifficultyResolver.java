@@ -1,11 +1,11 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
-import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.Word;
-import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.List;
@@ -59,7 +59,6 @@ public class DifficultyResolver {
                 continue;
             }
 
-            // 1. Resolve componente do tipo Palavra
             Word compWord = DictionaryLoader.getDictionary().get(compToken);
             if (compWord != null) {
                 WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(compToken);
@@ -69,13 +68,12 @@ public class DifficultyResolver {
                     hasAnyProgress = true;
                     builder.append(render(compWord, level));
                 } else {
-                    // Nível 0: mantém o romaji/tradução primária para fluir junto
+
                     builder.append(compWord.getLocalTranslations().getFirst());
                 }
                 continue;
             }
 
-            // 2. Resolve componente do tipo Morfema
             Morpheme mw = MorphemeLoader.getMorphemes().get(compToken);
             if (mw != null) {
                 builder.append(" ");
@@ -88,7 +86,6 @@ public class DifficultyResolver {
             }
         }
 
-        // Se o jogador não tem progresso em NENHUMA das partes, retorna null
         if (!hasAnyProgress) {
             return null;
         }

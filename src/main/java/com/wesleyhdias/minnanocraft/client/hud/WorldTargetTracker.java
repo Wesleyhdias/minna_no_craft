@@ -27,14 +27,14 @@ public class WorldTargetTracker {
             return null;
         }
 
-        // 1. If looking at a Block
+        // If looking at a Block
         if (hit instanceof BlockHitResult blockHit && client.level != null) {
             BlockState state = client.level.getBlockState(blockHit.getBlockPos());
             if (state.isAir()) return null;
             return state.getBlock().getDescriptionId();
         }
 
-        // 2. If looking at an Entity (excluding dropped items)
+        // If looking at an Entity (excluding dropped items)
         if (hit instanceof EntityHitResult entityHit) {
             Entity entity = entityHit.getEntity();
             if (entity instanceof ItemEntity) return null; // Ignores item drops on the ground

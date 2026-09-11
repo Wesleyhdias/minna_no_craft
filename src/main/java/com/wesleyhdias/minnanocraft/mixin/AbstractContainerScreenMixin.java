@@ -19,24 +19,25 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Mixin;
 
 /**
- * Mixin for the base {@link AbstractContainerScreen} class.
- * Intercepts rendering and input events within inventory screens to support
- * the pinned tooltip feature, overriding default vanilla behavior when a tooltip is pinned.
+ * Mixin targeting {@link AbstractContainerScreen} to intercept rendering and user inputs in container screens.
+ * <p>
+ * Suppresses native tooltips, mouse interactions, key events, and scrolling whenever a pinned
+ * vocabulary tooltip or dictionary lookup overlay is actively open.
  */
 @Mixin(AbstractContainerScreen.class)
 public abstract class AbstractContainerScreenMixin {
 
-    /** Shadow reference to the vanilla field tracking the currently hovered inventory slot. */
-    @Shadow protected Slot hoveredSlot;
+    /** Reference to the vanilla field tracking the currently hovered container slot. */
+    @Shadow
+    protected Slot hoveredSlot;
 
     /**
-     * Injects at the beginning (HEAD) of the vanilla tooltip extraction method.
-     * 1. Hides the default floating tooltip if there is a pinned one on the screen.
+     * Cancels native vanilla tooltip rendering if a pinned vocabulary tooltip is active on screen.
      *
-     * @param graphics The GUI graphics extractor used for drawing.
+     * @param graphics The {@link GuiGraphicsExtractor} instance used for drawing UI elements.
      * @param mouseX   The current X coordinate of the mouse.
      * @param mouseY   The current Y coordinate of the mouse.
-     * @param ci       The callback information provided by Mixin.
+     * @param ci       The {@link CallbackInfo} provided by the Mixin framework.
      */
     @Inject(method = "extractTooltip", at = @At("HEAD"), cancellable = true, require = 0)
     private void suppressVanillaTooltip(GuiGraphicsExtractor graphics, int mouseX, int mouseY, CallbackInfo ci) {
@@ -50,11 +51,10 @@ public abstract class AbstractContainerScreenMixin {
     }
 
     /**
-     * Injects at the beginning (HEAD) of the keyboard event handling method.
-     * 2. Keyboard Events (Uses the exact KeyEvent signature).
+     * Intercepts keyboard input to handle dictionary lookup navigation or tooltip pinning actions.
      *
-     * @param event The keyboard event containing key data.
-     * @param cir   The returnable callback information provided by Mixin.
+     * @param event The {@link KeyEvent} containing key state and keycode data.
+     * @param cir   The {@link CallbackInfoReturnable} provided by Mixin to manage return values.
      */
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void onKeyPressed(KeyEvent event, CallbackInfoReturnable<Boolean> cir) {
@@ -73,12 +73,12 @@ public abstract class AbstractContainerScreenMixin {
     }
 
     /**
-     * Injects at the beginning (HEAD) of the mouse click handling method.
-     * 3. Mouse Events (Uses the exact MouseButtonEvent signature).
+     * Intercepts mouse click events in container screens to prioritize modal overlay interactions
+     * and handle clicking inside or outside pinned tooltips.
      *
-     * @param event       The mouse button event containing click data and coordinates.
-     * @param doubleClick Whether this click was a double click.
-     * @param cir         The returnable callback information provided by Mixin.
+     * @param event       The {@link MouseButtonEvent} containing click details and coordinates.
+     * @param doubleClick Indicates whether the click event is a double click.
+     * @param cir         The {@link CallbackInfoReturnable} provided by Mixin to manage return values.
      */
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void onMouseClick(MouseButtonEvent event, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
@@ -86,6 +86,7 @@ public abstract class AbstractContainerScreenMixin {
             return;
         }
 
+        // Handles clicks within active dictionary lookup overlay
         if (DictionaryLookupOverlayRenderer.mouseClicked()) {
             cir.setReturnValue(true);
             return;
@@ -93,38 +94,47 @@ public abstract class AbstractContainerScreenMixin {
 
         boolean isPinned = PinnedTooltipService.isPinned();
 
-        // Se o clique foi DENTRO do próprio PinnedTooltip (ex: clicou numa palavra traduzida)
+        // Handles click inside pinned tooltip bounds (e.g., selecting a translated word)
         if (PinnedTooltipInputHandler.handleMouseClick(event.x(), event.y(), event.button())) {
             cir.setReturnValue(true);
             return;
         }
 
-        // Se o tooltip estava aberto e o usuário clicou FORA (qualquer aba, livro ou fundo)
+        // If clicked outside an active pinned tooltip, unpins it and suppresses background clicks
         if (isPinned) {
-            PinnedTooltipService.unpin(); // Fecha o pinned tooltip
-            cir.setReturnValue(true);     // BLOQUEIA O CLIQUE! Não deixa a aba mudar nem o livro abrir.
+            PinnedTooltipService.unpin();
+            cir.setReturnValue(true);
         }
     }
 
     /**
-     * Bloqueia a barra de rolagem do inventário criativo (Arrastar o clique)
-     * NOTA: Se você usar um evento específico do seu framework (ex: MouseDragEvent), ajuste a assinatura.
+     * Prevents mouse drag actions (such as scrollbar dragging) when a pinned tooltip is open.
+     *
+     * @param event The {@link MouseButtonEvent} containing drag event data.
+     * @param dx    The change in X position.
+     * @param dy    The change in Y position.
+     * @param cir   The {@link CallbackInfoReturnable} provided by Mixin to handle cancellation.
      */
     @Inject(method = "mouseDragged", at = @At("HEAD"), cancellable = true)
     private void blockBackgroundDrag(MouseButtonEvent event, double dx, double dy, CallbackInfoReturnable<Boolean> cir) {
         if (ModConfig.getConfig().isEnabled() && PinnedTooltipService.isPinned()) {
-            cir.setReturnValue(true); // Cancela o arraste
+            cir.setReturnValue(true);
         }
     }
 
     /**
-     * Bloqueia a barra de rolagem do inventário criativo (Bolinha do mouse)
-     * NOTA: Se você usar um evento específico do seu framework (ex: MouseScrollEvent), ajuste a assinatura.
+     * Prevents mouse scroll wheel input from scrolling background container inventories when a pinned tooltip is open.
+     *
+     * @param mouseX  The current X coordinate of the mouse.
+     * @param mouseY  The current Y coordinate of the mouse.
+     * @param scrollX The horizontal scroll delta.
+     * @param scrollY The vertical scroll delta.
+     * @param cir     The {@link CallbackInfoReturnable} provided by Mixin to handle cancellation.
      */
     @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
     private void blockBackgroundScroll(double mouseX, double mouseY, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
         if (ModConfig.getConfig().isEnabled() && PinnedTooltipService.isPinned()) {
-            cir.setReturnValue(true); // Cancela o scroll
+            cir.setReturnValue(true);
         }
     }
 }

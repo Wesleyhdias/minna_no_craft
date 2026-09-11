@@ -1,17 +1,17 @@
 package com.wesleyhdias.minnanocraft.client.tooltip;
 
-import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
-import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
+import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.resolver.DifficultyResolver;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
-import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -72,7 +72,6 @@ public class TooltipFormatter {
     private static String getCacheKey(String translationKey, String originalName) {
         return translationKey + "|" + originalName;
     }
-    // ==========================================
 
     /**
      * Represents a single parsed word component within an item's tooltip display name,
@@ -86,17 +85,20 @@ public class TooltipFormatter {
     }
 
     /**
-     * Parses the item builder text into a list of structured words, identifying which parts
-     * correspond to interactive vocabulary tokens based on the player's current SRS difficulty level.
+     * Parses item display names into a list of {@link ParsedWord} tokens for interactive rendering and tooltip tooltips.
+     * <p>
+     * Splits formatted display text, expands compound structure tokens, and performs multi-word greedy matching
+     * (up to 4 words) against registered vocabulary dictionary entries to identify interactive token segments.
+     * Results are cached in {@code PARSED_CACHE} to minimize overhead.
      *
-     * @param translationKey The unique translation identifier for the item.
-     * @param originalName   The fallback original name of the item.
-     * @return A list of {@link ParsedWord} elements representing the tokenized item name.
+     * @param translationKey The translation key identifier of the item.
+     * @param originalName   The native unformatted item display name.
+     * @return A list of {@link ParsedWord} objects representing interactive and non-interactive text tokens.
      */
     public static List<ParsedWord> parseBuilderText(String translationKey, String originalName) {
         String cacheKey = getCacheKey(translationKey, originalName);
 
-        // 1. Check if the parsed result is already cached
+        // Checks whether the parsed result is already cached
         if (PARSED_CACHE.containsKey(cacheKey)) {
             return PARSED_CACHE.get(cacheKey);
         }
@@ -116,8 +118,8 @@ public class TooltipFormatter {
         List<String> structure = ItemStructureLoader.getStructures().get(translationKey);
         String[] words = fullText.split(" ");
 
-        // 1. Expande a estrutura para garantir que tokens compostos sejam quebrados em suas partes reais
-        List<String> expandedStructure = new java.util.ArrayList<>();
+        // Expands structure tokens to ensure compound words are broken down into active component keys
+        List<String> expandedStructure = new ArrayList<>();
         if (structure != null) {
             for (String token : structure) {
                 CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
@@ -133,49 +135,86 @@ public class TooltipFormatter {
             }
         }
 
-        for (String word : words) {
-            ParsedWord pw = new ParsedWord();
-            pw.text = word;
-            pw.isInteractive = false;
+        int n = words.length;
+        int i = 0;
+        PlayerVocabularyManager vocabManager = PlayerVocabularyManager.getInstance();
 
-            if (!expandedStructure.isEmpty()) {
-                for (String token : expandedStructure) {
-                    if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
+        while (i < n) {
+            boolean matched = false;
 
-                    // Tenta buscar como Palavra Simples primeiro
-                    Word wordObj = DictionaryLoader.getDictionary().get(token);
+            // Attempts greedy matching from largest word block (up to 4 words) down to single words
+            for (int length = Math.min(n - i, 4); length >= 1; length--) {
+                StringBuilder phraseBuilder = new StringBuilder();
+                for (int j = 0; j < length; j++) {
+                    if (j > 0) phraseBuilder.append(" ");
+                    phraseBuilder.append(words[i + j]);
+                }
+                String candidate = phraseBuilder.toString();
 
-                    if (wordObj != null) {
-                        WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
-                        int level = (progress != null) ? progress.getScriptLevel() : 0;
+                if (!expandedStructure.isEmpty()) {
+                    for (String token : expandedStructure) {
+                        if (vocabManager.isParticle(token)) continue;
 
-                        String renderedText = DifficultyResolver.render(wordObj, level);
+                        Word wordObj = DictionaryLoader.getDictionary().get(token);
 
-                        boolean matchRender = (word.equalsIgnoreCase(renderedText));
-                        boolean matchToken = word.equalsIgnoreCase(token);
-                        boolean matchTranslation = wordObj.getLocalTranslations() != null &&
-                                wordObj.getLocalTranslations().stream().anyMatch(word::equalsIgnoreCase);
+                        if (wordObj != null) {
+                            WordProgress progress = vocabManager.getProgress(token);
+                            int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                        if (matchRender || matchToken || matchTranslation) {
-                            pw.isInteractive = true;
-                            pw.token = token;
+                            String renderedText = DifficultyResolver.render(wordObj, level);
 
-                            String prevText = DifficultyResolver.renderPrevious(wordObj, level);
-                            if (prevText == null) {
-                                prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
-                                        ? wordObj.getLocalTranslations().getFirst()
-                                        : token;
+                            boolean matchRender = candidate.equalsIgnoreCase(renderedText);
+                            boolean matchToken = candidate.equalsIgnoreCase(token);
+
+                            boolean matchTranslation = false;
+                            if (wordObj.getLocalTranslations() != null) {
+                                for (String localTrans : wordObj.getLocalTranslations()) {
+                                    if (candidate.equalsIgnoreCase(localTrans)) {
+                                        matchTranslation = true;
+                                        break;
+                                    }
+                                }
                             }
-                            pw.prevText = prevText;
-                            break;
+
+                            if (matchRender || matchToken || matchTranslation) {
+                                String prevText = DifficultyResolver.renderPrevious(wordObj, level);
+                                if (prevText == null) {
+                                    prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
+                                            ? wordObj.getLocalTranslations().getFirst()
+                                            : token;
+                                }
+
+                                // Adds each word in the matched phrase block as an interactive token bound to the key
+                                for (int j = 0; j < length; j++) {
+                                    ParsedWord pw = new ParsedWord();
+                                    pw.text = words[i + j];
+                                    pw.isInteractive = true;
+                                    pw.token = token;
+                                    pw.prevText = prevText;
+                                    result.add(pw);
+                                }
+
+                                i += length; // Advances pointer by the matched phrase length
+                                matched = true;
+                                break;
+                            }
                         }
                     }
                 }
+                if (matched) break;
             }
-            result.add(pw);
+
+            // Handles unmatched words as standard non-interactive tokens
+            if (!matched) {
+                ParsedWord pw = new ParsedWord();
+                pw.text = words[i];
+                pw.isInteractive = false;
+                result.add(pw);
+                i++;
+            }
         }
 
-        // 2. Save the result into the cache before returning
+        // Caches the result list before returning
         PARSED_CACHE.put(cacheKey, result);
         return result;
     }
@@ -191,7 +230,7 @@ public class TooltipFormatter {
     public static Component formatItemName(String translationKey, String originalName) {
         String cacheKey = getCacheKey(translationKey, originalName);
 
-        // 1. Check if the visual component is already built and cached
+        // Check if the visual component is already built and cached
         if (COMPONENT_CACHE.containsKey(cacheKey)) {
             return COMPONENT_CACHE.get(cacheKey);
         }
@@ -213,7 +252,7 @@ public class TooltipFormatter {
             }
         }
 
-        // 2. Save the visual component into the cache
+        // Save the visual component into the cache
         COMPONENT_CACHE.put(cacheKey, finalName);
         return finalName;
     }

@@ -15,6 +15,10 @@ import net.fabricmc.api.ClientModInitializer;
  */
 public class MinnaNoCraftClient implements ClientModInitializer {
 
+    /**
+     * Initializes client-side subsystems, registers event listeners,
+     * loads saved vocabulary progress, and configures lifecycle handlers.
+     */
     @Override
     public void onInitializeClient() {
 

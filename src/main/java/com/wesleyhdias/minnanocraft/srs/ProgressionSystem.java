@@ -11,30 +11,31 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The core brain of the mod's Spaced Repetition System (SRS).
- * Controls exposure gain, state transitions (Waiting -> Active -> Mastered),
- * and real-time forgetting/decay mechanics based on player interactions.
+ * Core engine managing the mod's Spaced Repetition System (SRS).
+ * <p>
+ * Responsible for handling exposure score updates, state transitions
+ * ({@code WAITING} &rarr; {@code ACTIVE} &rarr; {@code MASTERED}), real-time
+ * inactivity decay, and queue management for active vocabulary learning.
  */
 public class ProgressionSystem {
 
     private static ProgressionSystem instance;
 
-    // =========================================================
-    // QUEUE SETTINGS & BALANCING
-    // =========================================================
-
-    /**
-     * Exposure points required to reach the MASTERED state.
-     */
+    /** Total exposure points required for a word to achieve the MASTERED state. */
     private final double masteryExposure;
 
     /**
-     * Default constructor.
+     * Private constructor enforcing the singleton pattern and initializing config values.
      */
     private ProgressionSystem() {
         this.masteryExposure = ModConfig.getConfig().getMasteryExposure();
     }
 
+    /**
+     * Retrieves the global singleton instance of the progression system.
+     *
+     * @return The active {@link ProgressionSystem} instance.
+     */
     public static ProgressionSystem getInstance() {
         if (instance == null) {
             instance = new ProgressionSystem();
@@ -42,28 +43,28 @@ public class ProgressionSystem {
         return instance;
     }
 
+    /**
+     * Replaces the singleton instance with a custom or mocked instance for unit testing.
+     *
+     * @param mockInstance The instance to inject for testing purposes.
+     */
     public static void setInstanceForTesting(ProgressionSystem mockInstance) {
         instance = mockInstance;
     }
 
-
-    // =========================================================
-    // PLAYER EVENTS
-    // =========================================================
-
     /**
-     * Applies a learning event to a specific word's progress, enforcing cooldowns
-     * and triggering cache invalidation if the script level changes.
+     * Applies an interaction event to a word's progress data, enforcing cooldowns,
+     * updating exposure or penalties, and triggering cache invalidation on level changes.
      *
-     * @param progress The word progress data object to update.
-     * @param expEvents    The type of event triggered by the player.
+     * @param progress  The {@link WordProgress} instance to update.
+     * @param expEvents The type of exposure event triggered by player action.
      */
     public void applyEvent(WordProgress progress, ExpEvents expEvents) {
         long cooldownMs = 5000;
         long now = System.currentTimeMillis();
         long timeSinceLastSeen = now - progress.getLastSeen();
 
-        // Enforce a cooldown between repeated events for the same word
+        // Enforces a brief cooldown between repeated exposure events for the same word
         if (timeSinceLastSeen < cooldownMs) {
             return;
         }
@@ -79,11 +80,12 @@ public class ProgressionSystem {
                 progress.incrementLookupCount();
 
                 if (progress.getState() == LearningState.MASTERED) {
+                    // Demotes mastered words back to active state when manually looked up
                     progress.setState(LearningState.ACTIVE);
                     double dropAmount = progress.getExposure() - (this.masteryExposure - 20.0);
                     progress.updateExposure(-Math.max(0, dropAmount));
                 } else {
-                    // Set the penalty value based on which lookup event was triggered
+                    // Applies lookup penalties to active learning words
                     double penalty = (expEvents == ExpEvents.HOVER_LOOKUP) ?
                             ModConfig.getConfig().getEventHoverLookup() : ModConfig.getConfig().getEventLookup();
 
@@ -94,17 +96,17 @@ public class ProgressionSystem {
         }
 
         int newLevel = progress.getScriptLevel();
-        // If the script level changed, flag the translation cache for clearance
+        // Flags translation caches for clearance if script level changes affect visual rendering
         if (oldLevel != newLevel) {
             TranslationCacheManager.pendingClear = true;
         }
     }
 
     /**
-     * Adds exposure points to a word, applying the relearn multiplier if recovering lost XP.
+     * Adds exposure points to a word, applying a relearn bonus multiplier if recovering lost score.
      *
-     * @param progress   The word progress to update.
-     * @param baseAmount The base amount of exposure to add.
+     * @param progress   The target {@link WordProgress} to increase.
+     * @param baseAmount The base exposure score to add.
      */
     private void addExposure(WordProgress progress, double baseAmount) {
         double multiplier = (progress.getExposure() < progress.getPeakExposure()) ?
@@ -114,39 +116,39 @@ public class ProgressionSystem {
         progress.incrementSeenCount();
     }
 
-    // =========================================================
-    // QUEUE & FORGETTING MANAGER (Auto-Save Loop)
-    // =========================================================
-
     /**
-     * Processes real-time decay, demotes inactive words, promotes waiting words,
-     * and handles mastery thresholds. This should be called periodically (during the auto-save tick).
+     * Periodic maintenance task that calculates inactivity decay, demotes forgotten words,
+     * promotes mastered words, and fills empty slots in the active queue with waiting words.
      *
-     * @param vocabulary The full vocabulary map of the player.
+     * @param vocabulary Map containing all tracked vocabulary progress indexed by token keys.
      */
     public void updateStates(Map<String, WordProgress> vocabulary) {
         long now = System.currentTimeMillis();
         long inactivityTimeThreshold = ModConfig.getConfig().getInactivityTimeThreshold();
 
-        // 1. APPLY DECAY AND DEMOTIONS TO ACTIVE WORDS
+        int activeCount = 0;
+
+        // APPLY DECAY AND DEMOTIONS TO ACTIVE WORDS
         for (WordProgress progress : vocabulary.values()) {
             if (progress.getState() != LearningState.ACTIVE) continue;
 
             long lastSeen = progress.getLastSeen();
             long timeInactive = now - lastSeen;
 
-            // If XP reached mastery threshold, master it and free up an ACTIVE slot
+            // If exposure reaches or exceeds the threshold, mark as MASTERED
             if (progress.getExposure() >= this.masteryExposure) {
                 progress.setState(LearningState.MASTERED);
                 continue;
             }
 
-            // If the player hasn't seen the word for the demotion timeout, send it back to WAITING
+            // Demotes words to WAITING if inactive past the demotion timeout
             if (timeInactive > ModConfig.getConfig().getDemotionTimeThreshold()) {
                 progress.setState(LearningState.WAITING);
+                continue;
             }
-            // Otherwise, calculate if it lost XP due to inactivity (past the grace period)
-            else if (timeInactive > inactivityTimeThreshold) {
+
+            // Calculates exposure decay for inactive words past the grace period
+            if (timeInactive > inactivityTimeThreshold) {
                 double cyclesMissed = Math.floor((double) timeInactive / inactivityTimeThreshold);
                 double totalDecay = cyclesMissed * ModConfig.getConfig().getExpLossPerInactivityCycle();
                 double decayFloor = progress.getPeakExposure() * ModConfig.getConfig().getMaxExpLossPercentage();
@@ -155,20 +157,19 @@ public class ProgressionSystem {
 
                 if (newExposure < progress.getExposure()) {
                     progress.updateExposure(newExposure - progress.getExposure());
-                    progress.setLastSeen(now); // Resets the decay clock
+                    progress.setLastSeen(now); // Resets the decay clock after applying decay
                 }
             }
+
+            // Word remained ACTIVE throughout all checks
+            activeCount++;
         }
 
-        // 2. FILL EMPTY SLOTS IN THE ACTIVE QUEUE
-        long activeCount = vocabulary.values().stream()
-                .filter(p -> p.getState() == LearningState.ACTIVE)
-                .count();
-
-        int freeSlots = ModConfig.getConfig().getMaxActiveWords() - (int) activeCount;
+        // FILL EMPTY SLOTS IN THE ACTIVE QUEUE
+        int freeSlots = ModConfig.getConfig().getMaxActiveWords() - activeCount;
 
         if (freeSlots > 0) {
-            // Gets the most seen WAITING words and promotes them to ACTIVE
+            // Promotes the most frequently seen WAITING words to ACTIVE
             List<WordProgress> waitingWords = vocabulary.values().stream()
                     .filter(p -> p.getState() == LearningState.WAITING)
                     .sorted(Comparator.comparingInt(WordProgress::getSeenCount).reversed())
