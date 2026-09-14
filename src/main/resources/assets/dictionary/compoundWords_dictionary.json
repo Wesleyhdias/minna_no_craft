@@ -276,7 +276,8 @@
   "glowstone": {
     "local_translations": {
       "pt_br": [
-        "Pedra Luminosa"
+        "Pedra Luminosa",
+        "Pedra-Luminosa"
       ],
       "en_us": [
         "Glowstone"
@@ -584,7 +585,7 @@
       ]
     },
     "components": [
-      "iro",
+      "color",
       "aseta"
     ]
   },

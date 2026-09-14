@@ -20,19 +20,19 @@ import java.util.Map;
  */
 public class KanaLoader {
 
-    private static Map<String, String> hiraganaMap;
-    private static Map<String, String> katakanaMap;
+    private static Map<String, Kana> romajiMap;
+    private static Map<String, String> kanaToRomajiMap;
 
     /**
      * Gets the unmodifiable Hiragana map, loading it from disk if not yet cached.
      *
      * @return The cached map of kana characters to their romaji representations.
      */
-    public static Map<String, String> getHiraganaMap() {
-        if (hiraganaMap == null) {
+    public static Map<String, Kana> getRomajiMap() {
+        if (romajiMap == null) {
             load();
         }
-        return hiraganaMap;
+        return romajiMap;
     }
 
     /**
@@ -40,42 +40,41 @@ public class KanaLoader {
      *
      * @return The cached map of kana characters to their romaji representations.
      */
-    public static Map<String, String> getKatakanaMap() {
-        if (katakanaMap == null) {
+    public static Map<String, String> getKanaToRomajiMap() {
+        if (kanaToRomajiMap == null) {
             load();
         }
-        return katakanaMap;
+        return kanaToRomajiMap;
     }
 
     /**
-     * Loads both Kana files from resources using UTF-8 encoding.
+     * Loads Kana file from resources using UTF-8 encoding.
      */
     private static void load() {
-        Map<String, String> tempHiragana = new LinkedHashMap<>();
-        Map<String, String> tempKatakana = new LinkedHashMap<>();
+        Map<String, Kana> tempRomajiMap = new LinkedHashMap<>();
+        Map<String, String> tempKanaToRomajiMap = new LinkedHashMap<>();
 
-        loadFromFile("assets/kana/hiragana.json", tempHiragana);
-        loadFromFile("assets/kana/katakana.json", tempKatakana);
+        loadFromFile(tempRomajiMap, tempKanaToRomajiMap);
 
-        hiraganaMap = Collections.unmodifiableMap(tempHiragana);
-        katakanaMap = Collections.unmodifiableMap(tempKatakana);
+        romajiMap = Collections.unmodifiableMap(tempRomajiMap);
+        kanaToRomajiMap = Collections.unmodifiableMap(tempKanaToRomajiMap);
 
-        MinnaNoCraft.LOGGER.info("Loaded {} Hiragana and {} Katakana entries!", hiraganaMap.size(), katakanaMap.size());
+        MinnaNoCraft.LOGGER.info("Loaded {} kana entries!", romajiMap.size());
     }
 
     /**
      * Helper method to load a specific JSON kana file into a target map.
      *
-     * @param resourcePath The path to the json file inside resources.
-     * @param targetMap    The map to populate with entries.
+     * @param targetKanaToRomajiMap The map to get romaji by kana
+     * @param targetRomajiMap   The map to get kana by romaji.
      */
-    private static void loadFromFile(String resourcePath, Map<String, String> targetMap) {
+    private static void loadFromFile(Map<String, Kana> targetRomajiMap, Map<String, String> targetKanaToRomajiMap) {
         try (InputStream is = KanaLoader.class
                 .getClassLoader()
-                .getResourceAsStream(resourcePath)) {
+                .getResourceAsStream("assets/kana/kana.json")) {
 
             if (is == null) {
-                MinnaNoCraft.LOGGER.error("Kana database file not found at: {}", resourcePath);
+                MinnaNoCraft.LOGGER.error("Kana database file not found at: {}", "assets/kana/kana.json");
                 return;
             }
 
@@ -87,14 +86,17 @@ public class KanaLoader {
 
             if (entries != null) {
                 for (Kana entry : entries) {
-                    if (entry.kana() != null && entry.romaji() != null) {
-                        targetMap.put(entry.kana(), entry.romaji());
+                    if (entry.hiragana() != null && entry.katakana() != null && entry.romaji() != null) {
+                        targetRomajiMap.put(entry.romaji(), entry);
+
+                        targetKanaToRomajiMap.put(entry.hiragana(), entry.romaji());
+                        targetKanaToRomajiMap.put(entry.katakana(), entry.romaji());
                     }
                 }
             }
 
         } catch (Exception e) {
-            MinnaNoCraft.LOGGER.error("Error encountered while loading Kana file: {}", resourcePath, e);
+            MinnaNoCraft.LOGGER.error("Error encountered while loading Kana file: {}", "assets/kana/kana.json", e);
         }
     }
 }

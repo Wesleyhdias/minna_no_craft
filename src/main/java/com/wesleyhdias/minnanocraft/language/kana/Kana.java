@@ -1,3 +1,3 @@
 package com.wesleyhdias.minnanocraft.language.kana;
 
-public record Kana(String kana, String romaji, String type) { }
+public record Kana(String hiragana, String katakana, String romaji) { }

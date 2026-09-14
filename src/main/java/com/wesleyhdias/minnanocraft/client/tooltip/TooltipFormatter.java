@@ -85,7 +85,7 @@ public class TooltipFormatter {
     }
 
     /**
-     * Parses item display names into a list of {@link ParsedWord} tokens for interactive rendering and tooltip tooltips.
+     * Parses item display names into a list of {@link ParsedWord} tokens for interactive rendering and tooltips.
      * <p>
      * Splits formatted display text, expands compound structure tokens, and performs multi-word greedy matching
      * (up to 4 words) against registered vocabulary dictionary entries to identify interactive token segments.
@@ -119,19 +119,15 @@ public class TooltipFormatter {
         String[] words = fullText.split(" ");
 
         // Expands structure tokens to ensure compound words are broken down into active component keys
-        List<String> expandedStructure = new ArrayList<>();
+        List<String> availableTokens = new ArrayList<>();
         if (structure != null) {
             for (String token : structure) {
                 CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
                 if (compound != null) {
-                    expandedStructure.addAll(compound.components());
-                    String sepToken = compound.getSafeSeparator();
-                    if (sepToken != null && !sepToken.isEmpty() && !sepToken.equals(" ")) {
-                        expandedStructure.add(sepToken);
-                    }
-                } else {
-                    expandedStructure.add(token);
+                    // Add the components first
+                    availableTokens.addAll(compound.components());
                 }
+                availableTokens.add(token);
             }
         }
 
@@ -142,8 +138,8 @@ public class TooltipFormatter {
         while (i < n) {
             boolean matched = false;
 
-            // Attempts greedy matching from largest word block (up to 4 words) down to single words
-            for (int length = Math.min(n - i, 4); length >= 1; length--) {
+            // Try find from the smallest to the biggest block (4 word)
+            for (int length = 1; length <= Math.min(n - i, 4); length++) {
                 StringBuilder phraseBuilder = new StringBuilder();
                 for (int j = 0; j < length; j++) {
                     if (j > 0) phraseBuilder.append(" ");
@@ -151,22 +147,28 @@ public class TooltipFormatter {
                 }
                 String candidate = phraseBuilder.toString();
 
-                if (!expandedStructure.isEmpty()) {
-                    for (String token : expandedStructure) {
+                if (!availableTokens.isEmpty()) {
+                    for (String token : availableTokens) {
                         if (vocabManager.isParticle(token)) continue;
 
+                        CompoundWord compoundObj = CompoundDictionaryLoader.getDictionary().get(token);
                         Word wordObj = DictionaryLoader.getDictionary().get(token);
 
-                        if (wordObj != null) {
+                        boolean matchRender = false;
+                        boolean matchToken = candidate.equalsIgnoreCase(token);
+                        boolean matchTranslation = false;
+                        String prevText = token; // Fallback padrão
+
+                        if (compoundObj != null) {
+                            String renderedCompound = DifficultyResolver.renderCompound(compoundObj);
+                            matchRender = candidate.equalsIgnoreCase(renderedCompound.trim());
+
+                        } else if (wordObj != null) {
                             WordProgress progress = vocabManager.getProgress(token);
                             int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                            String renderedText = DifficultyResolver.render(wordObj, level);
+                            matchRender = candidate.equalsIgnoreCase(DifficultyResolver.render(wordObj, level));
 
-                            boolean matchRender = candidate.equalsIgnoreCase(renderedText);
-                            boolean matchToken = candidate.equalsIgnoreCase(token);
-
-                            boolean matchTranslation = false;
                             if (wordObj.getLocalTranslations() != null) {
                                 for (String localTrans : wordObj.getLocalTranslations()) {
                                     if (candidate.equalsIgnoreCase(localTrans)) {
@@ -176,32 +178,35 @@ public class TooltipFormatter {
                                 }
                             }
 
-                            if (matchRender || matchToken || matchTranslation) {
-                                String prevText = DifficultyResolver.renderPrevious(wordObj, level);
-                                if (prevText == null) {
-                                    prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
-                                            ? wordObj.getLocalTranslations().getFirst()
-                                            : token;
-                                }
-
-                                // Adds each word in the matched phrase block as an interactive token bound to the key
-                                for (int j = 0; j < length; j++) {
-                                    ParsedWord pw = new ParsedWord();
-                                    pw.text = words[i + j];
-                                    pw.isInteractive = true;
-                                    pw.token = token;
-                                    pw.prevText = prevText;
-                                    result.add(pw);
-                                }
-
-                                i += length; // Advances pointer by the matched phrase length
-                                matched = true;
-                                break;
+                            prevText = DifficultyResolver.renderPrevious(wordObj, level);
+                            if (prevText == null) {
+                                prevText = (wordObj.getLocalTranslations() != null && !wordObj.getLocalTranslations().isEmpty())
+                                        ? wordObj.getLocalTranslations().getFirst()
+                                        : token;
                             }
+                        }
+
+                        if (matchRender || matchToken || matchTranslation) {
+                            // Adds each word in the matched phrase block as an interactive token bound to the key
+                            for (int j = 0; j < length; j++) {
+                                ParsedWord pw = new ParsedWord();
+                                pw.text = words[i + j];
+                                pw.isInteractive = true;
+                                pw.token = token;
+                                pw.prevText = prevText;
+                                result.add(pw);
+                            }
+
+                            // Remove o token da lista para "marcar como mexido" e evitar duplicação
+                            availableTokens.remove(token);
+
+                            i += length; // Avança o ponteiro pelo tamanho da frase capturada
+                            matched = true;
+                            break; // Sai do for do availableTokens
                         }
                     }
                 }
-                if (matched) break;
+                if (matched) break; // Sai do for do tamanho da frase
             }
 
             // Handles unmatched words as standard non-interactive tokens

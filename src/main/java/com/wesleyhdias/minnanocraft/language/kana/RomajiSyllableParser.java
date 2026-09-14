@@ -70,12 +70,53 @@ public class RomajiSyllableParser {
         return result;
     }
 
-    private static String findRomaji(String kana) {
-        if (KanaLoader.getHiraganaMap().containsKey(kana)) {
-            return KanaLoader.getHiraganaMap().get(kana);
+    public static String toHiragana(String romajiText) {
+        if (romajiText == null || romajiText.isEmpty()) return "";
+
+        StringBuilder result = new StringBuilder();
+        String lowerRomaji = romajiText.toLowerCase();
+
+        for (int i = 0; i < lowerRomaji.length(); ) {
+            boolean matched = false;
+
+            // Use a Greedy Match, starting with 3 characters
+            for (int len = Math.min(3, lowerRomaji.length() - i); len > 0; len--) {
+                String chunk = lowerRomaji.substring(i, i + len);
+                String hiragana = findHiragana(chunk);
+
+                if (hiragana != null) {
+                    result.append(hiragana);
+                    i += len;
+                    matched = true;
+                    break;
+                }
+            }
+
+            // Resolve the different kana
+            if (!matched) {
+                char currentChar = lowerRomaji.charAt(i);
+
+                // Apply the Sokuon (small tsu): For any double consonant diferente than 'n' (ex: 'tt' em 'chotto')
+                if (i + 1 < lowerRomaji.length() && currentChar == lowerRomaji.charAt(i + 1) && isConsonant(currentChar)) {
+                    result.append("っ");
+                } else {
+                    // Fallback: for spaces or number, just ignore
+                    result.append(romajiText.charAt(i));
+                }
+                i++; // jumps the character
+            }
         }
-        if (KanaLoader.getKatakanaMap().containsKey(kana)) {
-            return KanaLoader.getKatakanaMap().get(kana);
+        return result.toString();
+    }
+
+    private static boolean isConsonant(char c) {
+        return c >= 'a' && c <= 'z' && c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' && c != 'n';
+    }
+
+    private static String findRomaji(String kana) {
+
+        if (KanaLoader.getKanaToRomajiMap().containsKey(kana)) {
+            return KanaLoader.getKanaToRomajiMap().get(kana);
         }
 
         // Handle Katakana long vowel mark
@@ -84,9 +125,18 @@ public class RomajiSyllableParser {
         return null;
     }
 
+    private static String findHiragana(String romaji) {
+
+        Kana kanaObj = KanaLoader.getRomajiMap().get(romaji);
+        if (kanaObj != null) {
+            return kanaObj.hiragana();
+        }
+        return null;
+    }
+
     private static boolean isKatakana(String text) {
         if (text.isEmpty()) return false;
         char c = text.charAt(0);
-        return c >= '\u30A0' && c <= '\u30FF'; // Unicode range for Katakana
+        return c >= '\u30A0' && c <= '\u30FF';
     }
 }

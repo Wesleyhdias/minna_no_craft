@@ -1,8 +1,8 @@
 package com.wesleyhdias.minnanocraft.srs;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
@@ -29,7 +29,7 @@ public class PlayerVocabularyManager {
     /**
      * Private constructor enforcing singleton pattern and initializing core dependencies.
      */
-    private PlayerVocabularyManager() {
+    protected PlayerVocabularyManager() {
         this.repository = PlayerVocabularyRepository.getInstance();
         this.progressionSystem = ProgressionSystem.getInstance();
     }
@@ -116,7 +116,6 @@ public class PlayerVocabularyManager {
             }
             return;
         }
-
         // Standard token or single morpheme
         applyExpToToken(token, expEvents);
     }
@@ -145,7 +144,7 @@ public class PlayerVocabularyManager {
      * @return {@code true} if the token represents a particle, {@code false} if it is a content word.
      */
     public boolean isParticle(String token) {
-        return !DictionaryLoader.getDictionary().containsKey(token);
+        return MorphemeLoader.getMorphemes().containsKey(token);
     }
 
     /**

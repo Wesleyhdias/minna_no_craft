@@ -16,7 +16,6 @@
     "ClientLanguageMixin",
     "GuiGraphicsExtractorMixin",
     "GuiMixin",
-    "MouseHandlerMixin",
     "ScreenMixin",
     "acessor.ClientLanguageAccessor"
   ]

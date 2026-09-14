@@ -1,6 +1,7 @@
 package com.wesleyhdias.minnanocraft.srs;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
@@ -48,7 +49,7 @@ public class TokenUpgradeSelector {
         for (String token : expandedStructure) {
             if (manager.isParticle(token)) {
                 particleTokens.add(token);
-            } else {
+            } else if (DictionaryLoader.getDictionary().containsKey(token)){
                 contentTokens.add(token);
             }
         }

@@ -8,12 +8,11 @@ import java.util.Map;
 
 public record CompoundWord(
         Map<String, List<String>> local_translations,
-        List<String> components,
-        String separator
+        List<String> components
 ) {
     /**
-     * Retorna a lista de traduções para o idioma solicitado.
-     * Retorna uma lista vazia caso não exista, evitando NullPointerException.
+     * Retrieves the list of translations based on the current language of the Minecraft client.
+     * If the player's language is not available in the JSON dictionary returns null, to avoid NullPointerException.
      */
     public List<String> getLocalTranslations() {
 
@@ -23,13 +22,5 @@ public record CompoundWord(
             return Collections.emptyList();
         }
         return local_translations.get(currentLang);
-    }
-
-    /**
-     * Garante que o separador nunca seja nulo.
-     * Se não for definido no JSON, assume string vazia (sem espaço).
-     */
-    public String getSafeSeparator() {
-        return separator != null ? separator : "";
     }
 }

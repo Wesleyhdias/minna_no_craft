@@ -87,7 +87,7 @@ public abstract class AbstractContainerScreenMixin {
         }
 
         // Handles clicks within active dictionary lookup overlay
-        if (DictionaryLookupOverlayRenderer.mouseClicked()) {
+        if (DictionaryLookupOverlayRenderer.mouseClicked(event.x(), event.y(), event.button())) {
             cir.setReturnValue(true);
             return;
         }
@@ -125,14 +125,14 @@ public abstract class AbstractContainerScreenMixin {
     /**
      * Prevents mouse scroll wheel input from scrolling background container inventories when a pinned tooltip is open.
      *
-     * @param mouseX  The current X coordinate of the mouse.
-     * @param mouseY  The current Y coordinate of the mouse.
+     * @param x  The current X coordinate of the mouse.
+     * @param y  The current Y coordinate of the mouse.
      * @param scrollX The horizontal scroll delta.
      * @param scrollY The vertical scroll delta.
      * @param cir     The {@link CallbackInfoReturnable} provided by Mixin to handle cancellation.
      */
     @Inject(method = "mouseScrolled", at = @At("HEAD"), cancellable = true)
-    private void blockBackgroundScroll(double mouseX, double mouseY, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
+    private void blockBackgroundScroll(double x, double y, double scrollX, double scrollY, CallbackInfoReturnable<Boolean> cir) {
         if (ModConfig.getConfig().isEnabled() && PinnedTooltipService.isPinned()) {
             cir.setReturnValue(true);
         }

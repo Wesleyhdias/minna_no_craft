@@ -1,6 +1,7 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
@@ -31,7 +32,7 @@ public class TranslationModeResolver {
             if (compound != null) {
                 // If it's compound, checks the progress if each component
                 for (String comp : compound.components()) {
-                    if (PlayerVocabularyManager.getInstance().isParticle(comp)) continue;
+                    if (!DictionaryLoader.getDictionary().containsKey(comp)) continue;
 
                     WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(comp);
                     if (progress == null || progress.getScriptLevel() < 2) {
@@ -40,7 +41,7 @@ public class TranslationModeResolver {
                 }
             } else {
 
-                if (PlayerVocabularyManager.getInstance().isParticle(token)) continue;
+                if (!DictionaryLoader.getDictionary().containsKey(token)) continue;
 
                 WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
                 if (progress == null || progress.getScriptLevel() < 2) {
@@ -48,7 +49,6 @@ public class TranslationModeResolver {
                 }
             }
         }
-
         return true;
     }
 }

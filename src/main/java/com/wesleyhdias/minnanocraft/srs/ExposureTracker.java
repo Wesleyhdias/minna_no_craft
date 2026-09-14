@@ -36,12 +36,21 @@ public class ExposureTracker {
     /** Inactivity timeout threshold in milliseconds to detect target loss. */
     private static final long TIMEOUT_MS = 150;
 
+    private boolean delayAwardUntilUnfocus = false;
+    private boolean pendingAward = false;
+
     /**
      * Constructs a new {@link ExposureTracker}.
      *
      * @param requiredFocusTimeMs The continuous focus duration in milliseconds needed to trigger exposure.
      * @param expEventsType       The type of event to register when focus duration is met.
      */
+    public ExposureTracker(long requiredFocusTimeMs, ExpEvents expEventsType, boolean delayAwardUntilUnfocus) {
+        this.requiredFocusTimeMs = requiredFocusTimeMs;
+        this.expEventsType = expEventsType;
+        this.delayAwardUntilUnfocus = delayAwardUntilUnfocus;
+    }
+
     public ExposureTracker(long requiredFocusTimeMs, ExpEvents expEventsType) {
         this.requiredFocusTimeMs = requiredFocusTimeMs;
         this.expEventsType = expEventsType;
@@ -68,41 +77,62 @@ public class ExposureTracker {
         // 1. TIMEOUT VERIFICATION (Mouse left the item/tooltip area)
         // If more than 150ms passed since the last heartbeat, the target was unhovered.
         if (now - lastUpdateTime > TIMEOUT_MS) {
-            if (TranslationCacheManager.pendingClear) {
-                TranslationCacheManager.clearAll();
-            }
-            reset();
+            handleTargetLost();
         }
         lastUpdateTime = now; // Refresh the heartbeat timestamp
 
         if (targetKey == null || targetKey.isBlank()) {
-            reset();
+            handleTargetLost();
             return;
         }
 
         // 2. TARGET TRANSITION (Switched from one item/target to another)
         if (!targetKey.equals(currentKey)) {
-            if (TranslationCacheManager.pendingClear) {
-                TranslationCacheManager.clearAll();
-            }
+            handleTargetLost();
             currentKey = targetKey;
             startTime = now;
             expAwarded = false;
+            pendingAward = false;
         }
 
         // 3. FOCUS DURATION & REQUIREMENT CHECK
         if (!expAwarded && (now - startTime) >= requiredFocusTimeMs && extraCondition) {
-            List<String> structure = ItemStructureLoader.getStructures().get(targetKey);
-
-            if (structure != null && !structure.isEmpty()) {
-                String targetToken = TokenUpgradeSelector.getNextTokenToUpgrade(structure, PlayerVocabularyManager.getInstance());
-                if (targetToken != null) {
-                    PlayerVocabularyManager.getInstance().registerEvent(targetToken, expEventsType);
-                }
+            if (delayAwardUntilUnfocus) {
+                pendingAward = true; // Raise flag, but don't give the EXP yet
+            } else {
+                awardExp(currentKey); // Give the exp immediately
+                expAwarded = true;
             }
+        }
+    }
 
+    /**
+     * Helper method to centralize the EXP rewarding logic.
+     */
+    private void awardExp(String key) {
+        List<String> structure = ItemStructureLoader.getStructures().get(key);
+        if (structure != null && !structure.isEmpty()) {
+            String targetToken = TokenUpgradeSelector.getNextTokenToUpgrade(structure, PlayerVocabularyManager.getInstance());
+            if (targetToken != null) {
+                PlayerVocabularyManager.getInstance().registerEvent(targetToken, expEventsType);
+            }
+        }
+    }
+
+    /**
+     * Handles resolving any pending EXP and resetting state when focus is lost.
+     */
+    private void handleTargetLost() {
+        if (pendingAward) {
+            awardExp(currentKey); // Give the EXP delayed
+            pendingAward = false; // lower the flag after give the EXP
             expAwarded = true;
         }
+
+        if (TranslationCacheManager.pendingClear) {
+            TranslationCacheManager.clearAll();
+        }
+        reset();
     }
 
     /**
@@ -129,10 +159,7 @@ public class ExposureTracker {
     public void tick() {
         // If an item is tracked, but more than the timeout threshold has passed since the last update
         if (!currentKey.isEmpty() && (System.currentTimeMillis() - lastUpdateTime > TIMEOUT_MS)) {
-            if (TranslationCacheManager.pendingClear) {
-                TranslationCacheManager.clearAll();
-            }
-            reset(); // Target lost! Proactively clear state and invalidate caches if needed.
+            handleTargetLost();
         }
     }
 }

@@ -65,7 +65,7 @@ public class ProgressionSystem {
         long timeSinceLastSeen = now - progress.getLastSeen();
 
         // Enforces a brief cooldown between repeated exposure events for the same word
-        if (timeSinceLastSeen < cooldownMs) {
+        if (timeSinceLastSeen < cooldownMs && expEvents != ExpEvents.LOOKUP) {
             return;
         }
 

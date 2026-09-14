@@ -16,7 +16,7 @@ public class TooltipHoverTracker {
      * The exposure tracker instance configured for hovering interactions.
      * Handles timing, threshold validation, and event dispatching.
      */
-    private static final ExposureTracker hoverTracker = new ExposureTracker(1000, ExpEvents.HOVER);
+    private static final ExposureTracker hoverTracker = new ExposureTracker(2000, ExpEvents.HOVER, true);
 
     /**
      * Called on every render frame when an item tooltip is being drawn on the screen.

@@ -3475,7 +3475,8 @@
     "translations": {
       "pt_br": [
         "Andarilho",
-        "Lavagante"
+        "Lavagante",
+        "Marchador"
       ],
       "en_us": [
         "Strider"
@@ -10771,6 +10772,35 @@
     "kanji": "暖かい",
     "hiragana": "あたたかい",
     "romaji": "atatakai"
+  },
+  "entry": {
+    "translations": {
+      "pt_br": [
+        "Dentro",
+        "Inserir"
+      ],
+      "en_us": [
+        "Entrance",
+        "Enter",
+        "Entry"
+      ]
+    },
+    "kanji": "入",
+    "hiragana": "い",
+    "romaji": "i"
+  },
+  "color": {
+    "translations": {
+      "pt_br": [
+        "Cor"
+      ],
+      "en_us": [
+        "Color"
+      ]
+    },
+    "kanji": "色",
+    "hiragana": "いろ",
+    "romaji": "iro"
   },
   "woodland": {
     "translations": {

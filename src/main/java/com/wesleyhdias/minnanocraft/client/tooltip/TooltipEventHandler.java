@@ -4,7 +4,9 @@ import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader
 import com.wesleyhdias.minnanocraft.language.builder.CurrentLangItemNameBuilder;
 import com.wesleyhdias.minnanocraft.language.resolver.TranslationModeResolver;
 import com.wesleyhdias.minnanocraft.language.builder.JapaneseItemNameBuilder;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.TokenUpgradeSelector;
@@ -99,16 +101,10 @@ public class TooltipEventHandler {
                         if (compound != null) {
 
                             for (String comp : compound.components()) {
-                                if (!expandedTokens.contains(comp)) {
+                                if (!expandedTokens.contains(comp) &&
+                                        (DictionaryLoader.getDictionary().containsKey(comp) ||
+                                                MorphemeLoader.getMorphemes().containsKey(comp))) {
                                     expandedTokens.add(comp);
-                                }
-                            }
-
-
-                            String sepToken = compound.getSafeSeparator();
-                            if (sepToken != null && !sepToken.isEmpty() && !sepToken.equals(" ")) {
-                                if (!expandedTokens.contains(sepToken)) {
-                                    expandedTokens.add(sepToken);
                                 }
                             }
                         } else {
@@ -119,11 +115,15 @@ public class TooltipEventHandler {
                     }
 
                     for (String token : expandedTokens) {
-                        WordProgress p = PlayerVocabularyManager.getInstance().getProgress(token);
-                        double exp = (p != null) ? p.getExposure() : 0.0;
-                        int level = (p != null) ? p.getScriptLevel() : 0;
+                        if (DictionaryLoader.getDictionary().containsKey(token) ||
+                                MorphemeLoader.getMorphemes().containsKey(token)) {
 
-                        lines.add(Component.literal(String.format("§8- %s: Lvl %d (XP: %.2f)", token, level, exp)));
+                            WordProgress p = PlayerVocabularyManager.getInstance().getProgress(token);
+                            double exp = (p != null) ? p.getExposure() : 0.0;
+                            int level = (p != null) ? p.getScriptLevel() : 0;
+
+                            lines.add(Component.literal(String.format("§8- %s: Lvl %d (XP: %.2f)", token, level, exp)));
+                        }
                     }
                 } else {
                     lines.add(Component.literal("§cNo structure mapped for this item."));

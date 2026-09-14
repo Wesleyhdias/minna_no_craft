@@ -2,10 +2,13 @@ package com.wesleyhdias.minnanocraft.language.builder;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryProvider;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryProvider;
+import com.wesleyhdias.minnanocraft.language.kana.RomajiSyllableParser;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeProvider;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.language.resolver.TokenProvider;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.List;
 
@@ -45,9 +48,29 @@ public class JapaneseItemNameBuilder {
         }
 
         StringBuilder result = new StringBuilder();
+        int lastWordLevel = 0;
 
         for (String token : structure) {
-            result.append(resolve(token)).append(" ");
+            String resolvedValue = resolve(token);
+
+            // If the word is in the providers
+            if (resolvedValue != null) {
+                result.append(resolvedValue).append(" ");
+
+                WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(token);
+
+                lastWordLevel = progress != null ? progress.getScriptLevel() : 0;
+
+                continue;
+            }
+
+            if (lastWordLevel >= 3) {
+                // If previos word is already on hiragana level or above
+                String hiraganaText = RomajiSyllableParser.toHiragana(token);
+                result.append(hiraganaText).append(" ");
+            } else {
+                result.append(token).append(" ");
+            }
         }
 
         String finalResult = result.toString().trim();
@@ -67,10 +90,9 @@ public class JapaneseItemNameBuilder {
             String value = provider.resolve(token);
 
             if (value != null) {
-                return value;
+                return value.trim();
             }
         }
-        // Unknown token: keep it exactly as it came
-        return token;
+        return null;
     }
 }

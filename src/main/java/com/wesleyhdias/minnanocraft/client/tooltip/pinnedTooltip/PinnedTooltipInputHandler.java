@@ -1,7 +1,9 @@
 package com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip;
 
 import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupService;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.client.tooltip.HitboxCalculator;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
@@ -63,18 +65,25 @@ public class PinnedTooltipInputHandler {
             if (clickedHitbox != null) {
                 String token = clickedHitbox.token();
 
-                // Registra o evento SRS (agora com o nosso suporte a desmembrar compostas)
+                // Register the SRS event
                 PlayerVocabularyManager.getInstance().registerEvent(token, ExpEvents.LOOKUP);
 
-                // Tenta buscar como Palavra Simples primeiro
+                // Try find as simple word first
                 Word word = DictionaryLoader.getDictionary().get(token);
 
                 if (word != null) {
-                    // Abre o dicionário para a palavra simples
-                    DictionaryLookupService.open(word);
+
+                    DictionaryLookupService.openWord(word);
+                }
+
+                // Try find as a compose word
+                CompoundWord compWord = CompoundDictionaryLoader.getDictionary().get(token);
+                if (compWord != null) {
+
+                    DictionaryLookupService.openCompWord(compWord);
                 }
             } else {
-                // O usuário clicou fora, desfixa o tooltip
+                // The user clicker outside the tooltip, so unpin it
                 PinnedTooltipService.unpin();
             }
             return true;

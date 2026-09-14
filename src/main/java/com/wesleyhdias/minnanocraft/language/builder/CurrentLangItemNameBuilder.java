@@ -45,6 +45,7 @@ public class CurrentLangItemNameBuilder {
      * @return The modified item name with partially or fully translated words.
      */
     public static String build(String translationKey, String originalText) {
+
         // Returns cached result if available
         if (TranslationCacheManager.BUILDER_CACHE.containsKey(translationKey)) {
             return TranslationCacheManager.BUILDER_CACHE.get(translationKey);

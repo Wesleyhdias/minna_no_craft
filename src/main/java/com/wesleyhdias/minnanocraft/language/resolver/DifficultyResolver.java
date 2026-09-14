@@ -1,6 +1,7 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.kana.RomajiSyllableParser;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
@@ -52,6 +53,8 @@ public class DifficultyResolver {
         boolean hasAnyProgress = false;
         List<String> components = compound.components();
 
+        int lastWordLevel = 0;
+
         for (String compToken : components) {
 
             if(compToken.contains(" ")) {
@@ -61,12 +64,13 @@ public class DifficultyResolver {
 
             Word compWord = DictionaryLoader.getDictionary().get(compToken);
             if (compWord != null) {
-                WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(compToken);
-                int level = (progress != null) ? progress.getScriptLevel() : 0;
 
-                if (level > 0) {
+                WordProgress progress = PlayerVocabularyManager.getInstance().getProgress(compToken);
+                lastWordLevel = (progress != null) ? progress.getScriptLevel() : 0;
+
+                if (lastWordLevel > 0) {
                     hasAnyProgress = true;
-                    builder.append(render(compWord, level));
+                    builder.append(render(compWord, lastWordLevel));
                 } else {
 
                     builder.append(compWord.getLocalTranslations().getFirst());
@@ -83,6 +87,15 @@ public class DifficultyResolver {
 
                 builder.append(render(mw, sepLevel));
                 builder.append(" ");
+            }
+
+            if (lastWordLevel >= 3) {
+                // If the previous word is already on hiragana level or above
+                String hiraganaText = RomajiSyllableParser.toHiragana(compToken);
+                builder.append(hiraganaText).append(" ");
+            } else {
+                // If the word is still on romaji level
+                builder.append(compToken).append(" ");
             }
         }
 
