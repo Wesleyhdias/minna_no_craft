@@ -1,4 +1,4 @@
-package com.wesleyhdias.minnanocraft.client.tooltip.lookup;
+package com.wesleyhdias.minnanocraft.client.lookup;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;

@@ -161,6 +161,7 @@ public class TooltipFormatter {
 
                         if (compoundObj != null) {
                             String renderedCompound = DifficultyResolver.renderCompound(compoundObj);
+                            assert renderedCompound != null;
                             matchRender = candidate.equalsIgnoreCase(renderedCompound.trim());
 
                         } else if (wordObj != null) {
@@ -184,6 +185,7 @@ public class TooltipFormatter {
                                         ? wordObj.getLocalTranslations().getFirst()
                                         : token;
                             }
+
                         }
 
                         if (matchRender || matchToken || matchTranslation) {

@@ -1,5 +1,6 @@
 package com.wesleyhdias.minnanocraft.config.modmenu.progress;
 
+import com.wesleyhdias.minnanocraft.client.syllabary_screen.SyllabaryScreen;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
@@ -92,6 +93,13 @@ public class PlayerProgressScreen extends Screen {
                         .bounds(rightPanelX + 105, levelY, 16, 16)
                         .build()
         );
+
+        // Kana Screen Button
+        this.addRenderableWidget(Button.builder(
+                        Component.literal("あ"),
+                        button -> this.minecraft.setScreen(new SyllabaryScreen(this))) // Abre o popup
+                .bounds(rightPanelX + 140, 35, 30, 20)
+                .build());
     }
 
     /**

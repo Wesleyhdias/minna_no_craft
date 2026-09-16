@@ -57,7 +57,7 @@ public class DictionaryLoader {
             Type type = new TypeToken<Map<String, Word>>() {}.getType();
             dictionary = Collections.unmodifiableMap(gson.fromJson(reader, type));
 
-            MinnaNoCraft.LOGGER.info("Dictionary loaded successfully!");
+            MinnaNoCraft.LOGGER.info("Dictionary loaded successfully! with {} words", dictionary.size());
 
         } catch (Exception e) {
             MinnaNoCraft.LOGGER.error("Error encountered while loading dictionary!", e);

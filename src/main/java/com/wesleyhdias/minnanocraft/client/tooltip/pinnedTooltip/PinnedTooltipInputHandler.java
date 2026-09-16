@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip;
 
-import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
+import com.wesleyhdias.minnanocraft.client.lookup.DictionaryLookupService;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.client.tooltip.HitboxCalculator;

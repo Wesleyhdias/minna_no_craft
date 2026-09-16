@@ -1,12 +1,14 @@
 package com.wesleyhdias.minnanocraft.mixin;
 
-import com.wesleyhdias.minnanocraft.client.tooltip.lookup.DictionaryLookupOverlayRenderer;
 import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipRenderer;
 import com.wesleyhdias.minnanocraft.client.tooltip.pinnedTooltip.PinnedTooltipService;
+import com.wesleyhdias.minnanocraft.client.lookup.DictionaryLookupOverlayRenderer;
+import com.wesleyhdias.minnanocraft.client.syllabary_screen.SyllabaryScreen;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.Minecraft;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -38,6 +40,10 @@ public abstract class ScreenMixin {
     private void renderPinnedTooltipOnTop(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a, CallbackInfo ci) {
         // Skips verification if the mod is disabled in configuration
         if (!ModConfig.getConfig().isEnabled()) {
+            return;
+        }
+
+        if (Minecraft.getInstance().screen instanceof SyllabaryScreen) {
             return;
         }
 

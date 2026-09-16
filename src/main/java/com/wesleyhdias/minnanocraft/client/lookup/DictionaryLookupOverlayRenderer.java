@@ -1,5 +1,6 @@
-package com.wesleyhdias.minnanocraft.client.tooltip.lookup;
+package com.wesleyhdias.minnanocraft.client.lookup;
 
+import com.wesleyhdias.minnanocraft.client.syllabary_screen.SyllabaryScreen;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
@@ -53,6 +54,22 @@ public class DictionaryLookupOverlayRenderer {
         // Header & Divider
         graphics.text(mc.font, Component.literal("MINNA NO CRAFT"), x + 12, y + 10, 0xFFFFAA00, true);
         graphics.fill(x + 10, y + 22, x + width - 10, y + 23, 0xFF333333);
+
+        // Header & Divider
+        graphics.text(mc.font, Component.literal("MINNA NO CRAFT"), x + 12, y + 10, 0xFFFFAA00, true);
+        graphics.fill(x + 10, y + 22, x + width - 10, y + 23, 0xFF333333);
+
+        // --- Kana Screen Button ---
+        int btnWidth = 20;
+        int btnHeight = 20;
+        int btnX = x + width - btnWidth -15; // Canto superior direito
+        int btnY = y + 30;
+
+        graphics.fill(btnX, btnY, btnX + btnWidth, btnY + btnHeight, 0xFF333333);
+        graphics.outline(btnX, btnY, btnWidth, btnHeight, 0xFF555555);
+
+        graphics.text(mc.font, Component.literal("あ"), btnX + 6, btnY + 6, 0xFFFFFFFF, true);
+        // ---------------------------------------
 
         // builds the words list
         List<Word> wordsToRender = new ArrayList<>();
@@ -174,16 +191,31 @@ public class DictionaryLookupOverlayRenderer {
         // Uses only left click
         if (button != 0) return true;
 
+        Minecraft mc = Minecraft.getInstance();
+        int screenWidth = mc.getWindow().getGuiScaledWidth();
+        int screenHeight = mc.getWindow().getGuiScaledHeight();
+
+        int width = 240;
+        int height = 135;
+        int x = (screenWidth - width) / 2;
+        int y = (screenHeight - height) / 2;
+
+        // --- ADICIONE A HITBOX DO BOTÃO AQUI ---
+        int btnWidth = 20;
+        int btnHeight = 20;
+        int btnX = x + width - btnWidth - 15;
+        int btnY = y + 30;
+
+        if (mouseX >= btnX && mouseX <= (btnX + btnWidth) && mouseY >= btnY && mouseY <= (btnY + btnHeight)) {
+            // Como não estamos em uma classe Screen, pegamos a tela atual direto do Minecraft
+            // (que deve ser o inventário onde o player estava quando abriu o dicionário)
+            mc.setScreen(new SyllabaryScreen(mc.screen));
+            return true;
+        }
+        // ---------------------------------------
+
         // Don't check click if there's only one page
         if (currentTotalPages > 1) {
-            Minecraft mc = Minecraft.getInstance();
-            int screenWidth = mc.getWindow().getGuiScaledWidth();
-            int screenHeight = mc.getWindow().getGuiScaledHeight();
-
-            int width = 240;
-            int height = 135;
-            int x = (screenWidth - width) / 2;
-            int y = (screenHeight - height) / 2;
 
             int pageY = y + height - 16;
             String pageText = (currentPageIndex + 1) + " / " + currentTotalPages;

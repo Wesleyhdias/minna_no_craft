@@ -112,7 +112,7 @@ public class DifficultyResolver {
     public static String renderPrevious(Word word, int level) {
         return switch (level) {
             case 4 -> word.hiragana();
-            case 2, 3 -> word.romaji();
+            case 3 -> word.romaji();
             default -> null;
         };
     }
