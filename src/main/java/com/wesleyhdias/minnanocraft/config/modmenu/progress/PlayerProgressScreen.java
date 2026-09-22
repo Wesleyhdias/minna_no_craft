@@ -441,7 +441,7 @@ public class PlayerProgressScreen extends Screen {
                     scaledX = (int) (rightPanelX / textScale);
                     scaledY = (int) (currentY / textScale);
 
-                    String fullExample = String.valueOf(Component.translatable(TokenTextHelper.getExampleKey(token)));
+                    String fullExample = Component.translatable(TokenTextHelper.getExampleKey(token)).getString();
                     String jpText = fullExample;
                     String reading = "";
                     String translation = "";

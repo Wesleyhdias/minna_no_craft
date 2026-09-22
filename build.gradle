@@ -34,7 +34,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	implementation "maven.modrinth:mOgUt4GM:3rsoV1bk"
+	implementation "maven.modrinth:mOgUt4GM:9PxiZuDD"
 
 	// Dependências para testes unitários com JUnit 5
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'

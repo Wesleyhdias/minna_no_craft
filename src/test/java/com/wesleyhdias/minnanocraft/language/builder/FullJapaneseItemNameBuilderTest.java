@@ -16,12 +16,10 @@ import com.wesleyhdias.minnanocraft.config.ModConfig;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.FileReader;
@@ -93,6 +91,11 @@ public class FullJapaneseItemNameBuilderTest {
 
     @BeforeAll
     public static void setup() throws Exception {
+
+        File arquivoGabarito = new File("run/lang_dump/ja_jp_filtered.json");
+
+        Assumptions.assumeTrue(arquivoGabarito.exists(), "Gabarito não encontrado. Pulando teste no GitHub.");
+
         // 1. Carrega o gabarito em Japonês
         try (FileReader reader = new FileReader("run/lang_dump/ja_jp_filtered.json")) {
             gabarito = new Gson().fromJson(reader, new TypeToken<Map<String, String>>() {

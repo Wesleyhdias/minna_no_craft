@@ -1,9 +1,9 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.config.data.ConfigData;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
@@ -13,7 +13,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
