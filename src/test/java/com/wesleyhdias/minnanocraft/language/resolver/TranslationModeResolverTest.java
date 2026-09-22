@@ -43,7 +43,7 @@ public class TranslationModeResolverTest {
     void tearDown() {
         PlayerVocabularyManager.setInstanceForTesting(null);
         ModConfig.setInstanceForTesting(null);
-        ItemStructureLoader.setInstanceForTesting(new HashMap<>());
+        ItemStructureLoader.setInstanceForTesting(null);
         DictionaryLoader.setDictionaryForTesting(null);
     }
 

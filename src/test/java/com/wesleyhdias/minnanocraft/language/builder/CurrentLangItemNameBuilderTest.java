@@ -1,19 +1,20 @@
 package com.wesleyhdias.minnanocraft.language.builder;
 
-import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
-import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
-import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
-import net.minecraft.client.Minecraft;
+
 import net.minecraft.client.resources.language.LanguageManager;
-import org.junit.jupiter.api.AfterEach;
+import net.minecraft.client.Minecraft;
+
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -48,7 +49,7 @@ class CurrentLangItemNameBuilderTest {
         String original = "Apple";
         ItemStructureLoader.setInstanceForTesting(Map.of());
 
-        String result = CurrentLangItemNameBuilder.build("item.minecraft.apple", original);
+        CurrentLangItemNameBuilder.build("item.minecraft.apple", original);
 
         assertEquals(original, "Apple");
     }

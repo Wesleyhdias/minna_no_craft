@@ -111,7 +111,7 @@ public class PlayerProgressScreen extends Screen {
         super.init();
 
         this.addRenderableWidget(
-                Button.builder(Component.translatable("gui.back"), button -> this.onClose())
+                Button.builder(Component.translatable("gui.back"), _ -> this.onClose())
                         .bounds(this.width / 2 - 100, this.height - 30, 200, 20)
                         .build()
         );
@@ -129,22 +129,20 @@ public class PlayerProgressScreen extends Screen {
 
         int tabY = 24;
         this.tabLinguisticBtn = this.addRenderableWidget(
-                Button.builder(Component.literal("Linguística"), button -> this.activeTab = RightPanelTab.LINGUISTIC)
+                Button.builder(Component.literal("Linguística"), _ -> this.activeTab = RightPanelTab.LINGUISTIC)
                         .bounds(rightPanelX, tabY, 70, 16)
                         .build()
         );
 
         this.tabStatsBtn = this.addRenderableWidget(
-                Button.builder(Component.literal("Progresso"), button -> this.activeTab = RightPanelTab.STATISTICS)
+                Button.builder(Component.literal("Progresso"), _ -> this.activeTab = RightPanelTab.STATISTICS)
                         .bounds(rightPanelX + 75, tabY, 70, 16)
                         .build()
         );
 
         // Toggle button to switch between Hiragana and Romaji
         this.toggleReadingBtn = this.addRenderableWidget(
-                Button.builder(Component.literal("👁"), button -> {
-                            this.showRomaji = !this.showRomaji;
-                        })
+                Button.builder(Component.literal("👁"), _ -> this.showRomaji = !this.showRomaji)
                         .bounds(rightPanelX + 140, 60, 16, 16) // O Y será ajustado no render
                         .build()
         );
@@ -153,14 +151,14 @@ public class PlayerProgressScreen extends Screen {
 
         // Decrement Level (-) Button
         this.btnDecrementLevel = this.addRenderableWidget(
-                Button.builder(Component.literal("-"), button -> this.adjustSelectedLevel(-1))
+                Button.builder(Component.literal("-"), _ -> this.adjustSelectedLevel(-1))
                         .bounds(rightPanelX + 85, levelY, 16, 16)
                         .build()
         );
 
         // Increment Level (+) Button
         this.btnIncrementLevel = this.addRenderableWidget(
-                Button.builder(Component.literal("+"), button -> this.adjustSelectedLevel(1))
+                Button.builder(Component.literal("+"), _ -> this.adjustSelectedLevel(1))
                         .bounds(rightPanelX + 105, levelY, 16, 16)
                         .build()
         );
@@ -168,7 +166,7 @@ public class PlayerProgressScreen extends Screen {
         // Kana Screen Button
         this.addRenderableWidget(Button.builder(
                         Component.literal("あ"),
-                        button -> this.minecraft.setScreen(new SyllabaryScreen(this))) // Abre o popup
+                        _ -> this.minecraft.setScreen(new SyllabaryScreen(this))) // Abre o popup
                 .bounds(rightPanelX + 150, tabY, 16, 16)
                 .build());
     }
@@ -443,7 +441,7 @@ public class PlayerProgressScreen extends Screen {
                     scaledX = (int) (rightPanelX / textScale);
                     scaledY = (int) (currentY / textScale);
 
-                    String fullExample = net.minecraft.client.resources.language.I18n.get(TokenTextHelper.getExampleKey(token));
+                    String fullExample = String.valueOf(Component.translatable(TokenTextHelper.getExampleKey(token)));
                     String jpText = fullExample;
                     String reading = "";
                     String translation = "";

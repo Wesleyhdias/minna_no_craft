@@ -109,7 +109,7 @@ public class DictionaryLookupOverlayRenderer {
             Word word = wordsToRender.get(currentPageIndex);
             String token = tokenWordsToRender.get(currentPageIndex);
 
-            wordExplanation = net.minecraft.client.resources.language.I18n.get(TokenTextHelper.getDescriptionKey(token));
+            wordExplanation = String.valueOf(Component.translatable(TokenTextHelper.getDescriptionKey(token)));
 
             String kanji = word.kanji();
             String hiragana = word.hiragana();
@@ -206,7 +206,7 @@ public class DictionaryLookupOverlayRenderer {
             }
 
             // Example sentence
-            String fullExample = net.minecraft.client.resources.language.I18n.get(TokenTextHelper.getExampleKey(token));
+            String fullExample = String.valueOf(Component.translatable((TokenTextHelper.getExampleKey(token))));
             String jpSentence = fullExample;
             String sentenceReading = "";
             String sentenceTranslation = "";

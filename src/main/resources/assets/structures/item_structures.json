@@ -10748,5 +10748,37 @@
     "explorer",
     "no",
     "map"
+  ],
+  "item.minecraft.buried_trial_chambers_map": [
+    "buried_trial",
+    "no",
+    "map"
+  ],
+  "item.minecraft.jungle_pyramid_map": [
+    "jungle",
+    "no",
+    "pyramid",
+    "no",
+    "map"
+  ],
+  "item.minecraft.ocean_monument_map":  [
+    "seafloor",
+    "monument",
+    "no",
+    "map"
+  ],
+  "item.minecraft.swamp_hut_map": [
+    "swamp",
+    "no",
+    "hut",
+    "no",
+    "map"
+  ],
+  "item.minecraft.woodland_mansion_map": [
+    "woodland_1",
+    "no",
+    "mansion",
+    "no",
+    "map"
   ]
 }

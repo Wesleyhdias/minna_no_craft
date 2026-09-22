@@ -245,4 +245,5 @@ public class FullJapaneseItemNameBuilderTest {
                         "Total de nomes gerados: " + numRegister + " | " +
                         "Verifique os arquivos .txt gerados na raiz do projeto.");
     }
+
 }
