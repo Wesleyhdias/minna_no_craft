@@ -7,6 +7,7 @@ public class DictionaryLookupService {
 
     private static boolean isOpen = false;
     private static Word currentWord = null;
+    private static String token = null;
     private static CompoundWord currentCompWord = null;
 
     /**
@@ -54,5 +55,13 @@ public class DictionaryLookupService {
      */
     public static CompoundWord getCurrentCompWord() {
         return currentCompWord;
+    }
+
+    public static String getToken() {
+        return token;
+    }
+
+    public static void setToken(String token) {
+        DictionaryLookupService.token = token;
     }
 }

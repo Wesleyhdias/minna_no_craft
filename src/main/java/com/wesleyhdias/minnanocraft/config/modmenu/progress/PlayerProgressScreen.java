@@ -2,7 +2,9 @@ package com.wesleyhdias.minnanocraft.config.modmenu.progress;
 
 import com.wesleyhdias.minnanocraft.client.syllabary_screen.SyllabaryScreen;
 import com.wesleyhdias.minnanocraft.language.TranslationCacheManager;
+import com.wesleyhdias.minnanocraft.language.kana.RomajiSyllableParser;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
+import com.wesleyhdias.minnanocraft.language.TokenTextHelper;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.config.data.ConfigData;
@@ -21,28 +23,74 @@ import net.minecraft.network.chat.Component;
  */
 public class PlayerProgressScreen extends Screen {
 
-    /** Reference to the parent screen to return to upon closing. */
+    private enum RightPanelTab {
+        LINGUISTIC,
+        STATISTICS
+    }
+
+    /**
+     * Controls which tab is currently visible in the right panel.
+     */
+    private RightPanelTab activeTab = RightPanelTab.LINGUISTIC;
+
+    /**
+     * Button to select the Linguistic tab.
+     */
+    private Button tabLinguisticBtn;
+
+    /**
+     * Button to select the Statistics tab.
+     */
+    private Button tabStatsBtn;
+
+    /**
+     * Indicates whether readings should be displayed in Romaji instead of Hiragana.
+     */
+    private boolean showRomaji = false;
+
+    /**
+     * Button to toggle the reading display mode.
+     */
+    private Button toggleReadingBtn;
+
+    /**
+     * Reference to the parent screen to return to upon closing.
+     */
     private final Screen parent;
 
-    /** Scrollable list widget displaying player vocabulary entries. */
+    /**
+     * Scrollable list widget displaying player vocabulary entries.
+     */
     private PlayerProgressListWidget listWidget;
 
-    /** Left boundary X position for the vocabulary list layout. */
+    /**
+     * Left boundary X position for the vocabulary list layout.
+     */
     private int listX;
 
-    /** Calculated width allocation for the vocabulary list layout. */
+    /**
+     * Calculated width allocation for the vocabulary list layout.
+     */
     private int listWidth;
 
-    /** Interactive button to manually increment selected word script level. */
+    /**
+     * Interactive button to manually increment selected word script level.
+     */
     private Button btnIncrementLevel;
 
-    /** Interactive button to manually decrement selected word script level. */
+    /**
+     * Interactive button to manually decrement selected word script level.
+     */
     private Button btnDecrementLevel;
 
-    /** Tracks the currently active sorting column. */
+    /**
+     * Tracks the currently active sorting column.
+     */
     private PlayerProgressListWidget.SortColumn currentSortCol = PlayerProgressListWidget.SortColumn.NONE;
 
-    /** Tracks the currently active sorting direction. */
+    /**
+     * Tracks the currently active sorting direction.
+     */
     private PlayerProgressListWidget.SortDir currentSortDir = PlayerProgressListWidget.SortDir.NONE;
 
     /**
@@ -77,8 +125,31 @@ public class PlayerProgressScreen extends Screen {
         this.listWidget = new PlayerProgressListWidget(this.minecraft, this.listWidth, listHeight, this.listX, listY, 20);
         this.addRenderableWidget(this.listWidget);
 
-        int rightPanelX = this.width / 2 + 20;
-        int levelY = 146; // Vertically aligned with Y = 120 level text
+        int rightPanelX = this.width / 2 + 40;
+
+        int tabY = 24;
+        this.tabLinguisticBtn = this.addRenderableWidget(
+                Button.builder(Component.literal("Linguística"), button -> this.activeTab = RightPanelTab.LINGUISTIC)
+                        .bounds(rightPanelX, tabY, 70, 16)
+                        .build()
+        );
+
+        this.tabStatsBtn = this.addRenderableWidget(
+                Button.builder(Component.literal("Progresso"), button -> this.activeTab = RightPanelTab.STATISTICS)
+                        .bounds(rightPanelX + 75, tabY, 70, 16)
+                        .build()
+        );
+
+        // Toggle button to switch between Hiragana and Romaji
+        this.toggleReadingBtn = this.addRenderableWidget(
+                Button.builder(Component.literal("👁"), button -> {
+                            this.showRomaji = !this.showRomaji;
+                        })
+                        .bounds(rightPanelX + 140, 60, 16, 16) // O Y será ajustado no render
+                        .build()
+        );
+
+        int levelY = 63;
 
         // Decrement Level (-) Button
         this.btnDecrementLevel = this.addRenderableWidget(
@@ -98,7 +169,7 @@ public class PlayerProgressScreen extends Screen {
         this.addRenderableWidget(Button.builder(
                         Component.literal("あ"),
                         button -> this.minecraft.setScreen(new SyllabaryScreen(this))) // Abre o popup
-                .bounds(rightPanelX + 140, 35, 30, 20)
+                .bounds(rightPanelX + 150, tabY, 16, 16)
                 .build());
     }
 
@@ -169,12 +240,10 @@ public class PlayerProgressScreen extends Screen {
             if (mouseX >= this.listX && mouseX < col1End) {
                 toggleSort(PlayerProgressListWidget.SortColumn.WORD);
                 return true;
-            }
-            else if (mouseX >= col1End && mouseX < col2End) {
+            } else if (mouseX >= col1End && mouseX < col2End) {
                 toggleSort(PlayerProgressListWidget.SortColumn.MIDDLE);
                 return true;
-            }
-            else if (mouseX >= col2End && mouseX <= this.listX + this.listWidth) {
+            } else if (mouseX >= col2End && mouseX <= this.listX + this.listWidth) {
                 toggleSort(PlayerProgressListWidget.SortColumn.LEVEL);
                 return true;
             }
@@ -253,91 +322,226 @@ public class PlayerProgressScreen extends Screen {
         PlayerProgressListEntry selected = this.listWidget.getSelected();
         boolean hasSelection = (selected != null && selected.getWordObj() != null && selected.getProgressObj() != null);
 
-        // Ensure level control buttons visibility tracks selection state
-        if (this.btnDecrementLevel != null) this.btnDecrementLevel.visible = hasSelection;
-        if (this.btnIncrementLevel != null) this.btnIncrementLevel.visible = hasSelection;
-
         if (hasSelection) {
+            // Shows the tab buttons and deactivates (presses down) the button of the currently active tab
+            this.tabLinguisticBtn.visible = true;
+            this.tabStatsBtn.visible = true;
+            this.tabLinguisticBtn.active = (this.activeTab != RightPanelTab.LINGUISTIC);
+            this.tabStatsBtn.active = (this.activeTab != RightPanelTab.STATISTICS);
+
             try {
                 Word word = selected.getWordObj();
                 WordProgress progress = selected.getProgressObj();
-
                 int padding = 4;
 
-                // 1. Kanji Representation (Rendered scaled if available)
-                if (word.kanji() != null && !word.kanji().isBlank()) {
-                    Component kanjiLabel = Component.literal("Kanji: ");
-                    int labelWidth = this.font.width(kanjiLabel);
+                // ==========================================
+                // TAB 1: LINGUISTICS (Vocabulary and Translations)
+                // ==========================================
+                if (this.activeTab == RightPanelTab.LINGUISTIC) {
+                    this.btnDecrementLevel.visible = false;
+                    this.btnIncrementLevel.visible = false;
 
-                    guiGraphics.text(this.font, kanjiLabel, rightPanelX, 40, 0xFFAAAAAA, false);
+                    int currentY = 47;
 
-                    float scale = 1.5f;
+                    // 1. Highlight: Kanji + Reading in parentheses
+                    String titleWord = word.kanji();
+                    if (titleWord == null || titleWord.isBlank())
+                        titleWord = progress.getWord(); // Fallback prevention if it has no kanji
+
+                    String currentReading = this.showRomaji ? word.romaji() : word.hiragana();
+                    if (currentReading == null || currentReading.isBlank()) currentReading = "-";
+
+                    // Scale Protection: If the Kanji text is colossal, scales it down to fit before the button
+                    int baseKanjiWidth = this.font.width(titleWord);
+                    float kanjiScale = 2.0f;
+                    if (baseKanjiWidth * kanjiScale > 140) {
+                        kanjiScale = 140.0f / baseKanjiWidth;
+                    }
+
                     guiGraphics.pose().pushMatrix();
-                    guiGraphics.pose().scale(scale, scale);
+                    guiGraphics.pose().scale(kanjiScale, kanjiScale);
+                    int scaledKanjiX = (int) (rightPanelX / kanjiScale);
+                    int scaledKanjiY = (int) (currentY / kanjiScale);
+                    guiGraphics.text(this.font, titleWord, scaledKanjiX, scaledKanjiY, 0xFFAAFFFF, false);
+                    guiGraphics.pose().popMatrix();
 
-                    // Adjust X according to the real width of the word "Kanji: "
-                    int scaledX = (int) ((rightPanelX + labelWidth + padding) / scale);
-                    int scaledY = (int) (38 / scale);
+                    int kanjiWidth = (int) (baseKanjiWidth * kanjiScale);
 
-                    guiGraphics.text(this.font, word.kanji(), scaledX, scaledY, 0xFFAAFFFF, false);
+                    // Logic to decide where the reading will be drawn (side-by-side or below)
+                    String formattedReading = "(" + currentReading + ")";
+                    float readingScale = 1.2f;
+                    int readingWidth = (int) (this.font.width(formattedReading) * readingScale);
+
+                    int readingX;
+                    int readingY;
+
+                    // If the sum of Kanji + Reading exceeds the limit of approx 150 pixels (space before the button)
+                    if (kanjiWidth + 6 + readingWidth > 150) {
+                        readingX = rightPanelX;
+                        readingY = currentY + (int) (this.font.lineHeight * kanjiScale) + 2; // Wraps to the next line
+                        currentY = readingY + (int) (this.font.lineHeight * readingScale) + 8; // Updates global Y
+                    } else {
+                        readingX = rightPanelX + kanjiWidth + 6;
+                        readingY = currentY + (int) ((this.font.lineHeight * kanjiScale - this.font.lineHeight * readingScale) / 2) + 1; // Aligns side-by-side
+                        currentY += (int) (this.font.lineHeight * kanjiScale) + 10; // Updates global Y
+                    }
+
+                    guiGraphics.pose().pushMatrix();
+                    guiGraphics.pose().scale(readingScale, readingScale);
+                    int scaledReadingX = (int) (readingX / readingScale);
+                    int scaledReadingY = (int) (readingY / readingScale);
+                    guiGraphics.text(this.font, formattedReading, scaledReadingX, scaledReadingY, 0xFFFF8888, false);
+                    guiGraphics.pose().popMatrix();
+
+                    // Compact Toggle button with "👁" icon
+                    if (this.toggleReadingBtn != null) {
+                        this.toggleReadingBtn.visible = true;
+                        this.toggleReadingBtn.setX(rightPanelX + 160);
+                        this.toggleReadingBtn.setY(47 + 2); // Fixed at the top, where it always starts
+                    }
+
+                    // 2. Translation
+                    String trad = "- / -";
+                    if (word.getLocalTranslations() != null && !word.getLocalTranslations().isEmpty()) {
+                        trad = word.getLocalTranslations().getFirst();
+                    }
+                    Component transLabel = Component.translatable("progress_screen.minnanocraft.column_translation").append(": ");
+                    int transLabelWidth = this.font.width(transLabel);
+                    guiGraphics.text(this.font, transLabel, rightPanelX, currentY, 0xFFAAAAAA, false);
+                    guiGraphics.text(this.font, trad, rightPanelX + transLabelWidth + padding, currentY, 0xFFFFFFAA, false);
+                    currentY += 20;
+
+                    // 3. Explanation (Scaled and with Word Wrap)
+                    int maxWidth = 180;
+                    String token = progress.getWord();
+                    float textScale = 0.85f;
+
+                    guiGraphics.pose().pushMatrix();
+                    guiGraphics.pose().scale(textScale, textScale);
+
+                    int scaledMaxWidth = (int) (maxWidth / textScale);
+                    int scaledX = (int) (rightPanelX / textScale);
+                    int scaledY = (int) (currentY / textScale);
+
+                    Component descText = Component.translatable(TokenTextHelper.getDescriptionKey(token));
+                    var descLines = this.font.split(descText, scaledMaxWidth);
+                    for (var line : descLines) {
+                        guiGraphics.text(this.font, line, scaledX, scaledY, 0xFFAAAAAA, false);
+                        scaledY += this.font.lineHeight + 2;
+                    }
+                    guiGraphics.pose().popMatrix();
+
+                    currentY += (int) (descLines.size() * (this.font.lineHeight + 2) * textScale) + 8;
+
+                    // 4. Example (Dynamic parsing, Scaled, and Full Word Wrap)
+                    guiGraphics.text(this.font, Component.literal("Exemplo:"), rightPanelX, currentY, 0xFF555555, false);
+                    currentY += 12;
+
+                    guiGraphics.pose().pushMatrix();
+                    guiGraphics.pose().scale(textScale, textScale);
+
+                    scaledX = (int) (rightPanelX / textScale);
+                    scaledY = (int) (currentY / textScale);
+
+                    String fullExample = net.minecraft.client.resources.language.I18n.get(TokenTextHelper.getExampleKey(token));
+                    String jpText = fullExample;
+                    String reading = "";
+                    String translation = "";
+
+                    String[] newlineSplit = fullExample.split("\n");
+                    if (newlineSplit.length > 1) {
+                        jpText = newlineSplit[0];
+                        translation = newlineSplit[1];
+                    }
+
+                    int openParen = jpText.lastIndexOf('(');
+                    int closeParen = jpText.lastIndexOf(')');
+                    if (openParen != -1 && closeParen > openParen) {
+                        reading = jpText.substring(openParen + 1, closeParen);
+                        jpText = jpText.substring(0, openParen).trim();
+                    }
+
+                    // Renders Japanese (NOW WITH WORD WRAP)
+                    var jpLines = this.font.split(Component.literal(jpText), scaledMaxWidth);
+                    for (var line : jpLines) {
+                        guiGraphics.text(this.font, line, scaledX, scaledY, 0xFFFFFFFF, false);
+                        scaledY += this.font.lineHeight + 2;
+                    }
+
+                    // Renders Reading (NOW WITH WORD WRAP)
+                    if (!reading.isEmpty()) {
+                        String displayReading = this.showRomaji ? reading : RomajiSyllableParser.toHiragana(reading);
+                        var readingLines = this.font.split(Component.literal(displayReading), scaledMaxWidth);
+                        for (var line : readingLines) {
+                            guiGraphics.text(this.font, line, scaledX, scaledY, 0xFFFFFF55, false);
+                            scaledY += this.font.lineHeight + 2;
+                        }
+                    }
+
+                    // Renders Translation (WITH WORD WRAP)
+                    if (!translation.isEmpty()) {
+                        var transLines = this.font.split(Component.literal(translation), scaledMaxWidth);
+                        for (var line : transLines) {
+                            guiGraphics.text(this.font, line, scaledX, scaledY, 0xFFAAAAAA, false);
+                            scaledY += this.font.lineHeight + 2;
+                        }
+                    }
+
                     guiGraphics.pose().popMatrix();
                 }
+                // ==========================================
+                // TAB 2: STATISTICS (Learning Progress)
+                // ==========================================
+                else if (this.activeTab == RightPanelTab.STATISTICS) {
+                    this.btnDecrementLevel.visible = true;
+                    this.btnIncrementLevel.visible = true;
+                    if (this.toggleReadingBtn != null)
+                        this.toggleReadingBtn.visible = false; // Hide the "👁" in statistics
 
-                // 2. Hiragana Representation
-                if (word.hiragana() != null && !word.hiragana().isBlank()) {
-                    Component hiraLabel = Component.literal("Hiragana: ");
-                    int labelWidth = this.font.width(hiraLabel);
+                    int currentY = 47;
 
-                    guiGraphics.text(this.font, hiraLabel, rightPanelX, 60, 0xFFAAAAAA, false);
-                    guiGraphics.text(this.font, word.hiragana(), rightPanelX + labelWidth + padding, 60, 0xFFFF8888, false);
+                    // Statistics Title
+                    guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.title.lerning_statistics"), rightPanelX, currentY, 0xFF555555, false);
+                    currentY += 25;
+
+                    // Updates the activation of level buttons (to prevent exceeding 4 or falling below 0)
+                    int currentLevel = progress.getScriptLevel();
+                    this.btnDecrementLevel.active = (currentLevel > 0);
+                    this.btnIncrementLevel.active = (currentLevel < 4);
+
+                    // Level (Aligned with buttons)
+                    guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.word.current_level", currentLevel), rightPanelX, currentY, 0xFF55FF55, false);
+                    currentY += 20;
+
+                    // Exposure
+                    String formattedExposure = String.format("%.1f", progress.getExposure());
+                    Component expText = Component.translatable("progress_screen.minnanocraft.total_exposure", formattedExposure);
+                    guiGraphics.text(this.font, expText, rightPanelX, currentY, 0xFFAAAAAA, false);
+                    currentY += 20;
+
+                    // Seen Count
+                    guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.seen_count", progress.getSeenCount()), rightPanelX, currentY, 0xFFAAAAAA, false);
+                    currentY += 20;
+
+                    // Lookup Count
+                    guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.total_lookups", progress.getLookupCount()), rightPanelX, currentY, 0xFFAAAAAA, false);
                 }
 
-                // 3. Romaji Representation
-                if (word.romaji() != null && !word.romaji().isBlank()) {
-                    Component romajiLabel = Component.literal("Romaji: ");
-                    int labelWidth = this.font.width(romajiLabel);
-
-                    guiGraphics.text(this.font, romajiLabel, rightPanelX, 80, 0xFFAAAAAA, false);
-                    guiGraphics.text(this.font, word.romaji(), rightPanelX + labelWidth + padding, 80, 0xFFFF8888, false);
-                }
-
-                // 4. Translation
-                String trad = "- / -";
-                if (word.getLocalTranslations() != null && !word.getLocalTranslations().isEmpty()) {
-                    trad = word.getLocalTranslations().getFirst();
-                }
-
-                Component transLabel = Component.translatable("progress_screen.minnanocraft.column_translation").append(": ");
-                int transLabelWidth = this.font.width(transLabel);
-
-                guiGraphics.text(this.font, transLabel, rightPanelX, 100, 0xFFAAAAAA, false);
-                guiGraphics.text(this.font, trad, rightPanelX + transLabelWidth + padding, 100, 0xFFFFFFAA, false);
-
-                // 5. Statistics Separator Line
-                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.title.lerning_statistics"), rightPanelX, 120, 0xFF555555, false);
-
-                // Update level control button active states based on boundary limits
-                int currentLevel = progress.getScriptLevel();
-                this.btnDecrementLevel.active = (currentLevel > 0);
-                this.btnIncrementLevel.active = (currentLevel < 4);
-
-                // 6. Progress Statistics
-                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.word.current_level", currentLevel), rightPanelX, 150, 0xFF55FF55, false);
-
-                String formattedExposure = String.format("%.1f", progress.getExposure());
-                Component expText = Component.translatable("progress_screen.minnanocraft.total_exposure", formattedExposure);
-                guiGraphics.text(this.font, expText, rightPanelX, 165, 0xFFAAAAAA, false);
-
-                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.seen_count", progress.getSeenCount()), rightPanelX, 180, 0xFFAAAAAA, false);
-                guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.total_lookups", progress.getLookupCount()), rightPanelX, 195, 0xFFAAAAAA, false);
             } catch (Exception e) {
-                guiGraphics.text(this.font, "ERRO: " + e.getClass().getSimpleName(), rightPanelX, 40, 0xFFFF0000, false);
+                guiGraphics.text(this.font, "ERROR: " + e.getClass().getSimpleName(), rightPanelX, 40, 0xFFFF0000, false);
             }
         } else {
-            // Default placeholder view when no item is selected
-            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint"), rightPanelX, 40, 0xFFAAAAAA, false);
-            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_1"), rightPanelX, 60, 0xFF555555, false);
-            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_2"), rightPanelX, 75, 0xFF555555, false);
+            // When NOTHING is selected in the list, hides ALL right-side buttons
+            if (this.tabLinguisticBtn != null) this.tabLinguisticBtn.visible = false;
+            if (this.tabStatsBtn != null) this.tabStatsBtn.visible = false;
+            if (this.toggleReadingBtn != null) this.toggleReadingBtn.visible = false;
+            if (this.btnDecrementLevel != null) this.btnDecrementLevel.visible = false;
+            if (this.btnIncrementLevel != null) this.btnIncrementLevel.visible = false;
+
+            // Original placeholder
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint"), rightPanelX, 47, 0xFFAAAAAA, false);
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_1"), rightPanelX, 67, 0xFF555555, false);
+            guiGraphics.text(this.font, Component.translatable("progress_screen.minnanocraft.ui_hint_2"), rightPanelX, 82, 0xFF555555, false);
         }
     }
 

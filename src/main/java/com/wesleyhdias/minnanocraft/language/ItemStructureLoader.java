@@ -56,7 +56,7 @@ public class ItemStructureLoader {
             Type type = new TypeToken<Map<String, List<String>>>() {}.getType();
 
             structures = Collections.unmodifiableMap(new Gson().fromJson(reader, type));
-            MinnaNoCraft.LOGGER.info("Item structures loaded successfully!");
+            MinnaNoCraft.LOGGER.info("Item structures loaded successfully! with {} structures", structures.size());
 
         } catch (Exception e) {
             MinnaNoCraft.LOGGER.error("Error encountered while loading item structures!", e);

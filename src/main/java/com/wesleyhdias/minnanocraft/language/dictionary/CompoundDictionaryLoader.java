@@ -67,7 +67,7 @@ public class CompoundDictionaryLoader {
 
             dictionary = (loaded != null) ? Collections.unmodifiableMap(loaded) : Map.of();
 
-            MinnaNoCraft.LOGGER.info("Compound dictionary loaded successfully!");
+            MinnaNoCraft.LOGGER.info("Compound dictionary loaded successfully! with {} compound words", dictionary.size());
 
         } catch (Exception e) {
             MinnaNoCraft.LOGGER.error("Error encountered while loading compound dictionary!", e);

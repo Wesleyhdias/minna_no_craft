@@ -82,6 +82,7 @@ public class PinnedTooltipInputHandler {
 
                     DictionaryLookupService.openCompWord(compWord);
                 }
+                DictionaryLookupService.setToken(token);
             } else {
                 // The user clicker outside the tooltip, so unpin it
                 PinnedTooltipService.unpin();

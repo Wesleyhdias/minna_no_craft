@@ -87,6 +87,7 @@ public class DifficultyResolver {
 
                 builder.append(render(mw, sepLevel));
                 builder.append(" ");
+                continue;
             }
 
             if (lastWordLevel >= 3) {
