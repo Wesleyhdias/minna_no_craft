@@ -1,11 +1,16 @@
 package com.wesleyhdias.minnanocraft.srs;
 
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -17,6 +22,14 @@ class TokenUpgradeSelectorTest {
     @BeforeEach
     void setUp() {
         mockManager = mock(PlayerVocabularyManager.class);
+
+        Word word = new Word(null, null, null, null);
+        DictionaryLoader.setDictionaryForTesting(Map.of("ringo", word, "watashi", word, "taberu", word));
+    }
+
+    @AfterEach
+    void tearDown() {
+        DictionaryLoader.setDictionaryForTesting(null);
     }
 
     /**

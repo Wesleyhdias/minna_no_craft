@@ -1,6 +1,8 @@
 package com.wesleyhdias.minnanocraft.language.resolver;
 
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.config.data.ConfigData;
@@ -32,6 +34,9 @@ public class TranslationModeResolverTest {
         Mockito.when(mockConfig.getExpLevel3()).thenReturn(45.0);
         Mockito.when(mockConfig.getExpLevel4()).thenReturn(100.0);
         ModConfig.setInstanceForTesting(mockConfig);
+
+        Word word = new Word(null, null, null, null);
+        DictionaryLoader.setDictionaryForTesting(Map.of("ringo", word));
     }
 
     @AfterEach
@@ -39,6 +44,7 @@ public class TranslationModeResolverTest {
         PlayerVocabularyManager.setInstanceForTesting(null);
         ModConfig.setInstanceForTesting(null);
         ItemStructureLoader.setInstanceForTesting(new HashMap<>());
+        DictionaryLoader.setDictionaryForTesting(null);
     }
 
     @Test

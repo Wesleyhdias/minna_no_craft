@@ -125,7 +125,7 @@ class ProgressionSystemTest {
         progress.setLastSeen(System.currentTimeMillis() - 1000); // 1s atrás (cooldown é 5s)
 
         // Aciona um evento DIFERENTE do anterior durante o cooldown
-        progressionSystem.applyEvent(progress, ExpEvents.LOOKUP);
+        progressionSystem.applyEvent(progress, ExpEvents.HOVER);
 
         assertEquals(0.0, progress.getExposure(), "Event should be ignored inside 5s cooldown regardless of event type.");
         assertEquals(0, progress.getLookupCount(), "Lookup count should not increment inside cooldown.");

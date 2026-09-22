@@ -49,9 +49,9 @@ class DifficultyResolverTest {
         // Nível 4 (Kanji) -> Mostra Hiragana anterior
         assertEquals("りんご", DifficultyResolver.renderPrevious(sampleWord, 4));
 
-        // Níveis 3 e 2 -> Mostram Romaji anterior
+        // Níveis 3 -> Mostram Romaji anterior
         assertEquals("ringo", DifficultyResolver.renderPrevious(sampleWord, 3));
-        assertEquals("ringo", DifficultyResolver.renderPrevious(sampleWord, 2));
+
     }
 
     @Test

@@ -2,11 +2,16 @@ package com.wesleyhdias.minnanocraft.language.builder;
 
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
+import com.wesleyhdias.minnanocraft.language.kana.RomajiSyllableParser;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
 import com.wesleyhdias.minnanocraft.language.morpheme.MorphemeLoader;
 import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
+import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.morpheme.Morpheme;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
+import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
+import com.wesleyhdias.minnanocraft.config.data.ConfigData;
+import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.Gson;
@@ -15,11 +20,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
-import java.io.FileReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.io.FileReader;
 import java.util.*;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class FullJapaneseItemNameBuilderTest {
 
@@ -88,6 +97,22 @@ public class FullJapaneseItemNameBuilderTest {
         try (FileReader reader = new FileReader("run/lang_dump/ja_jp_filtered.json")) {
             gabarito = new Gson().fromJson(reader, new TypeToken<Map<String, String>>() {
             }.getType());
+
+            ConfigData mockConfig = mock(ConfigData.class);
+            when(mockConfig.getExpLevel4()).thenReturn(90.0);
+            ModConfig.setInstanceForTesting(mockConfig);
+
+            PlayerVocabularyManager mockManager = Mockito.mock(PlayerVocabularyManager.class);
+
+            WordProgress progress = new WordProgress();
+            progress.updateExposure(100);
+
+            Mockito.when(mockManager.getProgress(Mockito.anyString()))
+                    .thenReturn(progress);
+
+
+            PlayerVocabularyManager.setInstanceForTesting(mockManager);
+
         }
 
         // 2. Injeta Providers de Teste forçando o Nível 4 (Kanji) com suporte a Compostas
@@ -109,7 +134,9 @@ public class FullJapaneseItemNameBuilderTest {
                             Morpheme m = MorphemeLoader.getMorphemes().get(component);
                             if (m != null) {
                                 compoundBuilder.append(m.kanji() != null ? m.kanji() : m.hiragana());
+                                continue;
                             }
+                            compoundBuilder.append(RomajiSyllableParser.toHiragana(component));
                         }
                         return compoundBuilder.toString();
                     }
@@ -153,53 +180,44 @@ public class FullJapaneseItemNameBuilderTest {
                 continue;
             }
 
-            // --- FILTRO 2: Palavras Faltando (Agora abrindo as compostas) ---
-            List<String> structTokens = structures.get(key);
-            boolean hasMissingWord = false;
-
-            for (String token : structTokens) {
-                CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
-
-                if (compound != null) {
-
-                    // Verifica se os componentes internos existem
-                    for (String compToken : compound.components()) {
-                        if(Objects.equals(compToken, " ")) continue;
-                        if (DictionaryLoader.getDictionary().get(compToken) == null && MorphemeLoader.getMorphemes().get(compToken) == null) {
-
-                            missingWords.add(compToken);
-                            hasMissingWord = true;
-                        }
-                    }
-                    // Verifica se o separador existe (caso não seja vazio)
-                    String sepToken = compound.getSafeSeparator();
-                    if (!sepToken.isEmpty() && !sepToken.equals(" ")) {
-                        if (MorphemeLoader.getMorphemes().get(sepToken) == null) {
-                            missingWords.add(sepToken);
-                            hasMissingWord = true;
-                        }
-                    }
-                } else {
-                    // Checa se o token simples/morfema existe no banco
-                    if (DictionaryLoader.getDictionary().get(token) == null && MorphemeLoader.getMorphemes().get(token) == null) {
-                        missingWords.add(token);
-                        hasMissingWord = true;
-                    }
-                }
-            }
-            if (hasMissingWord) continue;
-
             numRegister += 1;
 
-            // --- FILTRO 3: Montagem Incorreta ---
+            // --- TENTA MONTAR O NOME PRIMEIRO ---
+            // O builder vai usar os dicionários e, se retornar null, o Fallback de Kana entra em ação.
             String generatedName = JapaneseItemNameBuilder.build(key);
 
             // Remove espaços do builder e do gabarito para comparar apenas os ideogramas
             String generatedClean = generatedName != null ? generatedName.replace(" ", "") : "";
             String expectedClean = expectedName.replace(" ", "");
 
-            if (!generatedClean.equals(expectedClean)) {
-                mismatchedNames.add("Chave: " + key + "\n   Gerado  : " + generatedClean + "\n   Gabarito: " + expectedClean + "\n");
+            // Se a montagem bateu perfeitamente com o gabarito, não precisamos checar palavras faltando!
+            // Isso significa que ou estava no dicionário, ou o fallback de Kana resolveu perfeitamente (ex: "kurai" -> "くらい").
+            if (generatedClean.equals(expectedClean)) {
+                continue;
+            }
+
+            // --- FILTRO 2: ERRO NA MONTAGEM ---
+            mismatchedNames.add("Chave: " + key + "\n   Gerado  : " + generatedClean + "\n   Gabarito: " + expectedClean + "\n");
+
+            // Como deu erro, agora sim vasculhamos a estrutura para relatar quais tokens estão faltando nos dicionários
+            List<String> structTokens = structures.get(key);
+            for (String token : structTokens) {
+                CompoundWord compound = CompoundDictionaryLoader.getDictionary().get(token);
+
+                if (compound != null) {
+                    // Verifica se os componentes internos existem
+                    for (String compToken : compound.components()) {
+                        if(Objects.equals(compToken, " ")) continue;
+                        if (DictionaryLoader.getDictionary().get(compToken) == null && MorphemeLoader.getMorphemes().get(compToken) == null) {
+                            missingWords.add(compToken);
+                        }
+                    }
+                } else {
+                    // Checa se o token simples/morfema existe no banco
+                    if (DictionaryLoader.getDictionary().get(token) == null && MorphemeLoader.getMorphemes().get(token) == null) {
+                        missingWords.add(token);
+                    }
+                }
             }
         }
     }
@@ -218,11 +236,6 @@ public class FullJapaneseItemNameBuilderTest {
         }
 
         boolean allPassed = missingStructures.isEmpty() && missingWords.isEmpty() && mismatchedNames.isEmpty();
-
-//        System.out.println("Olha o que tem aqui: " + allPassed);
-//        System.out.println("e aqui: " + missingStructures);
-//        System.out.println("aqui...: " + missingWords);
-//        System.out.println("já sabe: " + mismatchedNames);
 
         Assertions.assertTrue(allPassed,
                 "Foram encontrados erros no JSON! " +

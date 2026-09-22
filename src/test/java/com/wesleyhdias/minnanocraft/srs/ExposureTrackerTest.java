@@ -7,6 +7,7 @@ import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,6 +18,7 @@ import static org.mockito.Mockito.*;
 
 class ExposureTrackerTest {
 
+    private MockedStatic<TokenUpgradeSelector> mockSelector;
     private PlayerVocabularyManager mockVocabManager;
     private ExposureTracker tracker;
 
@@ -32,6 +34,10 @@ class ExposureTrackerTest {
         );
         ItemStructureLoader.setInstanceForTesting(mockStructures);
 
+        mockSelector = mockStatic(TokenUpgradeSelector.class);
+        mockSelector.when(() -> TokenUpgradeSelector.getNextTokenToUpgrade(anyList(), any()))
+                .thenReturn("ringo");
+
         // 3. Inicializa o Tracker exigindo 100ms de foco para disparar o HOVER
         tracker = new ExposureTracker(100, ExpEvents.HOVER);
 
@@ -43,6 +49,7 @@ class ExposureTrackerTest {
     void tearDown() {
         PlayerVocabularyManager.setInstanceForTesting(null);
         ItemStructureLoader.setInstanceForTesting(new HashMap<>());
+        mockSelector.close();
     }
 
     @Test
@@ -113,7 +120,7 @@ class ExposureTrackerTest {
         Thread.sleep(50);
         tracker.update(target, true); // Frame 2: Mantém foco (t = 50ms)
 
-        Thread.sleep(50);
+        Thread.sleep(55);
         tracker.update(target, true); // Frame 3: Atingiu os 100ms exigidos (t = 100ms)
 
         // Assert

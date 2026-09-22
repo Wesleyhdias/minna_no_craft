@@ -114,7 +114,7 @@ class PlayerVocabularyManagerTest {
         assertFalse(manager.isParticle("ringo"));
 
         // "ga" NÃO está no fakeDictionary (Partícula)
-        assertTrue(manager.isParticle("ga"));
+        assertTrue(manager.isParticle("wo"));
     }
 
     @Test

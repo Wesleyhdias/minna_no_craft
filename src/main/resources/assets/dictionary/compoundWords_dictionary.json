@@ -133,6 +133,22 @@
       "gap"
     ]
   },
+  "buried_trial": {
+    "local_translations": {
+      "pt_br": [
+        "Câmara do Desafio Subterrânea"
+      ],
+      "en_us": [
+        "Trial Explorer"
+      ]
+    },
+    "components": [
+      "buried",
+      "trial",
+      "no",
+      "gap"
+    ]
+  },
   "rose_bush": {
     "local_translations": {
       "pt_br": [

@@ -6735,7 +6735,8 @@
     "translations": {
       "pt_br": [
         "Mar",
-        "Oceânicas"
+        "Oceânicas",
+        "Oceano"
       ],
       "en_us": [
         "Sea"
@@ -10802,6 +10803,45 @@
     "hiragana": "いろ",
     "romaji": "iro"
   },
+  "hut": {
+    "translations": {
+      "pt_br": [
+        "Cabana"
+      ],
+      "en_us": [
+        "hut"
+      ]
+    },
+    "kanji": "小屋",
+    "hiragana": "こや",
+    "romaji": "koya"
+  },
+  "monument": {
+    "translations": {
+      "pt_br": [
+        "monumento"
+      ],
+      "en_us": [
+        "monument", "tample"
+      ]
+    },
+    "kanji": "神殿",
+    "hiragana": "しんでん",
+    "romaji": "shinden"
+  },
+  "mansion": {
+    "translations": {
+      "pt_br": [
+        "Mansão"
+      ],
+      "en_us": [
+        "monument", "tample"
+      ]
+    },
+    "kanji": "洋館",
+    "hiragana": "ようかん",
+    "romaji": "youkan"
+  },
   "woodland": {
     "translations": {
       "pt_br": [
@@ -10814,5 +10854,18 @@
     "kanji": "森林",
     "hiragana": "しんりんち",
     "romaji": "shinrin"
+  },
+  "woodland_1": {
+    "translations": {
+      "pt_br": [
+        "Floresta"
+      ],
+      "en_us": [
+        "Woodland"
+      ]
+    },
+    "kanji": "森",
+    "hiragana": "もり",
+    "romaji": "mori"
   }
 }
