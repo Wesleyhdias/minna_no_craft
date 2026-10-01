@@ -28,7 +28,7 @@ public class TooltipHoverTracker {
 
         // Safety Guard: Ignore if the player is not currently viewing an inventory screen.
         // This prevents conflicts with global HUD tracking.
-        if (client.screen == null) {
+        if (client.gui.screen() == null) {
             return;
         }
 

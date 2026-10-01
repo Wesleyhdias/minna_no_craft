@@ -166,7 +166,7 @@ public class PlayerProgressScreen extends Screen {
         // Kana Screen Button
         this.addRenderableWidget(Button.builder(
                         Component.literal("あ"),
-                        _ -> this.minecraft.setScreen(new SyllabaryScreen(this))) // Abre o popup
+                        _ -> this.minecraft.gui.setScreen(new SyllabaryScreen(this))) // Abre o popup
                 .bounds(rightPanelX + 150, tabY, 16, 16)
                 .build());
     }
@@ -230,7 +230,7 @@ public class PlayerProgressScreen extends Screen {
         double mouseY = event.y();
         int button = event.button();
 
-        if (button == 0 && mouseY >= 25 && mouseY <= 40) {
+        if (button == 1 && mouseY >= 25 && mouseY <= 40) {
             // Fractional bounds corresponding to header column widths
             int col1End = this.listX + (int) (this.listWidth * 0.45);
             int col2End = col1End + (int) (this.listWidth * 0.30);
@@ -561,6 +561,6 @@ public class PlayerProgressScreen extends Screen {
     public void onClose() {
         PlayerVocabularyManager.getInstance().updateProgression();
         TranslationCacheManager.clearAll();
-        this.minecraft.setScreen(this.parent);
+        this.minecraft.gui.setScreen(this.parent);
     }
 }

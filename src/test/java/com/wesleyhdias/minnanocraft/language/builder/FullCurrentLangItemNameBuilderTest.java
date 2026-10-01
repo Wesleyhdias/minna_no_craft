@@ -51,21 +51,13 @@ public class FullCurrentLangItemNameBuilderTest {
             "block.minecraft.spawn.",
             "item.minecraft.debug",
             "block.minecraft.banner.",
-            "block.minecraft.pattern_item."
+            "block.minecraft.pattern_item.",
+            "entity.minecraft.sulfur_cube.content"
     );
 
     private static final List<String> TRECHOS_IGNORADOS = List.of(
-            "concrete_slab",
-            "concrete_stairs",
-            "wool_slab",
-            "wool_stairs",
-            "poplar_",
-            "sulfur",
-            "cinnabar",
             "description",
-            "cushion",
-            "illusioner",
-            "candle_cake"
+            "illusioner"
 
     );
 

@@ -1,4 +1,1122 @@
 {
+  "block.minecraft.black_candle_cake": [
+    "black",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.blue_candle_cake": [
+    "blue",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.brown_candle_cake": [
+    "brown",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.candle_cake": [
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.cyan_candle_cake": [
+    "cyan",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.gray_candle_cake": [
+    "gray",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.green_candle_cake": [
+    "green",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.light_blue_candle_cake": [
+    "light_blue",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.light_gray_candle_cake": [
+    "light_gray",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.lime_candle_cake": [
+    "lime",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.magenta_candle_cake": [
+    "magenta",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.orange_candle_cake": [
+    "orange",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.pink_candle_cake": [
+    "pink",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.purple_candle_cake": [
+    "purple",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.red_candle_cake": [
+    "red",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.white_candle_cake": [
+    "white",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.yellow_candle_cake": [
+    "yellow",
+    "color",
+    "no",
+    "candle",
+    "ga",
+    "stand",
+    "rareta",
+    "cake"
+  ],
+  "block.minecraft.black_concrete_slab": [
+    "black",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.black_concrete_stairs": [
+    "black",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.black_wool_slab": [
+    "black",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.black_wool_stairs": [
+    "black",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.blue_concrete_slab": [
+    "blue",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.blue_concrete_stairs": [
+    "blue",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.blue_wool_slab": [
+    "blue",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.blue_wool_stairs": [
+    "blue",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.brown_concrete_slab": [
+    "brown",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.brown_concrete_stairs": [
+    "brown",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.brown_wool_slab": [
+    "brown",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.brown_wool_stairs": [
+    "brown",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.chiseled_cinnabar": [
+    "pattern",
+    "entry",
+    "ri",
+    "no",
+    "cinnabar"
+  ],
+  "block.minecraft.chiseled_sulfur": [
+    "pattern",
+    "entry",
+    "ri",
+    "no",
+    "sulfur"
+  ],
+  "block.minecraft.cinnabar": [
+    "cinnabar"
+  ],
+  "block.minecraft.cinnabar_brick_slab": [
+    "cinnabar",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cinnabar_brick_stairs": [
+    "cinnabar",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.cinnabar_brick_wall": [
+    "cinnabar",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.cinnabar_bricks": [
+    "cinnabar",
+    "brick"
+  ],
+  "block.minecraft.cinnabar_slab": [
+    "cinnabar",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cinnabar_stairs": [
+    "cinnabar",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.cinnabar_wall": [
+    "cinnabar",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.cyan_concrete_slab": [
+    "cyan",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cyan_concrete_stairs": [
+    "cyan",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.cyan_wool_slab": [
+    "cyan",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.cyan_wool_stairs": [
+    "cyan",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.gray_concrete_slab": [
+    "gray",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.gray_concrete_stairs": [
+    "gray",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.gray_wool_slab": [
+    "gray",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.gray_wool_stairs": [
+    "gray",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.green_concrete_slab": [
+    "green",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.green_concrete_stairs": [
+    "green",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.green_wool_slab": [
+    "green",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.green_wool_stairs": [
+    "green",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.light_blue_concrete_slab": [
+    "light_blue",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.light_blue_concrete_stairs": [
+    "light_blue",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.light_blue_wool_slab": [
+    "light_blue",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.light_blue_wool_stairs": [
+    "light_blue",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.light_gray_concrete_slab": [
+    "light_gray",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.light_gray_concrete_stairs": [
+    "light_gray",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.light_gray_wool_slab": [
+    "light_gray",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.light_gray_wool_stairs": [
+    "light_gray",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.lime_concrete_slab": [
+    "lime",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.lime_concrete_stairs": [
+    "lime",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.lime_wool_slab": [
+    "lime",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.lime_wool_stairs": [
+    "lime",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.magenta_concrete_slab": [
+    "magenta",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.magenta_concrete_stairs": [
+    "magenta",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.magenta_wool_slab": [
+    "magenta",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.magenta_wool_stairs": [
+    "magenta",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.orange_concrete_slab": [
+    "orange",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.orange_concrete_stairs": [
+    "orange",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.orange_poplar_leaves": [
+    "orange",
+    "color",
+    "no",
+    "poplar",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.orange_wool_slab": [
+    "orange",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.orange_wool_stairs": [
+    "orange",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.pink_concrete_slab": [
+    "pink",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.pink_concrete_stairs": [
+    "pink",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.pink_wool_slab": [
+    "pink",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.pink_wool_stairs": [
+    "pink",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.polished_cinnabar": [
+    "polished",
+    "reta",
+    "cinnabar"
+  ],
+  "block.minecraft.polished_cinnabar_slab": [
+    "polished",
+    "reta",
+    "cinnabar",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.polished_cinnabar_stairs": [
+    "polished",
+    "reta",
+    "cinnabar",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.polished_cinnabar_wall": [
+    "polished",
+    "reta",
+    "cinnabar",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.polished_sulfur": [
+    "polished",
+    "reta",
+    "sulfur"
+  ],
+  "block.minecraft.polished_sulfur_slab": [
+    "polished",
+    "reta",
+    "sulfur",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.polished_sulfur_stairs": [
+    "polished",
+    "reta",
+    "sulfur",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.polished_sulfur_wall": [
+    "polished",
+    "reta",
+    "sulfur",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.poplar_button": [
+    "poplar",
+    "no",
+    "button"
+  ],
+  "block.minecraft.poplar_door": [
+    "poplar",
+    "no",
+    "door"
+  ],
+  "block.minecraft.poplar_fence": [
+    "poplar",
+    "no",
+    "fence"
+  ],
+  "block.minecraft.poplar_fence_gate": [
+    "poplar",
+    "no",
+    "fence",
+    "gate"
+  ],
+  "block.minecraft.poplar_hanging_sign": [
+    "poplar",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.poplar_leaves": [
+    "poplar",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.poplar_log": [
+    "poplar",
+    "no",
+    "log"
+  ],
+  "block.minecraft.poplar_planks": [
+    "poplar",
+    "no",
+    "planks"
+  ],
+  "block.minecraft.poplar_pressure_plate": [
+    "poplar",
+    "no",
+    "pressure_plate"
+  ],
+  "block.minecraft.poplar_sapling": [
+    "poplar",
+    "no",
+    "sapling"
+  ],
+  "block.minecraft.poplar_shelf": [
+    "poplar",
+    "no",
+    "shelf"
+  ],
+  "block.minecraft.poplar_sign": [
+    "poplar",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.poplar_slab": [
+    "poplar",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.poplar_stairs": [
+    "poplar",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.poplar_trapdoor": [
+    "poplar",
+    "no",
+    "trapdoor"
+  ],
+  "block.minecraft.poplar_wall_hanging_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "poplar",
+    "no",
+    "hanging",
+    "sign"
+  ],
+  "block.minecraft.poplar_wall_sign": [
+    "wall_1",
+    "ni",
+    "attached",
+    "kera",
+    "reta",
+    "poplar",
+    "no",
+    "sign"
+  ],
+  "block.minecraft.poplar_wood": [
+    "poplar",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.potent_sulfur": [
+    "potent",
+    "sulfur"
+  ],
+  "block.minecraft.potted_poplar_sapling": [
+    "poplar",
+    "no",
+    "sapling",
+    "entry",
+    "ri",
+    "potted"
+  ],
+  "block.minecraft.purple_concrete_slab": [
+    "purple",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.purple_concrete_stairs": [
+    "purple",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.purple_wool_slab": [
+    "purple",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.purple_wool_stairs": [
+    "purple",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.red_concrete_slab": [
+    "red",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.red_concrete_stairs": [
+    "red",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.red_poplar_leaves": [
+    "red",
+    "color",
+    "no",
+    "poplar",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.red_wool_slab": [
+    "red",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.red_wool_stairs": [
+    "red",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.stripped_poplar_log": [
+    "bark",
+    "stripped",
+    "poplar",
+    "no",
+    "log"
+  ],
+  "block.minecraft.stripped_poplar_wood": [
+    "bark",
+    "stripped",
+    "poplar",
+    "no",
+    "wood"
+  ],
+  "block.minecraft.sulfur": [
+    "sulfur"
+  ],
+  "block.minecraft.sulfur_brick_slab": [
+    "sulfur",
+    "brick",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.sulfur_brick_stairs": [
+    "sulfur",
+    "brick",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.sulfur_brick_wall": [
+    "sulfur",
+    "brick",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.sulfur_bricks": [
+    "sulfur",
+    "brick"
+  ],
+  "block.minecraft.sulfur_slab": [
+    "sulfur",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.sulfur_spike": [
+    "spike",
+    "sulfur"
+  ],
+  "block.minecraft.sulfur_stairs": [
+    "sulfur",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.sulfur_wall": [
+    "sulfur",
+    "no",
+    "wall"
+  ],
+  "block.minecraft.white_concrete_slab": [
+    "white",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.white_concrete_stairs": [
+    "white",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.white_wool_slab": [
+    "white",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.white_wool_stairs": [
+    "white",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.yellow_concrete_slab": [
+    "yellow",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.yellow_concrete_stairs": [
+    "yellow",
+    "color",
+    "no",
+    "concrete",
+    "no",
+    "stairs"
+  ],
+  "block.minecraft.yellow_poplar_leaves": [
+    "yellow",
+    "color",
+    "no",
+    "poplar",
+    "no",
+    "leaves"
+  ],
+  "block.minecraft.yellow_wool_slab": [
+    "yellow",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "slab"
+  ],
+  "block.minecraft.yellow_wool_stairs": [
+    "yellow",
+    "color",
+    "no",
+    "wool",
+    "no",
+    "stairs"
+  ],
+  "entity.minecraft.cushion": [
+    "cushion"
+  ],
+  "entity.minecraft.poplar_boat": [
+    "poplar",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.poplar_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "poplar",
+    "no",
+    "boat"
+  ],
+  "entity.minecraft.sulfur_cube": [
+    "sulfur_1",
+    "cube"
+  ],
+  "item.minecraft.black_cushion": [
+    "black",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.blue_cushion": [
+    "blue",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.brown_cushion": [
+    "brown",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.cyan_cushion": [
+    "cyan",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.gray_cushion": [
+    "gray",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.green_cushion": [
+    "green",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.light_blue_cushion": [
+    "light_blue",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.light_gray_cushion": [
+    "light_gray",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.lime_cushion": [
+    "lime",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.magenta_cushion": [
+    "magenta",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.orange_cushion": [
+    "orange",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.pink_cushion": [
+    "pink",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.poplar_boat": [
+    "poplar",
+    "no",
+    "boat"
+  ],
+  "item.minecraft.poplar_chest_boat": [
+    "chest",
+    "with",
+    "no",
+    "poplar",
+    "no",
+    "boat"
+  ],
+  "item.minecraft.purple_cushion": [
+    "purple",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.red_cushion": [
+    "red",
+    "color",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.sulfur_cube_bucket": [
+    "sulfur_1",
+    "cube",
+    "entry",
+    "ri",
+    "bucket"
+  ],
+  "item.minecraft.sulfur_cube_spawn_egg": [
+    "sulfur_1",
+    "cube",
+    "no",
+    "spawn_egg"
+  ],
+  "item.minecraft.white_cushion": [
+    "white",
+    "no",
+    "cushion"
+  ],
+  "item.minecraft.yellow_cushion": [
+    "yellow",
+    "color",
+    "no",
+    "cushion"
+  ],
   "block.minecraft.warped_shelf": [
     "warped",
     "shelf"
@@ -10761,7 +11879,7 @@
     "no",
     "map"
   ],
-  "item.minecraft.ocean_monument_map":  [
+  "item.minecraft.ocean_monument_map": [
     "seafloor",
     "monument",
     "no",

@@ -8,12 +8,12 @@ import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.language.TokenTextHelper;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 import net.minecraft.ChatFormatting;
 
-import net.minecraft.util.FormattedCharSequence;
-import org.lwjgl.glfw.GLFW;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -339,7 +339,7 @@ public class DictionaryLookupOverlayRenderer {
      */
     public static boolean mouseClicked(double mouseX, double mouseY, int button) {
         if (!DictionaryLookupService.isOpen()) return false;
-        if (button != 0) return true;
+        if (button != 1) return true;
 
         Minecraft mc = Minecraft.getInstance();
         int screenWidth = mc.getWindow().getGuiScaledWidth();
@@ -357,7 +357,7 @@ public class DictionaryLookupOverlayRenderer {
         int sylBtnY = y + 3;
 
         if (mouseX >= sylBtnX && mouseX <= (sylBtnX + sylBtnWidth) && mouseY >= sylBtnY && mouseY <= (sylBtnY + sylBtnHeight)) {
-            mc.setScreen(new SyllabaryScreen(mc.screen));
+            mc.gui.setScreen(new SyllabaryScreen(mc.gui.screen()));
             return true;
         }
 
@@ -454,7 +454,7 @@ public class DictionaryLookupOverlayRenderer {
         if (!DictionaryLookupService.isOpen()) return false;
 
         // Press ESC to close the lookup modal
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+        if (keyCode == InputConstants.KEY_ESCAPE) {
             currentPageIndex = 0;
             DictionaryLookupService.close();
             return true;

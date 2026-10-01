@@ -9,10 +9,10 @@ import com.wesleyhdias.minnanocraft.srs.PlayerVocabularyManager;
 import com.wesleyhdias.minnanocraft.language.dictionary.Word;
 import com.wesleyhdias.minnanocraft.srs.models.ExpEvents;
 
+import com.mojang.blaze3d.platform.InputConstants;
+
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.Minecraft;
-
-import org.lwjgl.glfw.GLFW;
 
 /**
  * Handler responsible for processing keyboard and mouse inputs related to the
@@ -30,7 +30,7 @@ public class PinnedTooltipInputHandler {
      * @return {@code true} if the key press was handled and should be consumed; {@code false} otherwise.
      */
     public static boolean handleKeyPress(int keyCode, ItemStack hoveredItem) {
-        if (keyCode == GLFW.GLFW_KEY_LEFT_ALT || keyCode == GLFW.GLFW_KEY_RIGHT_ALT) {
+        if (keyCode == InputConstants.KEY_LALT || keyCode == InputConstants.KEY_RALT) {
             Minecraft mc = Minecraft.getInstance();
 
             // Calculate actual GUI-scaled mouse coordinates
@@ -39,7 +39,7 @@ public class PinnedTooltipInputHandler {
 
             return PinnedTooltipService.togglePin(hoveredItem, mouseX, mouseY);
 
-        } else if (keyCode == GLFW.GLFW_KEY_ESCAPE && PinnedTooltipService.isPinned()) {
+        } else if (keyCode == InputConstants.KEY_ESCAPE && PinnedTooltipService.isPinned()) {
             PinnedTooltipService.unpin();
             return true;
         }
@@ -59,9 +59,8 @@ public class PinnedTooltipInputHandler {
     public static boolean handleMouseClick(double mouseX, double mouseY, int button) {
         if (!PinnedTooltipService.isPinned()) return false;
 
-        if (button == 0) { // Left click
+        if (button == 1) { // Left click
             HitboxCalculator.TokenHitbox clickedHitbox = HitboxCalculator.getHitboxAt((int) mouseX, (int) mouseY);
-
             if (clickedHitbox != null) {
                 String token = clickedHitbox.token();
 
@@ -72,7 +71,6 @@ public class PinnedTooltipInputHandler {
                 Word word = DictionaryLoader.getDictionary().get(token);
 
                 if (word != null) {
-
                     DictionaryLookupService.openWord(word);
                 }
 
@@ -82,6 +80,7 @@ public class PinnedTooltipInputHandler {
 
                     DictionaryLookupService.openCompWord(compWord);
                 }
+
                 DictionaryLookupService.setToken(token);
             } else {
                 // The user clicker outside the tooltip, so unpin it

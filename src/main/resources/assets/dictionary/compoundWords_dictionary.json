@@ -91,7 +91,8 @@
   "lily_pad": {
     "local_translations": {
       "pt_br": [
-        "Vitória-Régia"
+        "Vitória-Régia",
+        "Nenúfar"
       ],
       "en_us": [
         "Lily Pad"
@@ -139,7 +140,8 @@
         "Câmara do Desafio Subterrânea"
       ],
       "en_us": [
-        "Trial Explorer"
+        "Trial Explorer",
+        "Buried Trial Chambers"
       ]
     },
     "components": [

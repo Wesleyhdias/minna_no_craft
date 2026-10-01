@@ -53,17 +53,17 @@ public class MinnaNoCraftConfigScreen extends Screen {
 
         // Left button: Opens Dictionary & Vocabulary Progress Screen
         this.addRenderableWidget(
-                Button.builder(Component.translatable("config.minnanocraft.progress_buton"), button ->
-                                this.minecraft.setScreen(new PlayerProgressScreen(this)))
+                Button.builder(Component.translatable("config.minnanocraft.progress_buton"), _ ->
+                                this.minecraft.gui.setScreen(new PlayerProgressScreen(this)))
                         .bounds(center - buttonWidth - 5, bottomY, buttonWidth, buttonHeight)
                         .build()
         );
 
         // Right button: Saves current configurations and returns to parent screen
         this.addRenderableWidget(
-                Button.builder(Component.translatable("gui.done"), button -> {
+                Button.builder(Component.translatable("gui.done"), _ -> {
                             ModConfig.save();
-                            this.minecraft.setScreen(this.parent);
+                            this.minecraft.gui.setScreen(this.parent);
                         })
                         .bounds(center + 5, bottomY, buttonWidth, buttonHeight)
                         .build()
@@ -97,6 +97,6 @@ public class MinnaNoCraftConfigScreen extends Screen {
     @Override
     public void onClose() {
         ModConfig.save();
-        this.minecraft.setScreen(this.parent);
+        this.minecraft.gui.setScreen(this.parent);
     }
 }

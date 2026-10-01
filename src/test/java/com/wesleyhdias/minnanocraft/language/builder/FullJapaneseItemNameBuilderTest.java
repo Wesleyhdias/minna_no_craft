@@ -65,6 +65,7 @@ public class FullJapaneseItemNameBuilderTest {
             "item.minecraft.music_disc_bounce.desc",
             "item.minecraft.smithing_template.applies_to",
             "item.minecraft.straw_bed",
+            "entity.minecraft.sulfur_cube.content",
 
             // Casos especiais de Itens/Blocos para pular do gabarito por enquanto
             "block.minecraft.bed.",
@@ -76,17 +77,8 @@ public class FullJapaneseItemNameBuilderTest {
     );
 
     private static final List<String> TRECHOS_IGNORADOS = List.of(
-            "concrete_slab",
-            "concrete_stairs",
-            "wool_slab",
-            "wool_stairs",
-            "poplar_",
-            "sulfur",
-            "cinnabar",
             "description",
-            "cushion",
-            "illusioner",
-            "candle_cake"
+            "illusioner"
     );
 
     @BeforeAll

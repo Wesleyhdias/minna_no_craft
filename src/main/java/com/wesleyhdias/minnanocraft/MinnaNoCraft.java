@@ -1,7 +1,7 @@
 package com.wesleyhdias.minnanocraft;
 
-import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
+import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;

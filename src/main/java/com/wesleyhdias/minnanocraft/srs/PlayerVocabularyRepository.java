@@ -2,6 +2,7 @@ package com.wesleyhdias.minnanocraft.srs;
 
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 import com.wesleyhdias.minnanocraft.MinnaNoCraft;
+
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;

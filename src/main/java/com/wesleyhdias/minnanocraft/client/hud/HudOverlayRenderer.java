@@ -28,7 +28,7 @@ public class HudOverlayRenderer {
         Minecraft client = Minecraft.getInstance();
 
         // Cancels tracking and skips rendering if GUI is hidden, paused, or a screen is open
-        if (client.player == null || client.options.hideGui || client.screen != null) {
+        if (client.player == null || client.gui.hud.isHidden() || client.gui.screen() != null) {
             hudTracker.reset();
             return;
         }

@@ -31,7 +31,7 @@ public class SyllabaryScreen extends Screen {
 
         this.addRenderableWidget(Button.builder(
                         Component.literal("✕"),
-                        button -> this.onClose())
+                        _ -> this.onClose())
                 .bounds(cardX + CARD_WIDTH - 22, cardY + 8, 14, 14)
                 .build());
     }
@@ -109,6 +109,6 @@ public class SyllabaryScreen extends Screen {
 
     @Override
     public void onClose() {
-        this.minecraft.setScreen(this.parent);
+        this.minecraft.gui.setScreen(this.parent);
     }
 }

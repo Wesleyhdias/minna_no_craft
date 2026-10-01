@@ -29,6 +29,8 @@
   "config.minnanocraft.srs_exp_gain_per_dictionary_lookup": "EXP gained from opening the dictionary:",
   "config.minnanocraft.hover.srs_exp_gain_per_dictionary_lookup": "Clicking on a word in the frozen tooltip while holding the ALT key",
   "config.minnanocraft.srs_max_words": "Maximum Active Words:",
+  "config.minnanocraft.srs_lookup_penalty_weight": "Multiplayer EXP loss due to difficulty (%)",
+  "config.minnanocraft.srs_max_exp_loss_per_event_percentage": "Minimum EXP gain based on difficulty (%)",
 
   "lookup_overlay.minnanocraft.reading": "Reading: %s",
   "lookup_overlay.minnanocraft.meaning": "Meaning:",
@@ -954,7 +956,7 @@
   "minnanocraft.token.tile.example": "Build a tiled floor (tairu) in your house. (Tairu de ie no yuka wo tsukuru.) - Build a tiled floor in your house.",
   "minnanocraft.token.tiles.desc": "タイル (tairu) remains unchanged for plural; the sentence context conveys multiple tiles.",
   "minnanocraft.token.tiles.example": "Place many tiles (tairu) to create a mosaic. (Takusan no tairu de mosaiku wo tsukuru.) - Place many tiles to create a mosaic.",
-  "minnanocraft.token.jack_o_lantern.desc": "Jack o'Lantern (Jacku wo Rantan) is a direct loan from English, naming the carved pumpkin that provides light in Minecraft, echoing the Western Halloween lantern tradition.",
+  "minnanocraft.token.jack_o_lantern.desc": "Jack o'Lantern (Jacku o Rantan) is a direct loan from English, naming the carved pumpkin that provides light in Minecraft, echoing the Western Halloween lantern tradition.",
   "minnanocraft.token.jack_o_lantern.example": "夜の森でジャック・オ・ランタンを置くと、モンスターが遠ざかる。 (Yoru no mori de Jacku wo Rantan wo oku to, monsutaa ga toozakaru.) - Placing a Jack o'Lantern in the night forest keeps monsters at bay.",
   "minnanocraft.token.lantern.desc": "Lantern (Rantan) is a loan from English 'lantern', denoting the hanging light source that can be attached to blocks in Minecraft.",
   "minnanocraft.token.lantern.example": "洞窟の天井にランタンを吊るすと、暗闇が消える。 (Dookutsu no tenjoo ni Rantan wo tsurusuto, kurayami ga kieru.) - Hanging a lantern from the cave ceiling dispels the darkness.",

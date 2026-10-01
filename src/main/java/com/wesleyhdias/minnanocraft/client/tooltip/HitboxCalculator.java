@@ -62,8 +62,10 @@ public class HitboxCalculator {
             if (pw.isInteractive) {
                 activeHitboxes.add(new TokenHitbox(
                         pw.token,
-                        currentX, currentX + wordWidth,
-                        textY, textY + lineHeight,
+                        currentX,
+                        currentX + wordWidth,
+                        textY,
+                        textY + lineHeight,
                         pw.prevText
                 ));
             }

@@ -43,7 +43,7 @@ public abstract class ScreenMixin {
             return;
         }
 
-        if (Minecraft.getInstance().screen instanceof SyllabaryScreen) {
+        if (Minecraft.getInstance().gui.screen() instanceof SyllabaryScreen) {
             return;
         }
 

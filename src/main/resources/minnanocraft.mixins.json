@@ -15,7 +15,7 @@
     "AbstractContainerScreenMixin",
     "ClientLanguageMixin",
     "GuiGraphicsExtractorMixin",
-    "GuiMixin",
+    "HudMixin",
     "ScreenMixin",
     "acessor.ClientLanguageAccessor"
   ]

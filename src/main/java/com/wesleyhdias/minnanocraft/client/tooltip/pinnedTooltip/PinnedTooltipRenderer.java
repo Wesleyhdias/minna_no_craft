@@ -79,7 +79,7 @@ public class PinnedTooltipRenderer {
         };
 
         // Renders the main frozen/pinned tooltip
-        graphics.tooltip(mc.font, clientLines, PinnedTooltipService.getPinMouseX(), PinnedTooltipService.getPinMouseY(), positioner, null);
+        graphics.tooltip(mc.font, clientLines, PinnedTooltipService.getPinMouseX(), PinnedTooltipService.getPinMouseY(), positioner, null, false);
 
         // Calculates hitboxes and processes mouse hover interactions
         HitboxCalculator.rebuildHitboxes(mc, translationKey, PinnedTooltipService.getTextX(), PinnedTooltipService.getTextY(), originalText);
@@ -115,7 +115,7 @@ public class PinnedTooltipRenderer {
             List<ClientTooltipComponent> subTooltipLines = List.of(
                     ClientTooltipComponent.create(Component.literal(hoveredHitbox.prevText()).getVisualOrderText())
             );
-            graphics.tooltip(mc.font, subTooltipLines, mouseX, mouseY, DefaultTooltipPositioner.INSTANCE, null);
+            graphics.tooltip(mc.font, subTooltipLines, mouseX, mouseY, DefaultTooltipPositioner.INSTANCE, null, false);
         } else {
             // Mouse is not over any interactive token
             PinnedTooltipService.resetHoverState();
