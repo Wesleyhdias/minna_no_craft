@@ -19,11 +19,11 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Set;
 import java.util.TreeMap;
 import java.util.List;
 import java.io.Writer;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Mixin targeting Minecraft's {@link ClientLanguage} class to export filtered translation files.
@@ -57,7 +57,10 @@ public class ClientLanguageMixin {
     ) {
 
         // Executes only if the dump property is explicitly set to true in system properties
-        if (!Boolean.parseBoolean(System.getProperty("minnanocraft.dump", "false"))) {
+
+        boolean dump = System.getenv("minnanocraft.dump") != null && Boolean.parseBoolean(System.getenv("minnanocraft.dump"));
+
+        if (!dump) {
             return;
         }
 

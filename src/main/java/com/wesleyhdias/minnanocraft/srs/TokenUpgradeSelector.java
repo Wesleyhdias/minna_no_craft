@@ -3,6 +3,7 @@ package com.wesleyhdias.minnanocraft.srs;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundDictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.DictionaryLoader;
 import com.wesleyhdias.minnanocraft.language.dictionary.CompoundWord;
+import com.wesleyhdias.minnanocraft.srs.models.LearningState;
 import com.wesleyhdias.minnanocraft.srs.models.WordProgress;
 
 import java.util.ArrayList;
@@ -77,7 +78,15 @@ public class TokenUpgradeSelector {
             int minParticleLevel = 4;
             for (String token : particleTokens) {
                 WordProgress p = manager.getProgress(token);
-                int level = (p != null) ? p.getScriptLevel() : 0;
+
+                if(p == null) {
+                    minParticleLevel = 0;
+                    continue;
+                }
+
+                if(p.getState() == LearningState.MASTERED || p.getState() == LearningState.WAITING) continue;
+
+                int level = p.getScriptLevel();
                 if (level < minParticleLevel) minParticleLevel = level;
             }
 

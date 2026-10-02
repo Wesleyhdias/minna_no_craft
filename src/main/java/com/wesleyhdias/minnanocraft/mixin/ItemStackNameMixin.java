@@ -7,13 +7,17 @@ import com.wesleyhdias.minnanocraft.language.ItemStructureLoader;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.Mixin;
+import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
@@ -63,6 +67,18 @@ public abstract class ItemStackNameMixin {
             if (customText != null) {
                 cir.setReturnValue(Component.literal(customText).withStyle(original.getStyle()));
             }
+        }
+    }
+
+    // used to make the search bar ignore changed names and uses only original from the selected language
+    @Inject(method = "getTooltipLines", at = @At("RETURN"))
+    private void injectHiddenSearchText(Item.TooltipContext context, @Nullable Player player, TooltipFlag tooltipFlag, CallbackInfoReturnable<List<Component>> cir) {
+
+        if (player == null) {
+            List<Component> lines = cir.getReturnValue();
+            ItemStack stack = (ItemStack) (Object) this;
+
+            lines.add(Component.translatable(stack.getItem().getDescriptionId()));
         }
     }
 }

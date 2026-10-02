@@ -16,7 +16,7 @@ import java.util.Map;
  * Utility class responsible for lazy-loading and caching the compound words dictionary from JSON resources.
  * <p>
  * Provides read-only access to compound vocabulary mappings used to break down
- * complex multi-part terms into individual component tokens.
+ * complex multipart terms into individual component tokens.
  */
 public class CompoundDictionaryLoader {
 

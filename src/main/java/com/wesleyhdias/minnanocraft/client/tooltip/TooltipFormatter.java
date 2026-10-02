@@ -38,14 +38,14 @@ public class TooltipFormatter {
     // ==========================================
     private static final int MAX_CACHE_SIZE = 500;
 
-    private static final Map<String, List<ParsedWord>> PARSED_CACHE = new LinkedHashMap<String, List<ParsedWord>>(MAX_CACHE_SIZE, 0.75f, true) {
+    private static final Map<String, List<ParsedWord>> PARSED_CACHE = new LinkedHashMap<>(MAX_CACHE_SIZE, 0.75f, true) {
         @Override
         protected boolean removeEldestEntry(Map.Entry<String, List<ParsedWord>> eldest) {
             return size() > MAX_CACHE_SIZE;
         }
     };
 
-    private static final Map<String, Component> COMPONENT_CACHE = new LinkedHashMap<String, Component>(MAX_CACHE_SIZE, 0.75f, true) {
+    private static final Map<String, Component> COMPONENT_CACHE = new LinkedHashMap<>(MAX_CACHE_SIZE, 0.75f, true) {
         @Override
         protected boolean removeEldestEntry(Map.Entry<String, Component> eldest) {
             return size() > MAX_CACHE_SIZE;
@@ -161,8 +161,16 @@ public class TooltipFormatter {
 
                         if (compoundObj != null) {
                             String renderedCompound = DifficultyResolver.renderCompound(compoundObj);
-                            assert renderedCompound != null;
-                            matchRender = candidate.equalsIgnoreCase(renderedCompound.trim());
+                            if(renderedCompound == null){
+                                for (String localTrans : compoundObj.getLocalTranslations()) {
+                                    if (candidate.equalsIgnoreCase(localTrans)) {
+                                        matchTranslation = true;
+                                        break;
+                                    }
+                                }
+                            }else{
+                                matchRender = candidate.equalsIgnoreCase(renderedCompound.trim());
+                            }
 
                         } else if (wordObj != null) {
                             WordProgress progress = vocabManager.getProgress(token);

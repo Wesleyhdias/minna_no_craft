@@ -75,7 +75,7 @@ public class FullCurrentLangItemNameBuilderTest {
         Minecraft mockMc = mock(Minecraft.class);
         LanguageManager mockLangManager = mock(LanguageManager.class);
 
-        when(mockLangManager.getSelected()).thenAnswer(inv -> currentActiveLang);
+        when(mockLangManager.getSelected()).thenAnswer(_ -> currentActiveLang);
         when(mockMc.getLanguageManager()).thenReturn(mockLangManager);
 
         mockedMinecraft = mockStatic(Minecraft.class);
