@@ -27,7 +27,22 @@ public class TargetItemResolver {
         try {
             // If the key does not belong to an entity, attempt to resolve it as a standard item or block
             if (!translationKey.startsWith("entity.minecraft.")) {
-                return resolveItem(translationKey);
+                ItemStack item = resolveItem(translationKey);
+                if (!item.isEmpty()) {
+                    return item;
+                }
+
+                // Fallback para blocos de parede (ex: tube_coral_wall_fan -> tube_coral_fan)
+                if (translationKey.contains("_wall_")) {
+                    String cleanKey = translationKey.replace("_wall_", "_");
+                    return resolveItem(cleanKey);
+                }
+                if (translationKey.contains("candle_cake")) {
+                    String cleanKey = "block.minecraft.cake";
+                    return resolveItem(cleanKey);
+                }
+
+                return ItemStack.EMPTY;
             }
 
             // Extract the raw entity name by removing the prefix

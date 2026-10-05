@@ -52,11 +52,17 @@ public class WordProgress {
      *
      * @param delta The positive or negative score adjustment to apply.
      */
-    public void updateExposure(double delta) {
+    public void updateExposure(double delta, boolean reset) {
         this.exposure = Math.max(0.0, this.exposure + delta);
-        if (this.exposure > this.peakExposure) {
+        if(reset){
+            this.peakExposure = this.exposure;
+        }else if (this.exposure > this.peakExposure ) {
             this.peakExposure = this.exposure;
         }
+    }
+
+    public void updateExposure(double delta){
+        updateExposure(delta, false);
     }
 
     /**
@@ -80,6 +86,26 @@ public class WordProgress {
         if (exp >= ModConfig.getConfig().getExpLevel2()) return 2;  // Romaji inverted structure
         if (exp >= ModConfig.getConfig().getExpLevel1()) return 1;  // Romaji
         return 0;                                                   // Native Language (Portuguese)
+    }
+
+    /**
+     * Calculates the dynamic difficulty efficiency factor based on the ratio of lookups to seen events.
+     * A higher ratio implies the player struggles with this word, yielding a lower EXP multiplier.
+     *
+     * @return A multiplier between the configured minimum factor and 1.0.
+     */
+    public double getDifficultyFactor() {
+        if (this.lookupCount <= 0) return 1.0; // No lookups = 100% efficiency
+
+        // Calculates the lookup-to-seen ratio
+        double lookupRate = (double) this.lookupCount / Math.max(1, this.seenCount);
+
+        double weight = ModConfig.getConfig().getLookupPenaltyWeight();
+        double factor = 1.0 / (1.0 + (lookupRate * weight));
+
+        double minFactor = ModConfig.getConfig().getMinExpFactor();
+
+        return Math.max(minFactor, factor);
     }
 
     // =========================================================
@@ -124,6 +150,7 @@ public class WordProgress {
 
     /**
      * Retrieves the highest exposure score ever reached by this word.
+     * It gets rested in case its changed manually in the game
      *
      * @return The peak exposure value.
      */

@@ -53,19 +53,25 @@ public class ConfigData {
     private double masteryExposure = 115.0;
 
     /** Exposure points awarded when encountering a word in the world. */
-    private double eventSeen = 2.0;
+    private double eventSeen = 0.5;
 
     /** Exposure points awarded when seeing a word on the HUD. */
     private double eventHudSeen = 1.0;
 
     /** Exposure points awarded when hovering over a target item or word. */
-    private double eventHover = 0.5;
+    private double eventHover = 2.0;
 
     /** Exposure points deducted when actively using the dictionary lookup feature. */
     private double eventLookup = 5.0;
 
     /** Exposure points deducted when looking up a word during hover. */
-    private double eventHoverLookup = 5.0;
+    private double eventHoverLookup = 2.0;
+
+    /** Weight multiplier for how severely dictionary lookups reduce future exp gains. */
+    private float lookupPenaltyWeight = 2.5f;
+
+    /** Minimum exposure multiplier a word can have, preventing it from becoming impossible to level up. */
+    private float minExpFactor = 0.4f;
 
     // =========================================================
     // Getters and Setters
@@ -207,5 +213,21 @@ public class ConfigData {
 
     public void setMasteryExposure(double masteryExposure) {
         this.masteryExposure = masteryExposure;
+    }
+
+    public float getLookupPenaltyWeight() {
+        return lookupPenaltyWeight;
+    }
+
+    public void setLookupPenaltyWeight(float lookupPenaltyWeight) {
+        this.lookupPenaltyWeight = lookupPenaltyWeight;
+    }
+
+    public float getMinExpFactor() {
+        return minExpFactor;
+    }
+
+    public void setMinExpFactor(float minExpFactor) {
+        this.minExpFactor = minExpFactor;
     }
 }

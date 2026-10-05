@@ -60,15 +60,18 @@ public class ProgressionSystem {
      * @param expEvents The type of exposure event triggered by player action.
      */
     public void applyEvent(WordProgress progress, ExpEvents expEvents) {
-        long cooldownMs = 5000;
         long now = System.currentTimeMillis();
         long timeSinceLastSeen = now - progress.getLastSeen();
 
-        // Enforces a brief cooldown between repeated exposure events for the same word
-        if (timeSinceLastSeen < cooldownMs && expEvents != ExpEvents.LOOKUP) {
-            return;
+        if (expEvents == ExpEvents.LOOKUP) {
+            if (timeSinceLastSeen < 500) {
+                return;
+            }
+        } else {
+            if (timeSinceLastSeen < 5000) {
+                return;
+            }
         }
-
         int oldLevel = progress.getScriptLevel();
         progress.setLastSeen(now);
 
@@ -109,11 +112,21 @@ public class ProgressionSystem {
      * @param baseAmount The base exposure score to add.
      */
     private void addExposure(WordProgress progress, double baseAmount) {
-        double multiplier = (progress.getExposure() < progress.getPeakExposure()) ?
+        double difficultyFactor = progress.getDifficultyFactor();
+
+        double finalAmount = getFinalAmount(progress, baseAmount, difficultyFactor);
+
+        progress.updateExposure(finalAmount);
+        progress.incrementSeenCount();
+    }
+
+    private static double getFinalAmount(WordProgress progress, double baseAmount, double difficultyFactor) {
+        double relearnMultiplier = (progress.getExposure() < progress.getPeakExposure()) ?
                 ModConfig.getConfig().getRelearnMultiplier() : 1.0;
 
-        progress.updateExposure(baseAmount * multiplier);
-        progress.incrementSeenCount();
+        double effectiveRelearnMultiplier = 1.0 + ((relearnMultiplier - 1.0) * difficultyFactor);
+
+        return baseAmount * effectiveRelearnMultiplier * difficultyFactor;
     }
 
     /**
