@@ -1,10 +1,12 @@
 package com.wesleyhdias.minnanocraft.config.modmenu;
 
 import net.minecraft.client.gui.components.events.GuiEventListener;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.narration.NarratableEntry;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 
 import java.util.function.Consumer;
@@ -53,6 +55,39 @@ public class ConfigListEntry extends ContainerObjectSelectionList.Entry<ConfigLi
     }
 
     /**
+     * Custom widget that renders text using RenderUtils.renderScrollingText
+     * if the label width exceeds the allocated horizontal space.
+     */
+    private static class ScrollingStringWidget extends AbstractWidget {
+
+        public ScrollingStringWidget(int x, int y, int width, int height, Component message) {
+            super(x, y, width, height, message);
+        }
+
+        @Override
+        protected void extractWidgetRenderState(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+            // Center text vertically within widget bounds (assuming standard font height of 9px)
+            int textY = this.getY() + (this.getHeight() - 9) / 2;
+
+            // Render label with scrolling utility helper to handle overflow gracefully
+            ScrollingTextUtil.renderScrollingText(
+                    graphics,
+                    Minecraft.getInstance(),
+                    this.getMessage().getString(),
+                    this.getX(),
+                    textY,
+                    this.getWidth(),
+                    0xFFFFFFFF
+            );
+        }
+
+        @Override
+        protected void updateWidgetNarration(@NonNull NarrationElementOutput narrationElementOutput) {
+            this.defaultButtonNarrationText(narrationElementOutput);
+        }
+    }
+
+    /**
      * Helper factory method to build standard numeric config entry rows containing a label, an EditBox, and a reset Button.
      *
      * @param <T>            Numeric data type (Integer, Float, etc.).
@@ -79,9 +114,13 @@ public class ConfigListEntry extends ContainerObjectSelectionList.Entry<ConfigLi
         int resetX = rightX - resetButtonWidth;
         int boxX = resetX - 6 - boxWidth;
 
-        int textWidth = font.width(labelComponent);
-        StringWidget label = new StringWidget(leftX, 0, textWidth, 20, labelComponent, font);
+        // Calculate maximum available label width prior to reaching the edit box boundary
+        int maxLabelWidth = boxX - leftX - 8;
 
+        // Instantiate scrolling text label widget within calculated width bounds
+        ScrollingStringWidget label = new ScrollingStringWidget(leftX, 0, maxLabelWidth, 20, labelComponent);
+
+        // Initialize edit box input widget and populate with initial string value
         EditBox editBox = new EditBox(font, boxX, 0, boxWidth, 20, labelComponent);
         editBox.setValue(String.valueOf(currentValue));
 
@@ -158,12 +197,15 @@ public class ConfigListEntry extends ContainerObjectSelectionList.Entry<ConfigLi
     // --- SLIDER ENTRIES (PERCENTAGE) ---
 
     /** Factory method for creating a percentage slider configuration entry without a tooltip. */
-    public static ConfigListEntry createSlider(Font font, int leftX, int rightX, Component label, float current, float def, Consumer<Float> onSave) {
-        return createSlider(font, leftX, rightX, label, null, current, def, onSave);
+    public static ConfigListEntry createSlider(int leftX, int rightX, Component label, float current, float def, Consumer<Float> onSave) {
+        return createSlider(leftX, rightX, label, null, current, 0.0f, 1.0f, def, onSave);
     }
 
     /** Factory method for creating a percentage slider configuration entry with a tooltip. */
-    public static ConfigListEntry createSlider(Font font, int leftX, int rightX, Component label, Component tooltip, float current, float def, Consumer<Float> onSave) {
+    public static ConfigListEntry createSlider(
+            int leftX, int rightX, Component label, Component tooltip,
+            float current, float min, float max, float def, Consumer<Float> onSave
+    ) {
         return new ConfigListEntry(adder -> {
             int resetButtonWidth = 60;
             int sliderWidth = 100;
@@ -171,11 +213,13 @@ public class ConfigListEntry extends ContainerObjectSelectionList.Entry<ConfigLi
             int resetX = rightX - resetButtonWidth;
             int sliderX = resetX - 6 - sliderWidth;
 
-            int textWidth = font.width(label);
-            StringWidget labelWidget = new StringWidget(leftX, 0, textWidth, 20, label, font);
+            int maxLabelWidth = sliderX - leftX - 8;
 
-            // Holder array to allow referencing the button inside the slider class
+            ScrollingStringWidget labelWidget = new ScrollingStringWidget(leftX, 0, maxLabelWidth, 20, label);
+
             Button[] resetBtnHolder = new Button[1];
+
+            double initialSliderValue = (current - min) / (max - min);
 
             class PercentSlider extends AbstractSliderButton {
                 public PercentSlider(int x, int y, int width, int height, double value) {
@@ -185,27 +229,28 @@ public class ConfigListEntry extends ContainerObjectSelectionList.Entry<ConfigLi
 
                 @Override
                 protected void updateMessage() {
-                    this.setMessage(Component.literal(Math.round(this.value * 100.0) + "%"));
+                    float realValue = min + (float)(this.value * (max - min));
+                    this.setMessage(Component.literal(Math.round(realValue * 100.0) + "%"));
                 }
 
                 @Override
                 protected void applyValue() {
-                    float savedValue = (float) this.value;
-                    onSave.accept(savedValue);
+                    float realValue = min + (float)(this.value * (max - min));
+                    onSave.accept(realValue);
 
                     if (resetBtnHolder[0] != null) {
-                        resetBtnHolder[0].active = Math.round(savedValue * 100) != Math.round(def * 100);
+                        resetBtnHolder[0].active = Math.round(realValue * 100) != Math.round(def * 100);
                     }
                 }
 
                 public void forceValue(double newValue) {
-                    this.value = newValue;
+                    this.value = (newValue - min) / (max - min);
                     this.updateMessage();
                     this.applyValue();
                 }
             }
 
-            PercentSlider slider = new PercentSlider(sliderX, 0, sliderWidth, 20, current);
+            PercentSlider slider = new PercentSlider(sliderX, 0, sliderWidth, 20, initialSliderValue);
 
             if (tooltip != null) {
                 Tooltip mcTooltip = Tooltip.create(tooltip);

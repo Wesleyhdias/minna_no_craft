@@ -30,7 +30,7 @@
   "config.minnanocraft.hover.srs_exp_gain_per_dictionary_lookup": "Clicking on a word in the frozen tooltip while holding the ALT key",
   "config.minnanocraft.srs_max_words": "Maximum Active Words:",
   "config.minnanocraft.srs_lookup_penalty_weight": "Multiplayer EXP loss due to difficulty (%)",
-  "config.minnanocraft.srs_max_exp_loss_per_event_percentage": "Minimum EXP gain based on difficulty (%)",
+  "config.minnanocraft.srs_max_exp_loss_per_event_percentage": "Min. EXP due to difficulty (%)",
 
   "lookup_overlay.minnanocraft.reading": "Reading: %s",
   "lookup_overlay.minnanocraft.meaning": "Meaning:",

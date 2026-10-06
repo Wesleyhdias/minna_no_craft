@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft;
 public class HudOverlayRenderer {
 
     /** Exposure tracker requiring 2 seconds of continuous targeting to award HUD_LOOK experience. */
-    private static final ExposureTracker hudTracker = new ExposureTracker(2000, ExpEvents.HUD_LOOK);
+    private static final ExposureTracker hudTracker = new ExposureTracker(3000, ExpEvents.HUD_LOOK);
 
     /**
      * Renders the floating HUD overlay box if the player is targeting a valid world element

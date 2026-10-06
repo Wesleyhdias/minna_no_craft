@@ -20,7 +20,7 @@ public class TokenUpgradeSelector {
     /**
      * Determines which token in an item's structure should receive priority progression points.
      * <p>
-     * Expands compound tokens into sub-components, separates content words from particles,
+     * Expands compound tokens into subcomponents, separates content words from particles,
      * and evaluates script levels to balance progression left-to-right.
      *
      * @param structure The list of token keys representing the item's name structure.

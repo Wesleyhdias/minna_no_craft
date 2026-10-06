@@ -11,6 +11,7 @@ import com.wesleyhdias.minnanocraft.config.data.ConfigData;
 import com.wesleyhdias.minnanocraft.config.ModConfig;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -94,6 +95,21 @@ public class PlayerProgressScreen extends Screen {
     private PlayerProgressListWidget.SortDir currentSortDir = PlayerProgressListWidget.SortDir.NONE;
 
     /**
+     * Input box widget used for filtering vocabulary list entries by text query.
+     */
+    private EditBox searchBox;
+
+    /**
+     * State flag indicating whether the search input bar is currently active in the header UI.
+     */
+    private boolean isSearching = false;
+
+    /**
+     * Visual icon component rendered alongside the word header to toggle search mode.
+     */
+    private final Component searchIcon = Component.literal("🔍");
+
+    /**
      * Constructs the vocabulary progress inspection screen.
      *
      * @param parent The parent screen instance.
@@ -169,6 +185,21 @@ public class PlayerProgressScreen extends Screen {
                         _ -> this.minecraft.gui.setScreen(new SyllabaryScreen(this))) // Abre o popup
                 .bounds(rightPanelX + 150, tabY, 16, 16)
                 .build());
+
+        // Calculate search box width bounds matching the first column layout
+        int col1End = this.listX + (int) (this.listWidth * 0.45);
+        int searchWidth = col1End - this.listX;
+
+        // Initialize input widget positioned over the primary column header
+        this.searchBox = new EditBox(this.font, this.listX, 23, searchWidth, 16, Component.empty());
+        this.searchBox.setVisible(false); // Initially hidden until search mode is toggled
+        this.searchBox.setMaxLength(50);
+
+        // Bind input responder to dynamically filter vocabulary list entries on text change
+        this.searchBox.setResponder(query -> this.listWidget.filterItems(query));
+
+        // Register widget with screen lifecycle for event handling, focus, and rendering
+        this.addRenderableWidget(this.searchBox);
     }
 
     /**
@@ -230,22 +261,58 @@ public class PlayerProgressScreen extends Screen {
         double mouseY = event.y();
         int button = event.button();
 
+        // Verifica se o clique foi com o botão esquerdo DENTRO da área do cabeçalho (Y entre 25 e 40)
         if (button == 1 && mouseY >= 25 && mouseY <= 40) {
-            // Fractional bounds corresponding to header column widths
-            int col1End = this.listX + (int) (this.listWidth * 0.45);
-            int col2End = col1End + (int) (this.listWidth * 0.30);
+            int col1End = this.listX + (int) (this.listWidth * 0.40);
+            int col2End = col1End + (int) (this.listWidth * 0.35);
 
+            // --- COLUNA 1: Word Header OU Search Box ---
             if (mouseX >= this.listX && mouseX < col1End) {
-                toggleSort(PlayerProgressListWidget.SortColumn.WORD);
-                return true;
-            } else if (mouseX >= col1End && mouseX < col2End) {
+
+                if (!this.isSearching) {
+                    // Modo Normal: Verifica se clicou na lupa
+                    Component wordHead = Component.translatable("progress_screen.minnanocraft.column_word").append(getSortIcon(PlayerProgressListWidget.SortColumn.WORD));
+                    int iconX = this.listX + 6 + this.font.width(wordHead) + 5;
+
+                    if (mouseX >= iconX && mouseX <= iconX + 12) {
+                        this.isSearching = true;
+                        this.searchBox.setVisible(true);
+                        this.setFocused(this.searchBox);
+                    } else {
+                        // Clicou no texto "Word", então ordena a lista
+                        toggleSort(PlayerProgressListWidget.SortColumn.WORD);
+                    }
+                    return true;
+                } else {
+                    // Modo Pesquisa: Verifica se clicou no "X"
+                    if (mouseX >= col1End - 12 && mouseX <= col1End) {
+                        this.isSearching = false;
+                        this.searchBox.setVisible(false);
+                        this.searchBox.setValue("");
+                        return true;
+                    } else {
+                        // Clicou DENTRO da caixa de texto da pesquisa!
+                        // NÃO chamamos o toggleSort aqui. Retornamos o super para que o EditBox processe o foco.
+                        return super.mouseClicked(event, doubleClick);
+                    }
+                }
+            }
+
+            // --- COLUNA 2: Translation ---
+            else if (mouseX >= col1End && mouseX < col2End) {
                 toggleSort(PlayerProgressListWidget.SortColumn.MIDDLE);
                 return true;
-            } else if (mouseX >= col2End && mouseX <= this.listX + this.listWidth) {
+            }
+
+            // --- COLUNA 3: Level ---
+            else if (mouseX >= col2End && mouseX <= this.listX + this.listWidth) {
                 toggleSort(PlayerProgressListWidget.SortColumn.LEVEL);
                 return true;
             }
         }
+
+        // Se o clique for fora do cabeçalho (ex: nos itens da lista), ou fora de tudo,
+        // o super lida com isso. Ele também é responsável por tirar o foco da EditBox quando você clica fora.
         return super.mouseClicked(event, doubleClick);
     }
 
@@ -299,10 +366,22 @@ public class PlayerProgressScreen extends Screen {
         int col2End = col1End + (int) (this.listWidth * 0.35);
 
         // 1. "Word" Column Header
-        boolean hoverWord = mouseY >= 25 && mouseY <= 40 && mouseX >= this.listX && mouseX < col1End;
-        Component wordHead = Component.translatable("progress_screen.minnanocraft.column_word").append(getSortIcon(PlayerProgressListWidget.SortColumn.WORD));
-        guiGraphics.text(this.font, wordHead, this.listX + 6, headerY, hoverWord ? hoverColor : normalColor, false);
+        if (this.isSearching) {
+            // Desenha um "X" para fechar a pesquisa ao lado da barra
+            boolean hoverClose = mouseX >= col1End - 12 && mouseX <= col1End && mouseY >= 25 && mouseY <= 40;
+            guiGraphics.text(this.font, "✕", col1End - 12, headerY, hoverClose ? 0xFFFF5555 : normalColor);
+        } else {
+            // Desenha o cabeçalho "Word" original
+            boolean hoverWord = mouseY >= 25 && mouseY <= 40 && mouseX >= this.listX && mouseX < col1End - 15;
+            Component wordHead = Component.translatable("progress_screen.minnanocraft.column_word")
+                    .append(getSortIcon(PlayerProgressListWidget.SortColumn.WORD));
+            guiGraphics.text(this.font, wordHead, this.listX + 6, headerY, hoverWord ? hoverColor : normalColor, false);
 
+            // Desenha o Ícone da Lupa logo à direita da palavra "Word"
+            int iconX = this.listX + 6 + this.font.width(wordHead) + 5;
+            boolean hoverSearch = mouseX >= iconX && mouseX <= iconX + 12 && mouseY >= 25 && mouseY <= 40;
+            guiGraphics.text(this.font, searchIcon, iconX, headerY, hoverSearch ? 0xFFFFFF00 : normalColor, false);
+        }
         // 2. "Translation" Column Header
         boolean hoverMid = mouseY >= 25 && mouseY <= 40 && mouseX >= col1End && mouseX < col2End;
         Component midHead = Component.translatable("progress_screen.minnanocraft.column_translation").append(getSortIcon(PlayerProgressListWidget.SortColumn.MIDDLE));

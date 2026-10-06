@@ -32,6 +32,10 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
     /** Total width allocated for the list widget layout. */
     private final int listWidth;
 
+    private String currentSearchQuery = "";
+    private SortColumn currentSortCol = SortColumn.NONE;
+    private SortDir currentSortDir = SortDir.NONE;
+
     /**
      * Constructs a new player progress list widget.
      *
@@ -64,7 +68,7 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
 
         // Display placeholder row if vocabulary cache contains no entries
         if (progressMap.isEmpty()) {
-            this.addEntry(new PlayerProgressListEntry("Nenhuma palavra", "-/-", null, null, this.listX, this.listWidth));
+            this.addEntry(new PlayerProgressListEntry("Nenhuma palavra, vai jogar", "-/-", null, null, this.listX, this.listWidth));
             return;
         }
 
@@ -125,42 +129,78 @@ public class PlayerProgressListWidget extends ObjectSelectionList<PlayerProgress
     }
 
     /**
+     * Core method that applies search filtering and column sorting in sequence
+     * without mutating the original cached entries.
+     */
+    private void updateDisplayList() {
+        // Step 1: Apply search filtering
+        List<PlayerProgressListEntry> processedList = new ArrayList<>();
+
+        if (this.currentSearchQuery.isEmpty()) {
+            // If query is empty, include all baseline entries
+            processedList.addAll(this.originalEntries);
+        } else {
+            // Otherwise, filter entries against the search query
+            for (PlayerProgressListEntry entry : this.originalEntries) {
+
+                // Skip empty placeholder row if present
+                if (entry.getFirstText() != null && entry.getFirstText().equals("Nenhuma palavra")) {
+                    continue;
+                }
+
+                String wordText = entry.getFirstText() != null ? entry.getFirstText().toLowerCase() : "";
+                String midText = entry.getMiddleText() != null ? entry.getMiddleText().toLowerCase() : "";
+
+                // Check if search query matches primary display text or translation/Kanji column
+                if (wordText.contains(this.currentSearchQuery) || midText.contains(this.currentSearchQuery)) {
+                    processedList.add(entry);
+                }
+            }
+        }
+
+        // Step 2: Apply sorting to the filtered entry subset
+        if (this.currentSortCol != SortColumn.NONE && this.currentSortDir != SortDir.NONE) {
+            processedList.sort((a, b) -> {
+                int cmp = 0;
+                switch (this.currentSortCol) {
+                    case WORD -> cmp = a.getFirstText().compareToIgnoreCase(b.getFirstText());
+                    case MIDDLE -> {
+                        String s1 = a.getMiddleText() == null ? "" : a.getMiddleText();
+                        String s2 = b.getMiddleText() == null ? "" : b.getMiddleText();
+                        cmp = s1.compareToIgnoreCase(s2);
+                    }
+                    case LEVEL -> {
+                        cmp = Integer.compare(a.getLevel(), b.getLevel());
+                        if (cmp == 0) cmp = Double.compare(a.getExposure(), b.getExposure());
+                    }
+                }
+                return this.currentSortDir == SortDir.ASC ? cmp : -cmp;
+            });
+        }
+
+        // Step 3: Update widget entries and UI state
+        this.replaceEntries(processedList);
+        this.setScrollAmount(0); // Reset scroll position to top when display updates
+    }
+
+    /**
      * Applies sorting to the list entries based on specified target column and direction,
-     * updating the displayed list items and resetting scroll position.
      *
      * @param col Target column to sort by.
      * @param dir Sort direction order.
      */
     public void applySorting(SortColumn col, SortDir dir) {
-        // Restore baseline unsorted entries if sort state is reset or column is NONE
-        if (dir == SortDir.NONE || col == SortColumn.NONE) {
-            this.replaceEntries(this.originalEntries);
-            return;
-        }
+        this.currentSortCol = col;
+        this.currentSortDir = dir;
+        updateDisplayList();
+    }
 
-        // Create shallow copy to sort entries without mutating original baseline
-        List<PlayerProgressListEntry> sorted = new ArrayList<>(this.originalEntries);
-
-        sorted.sort((a, b) -> {
-            int cmp = 0;
-            switch (col) {
-                case WORD -> cmp = a.getFirstText().compareToIgnoreCase(b.getFirstText());
-                case MIDDLE -> {
-                    String s1 = a.getMiddleText() == null ? "" : a.getMiddleText();
-                    String s2 = b.getMiddleText() == null ? "" : b.getMiddleText();
-                    cmp = s1.compareToIgnoreCase(s2);
-                }
-                case LEVEL -> {
-                    cmp = Integer.compare(a.getLevel(), b.getLevel());
-                    // Secondary tie-breaker by exposure points if levels match
-                    if (cmp == 0) cmp = Double.compare(a.getExposure(), b.getExposure());
-                }
-            }
-            return dir == SortDir.ASC ? cmp : -cmp;
-        });
-
-        // Update displayed entries and reset scroll bar position to top
-        this.replaceEntries(sorted);
-        this.setScrollAmount(0);
+    /**
+     * Updates the search query and process the list display.
+     * @param query The text typed by the user
+     */
+    public void filterItems(String query) {
+        this.currentSearchQuery = query == null ? "" : query.toLowerCase().trim();
+        updateDisplayList();
     }
 }

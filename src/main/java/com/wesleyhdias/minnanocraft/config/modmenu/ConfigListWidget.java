@@ -98,16 +98,31 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
                 val -> ModConfig.getConfig().setRelearnMultiplier(val)
         ));
 
-        this.addEntry(ConfigListEntry.createSlider(
+        this.addEntry(ConfigListEntry.createFloat(
                 font, leftX, rightX,
+                Component.translatable("config.minnanocraft.srs_lookup_penalty_weight"),
+                ModConfig.getConfig().getLookupPenaltyWeight(), 2.5f,
+                val -> ModConfig.getConfig().setLookupPenaltyWeight(val)
+        ));
+
+        this.addEntry(ConfigListEntry.createSlider(
+                leftX, rightX,
                 Component.translatable("config.minnanocraft.srs_max_exp_loss_percentage"),
                 ModConfig.getConfig().getMaxExpLossPercentage(),
                 0.7f,
                 val -> ModConfig.getConfig().setMaxExpLossPercentage(val)
         ));
 
+        this.addEntry(ConfigListEntry.createSlider(
+                leftX, rightX,
+                Component.translatable("config.minnanocraft.srs_max_exp_loss_per_event_percentage"),
+                ModConfig.getConfig().getMinExpFactor(),
+                0.4f,
+                val -> ModConfig.getConfig().setMinExpFactor(val)
+        ));
+
         // Empty row entry for visual spacing padding
-        this.addEntry(new ConfigListEntry(adder -> {}));
+        this.addEntry(new ConfigListEntry(_ -> {}));
 
         // --- Category: Script Level Thresholds ---
         this.addEntry(new ConfigListEntry(adder -> {
@@ -167,7 +182,7 @@ public class ConfigListWidget extends ContainerObjectSelectionList<ConfigListEnt
         ));
 
         // Empty row entry for visual spacing padding
-        this.addEntry(new ConfigListEntry(adder -> {}));
+        this.addEntry(new ConfigListEntry(_ -> {}));
 
         // --- Category: EXP Gain / Loss Rules ---
         this.addEntry(new ConfigListEntry(adder -> {
